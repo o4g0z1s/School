@@ -1,0 +1,145 @@
+/* --- 基本設定とフォント --- */
+:root {
+    --bg-color: #1a1a1a;
+    --surface-color: #2c2c2c;
+    --primary-text-color: #e0e0e0;
+    --secondary-text-color: #a0a0a0;
+    --accent-color: #dd7700;
+    --accent-color-hover: #b86400;
+    --border-color: #444;
+    --selected-bg: #dd7700;
+    --hover-bg: #3a3a3a;
+    --answer-color: #dd7700;
+    --message-color: #f0ad4e;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--primary-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- コンテナ --- */
+.container {
+    background-color: var(--surface-color);
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+h1 {
+    color: var(--primary-text-color);
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+/* --- スロット部分 --- */
+.slots-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.slot-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ★★★ ラベルとアイコンのコンテナのスタイル ★★★ */
+.label-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.label-container label {
+    font-weight: 500;
+    color: var(--secondary-text-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer; /* ラベルにカーソルを適用 */
+}
+/* ★★★ ここまで ★★★ */
+
+
+/* ★★★ ロックアイコンのスタイル ★★★ */
+.lock-icon {
+    cursor: pointer;
+    font-size: 1rem;
+    user-select: none;
+    transition: color 0.2s ease;
+}
+.lock-icon.locked {
+    color: var(--accent-color);
+}
+/* ★★★ ここまで ★★★ */
+
+.slot {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    height: 150px;
+    overflow-y: scroll;
+    background-color: var(--bg-color);
+}
+
+.slot::-webkit-scrollbar { width: 6px; }
+.slot::-webkit-scrollbar-track { background: transparent; }
+.slot::-webkit-scrollbar-thumb { background-color: var(--border-color); border-radius: 20px; }
+
+.slot-item {
+    padding: 0.9rem;
+    cursor: pointer;
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.slot-item:last-child { border-bottom: none; }
+.slot-item:hover { background-color: var(--hover-bg); }
+.slot-item.selected { background-color: var(--selected-bg); color: white; font-weight: 600; }
+
+.meaning {
+    margin-top: 1rem;
+    min-height: 40px;
+    font-style: italic;
+    color: var(--secondary-text-color);
+    background-color: #222;
+    padding: 0.7rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.controls { margin-bottom: 2rem; display: flex; justify-content: center; gap: 1rem; }
+button { padding: 0.8rem 1.8rem; font-size: 1rem; font-weight: 500; cursor: pointer; border: none; border-radius: 8px; color: white; background-color: var(--accent-color); transition: background-color 0.2s ease; }
+button:hover { background-color: var(--accent-color-hover); }
+
+.result-container { background-color: var(--bg-color); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-color); min-height: 100px; text-align: left; }
+#etymology-display { color: var(--secondary-text-color); margin-bottom: 1rem; line-height: 1.6; font-size: 1.1rem; }
+#answer-display { font-size: 2rem; font-weight: 600; color: var(--answer-color); word-wrap: break-word; }
+.message { color: var(--message-color); font-weight: 500; text-align: center; }
+.disabled .slot { background-color: #2a2a2a; opacity: 0.5; }
+
+@media (max-width: 768px) {
+    body { padding: 0.5rem 0; }
+    .container { padding: 1.5rem 1rem; width: 95%; }
+    h1 { font-size: 1.5rem; margin-bottom: 1.5rem; }
+    .slots-container { flex-direction: column; gap: 1.5rem; }
+    .slot { height: 130px; }
+    .controls { flex-direction: column; gap: 0.8rem; }
+    button { width: 100%; padding: 1rem; }
+    #answer-display { font-size: 1.6rem; }
+}

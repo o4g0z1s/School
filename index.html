@@ -1,0 +1,131 @@
+<!DOCTYPE html>  
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://play-lh.googleusercontent.com/ZinEbOOxJl1lxnlsycF34uQQjL-bP0F4nfUicYhrYauOkk8roUAPEsBkArDSrEzHtg=w240-h480-rw">
+    <link href="https://db.onlinewebfonts.com/a/zR4340ZF" rel="stylesheet" type="text/css"/>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E675FYQ3DK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-E675FYQ3DK');
+    </script>
+    <title>School</title>
+    <style>
+        :root {
+            --b: #B60;
+            --t: #FAF9F6;
+        }
+
+        body {
+            font-family: "Reso", sans-serif;
+            text-align: center;
+            margin: 80px 0;
+            background-color: var(--b);
+            color: var(--t);
+            overflow-x: hidden;
+            white-space: nowrap;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        p {
+            font-size: 150px;
+            margin: 0;
+        }
+
+        a {
+            font-size: 100px;
+            color: var(--t);
+            text-decoration: none;
+        }
+
+        hr {
+            width: 99%;
+            border-color: var(--t);
+            background-color: var(--t);
+            border-width: 1px;
+            border-style: solid;
+        }
+        
+        @media only screen and (max-width: 500px) {
+            p {
+                font-size: 100px;
+            }
+            a {
+                font-size: 70px;
+            }
+        }
+
+        body.dark-mode {
+            --b: #000;
+            --t: #B60;
+        }
+    </style>
+</head>
+<body>
+    <p>School</p>
+    <br><br>
+    <hr noshade>
+    <br><br>
+    <a href="schLab/index.html">
+        [&#x200A;<u>Lab</u>&#x200A;]
+    </a>
+    <br>
+    <br>
+    <a href="https://wdsd.net/ho-yu/ssl.php">
+        [&#x200A;<u>Web</u>&#x200A;]
+    </a>
+    <br>
+    <br>
+    <a href="https://classroom.google.com/u/0/h?hl=ja">
+        [&#x200A;<u>Class</u>&#x200A;]
+    </a>
+    <br>
+    <br>
+    <a href="https://as.ho-yu.ed.jp/">
+        [&#x200A;@<u>Sch</u>&#x200A;]
+    </a>
+    <br>
+    <br>
+    <a href="https://hoyugakuin:0305@hoyugakuin.school.glats.online/">
+        [&#x200A;<u>Kimini</u>&#x200A;]
+    </a>
+    <br>
+    <br>
+    <a href="https://manabi.benesse.ne.jp/">
+        [&#x200A;<u>ManaV</u>&#x200A;]
+    </a>
+    <br>
+    <br>
+    <a href="https://learn.studysapuri.jp/">
+        [&#x200A;<u>StuSup</u>&#x200A;]
+    </a>
+    <br>
+    <br>
+    <a href="https://tbqr.sanseido-publ.co.jp/05-crown-ec2/contents/">
+        [&#x200A;<u>CROWN2</u>&#x200A;]
+    </a>
+    <br>
+    <br>
+    <a href="https://maps.gsi.go.jp">
+        [&#x200A;<u>GSI&#x200A;Maps</u>&#x200A;]
+    </a>
+
+    <script>
+        function applyDarkMode() {
+            const now = new Date();
+            const hour = now.getHours();
+            if (hour >= 19 || (hour >= 0 && hour < 5)) {
+                document.body.classList.add('dark-mode');
+            } else {
+                document.body.classList.remove('dark-mode');
+            }
+        }
+        applyDarkMode();
+        setInterval(applyDarkMode, 60 * 60 * 1000);
+    </script>
+</body>
+</html>

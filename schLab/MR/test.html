@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <title></title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <div id="questionArea" class="question"></div>
+        <form id="quizForm">
+        <div id="result" class="result"></div>
+        </form>
+        <div class="button">
+        <button type="button" id="submitAnswer" onclick="checkAnswers()">決定</button>
+        <button id="retryButton" class="retry-btn" onclick="restartQuiz()">もう一度</button>
+        </div>
+    </div>
+
+<script>
+    // 問題と選択肢を配列として定義
+    const questions = [
+       {
+            question: "",
+            options: [""],
+            correct: [""],
+            type: "radio"
+        }
+    ];
+</script>
+<script src="common.js"></script>
+</body>
+</html>

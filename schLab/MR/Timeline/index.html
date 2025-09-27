@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界史 年表暗記</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ホーム画面 -->
+    <div id="home-screen">
+        <h1>世界史 年表暗記</h1>
+        <div id="region-selector-container"></div>
+        <button id="generate-timeline-btn">年表を作成</button>
+    </div>
+
+    <!-- 年表画面 -->
+    <div id="timeline-screen" class="hidden">
+        <div class="timeline-header">
+            <h2 id="timeline-title"></h2>
+            <div class="controls">
+                <button id="back-to-home" title="地域選択に戻る">￩</button>
+                <div class="zoom-controls">
+                    <button id="zoom-out">−</button>
+                    <span id="zoom-level">1.0x</span>
+                    <button id="zoom-in">+</button>
+                </div>
+                <button id="toggle-names">国名</button>
+                <button id="toggle-rulers">時代</button>
+                <button id="sub-mode-button">国家</button>
+                <button id="toggle-compact-btn">圧縮</button>
+            </div>
+        </div>
+
+        <div id="timeline-layout-container">
+            <div id="timeline-top-left"></div>
+            <div id="time-axis-container">
+                <div id="time-axis"></div>
+            </div>
+            <div id="nation-numbers-container"></div>
+            <div id="timeline-viewport">
+                <div id="timeline-container">
+                    <div id="grid-lines"></div>
+                    <div id="nations-wrapper"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 詳細情報モーダル -->
+    <div id="modal" class="hidden">
+        <div class="modal-content">
+            <button id="close-modal">&times;</button>
+            <h2 id="modal-name"></h2>
+            <div id="modal-details-container"></div>
+            <button id="show-next-detail">答えを見る</button>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

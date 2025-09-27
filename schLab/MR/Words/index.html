@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>語源で覚える英単語</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>語源で覚える英単語</h1>
+        <div class="slots-container">
+            <div class="slot-wrapper">
+                <div class="label-container">
+                    <label for="prefix-toggle">
+                        <input type="checkbox" id="prefix-toggle" checked> 語頭 (Prefix)
+                    </label>
+                    <span class="lock-icon" id="prefix-lock">🔓</span>
+                </div>
+                <div class="slot" id="prefix-slot"></div>
+                <p class="meaning" id="prefix-meaning">-</p>
+            </div>
+            <div class="slot-wrapper">
+                <div class="label-container">
+                    <label for="root-toggle">
+                        <input type="checkbox" id="root-toggle" checked> 語根 (Root)
+                    </label>
+                    <span class="lock-icon" id="root-lock">🔓</span>
+                </div>
+                <div class="slot" id="root-slot"></div>
+                <p class="meaning" id="root-meaning">-</p>
+            </div>
+            <div class="slot-wrapper">
+                <div class="label-container">
+                    <label for="suffix-toggle">
+                        <input type="checkbox" id="suffix-toggle" checked> 語尾 (Suffix)
+                    </label>
+                    <span class="lock-icon" id="suffix-lock">🔓</span>
+                </div>
+                <div class="slot" id="suffix-slot"></div>
+                <p class="meaning" id="suffix-meaning">-</p>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="etymology-btn">意味の変化を表示</button>
+            <button id="answer-btn">答えを表示</button>
+            <button id="shuffle-btn">シャッフル</button>
+        </div>
+        <div class="result-container">
+            <p id="etymology-display"></p>
+            <p id="answer-display"></p>
+            <p id="message-display" class="message"></p>
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
