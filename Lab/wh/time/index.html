@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>世界史 年表暗記</title>
+    <title>世界史の世界</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- ホーム画面 -->
     <div id="home-screen">
-        <h1>世界史 年表暗記</h1>
+        <h1>世界史の世界</h1>
         <div id="region-selector-container"></div>
-        <button id="generate-timeline-btn">年表を作成</button>
+        <button id="generate-timeline-btn">年表を生成</button>
     </div>
 
     <!-- 年表画面 -->
     <div id="timeline-screen" class="hidden">
         <div class="timeline-header">
-            <h2 id="timeline-title"></h2>
+            <h2 id="timeline-title" style="margin-left: 10px;"></h2>
             <div class="controls">
                 <button id="back-to-home" title="地域選択に戻る">￩</button>
                 <div class="zoom-controls">
@@ -38,7 +38,7 @@
             <div id="time-axis-container">
                 <div id="time-axis"></div>
             </div>
-            <div id="nation-numbers-container"></div>
+            <div id="nation-numbers-container" style="min-width: 12px;"></div>
             <div id="timeline-viewport">
                 <div id="timeline-container">
                     <div id="grid-lines"></div>
@@ -54,7 +54,7 @@
             <button id="close-modal">&times;</button>
             <h2 id="modal-name"></h2>
             <div id="modal-details-container"></div>
-            <button id="show-next-detail">答えを見る</button>
+            <button id="show-next-detail">答え</button>
         </div>
     </div>
 
