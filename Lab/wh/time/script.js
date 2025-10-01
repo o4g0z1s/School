@@ -229,21 +229,24 @@ document.addEventListener('DOMContentLoaded', () => {
         color = nation.c || regions[nation.r[0]].color;
         modal.style.setProperty('--modal-accent-color', color);
         modalName.textContent = data.n;
-    
-        if (!data.hp) {
+
+        if (data.p) {
             let periodLabel = dataLabels.period || "期間";
             if (type === 'ruler') { periodLabel = dataLabels.reign || "統治期間"; }
             else if (type === 'peo') { periodLabel = dataLabels.lifespan || "生没年"; }
-            const periodValue = data.p || `${formatYear(data.s)} ~ ${formatYear(data.e)}`;
-            createDetailItem(periodLabel, periodValue, true);
+            createDetailItem(periodLabel, data.p);
         }
-    
+
         const ignoreKeys = new Set(['n', 'r', 's', 'e', 'c', 'peo', 'ev', 'sys', 'rul', 'p', 'hp', 'fam', 'tho']);
-        for (const key in data) {
-            if (!ignoreKeys.has(key)) {
-                createDetailItem(dataLabels[key] || key, data[key], false);
-            }
+    for (const key in data) {
+        if (ignoreKeys.has(key)) continue;
+
+        if (key === 'img') {
+            createImageItem(dataLabels[key] || "勢力範囲", data[key]);
+        } else {
+            createDetailItem(dataLabels[key] || key, data[key]);
         }
+    }
     
         const detailValues = modalDetailsContainer.querySelectorAll('.reveal-part');
         detailValues.forEach(val => val.classList.add('hidden-value'));
@@ -275,6 +278,30 @@ document.addEventListener('DOMContentLoaded', () => {
         modalDetailsContainer.appendChild(item);
         return item;
     }
+
+    function createImageItem(label, imageUrl) {
+        const item = document.createElement('div');
+        item.className = 'detail-item';
+        const strong = document.createElement('strong');
+        strong.textContent = `${label}:`;
+        const valueContainer = document.createElement('div');
+        valueContainer.className = 'detail-value';
+    
+        const part = document.createElement('div');
+        part.className = 'reveal-part';
+    
+        const img = document.createElement('img');
+        img.className = 'modal-image';
+        img.src = imageUrl;
+    
+        part.appendChild(img);
+        valueContainer.appendChild(part);
+    
+        item.appendChild(strong);
+        item.appendChild(valueContainer);
+        modalDetailsContainer.appendChild(item);
+        return item;
+    }
     
     function showNextDetail() {
         const nextHidden = modalDetailsContainer.querySelector('.reveal-part.hidden-value');
@@ -286,8 +313,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function formatYear(year) { return year < 0 ? `BC ${-year} 年` : `${year} 年`; }
-    
     function setupEventListeners() {
         generateTimelineBtn.addEventListener('click', generateTimeline);
         document.getElementById('back-to-home').addEventListener('click', goHome);
