@@ -87,6 +87,7 @@ h2 { font-size: 1.2em; text-align: left; margin: 0; white-space: nowrap; overflo
     height: auto;
     margin-top: 10px;
     border-radius: 10px;
+    filter: brightness(0.75) saturate(0.8);
 }
 #modal-name { color: var(--modal-accent-color); font-size: 1.5em; min-height: 1.5em; margin: 5px 0 20px 0; }
 .detail-item strong { color: var(--modal-accent-color); flex-shrink: 0; }
