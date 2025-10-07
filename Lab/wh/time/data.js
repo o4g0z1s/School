@@ -200,7 +200,7 @@ const nations = [
         img: "https://www.y-history.net/map/0101/assiria_map.png",
         desc: "北メソポタミアに興り、オリエントを初めて統一",
         peak: "アッシュルバニパル王",
-        pol: "王が全国を州に分けて総督を派遣し、駅伝制を設ける",
+        pol: "駅伝制",
         fall: "専制君主による圧政・重税により諸民族の反抗をまねき、滅亡"
     },
     {
