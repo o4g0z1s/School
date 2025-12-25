@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const timelineLayoutContainer = document.getElementById('timeline-layout-container');
     const timeAxisContainer = document.getElementById('time-axis-container');
     const nationsWrapper = document.getElementById('nations-wrapper');
-    const nationNumbersContainer = document.getElementById('nation-numbers-container');
     const timeAxis = document.getElementById('time-axis');
     const zoomLevelSpan = document.getElementById('zoom-level');
     const timelineViewport = document.getElementById('timeline-viewport');
@@ -30,10 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let isNameVisible = false;
     let isCompactMode = false;
 
-    const subModes = ['none', 'peo', 'ev', 'sys', 'tho'];
+    const subModes = ['none', 'peo', 'ev', 'sys', 'cul'];
     const subModeLabels = {
         none: '国家', peo: '人物',
-        ev: '戦乱', sys: '制度', tho: '思想'
+        ev: '事件', sys: '制度', cul: '文化'
     };
 
     function init() { createRegionButtons(); setupEventListeners(); }
@@ -94,15 +93,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    function buildTimeline(isInitialBuild = false) {
+    function buildTimeline() {
         nationsWrapper.innerHTML = ''; gridLinesContainer.innerHTML = '';
-        if (isInitialBuild) {
-            nationNumbersContainer.innerHTML = '';
-            currentFilteredNations = nations.filter(nation => nation.r && nation.r.some(reg => currentRegionKeys.includes(reg))).sort((a, b) => a.s - b.s);
-        }
+        currentFilteredNations = nations.filter(nation => nation.r && nation.r.some(reg => currentRegionKeys.includes(reg))).sort((a, b) => a.s - b.s);
         const PADDING_Y = 10; const ROW_HEIGHT = 40;
         if (currentFilteredNations.length === 0) {
-            nationNumbersContainer.innerHTML = '<div style="padding: 20px;">データがありません</div>';
+            nationsWrapper.innerHTML = '<div style="padding: 20px; text-align: center;">データがありません</div>';
             minYear = -50; maxYear = 50; updateTimelineZoom(); return;
         }
         minYear = Math.min(...currentFilteredNations.map(n => n.s)) - 50; maxYear = Math.max(...currentFilteredNations.map(n => n.e)) + 50;
@@ -119,16 +115,11 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             totalLanes = lanes.length;
         } else {
-            if (isInitialBuild) nationNumbersContainer.innerHTML = '';
             currentFilteredNations.forEach((nation, index) => {
                 const topPos = PADDING_Y + index * ROW_HEIGHT;
                 renderNation(nation, topPos);
-                if (isInitialBuild) {
-                    const numberDiv = document.createElement('div'); numberDiv.className = 'nation-number'; numberDiv.textContent = index + 1; nationNumbersContainer.appendChild(numberDiv);
-                }
             });
             totalLanes = currentFilteredNations.length;
-            nationNumbersContainer.style.padding = `${PADDING_Y}px 10px`;
         }
         
         const contentHeight = (totalLanes > 0) ? (PADDING_Y * 2) + (totalLanes * ROW_HEIGHT) - 10 : PADDING_Y * 2;
@@ -170,24 +161,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     function createNationBand(data, top, color) { const band = document.createElement('div'); band.className = 'nation-band'; band.style.top = `${top}px`; band.style.backgroundColor = color; band.dataset.start = data.s; band.dataset.end = data.e; band.addEventListener('click', () => openModal(data, 'nation')); nationsWrapper.appendChild(band); return band; }
-    function createRulerBand(data, start, end, top, color, isFamous, nationContext) { const band = document.createElement('div'); band.className = 'nation-band'; band.style.backgroundColor = color; band.dataset.start = start; band.dataset.end = end; if (end - start <= 1) { band.classList.add('point-event'); band.style.top = `${top + (30 - 10) / 2}px`; } else { band.style.top = `${top}px`; } if (isFamous) { band.classList.add('famous'); band.addEventListener('click', () => openModal({ data, nation: nationContext }, 'ruler')); } else { band.addEventListener('click', () => openModal(nationContext, 'nation')); } nationsWrapper.appendChild(band); }
+    function createRulerBand(data, start, end, top, color, isFamous, nationContext) {
+        const band = document.createElement('div'); band.className = 'nation-band';
+        band.style.backgroundColor = color; band.dataset.start = start; band.dataset.end = end;
+        band.style.top = `${top}px`;
+        if (isFamous) {
+            band.classList.add('famous'); band.addEventListener('click', () => openModal({ data, nation: nationContext }, 'ruler'));
+        } else {
+            band.addEventListener('click', () => openModal(nationContext, 'nation'));
+        }
+        nationsWrapper.appendChild(band);
+    }
     function createSubBand(data, top, height, color, nationContext, type) {
         const subBand = document.createElement('div'); subBand.className = 'sub-band';
         subBand.style.setProperty('--sub-band-color', color);
         subBand.dataset.start = data.s; subBand.dataset.end = data.e;
-        if (data.e - data.s <= 1) {
-            subBand.classList.add('point-event'); const pointSize = 8;
-            subBand.style.top = `${top + (height - pointSize) / 2}px`;
-        } else {
-            subBand.style.top = `${top}px`; subBand.style.height = `${height}px`;
-        }
+        subBand.dataset.baseTop = top; subBand.dataset.baseHeight = height;
         subBand.addEventListener('click', () => openModal({ data, nation: nationContext }, type));
         nationsWrapper.appendChild(subBand);
     }
     function createNameLabel(nation, top) {
         const label = document.createElement('div'); label.className = 'nation-name-label'; label.textContent = nation.n; label.style.top = `${top}px`;
         label.dataset.start = nation.s; label.dataset.end = nation.e;
-        document.body.appendChild(label); label.dataset.textWidth = label.scrollWidth; document.body.removeChild(label);
+        document.body.appendChild(label);
+        label.dataset.textWidth = label.scrollWidth;
+        document.body.removeChild(label);
         const labelWidth = (parseFloat(label.dataset.end) - parseFloat(label.dataset.start)) * currentZoom;
         const textWidth = parseFloat(label.dataset.textWidth) || 0;
         if (isNameVisible && (!isCompactMode || labelWidth > textWidth)) {
@@ -201,19 +199,38 @@ document.addEventListener('DOMContentLoaded', () => {
         const containerWidth = totalDuration * currentZoom;
         nationsWrapper.parentElement.style.width = `${containerWidth}px`;
         timeAxis.style.width = `${containerWidth}px`;
-        nationsWrapper.querySelectorAll('.nation-band, .sub-band, .nation-name-label').forEach(el => {
+        nationsWrapper.querySelectorAll('.nation-band, .nation-name-label').forEach(el => {
             const start = (parseFloat(el.dataset.start) - minYear) * currentZoom;
+            const width = (parseFloat(el.dataset.end) - parseFloat(el.dataset.start)) * currentZoom;
             el.style.transform = `translateX(${start}px)`;
-            if (!el.classList.contains('point-event') && !el.classList.contains('nation-name-label')) {
-                const width = (parseFloat(el.dataset.end) - parseFloat(el.dataset.start)) * currentZoom;
-                el.style.width = `${width - 1}px`;
-            } else if (el.classList.contains('nation-name-label')) {
-                const width = (parseFloat(el.dataset.end) - parseFloat(el.dataset.start)) * currentZoom;
+            if (el.classList.contains('nation-name-label')) {
                 el.style.width = `${width}px`;
                 if (isCompactMode) {
                     const textWidth = parseFloat(el.dataset.textWidth) || 0;
                     el.classList.toggle('show-name', isNameVisible && width > textWidth);
                 }
+            } else {
+                el.style.width = `${width - 1}px`;
+            }
+        });
+        nationsWrapper.querySelectorAll('.sub-band').forEach(el => {
+            const start = (parseFloat(el.dataset.start) - minYear) * currentZoom;
+            const width = (parseFloat(el.dataset.end) - parseFloat(el.dataset.start)) * currentZoom;
+            el.style.transform = `translateX(${start}px)`;
+            const MIN_BAND_WIDTH = 10;
+            const isPointByDuration = parseFloat(el.dataset.end) - parseFloat(el.dataset.start) <= 1;
+            if (isPointByDuration || width < MIN_BAND_WIDTH) {
+                const baseTop = parseFloat(el.dataset.baseTop);
+                const baseHeight = parseFloat(el.dataset.baseHeight);
+                const pointSize = 10;
+                el.classList.add('point-event');
+                el.style.top = `${baseTop + (baseHeight - pointSize) / 2}px`;
+                el.style.height = ''; el.style.width = '';
+            } else {
+                el.classList.remove('point-event');
+                el.style.top = el.dataset.baseTop + 'px';
+                el.style.height = el.dataset.baseHeight + 'px';
+                el.style.width = `${width - 1}px`;
             }
         });
         drawTimeAxis();
@@ -221,7 +238,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function drawTimeAxis() {
         timeAxis.innerHTML = ''; gridLinesContainer.innerHTML = ''; let step; if (currentZoom > 10) step = 5; else if (currentZoom > 5) step = 10; else if (currentZoom > 2) step = 25; else if (currentZoom > 0.8) step = 50; else if (currentZoom > 0.4) step = 100; else if (currentZoom > 0.2) step = 200; else if (currentZoom > 0.1) step = 500; else step = 1000; const startYear = Math.floor(minYear / step) * step; for (let year = startYear; year <= maxYear; year += step) { if (year < minYear || year > maxYear) continue; const position = (year - minYear) * currentZoom; const label = document.createElement('div'); label.className = 'time-label'; label.textContent = year; label.style.transform = `translateX(${position}px) translateX(-50%)`; timeAxis.appendChild(label); const tick = document.createElement('div'); tick.className = 'time-tick'; tick.style.transform = `translateX(${position}px)`; timeAxis.appendChild(tick); const gridLine = document.createElement('div'); gridLine.className = 'grid-line'; if (year % 100 === 0) { gridLine.classList.add('major'); if (year === 0) gridLine.style.backgroundColor = 'var(--accent-color)'; } gridLine.style.transform = `translateX(${position}px)`; gridLinesContainer.appendChild(gridLine); }
     }
-
     function openModal(payload, type) {
         let data, nation, color;
         modalDetailsContainer.innerHTML = '';
@@ -229,90 +245,42 @@ document.addEventListener('DOMContentLoaded', () => {
         color = nation.c || regions[nation.r[0]].color;
         modal.style.setProperty('--modal-accent-color', color);
         modalName.textContent = data.n;
-
         if (data.p) {
             let periodLabel = dataLabels.period || "期間";
             if (type === 'ruler') { periodLabel = dataLabels.reign || "統治期間"; }
             else if (type === 'peo') { periodLabel = dataLabels.lifespan || "生没年"; }
-            createDetailItem(periodLabel, data.p);
+            createDetailItem(periodLabel, data.p, true);
         }
-
-        const ignoreKeys = new Set(['n', 'r', 's', 'e', 'c', 'peo', 'ev', 'sys', 'rul', 'p', 'hp', 'fam', 'tho']);
-    for (const key in data) {
-        if (ignoreKeys.has(key)) continue;
-
-        if (key === 'img') {
-            createImageItem(dataLabels[key] || "勢力範囲", data[key]);
-        } else {
-            createDetailItem(dataLabels[key] || key, data[key]);
+        const ignoreKeys = new Set(['n', 'r', 's', 'e', 'c', 'peo', 'ev', 'sys', 'rul', 'cul', 'p', 'hp', 'fam']);
+        for (const key in data) {
+            if (ignoreKeys.has(key)) continue;
+            if (key === 'img') { createImageItem(dataLabels[key] || "勢力範囲", data[key]); }
+            else { createDetailItem(dataLabels[key] || key, data[key]); }
         }
-    }
-    
         const detailValues = modalDetailsContainer.querySelectorAll('.reveal-part');
         detailValues.forEach(val => val.classList.add('hidden-value'));
         showNextDetailBtn.disabled = detailValues.length === 0;
         modal.classList.remove('hidden');
     }
-    
     function createDetailItem(label, value, isSingle = false) {
-        const item = document.createElement('div');
-        item.className = 'detail-item';
-        
-        const strong = document.createElement('strong');
-        strong.textContent = `${label}:`;
-    
-        const valueContainer = document.createElement('div');
-        valueContainer.className = 'detail-value';
-    
+        const item = document.createElement('div'); item.className = 'detail-item';
+        const strong = document.createElement('strong'); strong.textContent = `${label}:`;
+        const valueContainer = document.createElement('div'); valueContainer.className = 'detail-value';
         const values = !isSingle && Array.isArray(value) ? value : [value];
-    
-        values.forEach(val => {
-            const part = document.createElement('div');
-            part.className = 'reveal-part';
-            part.textContent = val;
-            valueContainer.appendChild(part);
-        });
-    
-        item.appendChild(strong);
-        item.appendChild(valueContainer);
-        modalDetailsContainer.appendChild(item);
-        return item;
+        values.forEach(val => { const part = document.createElement('div'); part.className = 'reveal-part'; part.textContent = val; valueContainer.appendChild(part); });
+        item.appendChild(strong); item.appendChild(valueContainer); modalDetailsContainer.appendChild(item); return item;
     }
-
     function createImageItem(label, imageUrl) {
-        const item = document.createElement('div');
-        item.className = 'detail-item';
-        const strong = document.createElement('strong');
-        strong.textContent = `${label}:`;
-        const valueContainer = document.createElement('div');
-        valueContainer.className = 'detail-value';
-    
-        const part = document.createElement('div');
-        part.className = 'reveal-part';
-    
-        const img = document.createElement('img');
-        img.className = 'modal-image';
-        img.src = imageUrl;
-    
-        part.appendChild(img);
-        valueContainer.appendChild(part);
-    
-        item.appendChild(strong);
-        item.appendChild(valueContainer);
-        modalDetailsContainer.appendChild(item);
-        return item;
+        const item = document.createElement('div'); item.className = 'detail-item';
+        const strong = document.createElement('strong'); strong.textContent = `${label}:`;
+        const valueContainer = document.createElement('div'); valueContainer.className = 'detail-value';
+        const part = document.createElement('div'); part.className = 'reveal-part';
+        const img = document.createElement('img'); img.className = 'modal-image'; img.src = imageUrl;
+        part.appendChild(img); valueContainer.appendChild(part);
+        item.appendChild(strong); item.appendChild(valueContainer); modalDetailsContainer.appendChild(item); return item;
     }
+    function showNextDetail() { const nextHidden = modalDetailsContainer.querySelector('.reveal-part.hidden-value'); if (nextHidden) { nextHidden.classList.remove('hidden-value'); } if (!modalDetailsContainer.querySelector('.reveal-part.hidden-value')) { showNextDetailBtn.disabled = true; } }
     
-    function showNextDetail() {
-        const nextHidden = modalDetailsContainer.querySelector('.reveal-part.hidden-value');
-        if (nextHidden) {
-            nextHidden.classList.remove('hidden-value');
-        }
-        if (!modalDetailsContainer.querySelector('.reveal-part.hidden-value')) {
-            showNextDetailBtn.disabled = true;
-        }
-    }
-
     function setupEventListeners() {
         generateTimelineBtn.addEventListener('click', generateTimeline);
         document.getElementById('back-to-home').addEventListener('click', goHome);
@@ -323,10 +291,8 @@ document.addEventListener('DOMContentLoaded', () => {
         toggleNamesBtn.addEventListener('click', (e) => {
             isNameVisible = !isNameVisible;
             e.target.classList.toggle('active', isNameVisible);
-            e.target.textContent = isNameVisible ? '国名' : '国名';
             if (!isCompactMode) { nationsWrapper.querySelectorAll('.nation-name-label').forEach(label => { label.classList.toggle('show-name', isNameVisible); }); } else { updateTimelineZoom(); }
         });
-        
         toggleRulersBtn.addEventListener('click', (e) => {
             isRulerMode = !isRulerMode;
             if (isRulerMode) { currentSubMode = 'none'; subModeButton.textContent = subModeLabels.none; subModeButton.classList.remove('active'); }
@@ -335,7 +301,6 @@ document.addEventListener('DOMContentLoaded', () => {
             buildTimeline(false);
             requestAnimationFrame(() => { timelineViewport.scrollLeft = scrollLeft; timelineViewport.scrollTop = scrollTop; });
         });
-        
         subModeButton.addEventListener('click', (e) => {
             const currentIndex = subModes.indexOf(currentSubMode);
             const nextIndex = (currentIndex + 1) % subModes.length;
@@ -347,30 +312,26 @@ document.addEventListener('DOMContentLoaded', () => {
             buildTimeline(false);
             requestAnimationFrame(() => { timelineViewport.scrollLeft = scrollLeft; timelineViewport.scrollTop = scrollTop; });
         });
-        
         toggleCompactBtn.addEventListener('click', (e) => {
             isCompactMode = !isCompactMode;
-            timelineScreen.classList.toggle('compact-active', isCompactMode);
             e.target.classList.toggle('active', isCompactMode);
             if (isCompactMode) {
-                currentSubMode = 'none';
-                subModeButton.textContent = subModeLabels.none;
-                subModeButton.classList.remove('active');
-                subModeButton.disabled = true;
+                isRulerMode = false; toggleRulersBtn.classList.remove('active'); toggleRulersBtn.disabled = true;
+                currentSubMode = 'none'; subModeButton.textContent = subModeLabels.none; subModeButton.classList.remove('active'); subModeButton.disabled = true;
             } else {
-                subModeButton.disabled = false;
+                toggleRulersBtn.disabled = false; subModeButton.disabled = false;
             }
             const scrollLeft = timelineViewport.scrollLeft; const scrollTop = timelineViewport.scrollTop;
             buildTimeline(true);
             requestAnimationFrame(() => { timelineViewport.scrollLeft = scrollLeft; timelineViewport.scrollTop = scrollTop; });
         });
-
         document.getElementById('close-modal').addEventListener('click', () => modal.classList.add('hidden'));
         modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.add('hidden'); });
         showNextDetailBtn.addEventListener('click', showNextDetail);
-        let isSyncing = false;
-        timelineViewport.addEventListener('scroll', () => { if (isSyncing) return; isSyncing = true; timeAxisContainer.scrollLeft = timelineViewport.scrollLeft; nationNumbersContainer.scrollTop = timelineViewport.scrollTop; requestAnimationFrame(() => { isSyncing = false; }); });
-        nationNumbersContainer.addEventListener('scroll', () => { if (isSyncing) return; isSyncing = true; timelineViewport.scrollTop = nationNumbersContainer.scrollTop; requestAnimationFrame(() => { isSyncing = false; }); });
+        
+        timelineViewport.addEventListener('scroll', () => {
+            timeAxisContainer.scrollLeft = timelineViewport.scrollLeft;
+        });
     }
     
     init();

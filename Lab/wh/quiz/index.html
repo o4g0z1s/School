@@ -11,7 +11,7 @@
     
       gtag('config', 'G-E675FYQ3DK');
     </script>
-    <title>世界史搾取</title>
+    <title>丗界史搾取</title>
     <!-- Bootstrap CSS (CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -65,6 +65,9 @@
             inline-size: 1rem;
             block-size: 1rem;
         }
+        
+        .form-check-input { background-color: #333; border-color: #555; }
+        .form-check-input:checked { background-color: var(--primary-accent-color); border-color: var(--primary-accent-color); }
 
         #flashMessageContainer { display: none; }
 
@@ -84,13 +87,24 @@
         .correct-button:hover { background-color: var(--primary-accent-hover); }
         .incorrect-button { background-color: #6c757d; color: #ffffff; }
         .incorrect-button:hover { background-color: #5a6268; }
+        
         .back-button {
-            background-color: #1E1E1E;
+            background-color: transparent;
             border: none;
-            color: #666;
-            font-size: 2rem;
             margin-bottom: 10px;
+            padding: 5px;
+            cursor: pointer;
         }
+        .back-button svg {
+            width: 2rem;
+            height: 2rem;
+            fill: #666;
+            transition: fill 0.2s ease;
+        }
+        .back-button:hover svg {
+            fill: #999;
+        }
+
 
         /* --- Selection Area --- */
         .controls-area { display: grid; grid-template-columns: 1fr; gap: 2rem; }
@@ -114,7 +128,7 @@
         .advanced-unit { display: none; } /* Initially hide advanced units */
 
 
-        .bottom-controls { display: flex; justify-content: center; gap: 1rem; margin-top: 2.5rem; margin-bottom: 1.5rem; grid-column: 1 / -1; }
+        .bottom-controls { display: flex; justify-content: center; gap: 1rem; margin-top: 3rem; margin-bottom: 1.5rem; grid-column: 1 / -1; }
         
         /* --- Card Area --- */
         .card-area { text-align: center; }
@@ -123,7 +137,7 @@
         #questionNumberDisplay { position: absolute; top: -25px; right: 0; font-size: 0.9rem; color: var(--secondary-text-color); }
 
         .card { background-color: var(--bg-color); border: 1px solid var(--border-color); border-radius: 10px; padding: 2rem; padding-left: 0.5rem; padding-right: 0.5rem; min-height: 250px; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-bottom: 1.5rem; }
-        .card-buttons { display: flex; justify-content: center; gap: 1rem; margin-bottom: 1rem; }
+        .card-buttons { display: flex; justify-content: center; align-items: center; gap: 1rem; margin-bottom: 1rem; }
         
         /* --- Result Area --- */
         #quizResultContent { background-color: var(--bg-color); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-color); margin-bottom: 1.5rem; }
@@ -149,20 +163,19 @@
 
         /* --- Utility --- */
         .hidden { display: none !important; }
+        .alert { background-color: #121212; border: none; color: #D70; text-align: center; }
     </style>
 </head>
 <body>
     <div class="container">
         <!-- Header -->
-        <!-- Flash Message Placeholder -->
-        <div id="flashMessageContainer"></div>
 
         <!-- Selection Area -->
         <section class="selection-area">
-            <h2>世界史搾取</h2>
+            <h2>丗界史搾取</h2>
             <div class="controls-area">
                 <div class="question-count-selection">
-                    <h3>出題数を選択</h3>
+                    <h3>出題数</h3>
                     <div class="radio-group">
                         <label><input type="radio" name="questionCount" value="10" checked> 10問</label>
                         <label><input type="radio" name="questionCount" value="20"> 20問</label>
@@ -172,7 +185,7 @@
                     </div>
                 </div>
                 <div class="range-selection-area">
-                    <h3>出題範囲を選択</h3>
+                    <h3>出題範囲</h3>
                     <div class="chapters-container" id="chaptersContainer">
                         <!-- Chapters will be dynamically inserted here -->
                     </div>
@@ -180,14 +193,16 @@
             </div>
             <div class="bottom-controls">
                 <button id="startButton" class="primary-button">学習開始</button>
-                <button id="resetSelectionButton" class="secondary-button">選択リセット</button>
+                <button id="resetSelectionButton" class="secondary-button">リセット</button>
             </div>
         </section>
 
         <!-- Card Area -->
         <section class="card-area hidden">
             <div style="text-align: left;">
-                <button id="backToSelectionFromCardButton" class="back-button">￩</button>
+                <button id="backToSelectionFromCardButton" class="back-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path></svg>
+                </button>
             </div>
             <div class="progress-bar-container">
                 <div id="progressBar"></div>
@@ -198,11 +213,14 @@
                 <p id="answer" class="hidden"></p>
             </div>
             <div class="card-buttons">
-                <button id="showAnswerButton" class="primary-button">答えを見る</button>
-                <button id="correctButton" class="correct-button hidden">正解</button>
+                <button id="prevQuestionButton" class="secondary-button hidden">戻　る</button>
+                <button id="showAnswerButton" class="primary-button">答　え</button>
+                <button id="correctButton" class="correct-button hidden">正　解</button>
                 <button id="incorrectButton" class="incorrect-button hidden">不正解</button>
             </div>
         </section>
+        <!-- Flash Message Placeholder -->
+        <div id="flashMessageContainer"></div>
 
         <!-- Result Area -->
         <section id="quizResult" class="quiz-result-area hidden">
@@ -211,14 +229,14 @@
                 <p>出題数: <span id="totalQuestionsCount"></span>問</p>
                 <p>正解数: <span id="correctCount"></span>問</p>
                 <p>不正解数: <span id="incorrectCount"></span>問</p>
-                <p>正答率: <span id="accuracyRate"></span>%</p>
+                <p style="margin-bottom: 0;">正答率: <span id="accuracyRate"></span>%</p>
             </div>
             <div id="incorrectWordList" class="incorrect-word-list mt-4 hidden">
-                <h3>今回の不正解問題</h3>
+                <h3>不正解問題</h3>
                 <ul id="incorrectWordsContainer" class="p-0"></ul>
             </div>
             <div class="bottom-controls">
-                <button id="backToSelectionButton" class="secondary-button">戻る</button>
+                <button id="backToSelectionButton" class="secondary-button">設定画面</button>
                 <button id="restartQuizButton" class="primary-button">もう一度</button>
             </div>
         </section>
@@ -227,7 +245,6 @@
     <script src="data.js">// --- Quiz Data ---</script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-
             // Global variables
             let currentQuizData = []; let lastQuizSettings = {}; let incorrectWordsForThisQuiz = [];
             let currentQuestionIndex = 0; let correctCount = 0; let incorrectCount = 0; let totalQuestions = 0;
@@ -245,6 +262,7 @@
             const showAnswerButton = document.getElementById('showAnswerButton');
             const correctButton = document.getElementById('correctButton');
             const incorrectButton = document.getElementById('incorrectButton');
+            const prevQuestionButton = document.getElementById('prevQuestionButton');
             const progressBar = document.getElementById('progressBar');
             const questionNumberDisplay = document.getElementById('questionNumberDisplay');
             const totalQuestionsCountSpan = document.getElementById('totalQuestionsCount');
@@ -268,7 +286,10 @@
             function createChapterList(data) {
                 const chapters = data.reduce((acc, item) => {
                     const { chapter, number, category } = item;
-                    if (!acc[chapter]) { acc[chapter] = { name: `第${chapter}章`, units: {} }; }
+                    if (!acc[chapter]) {
+                        const chapterName = (chapter === 'S') ? '歴史総合' : `第${chapter}章`;
+                        acc[chapter] = { name: chapterName, units: {} };
+                    }
                     if (!acc[chapter].units[number]) { acc[chapter].units[number] = category; }
                     return acc;
                 }, {});
@@ -314,6 +335,7 @@
             showAnswerButton.addEventListener('click', showAnswer);
             correctButton.addEventListener('click', () => handleAnswer(true));
             incorrectButton.addEventListener('click', () => handleAnswer(false));
+            prevQuestionButton.addEventListener('click', showPrevQuestion);
             backToSelectionButton.addEventListener('click', backToSelectionScreen);
             restartQuizButton.addEventListener('click', restartQuiz);
             backToSelectionFromCardButton.addEventListener('click', backToSelectionScreen);
@@ -347,10 +369,9 @@
             function startQuiz() {
                 const selectedQuestions = getSelectedQuestions();
                 const questionCountValue = document.querySelector('input[name="questionCount"]:checked').value;
-                if (selectedQuestions.length === 0) { flashMessage('出題範囲を1つ以上選択してください。', 'warning'); return; }
+                if (selectedQuestions.length === 0) { flashMessage('出題範囲を選択してください。', 'warning'); return; }
                 
                 lastQuizSettings = { questionCount: questionCountValue, selectedUnits: getSelectedUnitIdentifiers() };
-                //saveSelectionState();
                 let quizQuestions = shuffleArray(selectedQuestions);
                 if (questionCountValue !== 'all') { quizQuestions = quizQuestions.slice(0, parseInt(questionCountValue)); }
                 
@@ -364,13 +385,27 @@
 
             function showNextQuestion() {
                 if (currentQuestionIndex >= totalQuestions) { showQuizResult(); return; }
+                
+                // Show/hide previous button
+                prevQuestionButton.classList.toggle('hidden', currentQuestionIndex === 0);
+
                 answerElement.classList.add('hidden'); showAnswerButton.classList.remove('hidden');
                 correctButton.classList.add('hidden'); incorrectButton.classList.add('hidden');
                 const currentWord = currentQuizData[currentQuestionIndex];
                 questionElement.textContent = currentWord.question; answerElement.textContent = currentWord.answer;
+                updateProgressBar();
+            }
+
+            function showPrevQuestion() {
+                if (currentQuestionIndex > 0) {
+                    currentQuestionIndex--;
+                    // Note: This simple implementation doesn't undo the score.
+                    showNextQuestion();
+                }
             }
             
             function showAnswer() {
+                prevQuestionButton.classList.add('hidden');
                 answerElement.classList.remove('hidden'); showAnswerButton.classList.add('hidden');
                 correctButton.classList.remove('hidden'); incorrectButton.classList.remove('hidden');
             }
@@ -378,7 +413,7 @@
             function handleAnswer(isCorrect) {
                 if (isCorrect) { correctCount++; } 
                 else { incorrectCount++; incorrectWordsForThisQuiz.push(currentQuizData[currentQuestionIndex]); }
-                currentQuestionIndex++; updateProgressBar(); showNextQuestion();
+                currentQuestionIndex++; showNextQuestion();
             }
 
             function showQuizResult() {
@@ -407,19 +442,10 @@
                         quizQuestions = quizQuestions.slice(0, parseInt(questionCount));
                     }
                 }
-                
-                currentQuizData = quizQuestions;
-                currentQuestionIndex = 0;
-                correctCount = 0;
-                incorrectCount = 0;
-                totalQuestions = currentQuizData.length;
-                incorrectWordsForThisQuiz = [];
-                
-                selectionArea.classList.add('hidden');
-                quizResultArea.classList.add('hidden');
-                cardArea.classList.remove('hidden');
-                updateProgressBar();
-                showNextQuestion();
+                currentQuizData = quizQuestions; currentQuestionIndex = 0; correctCount = 0; incorrectCount = 0;
+                totalQuestions = currentQuizData.length; incorrectWordsForThisQuiz = [];
+                selectionArea.classList.add('hidden'); quizResultArea.classList.add('hidden'); cardArea.classList.remove('hidden');
+                updateProgressBar(); showNextQuestion();
             }
 
             function backToSelectionScreen() {
@@ -429,11 +455,13 @@
             // --- Helper Functions ---
             function flashMessage(message, type = 'info') {
                 const container = document.getElementById('flashMessageContainer');
+                container.style.display = 'block';
                 const alertDiv = document.createElement('div');
                 alertDiv.className = `alert alert-${type} alert-dismissible fade show m-0 mb-3`;
                 alertDiv.innerHTML = `${message}<button type="button" class="btn-close" data-bs-dismiss="alert"></button>`;
+                container.innerHTML = '';
                 container.appendChild(alertDiv);
-                setTimeout(() => alertDiv.remove(), 5000);
+                setTimeout(() => { container.style.display = 'none'; }, 2000);
             }
 
             function toggleAdvancedUnits() {
@@ -445,27 +473,24 @@
                         unit.querySelector('input[type="checkbox"]').checked = false;
                     }
                 });
-                // After toggling, update all "Select All" buttons
                 document.querySelectorAll('.select-all-chapter-btn').forEach(updateSelectAllButtonState);
             }
 
             function shuffleArray(array) { const newArr = [...array]; for (let i = newArr.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [newArr[i], newArr[j]] = [newArr[j], newArr[i]]; } return newArr; }
             function getSelectedUnitIdentifiers() { return Array.from(document.querySelectorAll('.unit-item input:checked')).map(cb => `${cb.dataset.chapter}-${cb.value}`); }
             function getSelectedQuestions() { const selectedUnitIds = new Set(getSelectedUnitIdentifiers()); return word_data.filter(word => selectedUnitIds.has(`${word.chapter}-${word.number}`)); }
-            function updateProgressBar() { const progress = totalQuestions > 0 ? (currentQuestionIndex / totalQuestions) * 100 : 0; progressBar.style.width = `${progress}%`; questionNumberDisplay.textContent = `${currentQuestionIndex} / ${totalQuestions}`; }
+            function updateProgressBar() { const progress = totalQuestions > 0 ? (currentQuestionIndex / totalQuestions) * 100 : 0; progressBar.style.width = `${progress}%`; questionNumberDisplay.textContent = `${currentQuestionIndex + 1} / ${totalQuestions}`; }
             function resetSelections() {
                 document.querySelectorAll('.unit-item input:checked').forEach(cb => cb.checked = false);
                 document.querySelector('input[name="questionCount"][value="10"]').checked = true;
                 showAdvancedToggle.checked = false;
                 toggleAdvancedUnits();
-                //localStorage.removeItem('quiz_selection_state');
                 initializeSelectAllButtons();
             }
             
             function updateSelectAllButtonState(button) {
                 const chapterNum = button.dataset.chapter;
                 const checkboxes = document.querySelectorAll(`.unit-item input[data-chapter="${chapterNum}"]`);
-                // Filter for only visible checkboxes
                 const visibleCheckboxes = Array.from(checkboxes).filter(cb => cb.closest('.unit-item').style.display !== 'none');
                 
                 const allChecked = visibleCheckboxes.length > 0 && visibleCheckboxes.every(cb => cb.checked);
@@ -474,11 +499,6 @@
             }
 
             function initializeSelectAllButtons() { document.querySelectorAll('.select-all-chapter-btn').forEach(updateSelectAllButtonState); }
-            //function saveSelectionState() { const state = { questionCount: document.querySelector('input[name="questionCount"]:checked').value, selectedUnits: getSelectedUnitIdentifiers(), showAdvanced: showAdvancedToggle.checked }; localStorage.setItem('quiz_selection_state', JSON.stringify(state)); }
-            
-            //function loadSelectionState() {
-                // This function is disabled to meet the requirement of starting with a clean slate.
-            //}
         });
     </script>
 </body>

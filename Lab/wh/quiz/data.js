@@ -1,1 +1,16312 @@
-const word_data = [{"answer":"猿人","category":"自然環境と人類の進化","chapter":"1","enabled":true,"number":"0","question":"化石人類のうち、直立二足歩行をしていたと推定される、最古の人類を何と呼ぶか。"},{"answer":"サヘラントロプス","category":"自然環境と人類の進化","chapter":"1","enabled":true,"number":"0","question":"中央アフリカのチャドで発見された現在最古と考えられる700万～600万年前の化石人類を何と呼ぶか。"},{"answer":"アウストラロピテクス","category":"自然環境と人類の進化","chapter":"1","enabled":true,"number":"0","question":"南・東アフリカで発見された、約420万年前に出現した「南のサル」を意味する化石人類を何と呼ぶか。"},{"answer":"礫石器","category":"自然環境と人類の進化","chapter":"1","enabled":true,"number":"0","question":"猿人が用いたもっとも原始的な打製石器を何と呼ぶか。"},{"answer":"原人","category":"自然環境と人類の進化","chapter":"1","enabled":true,"number":"0","question":"約240万年前に出現した、初歩的な打製石器やハンドアックスを用いたとされる化石人類を何と呼ぶか。"},{"answer":"ジャワ原人","category":"自然環境と人類の進化","chapter":"1","enabled":true,"number":"0","question":"19世紀末、ジャワ島のトリニールで発見された原人の化石を何と呼ぶか。"},{"answer":"北京原人","category":"自然環境と人類の進化","chapter":"1","enabled":true,"number":"0","question":"1920〜30年代に中国の周口店で発見され、火の使用が確認されている原人の化石を何と呼ぶか。"},{"answer":"旧人","category":"自然環境と人類の進化","chapter":"1","enabled":true,"number":"0","question":"約60万年前に出現したと推定され、剥片石器を使い、旧大陸各地から出土している化石人類を何と呼ぶか。"},{"answer":"ネアンデルタール人","category":"自然環境と人類の進化","chapter":"1","enabled":true,"number":"0","question":"19世紀半ばにドイツのある渓谷で発見された、代表的な旧人の名称は何か。"},{"answer":"埋葬の習慣","category":"自然環境と人類の進化","chapter":"1","enabled":true,"number":"0","question":"旧人の発掘によって確認された、彼らの宗教的習慣は何か。"},{"answer":"新人","category":"自然環境と人類の進化","chapter":"1","enabled":true,"number":"0","question":"約20万年前にアフリカに出現し、５万年前頃から世界各地に広がった化石人類を何と総称するか。"},{"answer":"クロマニョン人","category":"自然環境と人類の進化","chapter":"1","enabled":true,"number":"0","question":"新人のうち、４万2000年ほど前に現れ、南西フランスで発見された現生人類の化石の名称は何か。"},{"answer":"アルタミラ","category":"自然環境と人類の進化","chapter":"1","enabled":true,"number":"0","question":"旧石器時代後期の洞穴絵画で知られる、1879年にスペイン北部で発見された遺跡の名称は何か。"},{"answer":"ラスコー","category":"自然環境と人類の進化","chapter":"1","enabled":true,"number":"0","question":"旧石器時代後期の洞穴絵画で知られる、1940年に南西フランスで発見された遺跡の名称は何か。"},{"answer":"周口店上洞人","category":"自然環境と人類の進化","chapter":"1","enabled":true,"number":"0","question":"中国の北京郊外で発見された、新人の名称は何か。"},{"answer":"骨角器","category":"自然環境と人類の進化","chapter":"1","enabled":true,"number":"0","question":"新人が出現した旧石器時代後期から、銛・槍・針などに使われはじめた道具は何か。"},{"answer":"細石器","category":"自然環境と人類の進化","chapter":"1","enabled":true,"number":"0","question":"新人が矢・ナイフ・鎌などの刃として使用した、小型の剥片石器を何と呼ぶか。"},{"answer":"更新世","category":"自然環境と人類の進化","chapter":"1","enabled":true,"number":"0","question":"新生代後期のうち、約260万年前から約１万1700年ほど前までの氷河時代を、地質学上では何と呼ぶか。"},{"answer":"完新世","category":"自然環境と人類の進化","chapter":"1","enabled":true,"number":"0","question":"新生代末期（約１万1700年ほど前）から現在までの、温暖化した後氷期を、地質学上では何と呼ぶか。"},{"answer":"語族","category":"自然環境と人類の進化","chapter":"1","enabled":true,"number":"0","question":"文法的類似性に基づいて分類される、共通の祖語をもつ言語の集まりを何というか。"},{"answer":"農耕・牧畜","category":"文明の誕生","chapter":"1","enabled":true,"number":"1","question":"前１万年頃から前4000年頃にかけて、世界各地で始まった食料生産方法は何と何か。"},{"answer":"新石器時代","category":"文明の誕生","chapter":"1","enabled":true,"number":"1","question":"約１万年前から人類は磨製石器を使用する時代に移行したが、この時代を何時代と呼ぶか。"},{"answer":"灌漑農業","category":"文明の誕生","chapter":"1","enabled":true,"number":"1","question":"村落から都市の成立に向かうころ、水を人工的に供給する農業が開始された。この農業を何と呼ぶか。"},{"answer":"都市国家","category":"文明の誕生","chapter":"1","enabled":true,"number":"1","question":"金属器時代、支配階級の居住する都市が周辺地域を支配する、最初の国家形態がうまれた。これを何と呼ぶか。"},{"answer":"文字","category":"文明の誕生","chapter":"1","enabled":true,"number":"1","question":"国家の成立とほぼ同じころ、人類は言語を記録するために、あるものを発明した。それは何か。"},{"answer":"生産経済","category":"文明の誕生","chapter":"1","enabled":true,"number":"1","question":"旧石器時代の獲得経済から、新石器時代になると何経済に移行したか。"},{"answer":"肥沃な三日月地帯","category":"文明の誕生","chapter":"1","enabled":true,"number":"1","question":"農耕文明が早くから成立したメソポタミアの地帯を何と呼ぶか。"},{"answer":"オリエント","category":"オリエント","chapter":"1","enabled":true,"number":"2","question":"ラテン語で「日の昇るところ」を意味し、古代文明が栄えた地域を指す言葉は何か。"},{"answer":"ティグリス川","category":"オリエント","chapter":"1","enabled":true,"number":"2","question":"メソポタミア文明を支えた二つの大河のうち、東側にある河川の名称は何か。"},{"answer":"シュメール人","category":"オリエント","chapter":"1","enabled":true,"number":"2","question":"言語系統は不詳だが、メソポタミア南部に最古の文明を築いた人びとの名称は何か。"},{"answer":"ウル、ウルク、ラガシュ、ウガリットなど","category":"オリエント","chapter":"1","enabled":true,"number":"2","question":"シュメール人が建設した都市国家を２つ答えよ。"},{"answer":"ジッグラト","category":"オリエント","chapter":"1","enabled":true,"number":"2","question":"古代メソポタミアの都市国家で建設された、煉瓦で造られ、基壇の上に神殿が建っていた聖塔を何と呼ぶか。"},{"answer":"楔形文字","category":"オリエント","chapter":"1","enabled":true,"number":"2","question":"シュメール人が粘土板に刻んだ文字は何か。"},{"answer":"アッカド人","category":"オリエント","chapter":"1","enabled":true,"number":"2","question":"シュメール人の都市国家を征服し、初の領域国家を建てたセム語系の人びとの名称は何か。"},{"answer":"サルゴン１世","category":"オリエント","chapter":"1","enabled":true,"number":"2","question":"前24世紀頃、メソポタミア最初の統一国家であるアッカド王国を建てた王は誰か。"},{"answer":"アムル人","category":"オリエント","chapter":"1","enabled":true,"number":"2","question":"メソポタミアに進出し、前19世紀初めにバビロン第１王朝を建てたセム語系遊牧民は何か。"},{"answer":"ハンムラビ法典","category":"オリエント","chapter":"1","enabled":true,"number":"2","question":"バビロン第１王朝６代王が作成させた、全282条からなる法典の名称は何か。"},{"answer":"目には目を、歯には歯を","category":"オリエント","chapter":"1","enabled":true,"number":"2","question":"ハンムラビ法典の復讐法的性格を端的に表す、有名な成句は何か。"},{"answer":"ヒッタイト人","category":"オリエント","chapter":"1","enabled":true,"number":"2","question":"小アジアに王国を建て、鉄製武器を使用して、バビロン第１王朝を滅ぼした印＝欧語系の民族は何か。"},{"answer":"ミタンニ王国","category":"オリエント","chapter":"1","enabled":true,"number":"2","question":"メソポタミア北部からシリアを制圧して栄えた、住民の多くをフルリ人が占めていた王国の名称は何か。"},{"answer":"太陰暦","category":"オリエント","chapter":"1","enabled":true,"number":"2","question":"シュメールに始まり、古代メソポタミアで広く用いられた、月の満ち欠けの周期を基準とする暦は何か。"},{"answer":"六十進法","category":"オリエント","chapter":"1","enabled":true,"number":"2","question":"シュメール人が発明した、天文学・角度・時間の単位となった記数法は何進法か。"},{"answer":"エジプトはナイルのたまもの","category":"エジプトの統一国家","chapter":"1","enabled":true,"number":"3","question":"古代ギリシアの歴史家ヘロドトスが著書『歴史』に書いた、古代エジプトの繁栄を表現したことばは何か。"},{"answer":"ファラオ","category":"エジプトの統一国家","chapter":"1","enabled":true,"number":"3","question":"「大きな家」を意味する、古代エジプトの王の称号を何と呼ぶか。"},{"answer":"メンフィス","category":"エジプトの統一国家","chapter":"1","enabled":true,"number":"3","question":"古王国時代のエジプトの首都はどこか。"},{"answer":"クフ王","category":"エジプトの統一国家","chapter":"1","enabled":true,"number":"3","question":"ギザに最大のピラミッドを建設させた、古王国第４王朝の王は誰か。"},{"answer":"ヒクソス","category":"エジプトの統一国家","chapter":"1","enabled":true,"number":"3","question":"中王国末期にシリア方面から流入し、その滅亡後に下エジプトを支配したアジア系民族を何と呼ぶか。"},{"answer":"テーベ","category":"エジプトの統一国家","chapter":"1","enabled":true,"number":"3","question":"中王国・新王国時代のエジプトの首都はどこか。"},{"answer":"アメン","category":"エジプトの統一国家","chapter":"1","enabled":true,"number":"3","question":"中王国・新王国時代のエジプトの首都の都市神として信仰されていた神は何か。"},{"answer":"アメンヘテプ４世","category":"エジプトの統一国家","chapter":"1","enabled":true,"number":"3","question":"唯一神アテンの信仰を強制する宗教改革を行った、第18王朝の王は誰か（改名前）。"},{"answer":"テル＝エル＝アマルナ","category":"エジプトの統一国家","chapter":"1","enabled":true,"number":"3","question":"アメンヘテプ４世は、首都をテーベからどこに移したか。"},{"answer":"アクエンアテン","category":"エジプトの統一国家","chapter":"1","enabled":true,"number":"3","question":"アメンヘテプ４世は、自らの名前をどう改名したか。"},{"answer":"写実的","category":"エジプトの統一国家","chapter":"1","enabled":true,"number":"3","question":"アマルナ美術の特徴は何か。〇〇的という形で答えなさい。"},{"answer":"『死者の書』","category":"エジプトの統一国家","chapter":"1","enabled":true,"number":"3","question":"死後の世界の案内書として、オシリスの審判を受けるために必要な呪文を記した副葬品は何か。"},{"answer":"十進法","category":"エジプトの統一国家","chapter":"1","enabled":true,"number":"3","question":"古代エジプトで使用されていた記数法は何進法か。"},{"answer":"神聖文字","category":"エジプトの統一国家","chapter":"1","enabled":true,"number":"3","question":"ヒエログリフと称される、神殿・墓などに刻まれたエジプトの象形文字を何と呼ぶか。"},{"answer":"シャンポリオン","category":"エジプトの統一国家","chapter":"1","enabled":true,"number":"3","question":"ロゼッタ＝ストーンのギリシア文字により、神聖文字を解読した19世紀のフランス人学者は誰か。"},{"answer":"海の民","category":"東地中海の諸民族","chapter":"1","enabled":true,"number":"4","question":"ヒッタイト滅亡やエジプト弱体化の要因となった、民族系統不明の諸民族集団の総称は何か。"},{"answer":"アラム人","category":"東地中海の諸民族","chapter":"1","enabled":true,"number":"4","question":"前13世紀頃から、シリア地方を中心に内陸交易で活躍したセム語系遊牧民は何か。"},{"answer":"ダマスクス","category":"東地中海の諸民族","chapter":"1","enabled":true,"number":"4","question":"シリアの中心都市で、アラム人の交易活動の拠点として栄えた都市はどこか。"},{"answer":"フェニキア人","category":"東地中海の諸民族","chapter":"1","enabled":true,"number":"4","question":"地中海東岸に多くの都市国家を建て、前12世紀頃から地中海交易を独占しはじめたセム語系民族は何か。"},{"answer":"シドン、ティルス、ベリトスなど","category":"東地中海の諸民族","chapter":"1","enabled":true,"number":"4","question":"フェニキア人が建設した都市国家を２つ答えなさい。"},{"answer":"カルタゴ","category":"東地中海の諸民族","chapter":"1","enabled":true,"number":"4","question":"ティルスが建設した、北アフリカのフェニキア人植民都市はどこか。"},{"answer":"フェニキア文字","category":"東地中海の諸民族","chapter":"1","enabled":true,"number":"4","question":"アルファベットの起源となり、西方系文字の源流となった、セム語系の表音文字は何か。"},{"answer":"ヘブライ人","category":"東地中海の諸民族","chapter":"1","enabled":true,"number":"4","question":"パレスチナに移住・定着し、またその一部がエジプトへ移住したセム語系民族の名称のうち、他称は何か。"},{"answer":"モーセ","category":"東地中海の諸民族","chapter":"1","enabled":true,"number":"4","question":"前13世紀頃に「出エジプト」を指導した、ヘブライ人の伝説的預言者は誰か。"},{"answer":"十戒","category":"東地中海の諸民族","chapter":"1","enabled":true,"number":"4","question":"神が預言者モーセに与えたとされる律法のこと何というか。"},{"answer":"イェルサレム","category":"東地中海の諸民族","chapter":"1","enabled":true,"number":"4","question":"ダヴィデ王によって定められた、イスラエル王国の都はどこか。"},{"answer":"ソロモン","category":"東地中海の諸民族","chapter":"1","enabled":true,"number":"4","question":"王国の首都に神殿を建設した、イスラエル王国の第３代国王は誰か。"},{"answer":"バビロン捕囚","category":"東地中海の諸民族","chapter":"1","enabled":true,"number":"4","question":"ユダ王国の滅亡の際、新バビロニアが住民の多くを強制移住させた出来事は何と呼ばれるか。"},{"answer":"ヤハウェ","category":"東地中海の諸民族","chapter":"1","enabled":true,"number":"4","question":"ユダヤ教の唯一神の名称は何か。"},{"answer":"選民思想","category":"東地中海の諸民族","chapter":"1","enabled":true,"number":"4","question":"ユダヤ教の特色の１つである、自民族だけが救われるとする排他的な思想のことを何というか。"},{"answer":"救世主（メシア）","category":"東地中海の諸民族","chapter":"1","enabled":true,"number":"4","question":"民族が苦境に陥ったとき、民族を破滅から救う者が現れるとする思想があるが、その救う者を何と呼ぶか。"},{"answer":"『旧約聖書』","category":"東地中海の諸民族","chapter":"1","enabled":true,"number":"4","question":"ユダヤ教の教典は何か。"},{"answer":"エーゲ文明","category":"エーゲ文明・オリエントの統一と分裂","chapter":"1","enabled":true,"number":"5","question":"前3000-前1200年頃にかけてエーゲ海を中心に成立した青銅器文明の総称を何というか。"},{"answer":"クノッソス","category":"エーゲ文明・オリエントの統一と分裂","chapter":"1","enabled":true,"number":"5","question":"クレタ文明の中心地で、壮大な宮殿が発掘された場所はどこか。"},{"answer":"エヴァンズ","category":"エーゲ文明・オリエントの統一と分裂","chapter":"1","enabled":true,"number":"5","question":"クレタ文明の宮殿跡を発掘したイギリスの考古学者は誰か。"},{"answer":"クレタ文明","category":"エーゲ文明・オリエントの統一と分裂","chapter":"1","enabled":true,"number":"5","question":"明るく開放的で写実的な特徴を持つ文明は、クレタ文明、ミケーネ文明のどちらか。"},{"answer":"アカイア人","category":"エーゲ文明・オリエントの統一と分裂","chapter":"1","enabled":true,"number":"5","question":"バルカン半島から南下してクレタ文明を滅亡させたのは何人か。"},{"answer":"シュリーマン","category":"エーゲ文明・オリエントの統一と分裂","chapter":"1","enabled":true,"number":"5","question":"ミケーネ文明・トロイア文明を発掘したドイツの考古学者は誰か。"},{"answer":"貢納王政","category":"エーゲ文明・オリエントの統一と分裂","chapter":"1","enabled":true,"number":"5","question":"支配者が農民や商人から強制的に徴税・徴発した、ミケーネ文明の支配体制は何と呼ばれるか。"},{"answer":"ヴェントリス","category":"エーゲ文明・オリエントの統一と分裂","chapter":"1","enabled":true,"number":"5","question":"線文字Bを解読したイギリス人は誰か。"},{"answer":"暗黒(初期鉄器)時代","category":"エーゲ文明・オリエントの統一と分裂","chapter":"1","enabled":true,"number":"5","question":"「海の民」の侵入なども背景に、史料が多く残存していない前12-前8世紀頃の時代をなんと呼ぶか。"},{"answer":"アッシュルバニパル","category":"エーゲ文明・オリエントの統一と分裂","chapter":"1","enabled":true,"number":"5","question":"アッシリア王国の最大版図を達成し、首都に大図書館を作った国王は誰か。"},{"answer":"ニネヴェ","category":"エーゲ文明・オリエントの統一と分裂","chapter":"1","enabled":true,"number":"5","question":"アッシリア王国の首都はどこか。"},{"answer":"リディア","category":"エーゲ文明・オリエントの統一と分裂","chapter":"1","enabled":true,"number":"5","question":"アッシリアの分裂後に、小アジア南西部で栄え、世界最古の金属貨幣を使用した国は何か。"},{"answer":"クシュ王国","category":"エーゲ文明・オリエントの統一と分裂","chapter":"1","enabled":true,"number":"5","question":"エジプト新王国の滅亡後、前10世紀後半-後４世紀頃にかけて、ナイル川上流に続いた黒人王国は何か。"},{"answer":"アクスム王国","category":"エーゲ文明・オリエントの統一と分裂","chapter":"1","enabled":true,"number":"5","question":"紀元前後頃エチオピア高原に成立し、キリスト教（単性論）を国教とした国は何か。"},{"answer":"インダス川","category":"南アジアの古代文明","chapter":"1","enabled":true,"number":"6","question":"インド北西部を流れる大河は何か。"},{"answer":"パンジャーブ地方","category":"南アジアの古代文明","chapter":"1","enabled":true,"number":"6","question":"遺跡ハラッパーがある、アーリヤ人が最初に定住したインダス川中流域は何地方か。"},{"answer":"ドラヴィダ人","category":"南アジアの古代文明","chapter":"1","enabled":true,"number":"6","question":"インダス文明の建設者と推測され、現在は南インドを中心に分布している先住民は何人か。"},{"answer":"カイバル峠","category":"南アジアの古代文明","chapter":"1","enabled":true,"number":"6","question":"インドと西アジアを結ぶ交通の要衝で、アフガニスタンとパキスタンを結ぶ峠の名称は何か。"},{"answer":"『リグ＝ヴェーダ』","category":"南アジアの古代文明","chapter":"1","enabled":true,"number":"6","question":"ヴェーダのうち、神々への賛歌を集めた、最古の聖典の名称は何か。"},{"answer":"ヴァルナ制","category":"南アジアの古代文明","chapter":"1","enabled":true,"number":"6","question":"古代インドで、4つの身分に分類され、それぞれに職業等が厳格に定められていた身分制度を何というか。"},{"answer":"バラモン","category":"南アジアの古代文明","chapter":"1","enabled":true,"number":"6","question":"古代インドにおいて、宗教儀式を司る、最上位の司祭階層を何と呼ぶか。"},{"answer":"クシャトリヤ","category":"南アジアの古代文明","chapter":"1","enabled":true,"number":"6","question":"古代インドにおいて、貴族・武人階層を何と呼ぶか。"},{"answer":"ヴァイシャ","category":"南アジアの古代文明","chapter":"1","enabled":true,"number":"6","question":"古代インドにおいて、農民・商人などの庶民階層を何と呼ぶか。"},{"answer":"シュードラ","category":"南アジアの古代文明","chapter":"1","enabled":true,"number":"6","question":"古代インドにおいて、被征服民を中心とする隷属民階層を何と呼ぶか。"},{"answer":"ジャーティ集団","category":"南アジアの古代文明","chapter":"1","enabled":true,"number":"6","question":"古代インドにおいて、職業や出身によって細かく分かれた世襲的な社会集団を何というか。"},{"answer":"印章","category":"南アジアの古代文明","chapter":"1","enabled":true,"number":"6","question":"動物の図柄とインダス文字が刻まれている印鑑・ハンコを何と呼ぶか。"},{"answer":"未解読","category":"南アジアの古代文明","chapter":"1","enabled":true,"number":"6","question":"インダス文字は解読済みであるか、未解読であるか。"},{"answer":"長江","category":"中国の古代文明","chapter":"1","enabled":true,"number":"7","question":"中国において、稲作により適しているのは黄河か長江か。"},{"answer":"仰韶文化","category":"中国の古代文明","chapter":"1","enabled":true,"number":"7","question":"前5000年頃から黄河中流域におこった文明のうち、最古の新石器文化は何と呼ばれるか。"},{"answer":"仰韶文化","category":"中国の古代文明","chapter":"1","enabled":true,"number":"7","question":"黄河文明のうち、彩文土器が作られていた文化は何か。"},{"answer":"竜山文化","category":"中国の古代文明","chapter":"1","enabled":true,"number":"7","question":"前2500年頃から黄河下流域を中心におこった新石器時代後期の文化は、何と呼ばれるか。"},{"answer":"邑","category":"中国の古代文明","chapter":"1","enabled":true,"number":"7","question":"古代中国で前3000年以降しだいに形成された、集落や都市を意味する用語は何か。"},{"answer":"河姆渡文化","category":"中国の古代文明","chapter":"1","enabled":true,"number":"7","question":"前6000年頃までに始まっていた稲作文明のうち、長江下流域で栄えた文明は何か。"},{"answer":"夏","category":"中国の古代文明","chapter":"1","enabled":true,"number":"7","question":"禹に始まるとされ、国際的には実在が確認されていない最古の王朝は何か。"},{"answer":"殷（商）","category":"中国の古代文明","chapter":"1","enabled":true,"number":"7","question":"前16世紀頃から存在した、現在中国最古の王朝とされている王朝は何か。"},{"answer":"殷墟","category":"中国の古代文明","chapter":"1","enabled":true,"number":"7","question":"河南省安陽市を中心に発見された、殷の都の遺跡は何と呼ばれるか。"},{"answer":"甲骨文字","category":"中国の古代文明","chapter":"1","enabled":true,"number":"7","question":"亀甲や獣骨に刻まれた、漢字の原型とされる文字は何か。"},{"answer":"鎬京","category":"中国の古代文明","chapter":"1","enabled":true,"number":"7","question":"西周の首都はどこか。"},{"answer":"渭水盆地","category":"中国の古代文明","chapter":"1","enabled":true,"number":"7","question":"西周の都などがあった、中国北西部の盆地はどこか。"},{"answer":"易姓革命","category":"中国の古代文明","chapter":"1","enabled":true,"number":"7","question":"中国で、天命が失われた王朝は滅び、徳のある一族が新たに王朝を興すとする政治理念を何というか。"},{"answer":"封建制","category":"中国の古代文明","chapter":"1","enabled":true,"number":"7","question":"西周も実施した、土地を媒介とした主従関係に基づく支配制度のことを何というか。"},{"answer":"卿・大夫・士","category":"中国の古代文明","chapter":"1","enabled":true,"number":"7","question":"西周において、王や諸侯の世襲の家臣は何と呼ばれたか、三種答えなさい。"},{"answer":"宗法","category":"中国の古代文明","chapter":"1","enabled":true,"number":"7","question":"同性の親族集団において守るべき規範は、何と呼ばれたか。"},{"answer":"犬戎","category":"春秋・戦国時代","chapter":"1","enabled":true,"number":"8","question":"前8世紀ごろ、周の東遷の原因となった、西方から侵入してきた遊牧民は何か。"},{"answer":"洛邑","category":"春秋・戦国時代","chapter":"1","enabled":true,"number":"8","question":"東周の首都はどこか。"},{"answer":"覇者","category":"春秋・戦国時代","chapter":"1","enabled":true,"number":"8","question":"春秋時代、周王に代わって会盟を開催した有力諸侯のことを何と呼ぶか。"},{"answer":"孝公","category":"春秋・戦国時代","chapter":"1","enabled":true,"number":"8","question":"商鞅を登用して法家の改革を進め、戦国時代の秦の強国化の基礎を築いた君主は誰か。"},{"answer":"咸陽","category":"春秋・戦国時代","chapter":"1","enabled":true,"number":"8","question":"秦の首都はどこか。"},{"answer":"商鞅","category":"春秋・戦国時代","chapter":"1","enabled":true,"number":"8","question":"戦国時代、秦の孝公に支えて法家の人物は誰か。"},{"answer":"秦/楚/斉/燕/趙/魏/韓","category":"春秋・戦国時代","chapter":"1","enabled":true,"number":"8","question":"戦国の七雄を全て答えなさい。"},{"answer":"華夷思想","category":"春秋・戦国時代","chapter":"1","enabled":true,"number":"8","question":"文明化された自国に対し、周辺の民族を野蛮な民族・国とみなした思想を何と呼ぶか。"},{"answer":"牛耕","category":"春秋・戦国時代の社会と文化","chapter":"1","enabled":true,"number":"9","question":"春秋・戦国時代に導入された、鉄製の犁を牛にひかせた耕作法は何か。"},{"answer":"布銭","category":"春秋・戦国時代の社会と文化","chapter":"1","enabled":true,"number":"9","question":"農具の形をした青銅貨幣の名称は何か。"},{"answer":"蟻鼻銭","category":"春秋・戦国時代の社会と文化","chapter":"1","enabled":true,"number":"9","question":"南方の楚で使用された小型の青銅貨幣の名称は何か。"},{"answer":"諸子百家","category":"春秋・戦国時代の社会と文化","chapter":"1","enabled":true,"number":"9","question":"春秋時代末期から現れた、様々な思想家や諸学派を何と総称するか。"},{"answer":"『論語』","category":"春秋・戦国時代の社会と文化","chapter":"1","enabled":true,"number":"9","question":"四書の一つで、孔子の死後、弟子によって編纂された、彼とその弟子の言行録は何か。"},{"answer":"荀子","category":"春秋・戦国時代の社会と文化","chapter":"1","enabled":true,"number":"9","question":"性悪説をとなえ、礼による教化を説いた儒家の思想家は誰か。"},{"answer":"孟子","category":"春秋・戦国時代の社会と文化","chapter":"1","enabled":true,"number":"9","question":"性善説を唱えた儒家の思想家は誰か。"},{"answer":"李斯","category":"春秋・戦国時代の社会と文化","chapter":"1","enabled":true,"number":"9","question":"始皇帝のもと丞相として支えた法家の人物は誰か。"},{"answer":"兼愛・非攻","category":"春秋・戦国時代の社会と文化","chapter":"1","enabled":true,"number":"9","question":"墨子が唱えた、無差別の愛を指す語、戦争を否定する語をそれぞれ答えなさい。"},{"answer":"無為自然","category":"春秋・戦国時代の社会と文化","chapter":"1","enabled":true,"number":"9","question":"道家の根本思想を指す、人為を否定し天の道に従うという考え方を何というか。"},{"answer":"蘇秦","category":"春秋・戦国時代の社会と文化","chapter":"1","enabled":true,"number":"9","question":"６国が同盟して秦に対抗する合従策をとなえたのは誰か。"},{"answer":"張儀","category":"春秋・戦国時代の社会と文化","chapter":"1","enabled":true,"number":"9","question":"秦王の信任を得て、連衡策をとなえた人物は誰か。"},{"answer":"ジャガイモ","category":"南北アメリカ文明","chapter":"1","enabled":true,"number":"10","question":"アンデス地方原産の食物で、天候や戦争の被害を受けにくく、ヨーロッパで広く普及したイモ類は何か。"},{"answer":"トウモロコシ","category":"南北アメリカ文明","chapter":"1","enabled":true,"number":"10","question":"南北アメリカ大陸の古代文明の基礎となった穀物は何か。"},{"answer":"リャマ/アルパカ","category":"南北アメリカ文明","chapter":"1","enabled":true,"number":"10","question":"アメリカ大陸で飼育されている家畜の例を１つ挙げなさい。"},{"answer":"オルメカ文明","category":"南北アメリカ文明","chapter":"1","enabled":true,"number":"10","question":"前1200年頃までにメキシコ湾岸に成立した、巨石人頭像や絵文字をもつ中央アメリカ最初の都市文明は何か。"},{"answer":"マヤ文明","category":"南北アメリカ文明","chapter":"1","enabled":true,"number":"10","question":"前４世紀頃ユカタン半島の各地に都市が成立して栄え、その後16世紀にスペイン人に征服された文明は何か。"},{"answer":"二十進法","category":"南北アメリカ文明","chapter":"1","enabled":true,"number":"10","question":"マヤ文明で採用された記数法は何進法か。"},{"answer":"テオティワカン文明","category":"南北アメリカ文明","chapter":"1","enabled":true,"number":"10","question":"前１〜後６世紀頃に、メキシコ高原で発達した、「神々の家」という意味を持つ古代都市文明は何か。"},{"answer":"アステカ文明","category":"南北アメリカ文明","chapter":"1","enabled":true,"number":"10","question":"15世紀にメキシコ高原に栄え、テノチティトランを都とし、神への生贄を伴う宗教儀式で知られた文明は何か。"},{"answer":"チャビン文化","category":"南北アメリカ文明","chapter":"1","enabled":true,"number":"10","question":"前1000年頃北部ペルーに形成された、初期のアンデス文明は何か。"},{"answer":"インカ帝国","category":"南北アメリカ文明","chapter":"1","enabled":true,"number":"10","question":"とくに15〜16世紀前半までクスコを都にアンデス地帯で栄えた、ケチュア人の建てた帝国は何か。"},{"answer":"キープ","category":"南北アメリカ文明","chapter":"1","enabled":true,"number":"10","question":"文字のなかったインカ帝国で、縄の結び方で意味や数量を示した方法を何と呼ぶか。"},{"answer":"マチュピチュ","category":"南北アメリカ文明","chapter":"1","enabled":true,"number":"10","question":"インカ帝国首都北方の標高2400mの山岳地帯に建てられ、高い文化レベルをうかがわせた都市はどこか。"},{"answer":"隊商交易","category":"中央ユーラシア：草原とオアシスの世界","chapter":"2","enabled":true,"number":"11","question":"とくに「オアシスの道」で、ラクダや馬を利用した商人がグループをつくって行った長距離交易は何か。"},{"answer":"草原の道","category":"中央ユーラシア：草原とオアシスの世界","chapter":"2","enabled":true,"number":"11","question":"様々な遊牧民が活動した、南ロシアの草原地帯からモンゴル高原にかけての東西交通路を何と呼ぶか。"},{"answer":"スキタイ","category":"中央ユーラシア：草原とオアシスの世界","chapter":"2","enabled":true,"number":"11","question":"独自の騎馬文化を生み、前７世紀頃から南ロシアの草原地帯を支配したイラン系遊牧民の名称は何か。"},{"answer":"匈奴","category":"中央ユーラシア：草原とオアシスの世界","chapter":"2","enabled":true,"number":"11","question":"騎馬文化を取り入れ、前３世紀末からモンゴル高原で活躍した、民族系統不明の遊牧民の名称は何か。"},{"answer":"冒頓単于","category":"中央ユーラシア：草原とオアシスの世界","chapter":"2","enabled":true,"number":"11","question":"前３世紀末に匈奴を統率し、前漢の高祖を白頭山の戦いで撃破した君主は誰か。"},{"answer":"月氏","category":"中央ユーラシア：草原とオアシスの世界","chapter":"2","enabled":true,"number":"11","question":"前２世紀前半に匈奴の圧迫を受けてイリ地方に逃れた、イラン系といわれる騎馬遊牧民は何か。"},{"answer":"烏孫","category":"中央ユーラシア：草原とオアシスの世界","chapter":"2","enabled":true,"number":"11","question":"前漢が匈奴に対抗するために同盟を結んだ、イリ地方を拠点とした遊牧民は何か。"},{"answer":"鮮卑","category":"中央ユーラシア：草原とオアシスの世界","chapter":"2","enabled":true,"number":"11","question":"２世紀半ばに諸部族を統合してモンゴル高原を支配し、その後華北に進出して北魏を建国した遊牧民は何か。"},{"answer":"フン人","category":"中央ユーラシア：草原とオアシスの世界","chapter":"2","enabled":true,"number":"11","question":"４世紀末～５世紀に内陸アジアからヨーロッパへ西進し、ゲルマン人大移動の要因となった騎馬遊牧民は何か。"},{"answer":"タリム盆地","category":"中央ユーラシア：草原とオアシスの世界","chapter":"2","enabled":true,"number":"11","question":"パミール高原東部に広がり、古くからオアシス都市が点在していた中国西部の盆地はどこか。"},{"answer":"ソグディアナ","category":"中央ユーラシア：草原とオアシスの世界","chapter":"2","enabled":true,"number":"11","question":"東西交易の要地として争奪が繰り返された、アム川とシル川にはさまれたパミール高原西部の地域名称は何か。"},{"answer":"オアシスの道","category":"中央ユーラシア：草原とオアシスの世界","chapter":"2","enabled":true,"number":"11","question":"草原の道と並び、タリム盆地周辺のオアシス都市を経由して中国と西方を結んだルートを何というか。"},{"answer":"政","category":"秦の統一と前漢","chapter":"2","enabled":true,"number":"12","question":"戦国時代を勝ち抜き、秦として中国を統一し、始皇帝と名乗った秦の王は誰か。"},{"answer":"(紀元)前221年","category":"秦の統一と前漢","chapter":"2","enabled":true,"number":"12","question":"秦が中国を統一したのは西暦何年か。"},{"answer":"李斯","category":"秦の統一と前漢","chapter":"2","enabled":true,"number":"12","question":"始皇帝のもと、丞相として仕えた法家の人物は誰か。"},{"answer":"郡県制","category":"秦の統一と前漢","chapter":"2","enabled":true,"number":"12","question":"中央集権化のため、秦が施行した地方統治制度は何か。"},{"answer":"半両銭","category":"秦の統一と前漢","chapter":"2","enabled":true,"number":"12","question":"秦が定めた統一貨幣の名称は何か。"},{"answer":"焚書・坑儒","category":"秦の統一と前漢","chapter":"2","enabled":true,"number":"12","question":"秦で実施された思想・言論統制策は何と呼ばれたか。"},{"answer":"南越国","category":"秦の統一と前漢","chapter":"2","enabled":true,"number":"12","question":"秦末に成立し武帝の時代に滅ぼされた、現在の広東省からベトナム北部にあった国の名称は何か。"},{"answer":"陳勝・呉広の乱","category":"秦の統一と前漢","chapter":"2","enabled":true,"number":"12","question":"秦末に発生した、中国史上最初の農民反乱の名称は何か。"},{"answer":"劉邦","category":"秦の統一と前漢","chapter":"2","enabled":true,"number":"12","question":"農民出身で、漢を建てて中国を再統一した人物は誰か。"},{"answer":"項羽","category":"秦の統一と前漢","chapter":"2","enabled":true,"number":"12","question":"農民反乱を機に挙兵し、秦を滅ぼした後、垓下の戦いで敗れた、楚の名門出身の武将は誰か。"},{"answer":"長安","category":"秦の統一と前漢","chapter":"2","enabled":true,"number":"12","question":"前漢の首都はどこか。"},{"answer":"「王侯将相いずくんぞ種あらんや」","category":"秦の統一と前漢","chapter":"2","enabled":true,"number":"12","question":"陳勝・呉広の乱の際、陳勝が発したとされる、身分制度への反発を表す言葉は何か。"},{"answer":"郡国制","category":"秦の統一と前漢","chapter":"2","enabled":true,"number":"12","question":"前漢の高祖が施行した、郡県制と封建制を併用した地方統治制度の名称は何か。"},{"answer":"呉楚七国の乱","category":"秦の統一と前漢","chapter":"2","enabled":true,"number":"12","question":"前154年、江南を中心とする七諸侯がおこした反乱で、鎮圧後、中央集権化が進められる契機となったものは何か。"},{"answer":"董仲舒","category":"秦の統一と前漢","chapter":"2","enabled":true,"number":"12","question":"前漢時代、儒教の官学化を武帝に献策した儒学者は誰か。"},{"answer":"郷挙里選","category":"秦の統一と前漢","chapter":"2","enabled":true,"number":"12","question":"前漢の武帝のとき制定された官吏任用制度の名称は何か。"},{"answer":"張騫","category":"秦の統一と前漢","chapter":"2","enabled":true,"number":"12","question":"匈奴をはさみ打ちする目的で、武帝によって大月氏に派遣された人物は誰か。"},{"answer":"敦煌郡","category":"秦の統一と前漢","chapter":"2","enabled":true,"number":"12","question":"武帝が西域に設置した河西４郡のうち、もっとも西におかれた郡の名称は何か。"},{"answer":"衛氏朝鮮","category":"秦の統一と前漢","chapter":"2","enabled":true,"number":"12","question":"武帝の時代に滅ぼされた、朝鮮の国名は何か。"},{"answer":"均輸","category":"秦の統一と前漢","chapter":"2","enabled":true,"number":"12","question":"武帝が施行した、特産物を強制的に貢納させ、これを不足地に転売した物価調整策は何か。"},{"answer":"平準","category":"秦の統一と前漢","chapter":"2","enabled":true,"number":"12","question":"武帝が施行した、物価の低いときに余剰産品を政府が購入し、高くなったときに売り出す物価安定策は何か。"},{"answer":"塩・鉄","category":"秦の統一と前漢","chapter":"2","enabled":true,"number":"12","question":"前漢の武帝が財政再建のために専売化した、２つの物品名は何か。"},{"answer":"五銖銭","category":"秦の統一と前漢","chapter":"2","enabled":true,"number":"12","question":"武帝が鋳造させた銅銭の名称は何か。"},{"answer":"王莽","category":"後漢と漢代の社会・文化","chapter":"2","enabled":true,"number":"13","question":"前漢の外戚出身で、皇帝の位を奪って新を建てたが、各地の反乱により滅ぼされた人物は誰か。"},{"answer":"赤眉の乱","category":"後漢と漢代の社会・文化","chapter":"2","enabled":true,"number":"13","question":"新の復古的政治に不満な人びとがおこした反乱のうち、山東地方から始まった農民反乱は何か。"},{"answer":"劉秀（光武帝）","category":"後漢と漢代の社会・文化","chapter":"2","enabled":true,"number":"13","question":"後25年に漢王朝（後漢）を再建した、漢王室一族の人物（初代皇帝）は誰か。"},{"answer":"洛陽","category":"後漢と漢代の社会・文化","chapter":"2","enabled":true,"number":"13","question":"後漢の都はどこか。"},{"answer":"班超","category":"後漢と漢代の社会・文化","chapter":"2","enabled":true,"number":"13","question":"１世紀末、後漢の和帝によって西域都護に任命された人物は誰か。"},{"answer":"甘英","category":"後漢と漢代の社会・文化","chapter":"2","enabled":true,"number":"13","question":"班超によって、ローマ帝国への派遣を命じられた部下は誰か。"},{"answer":"大秦王安敦","category":"後漢と漢代の社会・文化","chapter":"2","enabled":true,"number":"13","question":"２世紀後半、後漢に使者を派遣したローマ皇帝マルクス＝アウレリウス＝アントニヌスの中国表記は何か。"},{"answer":"党錮の禁","category":"後漢と漢代の社会・文化","chapter":"2","enabled":true,"number":"13","question":"２世紀後半におこった、宦官の専横に反対する儒学者官僚を、宦官が弾圧した事件を何と呼ぶか。"},{"answer":"黄巾の乱","category":"後漢と漢代の社会・文化","chapter":"2","enabled":true,"number":"13","question":"後漢末の184年におこった農民反乱は何か。"},{"answer":"曹丕","category":"後漢と漢代の社会・文化","chapter":"2","enabled":true,"number":"13","question":"曹操の子で、後漢の皇帝から禅譲され、魏の初代皇帝となった人物は誰か。"},{"answer":"訓詁学","category":"後漢と漢代の社会・文化","chapter":"2","enabled":true,"number":"13","question":"儒教古典の字句解釈を目的とした学問を何と呼ぶか。"},{"answer":"『史記』","category":"後漢と漢代の社会・文化","chapter":"2","enabled":true,"number":"13","question":"司馬遷が黄帝から前漢の武帝までの事績を記した正史の名称は何か。"},{"answer":"紀伝体","category":"後漢と漢代の社会・文化","chapter":"2","enabled":true,"number":"13","question":"『史記』に始まる、中国正史の記述形式は何か。"},{"answer":"蔡倫","category":"後漢と漢代の社会・文化","chapter":"2","enabled":true,"number":"13","question":"製紙法を改良したとされる、後漢の宦官は誰か。"},{"answer":"屯田制","category":"魏晋南北朝時代","chapter":"2","enabled":true,"number":"14","question":"国家財政を確立するため、魏の曹操が、荒廃地を国有化して流民や一般農民に耕作させた制度は何か。"},{"answer":"建業","category":"魏晋南北朝時代","chapter":"2","enabled":true,"number":"14","question":"現在の南京の前身となった、呉の都はどこか。"},{"answer":"孫権","category":"魏晋南北朝時代","chapter":"2","enabled":true,"number":"14","question":"222年に江南で独立し、呉を建てた人物は誰か。"},{"answer":"劉備","category":"魏晋南北朝時代","chapter":"2","enabled":true,"number":"14","question":"漢の後裔を称し、四川地方に蜀を建てた人物は誰か。"},{"answer":"成都","category":"魏晋南北朝時代","chapter":"2","enabled":true,"number":"14","question":"蜀の都はどこか。"},{"answer":"司馬炎","category":"魏晋南北朝時代","chapter":"2","enabled":true,"number":"14","question":"魏の武将で、禅譲されて265年に皇帝となり、呉を滅ぼして中国をいったん統一した人物は誰か。"},{"answer":"280年","category":"魏晋南北朝時代","chapter":"2","enabled":true,"number":"14","question":"西晋が中国を統一したのは西暦何年か。"},{"answer":"八王の乱","category":"魏晋南北朝時代","chapter":"2","enabled":true,"number":"14","question":"司馬炎の死後、290年から始まった一族諸王による内乱は何か。"},{"answer":"永嘉の乱","category":"魏晋南北朝時代","chapter":"2","enabled":true,"number":"14","question":"八王の乱ののち、４世紀に入り匈奴が中心となっておこし、西晋を滅ぼした兵乱は何と呼ばれるか。"},{"answer":"建康","category":"魏晋南北朝時代","chapter":"2","enabled":true,"number":"14","question":"東晋は建業を改称して都とした。その名称は何か。"},{"answer":"司馬睿","category":"魏晋南北朝時代","chapter":"2","enabled":true,"number":"14","question":"西晋滅亡後、江南に逃れて東晋を建てた人物は誰か。"},{"answer":"劉裕","category":"魏晋南北朝時代","chapter":"2","enabled":true,"number":"14","question":"東晋末の混乱を収めて皇帝となり、南朝宋を建てた軍人出身の人物は誰か。"},{"answer":"拓跋氏","category":"魏晋南北朝時代","chapter":"2","enabled":true,"number":"14","question":"北魏を建国した鮮卑の氏族名は何か。"},{"answer":"太武帝","category":"魏晋南北朝時代","chapter":"2","enabled":true,"number":"14","question":"北魏が439年に華北を統一した時の皇帝は誰か。"},{"answer":"孝文帝","category":"魏晋南北朝時代","chapter":"2","enabled":true,"number":"14","question":"５世紀後半に漢化政策を実施した第６代皇帝は誰か。"},{"answer":"六鎮の乱","category":"魏晋南北朝時代","chapter":"2","enabled":true,"number":"14","question":"北魏の後期、拓跋氏による漢化政策に不満を持った辺境の軍事拠点で発生した反乱は何か。"},{"answer":"宋・斉・梁・陳","category":"魏晋南北朝時代","chapter":"2","enabled":true,"number":"14","question":"東晋の滅亡後、江南を支配した4つの王朝を建国順に答えなさい。"},{"answer":"九品中正","category":"魏晋南北朝時代","chapter":"2","enabled":true,"number":"14","question":"三国の魏の文帝（曹丕）が始めた、地方に役人を派遣し、中央に人材を推薦させた官吏登用制度は何か。"},{"answer":"均田制","category":"魏晋南北朝時代","chapter":"2","enabled":true,"number":"14","question":"北魏に始まり、隋以降の中国王朝に継承された土地制度は何か。"},{"answer":"清談","category":"魏晋南北朝時代の文化・朝鮮・日本の国家形成","chapter":"2","enabled":true,"number":"15","question":"魏・晋時代に流行した、老荘思想に基づき、世俗を超越した表現で行われた哲学的論議を何と呼ぶか。"},{"answer":"仏図澄","category":"魏晋南北朝時代の文化・朝鮮・日本の国家形成","chapter":"2","enabled":true,"number":"15","question":"４世紀初め洛陽に来て仏教を広めた、西域のクチャ（亀茲）出身の僧は誰か。"},{"answer":"鳩摩羅什","category":"魏晋南北朝時代の文化・朝鮮・日本の国家形成","chapter":"2","enabled":true,"number":"15","question":"５世紀初め長安に来て仏典の漢訳と教理の中国定着に大きく貢献した、父がインド人のクチャ出身の僧は誰か。"},{"answer":"法顕","category":"魏晋南北朝時代の文化・朝鮮・日本の国家形成","chapter":"2","enabled":true,"number":"15","question":"４世紀末に長安から陸路でインドへ向かい、海路で帰国し『仏国記』を著した東晋時代の僧は誰か。"},{"answer":"雲崗","category":"魏晋南北朝時代の文化・朝鮮・日本の国家形成","chapter":"2","enabled":true,"number":"15","question":"北魏前半の都である平城の西に位置し、石窟寺院が造営されたのはどこか。"},{"answer":"竜門","category":"魏晋南北朝時代の文化・朝鮮・日本の国家形成","chapter":"2","enabled":true,"number":"15","question":"北魏の遷都後から石窟寺院の造営が開始された、洛陽南方の地はどこか。"},{"answer":"寇謙之","category":"魏晋南北朝時代の文化・朝鮮・日本の国家形成","chapter":"2","enabled":true,"number":"15","question":"北魏の太武帝に重用され、新天師道を確立し、道教を大成させた人物は誰か。"},{"answer":"陶淵明","category":"魏晋南北朝時代の文化・朝鮮・日本の国家形成","chapter":"2","enabled":true,"number":"15","question":"「帰去来辞」で知られる、東晋の田園詩人は誰か。"},{"answer":"昭明太子","category":"魏晋南北朝時代の文化・朝鮮・日本の国家形成","chapter":"2","enabled":true,"number":"15","question":"南朝梁の武帝の長子で、詩文にすぐれ、『文選』を編纂したのは誰か。"},{"answer":"王羲之","category":"魏晋南北朝時代の文化・朝鮮・日本の国家形成","chapter":"2","enabled":true,"number":"15","question":"「書聖」と称され、「蘭亭序」で名高い東晋の書家は誰か。"},{"answer":"『女史箴図』","category":"魏晋南北朝時代の文化・朝鮮・日本の国家形成","chapter":"2","enabled":true,"number":"15","question":"女官へのいましめを書いた作品を題材として、顧愷之が描いたとされる作品は何か。"},{"answer":"広開土王","category":"魏晋南北朝時代の文化・朝鮮・日本の国家形成","chapter":"2","enabled":true,"number":"15","question":"４世紀末〜５世紀初め、朝鮮半島南部に進出し、倭とも戦い破ったとされる、高句麗の最盛期の王は誰か。"},{"answer":"百済","category":"魏晋南北朝時代の文化・朝鮮・日本の国家形成","chapter":"2","enabled":true,"number":"15","question":"４世紀半ば、半島南西部に分立していた三韓の国々を統一して成立した国はどこか。"},{"answer":"新羅","category":"魏晋南北朝時代の文化・朝鮮・日本の国家形成","chapter":"2","enabled":true,"number":"15","question":"４世紀半ば、半島南東部に分立していた三韓の国々を統一して成立した国はどこか。"},{"answer":"卑弥呼","category":"魏晋南北朝時代の文化・朝鮮・日本の国家形成","chapter":"2","enabled":true,"number":"15","question":"『魏志』倭人伝に記述されている、邪馬台国の女王の名前は何か。"},{"answer":"朝貢","category":"魏晋南北朝時代の文化・朝鮮・日本の国家形成","chapter":"2","enabled":true,"number":"15","question":"周辺諸国の君主が、中国皇帝の権威を認めて使者を送り、貢物を献上する形式的な外交儀礼を何というか。"},{"answer":"楊堅","category":"隋と唐初","chapter":"2","enabled":true,"number":"16","question":"北周の外戚だが、禅譲により隋の初代皇帝（文帝）として即位したのは誰か。"},{"answer":"大興城","category":"隋と唐初","chapter":"2","enabled":true,"number":"16","question":"隋の都はどこか。"},{"answer":"589年","category":"隋と唐初","chapter":"2","enabled":true,"number":"16","question":"隋が中国を統一したのは西暦何年か。"},{"answer":"科挙","category":"隋と唐初","chapter":"2","enabled":true,"number":"16","question":"貴族の高級官僚独占を防ぎ中央集権化をめざす目的で隋で開始された、科目試験による官吏登用制度は何か。"},{"answer":"煬帝","category":"隋と唐初","chapter":"2","enabled":true,"number":"16","question":"隋の二代目皇帝は誰か。"},{"answer":"高句麗","category":"隋と唐初","chapter":"2","enabled":true,"number":"16","question":"隋の二代目皇帝により、三度遠征軍を送り三度失敗した遠征先はどこか。"},{"answer":"618年","category":"隋と唐初","chapter":"2","enabled":true,"number":"16","question":"唐の建国年は西暦何年か。"},{"answer":"長安","category":"隋と唐初","chapter":"2","enabled":true,"number":"16","question":"唐の都はどこか。"},{"answer":"李淵（高祖）","category":"隋と唐初","chapter":"2","enabled":true,"number":"16","question":"唐の建国者は誰か。"},{"answer":"貞観の治","category":"隋と唐初","chapter":"2","enabled":true,"number":"16","question":"盛時を現出した太宗の治世を、後世になって元号でたたえたことばは何か。"},{"answer":"高宗","category":"隋と唐初","chapter":"2","enabled":true,"number":"16","question":"周辺国家を服属させ、唐の最大版図を実現した第３代皇帝は誰か。"},{"answer":"都護府","category":"隋と唐初","chapter":"2","enabled":true,"number":"16","question":"唐が周辺諸民族の統治のため６つ設置した機関は何か。"},{"answer":"羈縻政策","category":"隋と唐初","chapter":"2","enabled":true,"number":"16","question":"中央から役人を派遣し、そのもとで在地の族長を任命して、周辺民族を間接統治した中国歴代王朝の政策を何と呼ぶか。"},{"answer":"律・令・格・式","category":"隋と唐初","chapter":"2","enabled":true,"number":"16","question":"唐代に整備された法体系で、刑法・行政法・補足法・施行細則にそれぞれあたるものをそれぞれ何というか。"},{"answer":"中書省","category":"隋と唐初","chapter":"2","enabled":true,"number":"16","question":"三省のうち、詔勅の立案起草を担当した機関は何か。"},{"answer":"門下省","category":"隋と唐初","chapter":"2","enabled":true,"number":"16","question":"三省のうち、立案された詔勅や奏文の審議を担当した機関は何か。"},{"answer":"尚書省","category":"隋と唐初","chapter":"2","enabled":true,"number":"16","question":"三省のうち、成立した詔勅を執行する行政機関は何か。"},{"answer":"礼部","category":"隋と唐初","chapter":"2","enabled":true,"number":"16","question":"六部のうち、教育・祭祀・科挙を担当したのはどこか。"},{"answer":"御史台","category":"隋と唐初","chapter":"2","enabled":true,"number":"16","question":"秦代から用いられてきた呼称で、中国での官吏監察機関の名称は何か。"},{"answer":"州県制","category":"隋と唐初","chapter":"2","enabled":true,"number":"16","question":"隋で始まり、唐で確立された地方行政区画制度は何か。"},{"answer":"府兵制","category":"隋と唐初","chapter":"2","enabled":true,"number":"16","question":"楊堅が整備し、唐でも採用された、西魏に始まる兵制は何か。"},{"answer":"揚州","category":"唐の文化","chapter":"2","enabled":true,"number":"17","question":"広州とならんで、ムスリム商人が来航し彼らの居留地がおかれた、大運河沿いの江蘇省の港市はどこか。"},{"answer":"市舶司","category":"唐の文化","chapter":"2","enabled":true,"number":"17","question":"玄宗時代、広州に初めて設置された、海上貿易管理機関の名称は何か。"},{"answer":"孔穎達","category":"唐の文化","chapter":"2","enabled":true,"number":"17","question":"太宗の勅命で『隋書』や五経の注釈書を編纂した儒学者は誰か。"},{"answer":"『五経正義』","category":"唐の文化","chapter":"2","enabled":true,"number":"17","question":"孔穎達らが編纂した、五経の統一的な注釈書は何か。"},{"answer":"祆教","category":"唐の文化","chapter":"2","enabled":true,"number":"17","question":"北魏のころ伝わった、ゾロアスター教（拝火教）の中国名は何か。"},{"answer":"マニ教","category":"唐の文化","chapter":"2","enabled":true,"number":"17","question":"ササン朝にて、ゾロアスター教・仏教・キリスト教が融合して成立し、唐に伝わった宗教は何か。"},{"answer":"景教","category":"唐の文化","chapter":"2","enabled":true,"number":"17","question":"唐の太宗時代、布教を許されたネストリウス派キリスト教の中国名は何か。"},{"answer":"玄奘","category":"唐の文化","chapter":"2","enabled":true,"number":"17","question":"唐代の初め、往復とも陸路でインドに赴き、『大唐西域記』を著した中国僧は誰か。"},{"answer":"義浄","category":"唐の文化","chapter":"2","enabled":true,"number":"17","question":"７世紀後半、往復とも海路でインドに赴き、『南海寄帰内法伝』を著した中国僧は誰か。"},{"answer":"李白","category":"唐の文化","chapter":"2","enabled":true,"number":"17","question":"安史の乱のとき粛宗の弟の反乱に加担し、一時流罪となったこともある、「詩仙」と称された唐中期の詩人は誰か。"},{"answer":"杜甫","category":"唐の文化","chapter":"2","enabled":true,"number":"17","question":"「春望」など社会の現実をうたった作品が多く、のちに「詩聖」と称された唐中期の詩人は誰か。"},{"answer":"白居易","category":"唐の文化","chapter":"2","enabled":true,"number":"17","question":"玄宗と楊貴妃の悲恋をうたった「長恨歌」や『白氏文集』などが有名な、唐後期の詩人は誰か。"},{"answer":"柳宗元・韓愈","category":"唐の文化","chapter":"2","enabled":true,"number":"17","question":"唐代中期に古文復興運動を唱え、儒教的思想の復権を目指した人物を2人挙げなさい。"},{"answer":"顔真卿","category":"唐の文化","chapter":"2","enabled":true,"number":"17","question":"楷書・草書に力強い書風を開くいっぽう、安史の乱の際に義勇軍を率いて抗戦した、唐中期の書家は誰か。"},{"answer":"呉道玄","category":"唐の文化","chapter":"2","enabled":true,"number":"17","question":"玄宗に仕え、線の太さで量感や立体感を表す新技術を生み出した、唐中期の画家は誰か。"},{"answer":"唐三彩","category":"唐の文化","chapter":"2","enabled":true,"number":"17","question":"副葬品に多く使用された、緑・黄・白などの彩色をほどこした唐代の陶器の名称は何か。"},{"answer":"吐蕃","category":"唐と近隣諸国・唐の変容と五代","chapter":"2","enabled":true,"number":"18","question":"７世紀にラサを都に成立したチベットの王国に対する、中国側の呼称は何か。"},{"answer":"ソンツェン＝ガンポ","category":"唐と近隣諸国・唐の変容と五代","chapter":"2","enabled":true,"number":"18","question":"吐蕃の建国者は誰か。"},{"answer":"ラマ教","category":"唐と近隣諸国・唐の変容と五代","chapter":"2","enabled":true,"number":"18","question":"チベット固有の大乗仏教であるチベット仏教の別名を答えなさい。"},{"answer":"天平文化","category":"唐と近隣諸国・唐の変容と五代","chapter":"2","enabled":true,"number":"18","question":"唐や大陸各地の文化の影響を受けた、国際色豊かな奈良時代日本の文化の名称は何か。"},{"answer":"慶州","category":"唐と近隣諸国・唐の変容と五代","chapter":"2","enabled":true,"number":"18","question":"新羅の首都はどこか。"},{"answer":"仏国寺","category":"唐と近隣諸国・唐の変容と五代","chapter":"2","enabled":true,"number":"18","question":"新羅の首都の東南に残る、代表的な仏教寺院の名称は何か。"},{"answer":"骨品制","category":"唐と近隣諸国・唐の変容と五代","chapter":"2","enabled":true,"number":"18","question":"新羅の王族と一般貴族だけを対象とした、特権的な氏族的身分制を何と呼ぶか。"},{"answer":"渤海","category":"唐と近隣諸国・唐の変容と五代","chapter":"2","enabled":true,"number":"18","question":"７世紀末、中国東北地方の東部を中心に靺鞨人と高句麗の遺民によって建てられた国は何か。"},{"answer":"大祚栄","category":"唐と近隣諸国・唐の変容と五代","chapter":"2","enabled":true,"number":"18","question":"渤海の建国者は誰か。"},{"answer":"則天武后(武則天)","category":"唐と近隣諸国・唐の変容と五代","chapter":"2","enabled":true,"number":"18","question":"７世紀末、病身の高宗に代わって政権を握った、中国史上で唯一の女帝は誰か。"},{"answer":"周","category":"唐と近隣諸国・唐の変容と五代","chapter":"2","enabled":true,"number":"18","question":"則天武后の即位で成立した国号は何か。"},{"answer":"開元の治","category":"唐と近隣諸国・唐の変容と五代","chapter":"2","enabled":true,"number":"18","question":"玄宗の治世の前半の盛時を、後世にほめ称えたことばは何か。"},{"answer":"募兵制","category":"唐と近隣諸国・唐の変容と五代","chapter":"2","enabled":true,"number":"18","question":"均田制の崩壊にともない、749年に全面的に廃止された府兵制に代わった兵制の名称は何か。"},{"answer":"節度使","category":"唐と近隣諸国・唐の変容と五代","chapter":"2","enabled":true,"number":"18","question":"玄宗のとき、周辺異民族にそなえて辺境10地区に設置された募兵軍団の指揮官を何と呼ぶか。"},{"answer":"楊貴妃","category":"唐と近隣諸国・唐の変容と五代","chapter":"2","enabled":true,"number":"18","question":"玄宗の晩年の愛妃は誰か。"},{"answer":"安史の乱","category":"唐と近隣諸国・唐の変容と五代","chapter":"2","enabled":true,"number":"18","question":"755〜763年、安禄山を中心に、唐を動揺させた反乱は何と呼ばれているか。"},{"answer":"両税法","category":"唐と近隣諸国・唐の変容と五代","chapter":"2","enabled":true,"number":"18","question":"徳宗時代の780年、租調庸制に代わって実施された、夏秋２回、現住地で銭納させる新税制は何か。"},{"answer":"藩鎮","category":"唐と近隣諸国・唐の変容と五代","chapter":"2","enabled":true,"number":"18","question":"安史の乱後、国内各地におかれた節度使が中央政府から自立するようになると、何と呼ばれるようになったか。"},{"answer":"黄巣の乱","category":"唐と近隣諸国・唐の変容と五代","chapter":"2","enabled":true,"number":"18","question":"唐滅亡の契機となった、875年からの農民反乱は何と呼ばれているか。"},{"answer":"朱全忠","category":"唐と近隣諸国・唐の変容と五代","chapter":"2","enabled":true,"number":"18","question":"黄巣の反乱軍に加わったのち、唐に降って反乱鎮圧に活躍し、907年に唐を滅ぼした部将は誰か。"},{"answer":"汴州(開封)","category":"唐と近隣諸国・唐の変容と五代","chapter":"2","enabled":true,"number":"18","question":"後唐を除いた五代諸国の首都はどこか。"},{"answer":"突厥","category":"突厥とウイグル・ソグド人","chapter":"2","enabled":true,"number":"19","question":"６世紀半ばに台頭し、柔然を滅ぼしてモンゴル高原に大帝国を建てたトルコ系騎馬遊牧民は何か。"},{"answer":"絹馬貿易","category":"突厥とウイグル・ソグド人","chapter":"2","enabled":true,"number":"19","question":"中国王朝と突厥やウイグルなどの間で、互いの必要物資を補うために行われた物々交換形式の交易を何というか。"},{"answer":"マニ教","category":"突厥とウイグル・ソグド人","chapter":"2","enabled":true,"number":"19","question":"ウイグルが国教とした宗教は何か。"},{"answer":"キルギス","category":"突厥とウイグル・ソグド人","chapter":"2","enabled":true,"number":"19","question":"840年、ウイグルの内紛に乗じてこれを滅ぼしたトルコ系遊牧民の名称は何か。"},{"answer":"ソグド人","category":"突厥とウイグル・ソグド人","chapter":"2","enabled":true,"number":"19","question":"オアシスの道を中心に、中央ユーラシア一帯におよぶ通称ネットワークを構築したイラン系住民は何か。"},{"answer":"マガダ国","category":"仏教の成立と南アジアの統一国家","chapter":"3","enabled":true,"number":"20","question":"前６世紀にガンジス川中流域に興り、前５世紀にコーサラ国を併合し、この地域を支配した国の名称は何か。"},{"answer":"ウパニシャッド哲学","category":"仏教の成立と南アジアの統一国家","chapter":"3","enabled":true,"number":"20","question":"前6世紀頃のインドで、バラモン教の祭式主義を批判し、内面的思索を重視する思想として成立した哲学を何というか。"},{"answer":"ガウタマ＝シッダールタ","category":"仏教の成立と南アジアの統一国家","chapter":"3","enabled":true,"number":"20","question":"シャカ族の王子で、前６〜前５世紀頃に仏教を開いた人物は誰か（尊称：ブッダ）。"},{"answer":"ジャイナ教","category":"仏教の成立と南アジアの統一国家","chapter":"3","enabled":true,"number":"20","question":"ヴァルダマーナが開祖である、不殺生主義を標榜する宗教は何か。"},{"answer":"マウリヤ朝","category":"仏教の成立と南アジアの統一国家","chapter":"3","enabled":true,"number":"20","question":"前４世紀後半に成立した、インド史上最初の統一国家の王朝は何か。"},{"answer":"チャンドラグプタ王","category":"仏教の成立と南アジアの統一国家","chapter":"3","enabled":true,"number":"20","question":"マウリヤ朝の建国者は誰か。"},{"answer":"パータリプトラ","category":"仏教の成立と南アジアの統一国家","chapter":"3","enabled":true,"number":"20","question":"マウリヤ朝の首都はどこか。"},{"answer":"アショーカ王","category":"仏教の成立と南アジアの統一国家","chapter":"3","enabled":true,"number":"20","question":"マウリヤ朝の全盛期を現出した、第三代の王は誰か。"},{"answer":"ダルマ（法）","category":"仏教の成立と南アジアの統一国家","chapter":"3","enabled":true,"number":"20","question":"アショーカ王が政治倫理とし、磨崖碑や石柱碑に詔勅として刻ませたインド思想の概念を何と呼ぶか。"},{"answer":"セイロン島","category":"仏教の成立と南アジアの統一国家","chapter":"3","enabled":true,"number":"20","question":"アショーカ王が王子を派遣して、仏教を布教させたとされる地域はどこか。"},{"answer":"クシャーナ朝","category":"仏教の成立と南アジアの統一国家","chapter":"3","enabled":true,"number":"20","question":"１〜３世紀にかけて、大月氏の支配から自立したイラン系民族が西北インドに建てた王朝は何か。"},{"answer":"プルシャプラ","category":"仏教の成立と南アジアの統一国家","chapter":"3","enabled":true,"number":"20","question":"クシャーナ朝の首都はどこか。"},{"answer":"カニシカ王","category":"仏教の成立と南アジアの統一国家","chapter":"3","enabled":true,"number":"20","question":"2世紀にクシャーナ朝の全盛期を現出した王は誰か。"},{"answer":"ガンダーラ美術","category":"仏教の成立と南アジアの統一国家","chapter":"3","enabled":true,"number":"20","question":"カニシカ王の治世下に発達した、ギリシア彫刻の影響の強い仏像などがつくられた仏教美術は何と呼ばれるか。"},{"answer":"菩薩信仰","category":"仏教の成立と南アジアの統一国家","chapter":"3","enabled":true,"number":"20","question":"大乗仏教で重視された、自らの悟りだけでなく、他者を救うことを理想とする存在への信仰を何というか。"},{"answer":"竜樹(ナーガールジュナ)","category":"仏教の成立と南アジアの統一国家","chapter":"3","enabled":true,"number":"20","question":"大乗仏教の理論を体系化し、「空」の思想を説いたことで知られるインドの仏教哲学者は誰か。"},{"answer":"サータヴァーハナ朝","category":"仏教の成立と南アジアの統一国家","chapter":"3","enabled":true,"number":"20","question":"前１〜後３世紀にデカン高原を支配し、季節風を利用した交易で繁栄した、ドラヴィダ系アーンドラ族の王朝は何か。"},{"answer":"『エリュトゥラー海案内記』","category":"仏教の成立と南アジアの統一国家","chapter":"3","enabled":true,"number":"20","question":"１世紀にギリシア人が書いたとされる、紅海からインド洋にかけての地理・物産の書の名称は何か。"},{"answer":"グプタ朝","category":"インド古典文化とヒンドゥー教の定着","chapter":"3","enabled":true,"number":"21","question":"4世紀前半にチャンドラグプタ1世が北インドを統一して建て、サンスクリット文学や数学などが栄えた王朝は何か。"},{"answer":"パータリプトラ","category":"インド古典文化とヒンドゥー教の定着","chapter":"3","enabled":true,"number":"21","question":"グプタ朝の首都はどこか。"},{"answer":"チャンドラグプタ２世","category":"インド古典文化とヒンドゥー教の定着","chapter":"3","enabled":true,"number":"21","question":"グプタ朝の最盛期を現出した、第三代王は誰か。"},{"answer":"法顕","category":"インド古典文化とヒンドゥー教の定着","chapter":"3","enabled":true,"number":"21","question":"グプタ朝の全盛期、仏教教義の研究のため陸路でインドを訪れ、海路で帰国した東晋時代の中国僧は誰か。"},{"answer":"サンスクリット語","category":"インド古典文化とヒンドゥー教の定着","chapter":"3","enabled":true,"number":"21","question":"梵語とも呼ばれる、古代インドの宗教・文学・学術などで用いられ、グプタ朝時代に古典語として完成した言語は何か。"},{"answer":"カーリダーサ","category":"インド古典文化とヒンドゥー教の定着","chapter":"3","enabled":true,"number":"21","question":"グプタ朝の全盛期を現出したチャンドラグプタ２世の宮廷で活躍した、代表作『シャクンタラー』の詩人・戯曲家は誰か。"},{"answer":"グプタ様式","category":"インド古典文化とヒンドゥー教の定着","chapter":"3","enabled":true,"number":"21","question":"グプタ朝のもとで完成された、純インド的な仏教美術様式を何と呼ぶか。"},{"answer":"アジャンター石窟寺院","category":"インド古典文化とヒンドゥー教の定着","chapter":"3","enabled":true,"number":"21","question":"グプタ朝時代を中心に造営され、壁画などに大乗仏教の影響が見られる、デカン高原西部に位置する仏教遺跡は何か。"},{"answer":"ナーランダー僧院","category":"インド古典文化とヒンドゥー教の定着","chapter":"3","enabled":true,"number":"21","question":"グプタ朝のもとで５世紀に建立された、仏教教学研究の機関の名称は何か。"},{"answer":"エフタル","category":"インド古典文化とヒンドゥー教の定着","chapter":"3","enabled":true,"number":"21","question":"グプタ朝衰退の一因をつくった、中央アジアから進出してきた騎馬遊牧民の名称は何か。"},{"answer":"マヌ法典","category":"インド古典文化とヒンドゥー教の定着","chapter":"3","enabled":true,"number":"21","question":"聖典のないヒンドゥー教において、人びとの生活規範に関する法典とされたものは何か。"},{"answer":"バクティ運動","category":"インド古典文化とヒンドゥー教の定着","chapter":"3","enabled":true,"number":"21","question":"７世紀頃南インドで興った、ヒンドゥー教の最高神に対する絶対帰依をとなえた宗教運動を何と呼ぶか。"},{"answer":"ヴァルダナ朝","category":"インド古典文化とヒンドゥー教の定着","chapter":"3","enabled":true,"number":"21","question":"７世紀前半にハルシャ王によって成立した、北インド最後の統一王朝は何か。"},{"answer":"カナウジ","category":"インド古典文化とヒンドゥー教の定着","chapter":"3","enabled":true,"number":"21","question":"ヴァルダナ朝の首都はどこか。"},{"answer":"『大唐西域記』","category":"インド古典文化とヒンドゥー教の定着","chapter":"3","enabled":true,"number":"21","question":"ヴァルダナ朝時代のインドに赴いた玄奘による旅行記のタイトルは何か。"},{"answer":"『南海寄帰内法伝』","category":"インド古典文化とヒンドゥー教の定着","chapter":"3","enabled":true,"number":"21","question":"義浄がインドから唐に海路で帰国中、シュリーヴィジャヤ王国で記述した旅行記は何か。"},{"answer":"ラージプート","category":"インド古典文化とヒンドゥー教の定着","chapter":"3","enabled":true,"number":"21","question":"８〜13世紀初めにかけて、北インド各地に諸王国を建てた人びとは、「王の子」を意味する語で、何と自称したか。"},{"answer":"ドンソン文化","category":"東南アジア世界の形成と展開","chapter":"3","enabled":true,"number":"22","question":"青銅製の銅鼓が代表的な、前４世紀頃から東南アジア各地に広がった青銅器・鉄器文化を何と呼ぶか。"},{"answer":"扶南","category":"東南アジア世界の形成と展開","chapter":"3","enabled":true,"number":"22","question":"クメール人あるいはマレー人が、１世紀にメコン川下流域に建てた東南アジア最初の国家は、中国名で何と呼ばれたか。"},{"answer":"チャンパー","category":"東南アジア世界の形成と展開","chapter":"3","enabled":true,"number":"22","question":"２世紀末、ベトナム中部にチャム人が建てた王国は何か。"},{"answer":"クメール人","category":"東南アジア世界の形成と展開","chapter":"3","enabled":true,"number":"22","question":"カンボジア人とも呼ばれる、カンボジア王国を建てたオーストロアジア語系の人びとの別称は何か。"},{"answer":"アンコール＝ワット","category":"東南アジア世界の形成と展開","chapter":"3","enabled":true,"number":"22","question":"スールヤヴァルマン２世によってヒンドゥー教寺院として建立され、のちに仏教寺院に改修された建造物の名称は何か。"},{"answer":"ドヴァーラヴァティー王国","category":"東南アジア世界の形成と展開","chapter":"3","enabled":true,"number":"22","question":"７〜11世紀頃、チャオプラヤ川下流域にモン人が建てた国の名称は何か。"},{"answer":"スコータイ朝","category":"東南アジア世界の形成と展開","chapter":"3","enabled":true,"number":"22","question":"13～15世紀、タイ北部に建てられたタイ人初の統一王朝は何か。"},{"answer":"アユタヤ朝","category":"東南アジア世界の形成と展開","chapter":"3","enabled":true,"number":"22","question":"14世紀半ばに成立し、17世紀にタイ国史上最大の領土を支配した王朝は何か。"},{"answer":"上座部仏教","category":"東南アジア世界の形成と展開","chapter":"3","enabled":true,"number":"22","question":"チャオプラヤ川、エーヤワディー川流域で信仰されている仏教の宗派は何か。"},{"answer":"ピュー人","category":"東南アジア世界の形成と展開","chapter":"3","enabled":true,"number":"22","question":"４世紀頃国家を建国し、ビルマのエアーヤワディー川流域に栄えた民族の名称は何か。"},{"answer":"パガン朝","category":"東南アジア世界の形成と展開","chapter":"3","enabled":true,"number":"22","question":"11世紀半ばに成立したが、元軍の侵入を受けて13世紀末に滅亡した、ビルマ最初の統一王朝は何か。"},{"answer":"李朝","category":"東南アジア世界の形成と展開","chapter":"3","enabled":true,"number":"22","question":"中国王朝の支配下から自立し、11世紀初めベトナム北部に成立した最初の長期王朝は何か。"},{"answer":"大越国","category":"東南アジア世界の形成と展開","chapter":"3","enabled":true,"number":"22","question":"李朝以降のベトナムの国名（国号）は、中国史料で何と表記されたか。"},{"answer":"陳朝","category":"東南アジア世界の形成と展開","chapter":"3","enabled":true,"number":"22","question":"13世紀前半～1400年に存続し、元軍の侵攻を撃退した北部ベトナムの王朝は何か。"},{"answer":"字喃","category":"東南アジア世界の形成と展開","chapter":"3","enabled":true,"number":"22","question":"陳朝のもとで、漢字の部首を基に考案されて使われたベトナム文字は何か。"},{"answer":"シュリーヴィジャヤ王国","category":"東南アジア世界の形成と展開","chapter":"3","enabled":true,"number":"22","question":"７〜14世紀に、マレー人によってスマトラ島を中心に建てられて存在した王国の名称は何か。"},{"answer":"パレンバン","category":"東南アジア世界の形成と展開","chapter":"3","enabled":true,"number":"22","question":"シュリーヴィジャヤ王国の都で、スマトラ島東南部の港市はどこか。"},{"answer":"シャイレンドラ朝","category":"東南アジア世界の形成と展開","chapter":"3","enabled":true,"number":"22","question":"ボロブドゥールの建造など、８世紀後半に有力となった、ジャワ島中部に建てた王朝は何か。"},{"answer":"スサ","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"アケメネス朝ペルシアの行政上の都はどこか。"},{"answer":"キュロス２世","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"メディアから自立を達成した、アケメネス朝ペルシアの建国者は誰か。"},{"answer":"カンビュセス２世","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"全オリエントを統一した、アケメネス朝ペルシアの王は誰か。"},{"answer":"ダレイオス１世","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"東はインダス川から西はエーゲ海東部にいたる大帝国を建設した、アケメネス朝全盛期の王は誰か。"},{"answer":"サトラップ","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"ダレイオス１世が任命した、アケメネス朝の州の軍民両権を握る知事は何と呼ばれたか。"},{"answer":"「王の目・王の耳」","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"州を巡察してサトラップを監察する、王直属の行政官を何と呼ぶか。"},{"answer":"ペルセポリス","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"ダレイオス１世が建設を開始した、祭祀用の王都の名称は何か。"},{"answer":"「王の道」","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"ダレイオス１世が建設した、駅伝制が整備されたスサからサルデスにわたる国道を何と呼ぶか。"},{"answer":"アレクサンドロス大王","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"アケメネス朝はギリシア世界の誰との戦いに敗れたことによって滅亡したか。"},{"answer":"ペルシア戦争","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"帝国の混乱・衰退の原因ともなった、ギリシア諸ポリスとの戦争を何というか。"},{"answer":"アフラ＝マズダ","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"ゾロアスター教の最高神で、光明・善の神とされるものの名称は何か。"},{"answer":"アンラ＝マンユ(アーリマン)","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"ゾロアスター教の最高神と対立する、暗黒・悪の神の名称は何か。"},{"answer":"ミトラ教","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"ローマ帝政期に軍人を中心に流行した、光明神を崇拝するインド・イラン起源の密儀宗教の名称は何か。"},{"answer":"ローリンソン","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"ベヒストゥーン碑文をもとに、楔形文字の解読に成功したイギリス人学者は誰か。"},{"answer":"セレウコス朝","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"アレクサンドロス大王の死後、イラン高原を含む西アジアの大半を支配した後継の王朝は何か。"},{"answer":"バクトリア","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"前３世紀半ば、セレウコス朝の支配から自立して、アム川上流でギリシア系住民が建てた国は何か。"},{"answer":"安息","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"パルティアの中国史書での呼び方は何か。"},{"answer":"ヘカトンピュロス","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"パルティア建国時の首都はどこか。"},{"answer":"クテシフォン","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"パルティア全盛期の王ミトラダテス１世により、パルティアの都はどこに遷都されたか。"},{"answer":"アルダシール１世","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"ササン朝ペルシア初代王は誰か。"},{"answer":"ウァレリアヌス","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"3世紀にササン朝のシャープール1世との戦いに敗れ、ローマ皇帝として初めて敵国の捕虜となった人物は誰か。"},{"answer":"シャープール１世","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"西方でローマ皇帝を捕虜とした、パルティア第２代国王は誰か。"},{"answer":"ニハーヴァンドの戦い","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"642年イスラーム軍に大敗し、ササン朝の事実上の滅亡につながった戦いは何か。"},{"answer":"『アヴェスター』","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"ホスロー１世時代に集大成された、ゾロアスター教の教典の名称は何か。"},{"answer":"マニ教","category":"イラン諸国家の興亡とイラン文明","chapter":"4","enabled":true,"number":"23","question":"シャープール１世に重用された人物が創始した、ゾロアスター教にキリスト教・仏教を融合した宗教は何か。"},{"answer":"シノイキスモス","category":"ポリスの形成とギリシア社会の特色","chapter":"4","enabled":true,"number":"24","question":"前８世紀頃のギリシアで、有力者（貴族）が中心となって軍事的・経済的要地へ移住したことをカタカナで何と称するか。"},{"answer":"アクロポリス","category":"ポリスの形成とギリシア社会の特色","chapter":"4","enabled":true,"number":"24","question":"「城山」の意味で、ポリスの中心部にあり、市の守護神がまつられていた丘をカタカナで何と呼ぶか。"},{"answer":"ビザンティオン","category":"ポリスの形成とギリシア社会の特色","chapter":"4","enabled":true,"number":"24","question":"ボスフォラス海峡に面してギリシア人が建設した、現在のイスタンブルの前身となった植民市はどこか。"},{"answer":"マッサリア","category":"ポリスの形成とギリシア社会の特色","chapter":"4","enabled":true,"number":"24","question":"南フランスのローヌ河口近くにギリシア人が建設した、現在のマルセイユの前身となった植民市の名前は何か。"},{"answer":"ネアポリス","category":"ポリスの形成とギリシア社会の特色","chapter":"4","enabled":true,"number":"24","question":"南イタリアにギリシア人が建設した、現在のナポリの前身となった植民市の名前は何か。"},{"answer":"ヘレネス","category":"ポリスの形成とギリシア社会の特色","chapter":"4","enabled":true,"number":"24","question":"古代ギリシア人は何と自称したか。"},{"answer":"バルバロイ","category":"ポリスの形成とギリシア社会の特色","chapter":"4","enabled":true,"number":"24","question":"古代ギリシア人は異民族を蔑視して何と呼んだか。"},{"answer":"デルフォイ","category":"ポリスの形成とギリシア社会の特色","chapter":"4","enabled":true,"number":"24","question":"中部ギリシアに位置し、そのアポロン神殿の神託が権威をもっていた聖地はどこか。"},{"answer":"クレーロス","category":"ポリスの形成とギリシア社会の特色","chapter":"4","enabled":true,"number":"24","question":"元来は「くじ」という意味で、ギリシア人が定住後、くじで分配された私有地（持ち分地）を何と呼ぶか。"},{"answer":"アゴラ","category":"ポリスの形成とギリシア社会の特色","chapter":"4","enabled":true,"number":"24","question":"アクロポリスのふもとにあり、ポリスの政治・経済活動の中心であった公共広場を何と呼ぶか。"},{"answer":"武器を自弁して戦うこと/アテネ市民の成年男子であること","category":"ポリスの形成とギリシア社会の特色","chapter":"4","enabled":true,"number":"24","question":"貴族政中心の古代アテネにて、政治に参加できる市民とされるために必要とされた条件を一つ答えなさい。"},{"answer":"ペリオイコイ","category":"ポリスの形成とギリシア社会の特色","chapter":"4","enabled":true,"number":"24","question":"「周辺民」の意味で、農業・商工業に従事した、参政権のないスパルタの半自由民は何と呼ばれたか。"},{"answer":"ヘイロータイ","category":"ポリスの形成とギリシア社会の特色","chapter":"4","enabled":true,"number":"24","question":"スパルタにおいて完全市民に共有された、隷属農民は何と呼ばれたか。"},{"answer":"リュクルゴス","category":"ポリスの形成とギリシア社会の特色","chapter":"4","enabled":true,"number":"24","question":"スパルタの独特な軍国主義体制を確立したとされる、伝説的立法者は誰か。"},{"answer":"アルコン","category":"アテネの民主政とペルシア戦争","chapter":"4","enabled":true,"number":"25","question":"アテネ貴族政で行政をになった９人の執政官のことをカタカナで何と呼ぶか。"},{"answer":"ファランクス","category":"アテネの民主政とペルシア戦争","chapter":"4","enabled":true,"number":"25","question":"古代ギリシアで、青銅の鎧や盾を自弁して戦った重装歩兵の、密集隊形のことを何というか。"},{"answer":"ドラコン","category":"アテネの民主政とペルシア戦争","chapter":"4","enabled":true,"number":"25","question":"前７世紀後半のアテネで、従来の慣習法を成文化した立法者は誰か。"},{"answer":"財産政治","category":"アテネの民主政とペルシア戦争","chapter":"4","enabled":true,"number":"25","question":"ソロンが行った、財産によって市民を４等級に分け、参政権と兵役義務を定めた政治は、何と呼ばれるか。"},{"answer":"債務奴隷","category":"アテネの民主政とペルシア戦争","chapter":"4","enabled":true,"number":"25","question":"市民の人口減少を防ぐために、ソロンが禁止したこととは何か。"},{"answer":"僭主","category":"アテネの民主政とペルシア戦争","chapter":"4","enabled":true,"number":"25","question":"貴族政から民主政への過渡期に出現した、非合法な手段で政権を握った独裁者を何と呼ぶか。"},{"answer":"ペイシストラトス","category":"アテネの民主政とペルシア戦争","chapter":"4","enabled":true,"number":"25","question":"前561年より３度にわたって僭主となり、中小農民の保護・育成や文化事業にも力を注いだ人物は誰か。"},{"answer":"クレイステネス","category":"アテネの民主政とペルシア戦争","chapter":"4","enabled":true,"number":"25","question":"前６世紀末、血縁的部族制の廃止などの改革を行い、アテネ民主政の基礎を確立した政治家は誰か。"},{"answer":"オストラキスモス","category":"アテネの民主政とペルシア戦争","chapter":"4","enabled":true,"number":"25","question":"クレイステネスが創設した、僭主の出現を防止するための、市民による投票制度をカタカナで何というか。"},{"answer":"イオニア植民市","category":"アテネの民主政とペルシア戦争","chapter":"4","enabled":true,"number":"25","question":"ペルシア戦争のきっかけとなった反乱は、小アジアのどこの植民市でおこったか。"},{"answer":"マラトンの戦い","category":"アテネの民主政とペルシア戦争","chapter":"4","enabled":true,"number":"25","question":"前490年、アテネ北東岸に上陸したペルシア軍を、アテネ重装歩兵軍が破った戦いを何と呼ぶか。"},{"answer":"テルモピレーの戦い","category":"アテネの民主政とペルシア戦争","chapter":"4","enabled":true,"number":"25","question":"前480年、第３回のペルシア戦争で、ギリシア半島中部でスパルタ軍がペルシア軍に大敗した戦いを何と呼ぶか。"},{"answer":"三段櫂船","category":"アテネの民主政とペルシア戦争","chapter":"4","enabled":true,"number":"25","question":"古代ギリシアで用いられ、ペルシア戦争のサラミス海戦などで活躍した軍船を何というか。"},{"answer":"プラタイアの戦い","category":"アテネの民主政とペルシア戦争","chapter":"4","enabled":true,"number":"25","question":"前479年、アテネ・スパルタ連合軍がペルシア陸軍を破り、ギリシア側の勝利を確定した戦いを何と呼ぶか。"},{"answer":"デロス同盟","category":"アテネの民主政とペルシア戦争","chapter":"4","enabled":true,"number":"25","question":"ペルシアの再侵攻にそなえ、前478年頃アテネを盟主に結成された軍事同盟は何か。"},{"answer":"無産市民","category":"アテネの民主政とペルシア戦争","chapter":"4","enabled":true,"number":"25","question":"サラミスの海戦の際、三段櫂船の漕ぎ手として貢献し、戦後に発言権を増大させたのはどのような人びとか。"},{"answer":"ペリクレス","category":"ポリス社会の変容とヘレニズム時代","chapter":"4","enabled":true,"number":"26","question":"前５世紀後半、アテネの全盛期を現出し、古代民主政を完成させた政治家は誰か。"},{"answer":"ラウレイオン銀山","category":"ポリス社会の変容とヘレニズム時代","chapter":"4","enabled":true,"number":"26","question":"古代アテネが強力な艦隊を建設する資金源とした、アッティカ地方南部にある銀山はどこか。"},{"answer":"ペロポネソス同盟","category":"ポリス社会の変容とヘレニズム時代","chapter":"4","enabled":true,"number":"26","question":"アテネの強勢化に対抗して、スパルタを盟主に強化された軍事同盟を何と呼ぶか。"},{"answer":"衆愚政治","category":"ポリス社会の変容とヘレニズム時代","chapter":"4","enabled":true,"number":"26","question":"ペロポネソス戦争のあいだにペリクレスが死亡し、混乱・腐敗したアテネの民主政治を何と呼ぶか。"},{"answer":"テーベ","category":"ポリス社会の変容とヘレニズム時代","chapter":"4","enabled":true,"number":"26","question":"ポリス間抗争のなか、エパメイノンダスの指導でスパルタを破り、前４世紀前半に覇権を握ったポリスは何か。"},{"answer":"傭兵","category":"ポリス社会の変容とヘレニズム時代","chapter":"4","enabled":true,"number":"26","question":"長期にわたるポリス間抗争で市民の没落が進むと、市民皆兵の原則が崩れ、何が軍の中心となったか。"},{"answer":"パルテノン神殿","category":"ポリス社会の変容とヘレニズム時代","chapter":"4","enabled":true,"number":"26","question":"ペリクレスによって再建された、アテネのアクロポリスのアテナ女神神殿は一般に何と呼ばれるか。"},{"answer":"フィリッポス２世","category":"ポリス社会の変容とヘレニズム時代","chapter":"4","enabled":true,"number":"26","question":"前４世紀にマケドニアの勢力を拡大した王で、アレクサンドロス大王の父は誰か。"},{"answer":"カイロネイアの戦い","category":"ポリス社会の変容とヘレニズム時代","chapter":"4","enabled":true,"number":"26","question":"フィリッポス２世がアテネ・テーベ連合軍を撃破し、ギリシア諸ポリスをほぼ制圧した戦いを何と呼ぶか。"},{"answer":"コリントス同盟","category":"ポリス社会の変容とヘレニズム時代","chapter":"4","enabled":true,"number":"26","question":"マケドニアが盟主となり、スパルタを除く全ポリスと結んだ同盟は何か。"},{"answer":"前334年","category":"ポリス社会の変容とヘレニズム時代","chapter":"4","enabled":true,"number":"26","question":"アレクサンドロス大王が東方遠征を始めたのは西暦何年か。"},{"answer":"アルベラ(ガウガメラ)の戦い","category":"ポリス社会の変容とヘレニズム時代","chapter":"4","enabled":true,"number":"26","question":"前331年、アレクサンドロス大王の軍がアケメネス朝軍との決戦に勝利した戦いの名称は何か。"},{"answer":"コスモポリタニズム(世界市民主義)","category":"ポリス社会の変容とヘレニズム時代","chapter":"4","enabled":true,"number":"26","question":"ポリス社会の枠を越えた、より普遍的かつ個人主義的な傾向をもつヘレニズム時代の考え方を何と呼ぶか。"},{"answer":"ディアドコイ","category":"ポリス社会の変容とヘレニズム時代","chapter":"4","enabled":true,"number":"26","question":"アレクサンドロスの死後、「後継者」をめざして分立・抗争した部下の有力者たちは何と呼ばれたか。"},{"answer":"アンティゴノス朝マケドニア","category":"ポリス社会の変容とヘレニズム時代","chapter":"4","enabled":true,"number":"26","question":"大帝国の分裂後、アレクサンドロスの部下の孫が建てたマケドニア王国の王朝名は何か。"},{"answer":"セレウコス朝シリア","category":"ポリス社会の変容とヘレニズム時代","chapter":"4","enabled":true,"number":"26","question":"大帝国の分裂後、アレクサンドロスの部下の一人が建てたシリア王国の王朝名は何か。"},{"answer":"プトレマイオス朝エジプト","category":"ポリス社会の変容とヘレニズム時代","chapter":"4","enabled":true,"number":"26","question":"大帝国の分裂後、アレクサンドロスの部下の一人が建てたエジプト王国の王朝名は何か。"},{"answer":"ムセイオン","category":"ポリス社会の変容とヘレニズム時代","chapter":"4","enabled":true,"number":"26","question":"エジプトのアレクサンドリアに開設され、自然科学研究の中心となった王立研究所は何と呼ばれるか。"},{"answer":"ホメロス","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"『イリアス』『オデユッセイア』の作者または編者とされる詩人は誰か。"},{"answer":"ヘシオドス","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"『神統記』『労働と日々』などを著し、神々の系譜や農民の勤労の尊さをうたった、古代ギリシアの叙事詩人は誰か。"},{"answer":"アイスキュロス","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"代表作『アガメムノン』を著した、アテネ三大悲劇詩人の一人は誰か。"},{"answer":"ソフォクレス","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"代表作『オイディプス王』を著した、アテネ三大悲劇詩人の一人は誰か。"},{"answer":"エウリピデス","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"代表作『メデイア』を著した、アテネ三大悲劇詩人の一人は誰か。"},{"answer":"ヘロドトス","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"小アジア出身で、ペルシア戦争を物語的に叙述し、『歴史』を著して「歴史の父」と呼ばれる人物は誰か。"},{"answer":"トゥキディデス","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"ペロポネソス戦争を史料批判に基づいた『歴史』に著した、アテネ出身の歴史家は誰か。"},{"answer":"タレス","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"「哲学の父」と称される、万物の根源を「水」と考え、また日食を予言した哲学者は誰か。"},{"answer":"ヘラクレイトス","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"「万物は流転する」のことばを残し、「火」を変化の象徴とした哲学者は誰か。"},{"answer":"デモクリトス","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"万物の根源を等質不変の「原子（アトム）」と主張した哲学者は誰か。"},{"answer":"ピタゴラス","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"「万物の根源は数である」と考え、数学と哲学を結びつけた古代ギリシアの哲学者は誰か。"},{"answer":"プロタゴラス","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"「万物の尺度は人間」といったことばを残したソフィストの代表的な人物は誰か。"},{"answer":"「万物の尺度は人間」","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"絶対的な真理ではなく相対的な真理を主張したプロタゴラスの言葉として有名な命題は何か。"},{"answer":"ソクラテス","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"問答法を通じて「無知の知」を自覚させる方法を実践し、普遍的真理の存在を説いた哲学者は誰か。"},{"answer":"プラトン","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"ソクラテスの弟子で、真に存在するのは善や美というイデアであると説いた哲学者は誰か。"},{"answer":"アリストテレス","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"プラトンの弟子で、諸学の集大成者として「万学の祖」と呼ばれ、後世に大きな影響を及ぼした哲学者は誰か。"},{"answer":"アカデメイア","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"古代ギリシアの哲学者プラトンがアテネ郊外に創設した学園で、のちの哲学教育の礎となった機関は何か。"},{"answer":"リュケイオン","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"アリストテレスがアテネに設立し、逍遥学派の拠点となった教育機関は何か。"},{"answer":"フェイディアス","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"古代アテネで活躍し、パルテノン神殿のアテナ像やゼウス像の制作で知られる彫刻家は誰か。"},{"answer":"ヒッポクラテス","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"「医学の父」と称され、病気を神の呪いではなく自然現象と捉えた古代ギリシアの医者は誰か。"},{"answer":"ムセイオン","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"エジプトのアレクサンドリアに開設され、自然科学研究の中心となった王立研究所は何と呼ばれるか。"},{"answer":"エウクレイデス","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"ムセイオンで学び、平面幾何学を大成したギリシアの数学者は誰か。"},{"answer":"アリスタルコス","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"地球の公転と自転、太陽中心説を主張した、ギリシア出身の天文学者は誰か。"},{"answer":"アルキメデス","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"ムセイオンで学び、浮力の原理を発見した、シチリア島のシラクサ出身の数学・物理学者は誰か。"},{"answer":"エラトステネス","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"ムセイオンの館長を務め、地球の周囲の長さを計測した、北アフリカ出身のギリシア人天文学者は誰か。"},{"answer":"ストア派","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"禁欲による幸福の追求と、理性によって生きることの大切さを説いた、ヘレニズム時代の哲学の一派を何と呼ぶか。"},{"answer":"エピクロス派","category":"ギリシアの生活と文化","chapter":"4","enabled":true,"number":"27","question":"精神的な快楽を得ることを重視した哲学者の名前に由来する、ヘレニズム時代の哲学の一派を何と呼ぶか。"},{"answer":"エトルリア人","category":"ローマ共和政","chapter":"4","enabled":true,"number":"28","question":"北イタリアのトスカナ地方に定住し、前７世紀末にローマを支配した、系統不明の半島の先住民は何と呼ばれるか。"},{"answer":"ラテン人","category":"ローマ共和政","chapter":"4","enabled":true,"number":"28","question":"前８世紀に都市国家ローマを建設したとされる人びとを何と呼ぶか。"},{"answer":"ティベル川","category":"ローマ共和政","chapter":"4","enabled":true,"number":"28","question":"都市国家ローマの象徴で、市内を流れる川は何か。"},{"answer":"パトリキ","category":"ローマ共和政","chapter":"4","enabled":true,"number":"28","question":"共和政の要職を独占した、完全な市民権をもつ大土地所有者であるローマの貴族を何というか。"},{"answer":"元老院","category":"ローマ共和政","chapter":"4","enabled":true,"number":"28","question":"任期終身の300人の貴族で構成された、ローマ共和政最高の諮問機関を何と呼ぶか。"},{"answer":"コンスル","category":"ローマ共和政","chapter":"4","enabled":true,"number":"28","question":"２名で構成され、任期１年で無給の、行政・軍事を担当した最高公職者は何と呼ばれたか。"},{"answer":"ディクタトル","category":"ローマ共和政","chapter":"4","enabled":true,"number":"28","question":"非常時にローマ共和政で任命され、半年間の強大な権限を与えられた官職は何か。"},{"answer":"プレブス","category":"ローマ共和政","chapter":"4","enabled":true,"number":"28","question":"中小土地所有農民と商工業者からなり、貴族に対して身分闘争を展開したローマの平民を何というか。"},{"answer":"護民官","category":"ローマ共和政","chapter":"4","enabled":true,"number":"28","question":"伝承では前494年の設置とされる、平民会で選出された、平民保護のための官職を何と呼ぶか。"},{"answer":"平民会","category":"ローマ共和政","chapter":"4","enabled":true,"number":"28","question":"民会の一つで、前５世紀前半に開設され、平民のみで構成された議決機関を何と呼ぶか。"},{"answer":"十二表法","category":"ローマ共和政","chapter":"4","enabled":true,"number":"28","question":"貴族に対する平民の闘争のなか、前５世紀半ばに旧来の慣習法を明文化し、公開したローマ最古の成文法は何か。"},{"answer":"リキニウス・セクスティウス法","category":"ローマ共和政","chapter":"4","enabled":true,"number":"28","question":"前367年、コンスルの１名を平民から選出することを制定した法は何か。"},{"answer":"ホルテンシウス法","category":"ローマ共和政","chapter":"4","enabled":true,"number":"28","question":"平民会の決議は元老院の承認がなくとも国法とされることを定めた法は何か。"},{"answer":"前287年","category":"ローマ共和政","chapter":"4","enabled":true,"number":"28","question":"ローマにおいて、民主共和政が成立したのは西暦何年か。"},{"answer":"タレントゥム","category":"ローマ共和政","chapter":"4","enabled":true,"number":"28","question":"ローマは、イタリア半島南部のどこを征服したことにより半島の統一を達成したか。"},{"answer":"アッピア街道","category":"ローマ共和政","chapter":"4","enabled":true,"number":"28","question":"ローマでは道路網が整備されたが、ローマから南東部に伸びる、最古の軍用道路の名称は何か。"},{"answer":"分割統治","category":"ローマ共和政","chapter":"4","enabled":true,"number":"28","question":"征服したイタリア半島の諸都市を支配するために、ローマが用いた統治方法を何というか。"},{"answer":"シチリア島","category":"ポエニ戦争と内乱の１世紀","chapter":"4","enabled":true,"number":"29","question":"共和政ローマにおいて、初の属州はどこか。"},{"answer":"ハンニバル","category":"ポエニ戦争と内乱の１世紀","chapter":"4","enabled":true,"number":"29","question":"第２回ポエニ戦争の際、現在のスペインから出発し、カンネーでローマ軍に大勝したカルタゴの将軍は誰か。"},{"answer":"スキピオ","category":"ポエニ戦争と内乱の１世紀","chapter":"4","enabled":true,"number":"29","question":"前202年、カルタゴの本拠地を襲い、カルタゴ軍に圧勝して第２回ポエニ戦争をローマの勝利に導いた将軍は誰か。"},{"answer":"ザマの戦い","category":"ポエニ戦争と内乱の１世紀","chapter":"4","enabled":true,"number":"29","question":"第２回ポエニ戦争で、スキピオがカルタゴ軍を破った戦いは何と呼ばれるか。"},{"answer":"ラティフンディア","category":"ポエニ戦争と内乱の１世紀","chapter":"4","enabled":true,"number":"29","question":"第２回ポエニ戦争以降急速に発達した、奴隷を使用してブドウなどの栽培をする大土地所有の経営を何と呼ぶか。"},{"answer":"パンと見世物","category":"ポエニ戦争と内乱の１世紀","chapter":"4","enabled":true,"number":"29","question":"無産市民となって都市へ流入した農民に、ローマの為政者が与えた施策を示すことばは何か。"},{"answer":"自作農","category":"ポエニ戦争と内乱の１世紀","chapter":"4","enabled":true,"number":"29","question":"グラックス兄弟の改革は何を増やすための改革を実行したのか。"},{"answer":"マリウス","category":"ポエニ戦争と内乱の１世紀","chapter":"4","enabled":true,"number":"29","question":"ユグルタ戦争を鎮圧して台頭し、平民派を形成して一時政権を握り軍政改革を行なった政治家は誰か。"},{"answer":"スラ","category":"ポエニ戦争と内乱の１世紀","chapter":"4","enabled":true,"number":"29","question":"同盟市戦争を鎮圧し、さらに小アジアから帰国したのち平民派を弾圧した、閥族派の政治家は誰か。"},{"answer":"スパルタクス","category":"ポエニ戦争と内乱の１世紀","chapter":"4","enabled":true,"number":"29","question":"前73〜前71年におこった大奴隷反乱を指導した、トラキア出身の剣闘士は誰か。"},{"answer":"ポンペイウス、カエサル、クラッスス","category":"ポエニ戦争と内乱の１世紀","chapter":"4","enabled":true,"number":"29","question":"第１回三頭政治を担った人物を三名答えなさい。"},{"answer":"ガリア","category":"ポエニ戦争と内乱の１世紀","chapter":"4","enabled":true,"number":"29","question":"カエサルの名声を高めることとなった、彼の遠征先はどこか。"},{"answer":"ブルートゥス","category":"ポエニ戦争と内乱の１世紀","chapter":"4","enabled":true,"number":"29","question":"前45年に元老院からインペラトルの称号を贈られたカエサルの独裁に反対し、彼を暗殺した共和主義者は誰か。"},{"answer":"レピドゥス","category":"ポエニ戦争と内乱の１世紀","chapter":"4","enabled":true,"number":"29","question":"第２回三頭政治から早々に離脱を余儀なくされた人物は誰か。"},{"answer":"クレオパトラ","category":"ポエニ戦争と内乱の１世紀","chapter":"4","enabled":true,"number":"29","question":"プトレマイオス朝最後の女王は誰か。"},{"answer":"アクティウムの海戦","category":"ポエニ戦争と内乱の１世紀","chapter":"4","enabled":true,"number":"29","question":"オクタウィアヌスがアントニウスとエジプトの連合軍を撃破した戦いは何か。"},{"answer":"前31年","category":"ポエニ戦争と内乱の１世紀","chapter":"4","enabled":true,"number":"29","question":"オクタウィアヌスがアントニウスとエジプトの連合軍を撃破した戦いは西暦何年の出来事か。"},{"answer":"アウグストゥス","category":"帝政ローマ","chapter":"4","enabled":true,"number":"30","question":"元老院がオクタウィアヌスに贈った尊称で、以後、歴代皇帝の称号とされたものは何か。"},{"answer":"前27年","category":"帝政ローマ","chapter":"4","enabled":true,"number":"30","question":"ローマの帝政が始まったとされるのは西暦何年からか。"},{"answer":"プリンケプス","category":"帝政ローマ","chapter":"4","enabled":true,"number":"30","question":"オクタウィアヌスは「第一の市民」を自称した。「元首」と訳されるこの称号は何か。"},{"answer":"トラヤヌス","category":"帝政ローマ","chapter":"4","enabled":true,"number":"30","question":"ダキアを属州とし、ローマ帝国の最大版図を実現した五賢帝の２番目の皇帝は誰か。"},{"answer":"マルクス＝アウレリウス＝アントニヌス","category":"帝政ローマ","chapter":"4","enabled":true,"number":"30","question":"ストア哲学を学び「哲人皇帝」と呼ばれ、中国史書では「大秦王安敦」と記された五賢帝最後の皇帝は誰か。"},{"answer":"ウィンドボナ","category":"帝政ローマ","chapter":"4","enabled":true,"number":"30","question":"現在のウィーンにあたる、ローマ帝国がドナウ川流域に築いた軍事拠点都市はどこか。"},{"answer":"ルテティア","category":"帝政ローマ","chapter":"4","enabled":true,"number":"30","question":"現在のパリにあたる、ローマ時代にガリア人の一部族が住んでいた都市はどこか。"},{"answer":"ロンディニウム","category":"帝政ローマ","chapter":"4","enabled":true,"number":"30","question":"現在のロンドンにあたる、ローマ帝国時代にブリタニアに築かれた都市はどこか。"},{"answer":"帝国内の全自由民","category":"帝政ローマ","chapter":"4","enabled":true,"number":"30","question":"カラカラ帝によるアントニヌス勅令によって、市民権が付与される対象は誰になったか。"},{"answer":"コロナトゥス","category":"帝政ローマ","chapter":"4","enabled":true,"number":"30","question":"ラティフンディアに代わり、隷属的小作人を使用する土地経営が拡大した。この経営形態を何と呼ぶか。"},{"answer":"軍人皇帝時代","category":"帝政ローマ","chapter":"4","enabled":true,"number":"30","question":"3世紀にローマ帝国で各地の軍司令官が次々と皇帝となり、内乱と混乱が続いた時代を何というか。"},{"answer":"ディオクレティアヌス","category":"帝政ローマ","chapter":"4","enabled":true,"number":"30","question":"最後の軍人皇帝で、キリスト教を迫害した人物は誰か。"},{"answer":"四帝分治制（テトラルキア）","category":"帝政ローマ","chapter":"4","enabled":true,"number":"30","question":"ディオクレティアヌスは、広大なローマ帝国をどのような方法で統治しようとしたか。"},{"answer":"コンスタンティヌス帝","category":"帝政ローマ","chapter":"4","enabled":true,"number":"30","question":"313年にキリスト教の公認を行い、その後324年に帝国を再統一した皇帝は誰か。"},{"answer":"ミラノ勅令","category":"帝政ローマ","chapter":"4","enabled":true,"number":"30","question":"313年、ローマ帝国がキリスト教を公認した際に発布したものは何か。"},{"answer":"コンスタンティノープル","category":"帝政ローマ","chapter":"4","enabled":true,"number":"30","question":"330年、ローマ帝国の首都は旧ビザンティウムに遷都された。遷都後、この都市は何と改称されたか。"},{"answer":"ゲルマン人","category":"帝政ローマ","chapter":"4","enabled":true,"number":"30","question":"ローマ帝国の衰退をもたらすことになった、375年以降本格的に帝国に侵入した民族は何か。"},{"answer":"テオドシウス帝","category":"帝政ローマ","chapter":"4","enabled":true,"number":"30","question":"キリスト教を国教化し、また死に際して帝国を東西に分けた皇帝は誰か。"},{"answer":"392年","category":"帝政ローマ","chapter":"4","enabled":true,"number":"30","question":"ローマ帝国がキリスト教を国教化したのは西暦何年か。"},{"answer":"オドアケル","category":"帝政ローマ","chapter":"4","enabled":true,"number":"30","question":"476年に西ローマ帝国を滅ぼした、帝国に仕えていたゲルマン人傭兵隊長は誰か。"},{"answer":"セネカ","category":"ローマの生活と文化","chapter":"4","enabled":true,"number":"31","question":"ネロ帝の師で、のちに死を強制された、代表作『幸福論』のストア派哲学者は誰か。"},{"answer":"『自省録』","category":"ローマの生活と文化","chapter":"4","enabled":true,"number":"31","question":"哲人皇帝マルクス＝アウレリウス＝アントニヌスが、ギリシア語で書いた著作の名称は何か。"},{"answer":"ウェルギリウス","category":"ローマの生活と文化","chapter":"4","enabled":true,"number":"31","question":"ローマ建国にまつわる叙事詩『アエネイス』を著した、古代ローマ最大の詩人は誰か。"},{"answer":"リウィウス","category":"ローマの生活と文化","chapter":"4","enabled":true,"number":"31","question":"アウグストゥスに委嘱されて『ローマ建国史』を著した、ローマの歴史家は誰か。"},{"answer":"『ガリア戦記』","category":"ローマの生活と文化","chapter":"4","enabled":true,"number":"31","question":"古ケルト・古ゲルマン研究の重要史料でもある、カエサルが著した遠征記録を何というか。"},{"answer":"タキトゥス","category":"ローマの生活と文化","chapter":"4","enabled":true,"number":"31","question":"古ゲルマン研究の最重要史料である著書や、ローマ政治史の『年代記』の著者は誰か。"},{"answer":"プルタルコス","category":"ローマの生活と文化","chapter":"4","enabled":true,"number":"31","question":"ギリシアとローマの英雄的人物を比較評論した伝記の『対比列伝』を著した、ギリシア人作家は誰か。"},{"answer":"ストラボン","category":"ローマの生活と文化","chapter":"4","enabled":true,"number":"31","question":"前１〜後１世紀の、史料的な地誌の『地理誌』を著したギリシア人地理学者は誰か。"},{"answer":"万民法","category":"ローマの生活と文化","chapter":"4","enabled":true,"number":"31","question":"ローマ領の拡大にともない、市民法から発達し、すべての人に適用されるようになった法を何と呼ぶか。"},{"answer":"トリボニアヌス","category":"ローマの生活と文化","chapter":"4","enabled":true,"number":"31","question":"『ローマ法大全』の編纂事業の中心となった東ローマ（ビザンツ）の法学者は誰か。"},{"answer":"ユスティニアヌス大帝","category":"ローマの生活と文化","chapter":"4","enabled":true,"number":"31","question":"『ローマ法大全』の編纂を命じた東ローマ（ビザンツ）の皇帝は誰か。"},{"answer":"コロッセウム","category":"ローマの生活と文化","chapter":"4","enabled":true,"number":"31","question":"剣闘士の試合などが行われた、ローマの円形闘技場を何と呼ぶか。"},{"answer":"アッピア街道","category":"ローマの生活と文化","chapter":"4","enabled":true,"number":"31","question":"ローマでは道路網が整備されたが、ローマから南東部に伸びる、最古の軍用道路の名称は何か。"},{"answer":"ガール水道橋","category":"ローマの生活と文化","chapter":"4","enabled":true,"number":"31","question":"南フランスに建築された、３層アーチからなり、上が水道、中・下が人馬道の水道橋の名称は何か。"},{"answer":"プリニウス","category":"ローマの生活と文化","chapter":"4","enabled":true,"number":"31","question":"１世紀に、膨大な百科全書の『博物誌』を著し、ウェスウィウス火山噴火の際に殉職した人物は誰か。"},{"answer":"『天文学大全』","category":"ローマの生活と文化","chapter":"4","enabled":true,"number":"31","question":"2世紀にプトレマイオスが著した、天動説を体系化した天文学書の名称は何か。"},{"answer":"アウグスティヌス","category":"ローマの生活と文化","chapter":"4","enabled":true,"number":"31","question":"北アフリカの司教で、カトリックの教義確立に大きく貢献した、ローマ帝政末期最大の教父は誰か。"},{"answer":"『告白録』","category":"ローマの生活と文化","chapter":"4","enabled":true,"number":"31","question":"アウグスティヌスが、青年期に帰依したマニ教から回心してキリスト教に辿りつくまでを描いた自伝の名称は何か。"},{"answer":"イエス","category":"キリスト教の成立と発展","chapter":"4","enabled":true,"number":"32","question":"神の絶対愛と隣人愛を説き、形式主義のユダヤ教を批判したのは誰か。"},{"answer":"パリサイ派","category":"キリスト教の成立と発展","chapter":"4","enabled":true,"number":"32","question":"ユダヤ教徒のなかで、モーセの律法の遵守を主張し、宗教儀礼を極端に重視した一派は何と呼ばれたか。"},{"answer":"ピラト","category":"キリスト教の成立と発展","chapter":"4","enabled":true,"number":"32","question":"イエスを帝国への反逆者として処刑した、ローマ属州ユダヤの総督は誰か。"},{"answer":"ペテロ","category":"キリスト教の成立と発展","chapter":"4","enabled":true,"number":"32","question":"「第１使徒」と呼ばれ、ローマ伝道に力をつくしたがネロ帝の迫害で殉教した人物は誰か。"},{"answer":"パウロ","category":"キリスト教の成立と発展","chapter":"4","enabled":true,"number":"32","question":"パリサイ派に属していたが回心してキリスト教徒となり、「異邦人伝道の使徒」と呼ばれた人物は誰か。"},{"answer":"コイネー","category":"キリスト教の成立と発展","chapter":"4","enabled":true,"number":"32","question":"『新約聖書』は何という言語で書かれたか。"},{"answer":"ネロ帝","category":"キリスト教の成立と発展","chapter":"4","enabled":true,"number":"32","question":"１世紀後半、ローマの大火の責任をキリスト教徒に課し、彼らを迫害した皇帝は誰か。"},{"answer":"カタコンベ","category":"キリスト教の成立と発展","chapter":"4","enabled":true,"number":"32","question":"迫害を受けていた初期キリスト教時代の、避難所・礼拝堂としても利用された地下墓所を何というか。"},{"answer":"ニケーア公会議","category":"キリスト教の成立と発展","chapter":"4","enabled":true,"number":"32","question":"325年、教義統一のためコンスタンティヌス帝が招集した、キリスト教会最初の公会議の名称は何か。"},{"answer":"アタナシウス派","category":"キリスト教の成立と発展","chapter":"4","enabled":true,"number":"32","question":"コンスタンティヌス帝によって開かれた325年の公会議で、正統教義と認められたのは何派か。"},{"answer":"三位一体説","category":"キリスト教の成立と発展","chapter":"4","enabled":true,"number":"32","question":"アタナシウス派はイエスの神性を強く認め、のちにある説へと発展する。この説は何と呼ばれるか。"},{"answer":"アリウス派","category":"キリスト教の成立と発展","chapter":"4","enabled":true,"number":"32","question":"コンスタンティヌス帝によって開かれた325年の公会議で、異端とされたのは何派か。"},{"answer":"ユリアヌス帝","category":"キリスト教の成立と発展","chapter":"4","enabled":true,"number":"32","question":"ギリシア古典とミトラ教に心酔し、異教復興を企て、教会から「背教者」と呼ばれた４世紀の皇帝は誰か。"},{"answer":"エフェソス公会議","category":"キリスト教の成立と発展","chapter":"4","enabled":true,"number":"32","question":"431年、ネストリウス派が異端とされた、小アジア西岸の町で開かれた公会議の名称は何か。"},{"answer":"カルケドン公会議","category":"キリスト教の成立と発展","chapter":"4","enabled":true,"number":"32","question":"451年、単性論が異端とされた、コンスタンティノープルの対岸の町で開かれた公会議の名称は何か。"},{"answer":"アラブ人","category":"イスラーム教の成立","chapter":"5","enabled":true,"number":"33","question":"セム語系のアラビア語を母語とした、アラビア半島の先住民は何か。"},{"answer":"メッカ","category":"イスラーム教の成立","chapter":"5","enabled":true,"number":"33","question":"アラビア半島西部のヒジャーズ地方に位置し、古来から宗教都市・商業都市として栄えていたのはどこか。"},{"answer":"カーバ神殿","category":"イスラーム教の成立","chapter":"5","enabled":true,"number":"33","question":"アラビア半島の多神教信仰の中心として、古来からの聖石や聖像を納めていた、メッカの聖殿は何か。"},{"answer":"クライシュ族","category":"イスラーム教の成立","chapter":"5","enabled":true,"number":"33","question":"５世紀末にメッカを征服し定住した、ムハンマドが属する名門一族の名称は何か。"},{"answer":"アッラー","category":"イスラーム教の成立","chapter":"5","enabled":true,"number":"33","question":"イスラームにおける唯一神をアラビア語で何と呼ぶか。"},{"answer":"622年","category":"イスラーム教の成立","chapter":"5","enabled":true,"number":"33","question":"ヒジュラは西暦何年の出来事か。"},{"answer":"メディナ","category":"イスラーム教の成立","chapter":"5","enabled":true,"number":"33","question":"ムハンマドは大商人の迫害を受けてメッカの北方の都市ヤスリブに移住した。この都市はその後、何と呼ばれたか。"},{"answer":"ウンマ","category":"イスラーム教の成立","chapter":"5","enabled":true,"number":"33","question":"ムハンマドの移住後に成立したイスラーム教徒の共同体（教団国家）を何と呼ぶか。"},{"answer":"預言者","category":"イスラーム教の成立","chapter":"5","enabled":true,"number":"33","question":"ムハンマドのように神の言葉（啓示）を受けた人を何と呼ぶか。"},{"answer":"ムスリム","category":"イスラーム教の成立","chapter":"5","enabled":true,"number":"33","question":"イスラーム教徒のことを指し、「神に帰依する者」を意味するアラビア語は何か。"},{"answer":"『コーラン』","category":"イスラーム教の成立","chapter":"5","enabled":true,"number":"33","question":"ムハンマドの死後、650年頃に編纂されたイスラーム教の聖典は何か。"},{"answer":"ウラマー","category":"イスラーム教の成立","chapter":"5","enabled":true,"number":"33","question":"神学・法学などのイスラーム諸学につうじていた、イスラームの学者（知識人）を何と呼ぶか。"},{"answer":"六信五行","category":"イスラーム教の成立","chapter":"5","enabled":true,"number":"33","question":"ムスリムが信者として信仰し、行うべきことの基本を何と総称するか。"},{"answer":"聖戦（ジハード）","category":"イスラーム教の成立","chapter":"5","enabled":true,"number":"33","question":"異教徒に対する、イスラーム教徒の戦いを何と呼ぶか。"},{"answer":"正統カリフ","category":"正統カリフ時代〜ウマイヤ朝","chapter":"5","enabled":true,"number":"34","question":"ムハンマドの死後、信徒の選挙で選出された４代にわたる後継者は、とくに何と呼ばれるか。"},{"answer":"アブー＝バクル","category":"正統カリフ時代〜ウマイヤ朝","chapter":"5","enabled":true,"number":"34","question":"ムハンマドの義父で、初代後継者として選出されたのは誰か。"},{"answer":"ミスル","category":"正統カリフ時代〜ウマイヤ朝","chapter":"5","enabled":true,"number":"34","question":"アラブ人イスラーム教徒が家族をともなって移住し建設した軍営都市は、何と呼ばれるか。"},{"answer":"マワーリー","category":"正統カリフ時代〜ウマイヤ朝","chapter":"5","enabled":true,"number":"34","question":"ウマイヤ朝時代、とくにイラン人に多かった、非アラブ人のイスラーム教改宗者は何と呼ばれたか。"},{"answer":"ズィンミー","category":"正統カリフ時代〜ウマイヤ朝","chapter":"5","enabled":true,"number":"34","question":"庇護民を意味し、ムスリムの支配下で一定の保護を認められた非ムスリムを何と呼んだか。"},{"answer":"ハラージュ","category":"正統カリフ時代〜ウマイヤ朝","chapter":"5","enabled":true,"number":"34","question":"初めは征服地の住民に対して、のちアラブ人にも課したイスラーム世界の地租を何と呼ぶか。"},{"answer":"ジズヤ","category":"正統カリフ時代〜ウマイヤ朝","chapter":"5","enabled":true,"number":"34","question":"初めは聖典をもつ民に対して、正統カリフ時代以後はすべての異教徒に対して課した、人頭税の呼称は何か。"},{"answer":"アリー","category":"正統カリフ時代〜ウマイヤ朝","chapter":"5","enabled":true,"number":"34","question":"ムハンマドの娘婿で、暗殺された第４代正統カリフは誰か。"},{"answer":"ムアーウィヤ","category":"正統カリフ時代〜ウマイヤ朝","chapter":"5","enabled":true,"number":"34","question":"アリーが暗殺されたのち、新王朝を開いたシリア総督は誰か。"},{"answer":"661年","category":"正統カリフ時代〜ウマイヤ朝","chapter":"5","enabled":true,"number":"34","question":"ウマイヤ朝が成立したのは西暦何年か。"},{"answer":"ダマスクス","category":"正統カリフ時代〜ウマイヤ朝","chapter":"5","enabled":true,"number":"34","question":"ウマイヤ朝の首都はどこか。"},{"answer":"スンナ派","category":"正統カリフ時代〜ウマイヤ朝","chapter":"5","enabled":true,"number":"34","question":"ムハンマドの言行に従う者という意味で、代々のカリフを正統と認めるイスラーム教の多数派は何か。"},{"answer":"シーア派","category":"正統カリフ時代〜ウマイヤ朝","chapter":"5","enabled":true,"number":"34","question":"アリーとその子孫のみをムハンマドの正統な後継者と認める、イスラーム教少数派の分派名は何か。"},{"answer":"西ゴート王国","category":"正統カリフ時代〜ウマイヤ朝","chapter":"5","enabled":true,"number":"34","question":"711年にウマイヤ朝が滅ぼした、イベリア半島を支配したゲルマン人国家は何か。"},{"answer":"トゥール・ポワティエ間の戦い","category":"正統カリフ時代〜ウマイヤ朝","chapter":"5","enabled":true,"number":"34","question":"732年、カール＝マルテル率いるフランク王国と対決し、ウマイヤ朝軍が敗走した戦いは何か。"},{"answer":"アラブ帝国","category":"正統カリフ時代〜ウマイヤ朝","chapter":"5","enabled":true,"number":"34","question":"正統カリフ時代とウマイヤ朝の時代は、アラブ人が特権的支配層を形成していたため、何帝国と呼ばれるか。"},{"answer":"アブー＝アルアッバース","category":"正統カリフ時代〜ウマイヤ朝","chapter":"5","enabled":true,"number":"34","question":"ウマイヤ朝を倒し、新王朝を建てた人物は誰か。"},{"answer":"マンスール","category":"アッバース朝と政権の多極化","chapter":"5","enabled":true,"number":"35","question":"新都を造営し、行政機構を整備して中央集権体制を確立した、アッバース朝二代カリフは誰か。"},{"answer":"バグダード","category":"アッバース朝と政権の多極化","chapter":"5","enabled":true,"number":"35","question":"アッバース朝二代カリフが造営した新都はどこか。"},{"answer":"イスラーム帝国","category":"アッバース朝と政権の多極化","chapter":"5","enabled":true,"number":"35","question":"アラブ人の特権が廃止されてムスリムの平等が実現した支配体制から、アッバース朝をとくに何帝国と呼ぶか。"},{"answer":"シャリーア","category":"アッバース朝と政権の多極化","chapter":"5","enabled":true,"number":"35","question":"イスラーム法のことを何と呼ぶか。"},{"answer":"製紙法","category":"アッバース朝と政権の多極化","chapter":"5","enabled":true,"number":"35","question":"タラス河畔の戦いで、中国から西伝したものは何か。"},{"answer":"ハールーン＝アッラシード","category":"アッバース朝と政権の多極化","chapter":"5","enabled":true,"number":"35","question":"800年頃にアッバース朝の最盛期を現出した、アッバース朝の第５代カリフは誰か。"},{"answer":"知恵の館（バイト＝アルヒクマ）","category":"アッバース朝と政権の多極化","chapter":"5","enabled":true,"number":"35","question":"９世紀にバグダードに建設され、ギリシア語文献のアラビア語への翻訳が行われた研究機関は何か。"},{"answer":"アブド＝アッラフマーン3世","category":"アッバース朝と政権の多極化","chapter":"5","enabled":true,"number":"35","question":"後ウマイヤ朝の最盛期を現出した人物は誰か。"},{"answer":"コルドバ","category":"アッバース朝と政権の多極化","chapter":"5","enabled":true,"number":"35","question":"後ウマイヤ朝の都はどこか。"},{"answer":"ファーティマ朝","category":"アッバース朝と政権の多極化","chapter":"5","enabled":true,"number":"35","question":"10世紀初め、シーア派の一派がチュニジアで建国し、当初からカリフを称した王朝は何か。"},{"answer":"カイロ","category":"アッバース朝と政権の多極化","chapter":"5","enabled":true,"number":"35","question":"ファーティマ朝が10世紀後半エジプトに建設し、遷都した都市はどこか。"},{"answer":"ブワイフ朝","category":"アッバース朝と政権の多極化","chapter":"5","enabled":true,"number":"35","question":"10世紀前半、イラン系の人びとがバグダードに入城して建てたシーア派軍事政権は何か。"},{"answer":"大アミール","category":"アッバース朝と政権の多極化","chapter":"5","enabled":true,"number":"35","question":"ブワイフ朝の君主はアッバース朝カリフから何の称号を授与されたか。"},{"answer":"イクター制","category":"アッバース朝と政権の多極化","chapter":"5","enabled":true,"number":"35","question":"軍人や官僚に対し、俸給額にみあう金額を徴収できる土地の管理・徴税権を与えたブワイフ朝創始の制度は何か。"},{"answer":"モスク","category":"イスラーム文化の成立","chapter":"5","enabled":true,"number":"36","question":"イスラーム教の礼拝堂を何と呼ぶか。"},{"answer":"マドラサ","category":"イスラーム文化の成立","chapter":"5","enabled":true,"number":"36","question":"ウラマーを育成するための高等教育機関を何と呼ぶか。"},{"answer":"スーク","category":"イスラーム文化の成立","chapter":"5","enabled":true,"number":"36","question":"都市のなかでモスクに隣接する市場を、アラビア語で何と呼ぶか。"},{"answer":"細密画（ミニアチュール）","category":"イスラーム文化の成立","chapter":"5","enabled":true,"number":"36","question":"イスラーム文化において、書物の装飾や挿絵に描かれた、精密な絵画は何か。"},{"answer":"イブン＝シーナー","category":"イスラーム文化の成立","chapter":"5","enabled":true,"number":"36","question":"ギリシア・アラビア医学の集大成者で、ラテン名アヴィケンナで知られるイラン系医学者・哲学者は誰か。"},{"answer":"イブン＝ルシュド","category":"イスラーム文化の成立","chapter":"5","enabled":true,"number":"36","question":"コルドバ生まれでアリストテレスの著作の注釈で知られる、ラテン名でアヴェロエスと呼ばれる哲学者は誰か。"},{"answer":"『医学典範』","category":"イスラーム文化の成立","chapter":"5","enabled":true,"number":"36","question":"中世ヨーロッパの医学校でも重用された、アヴィケンナの著作は何か。"},{"answer":"タバリー","category":"イスラーム文化の成立","chapter":"5","enabled":true,"number":"36","question":"アッバース朝期にバグダードで活躍した、代表作『預言者たちと諸王の歴史』である知識人は誰か。"},{"answer":"イブン＝ハルドゥーン","category":"イスラーム文化の成立","chapter":"5","enabled":true,"number":"36","question":"14世紀のチュニス出身の、『世界史序説』を著したイスラーム世界を代表する歴史家は誰か。"},{"answer":"イブン＝バットゥータ","category":"イスラーム文化の成立","chapter":"5","enabled":true,"number":"36","question":"14世紀のモロッコ出身の大旅行家で、『旅行記』を著したのは誰か。"},{"answer":"『千夜一夜物語（アラビアン＝ナイト）』","category":"イスラーム文化の成立","chapter":"5","enabled":true,"number":"36","question":"中世ペルシア語の説話集がアラビア語に翻訳されたのち、各地の説話が融合されたアラビア語の大説話集は何か。"},{"answer":"ウマル＝ハイヤーム","category":"イスラーム文化の成立","chapter":"5","enabled":true,"number":"36","question":"ジャラリー暦の制定にも加わった、『ルバイヤート』作のセルジューク朝期のイラン系詩人・科学者は誰か。"},{"answer":"フワーリズミー","category":"イスラーム文化の成立","chapter":"5","enabled":true,"number":"36","question":"アラビア数学を確立し、代数学を発展させた、アッバース朝期のイラン系数学者・天文学者は誰か。"},{"answer":"ミナレット","category":"イスラーム文化の成立","chapter":"5","enabled":true,"number":"36","question":"モスクに付属する尖塔のことを何と呼ぶか。"},{"answer":"アラベスク","category":"イスラーム文化の成立","chapter":"5","enabled":true,"number":"36","question":"ムスリムが製作した、植物の茎や葉を幾何学的に図案化した装飾文様は何か。"},{"answer":"アルハンブラ宮殿","category":"イスラーム文化の成立","chapter":"5","enabled":true,"number":"36","question":"13世紀よりグラナダに建設されたナスル朝の宮殿で、西方イスラーム世界の代表的建築は何か。"},{"answer":"西岸海洋性気候","category":"ヨーロッパ概要/ゲルマン人の大移動","chapter":"5","enabled":true,"number":"37","question":"年間の降水量が比較的均等で、夏は涼しく冬は温暖であるヨーロッパ西部などに見られる気候区を何というか。"},{"answer":"地中海性気候","category":"ヨーロッパ概要/ゲルマン人の大移動","chapter":"5","enabled":true,"number":"37","question":"夏は乾燥し高温、冬は湿潤で比較的温暖な、オリーブやブドウの栽培が見られる気候を何というか。"},{"answer":"『ゲルマニア』","category":"ヨーロッパ概要/ゲルマン人の大移動","chapter":"5","enabled":true,"number":"37","question":"古ゲルマン社会の風俗や素朴な慣習を記録した、タキトゥスの作品名は何か。"},{"answer":"民会","category":"ヨーロッパ概要/ゲルマン人の大移動","chapter":"5","enabled":true,"number":"37","question":"ゲルマン部族国家で首長が主宰し、武装した自由民成年男性で構成された最高決定機関は何か。"},{"answer":"フン人","category":"ヨーロッパ概要/ゲルマン人の大移動","chapter":"5","enabled":true,"number":"37","question":"ゲルマン人大移動の直接原因となった、ヨーロッパに侵入した騎馬遊牧民は何か。"},{"answer":"ケルト人","category":"ヨーロッパ概要/ゲルマン人の大移動","chapter":"5","enabled":true,"number":"37","question":"前６世紀頃から、アルプス以北のヨーロッパに広く居住していたインド＝ヨーロッパ語系民族は何か。"},{"answer":"西ゴート","category":"ヨーロッパ概要/ゲルマン人の大移動","chapter":"5","enabled":true,"number":"37","question":"フン人の西進を恐れ、375年南下を開始し、翌年ドナウ川を渡りローマ領内に移動したゲルマン部族は何か。"},{"answer":"東ゴート","category":"ヨーロッパ概要/ゲルマン人の大移動","chapter":"5","enabled":true,"number":"37","question":"375年にフン人によって征服され、その大帝国の崩壊後、５世紀末にはイタリアに王国を建てたゲルマン部族は何か。"},{"answer":"ヴァンダル","category":"ヨーロッパ概要/ゲルマン人の大移動","chapter":"5","enabled":true,"number":"37","question":"パンノニアから北イタリア・スペインを経て、５世紀前半にアフリカ北岸に建国したゲルマン部族は何か。"},{"answer":"ブルグンド","category":"ヨーロッパ概要/ゲルマン人の大移動","chapter":"5","enabled":true,"number":"37","question":"５世紀初め、ローマ帝国の同盟者としてガリア東南部に移住・建国したゲルマン部族は何か。"},{"answer":"ランゴバルド","category":"ヨーロッパ概要/ゲルマン人の大移動","chapter":"5","enabled":true,"number":"37","question":"６世紀半ば、パンノニアからイタリア北部に移住し、建国したゲルマン部族は何か。"},{"answer":"フランク","category":"ヨーロッパ概要/ゲルマン人の大移動","chapter":"5","enabled":true,"number":"37","question":"ライン川東岸の原住地を保持しつつ、ガリア北部に移住・拡大したゲルマン部族は何か。"},{"answer":"ヘプターキー","category":"ヨーロッパ概要/ゲルマン人の大移動","chapter":"5","enabled":true,"number":"37","question":"アングロ＝サクソン人がブリタニア南部に建てた小王国群を何と呼ぶか。"},{"answer":"アッティラ","category":"ヨーロッパ概要/ゲルマン人の大移動","chapter":"5","enabled":true,"number":"37","question":"５世紀前半、パンノニアに大帝国を形成した、フン人の大王は誰か。"},{"answer":"カタラウヌムの戦い","category":"ヨーロッパ概要/ゲルマン人の大移動","chapter":"5","enabled":true,"number":"37","question":"451年、フン人の軍が、パリ東方の地で西ローマとゲルマン人の連合軍に敗れた戦いは何か。"},{"answer":"オドアケル","category":"ヨーロッパ概要/ゲルマン人の大移動","chapter":"5","enabled":true,"number":"37","question":"476年、最後の皇帝を廃位して西ローマ帝国を滅亡させた、ゲルマン出身の西ローマの傭兵隊長は誰か。"},{"answer":"テオドリック大王","category":"ヨーロッパ概要/ゲルマン人の大移動","chapter":"5","enabled":true,"number":"37","question":"５世紀末、西ローマを滅ぼした人物による王国を滅ぼし、イタリアに東ゴート王国を建てた指導者（王）は誰か。"},{"answer":"スラヴ人","category":"ヨーロッパ概要/ゲルマン人の大移動","chapter":"5","enabled":true,"number":"37","question":"東ヨーロッパを中心に居住する、ゲルマン人の移動ののちバルカン半島にも進出した印＝欧語系民族は何か。"},{"answer":"皇帝教皇主義","category":"ビザンツ帝国・フランク王国/ローマ＝カトリック","chapter":"5","enabled":true,"number":"38","question":"ビザンツ帝国で見られた、皇帝が教会の最高権威者として宗教と政治を統合的に支配する体制を何というか。"},{"answer":"『ローマ法大全』","category":"ビザンツ帝国・フランク王国/ローマ＝カトリック","chapter":"5","enabled":true,"number":"38","question":"ユスティニアヌス帝が法学者トリボニアヌスに命じて編纂させた、古代ローマ法規の集大成は何と呼ばれるか。"},{"answer":"ハギア＝ソフィア聖堂","category":"ビザンツ帝国・フランク王国/ローマ＝カトリック","chapter":"5","enabled":true,"number":"38","question":"ユスティニアヌス帝が首都に建立させた、ビザンツ様式を代表する大聖堂は何か。"},{"answer":"絹織物産業","category":"ビザンツ帝国・フランク王国/ローマ＝カトリック","chapter":"5","enabled":true,"number":"38","question":"ユスティニアヌス帝が中国または内陸アジアから養蚕技術を導入して盛んにした産業は何か。"},{"answer":"メロヴィング朝","category":"ビザンツ帝国・フランク王国/ローマ＝カトリック","chapter":"5","enabled":true,"number":"38","question":"クローヴィスによって５世紀後半に成立した、フランク王国最初の王朝は何か。"},{"answer":"アタナシウス派","category":"ビザンツ帝国・フランク王国/ローマ＝カトリック","chapter":"5","enabled":true,"number":"38","question":"フランク人を統一したクローヴィスは496年、アリウス派から何に改宗したか。"},{"answer":"カール＝マルテル","category":"ビザンツ帝国・フランク王国/ローマ＝カトリック","chapter":"5","enabled":true,"number":"38","question":"トゥール・ポワティエ間の戦いでフランク軍を勝利に導いた宮宰は誰か。"},{"answer":"ピピン","category":"ビザンツ帝国・フランク王国/ローマ＝カトリック","chapter":"5","enabled":true,"number":"38","question":"ローマ教皇の承認のもと、751年に新王朝を開き、教皇に寄進をした人物は誰か。"},{"answer":"ラヴェンナ地方","category":"ビザンツ帝国・フランク王国/ローマ＝カトリック","chapter":"5","enabled":true,"number":"38","question":"ランゴバルド王国を攻撃して、獲得した地域の一部をピピンが教皇に寄進した。その地域名は何か。"},{"answer":"ザクセン人","category":"ビザンツ帝国・フランク王国/ローマ＝カトリック","chapter":"5","enabled":true,"number":"38","question":"カール大帝が従属させた、北ドイツのゲルマン人一派は何か。"},{"answer":"アヴァール人","category":"ビザンツ帝国・フランク王国/ローマ＝カトリック","chapter":"5","enabled":true,"number":"38","question":"８世紀末にカール大帝が撃退した、６世紀以後ヨーロッパに侵入してきたアルタイ語系遊牧民は何か。"},{"answer":"伯","category":"ビザンツ帝国・フランク王国/ローマ＝カトリック","chapter":"5","enabled":true,"number":"38","question":"中央集権のためカール大帝が任命し、巡察使を派遣して監督させた、フランク王国の地方行政官の名称は何か。"},{"answer":"800年","category":"ビザンツ帝国・フランク王国/ローマ＝カトリック","chapter":"5","enabled":true,"number":"38","question":"カールの戴冠が行われたのは、西暦何年か。"},{"answer":"カロリング＝ルネサンス","category":"ビザンツ帝国・フランク王国/ローマ＝カトリック","chapter":"5","enabled":true,"number":"38","question":"カール大帝の保護・奨励によった古典文化復興運動は何と呼ばれたか。"},{"answer":"アルクイン","category":"ビザンツ帝国・フランク王国/ローマ＝カトリック","chapter":"5","enabled":true,"number":"38","question":"カール大帝にまねかれたイギリスの神学者は誰か。"},{"answer":"コンスタンティノープル教会","category":"ビザンツ帝国・フランク王国/ローマ＝カトリック","chapter":"5","enabled":true,"number":"38","question":"ビザンツ帝国の保護を受けて発展した、東方教会の本山に相当した教会は何か。"},{"answer":"ローマ＝カトリック教会","category":"ビザンツ帝国・フランク王国/ローマ＝カトリック","chapter":"5","enabled":true,"number":"38","question":"ローマ教会が首座を占めた西ヨーロッパのキリスト教会組織を、一般に何と呼ぶか。"},{"answer":"ペテロ","category":"ビザンツ帝国・フランク王国/ローマ＝カトリック","chapter":"5","enabled":true,"number":"38","question":"使徒と呼ばれたイエスの弟子のうちの筆頭であり、初代教皇とされたのは誰か。"},{"answer":"グレゴリウス１世","category":"ビザンツ帝国・フランク王国/ローマ＝カトリック","chapter":"5","enabled":true,"number":"38","question":"アングロ＝サクソンなどゲルマン人への布教に大きく貢献した、６世紀末〜７世紀初めの教皇は誰か。"},{"answer":"レオン３世","category":"ビザンツ帝国・フランク王国/ローマ＝カトリック","chapter":"5","enabled":true,"number":"38","question":"聖像禁止令を発布したビザンツ皇帝は誰か。"},{"answer":"ヴェルダン条約","category":"神聖ローマとフランスの誕生/ノルマン人の侵入","chapter":"5","enabled":true,"number":"39","question":"フランク王国を３分した、843年の条約は何か。"},{"answer":"メルセン条約","category":"神聖ローマとフランスの誕生/ノルマン人の侵入","chapter":"5","enabled":true,"number":"39","question":"ロタール1世の死後、弟２人が中部フランクの北部を分割して、王国を最終的に３分した870年の条約は何か。"},{"answer":"ヨハネス12世","category":"神聖ローマとフランスの誕生/ノルマン人の侵入","chapter":"5","enabled":true,"number":"39","question":"オットー1世にローマ皇帝の帝冠を授けた教皇は誰か。"},{"answer":"マジャール人","category":"神聖ローマとフランスの誕生/ノルマン人の侵入","chapter":"5","enabled":true,"number":"39","question":"東フランク王国により、955年のレヒフェルトの戦いで西進を阻まれた、ウラル語系民族は何か。"},{"answer":"962年","category":"神聖ローマとフランスの誕生/ノルマン人の侵入","chapter":"5","enabled":true,"number":"39","question":"オットー1世がローマ皇帝の帝冠を授かったのは西暦何年か。"},{"answer":"神聖ローマ帝国","category":"神聖ローマとフランスの誕生/ノルマン人の侵入","chapter":"5","enabled":true,"number":"39","question":"オットー1世の戴冠は、のちにある帝国の成立とみなされた。成立した帝国は何か。"},{"answer":"ユーグ＝カペー","category":"神聖ローマとフランスの誕生/ノルマン人の侵入","chapter":"5","enabled":true,"number":"39","question":"987年、西フランクでカロリング朝が断絶したのち、パリ伯が新国王に選ばれた。このパリ伯は誰か。"},{"answer":"ヴァイキング","category":"神聖ローマとフランスの誕生/ノルマン人の侵入","chapter":"5","enabled":true,"number":"39","question":"「入江の人」を意味すると考えられる、ノルマン人の別称は何か。"},{"answer":"スカンディナヴィア半島・ユトランド半島・バルト海沿岸","category":"神聖ローマとフランスの誕生/ノルマン人の侵入","chapter":"5","enabled":true,"number":"39","question":"ノルマン人の原住地を一つ答えなさい。"},{"answer":"ロロ","category":"神聖ローマとフランスの誕生/ノルマン人の侵入","chapter":"5","enabled":true,"number":"39","question":"10世紀初め、西フランク王から北フランスの公爵に封じられたノルマン人の首長は誰か。"},{"answer":"ルッジェーロ2世","category":"神聖ローマとフランスの誕生/ノルマン人の侵入","chapter":"5","enabled":true,"number":"39","question":"両シチリア王国を建てた人物は誰か。"},{"answer":"パレルモ","category":"神聖ローマとフランスの誕生/ノルマン人の侵入","chapter":"5","enabled":true,"number":"39","question":"両シチリア王国の首都はどこか。"},{"answer":"エグバート","category":"神聖ローマとフランスの誕生/ノルマン人の侵入","chapter":"5","enabled":true,"number":"39","question":"９世紀前半、ヘプターキーを統一し、最初のイングランド王国を建てた王は誰か。"},{"answer":"アルフレッド大王","category":"神聖ローマとフランスの誕生/ノルマン人の侵入","chapter":"5","enabled":true,"number":"39","question":"来襲したノルマン（デーン）人を撃退して、９世紀後半にアングロ＝サクソン王国を再統一したイングランド王は誰か。"},{"answer":"クヌート","category":"神聖ローマとフランスの誕生/ノルマン人の侵入","chapter":"5","enabled":true,"number":"39","question":"1016年、イングランドを征服して、デーン朝を開いた人物は誰か。"},{"answer":"1066年","category":"神聖ローマとフランスの誕生/ノルマン人の侵入","chapter":"5","enabled":true,"number":"39","question":"ノルマンディー公ウィリアムによるノルマン＝コンクェストは西暦何年におきた出来事か。"},{"answer":"ウィリアム1世","category":"神聖ローマとフランスの誕生/ノルマン人の侵入","chapter":"5","enabled":true,"number":"39","question":"ノルマン朝を創始したノルマンディー公ウィリアムの、イングランド王としての名は何か。"},{"answer":"ノヴゴロド国","category":"神聖ローマとフランスの誕生/ノルマン人の侵入","chapter":"5","enabled":true,"number":"39","question":"862年、ノルマン系ルーシによって商業都市国家が建設された。ロシアの起源とされるこの国は何か。"},{"answer":"リューリク","category":"神聖ローマとフランスの誕生/ノルマン人の侵入","chapter":"5","enabled":true,"number":"39","question":"９世紀後半、スウェーデン地方のノルマン人ルーシを率いてスラヴ人地域に入った首長は誰か。"},{"answer":"キエフ公国","category":"神聖ローマとフランスの誕生/ノルマン人の侵入","chapter":"5","enabled":true,"number":"39","question":"オレグ率いる一派が元の国家から南下し、９世紀後半に建てた国は何か。"},{"answer":"双務的契約","category":"封建社会の成立","chapter":"5","enabled":true,"number":"40","question":"中世ヨーロッパの封建制下で、主君と家臣の双方を拘束した取り決めを何と呼ぶか。"},{"answer":"恩貸地制","category":"封建社会の成立","chapter":"5","enabled":true,"number":"40","question":"封建的主従関係の構成要素の一つとなった、ローマ帝国末期に開始された、土地をめぐる制度は何か。"},{"answer":"従士制","category":"封建社会の成立","chapter":"5","enabled":true,"number":"40","question":"封建的主従関係の構成要素の一つとなった、有力者と自由民とのあいだの保護・忠誠に関する古ゲルマンの風習は何か。"},{"answer":"軍役","category":"封建社会の成立","chapter":"5","enabled":true,"number":"40","question":"中世ヨーロッパの封建制度において、臣下が領主に対して封土の代償として提供した、戦争への参加義務を何というか。"},{"answer":"騎士","category":"封建社会の成立","chapter":"5","enabled":true,"number":"40","question":"多くが小領主で、騎乗して戦う戦士階級の人びとを何と呼ぶか。"},{"answer":"賦役・貢納","category":"封建社会の成立","chapter":"5","enabled":true,"number":"40","question":"領主に対する農民の労働地代・生産物地代をそれぞれ何というか。"},{"answer":"移転・職業選択","category":"封建社会の成立","chapter":"5","enabled":true,"number":"40","question":"農奴にはどのような身体的自由がないか、二つ答えなさい。"},{"answer":"領主直営地","category":"封建社会の成立","chapter":"5","enabled":true,"number":"40","question":"荘園制において、農奴が領主のために直接耕作し、その収穫物が領主の収入となる土地を何というか。"},{"answer":"農民保有地","category":"封建社会の成立","chapter":"5","enabled":true,"number":"40","question":"荘園制において、農民が領主から貸与され、一部を貢納し、自らの生計のために耕作する土地を何というか。"},{"answer":"共同利用地","category":"封建社会の成立","chapter":"5","enabled":true,"number":"40","question":"中世ヨーロッパの荘園において、村の住民が放牧や薪の採取などに共同で利用できた土地を何というか。"},{"answer":"十分の一税","category":"封建社会の成立","chapter":"5","enabled":true,"number":"40","question":"農民が教会に納めた税を何と呼ぶか。"},{"answer":"領主裁判権","category":"封建社会の成立","chapter":"5","enabled":true,"number":"40","question":"領主が領民に行使した裁判権を何と呼ぶか。"},{"answer":"不輸不入権","category":"封建社会の成立","chapter":"5","enabled":true,"number":"40","question":"自分の支配地に関して、領主が国王やその官吏の立ち入りと職務執行を免除された権利を何と呼ぶか。"},{"answer":"三圃制","category":"封建社会の成立","chapter":"5","enabled":true,"number":"40","question":"10～11世紀頃から始まった、秋耕地・春耕地・休耕地に３分して、３年で一巡させる農法は何か。"},{"answer":"サーマーン朝","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"９世紀後半に成立し、中央アジアからイラン東部を支配したイラン系イスラーム王朝は何か。"},{"answer":"マムルーク","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"９世紀以後、イスラーム諸王朝の軍事力の中心となったトルコ人などの白人系奴隷を何と呼ぶか。"},{"answer":"カラハン朝","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"10世紀末にサーマーン朝を倒し、中央アジアを支配下においた、トルコ系最初のイスラーム王朝は何か。"},{"answer":"トルキスタン","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"中央アジアに位置し、トルコ系民族が多く居住する地域であり、歴史的に東西交易の要衝であった地を何というか。"},{"answer":"ガズナ朝","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"10世紀後半、サーマーン朝のマムルークがアフガニスタンを中心に建てたイスラーム王朝は何か。"},{"answer":"ゴール朝","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"12世紀半ばにアフガニスタンで自立し、その後、ガズナ朝を滅ぼしたイスラーム王朝は何か。"},{"answer":"デリー＝スルタン朝","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"1206〜1526年まで、デリーを都に興亡した５つのイスラーム王朝を何と総称するか。"},{"answer":"アイバク","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"奴隷王朝を建てた、ゴール朝のマムルーク出身の武将は誰か。"},{"answer":"ヨーガ","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"インドに伝わる、心を静め、精神を統一してきたえる修行方法は、何と呼ばれるか。"},{"answer":"ダウ船","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"ムスリム商人がインド洋交易で使用した、三角帆をもつ木造船を何と呼ぶか。"},{"answer":"ジャンク船","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"10世紀頃中国で建造された遠洋航海用の大型木造帆船は何と呼ばれるか。"},{"answer":"マラッカ王国","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"14世紀末頃からマレー半島西岸の港市を中心に成立し、15世紀半ばに支配階級がイスラーム教に改宗した国家は何か。"},{"answer":"アチェ王国","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"15世紀末から20世紀初めまで、スマトラ島北部に存在した港市国家は何か。"},{"answer":"マタラム王国","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"16世紀末、マジャパヒト王国に代わってジャワ島東部に成立したイスラーム国家は何か。"},{"answer":"アクスム王国","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"紀元前後頃エチオピア高原に成立し、後４世紀にクシュ王国を滅ぼした国は何か。"},{"answer":"ニジェール川","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"ギニア高原より発し、ギニア湾に注ぐ西アフリカ一の大河は何か。"},{"answer":"ガーナ王国","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"７世紀頃、西アフリカのニジェール川上流に成立した非イスラームの黒人王国は何か。"},{"answer":"マリ王国","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"13世紀前半〜15世紀後半、ニジェール川上流と西アフリカを支配した黒人王国は何か。"},{"answer":"トンブクトゥ","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"11世紀以降サハラ交易の終点として栄え、西アフリカにおけるイスラーム文化の中心地となったマリ王国の都はどこか。"},{"answer":"マンサ＝ムーサ","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"14世紀にマリ王国の最盛期を現出し、またメッカ巡礼を行った王は誰か。"},{"answer":"ソンガイ王国","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"15世紀後半に、マリ王国を滅ぼしてニジェール川流域に建てられた黒人王国は何か。"},{"answer":"金・塩","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"サハラ交易において、西アフリカの国々が輸出し、北アフリカから輸入していた代表的な交易品をそれぞれ答えなさい。"},{"answer":"マリンディ","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"アフリカ東岸の港市の一つで、インド洋貿易で繁栄し、鄭和の艦隊やヴァスコ＝ダ＝ガマが来航したのはどこか。"},{"answer":"スワヒリ語","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"「海岸に住む人」を意味し、東アフリカ海岸部の住民の言語とアラビア語が混じり合って生まれた言語を何と呼ぶか。"},{"answer":"モノモタパ王国","category":"イスラーム教の諸地域への伝播","chapter":"6","enabled":true,"number":"41","question":"11〜19世紀に、アフリカ南部のザンベジ川流域を支配し、インド洋交易で栄えた黒人王国は何か。"},{"answer":"トゥグリル＝ベク","category":"西アジアの動向①","chapter":"6","enabled":true,"number":"42","question":"セルジューク朝の建国者は誰か。"},{"answer":"スルタン","category":"西アジアの動向①","chapter":"6","enabled":true,"number":"42","question":"セルジューク朝がバグダード入城後、アッバース朝カリフから授かった、世俗君主を意味する称号は何か。"},{"answer":"マンジケルト(マラズギルト)の戦い","category":"西アジアの動向①","chapter":"6","enabled":true,"number":"42","question":"十字軍派遣のきっかけともなった、セルジューク朝がアナトリアに進出した1071年の戦いは何か。"},{"answer":"ニザーム＝アルムルク","category":"西アジアの動向①","chapter":"6","enabled":true,"number":"42","question":"セルジューク朝で諸制度を整備するとともに、学芸を奨励したイラン系の宰相は誰か。"},{"answer":"ニザーミーヤ学院","category":"西アジアの動向①","chapter":"6","enabled":true,"number":"42","question":"セルジューク朝が各地に開いた、学芸奨励のためのマドラサの名称は何か。"},{"answer":"イクター制","category":"西アジアの動向①","chapter":"6","enabled":true,"number":"42","question":"セルジューク朝が整備した徴税制度は何か。"},{"answer":"スーフィズム","category":"西アジアの動向①","chapter":"6","enabled":true,"number":"42","question":"イスラームの形式主義化に対し、「神との一体」を求める禁欲的な修行を重視した考え方は何と呼ばれるか。"},{"answer":"ガザーリー","category":"西アジアの動向①","chapter":"6","enabled":true,"number":"42","question":"セルジューク朝期のイラン系神学者で、のちにスーフィズムの理論化も行った人物は誰か。"},{"answer":"フレグ","category":"西アジアの動向①","chapter":"6","enabled":true,"number":"42","question":"1258年にアッバース朝を滅ぼしたモンゴル人は誰か。"},{"answer":"イル＝ハン国（フレグ＝ウルス）","category":"西アジアの動向①","chapter":"6","enabled":true,"number":"42","question":"アッバース朝の滅亡後、タブリーズを都にイランに成立したモンゴル政権は何か。"},{"answer":"ガザン＝ハン","category":"西アジアの動向①","chapter":"6","enabled":true,"number":"42","question":"イスラーム教を国教とした、イル＝ハン国の第７代の君主は誰か。"},{"answer":"ラシード＝アッディーン","category":"西アジアの動向①","chapter":"6","enabled":true,"number":"42","question":"イル＝ハン国の宰相で、歴史書『集史』を編纂したイラン人政治家・歴史家は誰か。"},{"answer":"サラーフ＝アディーン(サラディン）","category":"西アジアの動向②","chapter":"6","enabled":true,"number":"43","question":"ザンギー朝に仕えていたが、12世紀後半エジプトの実権を握って自立し、アイユーブ朝を建てた人物は誰か。"},{"answer":"マムルーク朝","category":"西アジアの動向②","chapter":"6","enabled":true,"number":"43","question":"アイユーブ朝の軍人奴隷出身の軍司令官が、1250年にカイロを都に建てたスンナ派王朝は何か。"},{"answer":"バイバルス","category":"西アジアの動向②","chapter":"6","enabled":true,"number":"43","question":"マムルーク朝の第５代スルタンで、モンゴル軍の侵入を撃退し、またシリアから十字軍を最終的に撃退した人物は誰か。"},{"answer":"カーリミー商人","category":"西アジアの動向②","chapter":"6","enabled":true,"number":"43","question":"アイユーブ朝とマムルーク朝の保護下で、アレクサンドリアを中心に香辛料貿易を独占した商人団を何と呼ぶか。"},{"answer":"カイロ","category":"西アジアの動向②","chapter":"6","enabled":true,"number":"43","question":"ファーティマ朝、アイユーブ朝、マムルーク朝に共通する首都はどこか。"},{"answer":"ペスト","category":"西アジアの動向②","chapter":"6","enabled":true,"number":"43","question":"マムルーク朝衰退の一因である、13世紀にヨーロッパを中心に大流行した病気は何か。"},{"answer":"マグリブ","category":"西アジアの動向②","chapter":"6","enabled":true,"number":"43","question":"アラビア語で「日の没する地」を意味する、エジプト以西の北アフリカ一帯を指したことばは何か。"},{"answer":"ベルベル人","category":"西アジアの動向②","chapter":"6","enabled":true,"number":"43","question":"とくにモロッコ・アルジェリアの先住民を何と呼ぶか。"},{"answer":"ムラービト朝","category":"西アジアの動向②","chapter":"6","enabled":true,"number":"43","question":"11世紀後半、モロッコに建て、サハラ地域やイベリア半島に進出したイスラーム王朝は何か。"},{"answer":"ムワッヒド朝","category":"西アジアの動向②","chapter":"6","enabled":true,"number":"43","question":"12世紀前半にモロッコで成立し、ムラービト朝を滅ぼし、イベリア半島にも進出したイスラーム王朝は何か。"},{"answer":"ガーナ王国","category":"西アジアの動向②","chapter":"6","enabled":true,"number":"43","question":"ムラービト朝が滅ぼした、西アフリカの黒人国家はどこか。"},{"answer":"マラケシュ","category":"西アジアの動向②","chapter":"6","enabled":true,"number":"43","question":"ムラービト朝、ムワッヒド朝の都はどこか。"},{"answer":"レコンキスタ","category":"西アジアの動向②","chapter":"6","enabled":true,"number":"43","question":"８世紀前半からキリスト教勢力によってイベリア半島で展開された、イスラーム勢力からの半島奪回運動を何と呼ぶか。"},{"answer":"ナスル朝","category":"西アジアの動向②","chapter":"6","enabled":true,"number":"43","question":"イベリア半島最後のイスラーム王朝は何か。"},{"answer":"グラナダ","category":"西アジアの動向②","chapter":"6","enabled":true,"number":"43","question":"1492年、キリスト教徒に陥落させられた、ナスル朝の首都はどこか。"},{"answer":"アルハンブラ宮殿","category":"西アジアの動向②","chapter":"6","enabled":true,"number":"43","question":"13世紀より建設されたナスル朝の宮殿で、西方イスラーム世界の代表的建築は何か。"},{"answer":"聖職売買/聖職者の妻帯","category":"教会の権威","chapter":"7","enabled":true,"number":"44","question":"修道院運動の背景となる、ローマ＝カトリック教会の腐敗に関して、具体的な事例を１つ答えなさい。"},{"answer":"ベネディクトゥス","category":"教会の権威","chapter":"7","enabled":true,"number":"44","question":"６世紀前半、西方での修道院運動を開始した、イタリア人の修道者は誰か。"},{"answer":"モンテ＝カシノ","category":"教会の権威","chapter":"7","enabled":true,"number":"44","question":"ベネディクト修道会は、中部イタリアの何と呼ばれる山にあるか。"},{"answer":"「祈り、かつ働け」","category":"教会の権威","chapter":"7","enabled":true,"number":"44","question":"ベネディクト修道会は「清貧・純潔・服従」の戒律とともに、信仰と労働を重視するモットーを掲げた。それは何か。"},{"answer":"クリュニー修道院","category":"教会の権威","chapter":"7","enabled":true,"number":"44","question":"10世紀初めフランス中東部に設立され、11世紀以降、教会刷新運動の中心となった修道院は何か。"},{"answer":"シトー修道会","category":"教会の権威","chapter":"7","enabled":true,"number":"44","question":"11世紀末にフランス中部に創設され、12世紀以降、開墾運動の中心として発展した修道会は何か。"},{"answer":"フランチェスコ修道会","category":"教会の権威","chapter":"7","enabled":true,"number":"44","question":"「アッシジの聖者」と呼ばれた修道士が創始した修道会は何か。"},{"answer":"ドミニコ修道会","category":"教会の権威","chapter":"7","enabled":true,"number":"44","question":"南フランスでの異端カタリ派に対抗する活動ののち創始した托鉢修道会は何か。"},{"answer":"托鉢修道会","category":"教会の権威","chapter":"7","enabled":true,"number":"44","question":"13世紀に、修道院の封建領主化と富裕化を批判して誕生した、新しいタイプの修道会を何と総称するか。"},{"answer":"グレゴリウス7世","category":"教会の権威","chapter":"7","enabled":true,"number":"44","question":"11世紀後半の叙任権闘争で、神聖ローマ皇帝を破門して屈服させた教皇は誰か。"},{"answer":"カノッサの屈辱","category":"教会の権威","chapter":"7","enabled":true,"number":"44","question":"1077年、神聖ローマ皇帝が北イタリアで教皇に謝罪し、破門を許された事件を何と呼ぶか。"},{"answer":"ハインリヒ4世","category":"教会の権威","chapter":"7","enabled":true,"number":"44","question":"叙任権闘争の末、破門された神聖ローマ皇帝は誰か。"},{"answer":"聖職叙任権","category":"教会の権威","chapter":"7","enabled":true,"number":"44","question":"高位聖職者を任命する権限のことを何と呼ぶか。"},{"answer":"ヴォルムス協約","category":"教会の権威","chapter":"7","enabled":true,"number":"44","question":"1122年、ときの教皇と皇帝とのあいだで結ばれ、ドイツ領内における叙任権闘争をいちおう終結させた協約は何か。"},{"answer":"ウルバヌス2世","category":"教会の権威","chapter":"7","enabled":true,"number":"44","question":"ビザンツ皇帝から救援を求められ、十字軍を提唱した教皇は誰か。"},{"answer":"インノケンティウス3世","category":"教会の権威","chapter":"7","enabled":true,"number":"44","question":"第４回十字軍を提唱したローマ教皇は誰か。"},{"answer":"「教皇は太陽、皇帝は月」","category":"教会の権威","chapter":"7","enabled":true,"number":"44","question":"教皇権の絶頂期に残されたとされる言葉で、中世ヨーロッパにおいて、教皇権の優位を示すために用いられた比喩は何か。"},{"answer":"東方植民","category":"十字軍とその影響","chapter":"7","enabled":true,"number":"45","question":"12〜14世紀に行われた、ドイツ諸侯・騎士・修道院などによる、エルベ川以東への植民活動を何と呼ぶか。"},{"answer":"重量有輪棃","category":"十字軍とその影響","chapter":"7","enabled":true,"number":"45","question":"アルプス以北の肥沃で重い土壌を耕す目的で開発された、牛馬につけて用い深耕を可能にした鉄製農具は何か。"},{"answer":"クレルモン宗教会議","category":"十字軍とその影響","chapter":"7","enabled":true,"number":"45","question":"1095年、十字軍の派遣が提唱された、フランス中南部で開かれた宗教会議（公会議）は何か。"},{"answer":"ウルバヌス2世","category":"十字軍とその影響","chapter":"7","enabled":true,"number":"45","question":"ビザンツ皇帝から救援を求められ、十字軍を提唱した教皇は誰か。"},{"answer":"1096年","category":"十字軍とその影響","chapter":"7","enabled":true,"number":"45","question":"十字軍が初めて派遣されたのは、西暦何年か。"},{"answer":"イェルサレム王国","category":"十字軍とその影響","chapter":"7","enabled":true,"number":"45","question":"第１回十字軍が聖地回復に成功したのち、残留した戦士に封土を与えて成立した封建国家を何と呼ぶか。"},{"answer":"フリードリヒ1世","category":"十字軍とその影響","chapter":"7","enabled":true,"number":"45","question":"「バルバロッサ」のあだ名をもち、第３回十字軍に参加した神聖ローマ皇帝は誰か。"},{"answer":"フィリップ2世","category":"十字軍とその影響","chapter":"7","enabled":true,"number":"45","question":"第３回十字軍に参加するも、イギリスの王との対立などが原因で途中で撤退をしたフランス国王は誰か。"},{"answer":"リチャード1世","category":"十字軍とその影響","chapter":"7","enabled":true,"number":"45","question":"サラーフ＝アッディーンと戦った、「獅子心王」の名で呼ばれたイギリス国王は誰か。"},{"answer":"インノケンティウス3世","category":"十字軍とその影響","chapter":"7","enabled":true,"number":"45","question":"第４回十字軍を提唱したローマ教皇は誰か。"},{"answer":"ヴェネツィア","category":"十字軍とその影響","chapter":"7","enabled":true,"number":"45","question":"第４回十字軍がコンスタンティノープルを占領した背景にはある都市の商人の要求があった。どこの商人か。"},{"answer":"ラテン帝国","category":"十字軍とその影響","chapter":"7","enabled":true,"number":"45","question":"第４回十字軍がコンスタンティノープルを占領して建てた国は何か。"},{"answer":"ルイ9世","category":"十字軍とその影響","chapter":"7","enabled":true,"number":"45","question":"第6回・第7回十字軍を主導し、「聖王」とも称された中世フランス・カペー朝の国王は誰か。"},{"answer":"アッコン","category":"十字軍とその影響","chapter":"7","enabled":true,"number":"45","question":"1291年、イェルサレム王国の最後の拠点であった都市が陥落し、十字軍時代が終了した。その都市はどこか。"},{"answer":"宗教騎士団","category":"十字軍とその影響","chapter":"7","enabled":true,"number":"45","question":"十字軍遠征の際に、巡礼者の保護や異教徒との戦闘を目的に組織されたものを総称して何というか。"},{"answer":"東方貿易","category":"十字軍とその影響","chapter":"7","enabled":true,"number":"45","question":"十字軍遠征の結果活発になった、北イタリア諸都市が地中海東岸（レヴァント）地域と行った貿易を何と呼ぶか。"},{"answer":"国王","category":"十字軍とその影響","chapter":"7","enabled":true,"number":"45","question":"十字軍遠征の結果、権力が向上したのは、教皇、国王、諸侯・騎士のうちどれか。"},{"answer":"商業ルネサンス","category":"中世ヨーロッパの商業と人々のくらし","chapter":"7","enabled":true,"number":"46","question":"ベルギーの歴史家ピレンヌがとなえた、中世ヨーロッパでの11～12世紀の「商業の復活」の別称は何か。"},{"answer":"遠隔地貿易","category":"中世ヨーロッパの商業と人々のくらし","chapter":"7","enabled":true,"number":"46","question":"ヨーロッパでは地中海圏と北海・バルト海圏とを結ぶ商業活動が活発化した。この商業活動を何と呼ぶか。"},{"answer":"ロンドン","category":"中世ヨーロッパの商業と人々のくらし","chapter":"7","enabled":true,"number":"46","question":"中世ヨーロッパにおいて、羊毛の産地で、大陸に輸出していたブリテン島の都市はどこか。"},{"answer":"フランドル地方","category":"中世ヨーロッパの商業と人々のくらし","chapter":"7","enabled":true,"number":"46","question":"現在のベルギーにあたり、毛織物業が盛んであったネーデルラント南西部の地域名は何か。"},{"answer":"リューベック","category":"中世ヨーロッパの商業と人々のくらし","chapter":"7","enabled":true,"number":"46","question":"バルト海沿岸に位置し、ハンザ同盟の盟主だった都市はどこか。"},{"answer":"ハンザ同盟","category":"中世ヨーロッパの商業と人々のくらし","chapter":"7","enabled":true,"number":"46","question":"リューベックを盟主に、最盛期には100以上の都市が加盟し、商業で繁栄した北海・バルト海一帯の都市同盟は何か。"},{"answer":"シャンパーニュ地方","category":"中世ヨーロッパの商業と人々のくらし","chapter":"7","enabled":true,"number":"46","question":"フランス東北部の地方で、地中海・北海の両商業圏の中間に位置し、大定期市が開かれた地方の名称は何か。"},{"answer":"アウクスブルク","category":"中世ヨーロッパの商業と人々のくらし","chapter":"7","enabled":true,"number":"46","question":"15〜16世紀に銀山経営でフッガー家が台頭した、南ドイツの都市はどこか。"},{"answer":"ミラノ","category":"中世ヨーロッパの商業と人々のくらし","chapter":"7","enabled":true,"number":"46","question":"イタリアにおける都市同盟の盟主ともなった、ロンバルディア地方の都市はどこか。"},{"answer":"フィレンツェ","category":"中世ヨーロッパの商業と人々のくらし","chapter":"7","enabled":true,"number":"46","question":"トスカナ平野にあって毛織物業と金融業で繁栄し、一時メディチ家が市政を独裁した都市はどこか。"},{"answer":"ヴェネツィア","category":"中世ヨーロッパの商業と人々のくらし","chapter":"7","enabled":true,"number":"46","question":"第４回十字軍の際に艦船を提供した、「アドリア海の女王」と呼ばれた港市はどこか。"},{"answer":"ロンバルディア同盟","category":"中世ヨーロッパの商業と人々のくらし","chapter":"7","enabled":true,"number":"46","question":"ミラノを盟主に、神聖ローマ皇帝の南下に対抗した、北イタリア諸都市が結成した都市同盟は何か。"},{"answer":"東方貿易（レヴァント貿易）","category":"中世ヨーロッパの商業と人々のくらし","chapter":"7","enabled":true,"number":"46","question":"北イタリア諸都市が地中海東岸地域と行った貿易を何と呼ぶか。"},{"answer":"香辛料・絹織物","category":"中世ヨーロッパの商業と人々のくらし","chapter":"7","enabled":true,"number":"46","question":"東方貿易で北イタリアの商人がムスリム商人から買い取った商品を２種答えなさい。"},{"answer":"コムーネ","category":"中世ヨーロッパの商業と人々のくらし","chapter":"7","enabled":true,"number":"46","question":"北・中部イタリアで成立した、市民自身が市政を運営する自治都市は、何と呼ばれたか。"},{"answer":"帝国都市","category":"中世ヨーロッパの商業と人々のくらし","chapter":"7","enabled":true,"number":"46","question":"13世紀以降ドイツで成立した、自治権を獲得して皇帝に直属する都市をとくに何と呼ぶか。"},{"answer":"特許状","category":"中世ヨーロッパの商業と人々のくらし","chapter":"7","enabled":true,"number":"46","question":"都市は、国王・封建領主たちから権力の委譲・放棄を認める文書の獲得をめざした。この文書を何と呼ぶか。"},{"answer":"「都市の空気は自由にする」","category":"中世ヨーロッパの商業と人々のくらし","chapter":"7","enabled":true,"number":"46","question":"中世末期、ドイツでは農奴が都市に逃れ、住みつづけると農奴身分から自由になれることを指す諺が生まれた。この諺は何か。"},{"answer":"商業ギルド","category":"中世ヨーロッパの商業と人々のくらし","chapter":"7","enabled":true,"number":"46","question":"13世紀以降、自治都市で市政運営の中心となった大商人による同業組合は何か。"},{"answer":"同職ギルド（ツンフト）","category":"中世ヨーロッパの商業と人々のくらし","chapter":"7","enabled":true,"number":"46","question":"徒弟制度などの厳格な規約をもつ、手工業者の代表たちによる組合を何と呼ぶか。"},{"answer":"フッガー家","category":"中世ヨーロッパの商業と人々のくらし","chapter":"7","enabled":true,"number":"46","question":"アウクスブルク近郊の銀山経営を独占した、15〜16世紀のヨーロッパ最大の金融業者は何家か。"},{"answer":"メディチ家","category":"中世ヨーロッパの商業と人々のくらし","chapter":"7","enabled":true,"number":"46","question":"ルネサンスのとき文芸を保護したことでも知られる、フィレンツェの大富豪は何家か。"},{"answer":"ラテン帝国","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"第４回十字軍がコンスタンティノープルを占領して建てた国は何か。"},{"answer":"メフメト２世","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"ビザンツ帝国を滅ぼした時の、オスマン帝国のスルタンは誰か。"},{"answer":"1453年","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"ビザンツ帝国が滅亡したのは西暦何年か。"},{"answer":"軍管区制(テマ制)","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"ビザンツ帝国で７世紀から開始された、いくつかの区に分け、司令官に軍事・行政の権限を与える地方統治制度を何と呼ぶか。"},{"answer":"ヘラクレイオス１世","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"その治世下で公用語が替わった、テマ制を始めたとされる７世紀前半のビザンツ皇帝は誰か。"},{"answer":"屯田兵制","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"テマ制のもとで、兵士や農民に土地を与え、代わりに兵役義務を課した。これは何と呼ばれるか。"},{"answer":"プロノイア制","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"ビザンツで実施された、有力者に一代限りで国有地・住民の管理を認め、代償に軍役奉仕を課した土地制度を何と呼ぶか。"},{"answer":"ギリシア語","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"７世紀以後、ビザンツ帝国で公用語化した言語は何か。"},{"answer":"イコン美術","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"東方教会で多く用いられた、キリスト・聖者・宗教的情景が描かれた聖像画を何と呼ぶか。"},{"answer":"ドーム・モザイク壁画","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"ビザンツ様式の特徴を２点答えなさい。"},{"answer":"サン＝ヴィターレ聖堂","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"北イタリアのラヴェンナに建設された、ビザンツ様式を代表する聖堂は何か。"},{"answer":"ウラディミル１世","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"10世紀後半、ビザンツ皇帝の妹との結婚を機に、ギリシア正教に改宗した上記5の大公は誰か。"},{"answer":"「タタールのくびき」","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"キプチャク＝ハン国によるロシア諸侯の支配を例えたことばは何か。"},{"answer":"モスクワ大公国","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"1480年、キプチャク＝ハン国から自立した国は何か。"},{"answer":"イヴァン３世","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"1480年、キプチャク＝ハン国から自立した国の当時の指導者は誰か。"},{"answer":"イヴァン４世","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"16世紀に皇帝として即位し、専制政治を強化してロシアの中央集権化を進めた「雷帝」と称される君主は誰か。"},{"answer":"ツァーリ","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"ロシアにおける皇帝を意味する称号は何か。"},{"answer":"セルビア人","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"７世紀頃バルカン半島南西部に入り、ギリシア正教を受け入れ、12世紀に王国を建てた南スラヴ系の民族は何か。"},{"answer":"クロアティア人","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"フランク王国に服属してカトリックに改宗し、独立後も、12世紀初めからハンガリーに支配された南スラヴ系の民族は何か。"},{"answer":"ベーメン（ボヘミア）王国","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"現在のチェコにあたり、中世以降ハプスブルク家の支配下に置かれ、神聖ローマ帝国の構成国の一つとされた王国は何か。"},{"answer":"カジミェシュ大王","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"14世紀半ばに全盛期を現出させた、ポーランドの歴史上ただ一人、大王の称号を付与された王は誰か。"},{"answer":"リトアニア＝ポーランド王国","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"14世紀後半、ドイツ騎士団の進出に対抗するため、東ヨーロッパで成立した同君連合国家は何か。"},{"answer":"ヤゲウォ朝","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"クラクフを首都とした、リトアニア＝ポーランド王国の王朝名は何か。"},{"answer":"第１次ブルガリア帝国","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"7世紀末に建国され、ビザンツ帝国と抗争を繰り広げた、スラヴ系を中心とする最初のブルガール人の国家を何というか。"},{"answer":"マジャール人","category":"ビザンツ帝国・スラヴ人","chapter":"7","enabled":true,"number":"47","question":"９世紀末パンノニア（現在のハンガリー盆地一帯）に定住したウラル語系民族は何か。"}];
+const word_data = [
+  {
+    "answer": "猿人",
+    "category": "自然環境と人類の進化",
+    "chapter": "1",
+    "number": "0",
+    "question": "化石人類のうち、直立二足歩行をしていたと推定される、最古の人類を何と呼ぶか。"
+  },
+  {
+    "answer": "サヘラントロプス",
+    "category": "自然環境と人類の進化",
+    "chapter": "1",
+    "number": "0",
+    "question": "中央アフリカのチャドで発見された現在最古と考えられる700万～600万年前の化石人類を何と呼ぶか。"
+  },
+  {
+    "answer": "アウストラロピテクス",
+    "category": "自然環境と人類の進化",
+    "chapter": "1",
+    "number": "0",
+    "question": "南・東アフリカで発見された、約420万年前に出現した「南のサル」を意味する化石人類を何と呼ぶか。"
+  },
+  {
+    "answer": "礫石器",
+    "category": "自然環境と人類の進化",
+    "chapter": "1",
+    "number": "0",
+    "question": "猿人が用いたもっとも原始的な打製石器を何と呼ぶか。"
+  },
+  {
+    "answer": "原人",
+    "category": "自然環境と人類の進化",
+    "chapter": "1",
+    "number": "0",
+    "question": "約240万年前に出現した、初歩的な打製石器やハンドアックスを用いたとされる化石人類を何と呼ぶか。"
+  },
+  {
+    "answer": "ジャワ原人",
+    "category": "自然環境と人類の進化",
+    "chapter": "1",
+    "number": "0",
+    "question": "19世紀末、ジャワ島のトリニールで発見された原人の化石を何と呼ぶか。"
+  },
+  {
+    "answer": "北京原人",
+    "category": "自然環境と人類の進化",
+    "chapter": "1",
+    "number": "0",
+    "question": "1920〜30年代に中国の周口店で発見され、火の使用が確認されている原人の化石を何と呼ぶか。"
+  },
+  {
+    "answer": "旧人",
+    "category": "自然環境と人類の進化",
+    "chapter": "1",
+    "number": "0",
+    "question": "約60万年前に出現したと推定され、剥片石器を使い、旧大陸各地から出土している化石人類を何と呼ぶか。"
+  },
+  {
+    "answer": "ネアンデルタール人",
+    "category": "自然環境と人類の進化",
+    "chapter": "1",
+    "number": "0",
+    "question": "19世紀半ばにドイツのある渓谷で発見された、代表的な旧人の名称は何か。"
+  },
+  {
+    "answer": "埋葬の習慣",
+    "category": "自然環境と人類の進化",
+    "chapter": "1",
+    "number": "0",
+    "question": "旧人の発掘によって確認された、彼らの宗教的習慣は何か。"
+  },
+  {
+    "answer": "新人",
+    "category": "自然環境と人類の進化",
+    "chapter": "1",
+    "number": "0",
+    "question": "約20万年前にアフリカに出現し、５万年前頃から世界各地に広がった化石人類を何と総称するか。"
+  },
+  {
+    "answer": "クロマニョン人",
+    "category": "自然環境と人類の進化",
+    "chapter": "1",
+    "number": "0",
+    "question": "新人のうち、４万2000年ほど前に現れ、南西フランスで発見された現生人類の化石の名称は何か。"
+  },
+  {
+    "answer": "アルタミラ",
+    "category": "自然環境と人類の進化",
+    "chapter": "1",
+    "number": "0",
+    "question": "旧石器時代後期の洞穴絵画で知られる、1879年にスペイン北部で発見された遺跡の名称は何か。"
+  },
+  {
+    "answer": "ラスコー",
+    "category": "自然環境と人類の進化",
+    "chapter": "1",
+    "number": "0",
+    "question": "旧石器時代後期の洞穴絵画で知られる、1940年に南西フランスで発見された遺跡の名称は何か。"
+  },
+  {
+    "answer": "周口店上洞人",
+    "category": "自然環境と人類の進化",
+    "chapter": "1",
+    "number": "0",
+    "question": "中国の北京郊外で発見された、新人の名称は何か。"
+  },
+  {
+    "answer": "骨角器",
+    "category": "自然環境と人類の進化",
+    "chapter": "1",
+    "number": "0",
+    "question": "新人が出現した旧石器時代後期から、銛・槍・針などに使われはじめた道具は何か。"
+  },
+  {
+    "answer": "細石器",
+    "category": "自然環境と人類の進化",
+    "chapter": "1",
+    "number": "0",
+    "question": "新人が矢・ナイフ・鎌などの刃として使用した、小型の剥片石器を何と呼ぶか。"
+  },
+  {
+    "answer": "更新世",
+    "category": "自然環境と人類の進化",
+    "chapter": "1",
+    "number": "0",
+    "question": "新生代後期のうち、約260万年前から約１万1700年ほど前までの氷河時代を、地質学上では何と呼ぶか。"
+  },
+  {
+    "answer": "完新世",
+    "category": "自然環境と人類の進化",
+    "chapter": "1",
+    "number": "0",
+    "question": "新生代末期（約１万1700年ほど前）から現在までの、温暖化した後氷期を、地質学上では何と呼ぶか。"
+  },
+  {
+    "answer": "語族",
+    "category": "自然環境と人類の進化",
+    "chapter": "1",
+    "number": "0",
+    "question": "文法的類似性に基づいて分類される、共通の祖語をもつ言語の集まりを何というか。"
+  },
+  {
+    "answer": "農耕・牧畜",
+    "category": "文明の誕生",
+    "chapter": "1",
+    "number": "1",
+    "question": "前１万年頃から前4000年頃にかけて、世界各地で始まった食料生産方法は何と何か。"
+  },
+  {
+    "answer": "新石器時代",
+    "category": "文明の誕生",
+    "chapter": "1",
+    "number": "1",
+    "question": "約１万年前から人類は磨製石器を使用する時代に移行したが、この時代を何時代と呼ぶか。"
+  },
+  {
+    "answer": "灌漑農業",
+    "category": "文明の誕生",
+    "chapter": "1",
+    "number": "1",
+    "question": "村落から都市の成立に向かうころ、水を人工的に供給する農業が開始された。この農業を何と呼ぶか。"
+  },
+  {
+    "answer": "都市国家",
+    "category": "文明の誕生",
+    "chapter": "1",
+    "number": "1",
+    "question": "金属器時代、支配階級の居住する都市が周辺地域を支配する、最初の国家形態がうまれた。これを何と呼ぶか。"
+  },
+  {
+    "answer": "文字",
+    "category": "文明の誕生",
+    "chapter": "1",
+    "number": "1",
+    "question": "国家の成立とほぼ同じころ、人類は言語を記録するために、あるものを発明した。それは何か。"
+  },
+  {
+    "answer": "生産経済",
+    "category": "文明の誕生",
+    "chapter": "1",
+    "number": "1",
+    "question": "旧石器時代の獲得経済から、新石器時代になると何経済に移行したか。"
+  },
+  {
+    "answer": "肥沃な三日月地帯",
+    "category": "文明の誕生",
+    "chapter": "1",
+    "number": "1",
+    "question": "農耕文明が早くから成立したメソポタミアの地帯を何と呼ぶか。"
+  },
+  {
+    "answer": "オリエント",
+    "category": "オリエント",
+    "chapter": "1",
+    "number": "2",
+    "question": "ラテン語で「日の昇るところ」を意味し、古代文明が栄えた地域を指す言葉は何か。"
+  },
+  {
+    "answer": "ティグリス川",
+    "category": "オリエント",
+    "chapter": "1",
+    "number": "2",
+    "question": "メソポタミア文明を支えた二つの大河のうち、東側にある河川の名称は何か。"
+  },
+  {
+    "answer": "シュメール人",
+    "category": "オリエント",
+    "chapter": "1",
+    "number": "2",
+    "question": "言語系統は不詳だが、メソポタミア南部に最古の文明を築いた人びとの名称は何か。"
+  },
+  {
+    "answer": "ウル、ウルク、ラガシュ、ウガリットなど",
+    "category": "オリエント",
+    "chapter": "1",
+    "number": "2",
+    "question": "シュメール人が建設した都市国家を２つ答えよ。"
+  },
+  {
+    "answer": "ジッグラト",
+    "category": "オリエント",
+    "chapter": "1",
+    "number": "2",
+    "question": "古代メソポタミアの都市国家で建設された、煉瓦で造られ、基壇の上に神殿が建っていた聖塔を何と呼ぶか。"
+  },
+  {
+    "answer": "楔形文字",
+    "category": "オリエント",
+    "chapter": "1",
+    "number": "2",
+    "question": "シュメール人が粘土板に刻んだ文字は何か。"
+  },
+  {
+    "answer": "アッカド人",
+    "category": "オリエント",
+    "chapter": "1",
+    "number": "2",
+    "question": "シュメール人の都市国家を征服し、初の領域国家を建てたセム語系の人びとの名称は何か。"
+  },
+  {
+    "answer": "サルゴン１世",
+    "category": "オリエント",
+    "chapter": "1",
+    "number": "2",
+    "question": "前24世紀頃、メソポタミア最初の統一国家であるアッカド王国を建てた王は誰か。"
+  },
+  {
+    "answer": "アムル人",
+    "category": "オリエント",
+    "chapter": "1",
+    "number": "2",
+    "question": "メソポタミアに進出し、前19世紀初めにバビロン第１王朝を建てたセム語系遊牧民は何か。"
+  },
+  {
+    "answer": "ハンムラビ法典",
+    "category": "オリエント",
+    "chapter": "1",
+    "number": "2",
+    "question": "バビロン第１王朝６代王が作成させた、全282条からなる法典の名称は何か。"
+  },
+  {
+    "answer": "目には目を、歯には歯を",
+    "category": "オリエント",
+    "chapter": "1",
+    "number": "2",
+    "question": "ハンムラビ法典の復讐法的性格を端的に表す、有名な成句は何か。"
+  },
+  {
+    "answer": "ヒッタイト人",
+    "category": "オリエント",
+    "chapter": "1",
+    "number": "2",
+    "question": "小アジアに王国を建て、鉄製武器を使用して、バビロン第１王朝を滅ぼした印＝欧語系の民族は何か。"
+  },
+  {
+    "answer": "ミタンニ王国",
+    "category": "オリエント",
+    "chapter": "1",
+    "number": "2",
+    "question": "メソポタミア北部からシリアを制圧して栄えた、住民の多くをフルリ人が占めていた王国の名称は何か。"
+  },
+  {
+    "answer": "太陰暦",
+    "category": "オリエント",
+    "chapter": "1",
+    "number": "2",
+    "question": "シュメールに始まり、古代メソポタミアで広く用いられた、月の満ち欠けの周期を基準とする暦は何か。"
+  },
+  {
+    "answer": "六十進法",
+    "category": "オリエント",
+    "chapter": "1",
+    "number": "2",
+    "question": "シュメール人が発明した、天文学・角度・時間の単位となった記数法は何進法か。"
+  },
+  {
+    "answer": "エジプトはナイルのたまもの",
+    "category": "エジプトの統一国家",
+    "chapter": "1",
+    "number": "3",
+    "question": "古代ギリシアの歴史家ヘロドトスが著書『歴史』に書いた、古代エジプトの繁栄を表現したことばは何か。"
+  },
+  {
+    "answer": "ファラオ",
+    "category": "エジプトの統一国家",
+    "chapter": "1",
+    "number": "3",
+    "question": "「大きな家」を意味する、古代エジプトの王の称号を何と呼ぶか。"
+  },
+  {
+    "answer": "メンフィス",
+    "category": "エジプトの統一国家",
+    "chapter": "1",
+    "number": "3",
+    "question": "古王国時代のエジプトの首都はどこか。"
+  },
+  {
+    "answer": "クフ王",
+    "category": "エジプトの統一国家",
+    "chapter": "1",
+    "number": "3",
+    "question": "ギザに最大のピラミッドを建設させた、古王国第４王朝の王は誰か。"
+  },
+  {
+    "answer": "ヒクソス",
+    "category": "エジプトの統一国家",
+    "chapter": "1",
+    "number": "3",
+    "question": "中王国末期にシリア方面から流入し、その滅亡後に下エジプトを支配したアジア系民族を何と呼ぶか。"
+  },
+  {
+    "answer": "テーベ",
+    "category": "エジプトの統一国家",
+    "chapter": "1",
+    "number": "3",
+    "question": "中王国・新王国時代のエジプトの首都はどこか。"
+  },
+  {
+    "answer": "アメン",
+    "category": "エジプトの統一国家",
+    "chapter": "1",
+    "number": "3",
+    "question": "中王国・新王国時代のエジプトの首都の都市神として信仰されていた神は何か。"
+  },
+  {
+    "answer": "アメンヘテプ４世",
+    "category": "エジプトの統一国家",
+    "chapter": "1",
+    "number": "3",
+    "question": "唯一神アテンの信仰を強制する宗教改革を行った、第18王朝の王は誰か（改名前）。"
+  },
+  {
+    "answer": "テル＝エル＝アマルナ",
+    "category": "エジプトの統一国家",
+    "chapter": "1",
+    "number": "3",
+    "question": "アメンヘテプ４世は、首都をテーベからどこに移したか。"
+  },
+  {
+    "answer": "アクエンアテン",
+    "category": "エジプトの統一国家",
+    "chapter": "1",
+    "number": "3",
+    "question": "アメンヘテプ４世は、自らの名前をどう改名したか。"
+  },
+  {
+    "answer": "写実的",
+    "category": "エジプトの統一国家",
+    "chapter": "1",
+    "number": "3",
+    "question": "アマルナ美術の特徴は何か。〇〇的という形で答えなさい。"
+  },
+  {
+    "answer": "『死者の書』",
+    "category": "エジプトの統一国家",
+    "chapter": "1",
+    "number": "3",
+    "question": "死後の世界の案内書として、オシリスの審判を受けるために必要な呪文を記した副葬品は何か。"
+  },
+  {
+    "answer": "十進法",
+    "category": "エジプトの統一国家",
+    "chapter": "1",
+    "number": "3",
+    "question": "古代エジプトで使用されていた記数法は何進法か。"
+  },
+  {
+    "answer": "神聖文字",
+    "category": "エジプトの統一国家",
+    "chapter": "1",
+    "number": "3",
+    "question": "ヒエログリフと称される、神殿・墓などに刻まれたエジプトの象形文字を何と呼ぶか。"
+  },
+  {
+    "answer": "シャンポリオン",
+    "category": "エジプトの統一国家",
+    "chapter": "1",
+    "number": "3",
+    "question": "ロゼッタ＝ストーンのギリシア文字により、神聖文字を解読した19世紀のフランス人学者は誰か。"
+  },
+  {
+    "answer": "海の民",
+    "category": "東地中海の諸民族",
+    "chapter": "1",
+    "number": "4",
+    "question": "ヒッタイト滅亡やエジプト弱体化の要因となった、民族系統不明の諸民族集団の総称は何か。"
+  },
+  {
+    "answer": "アラム人",
+    "category": "東地中海の諸民族",
+    "chapter": "1",
+    "number": "4",
+    "question": "前13世紀頃から、シリア地方を中心に内陸交易で活躍したセム語系遊牧民は何か。"
+  },
+  {
+    "answer": "ダマスクス",
+    "category": "東地中海の諸民族",
+    "chapter": "1",
+    "number": "4",
+    "question": "シリアの中心都市で、アラム人の交易活動の拠点として栄えた都市はどこか。"
+  },
+  {
+    "answer": "フェニキア人",
+    "category": "東地中海の諸民族",
+    "chapter": "1",
+    "number": "4",
+    "question": "地中海東岸に多くの都市国家を建て、前12世紀頃から地中海交易を独占しはじめたセム語系民族は何か。"
+  },
+  {
+    "answer": "シドン、ティルス、ベリトスなど",
+    "category": "東地中海の諸民族",
+    "chapter": "1",
+    "number": "4",
+    "question": "フェニキア人が建設した都市国家を２つ答えなさい。"
+  },
+  {
+    "answer": "カルタゴ",
+    "category": "東地中海の諸民族",
+    "chapter": "1",
+    "number": "4",
+    "question": "ティルスが建設した、北アフリカのフェニキア人植民都市はどこか。"
+  },
+  {
+    "answer": "フェニキア文字",
+    "category": "東地中海の諸民族",
+    "chapter": "1",
+    "number": "4",
+    "question": "アルファベットの起源となり、西方系文字の源流となった、セム語系の表音文字は何か。"
+  },
+  {
+    "answer": "ヘブライ人",
+    "category": "東地中海の諸民族",
+    "chapter": "1",
+    "number": "4",
+    "question": "パレスチナに移住・定着し、またその一部がエジプトへ移住したセム語系民族の名称のうち、他称は何か。"
+  },
+  {
+    "answer": "モーセ",
+    "category": "東地中海の諸民族",
+    "chapter": "1",
+    "number": "4",
+    "question": "前13世紀頃に「出エジプト」を指導した、ヘブライ人の伝説的預言者は誰か。"
+  },
+  {
+    "answer": "十戒",
+    "category": "東地中海の諸民族",
+    "chapter": "1",
+    "number": "4",
+    "question": "神が預言者モーセに与えたとされる律法のこと何というか。"
+  },
+  {
+    "answer": "イェルサレム",
+    "category": "東地中海の諸民族",
+    "chapter": "1",
+    "number": "4",
+    "question": "ダヴィデ王によって定められた、イスラエル王国の都はどこか。"
+  },
+  {
+    "answer": "ソロモン",
+    "category": "東地中海の諸民族",
+    "chapter": "1",
+    "number": "4",
+    "question": "王国の首都に神殿を建設した、イスラエル王国の第３代国王は誰か。"
+  },
+  {
+    "answer": "バビロン捕囚",
+    "category": "東地中海の諸民族",
+    "chapter": "1",
+    "number": "4",
+    "question": "ユダ王国の滅亡の際、新バビロニアが住民の多くを強制移住させた出来事は何と呼ばれるか。"
+  },
+  {
+    "answer": "ヤハウェ",
+    "category": "東地中海の諸民族",
+    "chapter": "1",
+    "number": "4",
+    "question": "ユダヤ教の唯一神の名称は何か。"
+  },
+  {
+    "answer": "選民思想",
+    "category": "東地中海の諸民族",
+    "chapter": "1",
+    "number": "4",
+    "question": "ユダヤ教の特色の１つである、自民族だけが救われるとする排他的な思想のことを何というか。"
+  },
+  {
+    "answer": "救世主（メシア）",
+    "category": "東地中海の諸民族",
+    "chapter": "1",
+    "number": "4",
+    "question": "民族が苦境に陥ったとき、民族を破滅から救う者が現れるとする思想があるが、その救う者を何と呼ぶか。"
+  },
+  {
+    "answer": "『旧約聖書』",
+    "category": "東地中海の諸民族",
+    "chapter": "1",
+    "number": "4",
+    "question": "ユダヤ教の教典は何か。"
+  },
+  {
+    "answer": "エーゲ文明",
+    "category": "エーゲ文明・オリエントの統一と分裂",
+    "chapter": "1",
+    "number": "5",
+    "question": "前3000-前1200年頃にかけてエーゲ海を中心に成立した青銅器文明の総称を何というか。"
+  },
+  {
+    "answer": "クノッソス",
+    "category": "エーゲ文明・オリエントの統一と分裂",
+    "chapter": "1",
+    "number": "5",
+    "question": "クレタ文明の中心地で、壮大な宮殿が発掘された場所はどこか。"
+  },
+  {
+    "answer": "エヴァンズ",
+    "category": "エーゲ文明・オリエントの統一と分裂",
+    "chapter": "1",
+    "number": "5",
+    "question": "クレタ文明の宮殿跡を発掘したイギリスの考古学者は誰か。"
+  },
+  {
+    "answer": "クレタ文明",
+    "category": "エーゲ文明・オリエントの統一と分裂",
+    "chapter": "1",
+    "number": "5",
+    "question": "明るく開放的で写実的な特徴を持つ文明は、クレタ文明、ミケーネ文明のどちらか。"
+  },
+  {
+    "answer": "アカイア人",
+    "category": "エーゲ文明・オリエントの統一と分裂",
+    "chapter": "1",
+    "number": "5",
+    "question": "バルカン半島から南下してクレタ文明を滅亡させたのは何人か。"
+  },
+  {
+    "answer": "シュリーマン",
+    "category": "エーゲ文明・オリエントの統一と分裂",
+    "chapter": "1",
+    "number": "5",
+    "question": "ミケーネ文明・トロイア文明を発掘したドイツの考古学者は誰か。"
+  },
+  {
+    "answer": "貢納王政",
+    "category": "エーゲ文明・オリエントの統一と分裂",
+    "chapter": "1",
+    "number": "5",
+    "question": "支配者が農民や商人から強制的に徴税・徴発した、ミケーネ文明の支配体制は何と呼ばれるか。"
+  },
+  {
+    "answer": "ヴェントリス",
+    "category": "エーゲ文明・オリエントの統一と分裂",
+    "chapter": "1",
+    "number": "5",
+    "question": "線文字Bを解読したイギリス人は誰か。"
+  },
+  {
+    "answer": "暗黒(初期鉄器)時代",
+    "category": "エーゲ文明・オリエントの統一と分裂",
+    "chapter": "1",
+    "number": "5",
+    "question": "「海の民」の侵入なども背景に、史料が多く残存していない前12-前8世紀頃の時代をなんと呼ぶか。"
+  },
+  {
+    "answer": "アッシュルバニパル",
+    "category": "エーゲ文明・オリエントの統一と分裂",
+    "chapter": "1",
+    "number": "5",
+    "question": "アッシリア王国の最大版図を達成し、首都に大図書館を作った国王は誰か。"
+  },
+  {
+    "answer": "ニネヴェ",
+    "category": "エーゲ文明・オリエントの統一と分裂",
+    "chapter": "1",
+    "number": "5",
+    "question": "アッシリア王国の首都はどこか。"
+  },
+  {
+    "answer": "リディア",
+    "category": "エーゲ文明・オリエントの統一と分裂",
+    "chapter": "1",
+    "number": "5",
+    "question": "アッシリアの分裂後に、小アジア南西部で栄え、世界最古の金属貨幣を使用した国は何か。"
+  },
+  {
+    "answer": "クシュ王国",
+    "category": "エーゲ文明・オリエントの統一と分裂",
+    "chapter": "1",
+    "number": "5",
+    "question": "エジプト新王国の滅亡後、前10世紀後半-後４世紀頃にかけて、ナイル川上流に続いた黒人王国は何か。"
+  },
+  {
+    "answer": "アクスム王国",
+    "category": "エーゲ文明・オリエントの統一と分裂",
+    "chapter": "1",
+    "number": "5",
+    "question": "紀元前後頃エチオピア高原に成立し、キリスト教（単性論）を国教とした国は何か。"
+  },
+  {
+    "answer": "インダス川",
+    "category": "南アジアの古代文明",
+    "chapter": "1",
+    "number": "6",
+    "question": "インド北西部を流れる大河は何か。"
+  },
+  {
+    "answer": "パンジャーブ地方",
+    "category": "南アジアの古代文明",
+    "chapter": "1",
+    "number": "6",
+    "question": "遺跡ハラッパーがある、アーリヤ人が最初に定住したインダス川中流域は何地方か。"
+  },
+  {
+    "answer": "ドラヴィダ人",
+    "category": "南アジアの古代文明",
+    "chapter": "1",
+    "number": "6",
+    "question": "インダス文明の建設者と推測され、現在は南インドを中心に分布している先住民は何人か。"
+  },
+  {
+    "answer": "カイバル峠",
+    "category": "南アジアの古代文明",
+    "chapter": "1",
+    "number": "6",
+    "question": "インドと西アジアを結ぶ交通の要衝で、アフガニスタンとパキスタンを結ぶ峠の名称は何か。"
+  },
+  {
+    "answer": "『リグ＝ヴェーダ』",
+    "category": "南アジアの古代文明",
+    "chapter": "1",
+    "number": "6",
+    "question": "ヴェーダのうち、神々への賛歌を集めた、最古の聖典の名称は何か。"
+  },
+  {
+    "answer": "ヴァルナ制",
+    "category": "南アジアの古代文明",
+    "chapter": "1",
+    "number": "6",
+    "question": "古代インドで、4つの身分に分類され、それぞれに職業等が厳格に定められていた身分制度を何というか。"
+  },
+  {
+    "answer": "バラモン",
+    "category": "南アジアの古代文明",
+    "chapter": "1",
+    "number": "6",
+    "question": "古代インドにおいて、宗教儀式を司る、最上位の司祭階層を何と呼ぶか。"
+  },
+  {
+    "answer": "クシャトリヤ",
+    "category": "南アジアの古代文明",
+    "chapter": "1",
+    "number": "6",
+    "question": "古代インドにおいて、貴族・武人階層を何と呼ぶか。"
+  },
+  {
+    "answer": "ヴァイシャ",
+    "category": "南アジアの古代文明",
+    "chapter": "1",
+    "number": "6",
+    "question": "古代インドにおいて、農民・商人などの庶民階層を何と呼ぶか。"
+  },
+  {
+    "answer": "シュードラ",
+    "category": "南アジアの古代文明",
+    "chapter": "1",
+    "number": "6",
+    "question": "古代インドにおいて、被征服民を中心とする隷属民階層を何と呼ぶか。"
+  },
+  {
+    "answer": "ジャーティ集団",
+    "category": "南アジアの古代文明",
+    "chapter": "1",
+    "number": "6",
+    "question": "古代インドにおいて、職業や出身によって細かく分かれた世襲的な社会集団を何というか。"
+  },
+  {
+    "answer": "印章",
+    "category": "南アジアの古代文明",
+    "chapter": "1",
+    "number": "6",
+    "question": "動物の図柄とインダス文字が刻まれている印鑑・ハンコを何と呼ぶか。"
+  },
+  {
+    "answer": "未解読",
+    "category": "南アジアの古代文明",
+    "chapter": "1",
+    "number": "6",
+    "question": "インダス文字は解読済みであるか、未解読であるか。"
+  },
+  {
+    "answer": "長江",
+    "category": "中国の古代文明",
+    "chapter": "1",
+    "number": "7",
+    "question": "中国において、稲作により適しているのは黄河か長江か。"
+  },
+  {
+    "answer": "仰韶文化",
+    "category": "中国の古代文明",
+    "chapter": "1",
+    "number": "7",
+    "question": "前5000年頃から黄河中流域におこった文明のうち、最古の新石器文化は何と呼ばれるか。"
+  },
+  {
+    "answer": "仰韶文化",
+    "category": "中国の古代文明",
+    "chapter": "1",
+    "number": "7",
+    "question": "黄河文明のうち、彩文土器が作られていた文化は何か。"
+  },
+  {
+    "answer": "竜山文化",
+    "category": "中国の古代文明",
+    "chapter": "1",
+    "number": "7",
+    "question": "前2500年頃から黄河下流域を中心におこった新石器時代後期の文化は、何と呼ばれるか。"
+  },
+  {
+    "answer": "邑",
+    "category": "中国の古代文明",
+    "chapter": "1",
+    "number": "7",
+    "question": "古代中国で前3000年以降しだいに形成された、集落や都市を意味する用語は何か。"
+  },
+  {
+    "answer": "河姆渡文化",
+    "category": "中国の古代文明",
+    "chapter": "1",
+    "number": "7",
+    "question": "前6000年頃までに始まっていた稲作文明のうち、長江下流域で栄えた文明は何か。"
+  },
+  {
+    "answer": "夏",
+    "category": "中国の古代文明",
+    "chapter": "1",
+    "number": "7",
+    "question": "禹に始まるとされ、国際的には実在が確認されていない最古の王朝は何か。"
+  },
+  {
+    "answer": "殷（商）",
+    "category": "中国の古代文明",
+    "chapter": "1",
+    "number": "7",
+    "question": "前16世紀頃から存在した、現在中国最古の王朝とされている王朝は何か。"
+  },
+  {
+    "answer": "殷墟",
+    "category": "中国の古代文明",
+    "chapter": "1",
+    "number": "7",
+    "question": "河南省安陽市を中心に発見された、殷の都の遺跡は何と呼ばれるか。"
+  },
+  {
+    "answer": "甲骨文字",
+    "category": "中国の古代文明",
+    "chapter": "1",
+    "number": "7",
+    "question": "亀甲や獣骨に刻まれた、漢字の原型とされる文字は何か。"
+  },
+  {
+    "answer": "鎬京",
+    "category": "中国の古代文明",
+    "chapter": "1",
+    "number": "7",
+    "question": "西周の首都はどこか。"
+  },
+  {
+    "answer": "渭水盆地",
+    "category": "中国の古代文明",
+    "chapter": "1",
+    "number": "7",
+    "question": "西周の都などがあった、中国北西部の盆地はどこか。"
+  },
+  {
+    "answer": "易姓革命",
+    "category": "中国の古代文明",
+    "chapter": "1",
+    "number": "7",
+    "question": "中国で、天命が失われた王朝は滅び、徳のある一族が新たに王朝を興すとする政治理念を何というか。"
+  },
+  {
+    "answer": "封建制",
+    "category": "中国の古代文明",
+    "chapter": "1",
+    "number": "7",
+    "question": "西周も実施した、土地を媒介とした主従関係に基づく支配制度のことを何というか。"
+  },
+  {
+    "answer": "卿・大夫・士",
+    "category": "中国の古代文明",
+    "chapter": "1",
+    "number": "7",
+    "question": "西周において、王や諸侯の世襲の家臣は何と呼ばれたか、三種答えなさい。"
+  },
+  {
+    "answer": "宗法",
+    "category": "中国の古代文明",
+    "chapter": "1",
+    "number": "7",
+    "question": "同性の親族集団において守るべき規範は、何と呼ばれたか。"
+  },
+  {
+    "answer": "犬戎",
+    "category": "春秋・戦国時代",
+    "chapter": "1",
+    "number": "8",
+    "question": "前8世紀ごろ、周の東遷の原因となった、西方から侵入してきた遊牧民は何か。"
+  },
+  {
+    "answer": "洛邑",
+    "category": "春秋・戦国時代",
+    "chapter": "1",
+    "number": "8",
+    "question": "東周の首都はどこか。"
+  },
+  {
+    "answer": "覇者",
+    "category": "春秋・戦国時代",
+    "chapter": "1",
+    "number": "8",
+    "question": "春秋時代、周王に代わって会盟を開催した有力諸侯のことを何と呼ぶか。"
+  },
+  {
+    "answer": "孝公",
+    "category": "春秋・戦国時代",
+    "chapter": "1",
+    "number": "8",
+    "question": "商鞅を登用して法家の改革を進め、戦国時代の秦の強国化の基礎を築いた君主は誰か。"
+  },
+  {
+    "answer": "咸陽",
+    "category": "春秋・戦国時代",
+    "chapter": "1",
+    "number": "8",
+    "question": "秦の首都はどこか。"
+  },
+  {
+    "answer": "商鞅",
+    "category": "春秋・戦国時代",
+    "chapter": "1",
+    "number": "8",
+    "question": "戦国時代、秦の孝公に支えて法家の人物は誰か。"
+  },
+  {
+    "answer": "秦/楚/斉/燕/趙/魏/韓",
+    "category": "春秋・戦国時代",
+    "chapter": "1",
+    "number": "8",
+    "question": "戦国の七雄を全て答えなさい。"
+  },
+  {
+    "answer": "華夷思想",
+    "category": "春秋・戦国時代",
+    "chapter": "1",
+    "number": "8",
+    "question": "文明化された自国に対し、周辺の民族を野蛮な民族・国とみなした思想を何と呼ぶか。"
+  },
+  {
+    "answer": "牛耕",
+    "category": "春秋・戦国時代の社会と文化",
+    "chapter": "1",
+    "number": "9",
+    "question": "春秋・戦国時代に導入された、鉄製の犁を牛にひかせた耕作法は何か。"
+  },
+  {
+    "answer": "布銭",
+    "category": "春秋・戦国時代の社会と文化",
+    "chapter": "1",
+    "number": "9",
+    "question": "農具の形をした青銅貨幣の名称は何か。"
+  },
+  {
+    "answer": "蟻鼻銭",
+    "category": "春秋・戦国時代の社会と文化",
+    "chapter": "1",
+    "number": "9",
+    "question": "南方の楚で使用された小型の青銅貨幣の名称は何か。"
+  },
+  {
+    "answer": "諸子百家",
+    "category": "春秋・戦国時代の社会と文化",
+    "chapter": "1",
+    "number": "9",
+    "question": "春秋時代末期から現れた、様々な思想家や諸学派を何と総称するか。"
+  },
+  {
+    "answer": "『論語』",
+    "category": "春秋・戦国時代の社会と文化",
+    "chapter": "1",
+    "number": "9",
+    "question": "四書の一つで、孔子の死後、弟子によって編纂された、彼とその弟子の言行録は何か。"
+  },
+  {
+    "answer": "荀子",
+    "category": "春秋・戦国時代の社会と文化",
+    "chapter": "1",
+    "number": "9",
+    "question": "性悪説をとなえ、礼による教化を説いた儒家の思想家は誰か。"
+  },
+  {
+    "answer": "孟子",
+    "category": "春秋・戦国時代の社会と文化",
+    "chapter": "1",
+    "number": "9",
+    "question": "性善説を唱えた儒家の思想家は誰か。"
+  },
+  {
+    "answer": "李斯",
+    "category": "春秋・戦国時代の社会と文化",
+    "chapter": "1",
+    "number": "9",
+    "question": "始皇帝のもと丞相として支えた法家の人物は誰か。"
+  },
+  {
+    "answer": "兼愛・非攻",
+    "category": "春秋・戦国時代の社会と文化",
+    "chapter": "1",
+    "number": "9",
+    "question": "墨子が唱えた、無差別の愛を指す語、戦争を否定する語をそれぞれ答えなさい。"
+  },
+  {
+    "answer": "無為自然",
+    "category": "春秋・戦国時代の社会と文化",
+    "chapter": "1",
+    "number": "9",
+    "question": "道家の根本思想を指す、人為を否定し天の道に従うという考え方を何というか。"
+  },
+  {
+    "answer": "蘇秦",
+    "category": "春秋・戦国時代の社会と文化",
+    "chapter": "1",
+    "number": "9",
+    "question": "６国が同盟して秦に対抗する合従策をとなえたのは誰か。"
+  },
+  {
+    "answer": "張儀",
+    "category": "春秋・戦国時代の社会と文化",
+    "chapter": "1",
+    "number": "9",
+    "question": "秦王の信任を得て、連衡策をとなえた人物は誰か。"
+  },
+  {
+    "answer": "ジャガイモ",
+    "category": "南北アメリカ文明",
+    "chapter": "1",
+    "number": "10",
+    "question": "アンデス地方原産の食物で、天候や戦争の被害を受けにくく、ヨーロッパで広く普及したイモ類は何か。"
+  },
+  {
+    "answer": "トウモロコシ",
+    "category": "南北アメリカ文明",
+    "chapter": "1",
+    "number": "10",
+    "question": "南北アメリカ大陸の古代文明の基礎となった穀物は何か。"
+  },
+  {
+    "answer": "リャマ/アルパカ",
+    "category": "南北アメリカ文明",
+    "chapter": "1",
+    "number": "10",
+    "question": "アメリカ大陸で飼育されている家畜の例を１つ挙げなさい。"
+  },
+  {
+    "answer": "オルメカ文明",
+    "category": "南北アメリカ文明",
+    "chapter": "1",
+    "number": "10",
+    "question": "前1200年頃までにメキシコ湾岸に成立した、巨石人頭像や絵文字をもつ中央アメリカ最初の都市文明は何か。"
+  },
+  {
+    "answer": "マヤ文明",
+    "category": "南北アメリカ文明",
+    "chapter": "1",
+    "number": "10",
+    "question": "前４世紀頃ユカタン半島の各地に都市が成立して栄え、その後16世紀にスペイン人に征服された文明は何か。"
+  },
+  {
+    "answer": "二十進法",
+    "category": "南北アメリカ文明",
+    "chapter": "1",
+    "number": "10",
+    "question": "マヤ文明で採用された記数法は何進法か。"
+  },
+  {
+    "answer": "テオティワカン文明",
+    "category": "南北アメリカ文明",
+    "chapter": "1",
+    "number": "10",
+    "question": "前１〜後６世紀頃に、メキシコ高原で発達した、「神々の家」という意味を持つ古代都市文明は何か。"
+  },
+  {
+    "answer": "アステカ文明",
+    "category": "南北アメリカ文明",
+    "chapter": "1",
+    "number": "10",
+    "question": "15世紀にメキシコ高原に栄え、テノチティトランを都とし、神への生贄を伴う宗教儀式で知られた文明は何か。"
+  },
+  {
+    "answer": "チャビン文化",
+    "category": "南北アメリカ文明",
+    "chapter": "1",
+    "number": "10",
+    "question": "前1000年頃北部ペルーに形成された、初期のアンデス文明は何か。"
+  },
+  {
+    "answer": "インカ帝国",
+    "category": "南北アメリカ文明",
+    "chapter": "1",
+    "number": "10",
+    "question": "とくに15〜16世紀前半までクスコを都にアンデス地帯で栄えた、ケチュア人の建てた帝国は何か。"
+  },
+  {
+    "answer": "キープ",
+    "category": "南北アメリカ文明",
+    "chapter": "1",
+    "number": "10",
+    "question": "文字のなかったインカ帝国で、縄の結び方で意味や数量を示した方法を何と呼ぶか。"
+  },
+  {
+    "answer": "マチュピチュ",
+    "category": "南北アメリカ文明",
+    "chapter": "1",
+    "number": "10",
+    "question": "インカ帝国首都北方の標高2400mの山岳地帯に建てられ、高い文化レベルをうかがわせた都市はどこか。"
+  },
+  {
+    "answer": "ストーンヘンジ",
+    "category": "難関私大対策",
+    "chapter": "1",
+    "number": "Z",
+    "question": "新石器時代のイギリスのものとされる巨石建造物の名前は何か。"
+  },
+  {
+    "answer": "ジャルモ",
+    "category": "難関私大対策",
+    "chapter": "1",
+    "number": "Z",
+    "question": "前7000年頃に麦の栽培が始まった北イラクに残る代表的遺跡の名前は何か。"
+  },
+  {
+    "answer": "イェリコ",
+    "category": "難関私大対策",
+    "chapter": "1",
+    "number": "Z",
+    "question": "前7000年頃に麦の栽培が始まったパレスチナに残る代表的遺跡の名前は何か。"
+  },
+  {
+    "answer": "ナラム＝シン",
+    "category": "難関私大対策",
+    "chapter": "1",
+    "number": "Z",
+    "question": "アッカド王国の最盛期を築き、「四方世界の王」と自称した第４代国王の名前は何か。"
+  },
+  {
+    "answer": "ノモス",
+    "category": "難関私大対策",
+    "chapter": "1",
+    "number": "Z",
+    "question": "古王国による統一前のエジプトに存在した部族的独立集落の名前は何か。"
+  },
+  {
+    "answer": "メネス",
+    "category": "難関私大対策",
+    "chapter": "1",
+    "number": "Z",
+    "question": "全エジプトを統一した上エジプトの王の名前は何か。"
+  },
+  {
+    "answer": "クフ王、カフラー王、メンカウラー王",
+    "category": "難関私大対策",
+    "chapter": "1",
+    "number": "Z",
+    "question": "古王国時代のエジプトで建設されたギザの三大ピラミッドを、大きい順に、それぞれのピラミッドを建造したファラオの名前を答えなさい。"
+  },
+  {
+    "answer": "カデシュの戦い",
+    "category": "難関私大対策",
+    "chapter": "1",
+    "number": "Z",
+    "question": "前1286年頃、新王国時代のエジプトの王ラメス2世がヒッタイトと戦い、最古の講和条約を結んだとされる戦いの名前は何か。"
+  },
+  {
+    "answer": "アブシンベル神殿",
+    "category": "難関私大対策",
+    "chapter": "1",
+    "number": "Z",
+    "question": "ラメス2世が建設させ、現在はアスワン＝ハイダム建設のために移設された神殿の名前は何か。"
+  },
+  {
+    "answer": "ハットゥシャ",
+    "category": "難関私大対策",
+    "chapter": "1",
+    "number": "Z",
+    "question": "ヒッタイトの都はどこか。"
+  },
+  {
+    "answer": "サルゴン2世",
+    "category": "難関私大対策",
+    "chapter": "1",
+    "number": "Z",
+    "question": "前721年、イスラエル王国を滅ぼしたアッシリアの君主は誰か。"
+  },
+  {
+    "answer": "ネブカドネザル2世",
+    "category": "難関私大対策",
+    "chapter": "1",
+    "number": "Z",
+    "question": "前586年にバビロン捕囚を行った新バビロニア（カルデア）の君主は誰か。"
+  },
+  {
+    "answer": "ベヒストゥーン碑文",
+    "category": "難関私大対策",
+    "chapter": "1",
+    "number": "Z",
+    "question": "ローリンソンが解読し、楔形文字解読を進める要因となった史料はなにか。"
+  },
+  {
+    "answer": "シンド地方",
+    "category": "難関私大対策",
+    "chapter": "1",
+    "number": "Z",
+    "question": "モエンジョ＝ダーロのあったインダス川下流域の地方名は何か。"
+  },
+  {
+    "answer": "ドーラヴィーラ",
+    "category": "難関私大対策",
+    "chapter": "1",
+    "number": "Z",
+    "question": "約10文字のインダス文字の刻まれた看板が発見されたインド西部の遺跡名は何か。"
+  },
+  {
+    "answer": "『リグ＝ヴェーダ』『サーマ＝ヴェーダ』『ヤジュル＝ヴェーダ』『アタルヴァ＝ヴェーダ』",
+    "category": "難関私大対策",
+    "chapter": "1",
+    "number": "Z",
+    "question": "４ヴェーダ全て答えなさい。"
+  },
+  {
+    "answer": "チチェン・イツァ",
+    "category": "難関私大対策",
+    "chapter": "1",
+    "number": "Z",
+    "question": "ユカタン半島に位置し、マヤ文明最大の都市遺跡の一つで、ククルカンのピラミッドなどが世界遺産に登録されているものはどこか。"
+  },
+  {
+    "answer": "トルテカ文明",
+    "category": "難関私大対策",
+    "chapter": "1",
+    "number": "Z",
+    "question": "10世紀から12世紀にメキシコ高原のトゥーラを中心に発達した文明は何か。"
+  },
+  {
+    "answer": "チャビン文化",
+    "category": "難関私大対策",
+    "chapter": "1",
+    "number": "Z",
+    "question": "前1000年頃に北部ペルーでトウモロコシの灌漑農業などが発達し、「アンデス文明の源」と呼ばれる文化は何か。"
+  },
+  {
+    "answer": "ナスカ文明",
+    "category": "難関私大対策",
+    "chapter": "1",
+    "number": "Z",
+    "question": "ペルー南部で発達し、地上絵などを特徴とする文明は何か。"
+  },
+  {
+    "answer": "隊商交易",
+    "category": "中央ユーラシア：草原とオアシスの世界",
+    "chapter": "2",
+    "number": "11",
+    "question": "とくに「オアシスの道」で、ラクダや馬を利用した商人がグループをつくって行った長距離交易は何か。"
+  },
+  {
+    "answer": "草原の道",
+    "category": "中央ユーラシア：草原とオアシスの世界",
+    "chapter": "2",
+    "number": "11",
+    "question": "様々な遊牧民が活動した、南ロシアの草原地帯からモンゴル高原にかけての東西交通路を何と呼ぶか。"
+  },
+  {
+    "answer": "スキタイ",
+    "category": "中央ユーラシア：草原とオアシスの世界",
+    "chapter": "2",
+    "number": "11",
+    "question": "独自の騎馬文化を生み、前７世紀頃から南ロシアの草原地帯を支配したイラン系遊牧民の名称は何か。"
+  },
+  {
+    "answer": "匈奴",
+    "category": "中央ユーラシア：草原とオアシスの世界",
+    "chapter": "2",
+    "number": "11",
+    "question": "騎馬文化を取り入れ、前３世紀末からモンゴル高原で活躍した、民族系統不明の遊牧民の名称は何か。"
+  },
+  {
+    "answer": "冒頓単于",
+    "category": "中央ユーラシア：草原とオアシスの世界",
+    "chapter": "2",
+    "number": "11",
+    "question": "前３世紀末に匈奴を統率し、前漢の高祖を白頭山の戦いで撃破した君主は誰か。"
+  },
+  {
+    "answer": "月氏",
+    "category": "中央ユーラシア：草原とオアシスの世界",
+    "chapter": "2",
+    "number": "11",
+    "question": "前２世紀前半に匈奴の圧迫を受けてイリ地方に逃れた、イラン系といわれる騎馬遊牧民は何か。"
+  },
+  {
+    "answer": "烏孫",
+    "category": "中央ユーラシア：草原とオアシスの世界",
+    "chapter": "2",
+    "number": "11",
+    "question": "前漢が匈奴に対抗するために同盟を結んだ、イリ地方を拠点とした遊牧民は何か。"
+  },
+  {
+    "answer": "鮮卑",
+    "category": "中央ユーラシア：草原とオアシスの世界",
+    "chapter": "2",
+    "number": "11",
+    "question": "２世紀半ばに諸部族を統合してモンゴル高原を支配し、その後華北に進出して北魏を建国した遊牧民は何か。"
+  },
+  {
+    "answer": "フン人",
+    "category": "中央ユーラシア：草原とオアシスの世界",
+    "chapter": "2",
+    "number": "11",
+    "question": "４世紀末～５世紀に内陸アジアからヨーロッパへ西進し、ゲルマン人大移動の要因となった騎馬遊牧民は何か。"
+  },
+  {
+    "answer": "タリム盆地",
+    "category": "中央ユーラシア：草原とオアシスの世界",
+    "chapter": "2",
+    "number": "11",
+    "question": "パミール高原東部に広がり、古くからオアシス都市が点在していた中国西部の盆地はどこか。"
+  },
+  {
+    "answer": "ソグディアナ",
+    "category": "中央ユーラシア：草原とオアシスの世界",
+    "chapter": "2",
+    "number": "11",
+    "question": "東西交易の要地として争奪が繰り返された、アム川とシル川にはさまれたパミール高原西部の地域名称は何か。"
+  },
+  {
+    "answer": "オアシスの道",
+    "category": "中央ユーラシア：草原とオアシスの世界",
+    "chapter": "2",
+    "number": "11",
+    "question": "草原の道と並び、タリム盆地周辺のオアシス都市を経由して中国と西方を結んだルートを何というか。"
+  },
+  {
+    "answer": "政",
+    "category": "秦の統一と前漢",
+    "chapter": "2",
+    "number": "12",
+    "question": "戦国時代を勝ち抜き、秦として中国を統一し、始皇帝と名乗った秦の王は誰か。"
+  },
+  {
+    "answer": "(紀元)前221年",
+    "category": "秦の統一と前漢",
+    "chapter": "2",
+    "number": "12",
+    "question": "秦が中国を統一したのは西暦何年か。"
+  },
+  {
+    "answer": "李斯",
+    "category": "秦の統一と前漢",
+    "chapter": "2",
+    "number": "12",
+    "question": "始皇帝のもと、丞相として仕えた法家の人物は誰か。"
+  },
+  {
+    "answer": "郡県制",
+    "category": "秦の統一と前漢",
+    "chapter": "2",
+    "number": "12",
+    "question": "中央集権化のため、秦が施行した地方統治制度は何か。"
+  },
+  {
+    "answer": "半両銭",
+    "category": "秦の統一と前漢",
+    "chapter": "2",
+    "number": "12",
+    "question": "秦が定めた統一貨幣の名称は何か。"
+  },
+  {
+    "answer": "焚書・坑儒",
+    "category": "秦の統一と前漢",
+    "chapter": "2",
+    "number": "12",
+    "question": "秦で実施された思想・言論統制策は何と呼ばれたか。"
+  },
+  {
+    "answer": "南越国",
+    "category": "秦の統一と前漢",
+    "chapter": "2",
+    "number": "12",
+    "question": "秦末に成立し武帝の時代に滅ぼされた、現在の広東省からベトナム北部にあった国の名称は何か。"
+  },
+  {
+    "answer": "陳勝・呉広の乱",
+    "category": "秦の統一と前漢",
+    "chapter": "2",
+    "number": "12",
+    "question": "秦末に発生した、中国史上最初の農民反乱の名称は何か。"
+  },
+  {
+    "answer": "劉邦",
+    "category": "秦の統一と前漢",
+    "chapter": "2",
+    "number": "12",
+    "question": "農民出身で、漢を建てて中国を再統一した人物は誰か。"
+  },
+  {
+    "answer": "項羽",
+    "category": "秦の統一と前漢",
+    "chapter": "2",
+    "number": "12",
+    "question": "農民反乱を機に挙兵し、秦を滅ぼした後、垓下の戦いで敗れた、楚の名門出身の武将は誰か。"
+  },
+  {
+    "answer": "長安",
+    "category": "秦の統一と前漢",
+    "chapter": "2",
+    "number": "12",
+    "question": "前漢の首都はどこか。"
+  },
+  {
+    "answer": "「王侯将相いずくんぞ種あらんや」",
+    "category": "秦の統一と前漢",
+    "chapter": "2",
+    "number": "12",
+    "question": "陳勝・呉広の乱の際、陳勝が発したとされる、身分制度への反発を表す言葉は何か。"
+  },
+  {
+    "answer": "郡国制",
+    "category": "秦の統一と前漢",
+    "chapter": "2",
+    "number": "12",
+    "question": "前漢の高祖が施行した、郡県制と封建制を併用した地方統治制度の名称は何か。"
+  },
+  {
+    "answer": "呉楚七国の乱",
+    "category": "秦の統一と前漢",
+    "chapter": "2",
+    "number": "12",
+    "question": "前154年、江南を中心とする七諸侯がおこした反乱で、鎮圧後、中央集権化が進められる契機となったものは何か。"
+  },
+  {
+    "answer": "董仲舒",
+    "category": "秦の統一と前漢",
+    "chapter": "2",
+    "number": "12",
+    "question": "前漢時代、儒教の官学化を武帝に献策した儒学者は誰か。"
+  },
+  {
+    "answer": "郷挙里選",
+    "category": "秦の統一と前漢",
+    "chapter": "2",
+    "number": "12",
+    "question": "前漢の武帝のとき制定された官吏任用制度の名称は何か。"
+  },
+  {
+    "answer": "張騫",
+    "category": "秦の統一と前漢",
+    "chapter": "2",
+    "number": "12",
+    "question": "匈奴をはさみ打ちする目的で、武帝によって大月氏に派遣された人物は誰か。"
+  },
+  {
+    "answer": "敦煌郡",
+    "category": "秦の統一と前漢",
+    "chapter": "2",
+    "number": "12",
+    "question": "武帝が西域に設置した河西４郡のうち、もっとも西におかれた郡の名称は何か。"
+  },
+  {
+    "answer": "衛氏朝鮮",
+    "category": "秦の統一と前漢",
+    "chapter": "2",
+    "number": "12",
+    "question": "武帝の時代に滅ぼされた、朝鮮の国名は何か。"
+  },
+  {
+    "answer": "均輸",
+    "category": "秦の統一と前漢",
+    "chapter": "2",
+    "number": "12",
+    "question": "武帝が施行した、特産物を強制的に貢納させ、これを不足地に転売した物価調整策は何か。"
+  },
+  {
+    "answer": "平準",
+    "category": "秦の統一と前漢",
+    "chapter": "2",
+    "number": "12",
+    "question": "武帝が施行した、物価の低いときに余剰産品を政府が購入し、高くなったときに売り出す物価安定策は何か。"
+  },
+  {
+    "answer": "塩・鉄",
+    "category": "秦の統一と前漢",
+    "chapter": "2",
+    "number": "12",
+    "question": "前漢の武帝が財政再建のために専売化した、２つの物品名は何か。"
+  },
+  {
+    "answer": "五銖銭",
+    "category": "秦の統一と前漢",
+    "chapter": "2",
+    "number": "12",
+    "question": "武帝が鋳造させた銅銭の名称は何か。"
+  },
+  {
+    "answer": "王莽",
+    "category": "後漢と漢代の社会・文化",
+    "chapter": "2",
+    "number": "13",
+    "question": "前漢の外戚出身で、皇帝の位を奪って新を建てたが、各地の反乱により滅ぼされた人物は誰か。"
+  },
+  {
+    "answer": "赤眉の乱",
+    "category": "後漢と漢代の社会・文化",
+    "chapter": "2",
+    "number": "13",
+    "question": "新の復古的政治に不満な人びとがおこした反乱のうち、山東地方から始まった農民反乱は何か。"
+  },
+  {
+    "answer": "劉秀（光武帝）",
+    "category": "後漢と漢代の社会・文化",
+    "chapter": "2",
+    "number": "13",
+    "question": "後25年に漢王朝（後漢）を再建した、漢王室一族の人物（初代皇帝）は誰か。"
+  },
+  {
+    "answer": "洛陽",
+    "category": "後漢と漢代の社会・文化",
+    "chapter": "2",
+    "number": "13",
+    "question": "後漢の都はどこか。"
+  },
+  {
+    "answer": "班超",
+    "category": "後漢と漢代の社会・文化",
+    "chapter": "2",
+    "number": "13",
+    "question": "１世紀末、後漢の和帝によって西域都護に任命された人物は誰か。"
+  },
+  {
+    "answer": "甘英",
+    "category": "後漢と漢代の社会・文化",
+    "chapter": "2",
+    "number": "13",
+    "question": "班超によって、ローマ帝国への派遣を命じられた部下は誰か。"
+  },
+  {
+    "answer": "大秦王安敦",
+    "category": "後漢と漢代の社会・文化",
+    "chapter": "2",
+    "number": "13",
+    "question": "２世紀後半、後漢に使者を派遣したローマ皇帝マルクス＝アウレリウス＝アントニヌスの中国表記は何か。"
+  },
+  {
+    "answer": "党錮の禁",
+    "category": "後漢と漢代の社会・文化",
+    "chapter": "2",
+    "number": "13",
+    "question": "２世紀後半におこった、宦官の専横に反対する儒学者官僚を、宦官が弾圧した事件を何と呼ぶか。"
+  },
+  {
+    "answer": "黄巾の乱",
+    "category": "後漢と漢代の社会・文化",
+    "chapter": "2",
+    "number": "13",
+    "question": "後漢末の184年におこった農民反乱は何か。"
+  },
+  {
+    "answer": "曹丕",
+    "category": "後漢と漢代の社会・文化",
+    "chapter": "2",
+    "number": "13",
+    "question": "曹操の子で、後漢の皇帝から禅譲され、魏の初代皇帝となった人物は誰か。"
+  },
+  {
+    "answer": "訓詁学",
+    "category": "後漢と漢代の社会・文化",
+    "chapter": "2",
+    "number": "13",
+    "question": "儒教古典の字句解釈を目的とした学問を何と呼ぶか。"
+  },
+  {
+    "answer": "『史記』",
+    "category": "後漢と漢代の社会・文化",
+    "chapter": "2",
+    "number": "13",
+    "question": "司馬遷が黄帝から前漢の武帝までの事績を記した正史の名称は何か。"
+  },
+  {
+    "answer": "紀伝体",
+    "category": "後漢と漢代の社会・文化",
+    "chapter": "2",
+    "number": "13",
+    "question": "『史記』に始まる、中国正史の記述形式は何か。"
+  },
+  {
+    "answer": "蔡倫",
+    "category": "後漢と漢代の社会・文化",
+    "chapter": "2",
+    "number": "13",
+    "question": "製紙法を改良したとされる、後漢の宦官は誰か。"
+  },
+  {
+    "answer": "屯田制",
+    "category": "魏晋南北朝時代",
+    "chapter": "2",
+    "number": "14",
+    "question": "国家財政を確立するため、魏の曹操が、荒廃地を国有化して流民や一般農民に耕作させた制度は何か。"
+  },
+  {
+    "answer": "建業",
+    "category": "魏晋南北朝時代",
+    "chapter": "2",
+    "number": "14",
+    "question": "現在の南京の前身となった、呉の都はどこか。"
+  },
+  {
+    "answer": "孫権",
+    "category": "魏晋南北朝時代",
+    "chapter": "2",
+    "number": "14",
+    "question": "222年に江南で独立し、呉を建てた人物は誰か。"
+  },
+  {
+    "answer": "劉備",
+    "category": "魏晋南北朝時代",
+    "chapter": "2",
+    "number": "14",
+    "question": "漢の後裔を称し、四川地方に蜀を建てた人物は誰か。"
+  },
+  {
+    "answer": "成都",
+    "category": "魏晋南北朝時代",
+    "chapter": "2",
+    "number": "14",
+    "question": "蜀の都はどこか。"
+  },
+  {
+    "answer": "司馬炎",
+    "category": "魏晋南北朝時代",
+    "chapter": "2",
+    "number": "14",
+    "question": "魏の武将で、禅譲されて265年に皇帝となり、呉を滅ぼして中国をいったん統一した人物は誰か。"
+  },
+  {
+    "answer": "280年",
+    "category": "魏晋南北朝時代",
+    "chapter": "2",
+    "number": "14",
+    "question": "西晋が中国を統一したのは西暦何年か。"
+  },
+  {
+    "answer": "八王の乱",
+    "category": "魏晋南北朝時代",
+    "chapter": "2",
+    "number": "14",
+    "question": "司馬炎の死後、290年から始まった一族諸王による内乱は何か。"
+  },
+  {
+    "answer": "永嘉の乱",
+    "category": "魏晋南北朝時代",
+    "chapter": "2",
+    "number": "14",
+    "question": "八王の乱ののち、４世紀に入り匈奴が中心となっておこし、西晋を滅ぼした兵乱は何と呼ばれるか。"
+  },
+  {
+    "answer": "建康",
+    "category": "魏晋南北朝時代",
+    "chapter": "2",
+    "number": "14",
+    "question": "東晋は建業を改称して都とした。その名称は何か。"
+  },
+  {
+    "answer": "司馬睿",
+    "category": "魏晋南北朝時代",
+    "chapter": "2",
+    "number": "14",
+    "question": "西晋滅亡後、江南に逃れて東晋を建てた人物は誰か。"
+  },
+  {
+    "answer": "劉裕",
+    "category": "魏晋南北朝時代",
+    "chapter": "2",
+    "number": "14",
+    "question": "東晋末の混乱を収めて皇帝となり、南朝宋を建てた軍人出身の人物は誰か。"
+  },
+  {
+    "answer": "拓跋氏",
+    "category": "魏晋南北朝時代",
+    "chapter": "2",
+    "number": "14",
+    "question": "北魏を建国した鮮卑の氏族名は何か。"
+  },
+  {
+    "answer": "太武帝",
+    "category": "魏晋南北朝時代",
+    "chapter": "2",
+    "number": "14",
+    "question": "北魏が439年に華北を統一した時の皇帝は誰か。"
+  },
+  {
+    "answer": "孝文帝",
+    "category": "魏晋南北朝時代",
+    "chapter": "2",
+    "number": "14",
+    "question": "５世紀後半に漢化政策を実施した第６代皇帝は誰か。"
+  },
+  {
+    "answer": "六鎮の乱",
+    "category": "魏晋南北朝時代",
+    "chapter": "2",
+    "number": "14",
+    "question": "北魏の後期、拓跋氏による漢化政策に不満を持った辺境の軍事拠点で発生した反乱は何か。"
+  },
+  {
+    "answer": "宋・斉・梁・陳",
+    "category": "魏晋南北朝時代",
+    "chapter": "2",
+    "number": "14",
+    "question": "東晋の滅亡後、江南を支配した4つの王朝を建国順に答えなさい。"
+  },
+  {
+    "answer": "九品中正",
+    "category": "魏晋南北朝時代",
+    "chapter": "2",
+    "number": "14",
+    "question": "三国の魏の文帝（曹丕）が始めた、地方に役人を派遣し、中央に人材を推薦させた官吏登用制度は何か。"
+  },
+  {
+    "answer": "均田制",
+    "category": "魏晋南北朝時代",
+    "chapter": "2",
+    "number": "14",
+    "question": "北魏に始まり、隋以降の中国王朝に継承された土地制度は何か。"
+  },
+  {
+    "answer": "清談",
+    "category": "魏晋南北朝時代の文化・朝鮮・日本の国家形成",
+    "chapter": "2",
+    "number": "15",
+    "question": "魏・晋時代に流行した、老荘思想に基づき、世俗を超越した表現で行われた哲学的論議を何と呼ぶか。"
+  },
+  {
+    "answer": "仏図澄",
+    "category": "魏晋南北朝時代の文化・朝鮮・日本の国家形成",
+    "chapter": "2",
+    "number": "15",
+    "question": "４世紀初め洛陽に来て仏教を広めた、西域のクチャ（亀茲）出身の僧は誰か。"
+  },
+  {
+    "answer": "鳩摩羅什",
+    "category": "魏晋南北朝時代の文化・朝鮮・日本の国家形成",
+    "chapter": "2",
+    "number": "15",
+    "question": "５世紀初め長安に来て仏典の漢訳と教理の中国定着に大きく貢献した、父がインド人のクチャ出身の僧は誰か。"
+  },
+  {
+    "answer": "法顕",
+    "category": "魏晋南北朝時代の文化・朝鮮・日本の国家形成",
+    "chapter": "2",
+    "number": "15",
+    "question": "４世紀末に長安から陸路でインドへ向かい、海路で帰国し『仏国記』を著した東晋時代の僧は誰か。"
+  },
+  {
+    "answer": "雲崗",
+    "category": "魏晋南北朝時代の文化・朝鮮・日本の国家形成",
+    "chapter": "2",
+    "number": "15",
+    "question": "北魏前半の都である平城の西に位置し、石窟寺院が造営されたのはどこか。"
+  },
+  {
+    "answer": "竜門",
+    "category": "魏晋南北朝時代の文化・朝鮮・日本の国家形成",
+    "chapter": "2",
+    "number": "15",
+    "question": "北魏の遷都後から石窟寺院の造営が開始された、洛陽南方の地はどこか。"
+  },
+  {
+    "answer": "寇謙之",
+    "category": "魏晋南北朝時代の文化・朝鮮・日本の国家形成",
+    "chapter": "2",
+    "number": "15",
+    "question": "北魏の太武帝に重用され、新天師道を確立し、道教を大成させた人物は誰か。"
+  },
+  {
+    "answer": "陶淵明",
+    "category": "魏晋南北朝時代の文化・朝鮮・日本の国家形成",
+    "chapter": "2",
+    "number": "15",
+    "question": "「帰去来辞」で知られる、東晋の田園詩人は誰か。"
+  },
+  {
+    "answer": "昭明太子",
+    "category": "魏晋南北朝時代の文化・朝鮮・日本の国家形成",
+    "chapter": "2",
+    "number": "15",
+    "question": "南朝梁の武帝の長子で、詩文にすぐれ、『文選』を編纂したのは誰か。"
+  },
+  {
+    "answer": "王羲之",
+    "category": "魏晋南北朝時代の文化・朝鮮・日本の国家形成",
+    "chapter": "2",
+    "number": "15",
+    "question": "「書聖」と称され、「蘭亭序」で名高い東晋の書家は誰か。"
+  },
+  {
+    "answer": "『女史箴図』",
+    "category": "魏晋南北朝時代の文化・朝鮮・日本の国家形成",
+    "chapter": "2",
+    "number": "15",
+    "question": "女官へのいましめを書いた作品を題材として、顧愷之が描いたとされる作品は何か。"
+  },
+  {
+    "answer": "広開土王",
+    "category": "魏晋南北朝時代の文化・朝鮮・日本の国家形成",
+    "chapter": "2",
+    "number": "15",
+    "question": "４世紀末〜５世紀初め、朝鮮半島南部に進出し、倭とも戦い破ったとされる、高句麗の最盛期の王は誰か。"
+  },
+  {
+    "answer": "百済",
+    "category": "魏晋南北朝時代の文化・朝鮮・日本の国家形成",
+    "chapter": "2",
+    "number": "15",
+    "question": "４世紀半ば、半島南西部に分立していた三韓の国々を統一して成立した国はどこか。"
+  },
+  {
+    "answer": "新羅",
+    "category": "魏晋南北朝時代の文化・朝鮮・日本の国家形成",
+    "chapter": "2",
+    "number": "15",
+    "question": "４世紀半ば、半島南東部に分立していた三韓の国々を統一して成立した国はどこか。"
+  },
+  {
+    "answer": "卑弥呼",
+    "category": "魏晋南北朝時代の文化・朝鮮・日本の国家形成",
+    "chapter": "2",
+    "number": "15",
+    "question": "『魏志』倭人伝に記述されている、邪馬台国の女王の名前は何か。"
+  },
+  {
+    "answer": "朝貢",
+    "category": "魏晋南北朝時代の文化・朝鮮・日本の国家形成",
+    "chapter": "2",
+    "number": "15",
+    "question": "周辺諸国の君主が、中国皇帝の権威を認めて使者を送り、貢物を献上する形式的な外交儀礼を何というか。"
+  },
+  {
+    "answer": "楊堅",
+    "category": "隋と唐初",
+    "chapter": "2",
+    "number": "16",
+    "question": "北周の外戚だが、禅譲により隋の初代皇帝（文帝）として即位したのは誰か。"
+  },
+  {
+    "answer": "大興城",
+    "category": "隋と唐初",
+    "chapter": "2",
+    "number": "16",
+    "question": "隋の都はどこか。"
+  },
+  {
+    "answer": "589年",
+    "category": "隋と唐初",
+    "chapter": "2",
+    "number": "16",
+    "question": "隋が中国を統一したのは西暦何年か。"
+  },
+  {
+    "answer": "科挙",
+    "category": "隋と唐初",
+    "chapter": "2",
+    "number": "16",
+    "question": "貴族の高級官僚独占を防ぎ中央集権化をめざす目的で隋で開始された、科目試験による官吏登用制度は何か。"
+  },
+  {
+    "answer": "煬帝",
+    "category": "隋と唐初",
+    "chapter": "2",
+    "number": "16",
+    "question": "隋の二代目皇帝は誰か。"
+  },
+  {
+    "answer": "高句麗",
+    "category": "隋と唐初",
+    "chapter": "2",
+    "number": "16",
+    "question": "隋の二代目皇帝により、三度遠征軍を送り三度失敗した遠征先はどこか。"
+  },
+  {
+    "answer": "618年",
+    "category": "隋と唐初",
+    "chapter": "2",
+    "number": "16",
+    "question": "唐の建国年は西暦何年か。"
+  },
+  {
+    "answer": "長安",
+    "category": "隋と唐初",
+    "chapter": "2",
+    "number": "16",
+    "question": "唐の都はどこか。"
+  },
+  {
+    "answer": "李淵（高祖）",
+    "category": "隋と唐初",
+    "chapter": "2",
+    "number": "16",
+    "question": "唐の建国者は誰か。"
+  },
+  {
+    "answer": "貞観の治",
+    "category": "隋と唐初",
+    "chapter": "2",
+    "number": "16",
+    "question": "盛時を現出した太宗の治世を、後世になって元号でたたえたことばは何か。"
+  },
+  {
+    "answer": "高宗",
+    "category": "隋と唐初",
+    "chapter": "2",
+    "number": "16",
+    "question": "周辺国家を服属させ、唐の最大版図を実現した第３代皇帝は誰か。"
+  },
+  {
+    "answer": "都護府",
+    "category": "隋と唐初",
+    "chapter": "2",
+    "number": "16",
+    "question": "唐が周辺諸民族の統治のため６つ設置した機関は何か。"
+  },
+  {
+    "answer": "羈縻政策",
+    "category": "隋と唐初",
+    "chapter": "2",
+    "number": "16",
+    "question": "中央から役人を派遣し、そのもとで在地の族長を任命して、周辺民族を間接統治した中国歴代王朝の政策を何と呼ぶか。"
+  },
+  {
+    "answer": "律・令・格・式",
+    "category": "隋と唐初",
+    "chapter": "2",
+    "number": "16",
+    "question": "唐代に整備された法体系で、刑法・行政法・補足法・施行細則にそれぞれあたるものをそれぞれ何というか。"
+  },
+  {
+    "answer": "中書省",
+    "category": "隋と唐初",
+    "chapter": "2",
+    "number": "16",
+    "question": "三省のうち、詔勅の立案起草を担当した機関は何か。"
+  },
+  {
+    "answer": "門下省",
+    "category": "隋と唐初",
+    "chapter": "2",
+    "number": "16",
+    "question": "三省のうち、立案された詔勅や奏文の審議を担当した機関は何か。"
+  },
+  {
+    "answer": "尚書省",
+    "category": "隋と唐初",
+    "chapter": "2",
+    "number": "16",
+    "question": "三省のうち、成立した詔勅を執行する行政機関は何か。"
+  },
+  {
+    "answer": "礼部",
+    "category": "隋と唐初",
+    "chapter": "2",
+    "number": "16",
+    "question": "六部のうち、教育・祭祀・科挙を担当したのはどこか。"
+  },
+  {
+    "answer": "御史台",
+    "category": "隋と唐初",
+    "chapter": "2",
+    "number": "16",
+    "question": "秦代から用いられてきた呼称で、中国での官吏監察機関の名称は何か。"
+  },
+  {
+    "answer": "州県制",
+    "category": "隋と唐初",
+    "chapter": "2",
+    "number": "16",
+    "question": "隋で始まり、唐で確立された地方行政区画制度は何か。"
+  },
+  {
+    "answer": "府兵制",
+    "category": "隋と唐初",
+    "chapter": "2",
+    "number": "16",
+    "question": "楊堅が整備し、唐でも採用された、西魏に始まる兵制は何か。"
+  },
+  {
+    "answer": "揚州",
+    "category": "唐の文化",
+    "chapter": "2",
+    "number": "17",
+    "question": "広州とならんで、ムスリム商人が来航し彼らの居留地がおかれた、大運河沿いの江蘇省の港市はどこか。"
+  },
+  {
+    "answer": "市舶司",
+    "category": "唐の文化",
+    "chapter": "2",
+    "number": "17",
+    "question": "玄宗時代、広州に初めて設置された、海上貿易管理機関の名称は何か。"
+  },
+  {
+    "answer": "孔穎達",
+    "category": "唐の文化",
+    "chapter": "2",
+    "number": "17",
+    "question": "太宗の勅命で『隋書』や五経の注釈書を編纂した儒学者は誰か。"
+  },
+  {
+    "answer": "『五経正義』",
+    "category": "唐の文化",
+    "chapter": "2",
+    "number": "17",
+    "question": "孔穎達らが編纂した、五経の統一的な注釈書は何か。"
+  },
+  {
+    "answer": "祆教",
+    "category": "唐の文化",
+    "chapter": "2",
+    "number": "17",
+    "question": "北魏のころ伝わった、ゾロアスター教（拝火教）の中国名は何か。"
+  },
+  {
+    "answer": "マニ教",
+    "category": "唐の文化",
+    "chapter": "2",
+    "number": "17",
+    "question": "ササン朝にて、ゾロアスター教・仏教・キリスト教が融合して成立し、唐に伝わった宗教は何か。"
+  },
+  {
+    "answer": "景教",
+    "category": "唐の文化",
+    "chapter": "2",
+    "number": "17",
+    "question": "唐の太宗時代、布教を許されたネストリウス派キリスト教の中国名は何か。"
+  },
+  {
+    "answer": "玄奘",
+    "category": "唐の文化",
+    "chapter": "2",
+    "number": "17",
+    "question": "唐代の初め、往復とも陸路でインドに赴き、『大唐西域記』を著した中国僧は誰か。"
+  },
+  {
+    "answer": "義浄",
+    "category": "唐の文化",
+    "chapter": "2",
+    "number": "17",
+    "question": "７世紀後半、往復とも海路でインドに赴き、『南海寄帰内法伝』を著した中国僧は誰か。"
+  },
+  {
+    "answer": "李白",
+    "category": "唐の文化",
+    "chapter": "2",
+    "number": "17",
+    "question": "安史の乱のとき粛宗の弟の反乱に加担し、一時流罪となったこともある、「詩仙」と称された唐中期の詩人は誰か。"
+  },
+  {
+    "answer": "杜甫",
+    "category": "唐の文化",
+    "chapter": "2",
+    "number": "17",
+    "question": "「春望」など社会の現実をうたった作品が多く、のちに「詩聖」と称された唐中期の詩人は誰か。"
+  },
+  {
+    "answer": "白居易",
+    "category": "唐の文化",
+    "chapter": "2",
+    "number": "17",
+    "question": "玄宗と楊貴妃の悲恋をうたった「長恨歌」や『白氏文集』などが有名な、唐後期の詩人は誰か。"
+  },
+  {
+    "answer": "柳宗元・韓愈",
+    "category": "唐の文化",
+    "chapter": "2",
+    "number": "17",
+    "question": "唐代中期に古文復興運動を唱え、儒教的思想の復権を目指した人物を2人挙げなさい。"
+  },
+  {
+    "answer": "顔真卿",
+    "category": "唐の文化",
+    "chapter": "2",
+    "number": "17",
+    "question": "楷書・草書に力強い書風を開くいっぽう、安史の乱の際に義勇軍を率いて抗戦した、唐中期の書家は誰か。"
+  },
+  {
+    "answer": "呉道玄",
+    "category": "唐の文化",
+    "chapter": "2",
+    "number": "17",
+    "question": "玄宗に仕え、線の太さで量感や立体感を表す新技術を生み出した、唐中期の画家は誰か。"
+  },
+  {
+    "answer": "唐三彩",
+    "category": "唐の文化",
+    "chapter": "2",
+    "number": "17",
+    "question": "副葬品に多く使用された、緑・黄・白などの彩色をほどこした唐代の陶器の名称は何か。"
+  },
+  {
+    "answer": "吐蕃",
+    "category": "唐と近隣諸国・唐の変容と五代",
+    "chapter": "2",
+    "number": "18",
+    "question": "７世紀にラサを都に成立したチベットの王国に対する、中国側の呼称は何か。"
+  },
+  {
+    "answer": "ソンツェン＝ガンポ",
+    "category": "唐と近隣諸国・唐の変容と五代",
+    "chapter": "2",
+    "number": "18",
+    "question": "吐蕃の建国者は誰か。"
+  },
+  {
+    "answer": "ラマ教",
+    "category": "唐と近隣諸国・唐の変容と五代",
+    "chapter": "2",
+    "number": "18",
+    "question": "チベット固有の大乗仏教であるチベット仏教の別名を答えなさい。"
+  },
+  {
+    "answer": "天平文化",
+    "category": "唐と近隣諸国・唐の変容と五代",
+    "chapter": "2",
+    "number": "18",
+    "question": "唐や大陸各地の文化の影響を受けた、国際色豊かな奈良時代日本の文化の名称は何か。"
+  },
+  {
+    "answer": "慶州",
+    "category": "唐と近隣諸国・唐の変容と五代",
+    "chapter": "2",
+    "number": "18",
+    "question": "新羅の首都はどこか。"
+  },
+  {
+    "answer": "仏国寺",
+    "category": "唐と近隣諸国・唐の変容と五代",
+    "chapter": "2",
+    "number": "18",
+    "question": "新羅の首都の東南に残る、代表的な仏教寺院の名称は何か。"
+  },
+  {
+    "answer": "骨品制",
+    "category": "唐と近隣諸国・唐の変容と五代",
+    "chapter": "2",
+    "number": "18",
+    "question": "新羅の王族と一般貴族だけを対象とした、特権的な氏族的身分制を何と呼ぶか。"
+  },
+  {
+    "answer": "渤海",
+    "category": "唐と近隣諸国・唐の変容と五代",
+    "chapter": "2",
+    "number": "18",
+    "question": "７世紀末、中国東北地方の東部を中心に靺鞨人と高句麗の遺民によって建てられた国は何か。"
+  },
+  {
+    "answer": "大祚栄",
+    "category": "唐と近隣諸国・唐の変容と五代",
+    "chapter": "2",
+    "number": "18",
+    "question": "渤海の建国者は誰か。"
+  },
+  {
+    "answer": "則天武后(武則天)",
+    "category": "唐と近隣諸国・唐の変容と五代",
+    "chapter": "2",
+    "number": "18",
+    "question": "７世紀末、病身の高宗に代わって政権を握った、中国史上で唯一の女帝は誰か。"
+  },
+  {
+    "answer": "周",
+    "category": "唐と近隣諸国・唐の変容と五代",
+    "chapter": "2",
+    "number": "18",
+    "question": "則天武后の即位で成立した国号は何か。"
+  },
+  {
+    "answer": "開元の治",
+    "category": "唐と近隣諸国・唐の変容と五代",
+    "chapter": "2",
+    "number": "18",
+    "question": "玄宗の治世の前半の盛時を、後世にほめ称えたことばは何か。"
+  },
+  {
+    "answer": "募兵制",
+    "category": "唐と近隣諸国・唐の変容と五代",
+    "chapter": "2",
+    "number": "18",
+    "question": "均田制の崩壊にともない、749年に全面的に廃止された府兵制に代わった兵制の名称は何か。"
+  },
+  {
+    "answer": "節度使",
+    "category": "唐と近隣諸国・唐の変容と五代",
+    "chapter": "2",
+    "number": "18",
+    "question": "玄宗のとき、周辺異民族にそなえて辺境10地区に設置された募兵軍団の指揮官を何と呼ぶか。"
+  },
+  {
+    "answer": "楊貴妃",
+    "category": "唐と近隣諸国・唐の変容と五代",
+    "chapter": "2",
+    "number": "18",
+    "question": "玄宗の晩年の愛妃は誰か。"
+  },
+  {
+    "answer": "安史の乱",
+    "category": "唐と近隣諸国・唐の変容と五代",
+    "chapter": "2",
+    "number": "18",
+    "question": "755〜763年、安禄山を中心に、唐を動揺させた反乱は何と呼ばれているか。"
+  },
+  {
+    "answer": "両税法",
+    "category": "唐と近隣諸国・唐の変容と五代",
+    "chapter": "2",
+    "number": "18",
+    "question": "徳宗時代の780年、租調庸制に代わって実施された、夏秋２回、現住地で銭納させる新税制は何か。"
+  },
+  {
+    "answer": "藩鎮",
+    "category": "唐と近隣諸国・唐の変容と五代",
+    "chapter": "2",
+    "number": "18",
+    "question": "安史の乱後、国内各地におかれた節度使が中央政府から自立するようになると、何と呼ばれるようになったか。"
+  },
+  {
+    "answer": "黄巣の乱",
+    "category": "唐と近隣諸国・唐の変容と五代",
+    "chapter": "2",
+    "number": "18",
+    "question": "唐滅亡の契機となった、875年からの農民反乱は何と呼ばれているか。"
+  },
+  {
+    "answer": "朱全忠",
+    "category": "唐と近隣諸国・唐の変容と五代",
+    "chapter": "2",
+    "number": "18",
+    "question": "黄巣の反乱軍に加わったのち、唐に降って反乱鎮圧に活躍し、907年に唐を滅ぼした部将は誰か。"
+  },
+  {
+    "answer": "汴州(開封)",
+    "category": "唐と近隣諸国・唐の変容と五代",
+    "chapter": "2",
+    "number": "18",
+    "question": "後唐を除いた五代諸国の首都はどこか。"
+  },
+  {
+    "answer": "突厥",
+    "category": "突厥とウイグル・ソグド人",
+    "chapter": "2",
+    "number": "19",
+    "question": "６世紀半ばに台頭し、柔然を滅ぼしてモンゴル高原に大帝国を建てたトルコ系騎馬遊牧民は何か。"
+  },
+  {
+    "answer": "絹馬貿易",
+    "category": "突厥とウイグル・ソグド人",
+    "chapter": "2",
+    "number": "19",
+    "question": "中国王朝と突厥やウイグルなどの間で、互いの必要物資を補うために行われた物々交換形式の交易を何というか。"
+  },
+  {
+    "answer": "マニ教",
+    "category": "突厥とウイグル・ソグド人",
+    "chapter": "2",
+    "number": "19",
+    "question": "ウイグルが国教とした宗教は何か。"
+  },
+  {
+    "answer": "キルギス",
+    "category": "突厥とウイグル・ソグド人",
+    "chapter": "2",
+    "number": "19",
+    "question": "840年、ウイグルの内紛に乗じてこれを滅ぼしたトルコ系遊牧民の名称は何か。"
+  },
+  {
+    "answer": "ソグド人",
+    "category": "突厥とウイグル・ソグド人",
+    "chapter": "2",
+    "number": "19",
+    "question": "オアシスの道を中心に、中央ユーラシア一帯におよぶ通称ネットワークを構築したイラン系住民は何か。"
+  },
+  {
+    "answer": "南海郡・桂林郡・象郡",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "秦の始皇帝が設置した３郡を全て答えなさい。"
+  },
+  {
+    "answer": "関中",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "函谷関の西側地域で、現在の陝西省渭水盆地の西安を中心とした地域名は何か。"
+  },
+  {
+    "answer": "江南",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "長江下流域の江蘇省南部から浙江省北部のデルタ地帯が広がる地域名は何か。"
+  },
+  {
+    "answer": "アンダーソン",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "仰韶文化の遺跡を発見したスウェーデン人学者は誰か。"
+  },
+  {
+    "answer": "半坡遺跡",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "仰韶文化を代表する陝西省西安市にある竪穴式住居の有名な遺跡は何か。"
+  },
+  {
+    "answer": "三足土器（特に鼎や鬲）",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "竜山文化の灰陶に多く見られる土器の形は何か。"
+  },
+  {
+    "answer": "河姆渡遺跡",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "長江文明の代表的遺跡の１つで、稲作技術の跡が発見された遺跡（前5000-前3000）は何か。"
+  },
+  {
+    "answer": "良渚文化",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "長江文明の代表的遺跡の１つで、祭祀用の玉器が出土した文化（前3300-前2200）は何か。"
+  },
+  {
+    "answer": "三星堆文化",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "長江文明の代表的遺跡の１つで、「縦目仮面」が有名な新石器時代後期の文化は何か。"
+  },
+  {
+    "answer": "湯王",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "夏の暴君桀王を討ち、殷を立てた人物は誰か。"
+  },
+  {
+    "answer": "紂王",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "「酒池肉林」の故事で有名な横暴をふるい、殷の滅亡を招いた最後の国王は誰か。"
+  },
+  {
+    "answer": "牧野の戦い",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "殷最後の国王が敗れた最後の戦いの名前は何か。"
+  },
+  {
+    "answer": "武王",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "西周を建てた人物は誰か。"
+  },
+  {
+    "answer": "井田法",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "『孟子』に記録されている、西周で実施されたと考えられる、田を９等分しちゅ王は共同耕作した土地制度は何か。"
+  },
+  {
+    "answer": "魯",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "孔子の『春秋』は、山東半島の何という国の年代記か。"
+  },
+  {
+    "answer": "斉の桓公、晋の文公",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "「春秋の五覇」である楚の荘王、呉王の夫差、越王の勾践（後者2人は、秦の穆公・宋の襄公とする説も）の他二名は誰か。"
+  },
+  {
+    "answer": "陰陽家",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "天体の運行と社会現象との関係を解く、鄒衍が大成した諸子百家の学派の名前は何か。"
+  },
+  {
+    "answer": "公孫竜",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "名と実の関係を明らかにする論理学を解く名家を大成した人物は誰か。"
+  },
+  {
+    "answer": "許行",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "農民の立場から農耕の重要性を説く農家を大成した人物は誰か。"
+  },
+  {
+    "answer": "小篆",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "秦の始皇帝が統一した文字は篆書のうち、何という種類か。"
+  },
+  {
+    "answer": "阿房宮",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "秦の始皇帝が建設させた大宮殿の名称は何か。"
+  },
+  {
+    "answer": "兵馬俑",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "秦の始皇帝が造営させた陝西省の陵墓の周辺に埋められていた人馬像のことを何というか。"
+  },
+  {
+    "answer": "蒙恬",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "秦の始皇帝が匈奴の侵入防止を図って派遣した将軍は誰か。"
+  },
+  {
+    "answer": "垓下の戦い",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "前206年、劉邦が項羽に勝利した決戦は何か。"
+  },
+  {
+    "answer": "『易経』、『書経』、『詩経』、『礼記』、『春秋』",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "五経を全て答えなさい。"
+  },
+  {
+    "answer": "衛青、霍去病",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "前129年、前漢の武帝が匈奴遠征に派遣した人物とその甥の名前を答えなさい。"
+  },
+  {
+    "answer": "李広利",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "前104年から前漢の武帝が汗血馬の獲得を図って大宛（フェルガナ）に派遣した人物は誰か。"
+  },
+  {
+    "answer": "楽浪郡、玄菟郡、真番郡、臨屯郡",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "前漢の武帝が設置した朝鮮四郡を全て答えなさい。"
+  },
+  {
+    "answer": "交趾郡",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "前漢の武帝が設置した南海九郡のうち、ハノイ付近に設置されたものは何か。"
+  },
+  {
+    "answer": "桑弘羊",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "前漢の武帝に仕え、主な経済政策を立案した財務官僚は誰か。"
+  },
+  {
+    "answer": "推恩の令",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "前漢の武帝が諸侯の弱体化を図り、諸侯の子弟全てに領地を分け与えることを定めた命令は何か。"
+  },
+  {
+    "answer": "限田策",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "前漢の哀帝が定め、豪族の大土地所有を制限し、小農民の保護を図った政策は何か。"
+  },
+  {
+    "answer": "周",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "新を建国した王莽が理想の政治が行われていた時代と考えた王朝は何か。"
+  },
+  {
+    "answer": "徴姉妹の反乱",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "後漢代の40-43年、交阯郡を中心におこり、ベトナム全域に拡大したが後漢の将軍馬援により鎮圧された反乱は何か。"
+  },
+  {
+    "answer": "明帝",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "後漢２代目の皇帝で、対外積極策と文化的充実が実現した時代の皇帝は誰か。"
+  },
+  {
+    "answer": "日南郡",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "166年、大秦王安敦の使者が訪れた郡はどこか。"
+  },
+  {
+    "answer": "張角",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "黄巾の乱をおこした太平道の首領は誰か。"
+  },
+  {
+    "answer": "『説文解字』",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "後漢の許慎による最古の漢字字典で、隷書の普及を示す書物は何か。"
+  },
+  {
+    "answer": "本紀、列伝",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "紀伝体を構成する皇帝年代記と臣下の伝記のことをそれぞれ何というか。"
+  },
+  {
+    "answer": "和帝",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "後漢の宦官の蔡倫が改良した製紙法による紙を献上した皇帝は誰か。"
+  },
+  {
+    "answer": "張衡",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "後漢代に天球儀や地震感知器を発明した人物は誰か。"
+  },
+  {
+    "answer": "五斗米道",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "後漢末に張陵が創始した天師道の別名は何か。"
+  },
+  {
+    "answer": "赤壁の戦い",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "208年、魏が呉と蜀の連合軍に敗れた戦いの名称は何か。"
+  },
+  {
+    "answer": "羌、氐",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "五胡のうち、チベット系とされるものをすべて答えなさい。"
+  },
+  {
+    "answer": "淝水の戦い",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "383年、東晋が五胡十六国の前秦を破り、南北朝の分立が確定した戦いは何か。"
+  },
+  {
+    "answer": "戸調式",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "西晋で実施された一戸ごとに生産物（絹・綿）を徴収する制度は何か。"
+  },
+  {
+    "answer": "土断法",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "東晋で実施された、流民を豪族の勢力下に入れず、公民として編成させることを定めた法律は何か。"
+  },
+  {
+    "answer": "三長制",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "北魏で実施された戸籍調査・財政安定を図る制度は何か。"
+  },
+  {
+    "answer": "慧遠",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "東晋の僧で、道安に師事し、白蓮社を結成した浄土宗の始祖は誰か。"
+  },
+  {
+    "answer": "太武帝",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "道教を体系化した寇謙之を保護し、仏教を弾圧した北魏の皇帝は誰か。"
+  },
+  {
+    "answer": "三武一宗の法難",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "北魏の太武帝、北周の武帝、唐の武宗、後周の世宗による仏教弾圧を総称して何と呼ぶか。"
+  },
+  {
+    "answer": "武帝（蕭衍）",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "南朝文化が全盛期となった梁の建国者で仏教を保護した皇帝は誰か。"
+  },
+  {
+    "answer": "范曄",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "紀伝体で後漢１代を扱った『後漢書』を著した歴史家は誰か。"
+  },
+  {
+    "answer": "謝霊運",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "南朝宋の詩人で山水詩の第一人者は誰か。"
+  },
+  {
+    "answer": "『水経注』",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "魏晋南北朝時代の実学書で、北魏の酈道元が残した地理書は何か。"
+  },
+  {
+    "answer": "『斉民要術』",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "魏晋南北朝時代の実学書で、北魏の賈思勰が残した現存する中国最古の農業書は何か。"
+  },
+  {
+    "answer": "『傷寒論』",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "魏晋南北朝時代の実学書で、後漢の張仲景が著し、王叔和が整理した医学書は何か。"
+  },
+  {
+    "answer": "奴婢",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "隋代の均田制で、耕牛とともに煬帝の時代に給田の対象から外されたのはどのような人々か。"
+  },
+  {
+    "answer": "永済渠",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "煬帝の高句麗遠征に使用された北方に伸びる運河は何か。"
+  },
+  {
+    "answer": "通済渠",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "黄河から淮河にわたる運河で、江南の物資を華北に運送するのに役立った運河は何か。"
+  },
+  {
+    "answer": "天可汗",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "突厥を撃破した李世民が西北アジアの諸騎馬遊牧民族の首長から送られた称号は何か。"
+  },
+  {
+    "answer": "高仙芝",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "タラス河畔の戦いでアッバース朝と戦た唐軍を率いた武将は誰か。"
+  },
+  {
+    "answer": "徳宗",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "780年、宰相の楊炎から両税法を採用した皇帝は誰か。"
+  },
+  {
+    "answer": "王仙芝",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "黄巣の乱を黄巣とともに指導した人物は誰か。"
+  },
+  {
+    "answer": "草市",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "唐代末期、都市の城郭外に開設された簡易の市場のことを何というか。"
+  },
+  {
+    "answer": "飛銭",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "唐代後半の送金手形制度で、銅銭の大量輸送の不便を解消した制度は何か。"
+  },
+  {
+    "answer": "会昌の廃仏",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "唐末期の845年、三武一宗の法難で、道教を信仰した武宗による寺院破壊など仏教弾圧のことを何というか。"
+  },
+  {
+    "answer": "阿羅本",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "635年頃、唐にネストリウス派キリスト教を布教したペルシア人は誰か。"
+  },
+  {
+    "answer": "顔真卿",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "安史の乱に義勇軍を率い唐軍に加わり鎮圧に貢献した唐の書家は誰か。"
+  },
+  {
+    "answer": "『長恨歌』",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "玄宗と楊貴妃の慈悲を描いた中唐の詩人の白居易の作品名は何か。"
+  },
+  {
+    "answer": "王維",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "呉道玄や李思訓と並ぶ唐代の山水画の代表的人物で、「南宋画の祖」とされる人物は誰か。"
+  },
+  {
+    "answer": "石敬瑭",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "後晋の建国者で、契丹に燕雲十六州を割譲した人物は誰か。"
+  },
+  {
+    "answer": "箕子朝鮮",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "朝鮮古代の伝説上の王朝名は何か。"
+  },
+  {
+    "answer": "衛満",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "燕から亡命し、平壌を中心に衛氏朝鮮を建国した人物は誰か。"
+  },
+  {
+    "answer": "丸都",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "3世紀に魏の占領を受けた鴨緑江北岸の高句麗中期の都はどこか。"
+  },
+  {
+    "answer": "靺鞨族",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "渤海を建国した高句麗遺民の民族名は何か。"
+  },
+  {
+    "answer": "白登山の戦い",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "匈奴の全盛期の君主である冒頓単于が、前200年に前漢の高祖に勝利した戦いは何か。"
+  },
+  {
+    "answer": "ノイン・ウラ",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "ウランバートルとキャフタの中間に位置する、匈奴の代表的な王族の遺跡名は何か。"
+  },
+  {
+    "answer": "柔然",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "モンゴル系遊牧民で、4世紀に鮮卑から独立し、烏孫を滅ぼしたが、555年に突厥により滅ぼされた民族は何か。"
+  },
+  {
+    "answer": "可汗",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "柔然が初めて用いた君主の称号は何か。"
+  },
+  {
+    "answer": "オルホン碑文",
+    "category": "難関私大対策",
+    "chapter": "2",
+    "number": "Z",
+    "question": "東突厥が残した遊牧民最古の文字を残す碑文の名称は何か。"
+  },
+  {
+    "answer": "マガダ国",
+    "category": "仏教の成立と南アジアの統一国家",
+    "chapter": "3",
+    "number": "20",
+    "question": "前６世紀にガンジス川中流域に興り、前５世紀にコーサラ国を併合し、この地域を支配した国の名称は何か。"
+  },
+  {
+    "answer": "ウパニシャッド哲学",
+    "category": "仏教の成立と南アジアの統一国家",
+    "chapter": "3",
+    "number": "20",
+    "question": "前6世紀頃のインドで、バラモン教の祭式主義を批判し、内面的思索を重視する思想として成立した哲学を何というか。"
+  },
+  {
+    "answer": "ガウタマ＝シッダールタ",
+    "category": "仏教の成立と南アジアの統一国家",
+    "chapter": "3",
+    "number": "20",
+    "question": "シャカ族の王子で、前６〜前５世紀頃に仏教を開いた人物は誰か（尊称：ブッダ）。"
+  },
+  {
+    "answer": "ジャイナ教",
+    "category": "仏教の成立と南アジアの統一国家",
+    "chapter": "3",
+    "number": "20",
+    "question": "ヴァルダマーナが開祖である、不殺生主義を標榜する宗教は何か。"
+  },
+  {
+    "answer": "マウリヤ朝",
+    "category": "仏教の成立と南アジアの統一国家",
+    "chapter": "3",
+    "number": "20",
+    "question": "前４世紀後半に成立した、インド史上最初の統一国家の王朝は何か。"
+  },
+  {
+    "answer": "チャンドラグプタ王",
+    "category": "仏教の成立と南アジアの統一国家",
+    "chapter": "3",
+    "number": "20",
+    "question": "マウリヤ朝の建国者は誰か。"
+  },
+  {
+    "answer": "パータリプトラ",
+    "category": "仏教の成立と南アジアの統一国家",
+    "chapter": "3",
+    "number": "20",
+    "question": "マウリヤ朝の首都はどこか。"
+  },
+  {
+    "answer": "アショーカ王",
+    "category": "仏教の成立と南アジアの統一国家",
+    "chapter": "3",
+    "number": "20",
+    "question": "マウリヤ朝の全盛期を現出した、第三代の王は誰か。"
+  },
+  {
+    "answer": "ダルマ（法）",
+    "category": "仏教の成立と南アジアの統一国家",
+    "chapter": "3",
+    "number": "20",
+    "question": "アショーカ王が政治倫理とし、磨崖碑や石柱碑に詔勅として刻ませたインド思想の概念を何と呼ぶか。"
+  },
+  {
+    "answer": "セイロン島",
+    "category": "仏教の成立と南アジアの統一国家",
+    "chapter": "3",
+    "number": "20",
+    "question": "アショーカ王が王子を派遣して、仏教を布教させたとされる地域はどこか。"
+  },
+  {
+    "answer": "クシャーナ朝",
+    "category": "仏教の成立と南アジアの統一国家",
+    "chapter": "3",
+    "number": "20",
+    "question": "１〜３世紀にかけて、大月氏の支配から自立したイラン系民族が西北インドに建てた王朝は何か。"
+  },
+  {
+    "answer": "プルシャプラ",
+    "category": "仏教の成立と南アジアの統一国家",
+    "chapter": "3",
+    "number": "20",
+    "question": "クシャーナ朝の首都はどこか。"
+  },
+  {
+    "answer": "カニシカ王",
+    "category": "仏教の成立と南アジアの統一国家",
+    "chapter": "3",
+    "number": "20",
+    "question": "2世紀にクシャーナ朝の全盛期を現出した王は誰か。"
+  },
+  {
+    "answer": "ガンダーラ美術",
+    "category": "仏教の成立と南アジアの統一国家",
+    "chapter": "3",
+    "number": "20",
+    "question": "カニシカ王の治世下に発達した、ギリシア彫刻の影響の強い仏像などがつくられた仏教美術は何と呼ばれるか。"
+  },
+  {
+    "answer": "菩薩信仰",
+    "category": "仏教の成立と南アジアの統一国家",
+    "chapter": "3",
+    "number": "20",
+    "question": "大乗仏教で重視された、自らの悟りだけでなく、他者を救うことを理想とする存在への信仰を何というか。"
+  },
+  {
+    "answer": "竜樹(ナーガールジュナ)",
+    "category": "仏教の成立と南アジアの統一国家",
+    "chapter": "3",
+    "number": "20",
+    "question": "大乗仏教の理論を体系化し、「空」の思想を説いたことで知られるインドの仏教哲学者は誰か。"
+  },
+  {
+    "answer": "サータヴァーハナ朝",
+    "category": "仏教の成立と南アジアの統一国家",
+    "chapter": "3",
+    "number": "20",
+    "question": "前１〜後３世紀にデカン高原を支配し、季節風を利用した交易で繁栄した、ドラヴィダ系アーンドラ族の王朝は何か。"
+  },
+  {
+    "answer": "『エリュトゥラー海案内記』",
+    "category": "仏教の成立と南アジアの統一国家",
+    "chapter": "3",
+    "number": "20",
+    "question": "１世紀にギリシア人が書いたとされる、紅海からインド洋にかけての地理・物産の書の名称は何か。"
+  },
+  {
+    "answer": "グプタ朝",
+    "category": "インド古典文化とヒンドゥー教の定着",
+    "chapter": "3",
+    "number": "21",
+    "question": "4世紀前半にチャンドラグプタ1世が北インドを統一して建て、サンスクリット文学や数学などが栄えた王朝は何か。"
+  },
+  {
+    "answer": "パータリプトラ",
+    "category": "インド古典文化とヒンドゥー教の定着",
+    "chapter": "3",
+    "number": "21",
+    "question": "グプタ朝の首都はどこか。"
+  },
+  {
+    "answer": "チャンドラグプタ２世",
+    "category": "インド古典文化とヒンドゥー教の定着",
+    "chapter": "3",
+    "number": "21",
+    "question": "グプタ朝の最盛期を現出した、第三代王は誰か。"
+  },
+  {
+    "answer": "法顕",
+    "category": "インド古典文化とヒンドゥー教の定着",
+    "chapter": "3",
+    "number": "21",
+    "question": "グプタ朝の全盛期、仏教教義の研究のため陸路でインドを訪れ、海路で帰国した東晋時代の中国僧は誰か。"
+  },
+  {
+    "answer": "サンスクリット語",
+    "category": "インド古典文化とヒンドゥー教の定着",
+    "chapter": "3",
+    "number": "21",
+    "question": "梵語とも呼ばれる、古代インドの宗教・文学・学術などで用いられ、グプタ朝時代に古典語として完成した言語は何か。"
+  },
+  {
+    "answer": "カーリダーサ",
+    "category": "インド古典文化とヒンドゥー教の定着",
+    "chapter": "3",
+    "number": "21",
+    "question": "グプタ朝の全盛期を現出したチャンドラグプタ２世の宮廷で活躍した、代表作『シャクンタラー』の詩人・戯曲家は誰か。"
+  },
+  {
+    "answer": "グプタ様式",
+    "category": "インド古典文化とヒンドゥー教の定着",
+    "chapter": "3",
+    "number": "21",
+    "question": "グプタ朝のもとで完成された、純インド的な仏教美術様式を何と呼ぶか。"
+  },
+  {
+    "answer": "アジャンター石窟寺院",
+    "category": "インド古典文化とヒンドゥー教の定着",
+    "chapter": "3",
+    "number": "21",
+    "question": "グプタ朝時代を中心に造営され、壁画などに大乗仏教の影響が見られる、デカン高原西部に位置する仏教遺跡は何か。"
+  },
+  {
+    "answer": "ナーランダー僧院",
+    "category": "インド古典文化とヒンドゥー教の定着",
+    "chapter": "3",
+    "number": "21",
+    "question": "グプタ朝のもとで５世紀に建立された、仏教教学研究の機関の名称は何か。"
+  },
+  {
+    "answer": "エフタル",
+    "category": "インド古典文化とヒンドゥー教の定着",
+    "chapter": "3",
+    "number": "21",
+    "question": "グプタ朝衰退の一因をつくった、中央アジアから進出してきた騎馬遊牧民の名称は何か。"
+  },
+  {
+    "answer": "マヌ法典",
+    "category": "インド古典文化とヒンドゥー教の定着",
+    "chapter": "3",
+    "number": "21",
+    "question": "聖典のないヒンドゥー教において、人びとの生活規範に関する法典とされたものは何か。"
+  },
+  {
+    "answer": "バクティ運動",
+    "category": "インド古典文化とヒンドゥー教の定着",
+    "chapter": "3",
+    "number": "21",
+    "question": "７世紀頃南インドで興った、ヒンドゥー教の最高神に対する絶対帰依をとなえた宗教運動を何と呼ぶか。"
+  },
+  {
+    "answer": "ヴァルダナ朝",
+    "category": "インド古典文化とヒンドゥー教の定着",
+    "chapter": "3",
+    "number": "21",
+    "question": "７世紀前半にハルシャ王によって成立した、北インド最後の統一王朝は何か。"
+  },
+  {
+    "answer": "カナウジ",
+    "category": "インド古典文化とヒンドゥー教の定着",
+    "chapter": "3",
+    "number": "21",
+    "question": "ヴァルダナ朝の首都はどこか。"
+  },
+  {
+    "answer": "『大唐西域記』",
+    "category": "インド古典文化とヒンドゥー教の定着",
+    "chapter": "3",
+    "number": "21",
+    "question": "ヴァルダナ朝時代のインドに赴いた玄奘による旅行記のタイトルは何か。"
+  },
+  {
+    "answer": "『南海寄帰内法伝』",
+    "category": "インド古典文化とヒンドゥー教の定着",
+    "chapter": "3",
+    "number": "21",
+    "question": "義浄がインドから唐に海路で帰国中、シュリーヴィジャヤ王国で記述した旅行記は何か。"
+  },
+  {
+    "answer": "ラージプート",
+    "category": "インド古典文化とヒンドゥー教の定着",
+    "chapter": "3",
+    "number": "21",
+    "question": "８〜13世紀初めにかけて、北インド各地に諸王国を建てた人びとは、「王の子」を意味する語で、何と自称したか。"
+  },
+  {
+    "answer": "ドンソン文化",
+    "category": "東南アジア世界の形成と展開",
+    "chapter": "3",
+    "number": "22",
+    "question": "青銅製の銅鼓が代表的な、前４世紀頃から東南アジア各地に広がった青銅器・鉄器文化を何と呼ぶか。"
+  },
+  {
+    "answer": "扶南",
+    "category": "東南アジア世界の形成と展開",
+    "chapter": "3",
+    "number": "22",
+    "question": "クメール人あるいはマレー人が、１世紀にメコン川下流域に建てた東南アジア最初の国家は、中国名で何と呼ばれたか。"
+  },
+  {
+    "answer": "チャンパー",
+    "category": "東南アジア世界の形成と展開",
+    "chapter": "3",
+    "number": "22",
+    "question": "２世紀末、ベトナム中部にチャム人が建てた王国は何か。"
+  },
+  {
+    "answer": "クメール人",
+    "category": "東南アジア世界の形成と展開",
+    "chapter": "3",
+    "number": "22",
+    "question": "カンボジア人とも呼ばれる、カンボジア王国を建てたオーストロアジア語系の人びとの別称は何か。"
+  },
+  {
+    "answer": "アンコール＝ワット",
+    "category": "東南アジア世界の形成と展開",
+    "chapter": "3",
+    "number": "22",
+    "question": "スールヤヴァルマン２世によってヒンドゥー教寺院として建立され、のちに仏教寺院に改修された建造物の名称は何か。"
+  },
+  {
+    "answer": "ドヴァーラヴァティー王国",
+    "category": "東南アジア世界の形成と展開",
+    "chapter": "3",
+    "number": "22",
+    "question": "７〜11世紀頃、チャオプラヤ川下流域にモン人が建てた国の名称は何か。"
+  },
+  {
+    "answer": "スコータイ朝",
+    "category": "東南アジア世界の形成と展開",
+    "chapter": "3",
+    "number": "22",
+    "question": "13～15世紀、タイ北部に建てられたタイ人初の統一王朝は何か。"
+  },
+  {
+    "answer": "アユタヤ朝",
+    "category": "東南アジア世界の形成と展開",
+    "chapter": "3",
+    "number": "22",
+    "question": "14世紀半ばに成立し、17世紀にタイ国史上最大の領土を支配した王朝は何か。"
+  },
+  {
+    "answer": "上座部仏教",
+    "category": "東南アジア世界の形成と展開",
+    "chapter": "3",
+    "number": "22",
+    "question": "チャオプラヤ川、エーヤワディー川流域で信仰されている仏教の宗派は何か。"
+  },
+  {
+    "answer": "ピュー人",
+    "category": "東南アジア世界の形成と展開",
+    "chapter": "3",
+    "number": "22",
+    "question": "４世紀頃国家を建国し、ビルマのエアーヤワディー川流域に栄えた民族の名称は何か。"
+  },
+  {
+    "answer": "パガン朝",
+    "category": "東南アジア世界の形成と展開",
+    "chapter": "3",
+    "number": "22",
+    "question": "11世紀半ばに成立したが、元軍の侵入を受けて13世紀末に滅亡した、ビルマ最初の統一王朝は何か。"
+  },
+  {
+    "answer": "李朝",
+    "category": "東南アジア世界の形成と展開",
+    "chapter": "3",
+    "number": "22",
+    "question": "中国王朝の支配下から自立し、11世紀初めベトナム北部に成立した最初の長期王朝は何か。"
+  },
+  {
+    "answer": "大越国",
+    "category": "東南アジア世界の形成と展開",
+    "chapter": "3",
+    "number": "22",
+    "question": "李朝以降のベトナムの国名（国号）は、中国史料で何と表記されたか。"
+  },
+  {
+    "answer": "陳朝",
+    "category": "東南アジア世界の形成と展開",
+    "chapter": "3",
+    "number": "22",
+    "question": "13世紀前半～1400年に存続し、元軍の侵攻を撃退した北部ベトナムの王朝は何か。"
+  },
+  {
+    "answer": "字喃",
+    "category": "東南アジア世界の形成と展開",
+    "chapter": "3",
+    "number": "22",
+    "question": "陳朝のもとで、漢字の部首を基に考案されて使われたベトナム文字は何か。"
+  },
+  {
+    "answer": "シュリーヴィジャヤ王国",
+    "category": "東南アジア世界の形成と展開",
+    "chapter": "3",
+    "number": "22",
+    "question": "７〜14世紀に、マレー人によってスマトラ島を中心に建てられて存在した王国の名称は何か。"
+  },
+  {
+    "answer": "パレンバン",
+    "category": "東南アジア世界の形成と展開",
+    "chapter": "3",
+    "number": "22",
+    "question": "シュリーヴィジャヤ王国の都で、スマトラ島東南部の港市はどこか。"
+  },
+  {
+    "answer": "シャイレンドラ朝",
+    "category": "東南アジア世界の形成と展開",
+    "chapter": "3",
+    "number": "22",
+    "question": "ボロブドゥールの建造など、８世紀後半に有力となった、ジャワ島中部に建てた王朝は何か。"
+  },
+  {
+    "answer": "ブラフマン",
+    "category": "難関私大対策",
+    "chapter": "3",
+    "number": "Z",
+    "question": "ウパニシャッド哲学で説かれた宇宙の根本原理で、「我」（アートマン）と一体とされた「梵」のことをカタカナで何というか。"
+  },
+  {
+    "answer": "八正道",
+    "category": "難関私大対策",
+    "chapter": "3",
+    "number": "Z",
+    "question": "仏教において、正しい思想や行いのことを何と呼んでいるか。"
+  },
+  {
+    "answer": "マヒンダ",
+    "category": "難関私大対策",
+    "chapter": "3",
+    "number": "Z",
+    "question": "カリンガ王国征服後に仏教に帰依したアショーカ王が、上座部仏教の布教のためセイロン島に派遣した王子の名は何か。"
+  },
+  {
+    "answer": "ストゥーパ",
+    "category": "難関私大対策",
+    "chapter": "3",
+    "number": "Z",
+    "question": "アショーカ王の仏教保護の一環で建てられた、特にサーンチーのものが有名なブッダの遺骨を納めた仏塔をカタカナで何というか。"
+  },
+  {
+    "answer": "パーリ語",
+    "category": "難関私大対策",
+    "chapter": "3",
+    "number": "Z",
+    "question": "アショーカ王による第３回仏典結集の際使用された言語は何か。"
+  },
+  {
+    "answer": "戒日王",
+    "category": "難関私大対策",
+    "chapter": "3",
+    "number": "Z",
+    "question": "ハルシャ王の中国名は何か。"
+  },
+  {
+    "answer": "王玄策",
+    "category": "難関私大対策",
+    "chapter": "3",
+    "number": "Z",
+    "question": "吐蕃への対抗のためヴァルダナ朝と協力関係を結ぼうとした唐が派遣した使者の名前は何か。"
+  },
+  {
+    "answer": "ラージプート時代",
+    "category": "難関私大対策",
+    "chapter": "3",
+    "number": "Z",
+    "question": "ヴァルダナ朝滅亡からデリー＝スルタン朝成立までの8〜13世紀の間に続いた混乱時代を何というか。"
+  },
+  {
+    "answer": "オケオ遺跡",
+    "category": "難関私大対策",
+    "chapter": "3",
+    "number": "Z",
+    "question": "1〜7世紀、扶南のものとされる現在のメコン川下流にあった港市国家の遺跡名が何か。"
+  },
+  {
+    "answer": "林邑・環王・占城",
+    "category": "難関私大対策",
+    "chapter": "3",
+    "number": "Z",
+    "question": "チャンパーの中国名を時代ごとに（2-7世紀、8世紀半ば、9世紀後半-17世紀）３つ答えなさい。"
+  },
+  {
+    "answer": "スーリヤヴァルマン2世",
+    "category": "難関私大対策",
+    "chapter": "3",
+    "number": "Z",
+    "question": "アンコール朝全盛期の12世紀にヒンドゥー寺院としてアンコール＝ワットを建設した君主は誰か。"
+  },
+  {
+    "answer": "ジャヤヴァルマン７世",
+    "category": "難関私大対策",
+    "chapter": "3",
+    "number": "Z",
+    "question": "13世紀のアンコール朝の王で、大乗仏教に帰依し、アンコール＝ワットを仏教寺院に変更した君主は誰か。"
+  },
+  {
+    "answer": "ドヴァーラヴァティー王国",
+    "category": "難関私大対策",
+    "chapter": "3",
+    "number": "Z",
+    "question": "6-11世紀、チャオプラヤ川下流域にモン人が建国し、唐に朝貢し、上座部仏教を信仰した国家はどこか。"
+  },
+  {
+    "answer": "室利仏逝",
+    "category": "難関私大対策",
+    "chapter": "3",
+    "number": "Z",
+    "question": "シュリーヴィジャヤ王国の中国名（7-9世紀）は何か。"
+  },
+  {
+    "answer": "プランバナン",
+    "category": "難関私大対策",
+    "chapter": "3",
+    "number": "Z",
+    "question": "ロロジョングランと呼ばれる寺院遺跡で有名な、ジャワ島中部に残るヒンドゥー教寺院群は何か。"
+  },
+  {
+    "answer": "クディリ朝",
+    "category": "難関私大対策",
+    "chapter": "3",
+    "number": "Z",
+    "question": "ジャワ島東部に成立し、ジャワ語翻訳版『マハーバーラタ』の影絵芝居が発展した王朝(928-1222)は何か。"
+  },
+  {
+    "answer": "シンガサリ王国",
+    "category": "難関私大対策",
+    "chapter": "3",
+    "number": "Z",
+    "question": "13世紀に元のクビライの使者を追い返し、ジャワ島遠征を招き滅亡した王朝(1222-1292)は何か。"
+  },
+  {
+    "answer": "マジャパヒト王国",
+    "category": "難関私大対策",
+    "chapter": "3",
+    "number": "Z",
+    "question": "ジャワ島最後のヒンドゥー教国(1293-1520)は何か。"
+  },
+  {
+    "answer": "ガジャ＝マダ",
+    "category": "難関私大対策",
+    "chapter": "3",
+    "number": "Z",
+    "question": "マジャパヒト王国で、14世紀にハヤム＝ウルク王に仕え、全盛期を現出した宰相は誰か。"
+  },
+  {
+    "answer": "アルブケルケ",
+    "category": "難関私大対策",
+    "chapter": "3",
+    "number": "Z",
+    "question": "マラッカ王国を1511年に滅ぼしたポルトガルの2代目インド総督は誰か。"
+  },
+  {
+    "answer": "スサ",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "アケメネス朝ペルシアの行政上の都はどこか。"
+  },
+  {
+    "answer": "キュロス２世",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "メディアから自立を達成した、アケメネス朝ペルシアの建国者は誰か。"
+  },
+  {
+    "answer": "カンビュセス２世",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "全オリエントを統一した、アケメネス朝ペルシアの王は誰か。"
+  },
+  {
+    "answer": "ダレイオス１世",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "東はインダス川から西はエーゲ海東部にいたる大帝国を建設した、アケメネス朝全盛期の王は誰か。"
+  },
+  {
+    "answer": "サトラップ",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "ダレイオス１世が任命した、アケメネス朝の州の軍民両権を握る知事は何と呼ばれたか。"
+  },
+  {
+    "answer": "「王の目・王の耳」",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "州を巡察してサトラップを監察する、王直属の行政官を何と呼ぶか。"
+  },
+  {
+    "answer": "ペルセポリス",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "ダレイオス１世が建設を開始した、祭祀用の王都の名称は何か。"
+  },
+  {
+    "answer": "「王の道」",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "ダレイオス１世が建設した、駅伝制が整備されたスサからサルデスにわたる国道を何と呼ぶか。"
+  },
+  {
+    "answer": "アレクサンドロス大王",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "アケメネス朝はギリシア世界の誰との戦いに敗れたことによって滅亡したか。"
+  },
+  {
+    "answer": "ペルシア戦争",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "帝国の混乱・衰退の原因ともなった、ギリシア諸ポリスとの戦争を何というか。"
+  },
+  {
+    "answer": "アフラ＝マズダ",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "ゾロアスター教の最高神で、光明・善の神とされるものの名称は何か。"
+  },
+  {
+    "answer": "アンラ＝マンユ(アーリマン)",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "ゾロアスター教の最高神と対立する、暗黒・悪の神の名称は何か。"
+  },
+  {
+    "answer": "ミトラ教",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "ローマ帝政期に軍人を中心に流行した、光明神を崇拝するインド・イラン起源の密儀宗教の名称は何か。"
+  },
+  {
+    "answer": "ローリンソン",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "ベヒストゥーン碑文をもとに、楔形文字の解読に成功したイギリス人学者は誰か。"
+  },
+  {
+    "answer": "セレウコス朝",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "アレクサンドロス大王の死後、イラン高原を含む西アジアの大半を支配した後継の王朝は何か。"
+  },
+  {
+    "answer": "バクトリア",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "前３世紀半ば、セレウコス朝の支配から自立して、アム川上流でギリシア系住民が建てた国は何か。"
+  },
+  {
+    "answer": "安息",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "パルティアの中国史書での呼び方は何か。"
+  },
+  {
+    "answer": "ヘカトンピュロス",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "パルティア建国時の首都はどこか。"
+  },
+  {
+    "answer": "クテシフォン",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "パルティア全盛期の王ミトラダテス１世により、パルティアの都はどこに遷都されたか。"
+  },
+  {
+    "answer": "アルダシール１世",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "ササン朝ペルシア初代王は誰か。"
+  },
+  {
+    "answer": "ウァレリアヌス",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "3世紀にササン朝のシャープール1世との戦いに敗れ、ローマ皇帝として初めて敵国の捕虜となった人物は誰か。"
+  },
+  {
+    "answer": "シャープール１世",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "西方でローマ皇帝を捕虜とした、パルティア第２代国王は誰か。"
+  },
+  {
+    "answer": "ニハーヴァンドの戦い",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "642年イスラーム軍に大敗し、ササン朝の事実上の滅亡につながった戦いは何か。"
+  },
+  {
+    "answer": "『アヴェスター』",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "ホスロー１世時代に集大成された、ゾロアスター教の教典の名称は何か。"
+  },
+  {
+    "answer": "マニ教",
+    "category": "イラン諸国家の興亡とイラン文明",
+    "chapter": "4",
+    "number": "23",
+    "question": "シャープール１世に重用された人物が創始した、ゾロアスター教にキリスト教・仏教を融合した宗教は何か。"
+  },
+  {
+    "answer": "シノイキスモス",
+    "category": "ポリスの形成とギリシア社会の特色",
+    "chapter": "4",
+    "number": "24",
+    "question": "前８世紀頃のギリシアで、有力者（貴族）が中心となって軍事的・経済的要地へ移住したことをカタカナで何と称するか。"
+  },
+  {
+    "answer": "アクロポリス",
+    "category": "ポリスの形成とギリシア社会の特色",
+    "chapter": "4",
+    "number": "24",
+    "question": "「城山」の意味で、ポリスの中心部にあり、市の守護神がまつられていた丘をカタカナで何と呼ぶか。"
+  },
+  {
+    "answer": "ビザンティオン",
+    "category": "ポリスの形成とギリシア社会の特色",
+    "chapter": "4",
+    "number": "24",
+    "question": "ボスフォラス海峡に面してギリシア人が建設した、現在のイスタンブルの前身となった植民市はどこか。"
+  },
+  {
+    "answer": "マッサリア",
+    "category": "ポリスの形成とギリシア社会の特色",
+    "chapter": "4",
+    "number": "24",
+    "question": "南フランスのローヌ河口近くにギリシア人が建設した、現在のマルセイユの前身となった植民市の名前は何か。"
+  },
+  {
+    "answer": "ネアポリス",
+    "category": "ポリスの形成とギリシア社会の特色",
+    "chapter": "4",
+    "number": "24",
+    "question": "南イタリアにギリシア人が建設した、現在のナポリの前身となった植民市の名前は何か。"
+  },
+  {
+    "answer": "ヘレネス",
+    "category": "ポリスの形成とギリシア社会の特色",
+    "chapter": "4",
+    "number": "24",
+    "question": "古代ギリシア人は何と自称したか。"
+  },
+  {
+    "answer": "バルバロイ",
+    "category": "ポリスの形成とギリシア社会の特色",
+    "chapter": "4",
+    "number": "24",
+    "question": "古代ギリシア人は異民族を蔑視して何と呼んだか。"
+  },
+  {
+    "answer": "デルフォイ",
+    "category": "ポリスの形成とギリシア社会の特色",
+    "chapter": "4",
+    "number": "24",
+    "question": "中部ギリシアに位置し、そのアポロン神殿の神託が権威をもっていた聖地はどこか。"
+  },
+  {
+    "answer": "クレーロス",
+    "category": "ポリスの形成とギリシア社会の特色",
+    "chapter": "4",
+    "number": "24",
+    "question": "元来は「くじ」という意味で、ギリシア人が定住後、くじで分配された私有地（持ち分地）を何と呼ぶか。"
+  },
+  {
+    "answer": "アゴラ",
+    "category": "ポリスの形成とギリシア社会の特色",
+    "chapter": "4",
+    "number": "24",
+    "question": "アクロポリスのふもとにあり、ポリスの政治・経済活動の中心であった公共広場を何と呼ぶか。"
+  },
+  {
+    "answer": "武器を自弁して戦うこと/アテネ市民の成年男子であること",
+    "category": "ポリスの形成とギリシア社会の特色",
+    "chapter": "4",
+    "number": "24",
+    "question": "貴族政中心の古代アテネにて、政治に参加できる市民とされるために必要とされた条件を一つ答えなさい。"
+  },
+  {
+    "answer": "ペリオイコイ",
+    "category": "ポリスの形成とギリシア社会の特色",
+    "chapter": "4",
+    "number": "24",
+    "question": "「周辺民」の意味で、農業・商工業に従事した、参政権のないスパルタの半自由民は何と呼ばれたか。"
+  },
+  {
+    "answer": "ヘイロータイ",
+    "category": "ポリスの形成とギリシア社会の特色",
+    "chapter": "4",
+    "number": "24",
+    "question": "スパルタにおいて完全市民に共有された、隷属農民は何と呼ばれたか。"
+  },
+  {
+    "answer": "リュクルゴス",
+    "category": "ポリスの形成とギリシア社会の特色",
+    "chapter": "4",
+    "number": "24",
+    "question": "スパルタの独特な軍国主義体制を確立したとされる、伝説的立法者は誰か。"
+  },
+  {
+    "answer": "アルコン",
+    "category": "アテネの民主政とペルシア戦争",
+    "chapter": "4",
+    "number": "25",
+    "question": "アテネ貴族政で行政をになった９人の執政官のことをカタカナで何と呼ぶか。"
+  },
+  {
+    "answer": "ファランクス",
+    "category": "アテネの民主政とペルシア戦争",
+    "chapter": "4",
+    "number": "25",
+    "question": "古代ギリシアで、青銅の鎧や盾を自弁して戦った重装歩兵の、密集隊形のことを何というか。"
+  },
+  {
+    "answer": "ドラコン",
+    "category": "アテネの民主政とペルシア戦争",
+    "chapter": "4",
+    "number": "25",
+    "question": "前７世紀後半のアテネで、従来の慣習法を成文化した立法者は誰か。"
+  },
+  {
+    "answer": "財産政治",
+    "category": "アテネの民主政とペルシア戦争",
+    "chapter": "4",
+    "number": "25",
+    "question": "ソロンが行った、財産によって市民を４等級に分け、参政権と兵役義務を定めた政治は、何と呼ばれるか。"
+  },
+  {
+    "answer": "債務奴隷",
+    "category": "アテネの民主政とペルシア戦争",
+    "chapter": "4",
+    "number": "25",
+    "question": "市民の人口減少を防ぐために、ソロンが禁止したこととは何か。"
+  },
+  {
+    "answer": "僭主",
+    "category": "アテネの民主政とペルシア戦争",
+    "chapter": "4",
+    "number": "25",
+    "question": "貴族政から民主政への過渡期に出現した、非合法な手段で政権を握った独裁者を何と呼ぶか。"
+  },
+  {
+    "answer": "ペイシストラトス",
+    "category": "アテネの民主政とペルシア戦争",
+    "chapter": "4",
+    "number": "25",
+    "question": "前561年より３度にわたって僭主となり、中小農民の保護・育成や文化事業にも力を注いだ人物は誰か。"
+  },
+  {
+    "answer": "クレイステネス",
+    "category": "アテネの民主政とペルシア戦争",
+    "chapter": "4",
+    "number": "25",
+    "question": "前６世紀末、血縁的部族制の廃止などの改革を行い、アテネ民主政の基礎を確立した政治家は誰か。"
+  },
+  {
+    "answer": "オストラキスモス",
+    "category": "アテネの民主政とペルシア戦争",
+    "chapter": "4",
+    "number": "25",
+    "question": "クレイステネスが創設した、僭主の出現を防止するための、市民による投票制度をカタカナで何というか。"
+  },
+  {
+    "answer": "イオニア植民市",
+    "category": "アテネの民主政とペルシア戦争",
+    "chapter": "4",
+    "number": "25",
+    "question": "ペルシア戦争のきっかけとなった反乱は、小アジアのどこの植民市でおこったか。"
+  },
+  {
+    "answer": "マラトンの戦い",
+    "category": "アテネの民主政とペルシア戦争",
+    "chapter": "4",
+    "number": "25",
+    "question": "前490年、アテネ北東岸に上陸したペルシア軍を、アテネ重装歩兵軍が破った戦いを何と呼ぶか。"
+  },
+  {
+    "answer": "テルモピレーの戦い",
+    "category": "アテネの民主政とペルシア戦争",
+    "chapter": "4",
+    "number": "25",
+    "question": "前480年、第３回のペルシア戦争で、ギリシア半島中部でスパルタ軍がペルシア軍に大敗した戦いを何と呼ぶか。"
+  },
+  {
+    "answer": "三段櫂船",
+    "category": "アテネの民主政とペルシア戦争",
+    "chapter": "4",
+    "number": "25",
+    "question": "古代ギリシアで用いられ、ペルシア戦争のサラミス海戦などで活躍した軍船を何というか。"
+  },
+  {
+    "answer": "プラタイアの戦い",
+    "category": "アテネの民主政とペルシア戦争",
+    "chapter": "4",
+    "number": "25",
+    "question": "前479年、アテネ・スパルタ連合軍がペルシア陸軍を破り、ギリシア側の勝利を確定した戦いを何と呼ぶか。"
+  },
+  {
+    "answer": "デロス同盟",
+    "category": "アテネの民主政とペルシア戦争",
+    "chapter": "4",
+    "number": "25",
+    "question": "ペルシアの再侵攻にそなえ、前478年頃アテネを盟主に結成された軍事同盟は何か。"
+  },
+  {
+    "answer": "無産市民",
+    "category": "アテネの民主政とペルシア戦争",
+    "chapter": "4",
+    "number": "25",
+    "question": "サラミスの海戦の際、三段櫂船の漕ぎ手として貢献し、戦後に発言権を増大させたのはどのような人びとか。"
+  },
+  {
+    "answer": "ペリクレス",
+    "category": "ポリス社会の変容とヘレニズム時代",
+    "chapter": "4",
+    "number": "26",
+    "question": "前５世紀後半、アテネの全盛期を現出し、古代民主政を完成させた政治家は誰か。"
+  },
+  {
+    "answer": "ラウレイオン銀山",
+    "category": "ポリス社会の変容とヘレニズム時代",
+    "chapter": "4",
+    "number": "26",
+    "question": "古代アテネが強力な艦隊を建設する資金源とした、アッティカ地方南部にある銀山はどこか。"
+  },
+  {
+    "answer": "ペロポネソス同盟",
+    "category": "ポリス社会の変容とヘレニズム時代",
+    "chapter": "4",
+    "number": "26",
+    "question": "アテネの強勢化に対抗して、スパルタを盟主に強化された軍事同盟を何と呼ぶか。"
+  },
+  {
+    "answer": "衆愚政治",
+    "category": "ポリス社会の変容とヘレニズム時代",
+    "chapter": "4",
+    "number": "26",
+    "question": "ペロポネソス戦争のあいだにペリクレスが死亡し、混乱・腐敗したアテネの民主政治を何と呼ぶか。"
+  },
+  {
+    "answer": "テーベ",
+    "category": "ポリス社会の変容とヘレニズム時代",
+    "chapter": "4",
+    "number": "26",
+    "question": "ポリス間抗争のなか、エパメイノンダスの指導でスパルタを破り、前４世紀前半に覇権を握ったポリスは何か。"
+  },
+  {
+    "answer": "傭兵",
+    "category": "ポリス社会の変容とヘレニズム時代",
+    "chapter": "4",
+    "number": "26",
+    "question": "長期にわたるポリス間抗争で市民の没落が進むと、市民皆兵の原則が崩れ、何が軍の中心となったか。"
+  },
+  {
+    "answer": "パルテノン神殿",
+    "category": "ポリス社会の変容とヘレニズム時代",
+    "chapter": "4",
+    "number": "26",
+    "question": "ペリクレスによって再建された、アテネのアクロポリスのアテナ女神神殿は一般に何と呼ばれるか。"
+  },
+  {
+    "answer": "フィリッポス２世",
+    "category": "ポリス社会の変容とヘレニズム時代",
+    "chapter": "4",
+    "number": "26",
+    "question": "前４世紀にマケドニアの勢力を拡大した王で、アレクサンドロス大王の父は誰か。"
+  },
+  {
+    "answer": "カイロネイアの戦い",
+    "category": "ポリス社会の変容とヘレニズム時代",
+    "chapter": "4",
+    "number": "26",
+    "question": "フィリッポス２世がアテネ・テーベ連合軍を撃破し、ギリシア諸ポリスをほぼ制圧した戦いを何と呼ぶか。"
+  },
+  {
+    "answer": "コリントス同盟",
+    "category": "ポリス社会の変容とヘレニズム時代",
+    "chapter": "4",
+    "number": "26",
+    "question": "マケドニアが盟主となり、スパルタを除く全ポリスと結んだ同盟は何か。"
+  },
+  {
+    "answer": "前334年",
+    "category": "ポリス社会の変容とヘレニズム時代",
+    "chapter": "4",
+    "number": "26",
+    "question": "アレクサンドロス大王が東方遠征を始めたのは西暦何年か。"
+  },
+  {
+    "answer": "アルベラ(ガウガメラ)の戦い",
+    "category": "ポリス社会の変容とヘレニズム時代",
+    "chapter": "4",
+    "number": "26",
+    "question": "前331年、アレクサンドロス大王の軍がアケメネス朝軍との決戦に勝利した戦いの名称は何か。"
+  },
+  {
+    "answer": "コスモポリタニズム(世界市民主義)",
+    "category": "ポリス社会の変容とヘレニズム時代",
+    "chapter": "4",
+    "number": "26",
+    "question": "ポリス社会の枠を越えた、より普遍的かつ個人主義的な傾向をもつヘレニズム時代の考え方を何と呼ぶか。"
+  },
+  {
+    "answer": "ディアドコイ",
+    "category": "ポリス社会の変容とヘレニズム時代",
+    "chapter": "4",
+    "number": "26",
+    "question": "アレクサンドロスの死後、「後継者」をめざして分立・抗争した部下の有力者たちは何と呼ばれたか。"
+  },
+  {
+    "answer": "アンティゴノス朝マケドニア",
+    "category": "ポリス社会の変容とヘレニズム時代",
+    "chapter": "4",
+    "number": "26",
+    "question": "大帝国の分裂後、アレクサンドロスの部下の孫が建てたマケドニア王国の王朝名は何か。"
+  },
+  {
+    "answer": "セレウコス朝シリア",
+    "category": "ポリス社会の変容とヘレニズム時代",
+    "chapter": "4",
+    "number": "26",
+    "question": "大帝国の分裂後、アレクサンドロスの部下の一人が建てたシリア王国の王朝名は何か。"
+  },
+  {
+    "answer": "プトレマイオス朝エジプト",
+    "category": "ポリス社会の変容とヘレニズム時代",
+    "chapter": "4",
+    "number": "26",
+    "question": "大帝国の分裂後、アレクサンドロスの部下の一人が建てたエジプト王国の王朝名は何か。"
+  },
+  {
+    "answer": "ムセイオン",
+    "category": "ポリス社会の変容とヘレニズム時代",
+    "chapter": "4",
+    "number": "26",
+    "question": "エジプトのアレクサンドリアに開設され、自然科学研究の中心となった王立研究所は何と呼ばれるか。"
+  },
+  {
+    "answer": "ホメロス",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "『イリアス』『オデユッセイア』の作者または編者とされる詩人は誰か。"
+  },
+  {
+    "answer": "ヘシオドス",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "『神統記』『労働と日々』などを著し、神々の系譜や農民の勤労の尊さをうたった、古代ギリシアの叙事詩人は誰か。"
+  },
+  {
+    "answer": "アイスキュロス",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "代表作『アガメムノン』を著した、アテネ三大悲劇詩人の一人は誰か。"
+  },
+  {
+    "answer": "ソフォクレス",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "代表作『オイディプス王』を著した、アテネ三大悲劇詩人の一人は誰か。"
+  },
+  {
+    "answer": "エウリピデス",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "代表作『メデイア』を著した、アテネ三大悲劇詩人の一人は誰か。"
+  },
+  {
+    "answer": "ヘロドトス",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "小アジア出身で、ペルシア戦争を物語的に叙述し、『歴史』を著して「歴史の父」と呼ばれる人物は誰か。"
+  },
+  {
+    "answer": "トゥキディデス",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "ペロポネソス戦争を史料批判に基づいた『歴史』に著した、アテネ出身の歴史家は誰か。"
+  },
+  {
+    "answer": "タレス",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "「哲学の父」と称される、万物の根源を「水」と考え、また日食を予言した哲学者は誰か。"
+  },
+  {
+    "answer": "ヘラクレイトス",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "「万物は流転する」のことばを残し、「火」を変化の象徴とした哲学者は誰か。"
+  },
+  {
+    "answer": "デモクリトス",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "万物の根源を等質不変の「原子（アトム）」と主張した哲学者は誰か。"
+  },
+  {
+    "answer": "ピタゴラス",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "「万物の根源は数である」と考え、数学と哲学を結びつけた古代ギリシアの哲学者は誰か。"
+  },
+  {
+    "answer": "プロタゴラス",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "「万物の尺度は人間」といったことばを残したソフィストの代表的な人物は誰か。"
+  },
+  {
+    "answer": "「万物の尺度は人間」",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "絶対的な真理ではなく相対的な真理を主張したプロタゴラスの言葉として有名な命題は何か。"
+  },
+  {
+    "answer": "ソクラテス",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "問答法を通じて「無知の知」を自覚させる方法を実践し、普遍的真理の存在を説いた哲学者は誰か。"
+  },
+  {
+    "answer": "プラトン",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "ソクラテスの弟子で、真に存在するのは善や美というイデアであると説いた哲学者は誰か。"
+  },
+  {
+    "answer": "アリストテレス",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "プラトンの弟子で、諸学の集大成者として「万学の祖」と呼ばれ、後世に大きな影響を及ぼした哲学者は誰か。"
+  },
+  {
+    "answer": "アカデメイア",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "古代ギリシアの哲学者プラトンがアテネ郊外に創設した学園で、のちの哲学教育の礎となった機関は何か。"
+  },
+  {
+    "answer": "リュケイオン",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "アリストテレスがアテネに設立し、逍遥学派の拠点となった教育機関は何か。"
+  },
+  {
+    "answer": "フェイディアス",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "古代アテネで活躍し、パルテノン神殿のアテナ像やゼウス像の制作で知られる彫刻家は誰か。"
+  },
+  {
+    "answer": "ヒッポクラテス",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "「医学の父」と称され、病気を神の呪いではなく自然現象と捉えた古代ギリシアの医者は誰か。"
+  },
+  {
+    "answer": "ムセイオン",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "エジプトのアレクサンドリアに開設され、自然科学研究の中心となった王立研究所は何と呼ばれるか。"
+  },
+  {
+    "answer": "エウクレイデス",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "ムセイオンで学び、平面幾何学を大成したギリシアの数学者は誰か。"
+  },
+  {
+    "answer": "アリスタルコス",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "地球の公転と自転、太陽中心説を主張した、ギリシア出身の天文学者は誰か。"
+  },
+  {
+    "answer": "アルキメデス",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "ムセイオンで学び、浮力の原理を発見した、シチリア島のシラクサ出身の数学・物理学者は誰か。"
+  },
+  {
+    "answer": "エラトステネス",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "ムセイオンの館長を務め、地球の周囲の長さを計測した、北アフリカ出身のギリシア人天文学者は誰か。"
+  },
+  {
+    "answer": "ストア派",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "禁欲による幸福の追求と、理性によって生きることの大切さを説いた、ヘレニズム時代の哲学の一派を何と呼ぶか。"
+  },
+  {
+    "answer": "エピクロス派",
+    "category": "ギリシアの生活と文化",
+    "chapter": "4",
+    "number": "27",
+    "question": "精神的な快楽を得ることを重視した哲学者の名前に由来する、ヘレニズム時代の哲学の一派を何と呼ぶか。"
+  },
+  {
+    "answer": "エトルリア人",
+    "category": "ローマ共和政",
+    "chapter": "4",
+    "number": "28",
+    "question": "北イタリアのトスカナ地方に定住し、前７世紀末にローマを支配した、系統不明の半島の先住民は何と呼ばれるか。"
+  },
+  {
+    "answer": "ラテン人",
+    "category": "ローマ共和政",
+    "chapter": "4",
+    "number": "28",
+    "question": "前８世紀に都市国家ローマを建設したとされる人びとを何と呼ぶか。"
+  },
+  {
+    "answer": "ティベル川",
+    "category": "ローマ共和政",
+    "chapter": "4",
+    "number": "28",
+    "question": "都市国家ローマの象徴で、市内を流れる川は何か。"
+  },
+  {
+    "answer": "パトリキ",
+    "category": "ローマ共和政",
+    "chapter": "4",
+    "number": "28",
+    "question": "共和政の要職を独占した、完全な市民権をもつ大土地所有者であるローマの貴族を何というか。"
+  },
+  {
+    "answer": "元老院",
+    "category": "ローマ共和政",
+    "chapter": "4",
+    "number": "28",
+    "question": "任期終身の300人の貴族で構成された、ローマ共和政最高の諮問機関を何と呼ぶか。"
+  },
+  {
+    "answer": "コンスル",
+    "category": "ローマ共和政",
+    "chapter": "4",
+    "number": "28",
+    "question": "２名で構成され、任期１年で無給の、行政・軍事を担当した最高公職者は何と呼ばれたか。"
+  },
+  {
+    "answer": "ディクタトル",
+    "category": "ローマ共和政",
+    "chapter": "4",
+    "number": "28",
+    "question": "非常時にローマ共和政で任命され、半年間の強大な権限を与えられた官職は何か。"
+  },
+  {
+    "answer": "プレブス",
+    "category": "ローマ共和政",
+    "chapter": "4",
+    "number": "28",
+    "question": "中小土地所有農民と商工業者からなり、貴族に対して身分闘争を展開したローマの平民を何というか。"
+  },
+  {
+    "answer": "護民官",
+    "category": "ローマ共和政",
+    "chapter": "4",
+    "number": "28",
+    "question": "伝承では前494年の設置とされる、平民会で選出された、平民保護のための官職を何と呼ぶか。"
+  },
+  {
+    "answer": "平民会",
+    "category": "ローマ共和政",
+    "chapter": "4",
+    "number": "28",
+    "question": "民会の一つで、前５世紀前半に開設され、平民のみで構成された議決機関を何と呼ぶか。"
+  },
+  {
+    "answer": "十二表法",
+    "category": "ローマ共和政",
+    "chapter": "4",
+    "number": "28",
+    "question": "貴族に対する平民の闘争のなか、前５世紀半ばに旧来の慣習法を明文化し、公開したローマ最古の成文法は何か。"
+  },
+  {
+    "answer": "リキニウス・セクスティウス法",
+    "category": "ローマ共和政",
+    "chapter": "4",
+    "number": "28",
+    "question": "前367年、コンスルの１名を平民から選出することを制定した法は何か。"
+  },
+  {
+    "answer": "ホルテンシウス法",
+    "category": "ローマ共和政",
+    "chapter": "4",
+    "number": "28",
+    "question": "平民会の決議は元老院の承認がなくとも国法とされることを定めた法は何か。"
+  },
+  {
+    "answer": "前287年",
+    "category": "ローマ共和政",
+    "chapter": "4",
+    "number": "28",
+    "question": "ローマにおいて、民主共和政が成立したのは西暦何年か。"
+  },
+  {
+    "answer": "タレントゥム",
+    "category": "ローマ共和政",
+    "chapter": "4",
+    "number": "28",
+    "question": "ローマは、イタリア半島南部のどこを征服したことにより半島の統一を達成したか。"
+  },
+  {
+    "answer": "アッピア街道",
+    "category": "ローマ共和政",
+    "chapter": "4",
+    "number": "28",
+    "question": "ローマでは道路網が整備されたが、ローマから南東部に伸びる、最古の軍用道路の名称は何か。"
+  },
+  {
+    "answer": "分割統治",
+    "category": "ローマ共和政",
+    "chapter": "4",
+    "number": "28",
+    "question": "征服したイタリア半島の諸都市を支配するために、ローマが用いた統治方法を何というか。"
+  },
+  {
+    "answer": "シチリア島",
+    "category": "ポエニ戦争と内乱の１世紀",
+    "chapter": "4",
+    "number": "29",
+    "question": "共和政ローマにおいて、初の属州はどこか。"
+  },
+  {
+    "answer": "ハンニバル",
+    "category": "ポエニ戦争と内乱の１世紀",
+    "chapter": "4",
+    "number": "29",
+    "question": "第２回ポエニ戦争の際、現在のスペインから出発し、カンネーでローマ軍に大勝したカルタゴの将軍は誰か。"
+  },
+  {
+    "answer": "スキピオ",
+    "category": "ポエニ戦争と内乱の１世紀",
+    "chapter": "4",
+    "number": "29",
+    "question": "前202年、カルタゴの本拠地を襲い、カルタゴ軍に圧勝して第２回ポエニ戦争をローマの勝利に導いた将軍は誰か。"
+  },
+  {
+    "answer": "ザマの戦い",
+    "category": "ポエニ戦争と内乱の１世紀",
+    "chapter": "4",
+    "number": "29",
+    "question": "第２回ポエニ戦争で、スキピオがカルタゴ軍を破った戦いは何と呼ばれるか。"
+  },
+  {
+    "answer": "ラティフンディア",
+    "category": "ポエニ戦争と内乱の１世紀",
+    "chapter": "4",
+    "number": "29",
+    "question": "第２回ポエニ戦争以降急速に発達した、奴隷を使用してブドウなどの栽培をする大土地所有の経営を何と呼ぶか。"
+  },
+  {
+    "answer": "パンと見世物",
+    "category": "ポエニ戦争と内乱の１世紀",
+    "chapter": "4",
+    "number": "29",
+    "question": "無産市民となって都市へ流入した農民に、ローマの為政者が与えた施策を示すことばは何か。"
+  },
+  {
+    "answer": "自作農",
+    "category": "ポエニ戦争と内乱の１世紀",
+    "chapter": "4",
+    "number": "29",
+    "question": "グラックス兄弟の改革は何を増やすための改革を実行したのか。"
+  },
+  {
+    "answer": "マリウス",
+    "category": "ポエニ戦争と内乱の１世紀",
+    "chapter": "4",
+    "number": "29",
+    "question": "ユグルタ戦争を鎮圧して台頭し、平民派を形成して一時政権を握り軍政改革を行なった政治家は誰か。"
+  },
+  {
+    "answer": "スラ",
+    "category": "ポエニ戦争と内乱の１世紀",
+    "chapter": "4",
+    "number": "29",
+    "question": "同盟市戦争を鎮圧し、さらに小アジアから帰国したのち平民派を弾圧した、閥族派の政治家は誰か。"
+  },
+  {
+    "answer": "スパルタクス",
+    "category": "ポエニ戦争と内乱の１世紀",
+    "chapter": "4",
+    "number": "29",
+    "question": "前73〜前71年におこった大奴隷反乱を指導した、トラキア出身の剣闘士は誰か。"
+  },
+  {
+    "answer": "ポンペイウス、カエサル、クラッスス",
+    "category": "ポエニ戦争と内乱の１世紀",
+    "chapter": "4",
+    "number": "29",
+    "question": "第１回三頭政治を担った人物を三名答えなさい。"
+  },
+  {
+    "answer": "ガリア",
+    "category": "ポエニ戦争と内乱の１世紀",
+    "chapter": "4",
+    "number": "29",
+    "question": "カエサルの名声を高めることとなった、彼の遠征先はどこか。"
+  },
+  {
+    "answer": "ブルートゥス",
+    "category": "ポエニ戦争と内乱の１世紀",
+    "chapter": "4",
+    "number": "29",
+    "question": "前45年に元老院からインペラトルの称号を贈られたカエサルの独裁に反対し、彼を暗殺した共和主義者は誰か。"
+  },
+  {
+    "answer": "レピドゥス",
+    "category": "ポエニ戦争と内乱の１世紀",
+    "chapter": "4",
+    "number": "29",
+    "question": "第２回三頭政治から早々に離脱を余儀なくされた人物は誰か。"
+  },
+  {
+    "answer": "クレオパトラ",
+    "category": "ポエニ戦争と内乱の１世紀",
+    "chapter": "4",
+    "number": "29",
+    "question": "プトレマイオス朝最後の女王は誰か。"
+  },
+  {
+    "answer": "アクティウムの海戦",
+    "category": "ポエニ戦争と内乱の１世紀",
+    "chapter": "4",
+    "number": "29",
+    "question": "オクタウィアヌスがアントニウスとエジプトの連合軍を撃破した戦いは何か。"
+  },
+  {
+    "answer": "前31年",
+    "category": "ポエニ戦争と内乱の１世紀",
+    "chapter": "4",
+    "number": "29",
+    "question": "オクタウィアヌスがアントニウスとエジプトの連合軍を撃破した戦いは西暦何年の出来事か。"
+  },
+  {
+    "answer": "アウグストゥス",
+    "category": "帝政ローマ",
+    "chapter": "4",
+    "number": "30",
+    "question": "元老院がオクタウィアヌスに贈った尊称で、以後、歴代皇帝の称号とされたものは何か。"
+  },
+  {
+    "answer": "前27年",
+    "category": "帝政ローマ",
+    "chapter": "4",
+    "number": "30",
+    "question": "ローマの帝政が始まったとされるのは西暦何年からか。"
+  },
+  {
+    "answer": "プリンケプス",
+    "category": "帝政ローマ",
+    "chapter": "4",
+    "number": "30",
+    "question": "オクタウィアヌスは「第一の市民」を自称した。「元首」と訳されるこの称号は何か。"
+  },
+  {
+    "answer": "トラヤヌス",
+    "category": "帝政ローマ",
+    "chapter": "4",
+    "number": "30",
+    "question": "ダキアを属州とし、ローマ帝国の最大版図を実現した五賢帝の２番目の皇帝は誰か。"
+  },
+  {
+    "answer": "マルクス＝アウレリウス＝アントニヌス",
+    "category": "帝政ローマ",
+    "chapter": "4",
+    "number": "30",
+    "question": "ストア哲学を学び「哲人皇帝」と呼ばれ、中国史書では「大秦王安敦」と記された五賢帝最後の皇帝は誰か。"
+  },
+  {
+    "answer": "ウィンドボナ",
+    "category": "帝政ローマ",
+    "chapter": "4",
+    "number": "30",
+    "question": "現在のウィーンにあたる、ローマ帝国がドナウ川流域に築いた軍事拠点都市はどこか。"
+  },
+  {
+    "answer": "ルテティア",
+    "category": "帝政ローマ",
+    "chapter": "4",
+    "number": "30",
+    "question": "現在のパリにあたる、ローマ時代にガリア人の一部族が住んでいた都市はどこか。"
+  },
+  {
+    "answer": "ロンディニウム",
+    "category": "帝政ローマ",
+    "chapter": "4",
+    "number": "30",
+    "question": "現在のロンドンにあたる、ローマ帝国時代にブリタニアに築かれた都市はどこか。"
+  },
+  {
+    "answer": "帝国内の全自由民",
+    "category": "帝政ローマ",
+    "chapter": "4",
+    "number": "30",
+    "question": "カラカラ帝によるアントニヌス勅令によって、市民権が付与される対象は誰になったか。"
+  },
+  {
+    "answer": "コロナトゥス",
+    "category": "帝政ローマ",
+    "chapter": "4",
+    "number": "30",
+    "question": "ラティフンディアに代わり、隷属的小作人を使用する土地経営が拡大した。この経営形態を何と呼ぶか。"
+  },
+  {
+    "answer": "軍人皇帝時代",
+    "category": "帝政ローマ",
+    "chapter": "4",
+    "number": "30",
+    "question": "3世紀にローマ帝国で各地の軍司令官が次々と皇帝となり、内乱と混乱が続いた時代を何というか。"
+  },
+  {
+    "answer": "ディオクレティアヌス",
+    "category": "帝政ローマ",
+    "chapter": "4",
+    "number": "30",
+    "question": "最後の軍人皇帝で、キリスト教を迫害した人物は誰か。"
+  },
+  {
+    "answer": "四帝分治制（テトラルキア）",
+    "category": "帝政ローマ",
+    "chapter": "4",
+    "number": "30",
+    "question": "ディオクレティアヌスは、広大なローマ帝国をどのような方法で統治しようとしたか。"
+  },
+  {
+    "answer": "コンスタンティヌス帝",
+    "category": "帝政ローマ",
+    "chapter": "4",
+    "number": "30",
+    "question": "313年にキリスト教の公認を行い、その後324年に帝国を再統一した皇帝は誰か。"
+  },
+  {
+    "answer": "ミラノ勅令",
+    "category": "帝政ローマ",
+    "chapter": "4",
+    "number": "30",
+    "question": "313年、ローマ帝国がキリスト教を公認した際に発布したものは何か。"
+  },
+  {
+    "answer": "コンスタンティノープル",
+    "category": "帝政ローマ",
+    "chapter": "4",
+    "number": "30",
+    "question": "330年、ローマ帝国の首都は旧ビザンティウムに遷都された。遷都後、この都市は何と改称されたか。"
+  },
+  {
+    "answer": "ゲルマン人",
+    "category": "帝政ローマ",
+    "chapter": "4",
+    "number": "30",
+    "question": "ローマ帝国の衰退をもたらすことになった、375年以降本格的に帝国に侵入した民族は何か。"
+  },
+  {
+    "answer": "テオドシウス帝",
+    "category": "帝政ローマ",
+    "chapter": "4",
+    "number": "30",
+    "question": "キリスト教を国教化し、また死に際して帝国を東西に分けた皇帝は誰か。"
+  },
+  {
+    "answer": "392年",
+    "category": "帝政ローマ",
+    "chapter": "4",
+    "number": "30",
+    "question": "ローマ帝国がキリスト教を国教化したのは西暦何年か。"
+  },
+  {
+    "answer": "オドアケル",
+    "category": "帝政ローマ",
+    "chapter": "4",
+    "number": "30",
+    "question": "476年に西ローマ帝国を滅ぼした、帝国に仕えていたゲルマン人傭兵隊長は誰か。"
+  },
+  {
+    "answer": "セネカ",
+    "category": "ローマの生活と文化",
+    "chapter": "4",
+    "number": "31",
+    "question": "ネロ帝の師で、のちに死を強制された、代表作『幸福論』のストア派哲学者は誰か。"
+  },
+  {
+    "answer": "『自省録』",
+    "category": "ローマの生活と文化",
+    "chapter": "4",
+    "number": "31",
+    "question": "哲人皇帝マルクス＝アウレリウス＝アントニヌスが、ギリシア語で書いた著作の名称は何か。"
+  },
+  {
+    "answer": "ウェルギリウス",
+    "category": "ローマの生活と文化",
+    "chapter": "4",
+    "number": "31",
+    "question": "ローマ建国にまつわる叙事詩『アエネイス』を著した、古代ローマ最大の詩人は誰か。"
+  },
+  {
+    "answer": "リウィウス",
+    "category": "ローマの生活と文化",
+    "chapter": "4",
+    "number": "31",
+    "question": "アウグストゥスに委嘱されて『ローマ建国史』を著した、ローマの歴史家は誰か。"
+  },
+  {
+    "answer": "『ガリア戦記』",
+    "category": "ローマの生活と文化",
+    "chapter": "4",
+    "number": "31",
+    "question": "古ケルト・古ゲルマン研究の重要史料でもある、カエサルが著した遠征記録を何というか。"
+  },
+  {
+    "answer": "タキトゥス",
+    "category": "ローマの生活と文化",
+    "chapter": "4",
+    "number": "31",
+    "question": "古ゲルマン研究の最重要史料である著書や、ローマ政治史の『年代記』の著者は誰か。"
+  },
+  {
+    "answer": "プルタルコス",
+    "category": "ローマの生活と文化",
+    "chapter": "4",
+    "number": "31",
+    "question": "ギリシアとローマの英雄的人物を比較評論した伝記の『対比列伝』を著した、ギリシア人作家は誰か。"
+  },
+  {
+    "answer": "ストラボン",
+    "category": "ローマの生活と文化",
+    "chapter": "4",
+    "number": "31",
+    "question": "前１〜後１世紀の、史料的な地誌の『地理誌』を著したギリシア人地理学者は誰か。"
+  },
+  {
+    "answer": "万民法",
+    "category": "ローマの生活と文化",
+    "chapter": "4",
+    "number": "31",
+    "question": "ローマ領の拡大にともない、市民法から発達し、すべての人に適用されるようになった法を何と呼ぶか。"
+  },
+  {
+    "answer": "トリボニアヌス",
+    "category": "ローマの生活と文化",
+    "chapter": "4",
+    "number": "31",
+    "question": "『ローマ法大全』の編纂事業の中心となった東ローマ（ビザンツ）の法学者は誰か。"
+  },
+  {
+    "answer": "ユスティニアヌス大帝",
+    "category": "ローマの生活と文化",
+    "chapter": "4",
+    "number": "31",
+    "question": "『ローマ法大全』の編纂を命じた東ローマ（ビザンツ）の皇帝は誰か。"
+  },
+  {
+    "answer": "コロッセウム",
+    "category": "ローマの生活と文化",
+    "chapter": "4",
+    "number": "31",
+    "question": "剣闘士の試合などが行われた、ローマの円形闘技場を何と呼ぶか。"
+  },
+  {
+    "answer": "アッピア街道",
+    "category": "ローマの生活と文化",
+    "chapter": "4",
+    "number": "31",
+    "question": "ローマでは道路網が整備されたが、ローマから南東部に伸びる、最古の軍用道路の名称は何か。"
+  },
+  {
+    "answer": "ガール水道橋",
+    "category": "ローマの生活と文化",
+    "chapter": "4",
+    "number": "31",
+    "question": "南フランスに建築された、３層アーチからなり、上が水道、中・下が人馬道の水道橋の名称は何か。"
+  },
+  {
+    "answer": "プリニウス",
+    "category": "ローマの生活と文化",
+    "chapter": "4",
+    "number": "31",
+    "question": "１世紀に、膨大な百科全書の『博物誌』を著し、ウェスウィウス火山噴火の際に殉職した人物は誰か。"
+  },
+  {
+    "answer": "『天文学大全』",
+    "category": "ローマの生活と文化",
+    "chapter": "4",
+    "number": "31",
+    "question": "2世紀にプトレマイオスが著した、天動説を体系化した天文学書の名称は何か。"
+  },
+  {
+    "answer": "アウグスティヌス",
+    "category": "ローマの生活と文化",
+    "chapter": "4",
+    "number": "31",
+    "question": "北アフリカの司教で、カトリックの教義確立に大きく貢献した、ローマ帝政末期最大の教父は誰か。"
+  },
+  {
+    "answer": "『告白録』",
+    "category": "ローマの生活と文化",
+    "chapter": "4",
+    "number": "31",
+    "question": "アウグスティヌスが、青年期に帰依したマニ教から回心してキリスト教に辿りつくまでを描いた自伝の名称は何か。"
+  },
+  {
+    "answer": "イエス",
+    "category": "キリスト教の成立と発展",
+    "chapter": "4",
+    "number": "32",
+    "question": "神の絶対愛と隣人愛を説き、形式主義のユダヤ教を批判したのは誰か。"
+  },
+  {
+    "answer": "パリサイ派",
+    "category": "キリスト教の成立と発展",
+    "chapter": "4",
+    "number": "32",
+    "question": "ユダヤ教徒のなかで、モーセの律法の遵守を主張し、宗教儀礼を極端に重視した一派は何と呼ばれたか。"
+  },
+  {
+    "answer": "ピラト",
+    "category": "キリスト教の成立と発展",
+    "chapter": "4",
+    "number": "32",
+    "question": "イエスを帝国への反逆者として処刑した、ローマ属州ユダヤの総督は誰か。"
+  },
+  {
+    "answer": "ペテロ",
+    "category": "キリスト教の成立と発展",
+    "chapter": "4",
+    "number": "32",
+    "question": "「第１使徒」と呼ばれ、ローマ伝道に力をつくしたがネロ帝の迫害で殉教した人物は誰か。"
+  },
+  {
+    "answer": "パウロ",
+    "category": "キリスト教の成立と発展",
+    "chapter": "4",
+    "number": "32",
+    "question": "パリサイ派に属していたが回心してキリスト教徒となり、「異邦人伝道の使徒」と呼ばれた人物は誰か。"
+  },
+  {
+    "answer": "コイネー",
+    "category": "キリスト教の成立と発展",
+    "chapter": "4",
+    "number": "32",
+    "question": "『新約聖書』は何という言語で書かれたか。"
+  },
+  {
+    "answer": "ネロ帝",
+    "category": "キリスト教の成立と発展",
+    "chapter": "4",
+    "number": "32",
+    "question": "１世紀後半、ローマの大火の責任をキリスト教徒に課し、彼らを迫害した皇帝は誰か。"
+  },
+  {
+    "answer": "カタコンベ",
+    "category": "キリスト教の成立と発展",
+    "chapter": "4",
+    "number": "32",
+    "question": "迫害を受けていた初期キリスト教時代の、避難所・礼拝堂としても利用された地下墓所を何というか。"
+  },
+  {
+    "answer": "ニケーア公会議",
+    "category": "キリスト教の成立と発展",
+    "chapter": "4",
+    "number": "32",
+    "question": "325年、教義統一のためコンスタンティヌス帝が招集した、キリスト教会最初の公会議の名称は何か。"
+  },
+  {
+    "answer": "アタナシウス派",
+    "category": "キリスト教の成立と発展",
+    "chapter": "4",
+    "number": "32",
+    "question": "コンスタンティヌス帝によって開かれた325年の公会議で、正統教義と認められたのは何派か。"
+  },
+  {
+    "answer": "三位一体説",
+    "category": "キリスト教の成立と発展",
+    "chapter": "4",
+    "number": "32",
+    "question": "アタナシウス派はイエスの神性を強く認め、のちにある説へと発展する。この説は何と呼ばれるか。"
+  },
+  {
+    "answer": "アリウス派",
+    "category": "キリスト教の成立と発展",
+    "chapter": "4",
+    "number": "32",
+    "question": "コンスタンティヌス帝によって開かれた325年の公会議で、異端とされたのは何派か。"
+  },
+  {
+    "answer": "ユリアヌス",
+    "category": "キリスト教の成立と発展",
+    "chapter": "4",
+    "number": "32",
+    "question": "ギリシア古典とミトラ教に心酔し、異教復興を企て、教会から「背教者」と呼ばれた４世紀の皇帝は誰か。"
+  },
+  {
+    "answer": "エフェソス公会議",
+    "category": "キリスト教の成立と発展",
+    "chapter": "4",
+    "number": "32",
+    "question": "431年、ネストリウス派が異端とされた、小アジア西岸の町で開かれた公会議の名称は何か。"
+  },
+  {
+    "answer": "カルケドン公会議",
+    "category": "キリスト教の成立と発展",
+    "chapter": "4",
+    "number": "32",
+    "question": "451年、単性論が異端とされた、コンスタンティノープルの対岸の町で開かれた公会議の名称は何か。"
+  },
+  {
+    "answer": "アラブ人",
+    "category": "イスラーム教の成立",
+    "chapter": "5",
+    "number": "33",
+    "question": "セム語系のアラビア語を母語とした、アラビア半島の先住民は何か。"
+  },
+  {
+    "answer": "メッカ",
+    "category": "イスラーム教の成立",
+    "chapter": "5",
+    "number": "33",
+    "question": "アラビア半島西部のヒジャーズ地方に位置し、古来から宗教都市・商業都市として栄えていたのはどこか。"
+  },
+  {
+    "answer": "カーバ神殿",
+    "category": "イスラーム教の成立",
+    "chapter": "5",
+    "number": "33",
+    "question": "アラビア半島の多神教信仰の中心として、古来からの聖石や聖像を納めていた、メッカの聖殿は何か。"
+  },
+  {
+    "answer": "クライシュ族",
+    "category": "イスラーム教の成立",
+    "chapter": "5",
+    "number": "33",
+    "question": "５世紀末にメッカを征服し定住した、ムハンマドが属する名門一族の名称は何か。"
+  },
+  {
+    "answer": "アッラー",
+    "category": "イスラーム教の成立",
+    "chapter": "5",
+    "number": "33",
+    "question": "イスラームにおける唯一神をアラビア語で何と呼ぶか。"
+  },
+  {
+    "answer": "622年",
+    "category": "イスラーム教の成立",
+    "chapter": "5",
+    "number": "33",
+    "question": "ヒジュラは西暦何年の出来事か。"
+  },
+  {
+    "answer": "メディナ",
+    "category": "イスラーム教の成立",
+    "chapter": "5",
+    "number": "33",
+    "question": "ムハンマドは大商人の迫害を受けてメッカの北方の都市ヤスリブに移住した。この都市はその後、何と呼ばれたか。"
+  },
+  {
+    "answer": "ウンマ",
+    "category": "イスラーム教の成立",
+    "chapter": "5",
+    "number": "33",
+    "question": "ムハンマドの移住後に成立したイスラーム教徒の共同体（教団国家）を何と呼ぶか。"
+  },
+  {
+    "answer": "預言者",
+    "category": "イスラーム教の成立",
+    "chapter": "5",
+    "number": "33",
+    "question": "ムハンマドのように神の言葉（啓示）を受けた人を何と呼ぶか。"
+  },
+  {
+    "answer": "ムスリム",
+    "category": "イスラーム教の成立",
+    "chapter": "5",
+    "number": "33",
+    "question": "イスラーム教徒のことを指し、「神に帰依する者」を意味するアラビア語は何か。"
+  },
+  {
+    "answer": "『コーラン』",
+    "category": "イスラーム教の成立",
+    "chapter": "5",
+    "number": "33",
+    "question": "ムハンマドの死後、650年頃に編纂されたイスラーム教の聖典は何か。"
+  },
+  {
+    "answer": "ウラマー",
+    "category": "イスラーム教の成立",
+    "chapter": "5",
+    "number": "33",
+    "question": "神学・法学などのイスラーム諸学につうじていた、イスラームの学者（知識人）を何と呼ぶか。"
+  },
+  {
+    "answer": "六信五行",
+    "category": "イスラーム教の成立",
+    "chapter": "5",
+    "number": "33",
+    "question": "ムスリムが信者として信仰し、行うべきことの基本を何と総称するか。"
+  },
+  {
+    "answer": "聖戦（ジハード）",
+    "category": "イスラーム教の成立",
+    "chapter": "5",
+    "number": "33",
+    "question": "異教徒に対する、イスラーム教徒の戦いを何と呼ぶか。"
+  },
+  {
+    "answer": "正統カリフ",
+    "category": "正統カリフ時代〜ウマイヤ朝",
+    "chapter": "5",
+    "number": "34",
+    "question": "ムハンマドの死後、信徒の選挙で選出された４代にわたる後継者は、とくに何と呼ばれるか。"
+  },
+  {
+    "answer": "アブー＝バクル",
+    "category": "正統カリフ時代〜ウマイヤ朝",
+    "chapter": "5",
+    "number": "34",
+    "question": "ムハンマドの義父で、初代後継者として選出されたのは誰か。"
+  },
+  {
+    "answer": "ミスル",
+    "category": "正統カリフ時代〜ウマイヤ朝",
+    "chapter": "5",
+    "number": "34",
+    "question": "アラブ人イスラーム教徒が家族をともなって移住し建設した軍営都市は、何と呼ばれるか。"
+  },
+  {
+    "answer": "マワーリー",
+    "category": "正統カリフ時代〜ウマイヤ朝",
+    "chapter": "5",
+    "number": "34",
+    "question": "ウマイヤ朝時代、とくにイラン人に多かった、非アラブ人のイスラーム教改宗者は何と呼ばれたか。"
+  },
+  {
+    "answer": "ズィンミー",
+    "category": "正統カリフ時代〜ウマイヤ朝",
+    "chapter": "5",
+    "number": "34",
+    "question": "庇護民を意味し、ムスリムの支配下で一定の保護を認められた非ムスリムを何と呼んだか。"
+  },
+  {
+    "answer": "ハラージュ",
+    "category": "正統カリフ時代〜ウマイヤ朝",
+    "chapter": "5",
+    "number": "34",
+    "question": "初めは征服地の住民に対して、のちアラブ人にも課したイスラーム世界の地租を何と呼ぶか。"
+  },
+  {
+    "answer": "ジズヤ",
+    "category": "正統カリフ時代〜ウマイヤ朝",
+    "chapter": "5",
+    "number": "34",
+    "question": "初めは聖典をもつ民に対して、正統カリフ時代以後はすべての異教徒に対して課した、人頭税の呼称は何か。"
+  },
+  {
+    "answer": "アリー",
+    "category": "正統カリフ時代〜ウマイヤ朝",
+    "chapter": "5",
+    "number": "34",
+    "question": "ムハンマドの娘婿で、暗殺された第４代正統カリフは誰か。"
+  },
+  {
+    "answer": "ムアーウィヤ",
+    "category": "正統カリフ時代〜ウマイヤ朝",
+    "chapter": "5",
+    "number": "34",
+    "question": "アリーが暗殺されたのち、新王朝を開いたシリア総督は誰か。"
+  },
+  {
+    "answer": "661年",
+    "category": "正統カリフ時代〜ウマイヤ朝",
+    "chapter": "5",
+    "number": "34",
+    "question": "ウマイヤ朝が成立したのは西暦何年か。"
+  },
+  {
+    "answer": "ダマスクス",
+    "category": "正統カリフ時代〜ウマイヤ朝",
+    "chapter": "5",
+    "number": "34",
+    "question": "ウマイヤ朝の首都はどこか。"
+  },
+  {
+    "answer": "スンナ派",
+    "category": "正統カリフ時代〜ウマイヤ朝",
+    "chapter": "5",
+    "number": "34",
+    "question": "ムハンマドの言行に従う者という意味で、代々のカリフを正統と認めるイスラーム教の多数派は何か。"
+  },
+  {
+    "answer": "シーア派",
+    "category": "正統カリフ時代〜ウマイヤ朝",
+    "chapter": "5",
+    "number": "34",
+    "question": "アリーとその子孫のみをムハンマドの正統な後継者と認める、イスラーム教少数派の分派名は何か。"
+  },
+  {
+    "answer": "西ゴート王国",
+    "category": "正統カリフ時代〜ウマイヤ朝",
+    "chapter": "5",
+    "number": "34",
+    "question": "711年にウマイヤ朝が滅ぼした、イベリア半島を支配したゲルマン人国家は何か。"
+  },
+  {
+    "answer": "トゥール・ポワティエ間の戦い",
+    "category": "正統カリフ時代〜ウマイヤ朝",
+    "chapter": "5",
+    "number": "34",
+    "question": "732年、カール＝マルテル率いるフランク王国と対決し、ウマイヤ朝軍が敗走した戦いは何か。"
+  },
+  {
+    "answer": "アラブ帝国",
+    "category": "正統カリフ時代〜ウマイヤ朝",
+    "chapter": "5",
+    "number": "34",
+    "question": "正統カリフ時代とウマイヤ朝の時代は、アラブ人が特権的支配層を形成していたため、何帝国と呼ばれるか。"
+  },
+  {
+    "answer": "アブー＝アルアッバース",
+    "category": "正統カリフ時代〜ウマイヤ朝",
+    "chapter": "5",
+    "number": "34",
+    "question": "ウマイヤ朝を倒し、新王朝を建てた人物は誰か。"
+  },
+  {
+    "answer": "マンスール",
+    "category": "アッバース朝と政権の多極化",
+    "chapter": "5",
+    "number": "35",
+    "question": "新都を造営し、行政機構を整備して中央集権体制を確立した、アッバース朝二代カリフは誰か。"
+  },
+  {
+    "answer": "バグダード",
+    "category": "アッバース朝と政権の多極化",
+    "chapter": "5",
+    "number": "35",
+    "question": "アッバース朝二代カリフが造営した新都はどこか。"
+  },
+  {
+    "answer": "イスラーム帝国",
+    "category": "アッバース朝と政権の多極化",
+    "chapter": "5",
+    "number": "35",
+    "question": "アラブ人の特権が廃止されてムスリムの平等が実現した支配体制から、アッバース朝をとくに何帝国と呼ぶか。"
+  },
+  {
+    "answer": "シャリーア",
+    "category": "アッバース朝と政権の多極化",
+    "chapter": "5",
+    "number": "35",
+    "question": "イスラーム法のことを何と呼ぶか。"
+  },
+  {
+    "answer": "製紙法",
+    "category": "アッバース朝と政権の多極化",
+    "chapter": "5",
+    "number": "35",
+    "question": "タラス河畔の戦いで、中国から西伝したものは何か。"
+  },
+  {
+    "answer": "ハールーン＝アッラシード",
+    "category": "アッバース朝と政権の多極化",
+    "chapter": "5",
+    "number": "35",
+    "question": "800年頃にアッバース朝の最盛期を現出した、アッバース朝の第５代カリフは誰か。"
+  },
+  {
+    "answer": "知恵の館（バイト＝アルヒクマ）",
+    "category": "アッバース朝と政権の多極化",
+    "chapter": "5",
+    "number": "35",
+    "question": "９世紀にバグダードに建設され、ギリシア語文献のアラビア語への翻訳が行われた研究機関は何か。"
+  },
+  {
+    "answer": "アブド＝アッラフマーン3世",
+    "category": "アッバース朝と政権の多極化",
+    "chapter": "5",
+    "number": "35",
+    "question": "後ウマイヤ朝の最盛期を現出した人物は誰か。"
+  },
+  {
+    "answer": "コルドバ",
+    "category": "アッバース朝と政権の多極化",
+    "chapter": "5",
+    "number": "35",
+    "question": "後ウマイヤ朝の都はどこか。"
+  },
+  {
+    "answer": "ファーティマ朝",
+    "category": "アッバース朝と政権の多極化",
+    "chapter": "5",
+    "number": "35",
+    "question": "10世紀初め、シーア派の一派がチュニジアで建国し、当初からカリフを称した王朝は何か。"
+  },
+  {
+    "answer": "カイロ",
+    "category": "アッバース朝と政権の多極化",
+    "chapter": "5",
+    "number": "35",
+    "question": "ファーティマ朝が10世紀後半エジプトに建設し、遷都した都市はどこか。"
+  },
+  {
+    "answer": "ブワイフ朝",
+    "category": "アッバース朝と政権の多極化",
+    "chapter": "5",
+    "number": "35",
+    "question": "10世紀前半、イラン系の人びとがバグダードに入城して建てたシーア派軍事政権は何か。"
+  },
+  {
+    "answer": "大アミール",
+    "category": "アッバース朝と政権の多極化",
+    "chapter": "5",
+    "number": "35",
+    "question": "ブワイフ朝の君主はアッバース朝カリフから何の称号を授与されたか。"
+  },
+  {
+    "answer": "イクター制",
+    "category": "アッバース朝と政権の多極化",
+    "chapter": "5",
+    "number": "35",
+    "question": "軍人や官僚に対し、俸給額にみあう金額を徴収できる土地の管理・徴税権を与えたブワイフ朝創始の制度は何か。"
+  },
+  {
+    "answer": "モスク",
+    "category": "イスラーム文化の成立",
+    "chapter": "5",
+    "number": "36",
+    "question": "イスラーム教の礼拝堂を何と呼ぶか。"
+  },
+  {
+    "answer": "マドラサ",
+    "category": "イスラーム文化の成立",
+    "chapter": "5",
+    "number": "36",
+    "question": "ウラマーを育成するための高等教育機関を何と呼ぶか。"
+  },
+  {
+    "answer": "スーク",
+    "category": "イスラーム文化の成立",
+    "chapter": "5",
+    "number": "36",
+    "question": "都市のなかでモスクに隣接する市場を、アラビア語で何と呼ぶか。"
+  },
+  {
+    "answer": "細密画（ミニアチュール）",
+    "category": "イスラーム文化の成立",
+    "chapter": "5",
+    "number": "36",
+    "question": "イスラーム文化において、書物の装飾や挿絵に描かれた、精密な絵画は何か。"
+  },
+  {
+    "answer": "イブン＝シーナー",
+    "category": "イスラーム文化の成立",
+    "chapter": "5",
+    "number": "36",
+    "question": "ギリシア・アラビア医学の集大成者で、ラテン名アヴィケンナで知られるイラン系医学者・哲学者は誰か。"
+  },
+  {
+    "answer": "イブン＝ルシュド",
+    "category": "イスラーム文化の成立",
+    "chapter": "5",
+    "number": "36",
+    "question": "コルドバ生まれでアリストテレスの著作の注釈で知られる、ラテン名でアヴェロエスと呼ばれる哲学者は誰か。"
+  },
+  {
+    "answer": "『医学典範』",
+    "category": "イスラーム文化の成立",
+    "chapter": "5",
+    "number": "36",
+    "question": "中世ヨーロッパの医学校でも重用された、アヴィケンナの著作は何か。"
+  },
+  {
+    "answer": "タバリー",
+    "category": "イスラーム文化の成立",
+    "chapter": "5",
+    "number": "36",
+    "question": "アッバース朝期にバグダードで活躍した、代表作『預言者たちと諸王の歴史』である知識人は誰か。"
+  },
+  {
+    "answer": "イブン＝ハルドゥーン",
+    "category": "イスラーム文化の成立",
+    "chapter": "5",
+    "number": "36",
+    "question": "14世紀のチュニス出身の、『世界史序説』を著したイスラーム世界を代表する歴史家は誰か。"
+  },
+  {
+    "answer": "イブン＝バットゥータ",
+    "category": "イスラーム文化の成立",
+    "chapter": "5",
+    "number": "36",
+    "question": "14世紀のモロッコ出身の大旅行家で、『旅行記』を著したのは誰か。"
+  },
+  {
+    "answer": "『千夜一夜物語（アラビアン＝ナイト）』",
+    "category": "イスラーム文化の成立",
+    "chapter": "5",
+    "number": "36",
+    "question": "中世ペルシア語の説話集がアラビア語に翻訳されたのち、各地の説話が融合されたアラビア語の大説話集は何か。"
+  },
+  {
+    "answer": "ウマル＝ハイヤーム",
+    "category": "イスラーム文化の成立",
+    "chapter": "5",
+    "number": "36",
+    "question": "ジャラリー暦の制定にも加わった、『ルバイヤート』作のセルジューク朝期のイラン系詩人・科学者は誰か。"
+  },
+  {
+    "answer": "フワーリズミー",
+    "category": "イスラーム文化の成立",
+    "chapter": "5",
+    "number": "36",
+    "question": "アラビア数学を確立し、代数学を発展させた、アッバース朝期のイラン系数学者・天文学者は誰か。"
+  },
+  {
+    "answer": "ミナレット",
+    "category": "イスラーム文化の成立",
+    "chapter": "5",
+    "number": "36",
+    "question": "モスクに付属する尖塔のことを何と呼ぶか。"
+  },
+  {
+    "answer": "アラベスク",
+    "category": "イスラーム文化の成立",
+    "chapter": "5",
+    "number": "36",
+    "question": "ムスリムが製作した、植物の茎や葉を幾何学的に図案化した装飾文様は何か。"
+  },
+  {
+    "answer": "アルハンブラ宮殿",
+    "category": "イスラーム文化の成立",
+    "chapter": "5",
+    "number": "36",
+    "question": "13世紀よりグラナダに建設されたナスル朝の宮殿で、西方イスラーム世界の代表的建築は何か。"
+  },
+  {
+    "answer": "西岸海洋性気候",
+    "category": "ヨーロッパ概要/ゲルマン人の大移動",
+    "chapter": "5",
+    "number": "37",
+    "question": "年間の降水量が比較的均等で、夏は涼しく冬は温暖であるヨーロッパ西部などに見られる気候区を何というか。"
+  },
+  {
+    "answer": "地中海性気候",
+    "category": "ヨーロッパ概要/ゲルマン人の大移動",
+    "chapter": "5",
+    "number": "37",
+    "question": "夏は乾燥し高温、冬は湿潤で比較的温暖な、オリーブやブドウの栽培が見られる気候を何というか。"
+  },
+  {
+    "answer": "『ゲルマニア』",
+    "category": "ヨーロッパ概要/ゲルマン人の大移動",
+    "chapter": "5",
+    "number": "37",
+    "question": "古ゲルマン社会の風俗や素朴な慣習を記録した、タキトゥスの作品名は何か。"
+  },
+  {
+    "answer": "民会",
+    "category": "ヨーロッパ概要/ゲルマン人の大移動",
+    "chapter": "5",
+    "number": "37",
+    "question": "ゲルマン部族国家で首長が主宰し、武装した自由民成年男性で構成された最高決定機関は何か。"
+  },
+  {
+    "answer": "フン人",
+    "category": "ヨーロッパ概要/ゲルマン人の大移動",
+    "chapter": "5",
+    "number": "37",
+    "question": "ゲルマン人大移動の直接原因となった、ヨーロッパに侵入した騎馬遊牧民は何か。"
+  },
+  {
+    "answer": "ケルト人",
+    "category": "ヨーロッパ概要/ゲルマン人の大移動",
+    "chapter": "5",
+    "number": "37",
+    "question": "前６世紀頃から、アルプス以北のヨーロッパに広く居住していたインド＝ヨーロッパ語系民族は何か。"
+  },
+  {
+    "answer": "西ゴート",
+    "category": "ヨーロッパ概要/ゲルマン人の大移動",
+    "chapter": "5",
+    "number": "37",
+    "question": "フン人の西進を恐れ、375年南下を開始し、翌年ドナウ川を渡りローマ領内に移動したゲルマン部族は何か。"
+  },
+  {
+    "answer": "東ゴート",
+    "category": "ヨーロッパ概要/ゲルマン人の大移動",
+    "chapter": "5",
+    "number": "37",
+    "question": "375年にフン人によって征服され、その大帝国の崩壊後、５世紀末にはイタリアに王国を建てたゲルマン部族は何か。"
+  },
+  {
+    "answer": "ヴァンダル",
+    "category": "ヨーロッパ概要/ゲルマン人の大移動",
+    "chapter": "5",
+    "number": "37",
+    "question": "パンノニアから北イタリア・スペインを経て、５世紀前半にアフリカ北岸に建国したゲルマン部族は何か。"
+  },
+  {
+    "answer": "ブルグンド",
+    "category": "ヨーロッパ概要/ゲルマン人の大移動",
+    "chapter": "5",
+    "number": "37",
+    "question": "５世紀初め、ローマ帝国の同盟者としてガリア東南部に移住・建国したゲルマン部族は何か。"
+  },
+  {
+    "answer": "ランゴバルド",
+    "category": "ヨーロッパ概要/ゲルマン人の大移動",
+    "chapter": "5",
+    "number": "37",
+    "question": "６世紀半ば、パンノニアからイタリア北部に移住し、建国したゲルマン部族は何か。"
+  },
+  {
+    "answer": "フランク",
+    "category": "ヨーロッパ概要/ゲルマン人の大移動",
+    "chapter": "5",
+    "number": "37",
+    "question": "ライン川東岸の原住地を保持しつつ、ガリア北部に移住・拡大したゲルマン部族は何か。"
+  },
+  {
+    "answer": "ヘプターキー",
+    "category": "ヨーロッパ概要/ゲルマン人の大移動",
+    "chapter": "5",
+    "number": "37",
+    "question": "アングロ＝サクソン人がブリタニア南部に建てた小王国群を何と呼ぶか。"
+  },
+  {
+    "answer": "アッティラ",
+    "category": "ヨーロッパ概要/ゲルマン人の大移動",
+    "chapter": "5",
+    "number": "37",
+    "question": "５世紀前半、パンノニアに大帝国を形成した、フン人の大王は誰か。"
+  },
+  {
+    "answer": "カタラウヌムの戦い",
+    "category": "ヨーロッパ概要/ゲルマン人の大移動",
+    "chapter": "5",
+    "number": "37",
+    "question": "451年、フン人の軍が、パリ東方の地で西ローマとゲルマン人の連合軍に敗れた戦いは何か。"
+  },
+  {
+    "answer": "オドアケル",
+    "category": "ヨーロッパ概要/ゲルマン人の大移動",
+    "chapter": "5",
+    "number": "37",
+    "question": "476年、最後の皇帝を廃位して西ローマ帝国を滅亡させた、ゲルマン出身の西ローマの傭兵隊長は誰か。"
+  },
+  {
+    "answer": "テオドリック大王",
+    "category": "ヨーロッパ概要/ゲルマン人の大移動",
+    "chapter": "5",
+    "number": "37",
+    "question": "５世紀末、西ローマを滅ぼした人物による王国を滅ぼし、イタリアに東ゴート王国を建てた指導者（王）は誰か。"
+  },
+  {
+    "answer": "スラヴ人",
+    "category": "ヨーロッパ概要/ゲルマン人の大移動",
+    "chapter": "5",
+    "number": "37",
+    "question": "東ヨーロッパを中心に居住する、ゲルマン人の移動ののちバルカン半島にも進出した印＝欧語系民族は何か。"
+  },
+  {
+    "answer": "皇帝教皇主義",
+    "category": "ビザンツ帝国・フランク王国/ローマ＝カトリック",
+    "chapter": "5",
+    "number": "38",
+    "question": "ビザンツ帝国で見られた、皇帝が教会の最高権威者として宗教と政治を統合的に支配する体制を何というか。"
+  },
+  {
+    "answer": "『ローマ法大全』",
+    "category": "ビザンツ帝国・フランク王国/ローマ＝カトリック",
+    "chapter": "5",
+    "number": "38",
+    "question": "ユスティニアヌス帝が法学者トリボニアヌスに命じて編纂させた、古代ローマ法規の集大成は何と呼ばれるか。"
+  },
+  {
+    "answer": "ハギア＝ソフィア聖堂",
+    "category": "ビザンツ帝国・フランク王国/ローマ＝カトリック",
+    "chapter": "5",
+    "number": "38",
+    "question": "ユスティニアヌス帝が首都に建立させた、ビザンツ様式を代表する大聖堂は何か。"
+  },
+  {
+    "answer": "絹織物産業",
+    "category": "ビザンツ帝国・フランク王国/ローマ＝カトリック",
+    "chapter": "5",
+    "number": "38",
+    "question": "ユスティニアヌス帝が中国または内陸アジアから養蚕技術を導入して盛んにした産業は何か。"
+  },
+  {
+    "answer": "メロヴィング朝",
+    "category": "ビザンツ帝国・フランク王国/ローマ＝カトリック",
+    "chapter": "5",
+    "number": "38",
+    "question": "クローヴィスによって５世紀後半に成立した、フランク王国最初の王朝は何か。"
+  },
+  {
+    "answer": "アタナシウス派",
+    "category": "ビザンツ帝国・フランク王国/ローマ＝カトリック",
+    "chapter": "5",
+    "number": "38",
+    "question": "フランク人を統一したクローヴィスは496年、アリウス派から何に改宗したか。"
+  },
+  {
+    "answer": "カール＝マルテル",
+    "category": "ビザンツ帝国・フランク王国/ローマ＝カトリック",
+    "chapter": "5",
+    "number": "38",
+    "question": "トゥール・ポワティエ間の戦いでフランク軍を勝利に導いた宮宰は誰か。"
+  },
+  {
+    "answer": "ピピン",
+    "category": "ビザンツ帝国・フランク王国/ローマ＝カトリック",
+    "chapter": "5",
+    "number": "38",
+    "question": "ローマ教皇の承認のもと、751年に新王朝を開き、教皇に寄進をした人物は誰か。"
+  },
+  {
+    "answer": "ラヴェンナ地方",
+    "category": "ビザンツ帝国・フランク王国/ローマ＝カトリック",
+    "chapter": "5",
+    "number": "38",
+    "question": "ランゴバルド王国を攻撃して、獲得した地域の一部をピピンが教皇に寄進した。その地域名は何か。"
+  },
+  {
+    "answer": "ザクセン人",
+    "category": "ビザンツ帝国・フランク王国/ローマ＝カトリック",
+    "chapter": "5",
+    "number": "38",
+    "question": "カール大帝が従属させた、北ドイツのゲルマン人一派は何か。"
+  },
+  {
+    "answer": "アヴァール人",
+    "category": "ビザンツ帝国・フランク王国/ローマ＝カトリック",
+    "chapter": "5",
+    "number": "38",
+    "question": "８世紀末にカール大帝が撃退した、６世紀以後ヨーロッパに侵入してきたアルタイ語系遊牧民は何か。"
+  },
+  {
+    "answer": "伯",
+    "category": "ビザンツ帝国・フランク王国/ローマ＝カトリック",
+    "chapter": "5",
+    "number": "38",
+    "question": "中央集権のためカール大帝が任命し、巡察使を派遣して監督させた、フランク王国の地方行政官の名称は何か。"
+  },
+  {
+    "answer": "800年",
+    "category": "ビザンツ帝国・フランク王国/ローマ＝カトリック",
+    "chapter": "5",
+    "number": "38",
+    "question": "カールの戴冠が行われたのは、西暦何年か。"
+  },
+  {
+    "answer": "カロリング＝ルネサンス",
+    "category": "ビザンツ帝国・フランク王国/ローマ＝カトリック",
+    "chapter": "5",
+    "number": "38",
+    "question": "カール大帝の保護・奨励によった古典文化復興運動は何と呼ばれたか。"
+  },
+  {
+    "answer": "アルクイン",
+    "category": "ビザンツ帝国・フランク王国/ローマ＝カトリック",
+    "chapter": "5",
+    "number": "38",
+    "question": "カール大帝にまねかれたイギリスの神学者は誰か。"
+  },
+  {
+    "answer": "コンスタンティノープル教会",
+    "category": "ビザンツ帝国・フランク王国/ローマ＝カトリック",
+    "chapter": "5",
+    "number": "38",
+    "question": "ビザンツ帝国の保護を受けて発展した、東方教会の本山に相当した教会は何か。"
+  },
+  {
+    "answer": "ローマ＝カトリック教会",
+    "category": "ビザンツ帝国・フランク王国/ローマ＝カトリック",
+    "chapter": "5",
+    "number": "38",
+    "question": "ローマ教会が首座を占めた西ヨーロッパのキリスト教会組織を、一般に何と呼ぶか。"
+  },
+  {
+    "answer": "ペテロ",
+    "category": "ビザンツ帝国・フランク王国/ローマ＝カトリック",
+    "chapter": "5",
+    "number": "38",
+    "question": "使徒と呼ばれたイエスの弟子のうちの筆頭であり、初代教皇とされたのは誰か。"
+  },
+  {
+    "answer": "グレゴリウス１世",
+    "category": "ビザンツ帝国・フランク王国/ローマ＝カトリック",
+    "chapter": "5",
+    "number": "38",
+    "question": "アングロ＝サクソンなどゲルマン人への布教に大きく貢献した、６世紀末〜７世紀初めの教皇は誰か。"
+  },
+  {
+    "answer": "レオン３世",
+    "category": "ビザンツ帝国・フランク王国/ローマ＝カトリック",
+    "chapter": "5",
+    "number": "38",
+    "question": "聖像禁止令を発布したビザンツ皇帝は誰か。"
+  },
+  {
+    "answer": "ヴェルダン条約",
+    "category": "神聖ローマとフランスの誕生/ノルマン人の侵入",
+    "chapter": "5",
+    "number": "39",
+    "question": "フランク王国を３分した、843年の条約は何か。"
+  },
+  {
+    "answer": "メルセン条約",
+    "category": "神聖ローマとフランスの誕生/ノルマン人の侵入",
+    "chapter": "5",
+    "number": "39",
+    "question": "ロタール1世の死後、弟２人が中部フランクの北部を分割して、王国を最終的に３分した870年の条約は何か。"
+  },
+  {
+    "answer": "ヨハネス12世",
+    "category": "神聖ローマとフランスの誕生/ノルマン人の侵入",
+    "chapter": "5",
+    "number": "39",
+    "question": "オットー1世にローマ皇帝の帝冠を授けた教皇は誰か。"
+  },
+  {
+    "answer": "マジャール人",
+    "category": "神聖ローマとフランスの誕生/ノルマン人の侵入",
+    "chapter": "5",
+    "number": "39",
+    "question": "東フランク王国により、955年のレヒフェルトの戦いで西進を阻まれた、ウラル語系民族は何か。"
+  },
+  {
+    "answer": "962年",
+    "category": "神聖ローマとフランスの誕生/ノルマン人の侵入",
+    "chapter": "5",
+    "number": "39",
+    "question": "オットー1世がローマ皇帝の帝冠を授かったのは西暦何年か。"
+  },
+  {
+    "answer": "神聖ローマ帝国",
+    "category": "神聖ローマとフランスの誕生/ノルマン人の侵入",
+    "chapter": "5",
+    "number": "39",
+    "question": "オットー1世の戴冠は、のちにある帝国の成立とみなされた。成立した帝国は何か。"
+  },
+  {
+    "answer": "ユーグ＝カペー",
+    "category": "神聖ローマとフランスの誕生/ノルマン人の侵入",
+    "chapter": "5",
+    "number": "39",
+    "question": "987年、西フランクでカロリング朝が断絶したのち、パリ伯が新国王に選ばれた。このパリ伯は誰か。"
+  },
+  {
+    "answer": "ヴァイキング",
+    "category": "神聖ローマとフランスの誕生/ノルマン人の侵入",
+    "chapter": "5",
+    "number": "39",
+    "question": "「入江の人」を意味すると考えられる、ノルマン人の別称は何か。"
+  },
+  {
+    "answer": "スカンディナヴィア半島・ユトランド半島・バルト海沿岸",
+    "category": "神聖ローマとフランスの誕生/ノルマン人の侵入",
+    "chapter": "5",
+    "number": "39",
+    "question": "ノルマン人の原住地を一つ答えなさい。"
+  },
+  {
+    "answer": "ロロ",
+    "category": "神聖ローマとフランスの誕生/ノルマン人の侵入",
+    "chapter": "5",
+    "number": "39",
+    "question": "10世紀初め、西フランク王から北フランスの公爵に封じられたノルマン人の首長は誰か。"
+  },
+  {
+    "answer": "ルッジェーロ2世",
+    "category": "神聖ローマとフランスの誕生/ノルマン人の侵入",
+    "chapter": "5",
+    "number": "39",
+    "question": "両シチリア王国を建てた人物は誰か。"
+  },
+  {
+    "answer": "パレルモ",
+    "category": "神聖ローマとフランスの誕生/ノルマン人の侵入",
+    "chapter": "5",
+    "number": "39",
+    "question": "両シチリア王国の首都はどこか。"
+  },
+  {
+    "answer": "エグバート",
+    "category": "神聖ローマとフランスの誕生/ノルマン人の侵入",
+    "chapter": "5",
+    "number": "39",
+    "question": "９世紀前半、ヘプターキーを統一し、最初のイングランド王国を建てた王は誰か。"
+  },
+  {
+    "answer": "アルフレッド大王",
+    "category": "神聖ローマとフランスの誕生/ノルマン人の侵入",
+    "chapter": "5",
+    "number": "39",
+    "question": "来襲したノルマン（デーン）人を撃退して、９世紀後半にアングロ＝サクソン王国を再統一したイングランド王は誰か。"
+  },
+  {
+    "answer": "クヌート",
+    "category": "神聖ローマとフランスの誕生/ノルマン人の侵入",
+    "chapter": "5",
+    "number": "39",
+    "question": "1016年、イングランドを征服して、デーン朝を開いた人物は誰か。"
+  },
+  {
+    "answer": "1066年",
+    "category": "神聖ローマとフランスの誕生/ノルマン人の侵入",
+    "chapter": "5",
+    "number": "39",
+    "question": "ノルマンディー公ウィリアムによるノルマン＝コンクェストは西暦何年におきた出来事か。"
+  },
+  {
+    "answer": "ウィリアム1世",
+    "category": "神聖ローマとフランスの誕生/ノルマン人の侵入",
+    "chapter": "5",
+    "number": "39",
+    "question": "ノルマン朝を創始したノルマンディー公ウィリアムの、イングランド王としての名は何か。"
+  },
+  {
+    "answer": "ノヴゴロド国",
+    "category": "神聖ローマとフランスの誕生/ノルマン人の侵入",
+    "chapter": "5",
+    "number": "39",
+    "question": "862年、ノルマン系ルーシによって商業都市国家が建設された。ロシアの起源とされるこの国は何か。"
+  },
+  {
+    "answer": "リューリク",
+    "category": "神聖ローマとフランスの誕生/ノルマン人の侵入",
+    "chapter": "5",
+    "number": "39",
+    "question": "９世紀後半、スウェーデン地方のノルマン人ルーシを率いてスラヴ人地域に入った首長は誰か。"
+  },
+  {
+    "answer": "キエフ公国",
+    "category": "神聖ローマとフランスの誕生/ノルマン人の侵入",
+    "chapter": "5",
+    "number": "39",
+    "question": "オレグ率いる一派が元の国家から南下し、９世紀後半に建てた国は何か。"
+  },
+  {
+    "answer": "双務的契約",
+    "category": "封建社会の成立",
+    "chapter": "5",
+    "number": "40",
+    "question": "中世ヨーロッパの封建制下で、主君と家臣の双方を拘束した取り決めを何と呼ぶか。"
+  },
+  {
+    "answer": "恩貸地制",
+    "category": "封建社会の成立",
+    "chapter": "5",
+    "number": "40",
+    "question": "封建的主従関係の構成要素の一つとなった、ローマ帝国末期に開始された、土地をめぐる制度は何か。"
+  },
+  {
+    "answer": "従士制",
+    "category": "封建社会の成立",
+    "chapter": "5",
+    "number": "40",
+    "question": "封建的主従関係の構成要素の一つとなった、有力者と自由民とのあいだの保護・忠誠に関する古ゲルマンの風習は何か。"
+  },
+  {
+    "answer": "軍役",
+    "category": "封建社会の成立",
+    "chapter": "5",
+    "number": "40",
+    "question": "中世ヨーロッパの封建制度において、臣下が領主に対して封土の代償として提供した、戦争への参加義務を何というか。"
+  },
+  {
+    "answer": "騎士",
+    "category": "封建社会の成立",
+    "chapter": "5",
+    "number": "40",
+    "question": "多くが小領主で、騎乗して戦う戦士階級の人びとを何と呼ぶか。"
+  },
+  {
+    "answer": "賦役・貢納",
+    "category": "封建社会の成立",
+    "chapter": "5",
+    "number": "40",
+    "question": "領主に対する農民の労働地代・生産物地代をそれぞれ何というか。"
+  },
+  {
+    "answer": "移転・職業選択",
+    "category": "封建社会の成立",
+    "chapter": "5",
+    "number": "40",
+    "question": "農奴にはどのような身体的自由がないか、二つ答えなさい。"
+  },
+  {
+    "answer": "領主直営地",
+    "category": "封建社会の成立",
+    "chapter": "5",
+    "number": "40",
+    "question": "荘園制において、農奴が領主のために直接耕作し、その収穫物が領主の収入となる土地を何というか。"
+  },
+  {
+    "answer": "農民保有地",
+    "category": "封建社会の成立",
+    "chapter": "5",
+    "number": "40",
+    "question": "荘園制において、農民が領主から貸与され、一部を貢納し、自らの生計のために耕作する土地を何というか。"
+  },
+  {
+    "answer": "共同利用地",
+    "category": "封建社会の成立",
+    "chapter": "5",
+    "number": "40",
+    "question": "中世ヨーロッパの荘園において、村の住民が放牧や薪の採取などに共同で利用できた土地を何というか。"
+  },
+  {
+    "answer": "十分の一税",
+    "category": "封建社会の成立",
+    "chapter": "5",
+    "number": "40",
+    "question": "農民が教会に納めた税を何と呼ぶか。"
+  },
+  {
+    "answer": "領主裁判権",
+    "category": "封建社会の成立",
+    "chapter": "5",
+    "number": "40",
+    "question": "領主が領民に行使した裁判権を何と呼ぶか。"
+  },
+  {
+    "answer": "不輸不入権",
+    "category": "封建社会の成立",
+    "chapter": "5",
+    "number": "40",
+    "question": "自分の支配地に関して、領主が国王やその官吏の立ち入りと職務執行を免除された権利を何と呼ぶか。"
+  },
+  {
+    "answer": "三圃制",
+    "category": "封建社会の成立",
+    "chapter": "5",
+    "number": "40",
+    "question": "10～11世紀頃から始まった、秋耕地・春耕地・休耕地に３分して、３年で一巡させる農法は何か。"
+  },
+  {
+    "answer": "アッラー、天使、啓典、預言者、来世、定命",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "イスラームの教えである六信を答えなさい。"
+  },
+  {
+    "answer": "信仰告白、礼拝、喜捨、断食、巡礼",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "イスラームの教えである五行を答えなさい。"
+  },
+  {
+    "answer": "サラート",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "イスラーム教の集団礼拝のことをカタカナで何というか。"
+  },
+  {
+    "answer": "バスラ、クーファ/フスタート/カイラワーン",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "ミスルの名前を答えなさい（イラク２つ、エジプト１つ、チュニジア１つ）"
+  },
+  {
+    "answer": "ハワーリジュ派",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "アリーを暗殺した、イスラーム最初の分派とされる戒律に厳格な過激派は何か。"
+  },
+  {
+    "answer": "岩のドーム",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "ムハンマドが昇天したとされる、イェルサレムに建設された、アブドゥルマリク時代の建築物は何か。"
+  },
+  {
+    "answer": "アブドゥルマリク",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "アラビア語が公用語化された、ウマイヤ朝第５代カリフは誰か。"
+  },
+  {
+    "answer": "ウマイヤ・モスク",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "8世紀初め、ダマスクスに建てられた現存する世界最古のモスクは何か。"
+  },
+  {
+    "answer": "ワリード1世",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "ウマイヤ・モスクを建て、711年には西ゴート王国を滅ぼしたウマイヤ朝カリフは誰か。"
+  },
+  {
+    "answer": "ホラーサーン",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "アッバース家が拠点としていた地域はどこか。"
+  },
+  {
+    "answer": "ワズィール",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "アッバース朝２代目カリフのマンスールが設置した宰相職は何か。"
+  },
+  {
+    "answer": "イマーム",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "シーア派の聖俗両権を握った最高指導者の称号は何か。"
+  },
+  {
+    "answer": "イスマーイール派",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "ファーティマ朝は、シーア派の中の何派を信仰したか。"
+  },
+  {
+    "answer": "十二イマーム派",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "ブワイフ朝は、シーア派の中の何派を信仰したか。"
+  },
+  {
+    "answer": "ザンジュの乱",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "869年に現在のイラクで黒人の農業奴隷が起こした反乱は何か。"
+  },
+  {
+    "answer": "アグラブ朝",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "ファーティマ朝に滅ぼされたチュニジアのイスラーム王朝は何か。"
+  },
+  {
+    "answer": "『アルジャブラ』",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "アッバース朝に仕え、代数学を確立したフワーリズミーが残した書物は何か。"
+  },
+  {
+    "answer": "ファルガーニー",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "アッバース朝時代に活躍し、『天文学集成』を著してイスラーム天文学の発展に貢献した学者は誰か。"
+  },
+  {
+    "answer": "民会",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "大移動前のゲルマン社会で、部族の重要問題を議論した会議名は何か。"
+  },
+  {
+    "answer": "ウァレンス",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "西ゴート人がアドリアノープルの戦いで敗死させたローマ皇帝は誰か。"
+  },
+  {
+    "answer": "レオ1世",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "452年、ローマに入ったアッティラを説得し、侵入を断念させた教皇は誰か。"
+  },
+  {
+    "answer": "アウグストゥルス",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "西ローマ帝国滅亡時の、最後の皇帝は誰か。"
+  },
+  {
+    "answer": "テオドリック",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "フン人監視下からの脱出を率い、493年に東ゴート王国を建国した人物は誰か。"
+  },
+  {
+    "answer": "ガイセリック",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "ヴァンダル王国の国王で、455年にローマを略奪した人物は誰か。"
+  },
+  {
+    "answer": "アラリック",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "西ゴート王国の国王で、410年にローマを占領・略奪した人物は誰か。"
+  },
+  {
+    "answer": "トレド",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "西ゴート王国の都はどこか。"
+  },
+  {
+    "answer": "アーヘン",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "カール大帝がイギリスから学僧アルクインを招き、宮廷学校を設立した都市はどこか。"
+  },
+  {
+    "answer": "ルートヴィヒ1世",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "カール大帝の息子で、その後を継いだ人物は誰か。"
+  },
+  {
+    "answer": "東フランク王国：ルートヴィヒ2世、中部フランク王国：ロタール1世、西フランク王国：シャルル2世",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "ヴェルダン条約で東フランク王国・中部フランク王国・西フランク王国の国王となった人物をそれぞれ答えなさい。"
+  },
+  {
+    "answer": "ハインリヒ1世",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "東フランク王国で、919年にザクセン朝を創始した人物は誰か。"
+  },
+  {
+    "answer": "ヨハネス12世",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "962年にオットー1世にローマ皇帝冠を授けた教皇は誰か。"
+  },
+  {
+    "answer": "グレゴリウス1世",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "ローマ教会の首位権を確立し、アングロ＝サクソン人への布教を行った6世紀末前後の教皇は誰か。"
+  },
+  {
+    "answer": "1054年",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "ローマとコンスタンティノープルの東西教会が相互破門により完全分離したのは西暦何年か。"
+  },
+  {
+    "answer": "アントニオス",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "3、4世紀にエジプトの砂漠で禁欲と苦行を実践し、修道院の起源とされる人物は誰か。"
+  },
+  {
+    "answer": "ベルナルドゥス",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "シトー修道院の改革者で、ブルゴーニュ出身の人物は誰か。"
+  },
+  {
+    "answer": "アッシジ",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "フランチェスコ修道会が置かれたイタリアの地名は何か。"
+  },
+  {
+    "answer": "クリュニー修道院",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "グレゴリウス7世の出身修道院はどこか。"
+  },
+  {
+    "answer": "建国者：ルッジェーロ2世、都：パレルモ",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "両シチリア王国の建国者と都をそれぞれ答えなさい。"
+  },
+  {
+    "answer": "ヘースティングズの戦い",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "1066年、ノルマン征服の際にノルマンディー公ウィリアムがイングランド軍を撃破した戦いは何か。"
+  },
+  {
+    "answer": "ルーン文字",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "ノルマン人が石碑に刻んだ、「神秘」を意味する独特の文字は何か。"
+  },
+  {
+    "answer": "オレグ",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "リューリクの部下で、882年にキエフ公国を立てた人物は誰か。"
+  },
+  {
+    "answer": "ローマ帝国：恩貸地制度、ゲルマン人社会：従士制",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "中世ヨーロッパの封建制度の基礎となったローマ帝国とゲルマン人社会の制度名をそれぞれ答えなさい。"
+  },
+  {
+    "answer": "開放耕地制",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "農民保有地を垣や堀などで仕切らずに重量有輪棃で耕作しやすいようにした制度名は何か。"
+  },
+  {
+    "answer": "ヨーマン",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "14世紀以降のイギリスに登場した、ジェントリと農奴の中間の中規模農民層のことを何と呼ぶか。"
+  },
+  {
+    "answer": "ボスフォラス海峡",
+    "category": "難関私大対策",
+    "chapter": "5",
+    "number": "Z",
+    "question": "コンスタンティノープルが面する海峡は何か。"
+  },
+  {
+    "answer": "サーマーン朝",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "９世紀後半に成立し、中央アジアからイラン東部を支配したイラン系イスラーム王朝は何か。"
+  },
+  {
+    "answer": "マムルーク",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "９世紀以後、イスラーム諸王朝の軍事力の中心となったトルコ人などの白人系奴隷を何と呼ぶか。"
+  },
+  {
+    "answer": "カラハン朝",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "10世紀末にサーマーン朝を倒し、中央アジアを支配下においた、トルコ系最初のイスラーム王朝は何か。"
+  },
+  {
+    "answer": "トルキスタン",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "中央アジアに位置し、トルコ系民族が多く居住する地域であり、歴史的に東西交易の要衝であった地を何というか。"
+  },
+  {
+    "answer": "ガズナ朝",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "10世紀後半、サーマーン朝のマムルークがアフガニスタンを中心に建てたイスラーム王朝は何か。"
+  },
+  {
+    "answer": "ゴール朝",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "12世紀半ばにアフガニスタンで自立し、その後、ガズナ朝を滅ぼしたイスラーム王朝は何か。"
+  },
+  {
+    "answer": "デリー＝スルタン朝",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "1206〜1526年まで、デリーを都に興亡した５つのイスラーム王朝を何と総称するか。"
+  },
+  {
+    "answer": "アイバク",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "奴隷王朝を建てた、ゴール朝のマムルーク出身の武将は誰か。"
+  },
+  {
+    "answer": "ヨーガ",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "インドに伝わる、心を静め、精神を統一してきたえる修行方法は、何と呼ばれるか。"
+  },
+  {
+    "answer": "ダウ船",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "ムスリム商人がインド洋交易で使用した、三角帆をもつ木造船を何と呼ぶか。"
+  },
+  {
+    "answer": "ジャンク船",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "10世紀頃中国で建造された遠洋航海用の大型木造帆船は何と呼ばれるか。"
+  },
+  {
+    "answer": "マラッカ王国",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "14世紀末頃からマレー半島西岸の港市を中心に成立し、15世紀半ばに支配階級がイスラーム教に改宗した国家は何か。"
+  },
+  {
+    "answer": "アチェ王国",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "15世紀末から20世紀初めまで、スマトラ島北部に存在した港市国家は何か。"
+  },
+  {
+    "answer": "マタラム王国",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "16世紀末、マジャパヒト王国に代わってジャワ島東部に成立したイスラーム国家は何か。"
+  },
+  {
+    "answer": "アクスム王国",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "紀元前後頃エチオピア高原に成立し、後４世紀にクシュ王国を滅ぼした国は何か。"
+  },
+  {
+    "answer": "ニジェール川",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "ギニア高原より発し、ギニア湾に注ぐ西アフリカ一の大河は何か。"
+  },
+  {
+    "answer": "ガーナ王国",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "７世紀頃、西アフリカのニジェール川上流に成立した非イスラームの黒人王国は何か。"
+  },
+  {
+    "answer": "マリ王国",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "13世紀前半〜15世紀後半、ニジェール川上流と西アフリカを支配した黒人王国は何か。"
+  },
+  {
+    "answer": "トンブクトゥ",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "11世紀以降サハラ交易の終点として栄え、西アフリカにおけるイスラーム文化の中心地となったマリ王国の都はどこか。"
+  },
+  {
+    "answer": "マンサ＝ムーサ",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "14世紀にマリ王国の最盛期を現出し、またメッカ巡礼を行った王は誰か。"
+  },
+  {
+    "answer": "ソンガイ王国",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "15世紀後半に、マリ王国を滅ぼしてニジェール川流域に建てられた黒人王国は何か。"
+  },
+  {
+    "answer": "輸出：金　輸入：塩",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "サハラ交易において、西アフリカの国々が輸出し、北アフリカから輸入していた代表的な交易品をそれぞれ答えなさい。"
+  },
+  {
+    "answer": "マリンディ",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "アフリカ東岸の港市の一つで、インド洋貿易で繁栄し、鄭和の艦隊やヴァスコ＝ダ＝ガマが来航したのはどこか。"
+  },
+  {
+    "answer": "スワヒリ語",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "「海岸に住む人」を意味し、東アフリカ海岸部の住民の言語とアラビア語が混じり合って生まれた言語を何と呼ぶか。"
+  },
+  {
+    "answer": "モノモタパ王国",
+    "category": "イスラーム教の諸地域への伝播",
+    "chapter": "6",
+    "number": "41",
+    "question": "11〜19世紀に、アフリカ南部のザンベジ川流域を支配し、インド洋交易で栄えた黒人王国は何か。"
+  },
+  {
+    "answer": "トゥグリル＝ベク",
+    "category": "西アジアの動向①",
+    "chapter": "6",
+    "number": "42",
+    "question": "セルジューク朝の建国者は誰か。"
+  },
+  {
+    "answer": "スルタン",
+    "category": "西アジアの動向①",
+    "chapter": "6",
+    "number": "42",
+    "question": "セルジューク朝がバグダード入城後、アッバース朝カリフから授かった、世俗君主を意味する称号は何か。"
+  },
+  {
+    "answer": "マンジケルト(マラズギルト)の戦い",
+    "category": "西アジアの動向①",
+    "chapter": "6",
+    "number": "42",
+    "question": "十字軍派遣のきっかけともなった、セルジューク朝がアナトリアに進出した1071年の戦いは何か。"
+  },
+  {
+    "answer": "ニザーム＝アルムルク",
+    "category": "西アジアの動向①",
+    "chapter": "6",
+    "number": "42",
+    "question": "セルジューク朝で諸制度を整備するとともに、学芸を奨励したイラン系の宰相は誰か。"
+  },
+  {
+    "answer": "ニザーミーヤ学院",
+    "category": "西アジアの動向①",
+    "chapter": "6",
+    "number": "42",
+    "question": "セルジューク朝が各地に開いた、学芸奨励のためのマドラサの名称は何か。"
+  },
+  {
+    "answer": "イクター制",
+    "category": "西アジアの動向①",
+    "chapter": "6",
+    "number": "42",
+    "question": "セルジューク朝が整備した徴税制度は何か。"
+  },
+  {
+    "answer": "スーフィズム",
+    "category": "西アジアの動向①",
+    "chapter": "6",
+    "number": "42",
+    "question": "イスラームの形式主義化に対し、「神との一体」を求める禁欲的な修行を重視した考え方は何と呼ばれるか。"
+  },
+  {
+    "answer": "ガザーリー",
+    "category": "西アジアの動向①",
+    "chapter": "6",
+    "number": "42",
+    "question": "セルジューク朝期のイラン系神学者で、のちにスーフィズムの理論化も行った人物は誰か。"
+  },
+  {
+    "answer": "フレグ",
+    "category": "西アジアの動向①",
+    "chapter": "6",
+    "number": "42",
+    "question": "1258年にアッバース朝を滅ぼしたモンゴル人は誰か。"
+  },
+  {
+    "answer": "イル＝ハン国（フレグ＝ウルス）",
+    "category": "西アジアの動向①",
+    "chapter": "6",
+    "number": "42",
+    "question": "アッバース朝の滅亡後、タブリーズを都にイランに成立したモンゴル政権は何か。"
+  },
+  {
+    "answer": "ガザン＝ハン",
+    "category": "西アジアの動向①",
+    "chapter": "6",
+    "number": "42",
+    "question": "イスラーム教を国教とした、イル＝ハン国の第７代の君主は誰か。"
+  },
+  {
+    "answer": "ラシード＝アッディーン",
+    "category": "西アジアの動向①",
+    "chapter": "6",
+    "number": "42",
+    "question": "イル＝ハン国の宰相で、歴史書『集史』を編纂したイラン人政治家・歴史家は誰か。"
+  },
+  {
+    "answer": "サラーフ＝アッディーン(サラディン）",
+    "category": "西アジアの動向②",
+    "chapter": "6",
+    "number": "43",
+    "question": "ザンギー朝に仕えていたが、12世紀後半エジプトの実権を握って自立し、アイユーブ朝を建てた人物は誰か。"
+  },
+  {
+    "answer": "マムルーク朝",
+    "category": "西アジアの動向②",
+    "chapter": "6",
+    "number": "43",
+    "question": "アイユーブ朝の軍人奴隷出身の軍司令官が、1250年にカイロを都に建てたスンナ派王朝は何か。"
+  },
+  {
+    "answer": "バイバルス",
+    "category": "西アジアの動向②",
+    "chapter": "6",
+    "number": "43",
+    "question": "マムルーク朝の第５代スルタンで、モンゴル軍の侵入を撃退し、またシリアから十字軍を最終的に撃退した人物は誰か。"
+  },
+  {
+    "answer": "カーリミー商人",
+    "category": "西アジアの動向②",
+    "chapter": "6",
+    "number": "43",
+    "question": "アイユーブ朝とマムルーク朝の保護下で、アレクサンドリアを中心に香辛料貿易を独占した商人団を何と呼ぶか。"
+  },
+  {
+    "answer": "カイロ",
+    "category": "西アジアの動向②",
+    "chapter": "6",
+    "number": "43",
+    "question": "ファーティマ朝、アイユーブ朝、マムルーク朝に共通する首都はどこか。"
+  },
+  {
+    "answer": "ペスト",
+    "category": "西アジアの動向②",
+    "chapter": "6",
+    "number": "43",
+    "question": "マムルーク朝衰退の一因である、13世紀にヨーロッパを中心に大流行した病気は何か。"
+  },
+  {
+    "answer": "マグリブ",
+    "category": "西アジアの動向②",
+    "chapter": "6",
+    "number": "43",
+    "question": "アラビア語で「日の没する地」を意味する、エジプト以西の北アフリカ一帯を指したことばは何か。"
+  },
+  {
+    "answer": "ベルベル人",
+    "category": "西アジアの動向②",
+    "chapter": "6",
+    "number": "43",
+    "question": "とくにモロッコ・アルジェリアの先住民を何と呼ぶか。"
+  },
+  {
+    "answer": "ムラービト朝",
+    "category": "西アジアの動向②",
+    "chapter": "6",
+    "number": "43",
+    "question": "11世紀後半、モロッコに建て、サハラ地域やイベリア半島に進出したイスラーム王朝は何か。"
+  },
+  {
+    "answer": "ムワッヒド朝",
+    "category": "西アジアの動向②",
+    "chapter": "6",
+    "number": "43",
+    "question": "12世紀前半にモロッコで成立し、ムラービト朝を滅ぼし、イベリア半島にも進出したイスラーム王朝は何か。"
+  },
+  {
+    "answer": "ガーナ王国",
+    "category": "西アジアの動向②",
+    "chapter": "6",
+    "number": "43",
+    "question": "ムラービト朝が滅ぼした、西アフリカの黒人国家はどこか。"
+  },
+  {
+    "answer": "マラケシュ",
+    "category": "西アジアの動向②",
+    "chapter": "6",
+    "number": "43",
+    "question": "ムラービト朝、ムワッヒド朝の都はどこか。"
+  },
+  {
+    "answer": "レコンキスタ",
+    "category": "西アジアの動向②",
+    "chapter": "6",
+    "number": "43",
+    "question": "８世紀前半からキリスト教勢力によってイベリア半島で展開された、イスラーム勢力からの半島奪回運動を何と呼ぶか。"
+  },
+  {
+    "answer": "ナスル朝",
+    "category": "西アジアの動向②",
+    "chapter": "6",
+    "number": "43",
+    "question": "イベリア半島最後のイスラーム王朝は何か。"
+  },
+  {
+    "answer": "グラナダ",
+    "category": "西アジアの動向②",
+    "chapter": "6",
+    "number": "43",
+    "question": "1492年、キリスト教徒に陥落させられた、ナスル朝の首都はどこか。"
+  },
+  {
+    "answer": "アルハンブラ宮殿",
+    "category": "西アジアの動向②",
+    "chapter": "6",
+    "number": "43",
+    "question": "13世紀より建設されたナスル朝の宮殿で、西方イスラーム世界の代表的建築は何か。"
+  },
+  {
+    "answer": "サッファール朝",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "903年にサーマーン朝に滅ぼされたイスラーム王朝は何か。"
+  },
+  {
+    "answer": "ブハラ",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "中央アジア初のイラン系イスラーム王朝であるサーマーン朝の都はどこか。"
+  },
+  {
+    "answer": "イドリース朝",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "８世紀末、アリーの子孫がベルベル人の支持でモロッコに建てたイスラーム王朝はどこか。"
+  },
+  {
+    "answer": "トゥールーン朝",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "9世紀半ば、アッバース朝からエジプト総督が自立して建て、シリアにまで拡大したイスラーム王朝はどこか。"
+  },
+  {
+    "answer": "マリク＝シャー",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "セルジューク朝の全盛期を現出した君主は誰か。"
+  },
+  {
+    "answer": "アルプ＝アルスラーン",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "1071年のマンジケルトの戦いでビザンツ帝国を破ったセルジューク朝の君主は誰か。"
+  },
+  {
+    "answer": "ヒッティーンの戦い",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "1187年サラーフ＝アッディーンが十字軍を撃退し、イェルサレム王国を滅ぼした戦いは何か。"
+  },
+  {
+    "answer": "バイバルス",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "マムルーク朝の全盛期を現出した君主は誰か。"
+  },
+  {
+    "answer": "アインジャールートの戦い",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "1260年、バイバルスがフラグ率いるモンゴル軍を撃退した戦いは何か。"
+  },
+  {
+    "answer": "ホラズム＝シャー朝",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "セルジューク朝のトルコ系奴隷がアム川下流域の太守に任じられ建て、チンギス＝カンにより滅亡したイスラーム王朝はどこか。"
+  },
+  {
+    "answer": "アルプテギン",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "サーマーン朝から独立したガズナ朝の建国者は誰か。"
+  },
+  {
+    "answer": "マフムード",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "ガズナ朝の全盛期を築き、インド遠征でヒンドゥー寺院を破壊した君主は誰か。"
+  },
+  {
+    "answer": "クトゥブ＝ミナール",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "奴隷王朝の建国者アイバクが建設を命令した建築物は何か。"
+  },
+  {
+    "answer": "ジャラールッディーン＝ハルジー",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "ハルジー朝の建国者は誰か。"
+  },
+  {
+    "answer": "バフマニー朝",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "1347年、トゥグルク朝から自立し、デカン高原を支配した王朝はどこか。"
+  },
+  {
+    "answer": "ヒズル＝ハーン",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "トゥグルク朝の地方長官から自立してサイイド朝を建てた人物は誰か。"
+  },
+  {
+    "answer": "アフガン系",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "デリー＝スルタン朝のうち、他のトルコ系４王朝に対し、ロディー朝は何系か。"
+  },
+  {
+    "answer": "ニジェール川",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "西アフリカのギニア高原からギニア湾に至る大河は何か。"
+  },
+  {
+    "answer": "アスキア＝ムハンマド",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "ソンガイ王国の全盛期を現出し、西アフリカの隊商都市の大部分を支配した君主は誰か。"
+  },
+  {
+    "answer": "カネム＝ボルヌー王国",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "サハラ南縁チャド湖周辺を支配し、11世紀頃にイスラーム教を受容し、16世紀後半に全盛期を迎えた国家はどこか。"
+  },
+  {
+    "answer": "ザンベジ川",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "東アフリカのモノモタパ王国の北川を流れる河川は何か。"
+  },
+  {
+    "answer": "サアディー",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "セルジューク朝のニザーミーヤ学院で学び、『薔薇園』を残した詩人は誰か。"
+  },
+  {
+    "answer": "マームーン",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "父ハールーン＝アッラシードがバグダードに立てた「知恵の宝庫」を改めて、830年頃に「知恵の館」を建設したカリフは誰か。"
+  },
+  {
+    "answer": "イブン＝ファドラーン",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "ロシア方面の旅行記『ヴォルガ＝ブルガール紀行』の著者は誰か。"
+  },
+  {
+    "answer": "イドリーシー",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "モロッコ生まれの地理学者で、世界地図を残した学者は誰か。"
+  },
+  {
+    "answer": "ジャラーリー暦",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "『ルバイヤート』を残したウマル＝ハイヤームが定めた暦は何か。"
+  },
+  {
+    "answer": "フィルドゥシー",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "ガズナ朝に仕え、イランの民族叙事詩『シャー＝ナーメ』を残した詩人は誰か。"
+  },
+  {
+    "answer": "ビールーニー",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "ガズナ朝のマフムードに同行し、『インドの書』を残した人物は誰か。"
+  },
+  {
+    "answer": "イブン＝アル＝ハイサム",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "『光学』を著し、視覚や光の屈折に関する実験を通じてイスラーム自然科学の発展に寄与した物理学者は誰か。"
+  },
+  {
+    "answer": "アル＝ラーズィー",
+    "category": "難関私大対策",
+    "chapter": "6",
+    "number": "Z",
+    "question": "イスラーム世界で活躍し、『医学集成』を著して天然痘と麻疹の症状を区別するなど臨床医学の発展に貢献した医師は誰か。"
+  },
+  {
+    "answer": "聖職売買/聖職者の妻帯",
+    "category": "教会の権威",
+    "chapter": "7",
+    "number": "44",
+    "question": "修道院運動の背景となる、ローマ＝カトリック教会の腐敗に関して、具体的な事例を１つ答えなさい。"
+  },
+  {
+    "answer": "ベネディクトゥス",
+    "category": "教会の権威",
+    "chapter": "7",
+    "number": "44",
+    "question": "６世紀前半、西方での修道院運動を開始した、イタリア人の修道者は誰か。"
+  },
+  {
+    "answer": "モンテ＝カシノ",
+    "category": "教会の権威",
+    "chapter": "7",
+    "number": "44",
+    "question": "ベネディクト修道会は、中部イタリアの何と呼ばれる山にあるか。"
+  },
+  {
+    "answer": "「祈り、かつ働け」",
+    "category": "教会の権威",
+    "chapter": "7",
+    "number": "44",
+    "question": "ベネディクト修道会は「清貧・純潔・服従」の戒律とともに、信仰と労働を重視するモットーを掲げた。それは何か。"
+  },
+  {
+    "answer": "クリュニー修道院",
+    "category": "教会の権威",
+    "chapter": "7",
+    "number": "44",
+    "question": "10世紀初めフランス中東部に設立され、11世紀以降、教会刷新運動の中心となった修道院は何か。"
+  },
+  {
+    "answer": "シトー修道会",
+    "category": "教会の権威",
+    "chapter": "7",
+    "number": "44",
+    "question": "11世紀末にフランス中部に創設され、12世紀以降、開墾運動の中心として発展した修道会は何か。"
+  },
+  {
+    "answer": "フランチェスコ修道会",
+    "category": "教会の権威",
+    "chapter": "7",
+    "number": "44",
+    "question": "「アッシジの聖者」と呼ばれた修道士が創始した修道会は何か。"
+  },
+  {
+    "answer": "ドミニコ修道会",
+    "category": "教会の権威",
+    "chapter": "7",
+    "number": "44",
+    "question": "南フランスでの異端カタリ派に対抗する活動ののち創始した托鉢修道会は何か。"
+  },
+  {
+    "answer": "托鉢修道会",
+    "category": "教会の権威",
+    "chapter": "7",
+    "number": "44",
+    "question": "13世紀に、修道院の封建領主化と富裕化を批判して誕生した、新しいタイプの修道会を何と総称するか。"
+  },
+  {
+    "answer": "グレゴリウス7世",
+    "category": "教会の権威",
+    "chapter": "7",
+    "number": "44",
+    "question": "11世紀後半の叙任権闘争で、神聖ローマ皇帝を破門して屈服させた教皇は誰か。"
+  },
+  {
+    "answer": "カノッサの屈辱",
+    "category": "教会の権威",
+    "chapter": "7",
+    "number": "44",
+    "question": "1077年、神聖ローマ皇帝が北イタリアで教皇に謝罪し、破門を許された事件を何と呼ぶか。"
+  },
+  {
+    "answer": "ハインリヒ4世",
+    "category": "教会の権威",
+    "chapter": "7",
+    "number": "44",
+    "question": "叙任権闘争の末、破門された神聖ローマ皇帝は誰か。"
+  },
+  {
+    "answer": "聖職叙任権",
+    "category": "教会の権威",
+    "chapter": "7",
+    "number": "44",
+    "question": "高位聖職者を任命する権限のことを何と呼ぶか。"
+  },
+  {
+    "answer": "ヴォルムス協約",
+    "category": "教会の権威",
+    "chapter": "7",
+    "number": "44",
+    "question": "1122年、ときの教皇と皇帝とのあいだで結ばれ、ドイツ領内における叙任権闘争をいちおう終結させた協約は何か。"
+  },
+  {
+    "answer": "ウルバヌス2世",
+    "category": "教会の権威",
+    "chapter": "7",
+    "number": "44",
+    "question": "ビザンツ皇帝から救援を求められ、十字軍を提唱した教皇は誰か。"
+  },
+  {
+    "answer": "インノケンティウス3世",
+    "category": "教会の権威",
+    "chapter": "7",
+    "number": "44",
+    "question": "第４回十字軍を提唱したローマ教皇は誰か。"
+  },
+  {
+    "answer": "「教皇は太陽、皇帝は月」",
+    "category": "教会の権威",
+    "chapter": "7",
+    "number": "44",
+    "question": "教皇権の絶頂期に残されたとされる言葉で、中世ヨーロッパにおいて、教皇権の優位を示すために用いられた比喩は何か。"
+  },
+  {
+    "answer": "東方植民",
+    "category": "十字軍とその影響",
+    "chapter": "7",
+    "number": "45",
+    "question": "12〜14世紀に行われた、ドイツ諸侯・騎士・修道院などによる、エルベ川以東への植民活動を何と呼ぶか。"
+  },
+  {
+    "answer": "重量有輪棃",
+    "category": "十字軍とその影響",
+    "chapter": "7",
+    "number": "45",
+    "question": "アルプス以北の肥沃で重い土壌を耕す目的で開発された、牛馬につけて用い深耕を可能にした鉄製農具は何か。"
+  },
+  {
+    "answer": "クレルモン宗教会議",
+    "category": "十字軍とその影響",
+    "chapter": "7",
+    "number": "45",
+    "question": "1095年、十字軍の派遣が提唱された、フランス中南部で開かれた宗教会議（公会議）は何か。"
+  },
+  {
+    "answer": "ウルバヌス2世",
+    "category": "十字軍とその影響",
+    "chapter": "7",
+    "number": "45",
+    "question": "ビザンツ皇帝から救援を求められ、十字軍を提唱した教皇は誰か。"
+  },
+  {
+    "answer": "1096年",
+    "category": "十字軍とその影響",
+    "chapter": "7",
+    "number": "45",
+    "question": "十字軍が初めて派遣されたのは、西暦何年か。"
+  },
+  {
+    "answer": "イェルサレム王国",
+    "category": "十字軍とその影響",
+    "chapter": "7",
+    "number": "45",
+    "question": "第１回十字軍が聖地回復に成功したのち、残留した戦士に封土を与えて成立した封建国家を何と呼ぶか。"
+  },
+  {
+    "answer": "フリードリヒ1世",
+    "category": "十字軍とその影響",
+    "chapter": "7",
+    "number": "45",
+    "question": "「バルバロッサ」のあだ名をもち、第３回十字軍に参加した神聖ローマ皇帝は誰か。"
+  },
+  {
+    "answer": "フィリップ2世",
+    "category": "十字軍とその影響",
+    "chapter": "7",
+    "number": "45",
+    "question": "第３回十字軍に参加するも、イギリスの王との対立などが原因で途中で撤退をしたフランス国王は誰か。"
+  },
+  {
+    "answer": "リチャード1世",
+    "category": "十字軍とその影響",
+    "chapter": "7",
+    "number": "45",
+    "question": "サラーフ＝アッディーンと戦った、「獅子心王」の名で呼ばれたイギリス国王は誰か。"
+  },
+  {
+    "answer": "インノケンティウス3世",
+    "category": "十字軍とその影響",
+    "chapter": "7",
+    "number": "45",
+    "question": "第４回十字軍を提唱したローマ教皇は誰か。"
+  },
+  {
+    "answer": "ヴェネツィア",
+    "category": "十字軍とその影響",
+    "chapter": "7",
+    "number": "45",
+    "question": "第４回十字軍がコンスタンティノープルを占領した背景にはある都市の商人の要求があった。どこの商人か。"
+  },
+  {
+    "answer": "ラテン帝国",
+    "category": "十字軍とその影響",
+    "chapter": "7",
+    "number": "45",
+    "question": "第４回十字軍がコンスタンティノープルを占領して建てた国は何か。"
+  },
+  {
+    "answer": "ルイ9世",
+    "category": "十字軍とその影響",
+    "chapter": "7",
+    "number": "45",
+    "question": "第6回・第7回十字軍を主導し、「聖王」とも称された中世フランス・カペー朝の国王は誰か。"
+  },
+  {
+    "answer": "アッコン",
+    "category": "十字軍とその影響",
+    "chapter": "7",
+    "number": "45",
+    "question": "1291年、イェルサレム王国の最後の拠点であった都市が陥落し、十字軍時代が終了した。その都市はどこか。"
+  },
+  {
+    "answer": "宗教騎士団",
+    "category": "十字軍とその影響",
+    "chapter": "7",
+    "number": "45",
+    "question": "十字軍遠征の際に、巡礼者の保護や異教徒との戦闘を目的に組織されたものを総称して何というか。"
+  },
+  {
+    "answer": "東方貿易",
+    "category": "十字軍とその影響",
+    "chapter": "7",
+    "number": "45",
+    "question": "十字軍遠征の結果活発になった、北イタリア諸都市が地中海東岸（レヴァント）地域と行った貿易を何と呼ぶか。"
+  },
+  {
+    "answer": "国王",
+    "category": "十字軍とその影響",
+    "chapter": "7",
+    "number": "45",
+    "question": "十字軍遠征の結果、権力が向上したのは、教皇、国王、諸侯・騎士のうちどれか。"
+  },
+  {
+    "answer": "商業ルネサンス",
+    "category": "中世ヨーロッパの商業と人々のくらし",
+    "chapter": "7",
+    "number": "46",
+    "question": "ベルギーの歴史家ピレンヌがとなえた、中世ヨーロッパでの11～12世紀の「商業の復活」の別称は何か。"
+  },
+  {
+    "answer": "遠隔地貿易",
+    "category": "中世ヨーロッパの商業と人々のくらし",
+    "chapter": "7",
+    "number": "46",
+    "question": "ヨーロッパでは地中海圏と北海・バルト海圏とを結ぶ商業活動が活発化した。この商業活動を何と呼ぶか。"
+  },
+  {
+    "answer": "ロンドン",
+    "category": "中世ヨーロッパの商業と人々のくらし",
+    "chapter": "7",
+    "number": "46",
+    "question": "中世ヨーロッパにおいて、羊毛の産地で、大陸に輸出していたブリテン島の都市はどこか。"
+  },
+  {
+    "answer": "フランドル地方",
+    "category": "中世ヨーロッパの商業と人々のくらし",
+    "chapter": "7",
+    "number": "46",
+    "question": "現在のベルギーにあたり、毛織物業が盛んであったネーデルラント南西部の地域名は何か。"
+  },
+  {
+    "answer": "リューベック",
+    "category": "中世ヨーロッパの商業と人々のくらし",
+    "chapter": "7",
+    "number": "46",
+    "question": "バルト海沿岸に位置し、ハンザ同盟の盟主だった都市はどこか。"
+  },
+  {
+    "answer": "ハンザ同盟",
+    "category": "中世ヨーロッパの商業と人々のくらし",
+    "chapter": "7",
+    "number": "46",
+    "question": "リューベックを盟主に、最盛期には100以上の都市が加盟し、商業で繁栄した北海・バルト海一帯の都市同盟は何か。"
+  },
+  {
+    "answer": "シャンパーニュ地方",
+    "category": "中世ヨーロッパの商業と人々のくらし",
+    "chapter": "7",
+    "number": "46",
+    "question": "フランス東北部の地方で、地中海・北海の両商業圏の中間に位置し、大定期市が開かれた地方の名称は何か。"
+  },
+  {
+    "answer": "アウクスブルク",
+    "category": "中世ヨーロッパの商業と人々のくらし",
+    "chapter": "7",
+    "number": "46",
+    "question": "15〜16世紀に銀山経営でフッガー家が台頭した、南ドイツの都市はどこか。"
+  },
+  {
+    "answer": "ミラノ",
+    "category": "中世ヨーロッパの商業と人々のくらし",
+    "chapter": "7",
+    "number": "46",
+    "question": "イタリアにおける都市同盟の盟主ともなった、ロンバルディア地方の都市はどこか。"
+  },
+  {
+    "answer": "フィレンツェ",
+    "category": "中世ヨーロッパの商業と人々のくらし",
+    "chapter": "7",
+    "number": "46",
+    "question": "トスカナ平野にあって毛織物業と金融業で繁栄し、一時メディチ家が市政を独裁した都市はどこか。"
+  },
+  {
+    "answer": "ヴェネツィア",
+    "category": "中世ヨーロッパの商業と人々のくらし",
+    "chapter": "7",
+    "number": "46",
+    "question": "第４回十字軍の際に艦船を提供した、「アドリア海の女王」と呼ばれた港市はどこか。"
+  },
+  {
+    "answer": "ロンバルディア同盟",
+    "category": "中世ヨーロッパの商業と人々のくらし",
+    "chapter": "7",
+    "number": "46",
+    "question": "ミラノを盟主に、神聖ローマ皇帝の南下に対抗した、北イタリア諸都市が結成した都市同盟は何か。"
+  },
+  {
+    "answer": "東方貿易（レヴァント貿易）",
+    "category": "中世ヨーロッパの商業と人々のくらし",
+    "chapter": "7",
+    "number": "46",
+    "question": "北イタリア諸都市が地中海東岸地域と行った貿易を何と呼ぶか。"
+  },
+  {
+    "answer": "香辛料・絹織物",
+    "category": "中世ヨーロッパの商業と人々のくらし",
+    "chapter": "7",
+    "number": "46",
+    "question": "東方貿易で北イタリアの商人がムスリム商人から買い取った商品を２種答えなさい。"
+  },
+  {
+    "answer": "コムーネ",
+    "category": "中世ヨーロッパの商業と人々のくらし",
+    "chapter": "7",
+    "number": "46",
+    "question": "北・中部イタリアで成立した、市民自身が市政を運営する自治都市は、何と呼ばれたか。"
+  },
+  {
+    "answer": "帝国都市",
+    "category": "中世ヨーロッパの商業と人々のくらし",
+    "chapter": "7",
+    "number": "46",
+    "question": "13世紀以降ドイツで成立した、自治権を獲得して皇帝に直属する都市をとくに何と呼ぶか。"
+  },
+  {
+    "answer": "特許状",
+    "category": "中世ヨーロッパの商業と人々のくらし",
+    "chapter": "7",
+    "number": "46",
+    "question": "都市は、国王・封建領主たちから権力の委譲・放棄を認める文書の獲得をめざした。この文書を何と呼ぶか。"
+  },
+  {
+    "answer": "「都市の空気は自由にする」",
+    "category": "中世ヨーロッパの商業と人々のくらし",
+    "chapter": "7",
+    "number": "46",
+    "question": "中世末期、ドイツでは農奴が都市に逃れ、住みつづけると農奴身分から自由になれることを指す諺が生まれた。この諺は何か。"
+  },
+  {
+    "answer": "商業ギルド",
+    "category": "中世ヨーロッパの商業と人々のくらし",
+    "chapter": "7",
+    "number": "46",
+    "question": "13世紀以降、自治都市で市政運営の中心となった大商人による同業組合は何か。"
+  },
+  {
+    "answer": "同職ギルド（ツンフト）",
+    "category": "中世ヨーロッパの商業と人々のくらし",
+    "chapter": "7",
+    "number": "46",
+    "question": "徒弟制度などの厳格な規約をもつ、手工業者の代表たちによる組合を何と呼ぶか。"
+  },
+  {
+    "answer": "フッガー家",
+    "category": "中世ヨーロッパの商業と人々のくらし",
+    "chapter": "7",
+    "number": "46",
+    "question": "アウクスブルク近郊の銀山経営を独占した、15〜16世紀のヨーロッパ最大の金融業者は何家か。"
+  },
+  {
+    "answer": "メディチ家",
+    "category": "中世ヨーロッパの商業と人々のくらし",
+    "chapter": "7",
+    "number": "46",
+    "question": "ルネサンスのとき文芸を保護したことでも知られる、フィレンツェの大富豪は何家か。"
+  },
+  {
+    "answer": "ラテン帝国",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "第４回十字軍がコンスタンティノープルを占領して建てた国は何か。"
+  },
+  {
+    "answer": "メフメト２世",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "ビザンツ帝国を滅ぼした時の、オスマン帝国のスルタンは誰か。"
+  },
+  {
+    "answer": "1453年",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "ビザンツ帝国が滅亡したのは西暦何年か。"
+  },
+  {
+    "answer": "軍管区制(テマ制)",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "ビザンツ帝国で７世紀から開始された、いくつかの区に分け、司令官に軍事・行政の権限を与える地方統治制度を何と呼ぶか。"
+  },
+  {
+    "answer": "ヘラクレイオス１世",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "その治世下で公用語が替わった、テマ制を始めたとされる７世紀前半のビザンツ皇帝は誰か。"
+  },
+  {
+    "answer": "屯田兵制",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "テマ制のもとで、兵士や農民に土地を与え、代わりに兵役義務を課した。これは何と呼ばれるか。"
+  },
+  {
+    "answer": "プロノイア制",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "ビザンツで実施された、有力者に一代限りで国有地・住民の管理を認め、代償に軍役奉仕を課した土地制度を何と呼ぶか。"
+  },
+  {
+    "answer": "ギリシア語",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "７世紀以後、ビザンツ帝国で公用語化した言語は何か。"
+  },
+  {
+    "answer": "イコン美術",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "東方教会で多く用いられた、キリスト・聖者・宗教的情景が描かれた聖像画を何と呼ぶか。"
+  },
+  {
+    "answer": "ドーム・モザイク壁画",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "ビザンツ様式の特徴を２点答えなさい。"
+  },
+  {
+    "answer": "サン＝ヴィターレ聖堂",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "北イタリアのラヴェンナに建設された、ビザンツ様式を代表する聖堂は何か。"
+  },
+  {
+    "answer": "ウラディミル１世",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "10世紀後半、ビザンツ皇帝の妹との結婚を機に、ギリシア正教に改宗したモスクワ大公国の大公は誰か。"
+  },
+  {
+    "answer": "「タタールのくびき」",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "キプチャク＝ハン国によるロシア諸侯の支配を例えたことばは何か。"
+  },
+  {
+    "answer": "モスクワ大公国",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "1480年、キプチャク＝ハン国から自立した国は何か。"
+  },
+  {
+    "answer": "イヴァン３世",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "1480年、キプチャク＝ハン国から自立した国の当時の指導者は誰か。"
+  },
+  {
+    "answer": "イヴァン４世",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "16世紀に皇帝として即位し、専制政治を強化してロシアの中央集権化を進めた「雷帝」と称される君主は誰か。"
+  },
+  {
+    "answer": "ツァーリ",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "ロシアにおける皇帝を意味する称号は何か。"
+  },
+  {
+    "answer": "セルビア人",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "７世紀頃バルカン半島南西部に入り、ギリシア正教を受け入れ、12世紀に王国を建てた南スラヴ系の民族は何か。"
+  },
+  {
+    "answer": "クロアティア人",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "フランク王国に服属してカトリックに改宗し、独立後も、12世紀初めからハンガリーに支配された南スラヴ系の民族は何か。"
+  },
+  {
+    "answer": "ベーメン（ボヘミア）王国",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "現在のチェコにあたり、中世以降ハプスブルク家の支配下に置かれ、神聖ローマ帝国の構成国の一つとされた王国は何か。"
+  },
+  {
+    "answer": "カジミェシュ大王",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "14世紀半ばに全盛期を現出させた、ポーランドの歴史上ただ一人、大王の称号を付与された王は誰か。"
+  },
+  {
+    "answer": "リトアニア＝ポーランド王国",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "14世紀後半、ドイツ騎士団の進出に対抗するため、東ヨーロッパで成立した同君連合国家は何か。"
+  },
+  {
+    "answer": "ヤゲウォ朝",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "クラクフを首都とした、リトアニア＝ポーランド王国の王朝名は何か。"
+  },
+  {
+    "answer": "第１次ブルガリア帝国",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "7世紀末に建国され、ビザンツ帝国と抗争を繰り広げた、スラヴ系を中心とする最初のブルガール人の国家を何というか。"
+  },
+  {
+    "answer": "マジャール人",
+    "category": "ビザンツ帝国・スラヴ人",
+    "chapter": "7",
+    "number": "47",
+    "question": "９世紀末パンノニア（現在のハンガリー盆地一帯）に定住したウラル語系民族は何か。"
+  },
+  {
+    "answer": "黒死病（ペスト）",
+    "category": "封建社会と教皇権の衰退",
+    "chapter": "7",
+    "number": "48",
+    "question": "14世紀半ば、西欧で大流行し、人口の約３分の１を減少させた病気は何か。"
+  },
+  {
+    "answer": "独立自営農民（ヨーマン）",
+    "category": "封建社会と教皇権の衰退",
+    "chapter": "7",
+    "number": "48",
+    "question": "14世紀以降誕生した、農奴身分から解放された農民をイギリスでは何と呼ぶか。"
+  },
+  {
+    "answer": "ジェントリ",
+    "category": "封建社会と教皇権の衰退",
+    "chapter": "7",
+    "number": "48",
+    "question": "中世末期から近世初頭のイギリスで、騎士や富裕な平民が地主化した階層を、何と呼ぶか。"
+  },
+  {
+    "answer": "ジャックリーの乱",
+    "category": "封建社会と教皇権の衰退",
+    "chapter": "7",
+    "number": "48",
+    "question": "封建反動に対し、1358年に北フランスの農民がおこした反乱は何か。"
+  },
+  {
+    "answer": "ギヨーム＝カイエ",
+    "category": "封建社会と教皇権の衰退",
+    "chapter": "7",
+    "number": "48",
+    "question": "ジャックリーの乱の指導者は誰か。"
+  },
+  {
+    "answer": "ワット＝タイラーの乱",
+    "category": "封建社会と教皇権の衰退",
+    "chapter": "7",
+    "number": "48",
+    "question": "1381年にイギリス東南部でおこった農民の反乱は何か。"
+  },
+  {
+    "answer": "ジョン＝ボール",
+    "category": "封建社会と教皇権の衰退",
+    "chapter": "7",
+    "number": "48",
+    "question": "ワット＝タイラーの乱の指導者は、ワット＝タイラーと誰か。"
+  },
+  {
+    "answer": "「アダムが耕しイヴが紡いだ時、誰が貴族だったか」",
+    "category": "封建社会と教皇権の衰退",
+    "chapter": "7",
+    "number": "48",
+    "question": "ジョン＝ボールの発言とされる、身分や血統による優劣を否定し、人間の平等を主張する言葉は何か。"
+  },
+  {
+    "answer": "火砲",
+    "category": "封建社会と教皇権の衰退",
+    "chapter": "7",
+    "number": "48",
+    "question": "戦術を変化させ、騎士階級の没落を早めた兵器は何か。"
+  },
+  {
+    "answer": "廷臣",
+    "category": "封建社会と教皇権の衰退",
+    "chapter": "7",
+    "number": "48",
+    "question": "荘園経営のゆきづまりや戦術の変化で没落した中小貴族や騎士がなった、宮廷で働く官僚を何と呼んだか。"
+  },
+  {
+    "answer": "ボニファティウス8世",
+    "category": "封建社会と教皇権の衰退",
+    "chapter": "7",
+    "number": "48",
+    "question": "聖職者課税問題で、フランス国王と争った教皇は誰か。"
+  },
+  {
+    "answer": "フィリップ4世",
+    "category": "封建社会と教皇権の衰退",
+    "chapter": "7",
+    "number": "48",
+    "question": "聖職者課税問題で全国三部会を招集し、さらに教皇と争ったフランス国王は誰か。"
+  },
+  {
+    "answer": "アナーニ事件",
+    "category": "封建社会と教皇権の衰退",
+    "chapter": "7",
+    "number": "48",
+    "question": "1303年、教皇がローマ近郊で捕囚された出来事は何と呼ばれるか。"
+  },
+  {
+    "answer": "「教皇のバビロン捕囚」",
+    "category": "封建社会と教皇権の衰退",
+    "chapter": "7",
+    "number": "48",
+    "question": "1309〜77年まで教皇と教皇庁が移転させられたことを、古代ユダヤ教徒の故事になぞらえて何と呼ぶか。"
+  },
+  {
+    "answer": "教会大分裂（大シスマ）",
+    "category": "封建社会と教皇権の衰退",
+    "chapter": "7",
+    "number": "48",
+    "question": "1378〜1417年まで、教皇が南フランスの都市とローマに並立し、ローマ教会の中心が分裂した状態を何と呼ぶか。"
+  },
+  {
+    "answer": "ウィクリフ",
+    "category": "封建社会と教皇権の衰退",
+    "chapter": "7",
+    "number": "48",
+    "question": "教会大分裂をみて教皇や教会制度を批判し、聖書の尊重をとなえたオクスフォード大学神学教授は誰か。"
+  },
+  {
+    "answer": "フス",
+    "category": "封建社会と教皇権の衰退",
+    "chapter": "7",
+    "number": "48",
+    "question": "聖書主義に共鳴したが、コンスタンツ公会議で異端として焚刑にされたプラハ大学総長は誰か。"
+  },
+  {
+    "answer": "コンスタンツ公会議",
+    "category": "封建社会と教皇権の衰退",
+    "chapter": "7",
+    "number": "48",
+    "question": "1414〜18年に神聖ローマ皇帝の提唱で開かれ、教会大分裂を終わらせた公会議は何か。"
+  },
+  {
+    "answer": "ジギスムント",
+    "category": "封建社会と教皇権の衰退",
+    "chapter": "7",
+    "number": "48",
+    "question": "コンスタンツ公会議を提唱した、神聖ローマ皇帝は誰か。"
+  },
+  {
+    "answer": "フス戦争",
+    "category": "封建社会と教皇権の衰退",
+    "chapter": "7",
+    "number": "48",
+    "question": "1419年から、処刑された人物の説を支持するベーメンの住民が抗議しておこした戦争は何か。"
+  },
+  {
+    "answer": "プランタジネット朝",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "1154年に、アンジュー伯が開いたイギリスの王朝は何か。"
+  },
+  {
+    "answer": "ヘンリ2世",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "プランタジネット朝の創始者（初代国王）は誰か。"
+  },
+  {
+    "answer": "ジョン",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "「欠地王」と呼ばれたイギリス国王は誰か。"
+  },
+  {
+    "answer": "フィリップ2世",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "12世紀末に即位し、「欠地王」と戦ってフランス国内のイギリス王領の大半を奪った、カペー朝の国王は誰か。"
+  },
+  {
+    "answer": "インノケンティウス3世",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "カンタベリ司教任命権争いの末、「欠地王」を破門にした教皇は誰か。"
+  },
+  {
+    "answer": "大憲章（マグナ＝カルタ）",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "1215年、失政を続ける「欠地王」に対して貴族が団結して認めさせた、イギリス立憲政治の基礎となった規定は何か。"
+  },
+  {
+    "answer": "課税/議会の承認",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "大憲章の規定は、「国王による新たな＿＿は、貴族や聖職者による＿＿が必要」空欄に当てはまる語をそれそれ答えなさい。"
+  },
+  {
+    "answer": "ヘンリ3世",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "大憲章を無視したため、1258年に貴族の反乱をまねいたイギリス国王は誰か。"
+  },
+  {
+    "answer": "シモン＝ド＝モンフォール",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "1265年にイギリス議会の起源とされる議会をヘンリ３世に認めさせた貴族は誰か。"
+  },
+  {
+    "answer": "模範議会",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "1295年に招集された、高位聖職者・大貴族のほか、各州２名の騎士、各都市２名の市民から構成された議会は何か。"
+  },
+  {
+    "answer": "アルビジョワ派",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "南フランスで広まり、国王による十字軍によって征服された、カタリ派の系列の異端の名称は何か。"
+  },
+  {
+    "answer": "ヴァロワ朝",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "カペー朝の断絶で、1328年に成立したフランスの新王朝は何か。"
+  },
+  {
+    "answer": "フィリップ6世",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "カペー朝断絶後に即位して王朝を開いたが、イギリスとの間で百年戦争を引き起こす原因の一つとなったフランス王は誰か。"
+  },
+  {
+    "answer": "エドワード3世",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "カペー朝の断絶に際し、フランス王位継承権を主張したイギリス国王は誰か。"
+  },
+  {
+    "answer": "フランドル地方",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "中世ヨーロッパにおいて毛織物業が盛んであった、現在のベルギーを中心とした地方名は何か。"
+  },
+  {
+    "answer": "国王の母がカペー家出身だったため",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "イギリスの王が、カペー朝断絶後のフランス王位継承権を主張した理由は何か。"
+  },
+  {
+    "answer": "クレシーの戦い",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "百年戦争のなか、1346年にイギリス王の率いた軍がフランス軍に大勝した戦いは何か。"
+  },
+  {
+    "answer": "長弓隊",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "百年戦争でイギリス軍が主力とした兵種で、フランス騎士軍に大打撃を与えたのは何か。"
+  },
+  {
+    "answer": "エドワード黒太子",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "ポワティエの戦いで、フランス軍に大勝したイギリス王の長子は誰か。"
+  },
+  {
+    "answer": "シャルル7世",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "ジャンヌ＝ダルクの助けをもらい、滞在地からランスに行き、正式に戴冠したフランス王は誰か。"
+  },
+  {
+    "answer": "ジャンヌ＝ダルク",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "神のお告げを受けたとして、フランス軍を率い、百年戦争の勝利に導いた少女は誰か。"
+  },
+  {
+    "answer": "オルレアン",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "百年戦争中、1429年にイギリス軍に包囲された、フランス中部の小都市はどこか。"
+  },
+  {
+    "answer": "常備軍",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "シャルル７世も設置した、平時から直接維持・管理する軍隊を何というか。"
+  },
+  {
+    "answer": "1453年",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "百年戦争が終結したのは西暦何年か。"
+  },
+  {
+    "answer": "ランカスター家/ヨーク家",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "バラ戦争で争った二つの家系を答えなさい。"
+  },
+  {
+    "answer": "ヘンリ７世",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "バラ戦争をおさめて、新国王となったのは誰か。"
+  },
+  {
+    "answer": "テューダー朝",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "1485年に成立したイングランドの新王朝は何か。"
+  },
+  {
+    "answer": "星室庁裁判所",
+    "category": "英仏の中央集権化と百年戦争",
+    "chapter": "7",
+    "number": "49",
+    "question": "ヘンリ８世によって宮殿の「星の間」に設置された、身分の高い者を裁く国王直属の裁判所は何と呼ばれるか。"
+  },
+  {
+    "answer": "レコンキスタ(国土回復運動)",
+    "category": "イベリア半島・北欧とドイツ・イタリアの消長",
+    "chapter": "7",
+    "number": "50",
+    "question": "イベリア半島で８世紀から始まった、イスラーム教徒を駆逐しようとしたキリスト教徒の運動を何と呼ぶか。"
+  },
+  {
+    "answer": "カスティリャ王国・アラゴン王国",
+    "category": "イベリア半島・北欧とドイツ・イタリアの消長",
+    "chapter": "7",
+    "number": "50",
+    "question": "スペイン(イスパニア)王国は、何という国家が統合された結果誕生したか。二つ国家を答えなさい。"
+  },
+  {
+    "answer": "イサベル",
+    "category": "イベリア半島・北欧とドイツ・イタリアの消長",
+    "chapter": "7",
+    "number": "50",
+    "question": "成立したスペイン王国の共同統治者となった女王は誰か。"
+  },
+  {
+    "answer": "グラナダ",
+    "category": "イベリア半島・北欧とドイツ・イタリアの消長",
+    "chapter": "7",
+    "number": "50",
+    "question": "1492年、スペイン王国が陥落させた、ナスル朝の最後の都はどこか。"
+  },
+  {
+    "answer": "ジョアン2世",
+    "category": "イベリア半島・北欧とドイツ・イタリアの消長",
+    "chapter": "7",
+    "number": "50",
+    "question": "15世紀後半にポルトガル王国の統一を達成し、またインド航路の開拓を進めた国王は誰か。"
+  },
+  {
+    "answer": "シュタウフェン朝",
+    "category": "イベリア半島・北欧とドイツ・イタリアの消長",
+    "chapter": "7",
+    "number": "50",
+    "question": "フリードリヒ１世・フリードリヒ２世時代が最盛期で、13世紀半ばに断絶した神聖ローマ皇帝家の王朝名は何か。"
+  },
+  {
+    "answer": "大空位時代",
+    "category": "イベリア半島・北欧とドイツ・イタリアの消長",
+    "chapter": "7",
+    "number": "50",
+    "question": "1256〜73年まで続いた実質的な神聖ローマ皇帝不在の時代を何と呼ぶか。"
+  },
+  {
+    "answer": "領邦",
+    "category": "イベリア半島・北欧とドイツ・イタリアの消長",
+    "chapter": "7",
+    "number": "50",
+    "question": "13〜14世紀に、ドイツ地域に約300もあった地方主権国家は何と呼ばれるか。"
+  },
+  {
+    "answer": "ハプスブルク家",
+    "category": "イベリア半島・北欧とドイツ・イタリアの消長",
+    "chapter": "7",
+    "number": "50",
+    "question": "1438年から神聖ローマ皇帝位をほぼ独占することになる、オーストリア地域を支配した名家は何か。"
+  },
+  {
+    "answer": "カール4世",
+    "category": "イベリア半島・北欧とドイツ・イタリアの消長",
+    "chapter": "7",
+    "number": "50",
+    "question": "金印勅書を発布した、神聖ローマ皇帝兼ベーメン王は誰か。"
+  },
+  {
+    "answer": "金印勅書",
+    "category": "イベリア半島・北欧とドイツ・イタリアの消長",
+    "chapter": "7",
+    "number": "50",
+    "question": "1356年、皇帝選出権を７人の選帝侯がもつことを認める帝国法が出された。これを何と呼ぶか。"
+  },
+  {
+    "answer": "東方植民",
+    "category": "イベリア半島・北欧とドイツ・イタリアの消長",
+    "chapter": "7",
+    "number": "50",
+    "question": "12～14世紀に行われた、ドイツ人のエルベ川以東への入植運動を何と呼ぶか。"
+  },
+  {
+    "answer": "ウェストファリア条約",
+    "category": "イベリア半島・北欧とドイツ・イタリアの消長",
+    "chapter": "7",
+    "number": "50",
+    "question": "スイスの独立は1648年の何という条約で正式に認められたか。"
+  },
+  {
+    "answer": "シチリア王国・ナポリ王国",
+    "category": "イベリア半島・北欧とドイツ・イタリアの消長",
+    "chapter": "7",
+    "number": "50",
+    "question": "両シチリア王国は何と何という国家に分裂したか。"
+  },
+  {
+    "answer": "教皇党(ゲルフ)",
+    "category": "イベリア半島・北欧とドイツ・イタリアの消長",
+    "chapter": "7",
+    "number": "50",
+    "question": "都市の大商人が多かった、イタリアでの教皇支持派を何と呼ぶか。"
+  },
+  {
+    "answer": "皇帝党(ギベリン)",
+    "category": "イベリア半島・北欧とドイツ・イタリアの消長",
+    "chapter": "7",
+    "number": "50",
+    "question": "貴族や領主が多かった、イタリアでの皇帝支持派を何と呼ぶか。"
+  },
+  {
+    "answer": "カルマル同盟",
+    "category": "イベリア半島・北欧とドイツ・イタリアの消長",
+    "chapter": "7",
+    "number": "50",
+    "question": "1397年、デンマーク王家の支配下で北欧３国が結成した同君連合を何と呼ぶか。"
+  },
+  {
+    "answer": "マルグレーテ",
+    "category": "イベリア半島・北欧とドイツ・イタリアの消長",
+    "chapter": "7",
+    "number": "50",
+    "question": "摂政としてデンマーク連合王国の実権を握り、カルマル同盟を指揮したデンマーク王女は誰か。"
+  },
+  {
+    "answer": "12世紀ルネサンス",
+    "category": "西ヨーロッパの中世文化",
+    "chapter": "7",
+    "number": "51",
+    "question": "大学の誕生、新建築様式の創出などがみられた、12世紀の文化発展を何と総称するか。"
+  },
+  {
+    "answer": "ラテン語",
+    "category": "西ヨーロッパの中世文化",
+    "chapter": "7",
+    "number": "51",
+    "question": "12世紀以降、イスラーム世界で醸成された文化が流入したことで、何語による古典文化が復活したか。"
+  },
+  {
+    "answer": "パリ大学",
+    "category": "西ヨーロッパの中世文化",
+    "chapter": "7",
+    "number": "51",
+    "question": "12世紀半ば、パリ大司教を長として、私塾の教師や学生によって結成され、神学の最高権威となった大学はどこか。"
+  },
+  {
+    "answer": "オクスフォード大学",
+    "category": "西ヨーロッパの中世文化",
+    "chapter": "7",
+    "number": "51",
+    "question": "12世紀後半、パリ大学を範に設立され、イギリスでの神学の中心となった大学はどこか。"
+  },
+  {
+    "answer": "ボローニャ大学",
+    "category": "西ヨーロッパの中世文化",
+    "chapter": "7",
+    "number": "51",
+    "question": "11世紀末、北イタリアに設立された世界最古の大学で、法学の研究で有名であったのはどこか。"
+  },
+  {
+    "answer": "サレルノ大学",
+    "category": "西ヨーロッパの中世文化",
+    "chapter": "7",
+    "number": "51",
+    "question": "中世の大学の一つで、医学で有名であった南イタリアの大学はどこか。"
+  },
+  {
+    "answer": "スコラ学",
+    "category": "西ヨーロッパの中世文化",
+    "chapter": "7",
+    "number": "51",
+    "question": "キリスト教教理とアリストテレス哲学が結びついて体系化された、中世の神学・哲学を何と呼ぶか。"
+  },
+  {
+    "answer": "「哲学は神学の婢」",
+    "category": "西ヨーロッパの中世文化",
+    "chapter": "7",
+    "number": "51",
+    "question": "中世ヨーロッパにおいて、信仰を理性によって補強しようとするスコラ哲学の立場を象徴する言葉は何か。"
+  },
+  {
+    "answer": "アンセルムス",
+    "category": "西ヨーロッパの中世文化",
+    "chapter": "7",
+    "number": "51",
+    "question": "実在論をとなえ、「スコラ学の父」と呼ばれたカンタベリ大司教は誰か。"
+  },
+  {
+    "answer": "アベラール",
+    "category": "西ヨーロッパの中世文化",
+    "chapter": "7",
+    "number": "51",
+    "question": "唯名論を主張したフランスの学者は誰か。"
+  },
+  {
+    "answer": "ウィリアム＝オブ＝オッカム",
+    "category": "西ヨーロッパの中世文化",
+    "chapter": "7",
+    "number": "51",
+    "question": "唯名論に立ち、信仰と理性、神学と哲学を区別した、14世紀前半のイギリスのスコラ学者は誰か。"
+  },
+  {
+    "answer": "トマス＝アクィナス",
+    "category": "西ヨーロッパの中世文化",
+    "chapter": "7",
+    "number": "51",
+    "question": "普遍論争をいちおう解決したとされ、スコラ学の大成者と呼ばれるパリ大学教授は誰か。"
+  },
+  {
+    "answer": "『神学大全』",
+    "category": "西ヨーロッパの中世文化",
+    "chapter": "7",
+    "number": "51",
+    "question": "トマス＝アクィナスが執筆した、スコラ学を体系的に解説した書物は何か。"
+  },
+  {
+    "answer": "ロジャー＝ベーコン",
+    "category": "西ヨーロッパの中世文化",
+    "chapter": "7",
+    "number": "51",
+    "question": "イスラーム諸学の影響を受け、経験を重視し、近代自然科学への道を開いたイギリスのスコラ学者は誰か。"
+  },
+  {
+    "answer": "騎士道物語",
+    "category": "西ヨーロッパの中世文化",
+    "chapter": "7",
+    "number": "51",
+    "question": "中世騎士の理想像や冒険を主題とした、口語の宮廷文学を何と呼ぶか。"
+  },
+  {
+    "answer": "『ローランの歌』",
+    "category": "西ヨーロッパの中世文化",
+    "chapter": "7",
+    "number": "51",
+    "question": "フランスで成立した、カール大帝の対イスラーム戦を舞台に、騎士の武勲や恋をうたった作品は何か。"
+  },
+  {
+    "answer": "『アーサー王物語』",
+    "category": "西ヨーロッパの中世文化",
+    "chapter": "7",
+    "number": "51",
+    "question": "ウェールズ地方で生まれた、ケルト人（ブリトン人）の伝説的英雄を題材とした作品は何か。"
+  },
+  {
+    "answer": "『ニーベルンゲンの歌』",
+    "category": "西ヨーロッパの中世文化",
+    "chapter": "7",
+    "number": "51",
+    "question": "民族移動期の史実や伝説を素材とした、ブルグンドの大英雄叙事詩は何か。"
+  },
+  {
+    "answer": "ロマネスク様式",
+    "category": "西ヨーロッパの中世文化",
+    "chapter": "7",
+    "number": "51",
+    "question": "11〜12世紀に西欧で発達した、「ローマ風」を意味する、重厚・荘重さをもつ建築様式は何か。"
+  },
+  {
+    "answer": "ゴシック様式",
+    "category": "西ヨーロッパの中世文化",
+    "chapter": "7",
+    "number": "51",
+    "question": "12世紀に北フランスからおこった、尖頭アーチと広い窓をもち、大規模な教会建築の主流となった様式は何か。"
+  },
+  {
+    "answer": "ピサ大聖堂",
+    "category": "西ヨーロッパの中世文化",
+    "chapter": "7",
+    "number": "51",
+    "question": "イタリアにおける、ロマネスク様式の代表的聖堂は何か。"
+  },
+  {
+    "answer": "ノートルダム大聖堂",
+    "category": "西ヨーロッパの中世文化",
+    "chapter": "7",
+    "number": "51",
+    "question": "12世紀に着工され、13世紀にほぼ完成した、パリにあるゴシック様式の代表的聖堂は何か。"
+  },
+  {
+    "answer": "帝国教会政策",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "聖職叙任権の掌握を通じ、教会組織を支配下に置き、有力諸侯の勢力削減を図る神聖ローマ皇帝の政策名は何か。"
+  },
+  {
+    "answer": "教皇：カリクストゥス2世、皇帝：ハインリヒ5世",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "1122年、ヴォルムス協約を結んだ教皇と皇帝をそれぞれ答えなさい。"
+  },
+  {
+    "answer": "ニカの乱",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "532年、ビザンツ帝国のユスティニアヌスに対し重税への反発から起こった反乱は何か。"
+  },
+  {
+    "answer": "ベリサリウス",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "ユスティニアヌスにより派遣され、ヴァンダル王国を滅ぼし、カルタゴに総督府を置いた将軍は誰か。"
+  },
+  {
+    "answer": "ナルセス",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "ユスティニアヌスによって派遣され、東ゴート王国を滅ぼし、ラヴェンナに総督府を置いた将軍は誰か。"
+  },
+  {
+    "answer": "サン＝ヴィターレ聖堂",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "ユスティニアヌスと家臣たちを描いたモザイク壁画の残るラヴェンナの聖堂の名前は何か。"
+  },
+  {
+    "answer": "ヘラクレイオス1世",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "7世紀前半に軍管区制を施行したとされるビザンツ皇帝は誰か。"
+  },
+  {
+    "answer": "マケドニア朝",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "ビザンツ帝国中期、バシレイオス1世が創始し、バシレイオス2世ら軍人出身皇帝が活躍した王朝名は何か。"
+  },
+  {
+    "answer": "ニカイア（ニケーア）帝国",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "第４回十字軍により一時的に滅亡させられたビザンツ帝国が亡命政権として建てた帝国名は何か。"
+  },
+  {
+    "answer": "ソリドゥス金貨（ノミスマ）",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "ビザンツ帝国で発行され、ヨーロッパで流通し、現在の$の語源となった金貨の名前は何か。"
+  },
+  {
+    "answer": "アレクシオス1世",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "セルジューク朝撃退のために教皇に十字軍派遣を要請したビザンツ皇帝は誰か。"
+  },
+  {
+    "answer": "ステファン＝ドゥシャン",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "14世紀前半にバルカン半島北部を支配しギリシア正教を受容したセルビア国王は誰か。"
+  },
+  {
+    "answer": "コソヴォの戦い",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "1389年、セルビア王国がオスマン帝国に敗れその支配下に入ることになった戦いは何か。"
+  },
+  {
+    "answer": "モラヴィア王国",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "9世紀に西スラヴ人の一派のチェック人がスロヴァク人とともに建てたが、ハンガリー王国により滅ぼされたスラヴ人最初の王国は何か。"
+  },
+  {
+    "answer": "カジミェシュ3世",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "14世紀半ば、ポーランド王国の全盛期を現出し、ドイツ騎士団の入植を奨励し、経済発展を実現し、クラクフ大学を創設した国王は誰か。"
+  },
+  {
+    "answer": "タンネンベルクの戦い",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "1410年、ポーランド王国がドイツ騎士団を撃破し、リトアニア大公国のカトリック化が進行するきっかけとなった戦いは何か。"
+  },
+  {
+    "answer": "シメオン1世",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "10世紀前半、アドリア海まで領土を拡大し、ブルガリア帝国の全盛期を現出した君主は誰か。"
+  },
+  {
+    "answer": "ワラキア公国",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "ルーマニア人が14世紀にルーマニア南部に建てた国は何か。"
+  },
+  {
+    "answer": "モルダヴィア公国",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "ルーマニア人が14世紀にルーマニア北東部に建てた国は何か。"
+  },
+  {
+    "answer": "グラゴール文字",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "クロアティア人、スロヴェニア人が用いた文字は何か。"
+  },
+  {
+    "answer": "プレスター＝ジョン伝説",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "十字軍の背景となった、ヨーロッパの東方にキリスト教司祭が君主の国家があり、イスラーム勢力討伐に協力するという伝説のことを何と呼ぶか。"
+  },
+  {
+    "answer": "(ロレーヌ公)ゴドフロワ",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "第１回十字軍の中心となったフランスの諸侯は誰か。"
+  },
+  {
+    "answer": "神聖ローマ皇帝：コンラート3世、フランス王：ルイ7世",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "第２回十字軍の中心となった神聖ローマ皇帝とフランス王は誰か。"
+  },
+  {
+    "answer": "フリードリヒ2世",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "第５回十字軍の中心となった神聖ローマ皇帝は誰か。"
+  },
+  {
+    "answer": "アッコン",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "ルイ9世の率いた第７回十字軍の拠点で、マムルーク朝により陥落した東地中海の都市はどこか。"
+  },
+  {
+    "answer": "テンプル騎士団",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "十字軍の運動の一環で設立されたが、フィリップ4世により解散させられた宗教騎士団は何か。"
+  },
+  {
+    "answer": "ヨハネ騎士団",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "のちにはマルタ騎士団と呼ばれ、16世紀にはロドス島をめぐりオスマン帝国のスレイマン1世と争った宗教騎士団は何か。"
+  },
+  {
+    "answer": "キオッジャの戦い",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "ヴェネツィアが東方貿易で争ったジェノヴァと戦い、勝利した1379-80年の戦いは何か。"
+  },
+  {
+    "answer": "レニャーノの戦い",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "1176年、ミラノを盟主とするロンバルディア同盟が皇帝軍を破った戦いは何か。"
+  },
+  {
+    "answer": "ラテラノ公会議",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "1215年、インノケンティウス3世により主催され、ユダヤ人の土地所有を禁じ、商業や金貸業につく者が多くなるきっかけとなった公会議は何か。"
+  },
+  {
+    "answer": "ギヨーム＝カイエ（ギヨーム＝カール）",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "1358年にフランスで起こったジャックリーの乱の指導者は誰か。"
+  },
+  {
+    "answer": "ジャック＝ケイドの乱",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "1450年、イギリスで起こり農民の自由化がほぼ達成されるきっかけとなった農民反乱は何か。"
+  },
+  {
+    "answer": "クレメンス5世",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "1309年「教皇のバビロン捕囚」で教皇庁がアヴィニョンに移った時の教皇は誰か。"
+  },
+  {
+    "answer": "ドゥームズデイ＝ブック",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "ノルマン朝のウィリアム1世が作成した土地調査簿の名称は何か。"
+  },
+  {
+    "answer": "ヘンリ2世",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "プランタジネット朝の創始者は誰か。"
+  },
+  {
+    "answer": "ブーヴィーヌの戦い",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "1214年、フランス王フィリップ2世がイギリス王ジョンを破り領土を奪った戦いは何か。"
+  },
+  {
+    "answer": "ギュイエンヌ地方（アキテーヌ地方）",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "フランス南西部のボルドーを中心都市として、フランドル地方とともに英仏が獲得を目指した葡萄酒の特産地はどこか。"
+  },
+  {
+    "answer": "クレシーの戦い",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "1346年、イギリスのエドワード3世率いる長弓隊が活躍し、翌年にはカラーを占領することとなった戦いは何か。"
+  },
+  {
+    "answer": "ポワティエの戦い",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "1356年、エドワード黒太子率いるイギリス軍がフランス軍に勝利した戦いは何か。"
+  },
+  {
+    "answer": "シャルル7世",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "1453年、百年戦争に勝利した時代のフランス王は誰か。"
+  },
+  {
+    "answer": "ジャック＝クール",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "シャルル7世に仕え、財政改革を行なった商人は誰か。"
+  },
+  {
+    "answer": "星室庁裁判所",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "バラ戦争を収め、テューダー朝を創始したヘンリ7世が反対派貴族を弾圧するために設置した裁判所は何か。"
+  },
+  {
+    "answer": "ザクセン朝",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "919-1024年の神聖ローマ帝国の王朝名は何か。"
+  },
+  {
+    "answer": "ザリエル朝",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "1024-1125年の神聖ローマ帝国の王朝名は何か。"
+  },
+  {
+    "answer": "ホーエンシュタウフェン朝",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "フリードリヒ1世、フリードリヒ2世が活躍した神聖ローマ帝国の王朝名は何か(1138-1208,1215-1254)。"
+  },
+  {
+    "answer": "ルドルフ1世",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "神聖ローマ皇帝に即位し、大空位時代を終わらせたハプスブルク家の人物は誰か。"
+  },
+  {
+    "answer": "ルクセンブルク家",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "神聖ローマ皇帝カール4世の出身家系はどこか。"
+  },
+  {
+    "answer": "カレル1世",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "金印勅書の発布以外にもプラハ大学を創設したカール4世のベーメン国王としての名前は何か。"
+  },
+  {
+    "answer": "シチリアの晩鐘",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "1282年、フランスのアンジュー家支配に現地人が反発して起こし、現地人を支援したアラゴン家によるシチリア王国とアンジュー家のナポリ王国に両シチリア王国が分裂した事件は何か。"
+  },
+  {
+    "answer": "グスタフ1世",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "1523年、カルマル同盟から離脱した時代のスウェーデン国王は誰か。"
+  },
+  {
+    "answer": "トレド、パレルモ",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "12世紀ルネサンスの中心となったイベリア半島とシチリア島の都市をそれぞれ答えなさい。"
+  },
+  {
+    "answer": "アインハルト",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "フランク王国のカール大帝に仕え、『カール大帝伝』を残した歴史家は誰か。"
+  },
+  {
+    "answer": "トゥルバドゥール、ミンネジンガー",
+    "category": "難関私大対策",
+    "chapter": "7",
+    "number": "Z",
+    "question": "中世ヨーロッパの宮廷で活躍した吟遊詩人のことをフランス語・ドイツ語でそれぞれ何というか。"
+  },
+  {
+    "answer": "上京臨潢府",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "遼の都はどこか。"
+  },
+  {
+    "answer": "契丹",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "遼河支流のシラ＝ムレン川流域で遊牧生活を営み、キタイと呼ばれていた遊牧狩猟民の中国名は何か。"
+  },
+  {
+    "answer": "耶律阿保機",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "遼の建国者（太祖）で、その後、926年には渤海を滅ぼした人物は誰か。"
+  },
+  {
+    "answer": "燕雲十六州",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "936年、五代の後晋の建国を援助した代償として遼が獲得した、現在の北京・大同を中心とした地域名は何か。"
+  },
+  {
+    "answer": "澶淵の盟",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "1004年に結ばれた、宋を兄、遼を弟とし、毎年銀と絹を受け取ることを内容とした、宋との講和条約は何か。"
+  },
+  {
+    "answer": "部族制/州県制",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "遼の二重統治体制について、北方の遊牧民・南方の定住民それぞれをどのような制度で統治したか。"
+  },
+  {
+    "answer": "耶律大石",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "金に敗れて遼が滅亡したのち、中央アジアに西遼（カラ・キタイ）を建てた人物は誰か。"
+  },
+  {
+    "answer": "興慶",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "西夏の都はどこか。"
+  },
+  {
+    "answer": "李元昊",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "西夏の建国者は誰か。"
+  },
+  {
+    "answer": "慶暦の和約",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "11世紀、北宋と西夏との戦争の後に結ばれ、宋が歳賜を送ることで一時的に和平が成立した条約を何というか。"
+  },
+  {
+    "answer": "燕京",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "12世紀半ばから金の首都となった、中都（現北京）の遼時代の呼び名は何か。"
+  },
+  {
+    "answer": "完顔阿骨打",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "完顔部の首長で、金の初代皇帝（太祖）となったのは誰か。"
+  },
+  {
+    "answer": "猛安・謀克",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "自民族の部族組織を基に、300戸から100人を徴兵することを基礎とした金の軍事・行政組織は何か。"
+  },
+  {
+    "answer": "靖康の変",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "遼を滅ぼした金が、宋の違約を理由に開封を占領し、1127年に宋（北宋）を滅ぼした事件を何と呼ぶか。"
+  },
+  {
+    "answer": "女真文字",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "契丹文字と漢字を母体につくられた金の民族文字は何か。"
+  },
+  {
+    "answer": "全真教",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "金の時代、華北で成立した、儒教・仏教・道教を調和させた道教の一派の名称は何か。"
+  },
+  {
+    "answer": "王重陽",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "全真教を創始した道士は誰か。"
+  },
+  {
+    "answer": "交鈔",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "金や元で発行された紙幣で、銀と交換可能とされたが、元代、乱発により信用が低下したものは何か。"
+  },
+  {
+    "answer": "交子",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "手形から発展した、北宋で発行された世界最古の紙幣は何か。"
+  },
+  {
+    "answer": "開城",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "高麗の都はどこか。"
+  },
+  {
+    "answer": "両班",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "高麗のとき形成され、朝鮮時代には党争を繰り返した政治・社会の特権階層を何と呼ぶか。"
+  },
+  {
+    "answer": "金属活字",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "高麗で、世界で最初に使用されたとされる、印刷活字は何か。"
+  },
+  {
+    "answer": "大理",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "宋代に、雲南地方に存在した国は何か。"
+  },
+  {
+    "answer": "国風文化",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "藤原氏の摂関政治時代を中心として発達した、日本風の貴族文化を何と呼ぶか。"
+  },
+  {
+    "answer": "日宋貿易",
+    "category": "東アジアの勢力交替",
+    "chapter": "8",
+    "number": "52",
+    "question": "平氏政権のときから鎌倉中期にかけて行われた、日本と中国との貿易を何と呼ぶか。"
+  },
+  {
+    "answer": "開封",
+    "category": "五代・北宋・南宋の情勢",
+    "chapter": "8",
+    "number": "53",
+    "question": "後唐を除く、汴州とも呼ばれる五代と北宋の首都はどこか。"
+  },
+  {
+    "answer": "「清明上河図」",
+    "category": "五代・北宋・南宋の情勢",
+    "chapter": "8",
+    "number": "53",
+    "question": "北宋の首都のにぎわう様子を描いた、張択端の作となる絵巻物は何か。"
+  },
+  {
+    "answer": "趙匡胤",
+    "category": "五代・北宋・南宋の情勢",
+    "chapter": "8",
+    "number": "53",
+    "question": "北宋の建国者は誰か。"
+  },
+  {
+    "answer": "960年",
+    "category": "五代・北宋・南宋の情勢",
+    "chapter": "8",
+    "number": "53",
+    "question": "北宋が建国されたのは西暦何年か。"
+  },
+  {
+    "answer": "太宗",
+    "category": "五代・北宋・南宋の情勢",
+    "chapter": "8",
+    "number": "53",
+    "question": "979年に中国統一を完成した、北宋の第２代皇帝は誰か。"
+  },
+  {
+    "answer": "文治主義",
+    "category": "五代・北宋・南宋の情勢",
+    "chapter": "8",
+    "number": "53",
+    "question": "君主独裁制を確立するため、北宋が採用した、文人官僚優位の統治政策を何と呼ぶか。"
+  },
+  {
+    "answer": "殿試",
+    "category": "五代・北宋・南宋の情勢",
+    "chapter": "8",
+    "number": "53",
+    "question": "北宋の初代皇帝のとき、科挙が完成された。このとき科挙の最終試験として設けられたものは何か。"
+  },
+  {
+    "answer": "士大夫",
+    "category": "五代・北宋・南宋の情勢",
+    "chapter": "8",
+    "number": "53",
+    "question": "宋代以降、儒教的教養をもつ社会的支配層を指した名称は何か。"
+  },
+  {
+    "answer": "禁軍",
+    "category": "五代・北宋・南宋の情勢",
+    "chapter": "8",
+    "number": "53",
+    "question": "中国の王朝で皇帝直属の軍隊として宮廷の警備や皇帝の護衛を担当した、常設の精鋭軍を何というか。"
+  },
+  {
+    "answer": "神宗",
+    "category": "五代・北宋・南宋の情勢",
+    "chapter": "8",
+    "number": "53",
+    "question": "北宋で新法が実施されたときの皇帝は誰か。"
+  },
+  {
+    "answer": "王安石",
+    "category": "五代・北宋・南宋の情勢",
+    "chapter": "8",
+    "number": "53",
+    "question": "宰相として新法を実施した、政治家にして唐宋八大家の一人でもある人物は誰か。"
+  },
+  {
+    "answer": "青苗法",
+    "category": "五代・北宋・南宋の情勢",
+    "chapter": "8",
+    "number": "53",
+    "question": "新法の一つで、小農民救済のため、植え付け時に穀物や資金を低利で貸し付けた法は何か。"
+  },
+  {
+    "answer": "市易法",
+    "category": "五代・北宋・南宋の情勢",
+    "chapter": "8",
+    "number": "53",
+    "question": "新法の一つで、中小商人の保護を目的とした低利融資法は何か。"
+  },
+  {
+    "answer": "保甲法",
+    "category": "五代・北宋・南宋の情勢",
+    "chapter": "8",
+    "number": "53",
+    "question": "新法の一つで、農閑期に軍事訓練を行い、民兵の養成をはかった法は何か。"
+  },
+  {
+    "answer": "司馬光",
+    "category": "五代・北宋・南宋の情勢",
+    "chapter": "8",
+    "number": "53",
+    "question": "旧法党の中心的人物は誰か。"
+  },
+  {
+    "answer": "徽宗/欽宗",
+    "category": "五代・北宋・南宋の情勢",
+    "chapter": "8",
+    "number": "53",
+    "question": "靖康の変で北方に連れ去られた上皇/皇帝は誰か、それぞれ答えなさい。"
+  },
+  {
+    "answer": "臨安",
+    "category": "五代・北宋・南宋の情勢",
+    "chapter": "8",
+    "number": "53",
+    "question": "南宋の首都はどこか。"
+  },
+  {
+    "answer": "高宗",
+    "category": "五代・北宋・南宋の情勢",
+    "chapter": "8",
+    "number": "53",
+    "question": "宋を再建させた(南宋を建国した)皇帝は誰か。"
+  },
+  {
+    "answer": "秦檜",
+    "category": "五代・北宋・南宋の情勢",
+    "chapter": "8",
+    "number": "53",
+    "question": "金との和平をとなえた、南宋の中心的政治家は誰か。"
+  },
+  {
+    "answer": "岳飛",
+    "category": "五代・北宋・南宋の情勢",
+    "chapter": "8",
+    "number": "53",
+    "question": "金への抗戦をとなえた、南宋の主戦派の武将は誰か。"
+  },
+  {
+    "answer": "紹興の和約",
+    "category": "五代・北宋・南宋の情勢",
+    "chapter": "8",
+    "number": "53",
+    "question": "12世紀、南宋と金の間で結ばれ、南宋が金に臣下の礼をとり歳賜を送ることを約束して講和が成立した条約を何というか。"
+  },
+  {
+    "answer": "淮河",
+    "category": "五代・北宋・南宋の情勢",
+    "chapter": "8",
+    "number": "53",
+    "question": "金と南宋の国境線となった河川は何か。"
+  },
+  {
+    "answer": "草市",
+    "category": "宋代の経済と文化",
+    "chapter": "8",
+    "number": "54",
+    "question": "宋代に数多くあらわれた、城壁の外などで自然発生的に生まれた定期市の交易場は何と呼ばれたか。"
+  },
+  {
+    "answer": "鎮",
+    "category": "宋代の経済と文化",
+    "chapter": "8",
+    "number": "54",
+    "question": "草市から発展したものが多い、地方の小都市は何と呼ばれたか。"
+  },
+  {
+    "answer": "行",
+    "category": "宋代の経済と文化",
+    "chapter": "8",
+    "number": "54",
+    "question": "営業の独占や相互扶助を目的につくられた、宋代の同業商人の組合は何か。"
+  },
+  {
+    "answer": "作",
+    "category": "宋代の経済と文化",
+    "chapter": "8",
+    "number": "54",
+    "question": "宋代の手工業者の同業組合は何か。"
+  },
+  {
+    "answer": "銅銭",
+    "category": "宋代の経済と文化",
+    "chapter": "8",
+    "number": "54",
+    "question": "大量に鋳造され、隣接諸地域でも流通した宋銭とも呼ばれた貨幣は何か。"
+  },
+  {
+    "answer": "交子",
+    "category": "宋代の経済と文化",
+    "chapter": "8",
+    "number": "54",
+    "question": "手形から発展した、北宋で発行された世界最古の紙幣は何か。"
+  },
+  {
+    "answer": "会子",
+    "category": "宋代の経済と文化",
+    "chapter": "8",
+    "number": "54",
+    "question": "南宋で発行された紙幣は何か。"
+  },
+  {
+    "answer": "景徳鎮",
+    "category": "宋代の経済と文化",
+    "chapter": "8",
+    "number": "54",
+    "question": "江西省にある、陶磁器業で有名な都市はどこか。"
+  },
+  {
+    "answer": "茶",
+    "category": "宋代の経済と文化",
+    "chapter": "8",
+    "number": "54",
+    "question": "唐代中期には一般民衆にも広まり、宋代になると国内のみならず、周辺民族にも普及した飲み物は何か。"
+  },
+  {
+    "answer": "青磁・白磁",
+    "category": "宋代の経済と文化",
+    "chapter": "8",
+    "number": "54",
+    "question": "唐や宋の時代に中国で発達し、日本や朝鮮にも影響を与えた、青緑色や白色の釉薬をかけた陶磁器をそれぞれ何というか。"
+  },
+  {
+    "answer": "「蘇湖熟すれば天下足る」",
+    "category": "宋代の経済と文化",
+    "chapter": "8",
+    "number": "54",
+    "question": "宋代中期から、江南地方が中国の穀倉地帯の中心となったことを示すことばは何か。"
+  },
+  {
+    "answer": "占城稲",
+    "category": "宋代の経済と文化",
+    "chapter": "8",
+    "number": "54",
+    "question": "北宋のときベトナムから種子が取りよせられた、日照りに強い早稲種は何か。"
+  },
+  {
+    "answer": "士大夫",
+    "category": "宋代の経済と文化",
+    "chapter": "8",
+    "number": "54",
+    "question": "宋代以降、儒教的教養をもつ社会的支配層を指した名称は何か。"
+  },
+  {
+    "answer": "宋学（朱子学）",
+    "category": "宋代の経済と文化",
+    "chapter": "8",
+    "number": "54",
+    "question": "宋代に成立した、新しい宇宙観や実践倫理を探究する、新しい儒学を何と呼んだか。"
+  },
+  {
+    "answer": "周敦頤",
+    "category": "宋代の経済と文化",
+    "chapter": "8",
+    "number": "54",
+    "question": "道家思想や仏教哲学を導入しながら『太極図説』を著し、宋学の先駆者となった北宋の儒学者は誰か。"
+  },
+  {
+    "answer": "朱熹",
+    "category": "宋代の経済と文化",
+    "chapter": "8",
+    "number": "54",
+    "question": "朱子学を大成し、格物致知、理気二元論、性即理説などを説いた、南宋の儒学者は誰か。"
+  },
+  {
+    "answer": "『大学』『中庸』『論語』『孟子』",
+    "category": "宋代の経済と文化",
+    "chapter": "8",
+    "number": "54",
+    "question": "四書を全て答えなさい。"
+  },
+  {
+    "answer": "『資治通鑑』",
+    "category": "宋代の経済と文化",
+    "chapter": "8",
+    "number": "54",
+    "question": "旧法党の中心人物でもある司馬光が、戦国時代から五代末までを編年体で著した史書は何か。"
+  },
+  {
+    "answer": "院体画",
+    "category": "宋代の経済と文化",
+    "chapter": "8",
+    "number": "54",
+    "question": "宋代、画院に属する画家が描いた、写実的で装飾的な宮廷様式の画風を何と呼ぶか。"
+  },
+  {
+    "answer": "文人画",
+    "category": "宋代の経済と文化",
+    "chapter": "8",
+    "number": "54",
+    "question": "宋代、絵画の専門家でない文人が、山水・人物などを水墨や細い線で余技に描いた画風を何と呼ぶか。"
+  },
+  {
+    "answer": "テムジン",
+    "category": "モンゴル帝国の形成",
+    "chapter": "8",
+    "number": "55",
+    "question": "チンギス＝カンの本名は何か。"
+  },
+  {
+    "answer": "クリルタイ",
+    "category": "モンゴル帝国の形成",
+    "chapter": "8",
+    "number": "55",
+    "question": "モンゴル語で「集会」を意味する、最高議決機関は何か。"
+  },
+  {
+    "answer": "1206年",
+    "category": "モンゴル帝国の形成",
+    "chapter": "8",
+    "number": "55",
+    "question": "チンギス＝カンが「カン」の称号を得たのは西暦何年か。"
+  },
+  {
+    "answer": "千戸制",
+    "category": "モンゴル帝国の形成",
+    "chapter": "8",
+    "number": "55",
+    "question": "チンギス＝カンが組織したモンゴル帝国の政治・軍事制度の名称は何か。"
+  },
+  {
+    "answer": "ナイマン",
+    "category": "モンゴル帝国の形成",
+    "chapter": "8",
+    "number": "55",
+    "question": "一時西遼を乗っ取ったが、チンギス＝カンの派遣軍に滅ぼされた遊牧トルコ系部族の名称は何か。"
+  },
+  {
+    "answer": "オゴデイ",
+    "category": "モンゴル帝国の形成",
+    "chapter": "8",
+    "number": "55",
+    "question": "チンギス＝カンの後を継ぎ、大モンゴル国を支配したカアンは誰か。"
+  },
+  {
+    "answer": "金",
+    "category": "モンゴル帝国の形成",
+    "chapter": "8",
+    "number": "55",
+    "question": "1234年に滅ぼされた、中国東北地方を本拠地とした国はどこか。"
+  },
+  {
+    "answer": "カラコルム",
+    "category": "モンゴル帝国の形成",
+    "chapter": "8",
+    "number": "55",
+    "question": "２代指導者の時に設定された、大モンゴル国の首都はどこか。"
+  },
+  {
+    "answer": "バトゥ",
+    "category": "モンゴル帝国の形成",
+    "chapter": "8",
+    "number": "55",
+    "question": "２代指導者の命でヨーロッパ遠征軍の総司令官となったのは誰か。"
+  },
+  {
+    "answer": "ワールシュタットの戦い",
+    "category": "モンゴル帝国の形成",
+    "chapter": "8",
+    "number": "55",
+    "question": "モンゴルの遠征軍が、ポーランドのリーグニッツ近郊でドイツ・ポーランド連合軍を破ったとされる戦いは何か。"
+  },
+  {
+    "answer": "グユク",
+    "category": "モンゴル帝国の形成",
+    "chapter": "8",
+    "number": "55",
+    "question": "大モンゴル国の第3代カアンに即位したが、在位わずか2年で急死した人物は誰か。"
+  },
+  {
+    "answer": "モンケ",
+    "category": "モンゴル帝国の形成",
+    "chapter": "8",
+    "number": "55",
+    "question": "大モンゴル国の第４代カアンとなったのは誰か。"
+  },
+  {
+    "answer": "フレグ",
+    "category": "モンゴル帝国の形成",
+    "chapter": "8",
+    "number": "55",
+    "question": "４代カアンの命で西アジアに遠征し、アッバース朝を滅ぼしたのは誰か。"
+  },
+  {
+    "answer": "クビライ",
+    "category": "モンゴル帝国の形成",
+    "chapter": "8",
+    "number": "55",
+    "question": "大モンゴル国の第５代カアンとなったのは誰か。"
+  },
+  {
+    "answer": "大都",
+    "category": "モンゴル帝国の形成",
+    "chapter": "8",
+    "number": "55",
+    "question": "大モンゴル国が1264年に遷都した都市はどこか。"
+  },
+  {
+    "answer": "元(大元ウルス)",
+    "category": "モンゴル帝国の形成",
+    "chapter": "8",
+    "number": "55",
+    "question": "大モンゴル国による遷都ののち、1271年に定めた中国風の国号は何か。"
+  },
+  {
+    "answer": "カイドゥの乱",
+    "category": "モンゴル帝国の形成",
+    "chapter": "8",
+    "number": "55",
+    "question": "クビライの即位に反発し、中央アジアで独自の勢力を築き、元朝と対立を続けた反乱を何というか。"
+  },
+  {
+    "answer": "サライ",
+    "category": "モンゴル帝国の形成",
+    "chapter": "8",
+    "number": "55",
+    "question": "大モンゴル国の分裂後、キプチャク＝ハン国の都としてヴォルガ川下流域に建設された都市を何というか。"
+  },
+  {
+    "answer": "タブリーズ",
+    "category": "モンゴル帝国の形成",
+    "chapter": "8",
+    "number": "55",
+    "question": "イル＝ハン国の都として栄え、東西交易の拠点となった、現在のイラン北西部に位置する都市はどこか。"
+  },
+  {
+    "answer": "アルマリク",
+    "category": "モンゴル帝国の形成",
+    "chapter": "8",
+    "number": "55",
+    "question": "チャガタイ＝ハン国の都として栄え、東西交易の拠点になった、現在の新疆ウイグル自治区付近にあった都市はどこか。"
+  },
+  {
+    "answer": "枢密院",
+    "category": "元の支配・滅亡/元代の周辺諸国",
+    "chapter": "8",
+    "number": "56",
+    "question": "元において、軍事を統括した機関は何か。"
+  },
+  {
+    "answer": "色目人",
+    "category": "元の支配・滅亡/元代の周辺諸国",
+    "chapter": "8",
+    "number": "56",
+    "question": "元でモンゴル人のつぎに重用され、財政・文化面で活躍した中央アジア・西アジア出身の人びとを何と呼んだか。"
+  },
+  {
+    "answer": "漢人",
+    "category": "元の支配・滅亡/元代の周辺諸国",
+    "chapter": "8",
+    "number": "56",
+    "question": "元の時代、旧金朝支配下の住民を何と総称したか。"
+  },
+  {
+    "answer": "南人",
+    "category": "元の支配・滅亡/元代の周辺諸国",
+    "chapter": "8",
+    "number": "56",
+    "question": "元の時代、旧南宋支配下の住民は最下位におかれた。彼らのことを何と総称したか。"
+  },
+  {
+    "answer": "ジャムチ",
+    "category": "元の支配・滅亡/元代の周辺諸国",
+    "chapter": "8",
+    "number": "56",
+    "question": "モンゴル帝国で創設され、元代、主要道路10里ごとに駅をおく交通制度が完備された。これをモンゴル語で何と呼ぶか。"
+  },
+  {
+    "answer": "泉州",
+    "category": "元の支配・滅亡/元代の周辺諸国",
+    "chapter": "8",
+    "number": "56",
+    "question": "マルコ＝ポーロが、ザイトンと呼び、世界第一の港市として紹介した福建省の都市はどこか。"
+  },
+  {
+    "answer": "交鈔",
+    "category": "元の支配・滅亡/元代の周辺諸国",
+    "chapter": "8",
+    "number": "56",
+    "question": "金朝についで、元朝でも発行された紙幣は何か。"
+  },
+  {
+    "answer": "紅巾の乱",
+    "category": "元の支配・滅亡/元代の周辺諸国",
+    "chapter": "8",
+    "number": "56",
+    "question": "元末、韓山童・韓林児親子を指導者に、白蓮教を中心に江南で始まった農民反乱は何か。"
+  },
+  {
+    "answer": "朱元璋",
+    "category": "元の支配・滅亡/元代の周辺諸国",
+    "chapter": "8",
+    "number": "56",
+    "question": "紅巾の乱を契機に頭角を現し、元を北へ追いやって明を建国した初代皇帝は誰か。"
+  },
+  {
+    "answer": "北元",
+    "category": "元の支配・滅亡/元代の周辺諸国",
+    "chapter": "8",
+    "number": "56",
+    "question": "明に大都を奪われモンゴル高原に退いたのち、２代続いた元は、何と呼ばれたか。"
+  },
+  {
+    "answer": "ティムール",
+    "category": "元の支配・滅亡/元代の周辺諸国",
+    "chapter": "8",
+    "number": "56",
+    "question": "14世紀に中央アジアで勢力を築き、サマルカンドを都として王朝を建てたトルコ系イスラーム王朝の創始者は誰か。"
+  },
+  {
+    "answer": "スコータイ朝",
+    "category": "元の支配・滅亡/元代の周辺諸国",
+    "chapter": "8",
+    "number": "56",
+    "question": "タイ人がインドシナ半島で最初に樹立した王朝は何か。"
+  },
+  {
+    "answer": "アユタヤ朝",
+    "category": "元の支配・滅亡/元代の周辺諸国",
+    "chapter": "8",
+    "number": "56",
+    "question": "14世紀半ばに建てられ、中国・日本やヨーロッパとの貿易で繁栄したタイの王朝は何か。"
+  },
+  {
+    "answer": "陳朝",
+    "category": "元の支配・滅亡/元代の周辺諸国",
+    "chapter": "8",
+    "number": "56",
+    "question": "13世紀前半～1400年に存続し、元軍の侵攻を撃退した北部ベトナム・大越国の王朝は何か。"
+  },
+  {
+    "answer": "マジャパヒト王国",
+    "category": "元の支配・滅亡/元代の周辺諸国",
+    "chapter": "8",
+    "number": "56",
+    "question": "13世紀末、元軍を撃退して東部ジャワに成立したヒンドゥー王国は何か。"
+  },
+  {
+    "answer": "銅銭",
+    "category": "元の支配・滅亡/元代の周辺諸国",
+    "chapter": "8",
+    "number": "56",
+    "question": "日元貿易によって日本にもたらされた貨幣は何か。"
+  },
+  {
+    "answer": "プラノ＝カルピニ",
+    "category": "モンゴル帝国時代の文化/ティムール朝",
+    "chapter": "8",
+    "number": "57",
+    "question": "13世紀半ば、ローマ教皇の命で派遣され、カラコルムでグユク＝ハンに謁見したフランチェスコ会の修道士は誰か。"
+  },
+  {
+    "answer": "ルブルック",
+    "category": "モンゴル帝国時代の文化/ティムール朝",
+    "chapter": "8",
+    "number": "57",
+    "question": "13世紀、ルイ9世の命で派遣され、カラコルムに滞在してその様子をヨーロッパに伝えたフランチェスコ会修道士は誰か。"
+  },
+  {
+    "answer": "マルコ＝ポーロ",
+    "category": "モンゴル帝国時代の文化/ティムール朝",
+    "chapter": "8",
+    "number": "57",
+    "question": "ヴェネツィア出身でクビライに仕えた経験をもち、『世界の記述』を著してヨーロッパにアジアの情報を伝えた人物は誰か。"
+  },
+  {
+    "answer": "『世界の記述』",
+    "category": "モンゴル帝国時代の文化/ティムール朝",
+    "chapter": "8",
+    "number": "57",
+    "question": "マルコ＝ポーロがアジアでの見聞を口述し記録された、ヨーロッパに東方世界の情報を伝えた書物は何か。"
+  },
+  {
+    "answer": "モンテ＝コルヴィノ",
+    "category": "モンゴル帝国時代の文化/ティムール朝",
+    "chapter": "8",
+    "number": "57",
+    "question": "13世紀末にローマ教皇の命で元の都大都に派遣され、大都の司教に任じられたフランチェスコ会の修道士は誰か。"
+  },
+  {
+    "answer": "パクパ文字",
+    "category": "モンゴル帝国時代の文化/ティムール朝",
+    "chapter": "8",
+    "number": "57",
+    "question": "クビライがチベット仏教僧に命じて制定させた、モンゴル帝国の公用文字として使用された表音文字を何というか。"
+  },
+  {
+    "answer": "郭守敬",
+    "category": "モンゴル帝国時代の文化/ティムール朝",
+    "chapter": "8",
+    "number": "57",
+    "question": "元の時代に活躍し、授時暦を作成し、中国の暦法に大きな影響を与えた天文学者は誰か。"
+  },
+  {
+    "answer": "授時暦",
+    "category": "モンゴル帝国時代の文化/ティムール朝",
+    "chapter": "8",
+    "number": "57",
+    "question": "元の郭守敬によって作成され、季節の変化をより正確に反映するために用いられた暦法は何か。"
+  },
+  {
+    "answer": "貞享暦",
+    "category": "モンゴル帝国時代の文化/ティムール朝",
+    "chapter": "8",
+    "number": "57",
+    "question": "江戸時代中期に渋川春海が作成した、日本で最初の国産暦を何というか。"
+  },
+  {
+    "answer": "『西廂記』",
+    "category": "モンゴル帝国時代の文化/ティムール朝",
+    "chapter": "8",
+    "number": "57",
+    "question": "元の王実甫によって書かれた、若い男女の恋愛を描いた戯曲で、中国古典恋愛文学の傑作とされる作品は何か。"
+  },
+  {
+    "answer": "『琵琶記』",
+    "category": "モンゴル帝国時代の文化/ティムール朝",
+    "chapter": "8",
+    "number": "57",
+    "question": "元の高明の作で、蔡伯喈と趙五娘の夫婦の離別と再会を描いた南戯の代表的な作品は何か。"
+  },
+  {
+    "answer": "『漢宮秋』",
+    "category": "モンゴル帝国時代の文化/ティムール朝",
+    "chapter": "8",
+    "number": "57",
+    "question": "元代の馬致遠の代表作で、前漢の元帝と王昭君の悲劇的な別れを描いた雑劇の作品名は何か。"
+  },
+  {
+    "answer": "サマルカンド",
+    "category": "モンゴル帝国時代の文化/ティムール朝",
+    "chapter": "8",
+    "number": "57",
+    "question": "ティムール朝の都はどこか。"
+  },
+  {
+    "answer": "アンカラの戦い",
+    "category": "モンゴル帝国時代の文化/ティムール朝",
+    "chapter": "8",
+    "number": "57",
+    "question": "1402年、ティムールがオスマン帝国軍を破り、オスマン帝国が一時的に停滞した戦いは何か。"
+  },
+  {
+    "answer": "シャー＝ルフ",
+    "category": "モンゴル帝国時代の文化/ティムール朝",
+    "chapter": "8",
+    "number": "57",
+    "question": "ティムール朝第３代君主で、父の死後、内乱を収拾し、ヘラートに都を定めて文化を保護した人物は何か。"
+  },
+  {
+    "answer": "ウルグ＝ベク",
+    "category": "モンゴル帝国時代の文化/ティムール朝",
+    "chapter": "8",
+    "number": "57",
+    "question": "ティムール朝の第4代君主で、サマルカンドに天文台を建設し、天文学研究を行った学者としても知られる人物は何か。"
+  },
+  {
+    "answer": "遊牧ウズベク",
+    "category": "モンゴル帝国時代の文化/ティムール朝",
+    "chapter": "8",
+    "number": "57",
+    "question": "ティムール朝を滅亡させたトルコ系遊牧民は何か。"
+  },
+  {
+    "answer": "清明上河図",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "北宋の都である開封の繁栄を描いた張択端による作品は何か。"
+  },
+  {
+    "answer": "中書門下省",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "北宋代に、審議機関をなくし皇帝独裁を強化するために、中書省が門下省を吸収した機関は何か。"
+  },
+  {
+    "answer": "太宗（趙光義）",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "北漢を滅ぼし、中国を再統一した北宋２代目の皇帝は誰か。"
+  },
+  {
+    "answer": "神宗",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "宰相の王安石に新法を推進させた北宋の皇帝は誰か。"
+  },
+  {
+    "answer": "均輸法",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "新法のうち、検地と土地の良否により税額に差をつける法を何というか。"
+  },
+  {
+    "answer": "徽宗、欽宗",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "靖康の変で金に連行された上皇と皇帝は誰か。"
+  },
+  {
+    "answer": "高宗（趙構）",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "靖康の変から逃れた皇帝一族の一人で、南宋を建国した人物は誰か。"
+  },
+  {
+    "answer": "瓦子",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "城内の一等地に建てられ、中には茶館・酒楼（飲食店）や勾欄（演芸場）が設けられた繁華街を何というか。"
+  },
+  {
+    "answer": "泉州、広州、明州",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "宋代の南海貿易で栄えた海港都市のうち、浙江省・広東省・福建省の都市名をそれぞれ答えなさい。"
+  },
+  {
+    "answer": "囲田・圩田・湖田",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "宋代での農業の変化の中で、湿地・河岸・池・湖を堤防で囲み干拓した田のことを何と呼ぶか。"
+  },
+  {
+    "answer": "『大学』『中庸』『論語』『孟子』",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "朱子学が重視した「四書」を全て答えなさい。"
+  },
+  {
+    "answer": "周敦頤",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "北宋の儒学者のうち、道家思想と仏教哲学を導入し、中庸に基づく道徳論を基礎づけ、『太極図説』を残した人物は誰か。"
+  },
+  {
+    "answer": "理気二元論",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "周敦頤に学んだ程頤、程顥が唱えた宇宙万物の根本原理と物質形成原理に関する理論を何と呼ぶか。"
+  },
+  {
+    "answer": "陸九淵（陸象山）",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "南宋代に倫理学的立場から性即理を否定し、朱子学を否定した人物は誰か。"
+  },
+  {
+    "answer": "編年体",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "北宋代に司馬光が著した『資治通鑑』の記述形式は何か。"
+  },
+  {
+    "answer": "欧陽脩",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "『新唐書』『新五代史』を残した北宋代の歴史家は誰か。"
+  },
+  {
+    "answer": "蘇軾",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "旧法党に属し、『赤壁の賦』で有名な唐宋八大家の人物は誰か。"
+  },
+  {
+    "answer": "方臘の乱",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "新法が廃止され、中小農民の没落が進み、12世紀初めに江南で起こった反乱は何か。"
+  },
+  {
+    "answer": "雑劇",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "歌・台詞・仕草を伴う歌劇で、元代の元曲のもととなった芸術形式を何と呼ぶか。"
+  },
+  {
+    "answer": "徽宗",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "宋代に翰林図画院出身の画家を中心に、宮廷で発達した院体画（北宋画）の一派として南宋の夏珪・馬遠と並び評され、「桃鳩図」の代表作をもつ北宋の人物は誰か。"
+  },
+  {
+    "answer": "文人画",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "李公麟、牧谿など職業画家ではない文人・士大夫を中心に発達した絵画の一派は何か。"
+  },
+  {
+    "answer": "李公蘊",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "ベトナムの李朝の建国者は誰か。"
+  },
+  {
+    "answer": "上京臨潢府",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "遼の都はどこか。"
+  },
+  {
+    "answer": "太宗（耶律堯骨）",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "936年に燕雲十六州を獲得した時代の遼の２代目君主は誰か。"
+  },
+  {
+    "answer": "北面官",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "遼の二重統治体制の中で、遊牧民に部族制を施行した機関名は何か。"
+  },
+  {
+    "answer": "ナイマン",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "1211年に西遼を滅ぼした、モンゴル高原西部のトルコ系遊牧民は何か。"
+  },
+  {
+    "answer": "興慶府",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "西夏の都はどこか。"
+  },
+  {
+    "answer": "チンギス＝カン",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "1227年に西夏を滅ぼした元の君主は誰か。"
+  },
+  {
+    "answer": "会寧府",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "金の建国当初の都はどこか。"
+  },
+  {
+    "answer": "中都",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "金の４代目の海陵王の時に遷した先の都で、現在の北京の当時の都市名は何か。"
+  },
+  {
+    "answer": "トゥルイ",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "チンギス第３子のオゴデイ即位に協力した末弟の名前は何か。"
+  },
+  {
+    "answer": "ジュチ（ジョチ）",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "チンギスの第１子で、バトゥの父親は誰か。"
+  },
+  {
+    "answer": "リーグニッツ",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "ワールシュタットの戦いが行われたとされる、現在のポーランドの地名は何か。"
+  },
+  {
+    "answer": "アリクブケ",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "クビライ即位に反発し、カラコルムで即位したクビライの弟は誰か。"
+  },
+  {
+    "answer": "カイドゥ",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "1266-1303年、反乱を起こしたオゴデイの孫は誰か。"
+  },
+  {
+    "answer": "キプチャク＝ハン国：サライ、チャガタイ＝ハン国：アルマリク、イル＝ハン国：タブリーズ、大元ウルス（元）：大都",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "４ハン国の都をそれぞれ答えなさい。"
+  },
+  {
+    "answer": "ウズベク＝ハン",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "キプチャク＝ハン国の全盛期を現出し、イスラーム教を受容した君主は誰か。"
+  },
+  {
+    "answer": "行中書省",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "元の地方の行政・軍事・財政を司どった機関は何か。"
+  },
+  {
+    "answer": "仁宗",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "1313年、それまで中止されていた科挙を復活させた元の君主は誰か。"
+  },
+  {
+    "answer": "キンザイ：杭州、ザイトン：泉州、カンフー：広州",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "元代に反映した都市のうち、マルコ＝ポーロが「キンザイ」「ザイトン」「カンフー」と紹介した都市をそれぞれ答えなさい。"
+  },
+  {
+    "answer": "韓山童、韓林児",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "元末の紅巾の乱を指導した親子は誰か。"
+  },
+  {
+    "answer": "マリーニョーリ",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "フランチェスコ派修道士で、モンテ＝コルヴィノの後継者として1342年に大都に到着した人物は誰か。"
+  },
+  {
+    "answer": "ラッバン＝ソウマ",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "イル＝ハン国を経て西欧にわたり、教皇ニコラウス4世に謁見したウイグル人のネストリウス派司祭は誰か。"
+  },
+  {
+    "answer": "貞享暦",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "郭守敬の授時暦をもとに江戸時代の日本で渋川春海が作成した暦は何か。"
+  },
+  {
+    "answer": "『十八史略』",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "元代に曾先之がまとめた初心者向けの歴史書は何か。"
+  },
+  {
+    "answer": "『文献通考』",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "元の馬端臨が著した制度史書は何か。"
+  },
+  {
+    "answer": "染付",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "元を代表する陶磁器で、白磁にコバルトブルーで絵付けした焼き物は何か。"
+  },
+  {
+    "answer": "『西廂記』『漢宮秋』『琵琶記』",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "元曲の代表作を３つ答えなさい。"
+  },
+  {
+    "answer": "黄公望、王蒙、倪瓚、呉鎮",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "絵画に秀でた元末四大家の名前を答えなさい。"
+  },
+  {
+    "answer": "ラームカムヘーン",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "13世紀後半に上座部仏教を国教化し、タイ文字をつくり、タイのスコータイ朝の全盛期を現出した国王は誰か。"
+  },
+  {
+    "answer": "三別抄の乱",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "1270-1273年、モンゴルに解散を命じられた高麗の軍団が済州島を中心に起こした反乱は何か。"
+  },
+  {
+    "answer": "サマルカンド",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "ティムール朝の建国時の都はどこか。"
+  },
+  {
+    "answer": "チャガタイ＝ハン国",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "ティムール朝を当初服属させたが、のちにそこからティムール朝が独立した国家はどこか。"
+  },
+  {
+    "answer": "オトラル",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "ティムールが明への遠征途上に亡くなった場所はどこか。"
+  },
+  {
+    "answer": "シャー＝ルフ",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "明やオスマン帝国と和解し、ティムール朝の安定期を現出した第３代君主は誰か。"
+  },
+  {
+    "answer": "ヘラート",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "ティムール朝第３代君主が都とした都市はどこか。"
+  },
+  {
+    "answer": "ウルグ＝ベク",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "都に天文台を建設したが内乱のために息子に暗殺され、死後の分裂を招いたティムール朝第４代君主は誰か。"
+  },
+  {
+    "answer": "シャイバーニー＝ハーン",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "ティムール朝を滅ぼした遊牧ウズベクの首長は誰か。"
+  },
+  {
+    "answer": "ブハラ＝ハン国",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "シャイバーニーが中央アジアに建てた国家は、のちに何という国家名で呼ばれるようになるか。"
+  },
+  {
+    "answer": "オルトク",
+    "category": "難関私大対策",
+    "chapter": "8",
+    "number": "Z",
+    "question": "モンゴル帝国から元朝にかけて、皇帝や王族から資金を得て遠隔地商業や金融で活躍した、ムスリムやウイグル人の特権商人の組織を何と呼ぶか。"
+  },
+  {
+    "answer": "洪武帝",
+    "category": "明の成立",
+    "chapter": "9",
+    "number": "58",
+    "question": "明の建国者朱元璋の皇帝としての名は何か。"
+  },
+  {
+    "answer": "明律・明令",
+    "category": "明の成立",
+    "chapter": "9",
+    "number": "58",
+    "question": "唐のものを基本とし、宋・元代の内容を参考にして1368年に発布された刑法典・行政法典を何と呼ぶか。"
+  },
+  {
+    "answer": "中書省",
+    "category": "明の成立",
+    "chapter": "9",
+    "number": "58",
+    "question": "洪武帝が廃止をした、六部を統括していた省は何か。"
+  },
+  {
+    "answer": "里甲制",
+    "category": "明の成立",
+    "chapter": "9",
+    "number": "58",
+    "question": "明が農民統制と租税徴収のために採用した、110戸を単位として編成した村落行政制度を何というか。"
+  },
+  {
+    "answer": "魚鱗図冊",
+    "category": "明の成立",
+    "chapter": "9",
+    "number": "58",
+    "question": "明の洪武帝が土地台帳として作成させ、耕地の位置・面積・所有者を記録した帳簿を何というか。"
+  },
+  {
+    "answer": "賦役黄冊",
+    "category": "明の成立",
+    "chapter": "9",
+    "number": "58",
+    "question": "明の洪武帝が賦税や労役の徴発の基準とするため、戸ごとの人口や財産を記録させた台帳を何というか。"
+  },
+  {
+    "answer": "六諭",
+    "category": "明の成立",
+    "chapter": "9",
+    "number": "58",
+    "question": "明の洪武帝が民衆の道徳教育のために作成し、礼儀や忠孝、勤勉などを説いた教訓を何というか。"
+  },
+  {
+    "answer": "里老人",
+    "category": "明の成立",
+    "chapter": "9",
+    "number": "58",
+    "question": "村落の自治や教化、紛争解決などに協力し、精神的指導者のような役割を果たした、地域の長老的な人物を何と呼ぶか。"
+  },
+  {
+    "answer": "衛所制",
+    "category": "明の成立",
+    "chapter": "9",
+    "number": "58",
+    "question": "明代の軍事制度で、各地に軍人の居住地兼駐屯地を設けて、食料と兵力を自給自足させた制度は何か。"
+  },
+  {
+    "answer": "海禁",
+    "category": "明の成立",
+    "chapter": "9",
+    "number": "58",
+    "question": "明が採った、民間の海外渡航や貿易を禁止する政策は何か。"
+  },
+  {
+    "answer": "建文帝",
+    "category": "明の成立",
+    "chapter": "9",
+    "number": "58",
+    "question": "明の第2代皇帝で、叔父の永楽帝によって帝位を奪われた人物は何か。"
+  },
+  {
+    "answer": "燕王",
+    "category": "明の成立",
+    "chapter": "9",
+    "number": "58",
+    "question": "永楽帝が即位する前の称号で、建文帝から帝位を奪った際の拠点となった地を治めていた王の名称は何か。"
+  },
+  {
+    "answer": "靖難の役",
+    "category": "明の成立",
+    "chapter": "9",
+    "number": "58",
+    "question": "明の永楽帝が建文帝から帝位を奪った内乱のことを何というか。"
+  },
+  {
+    "answer": "南京→北京",
+    "category": "明の成立",
+    "chapter": "9",
+    "number": "58",
+    "question": "明の都はどこからどこに遷都されたか。"
+  },
+  {
+    "answer": "内閣大学士",
+    "category": "明の成立",
+    "chapter": "9",
+    "number": "58",
+    "question": "明代に皇帝の補佐として設けられた官職で、のちに事実上の宰相となった職名は何か。"
+  },
+  {
+    "answer": "鄭和",
+    "category": "明の成立",
+    "chapter": "9",
+    "number": "58",
+    "question": "明の永楽帝の命を受けて南海遠征を行ったイスラム教徒の宦官は誰か。"
+  },
+  {
+    "answer": "琉球王国",
+    "category": "明代の対外関係/明代後期の社会",
+    "chapter": "9",
+    "number": "59",
+    "question": "15世紀初頭に尚巴志が統一した、沖縄諸島を中心に栄えた王国は何か。"
+  },
+  {
+    "answer": "中山王",
+    "category": "明代の対外関係/明代後期の社会",
+    "chapter": "9",
+    "number": "59",
+    "question": "15世紀初頭に琉球を統一した尚巴志が、統一以前に支配していた地域の王号は何か。"
+  },
+  {
+    "answer": "黎朝",
+    "category": "明代の対外関係/明代後期の社会",
+    "chapter": "9",
+    "number": "59",
+    "question": "15世紀前半にベトナムを統一し、明と朝貢関係を結んだ王朝は何か。"
+  },
+  {
+    "answer": "マラッカ王国",
+    "category": "明代の対外関係/明代後期の社会",
+    "chapter": "9",
+    "number": "59",
+    "question": "15世紀初頭にマレー半島南部に成立し、中継貿易で栄えたイスラーム教の港市国家は何か。"
+  },
+  {
+    "answer": "オイラト",
+    "category": "明代の対外関係/明代後期の社会",
+    "chapter": "9",
+    "number": "59",
+    "question": "15世紀前半にモンゴル高原西部で台頭し、モンゴル系の部族連合は何か。"
+  },
+  {
+    "answer": "土木の変",
+    "category": "明代の対外関係/明代後期の社会",
+    "chapter": "9",
+    "number": "59",
+    "question": "1449年、オイラトの指導者が明の皇帝を捕らえた事件を何か。"
+  },
+  {
+    "answer": "エセン＝ハーン",
+    "category": "明代の対外関係/明代後期の社会",
+    "chapter": "9",
+    "number": "59",
+    "question": "15世紀半ば、明の皇帝を捕らえた「土木の変」を起こしたオイラトの指導者は何か。"
+  },
+  {
+    "answer": "正統帝",
+    "category": "明代の対外関係/明代後期の社会",
+    "chapter": "9",
+    "number": "59",
+    "question": "土木の変でオイラトの指導者に捕らえられた、明の第6代皇帝は何か。"
+  },
+  {
+    "answer": "長城の修築",
+    "category": "明代の対外関係/明代後期の社会",
+    "chapter": "9",
+    "number": "59",
+    "question": "北方の遊牧民族の侵入を防ぐために明が行なったことは何か。"
+  },
+  {
+    "answer": "タタール",
+    "category": "明代の対外関係/明代後期の社会",
+    "chapter": "9",
+    "number": "59",
+    "question": "15世紀後半〜16世紀にモンゴル高原東部で台頭し、明の長城を越えて侵入を繰り返した遊牧集団は何か。"
+  },
+  {
+    "answer": "アルタン＝ハーン",
+    "category": "明代の対外関係/明代後期の社会",
+    "chapter": "9",
+    "number": "59",
+    "question": "16世紀半ば、明に朝貢貿易を認めさせ、チベット仏教の指導者にダライ＝ラマの称号を授けたタタールの指導者は誰か。"
+  },
+  {
+    "answer": "庚戌の変",
+    "category": "明代の対外関係/明代後期の社会",
+    "chapter": "9",
+    "number": "59",
+    "question": "1550年、タタールのアルタン＝ハーンが万里の長城を越えて北京を包囲した事件は何か。"
+  },
+  {
+    "answer": "北虜南倭",
+    "category": "明代の対外関係/明代後期の社会",
+    "chapter": "9",
+    "number": "59",
+    "question": "明朝中期に頻発した、北方からのモンゴル侵入と南方からの倭寇の活動を指す言葉は何か。"
+  },
+  {
+    "answer": "メキシコ",
+    "category": "明代の対外関係/明代後期の社会",
+    "chapter": "9",
+    "number": "59",
+    "question": "明代の東アジア世界は、銀の流入が盛んであったが、主に日本とどこの銀がもたらされたか。"
+  },
+  {
+    "answer": "生糸",
+    "category": "明代の対外関係/明代後期の社会",
+    "chapter": "9",
+    "number": "59",
+    "question": "明代の主力輸出品は、陶磁器と何か。"
+  },
+  {
+    "answer": "景徳鎮",
+    "category": "明代の対外関係/明代後期の社会",
+    "chapter": "9",
+    "number": "59",
+    "question": "宋代以降、中国で陶磁器の生産地として栄え、特に明清代に発展した江西省の都市は何か。"
+  },
+  {
+    "answer": "「湖広熟すれば天下足る」",
+    "category": "明代の対外関係/明代後期の社会",
+    "chapter": "9",
+    "number": "59",
+    "question": "明清時代、長江中流域の穀倉地帯が発展したことを表す言葉は何か。"
+  },
+  {
+    "answer": "特許商人",
+    "category": "明代の対外関係/明代後期の社会",
+    "chapter": "9",
+    "number": "59",
+    "question": "明代において、政府から特定の商業活動や貿易を独占的に行う権利を与えられた商人集団を何と呼ぶか。"
+  },
+  {
+    "answer": "山西商人",
+    "category": "明代の対外関係/明代後期の社会",
+    "chapter": "9",
+    "number": "59",
+    "question": "明清時代に金融業や運輸業で活躍した、山西省出身の商人集団は何か。"
+  },
+  {
+    "answer": "新安(徽州)商人",
+    "category": "明代の対外関係/明代後期の社会",
+    "chapter": "9",
+    "number": "59",
+    "question": "明清時代に塩の販売や出版などで財をなし、儒教文化のパトロンにもなった安徽省出身の商人集団は何か。"
+  },
+  {
+    "answer": "会館・公所",
+    "category": "明代の対外関係/明代後期の社会",
+    "chapter": "9",
+    "number": "59",
+    "question": "明清時代に、同郷・同業者が集まって親睦や互助を行った組織で、都市に多く設けられたものは何か。"
+  },
+  {
+    "answer": "陽明学",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "明の王陽明が大成した儒学の一派で、「知行合一」や「致良知」を説いた思想は何か。"
+  },
+  {
+    "answer": "王陽明（王守仁）",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "明代に陽明学を大成し、「知行合一」や「致良知」を説いた儒学者は何か。"
+  },
+  {
+    "answer": "『本草綱目』/李時珍",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "明代に編纂された、薬学の集大成として知られる医薬書と、その著者はそれぞれ何か。"
+  },
+  {
+    "answer": "『天工開物』/宋応星",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "明末に刊行された、産業技術全般をまとめた総合的な技術書と、その著者はそれぞれ何か。"
+  },
+  {
+    "answer": "『農政全書』/徐光啓",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "明末に編纂された、農業技術全般を扱った総合的な農書と、その著者はそれぞれ何か。"
+  },
+  {
+    "answer": "『崇禎暦書』/徐光啓",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "明末にイエズス会士アダム＝シャールらとともに作成された暦法書と、その事業を主導した明の学者はそれぞれ何か。"
+  },
+  {
+    "answer": "アダム＝シャール",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "湯若望の中国名をもち、徐光啓とともに暦法書を作成した、ドイツ出身の宣教師は誰か。"
+  },
+  {
+    "answer": "マテオ＝リッチ/「坤輿万国全図」",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "明代に来朝し、イエズス会士として布教を行い世界地図を作成したイタリア人と、その世界地図はそれぞれ何か。"
+  },
+  {
+    "answer": "『幾何原本』",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "徐光啓とマテオ＝リッチがエウクレイデスの著作を共訳して完成させた書物は何か。"
+  },
+  {
+    "answer": "『水滸伝』/施耐庵・羅貫中",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "元代に原型が成立した、北宋末の義侠108人の活躍を題材とした長編小説のタイトルと、作者・編者を答えなさい。"
+  },
+  {
+    "answer": "『三国志演義』/羅貫中",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "明代に成立した、三国時代の物語を題材とする歴史小説と、その作者はそれぞれ何か。"
+  },
+  {
+    "answer": "『西遊記』/呉承恩",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "唐僧玄奘のインドへの旅を題材にした明代の長編小説と、その作者とされる人物はそれぞれ何か。"
+  },
+  {
+    "answer": "マニラ",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "スペインのアジア貿易の拠点となったフィリピンの港市はどこか。"
+  },
+  {
+    "answer": "アチェ王国",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "17世紀にスマトラ島北端に成立し、香辛料貿易で栄えたイスラーム教国は何か。"
+  },
+  {
+    "answer": "マタラム王国",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "17世紀にジャワ島中部から東部を支配し、オランダ東インド会社と抗争したイスラーム教国は何か。"
+  },
+  {
+    "answer": "アユタヤ朝",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "14世紀中頃にチャオプラヤ川下流に成立し、タイ族の国家として繁栄した王朝は何か。"
+  },
+  {
+    "answer": "タウングー朝",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "16世紀半ば、ビルマ（現ミャンマー）を統一し、アユタヤ朝と抗争した王朝は何か。"
+  },
+  {
+    "answer": "織田信長",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "日本の戦国時代の武将で、天下統一の手前、1582年の本能寺の変により自害した人物は誰か。"
+  },
+  {
+    "answer": "豊臣秀吉",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "織田信長の後を継ぎ天下統一を成し遂げ、太閤検地や刀狩などの政策を行った人物は誰か。"
+  },
+  {
+    "answer": "徳川家康",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "江戸幕府を開き、およそ260年続く徳川の世の基礎を築いた初代征夷大将軍は誰か。"
+  },
+  {
+    "answer": "朱印船貿易",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "江戸時代初期にかけて、日本の商人が幕府の発行する許可状を持って行った海外貿易は何か。"
+  },
+  {
+    "answer": "「鎖国」",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "江戸幕府がキリスト教の禁圧と貿易の統制のため、一部の国や港を除いて外国との交通・貿易を制限した政策は何か。"
+  },
+  {
+    "answer": "万暦帝",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "16世紀後半〜17世紀前半にかけての明の第14代皇帝で、豊臣秀吉の朝鮮出兵の際に援軍を送った人物は誰か。"
+  },
+  {
+    "answer": "張居正",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "明の万暦帝の時代に登用され、一条鞭法を全国的に実施するなど財政改革を行った内閣大学士は何か。"
+  },
+  {
+    "answer": "一条鞭法",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "明末に張居正によって全国的に実施された、丁税と地税を一括して銀で納めさせる税制改革は何か。"
+  },
+  {
+    "answer": "女真（満洲）",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "17世紀初頭、ヌルハチが統一し、清を建国したツングース系の民族は何か。"
+  },
+  {
+    "answer": "ヌルハチ",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "女真族を統一し、後金を建国し、清朝の基礎を築いた人物は何か。"
+  },
+  {
+    "answer": "金（後金）",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "17世紀初頭、ヌルハチが女真族を統一して建国し、後に「清」と改称された国家は何か。"
+  },
+  {
+    "answer": "八旗",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "ヌルハチが組織した、清朝の軍事・行政・社会制度の基本となる制度は何か。"
+  },
+  {
+    "answer": "ホンタイジ",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "後金の第2代皇帝で、国号を「清」と改め、モンゴルや朝鮮を服属させた人物は何か。"
+  },
+  {
+    "answer": "チャハル",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "ホンタイジによって征服され、清の支配下に入ったモンゴルの一部族は何か。"
+  },
+  {
+    "answer": "呉三桂",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "明末清初の武将で、山海関の守将として清軍を招き入れ、李自成の乱を鎮圧させた人物は何か。"
+  },
+  {
+    "answer": "李自成の乱",
+    "category": "明代の文化/明の滅亡",
+    "chapter": "9",
+    "number": "60",
+    "question": "明末期に発生した、北京を陥落させて明を滅亡させた農民反乱は何か。"
+  },
+  {
+    "answer": "羅針盤",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "中国で発明され、方位を知るために用いられ、大航海時代に航海術の発展に大きく貢献した道具は何か。"
+  },
+  {
+    "answer": "『世界の記述』",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "マルコ＝ポーロが口述し、ルスティケロ＝ダ＝ピサがまとめた、『東方見聞録』とも呼ばれる書物は何か。"
+  },
+  {
+    "answer": "香辛料",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "大航海時代のヨーロッパ人が、アジアをめざして探求した、料理の風味付けや保存に用いられる商品は何か。"
+  },
+  {
+    "answer": "エンリケ",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "15世紀にポルトガルで海外探検を奨励し、アフリカ西岸の探検を進めさせたポルトガル王子は誰か。"
+  },
+  {
+    "answer": "バルトロメウ＝ディアス",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "15世紀末にポルトガルから出発し、アフリカ大陸最南端の喜望峰に到達した探検家は誰か。"
+  },
+  {
+    "answer": "喜望峰",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "バルトロメウ＝ディアスが到達した、アフリカ大陸最南端の岬はどこか。"
+  },
+  {
+    "answer": "ヴァスコ＝ダ＝ガマ",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "15世紀末、アフリカ大陸の喜望峰を回ってインドのカリカットに到達した探検家は誰か。"
+  },
+  {
+    "answer": "カリカット",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "ヴァスコ＝ダ＝ガマが到達した、インド南西部の重要な貿易港はどこか。"
+  },
+  {
+    "answer": "リスボン",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "大航海時代に、インドや新世界からの富が集まり、一大商業都市として栄えたポルトガルの首都はどこか。"
+  },
+  {
+    "answer": "モルッカ諸島",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "香辛料の産地で、大航海時代に西葡が争奪戦を繰り広げた、現インドネシア東部にある島々は何か。"
+  },
+  {
+    "answer": "コロンブス",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "1492年にスペインの援助を受けて大西洋を横断し、アメリカ大陸に到達したイタリア出身の探検家は誰か。"
+  },
+  {
+    "answer": "トスカネリ",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "地球球体説を唱え、コロンブスに西回り航路によるインド到達の可能性を示唆した伊の地理学者・天文学者は誰か。"
+  },
+  {
+    "answer": "イサベル",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "コロンブスの航海を援助した、スペインの女王は誰か。"
+  },
+  {
+    "answer": "サンサルバドル島",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "コロンブスが1492年に最初に到達したとされる、西インド諸島にある島はどこか。"
+  },
+  {
+    "answer": "インディオ",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "コロンブスがアメリカ大陸に到達した際に、先住民を指して呼んだ名称は何か。"
+  },
+  {
+    "answer": "カボット",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "15世紀末に北米大陸を探検し、ニューファンドランド島に到達したイタリア出身の探検家は誰か。"
+  },
+  {
+    "answer": "ヘンリ７世",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "カボットの北米探検を命じた、当時のイギリス国王は誰か。"
+  },
+  {
+    "answer": "カブラル",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "1500年にポルトガルからインドへ向かう航海の途中で、偶然ブラジルに到達したとされる探検家は誰か。"
+  },
+  {
+    "answer": "アメリゴ＝ヴェスプッチ",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "16世紀初頭に南米大陸を探検し、それが「新大陸」であることを提唱したイタリアの探検家は誰か。"
+  },
+  {
+    "answer": "バルボア",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "16世紀初頭にパナマ地峡を横断し、太平洋を「発見」したスペインの探検家は誰か。"
+  },
+  {
+    "answer": "マゼラン",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "16世紀初頭に彼の一団が世界一周航海を成し遂げた、ポルトガル出身の探検家は誰か。"
+  },
+  {
+    "answer": "カルロス１世",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "マゼランに周航を命じたハプスブルク家出身のスペイン王は誰か。"
+  },
+  {
+    "answer": "教皇子午線",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "1493年にローマ教皇アレクサンデル6世が定めた、スペインとポルトガルの勢力圏を分ける境界線は何か。"
+  },
+  {
+    "answer": "トルデシリャス条約",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "1494年にスペインとポルトガルの間で締結された、大西洋を二分して勢力範囲を定めた条約は何か。"
+  },
+  {
+    "answer": "コンキスタドール",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "16世紀にアメリカ大陸を征服し、インディオの文明を破壊したスペインの征服者たちは何と呼ばれたか。"
+  },
+  {
+    "answer": "コルテス",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "16世紀前半にメキシコのアステカ王国を征服したスペインのコンキスタドールは誰か。"
+  },
+  {
+    "answer": "ピサロ",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "16世紀前半に南米のインカ帝国を征服したスペインのコンキスタドールは誰か。"
+  },
+  {
+    "answer": "ポトシ銀山",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "16世紀半ばに現在のボリビアで発見され、スペインに大量の銀をもたらした銀山は何か。"
+  },
+  {
+    "answer": "エンコミエンダ制",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "先住民を保護・教化するかわりに、彼らから貢納や労働を徴収する権利を入植者に与えたスペインの制度は何か。"
+  },
+  {
+    "answer": "ラス＝カサス",
+    "category": "大航海時代",
+    "chapter": "9",
+    "number": "61",
+    "question": "スペイン人による先住民への残虐行為を告発し、その保護を訴えたドミニコ修道士は誰か。"
+  },
+  {
+    "answer": "世界の一体化",
+    "category": "「世界の一体化」と大西洋世界の形成",
+    "chapter": "9",
+    "number": "62",
+    "question": "大航海時代以降、地球規模での交流が活発になり、人・物・情報・文化などが結びついた現象は何と呼ばれるか。"
+  },
+  {
+    "answer": "商業革命",
+    "category": "「世界の一体化」と大西洋世界の形成",
+    "chapter": "9",
+    "number": "62",
+    "question": "大航海時代以降にヨーロッパで起きた、貿易の拡大や金融システムなどの発展などによる経済的変革を何と呼ぶか。"
+  },
+  {
+    "answer": "フッガー家",
+    "category": "「世界の一体化」と大西洋世界の形成",
+    "chapter": "9",
+    "number": "62",
+    "question": "大航海時代を経て貿易の中心が大西洋岸に移行したことで衰退した、アウクスブルクを拠点とした豪商は何家か。"
+  },
+  {
+    "answer": "価格革命",
+    "category": "「世界の一体化」と大西洋世界の形成",
+    "chapter": "9",
+    "number": "62",
+    "question": "16世紀のヨーロッパで、新大陸から流入した大量の銀によって発生した、物価の著しい高騰現象を何と呼ぶか。"
+  },
+  {
+    "answer": "応天府",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "洪武帝が1368年に都とした、現在の南京の当時の都市名は何か。"
+  },
+  {
+    "answer": "交鈔",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "洪武帝が銅銭不足対応のために発行したが、銀兌換不対応で価値が低下した紙幣は何か。"
+  },
+  {
+    "answer": "五軍都督府",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "衛所制を管轄した明の軍事機関は何か。"
+  },
+  {
+    "answer": "宝船",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "永楽帝が派遣した鄭和の南海諸国遠征で用いられたジャンク船の巨大帆船の名前は何か。"
+  },
+  {
+    "answer": "王直",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "16世紀に後期倭寇の首領として活動した明の密貿易商人は誰か。"
+  },
+  {
+    "answer": "寧夏の役、播州の役",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "万暦の三大征のうち、秀吉の朝鮮出兵の他に、モンゴル人将軍による反乱と、貴州省の反乱をそれぞれ答えなさい。"
+  },
+  {
+    "answer": "顧憲成",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "17世紀初頭の明内部の党派争いの中で、東林派を指導した人物は誰か。"
+  },
+  {
+    "answer": "魏忠賢",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "17世紀初頭の明内部の党派争いの中で、非東林派を指導した宦官は誰か。"
+  },
+  {
+    "answer": "建州女真",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "全女真を統一したヌルハチが首長を務めた女真の部族名は何か。"
+  },
+  {
+    "answer": "愛新覚羅",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "ヌルハチ以降の後金・清の君主一族の姓は何か。"
+  },
+  {
+    "answer": "ウイグル文字",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "ヌルハチが満洲文字を作成するときに参考にした文字は何か。"
+  },
+  {
+    "answer": "瀋陽",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "1619年、サルホの戦いで明に勝利した後金が都とした都市名（のちに盛京と改称）は何か。"
+  },
+  {
+    "answer": "蒙古衙門",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "1635年、チャハルを制圧したホンタイジが設置した内モンゴルの統治機関で、後の理藩院の起源となった機関は何か。"
+  },
+  {
+    "answer": "抗租運動",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "明代の15世紀以降、佃戸の窮乏を背景に発生した、税搾取に反発する運動の総称を何というか。"
+  },
+  {
+    "answer": "鄧茂七の乱",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "抗租運動の先駆で、1448-49年に福建省で起きた反乱名は何か。"
+  },
+  {
+    "answer": "李贄",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "陽明学左派で、儒学の礼教主義を偽善として批判し、反逆者として投獄された人物は誰か。"
+  },
+  {
+    "answer": "顧炎武",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "明末の考証学者で『日知録』を残した人物は誰か。"
+  },
+  {
+    "answer": "黄宗羲",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "明末の考証学者で『明夷待訪録』を残した人物は誰か。"
+  },
+  {
+    "answer": "『読通鑑論』",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "明の滅亡を嘆き、王夫之が著した歴史書は何か。"
+  },
+  {
+    "answer": "『牡丹亭』",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "明の湯顕祖が著し、幽霊を題材とした戯曲の代表作は何か。"
+  },
+  {
+    "answer": "プレスター＝ジョン伝説",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "大航海時代や十字軍の背景となった、ヨーロッパの東方にキリスト教司祭が君主の国家があり、イスラーム勢力討伐に協力するという伝説のことを何というか。"
+  },
+  {
+    "answer": "セウタ",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "1415年「航海王子」エンリケの派遣した船団が攻略して航海の拠点とし、現在はスペイン領である地域で、ジブラルタル海峡に面するアフリカ北部の地名は何か。"
+  },
+  {
+    "answer": "ヴェルデ岬",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "1445年「航海王子」エンリケの派遣した船団が発見した、アフリカ最西端の岬は何か。"
+  },
+  {
+    "answer": "ジョアン2世",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "バルトロメウ＝ディアスを派遣したポルトガル国王は誰か。"
+  },
+  {
+    "answer": "イブン＝マージド",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "1498年にカリカットに到達したヴァスコ＝ダ＝ガマの水先案内人であるムスリムは誰か。"
+  },
+  {
+    "answer": "1500年",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "ポルトガルに派遣されたカブラルがブラジルに漂着したのは西暦何年か。"
+  },
+  {
+    "answer": "セイロン島",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "1505年、ポルトガルがモルッカ諸島への中継地として獲得した南アジアの島はどこか。"
+  },
+  {
+    "answer": "ディウ沖海戦",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "1509年、ポルトガルがマムルーク朝艦隊を撃破し、紅海・アラビア海の制海権を得た海戦は何か。"
+  },
+  {
+    "answer": "アルメイダ",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "ディウ沖海戦で勝利を収めたポルトガルの初代インド副王は誰か。"
+  },
+  {
+    "answer": "ゴア",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "1510年、ポルトガルが総督府を設置したインドの都市はどこか。"
+  },
+  {
+    "answer": "アルブケルケ",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "ポルトガルの初代インド総督になり、1511年にはマラッカ王国を滅ぼした人物は誰か。"
+  },
+  {
+    "answer": "ジェノヴァ",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "コロンブスの出身である、北イタリアの都市はどこか。"
+  },
+  {
+    "answer": "パロス",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "1492年、コロンブスが出港した、スペイン南西部の港町はどこか。"
+  },
+  {
+    "answer": "サンタ・マリア号",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "1492年、コロンブスが出港した時に乗っていた船の名前は何か。"
+  },
+  {
+    "answer": "サンサルバドル島",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "1492年、コロンブスが到達したバハマ諸島の島はどこか。"
+  },
+  {
+    "answer": "カボット",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "1497-98年、ヘンリ7世の命で北米大陸を探検した航海者は誰か。"
+  },
+  {
+    "answer": "セビリャ",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "1519年、マゼランが出港した、スペイン南部の港町はどこか。"
+  },
+  {
+    "answer": "ラプラプ",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "1521年、マゼランが戦死した戦いの相手で、フィリピンのマクタン島の首長はだれか。"
+  },
+  {
+    "answer": "ドレーク",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "1580年、エリザベス1世に仕え、史上２番目の世界周航を果たしたイギリスの海賊は誰か。"
+  },
+  {
+    "answer": "アレクサンデル6世",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "1493年、コロンブスの「アジア」到達を受け、植民地分界線を定めた教皇は誰か。"
+  },
+  {
+    "answer": "サラゴサ条約",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "1529年、アジアでのスペイン・ポルトガルの境界を定めた条約は何か。"
+  },
+  {
+    "answer": "エンコミエンダ制",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "スペイン国王がインディオをキリスト教化する条件で実質的な奴隷化を許可した制度は何か。"
+  },
+  {
+    "answer": "ラス＝カサス",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "植民地における先住民の過酷な強制労働の実施を『インディアスの破壊についての簡潔な報告』で暴露したドミニコ会宣教師は誰か。"
+  },
+  {
+    "answer": "アシエント",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "スペイン国王がアフリカの黒人をアメリカ大陸のスペイン領に送ることを認めた奴隷供給契約のことを何というか。"
+  },
+  {
+    "answer": "レガスピ",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "1571年、マニラを建てたスペインの初代フィリピン総督は誰か。"
+  },
+  {
+    "answer": "ガレオン船",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "大航海時代にスペインなどの西欧諸国が用いた大型船の種類は何か。"
+  },
+  {
+    "answer": "石見銀山",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "16世紀、東アジアでの銀流通に大きく作用した、日本の現在の島根県にある銀山は何か。"
+  },
+  {
+    "answer": "再版農奴制",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "経済発展した西欧に対し、16世紀頃の東欧で拡大した農民支配強化のことを何というか。"
+  },
+  {
+    "answer": "グーツヘルシャフト",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "再版農奴制に基づき、エルベ川以東で発達した領主による直営地経営のことを何というか。"
+  },
+  {
+    "answer": "ウォーラーステイン",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "20世紀後半にその著書の中で、大航海時代以降に近代に移行し、世界は「中核」と「周辺」に分けられ、世界的分業システムのもと資本主義的経済体制が形成されたという「近代世界システム」を唱えたアメリカの社会学者は誰か。"
+  },
+  {
+    "answer": "メルカトル",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "16世紀に地球儀を円筒に投影し、等角航路が直線で示され航海に用いられる地図法を考案したネーデルラントの地理学者は誰か。"
+  },
+  {
+    "answer": "アルマグロ",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "大航海時代、チリを発見した人物は誰か。"
+  },
+  {
+    "answer": "スンダ海峡",
+    "category": "難関私大対策",
+    "chapter": "9",
+    "number": "Z",
+    "question": "ポルトガルが1511年にマラッカを占領したが、これに対抗しムスリム商人が交易ルートとして開拓した、スマトラ島とジャワ島の間の海峡は何か。"
+  },
+  {
+    "answer": "ブルサ",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "オスマン帝国建国当初の都はどこか。"
+  },
+  {
+    "answer": "オスマン1世",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "13世紀末にアナトリアにオスマン帝国を建国した人物は誰か。"
+  },
+  {
+    "answer": "シパーヒー",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "オスマン帝国初期に活躍した、トルコ系騎士のことを何と呼ぶか。"
+  },
+  {
+    "answer": "バヤジット1世",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "15世紀初頭にオスマン帝国のスルタンとなり、アンカラの戦いでティムールに敗れた人物は誰か。"
+  },
+  {
+    "answer": "アンカラの戦い",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "1402年にオスマン帝国のとティムール朝の間で行われ、オスマン帝国が大敗した戦いは何か。"
+  },
+  {
+    "answer": "メフメト２世",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "コンスタンティノープルを陥落させ、ビザンツ帝国を滅ぼしたオスマン帝国のスルタンは誰か。"
+  },
+  {
+    "answer": "1453年",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "コンスタンティノープルが陥落したのは西暦何年か。"
+  },
+  {
+    "answer": "イスタンブル",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "コンスタンティノープル陥落後、オスマン帝国は何という都市名に改称し遷都したか。"
+  },
+  {
+    "answer": "セリム1世",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "マムルーク朝を滅ぼしてエジプトを支配下におさめ、カリフの称号を手に入れたオスマン帝国のスルタンは誰か。"
+  },
+  {
+    "answer": "チャルディラーンの戦い",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "1514年にオスマン帝国とサファヴィー朝の間で行われ、オスマン帝国が勝利した戦いは何か。"
+  },
+  {
+    "answer": "マムルーク朝",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "セリム1世が滅亡させた、エジプトを中心にシリアなどを支配したイスラーム王朝は何か。"
+  },
+  {
+    "answer": "1517年",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "マムルーク朝が滅亡したのは西暦何年か。"
+  },
+  {
+    "answer": "スレイマン1世",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "16世紀前半にオスマン帝国のスルタンとなり、最盛期を築き、「立法帝」とも称された人物は誰か。"
+  },
+  {
+    "answer": "スレイマン＝モスク",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "イスタンブルに建設された、スレイマン1世の命により、ミマール＝スィナンが設計したとされるモスクは何か。"
+  },
+  {
+    "answer": "第１次ウィーン包囲",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "1529年にオスマン帝国のスレイマン1世が、神聖ローマ帝国の首都を攻撃したが撤退した包囲戦は何か。"
+  },
+  {
+    "answer": "プレヴェザの海戦",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "1538年にオスマン帝国と神聖ローマ帝国・ヴェネツィアなどの間で行われ、オスマン帝国が勝利した海戦は何か。"
+  },
+  {
+    "answer": "ミッレト制",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "オスマン帝国において、異教徒に信仰の自由などを認める代わりに、ジズヤを課して支配した制度は何か。"
+  },
+  {
+    "answer": "ティマール制",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "オスマン帝国において、軍事奉仕の代償として国家が徴税権を与えた土地制度は何か。"
+  },
+  {
+    "answer": "イェニチェリ",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "オスマン帝国において、スルタン直属の常備歩兵軍として活躍し、後に政治にも介入するようになった軍隊は何か。"
+  },
+  {
+    "answer": "デヴシルメ",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "オスマン帝国において、キリスト教徒の少年を徴用し、改宗させたのち、行政官や軍人として育成した制度は何か。"
+  },
+  {
+    "answer": "カピチュレーション",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "オスマン帝国がヨーロッパ諸国に対し、通商や居住の自由、治外法権などを認めた特権は何か。"
+  },
+  {
+    "answer": "徴税請負制",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "オスマン帝国の拡大後、ティマール制にかわって実施された徴税制度は何か。"
+  },
+  {
+    "answer": "アーヤーン",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "オスマン帝国において、徴税請負制などを通じて事実上の領主のような存在となった地方の有力者層を何と呼ぶか。"
+  },
+  {
+    "answer": "タブリーズ",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "サファヴィー朝建国当初の都はどこか。"
+  },
+  {
+    "answer": "イスマーイール1世",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "16世紀初頭にサファヴィー朝を建国した人物は誰か。"
+  },
+  {
+    "answer": "十二イマーム派",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "サファヴィー朝の国教で、ムハンマドの血統を受け継ぐ12人のイマームを正統な指導者とみなす宗派は何か。"
+  },
+  {
+    "answer": "シャー",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "サファヴィー朝が採用した、君主の称号は何か。"
+  },
+  {
+    "answer": "アッバース1世",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "17世紀初頭にサファヴィー朝の最盛期を築き、首都をイスファハーンに遷した人物は誰か。"
+  },
+  {
+    "answer": "イスファハーン",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "サファヴィー朝の最盛期にアッバース1世によって建設され、壮麗な都として栄えた都市はどこか。"
+  },
+  {
+    "answer": "「世界の半分」",
+    "category": "オスマン帝国とサファヴィー朝",
+    "chapter": "10",
+    "number": "63",
+    "question": "都市の壮大さを讃える言葉として、イスファハーンはどのように評価がされているか。"
+  },
+  {
+    "answer": "ムガル帝国",
+    "category": "ムガル帝国の興隆",
+    "chapter": "10",
+    "number": "64",
+    "question": "16世紀初頭にインドに建国され、19世紀半ばまで存続したイスラーム王朝は何か。"
+  },
+  {
+    "answer": "バーブル",
+    "category": "ムガル帝国の興隆",
+    "chapter": "10",
+    "number": "64",
+    "question": "16世紀初頭に中央アジアからインドに侵攻し、ムガル帝国を建国した人物は誰か。"
+  },
+  {
+    "answer": "パーニーパットの戦い",
+    "category": "ムガル帝国の興隆",
+    "chapter": "10",
+    "number": "64",
+    "question": "1526年にバーブルがロディー朝を破り、ムガル帝国建国の足がかりを築いた戦いは何か。"
+  },
+  {
+    "answer": "アクバル",
+    "category": "ムガル帝国の興隆",
+    "chapter": "10",
+    "number": "64",
+    "question": "16世紀後半にムガル帝国の最盛期を築き、異教徒寛容策をとってヒンドゥー教徒とも融和を図った皇帝は誰か。"
+  },
+  {
+    "answer": "アグラ",
+    "category": "ムガル帝国の興隆",
+    "chapter": "10",
+    "number": "64",
+    "question": "アクバル帝の時代に都となった都市はどこか。"
+  },
+  {
+    "answer": "ジズヤ",
+    "category": "ムガル帝国の興隆",
+    "chapter": "10",
+    "number": "64",
+    "question": "宗教寛容政策のためにアクバルが廃止したが、後に復活した税は何か。"
+  },
+  {
+    "answer": "シャー＝ジャハーン",
+    "category": "ムガル帝国の興隆",
+    "chapter": "10",
+    "number": "64",
+    "question": "17世紀前半にムガル帝国の皇帝となり、タージ＝マハルを建設した人物は誰か。"
+  },
+  {
+    "answer": "タージ＝マハル",
+    "category": "ムガル帝国の興隆",
+    "chapter": "10",
+    "number": "64",
+    "question": "ムガル帝国のシャー＝ジャハーンが、亡くなった妃のために建設した、インドの代表的なイスラーム建築は何か。"
+  },
+  {
+    "answer": "アウラングゼーブ",
+    "category": "ムガル帝国の興隆",
+    "chapter": "10",
+    "number": "64",
+    "question": "17世紀後半にムガル帝国の皇帝となり、異教徒への不寛容政策をとって帝国弱体化のきっかけを作った人物は誰か。"
+  },
+  {
+    "answer": "シク教",
+    "category": "ムガル帝国の興隆",
+    "chapter": "10",
+    "number": "64",
+    "question": "15世紀に成立しパンジャーブ地方で信者を集めた、ヒンドゥー教とイスラーム教の要素を融合した一神教は何か。"
+  },
+  {
+    "answer": "ナーナク",
+    "category": "ムガル帝国の興隆",
+    "chapter": "10",
+    "number": "64",
+    "question": "15世紀から16世紀にかけて活動した、シク教の開祖は誰か。"
+  },
+  {
+    "answer": "マラーター王国",
+    "category": "ムガル帝国の興隆",
+    "chapter": "10",
+    "number": "64",
+    "question": "17世紀半ばにシヴァージーがデカン高原に建国し、ムガル帝国の衰退期に勢力拡大したヒンドゥー系王国は何か。"
+  },
+  {
+    "answer": "女真（満洲）",
+    "category": "多民族国家・清朝",
+    "chapter": "10",
+    "number": "65",
+    "question": "17世紀初頭、ヌルハチが統一し、清を建国したツングース系の民族は何か。"
+  },
+  {
+    "answer": "八旗",
+    "category": "多民族国家・清朝",
+    "chapter": "10",
+    "number": "65",
+    "question": "ヌルハチが組織した、清朝の軍事・行政・社会制度の基本となる制度は何か。"
+  },
+  {
+    "answer": "理藩院",
+    "category": "多民族国家・清朝",
+    "chapter": "10",
+    "number": "65",
+    "question": "清朝が設置した、主にモンゴル、チベット、青海、新疆などの「藩部」と呼ばれる地域を統括した機関は何か。"
+  },
+  {
+    "answer": "呉三桂",
+    "category": "多民族国家・清朝",
+    "chapter": "10",
+    "number": "65",
+    "question": "明末清初の武将で、山海関の守将として清軍を招き入れ、李自成の乱を鎮圧させた人物は何か。"
+  },
+  {
+    "answer": "順治帝",
+    "category": "多民族国家・清朝",
+    "chapter": "10",
+    "number": "65",
+    "question": "明の滅亡を機に中国本土に入り、都を北京に遷した、清の第３代皇帝は誰か。"
+  },
+  {
+    "answer": "紫禁城",
+    "category": "多民族国家・清朝",
+    "chapter": "10",
+    "number": "65",
+    "question": "明の永楽帝によって北京に建設され、清朝の時代も宮殿として使用された、皇帝が居住し政務を行った宮城は何か。"
+  },
+  {
+    "answer": "康熙帝",
+    "category": "多民族国家・清朝",
+    "chapter": "10",
+    "number": "65",
+    "question": "三藩の乱の鎮圧、鄭氏台湾の平定により中国統一を果たした、清の全盛期を築いた皇帝は誰か。"
+  },
+  {
+    "answer": "三藩の乱",
+    "category": "多民族国家・清朝",
+    "chapter": "10",
+    "number": "65",
+    "question": "17世紀後半に清朝で発生した、清に降った漢人の藩王が起こした大規模な反乱で、康熙帝が鎮圧したものは何か。"
+  },
+  {
+    "answer": "鄭成功",
+    "category": "多民族国家・清朝",
+    "chapter": "10",
+    "number": "65",
+    "question": "明の遺臣で、清朝に抵抗し、17世紀に台湾を拠点に活動した人物は誰か。"
+  },
+  {
+    "answer": "ネルチンスク条約",
+    "category": "多民族国家・清朝",
+    "chapter": "10",
+    "number": "65",
+    "question": "1689年に清の康熙帝とロシアの間で締結された、両国の国境を画定した条約は何か。"
+  },
+  {
+    "answer": "雍正帝",
+    "category": "多民族国家・清朝",
+    "chapter": "10",
+    "number": "65",
+    "question": "康熙帝の時代に確立された清朝の支配を磐石にし、軍機処を設置した皇帝は誰か。"
+  },
+  {
+    "answer": "キャフタ条約",
+    "category": "多民族国家・清朝",
+    "chapter": "10",
+    "number": "65",
+    "question": "1727年に清の雍正帝とロシアの間で締結された、ネルチンスク条約を補完し、通商関係を定めた条約は何か。"
+  },
+  {
+    "answer": "乾隆帝",
+    "category": "多民族国家・清朝",
+    "chapter": "10",
+    "number": "65",
+    "question": "18世紀後半に清朝の皇帝となり、清朝の最盛期を築き、ジュンガルを平定して版図を最大に拡大した人物は誰か。"
+  },
+  {
+    "answer": "ジュンガル",
+    "category": "多民族国家・清朝",
+    "chapter": "10",
+    "number": "65",
+    "question": "乾隆帝によって平定された、モンゴル系オイラトの部族は何か。"
+  },
+  {
+    "answer": "新疆",
+    "category": "多民族国家・清朝",
+    "chapter": "10",
+    "number": "65",
+    "question": "清朝の乾隆帝がジュンガルを滅ぼしたのち、中国西部の広大な地域を何と呼ぶようになったか。"
+  },
+  {
+    "answer": "藩部",
+    "category": "多民族国家・清朝",
+    "chapter": "10",
+    "number": "65",
+    "question": "清朝において、モンゴル、チベット、青海、新疆など、理藩院を通じて間接的に統治された地域を何と呼ぶか。"
+  },
+  {
+    "answer": "ダライ＝ラマ",
+    "category": "多民族国家・清朝",
+    "chapter": "10",
+    "number": "65",
+    "question": "チベット仏教黄帽派の最高指導者で、チベットにおける精神的・政治的権威を象徴する称号は何か。"
+  },
+  {
+    "answer": "両班",
+    "category": "清と東アジア・東南アジア",
+    "chapter": "10",
+    "number": "66",
+    "question": "高麗時代から朝鮮における支配階級で、文班と武班からなる特権的な身分集団を指す言葉は何か。"
+  },
+  {
+    "answer": "小中華主義",
+    "category": "清と東アジア・東南アジア",
+    "chapter": "10",
+    "number": "66",
+    "question": "朝鮮において、中国の儒教文化を正統なものとみなし、自国を周辺諸国よりも優位にあると考える思想は何か。"
+  },
+  {
+    "answer": "阮朝",
+    "category": "清と東アジア・東南アジア",
+    "chapter": "10",
+    "number": "66",
+    "question": "19世紀初頭に成立し、ベトナムを統一して成立した、最後のベトナム王朝は何か。"
+  },
+  {
+    "answer": "ラタナコーシン朝",
+    "category": "清と東アジア・東南アジア",
+    "chapter": "10",
+    "number": "66",
+    "question": "18世紀末にラーマ1世によって建国され、現在のタイ王国の前身となった王朝は何か。"
+  },
+  {
+    "answer": "コンバウン朝",
+    "category": "清と東アジア・東南アジア",
+    "chapter": "10",
+    "number": "66",
+    "question": "18世紀中頃に建国され、ビルマを統一し、イギリスとのビルマ戦争によって滅亡した王朝は何か。"
+  },
+  {
+    "answer": "オランダ",
+    "category": "清と東アジア・東南アジア",
+    "chapter": "10",
+    "number": "66",
+    "question": "アチェ王国やマタラム王国、バンテン王国などスマトラ島やジャワ島に進出したヨーロッパの国家はどこか。"
+  },
+  {
+    "answer": "華僑",
+    "category": "清と東アジア・東南アジア",
+    "chapter": "10",
+    "number": "66",
+    "question": "清代以降、中国から東南アジアや世界各地へ移住した中国系の人々を指す言葉は何か。"
+  },
+  {
+    "answer": "文字の獄",
+    "category": "清代中国の社会と文化",
+    "chapter": "10",
+    "number": "67",
+    "question": "反清的な言動や批判的な内容を含む書物や文章を弾圧した思想統制は何か。"
+  },
+  {
+    "answer": "辮髪",
+    "category": "清代中国の社会と文化",
+    "chapter": "10",
+    "number": "67",
+    "question": "清朝が漢民族に強制した、頭頂部以外の髪を剃り上げ、残りを一本の三つ編みにした独特の髪型は何か。"
+  },
+  {
+    "answer": "理藩院",
+    "category": "清代中国の社会と文化",
+    "chapter": "10",
+    "number": "67",
+    "question": "清朝が設置した、主にモンゴル、チベット、青海、新疆などの「藩部」と呼ばれる地域を統括した機関は何か。"
+  },
+  {
+    "answer": "軍機処",
+    "category": "清代中国の社会と文化",
+    "chapter": "10",
+    "number": "67",
+    "question": "清の雍正帝が設置した、皇帝直属の最高意思決定機関で、軍事や国家の重要事項を処理した機関は何か。"
+  },
+  {
+    "answer": "八旗",
+    "category": "清代中国の社会と文化",
+    "chapter": "10",
+    "number": "67",
+    "question": "ヌルハチが組織した、清朝の軍事・行政・社会制度の基本となる制度は何か。"
+  },
+  {
+    "answer": "緑営",
+    "category": "清代中国の社会と文化",
+    "chapter": "10",
+    "number": "67",
+    "question": "清朝が漢民族の兵士で構成した、漢人系の軍事組織は何か。"
+  },
+  {
+    "answer": "広州",
+    "category": "清代中国の社会と文化",
+    "chapter": "10",
+    "number": "67",
+    "question": "1757年、唯一の外国との貿易港として清が設定した都市はどこか。"
+  },
+  {
+    "answer": "行商",
+    "category": "清代中国の社会と文化",
+    "chapter": "10",
+    "number": "67",
+    "question": "清において、外国貿易を独占した特許商人は何と呼ばれたか。"
+  },
+  {
+    "answer": "地丁銀制",
+    "category": "清代中国の社会と文化",
+    "chapter": "10",
+    "number": "67",
+    "question": "清の康熙帝の時代に始まった税制で、人頭税の徴税分を土地税に組み入れる形で一括して銀納させる制度は何か。"
+  },
+  {
+    "answer": "『紅楼夢』",
+    "category": "清代中国の社会と文化",
+    "chapter": "10",
+    "number": "67",
+    "question": "清代に曹雪芹によって書かれた、貴族の家庭の盛衰・恋模様などを描いた長編小説は何か。"
+  },
+  {
+    "answer": "『康熙字典』",
+    "category": "清代中国の社会と文化",
+    "chapter": "10",
+    "number": "67",
+    "question": "清の康熙帝の勅命により、1716年に完成した、中国最大級の漢字字典は何か。"
+  },
+  {
+    "answer": "『古今図書集成』",
+    "category": "清代中国の社会と文化",
+    "chapter": "10",
+    "number": "67",
+    "question": "清の康熙帝の勅命により編纂が始まり、雍正帝の時代に完成した、中国最大の類書（百科事典）は何か。"
+  },
+  {
+    "answer": "『四庫全書』",
+    "category": "清代中国の社会と文化",
+    "chapter": "10",
+    "number": "67",
+    "question": "清の乾隆帝の勅命により編纂された、中国の古今の主要な文献を網羅的に収集・分類した一大叢書は何か。"
+  },
+  {
+    "answer": "考証学",
+    "category": "清代中国の社会と文化",
+    "chapter": "10",
+    "number": "67",
+    "question": "清代に盛んになった、古典を厳密に検証し、字句の解釈や史実の究明を通じて、経典の真意を探究した学問は何か。"
+  },
+  {
+    "answer": "アダムシャール",
+    "category": "清代中国の社会と文化",
+    "chapter": "10",
+    "number": "67",
+    "question": "明末清初で活躍し、暦法や火砲製造の技術を伝え、徐光啓と『崇禎暦書』を編纂したイエズス会宣教師は誰か。"
+  },
+  {
+    "answer": "カスティリオーネ",
+    "category": "清代中国の社会と文化",
+    "chapter": "10",
+    "number": "67",
+    "question": "清の康熙帝・雍正帝・乾隆帝の時代に仕え、特に円明園の設計や装飾に携わったイエズス会宣教師・画家は誰か。"
+  },
+  {
+    "answer": "円明園",
+    "category": "清代中国の社会と文化",
+    "chapter": "10",
+    "number": "67",
+    "question": "清朝の離宮で、西洋様式の建築物も取り入れられたが、アロー戦争で英仏連合軍によって破壊された庭園は何か。"
+  },
+  {
+    "answer": "典礼問題",
+    "category": "清代中国の社会と文化",
+    "chapter": "10",
+    "number": "67",
+    "question": "キリスト教布教における中国固有の儀礼の扱いを巡り、イエズス会と他の修道会、教皇庁の間で対立した問題は何か。"
+  },
+  {
+    "answer": "キリスト教の布教",
+    "category": "清代中国の社会と文化",
+    "chapter": "10",
+    "number": "67",
+    "question": "1724年、雍正帝が全面的に禁止したことは何か。"
+  },
+  {
+    "answer": "シノワズリ",
+    "category": "清代中国の社会と文化",
+    "chapter": "10",
+    "number": "67",
+    "question": "17世紀から18世紀にかけてヨーロッパで流行した、中国風のデザインやモチーフを取り入れた美術様式は何か。"
+  },
+  {
+    "answer": "ドルゴン",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "幼少時の順治帝に仕えた摂政は誰か。"
+  },
+  {
+    "answer": "尚可喜",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "雲南の呉三桂、福建の耿継茂とともに広東に平南王として藩王に命じられ、のちに三藩の乱を起こした人物は誰か。"
+  },
+  {
+    "answer": "鄭芝龍",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "鄭成功の父で、キリスト教徒で海賊であった人物は誰か。"
+  },
+  {
+    "answer": "遷界令",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "鄭氏台湾の抵抗を弾圧するため、康熙帝が1661年に発した沿岸住民への内陸移住令を何というか。"
+  },
+  {
+    "answer": "近松門左衛門",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "鄭成功による清への対抗を描いた日本の人形浄瑠璃作品『国性爺合戦』の作者は誰か。"
+  },
+  {
+    "answer": "ダワチ",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "1758年に乾隆帝が滅ぼした時のジュンガルの首長は誰か。"
+  },
+  {
+    "answer": "十全老人",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "現在の中国にほぼ重なる領土を獲得し、清の最大版図を実現した乾隆帝が称した自称名は何か。"
+  },
+  {
+    "answer": "海関",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "康熙帝の1684年の展海令により海禁が解かれ、設置された税関の名前は何か。"
+  },
+  {
+    "answer": "盛世滋生人丁",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "1711年に康熙帝即位50年記念に施行された、それ以降の人頭税を課さない制度は何か。"
+  },
+  {
+    "answer": "馬蹄銀",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "清代に流通した銀は、その形状から何と呼ばれるか。"
+  },
+  {
+    "answer": "曹雪芹、呉敬梓、蒲松齢",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "『紅楼夢』『儒林外史』『聊斎志異』の作者名をそれぞれ答えなさい。"
+  },
+  {
+    "answer": "銭大昕",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "清代の考証学者で、史学研究法を樹立した人物は誰か。"
+  },
+  {
+    "answer": "段玉裁",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "清代の考証学者で、文学・音韻の研究をまとめた『説文解字注』を著した人物は誰か。"
+  },
+  {
+    "answer": "『天主実義』",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "マテオ＝リッチが著したキリスト教の教義書は何か。"
+  },
+  {
+    "answer": "ルイ14世",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "17世紀初頭にブーヴェを清に派遣し、『康熙帝伝』を献上されたフランス国王は誰か。"
+  },
+  {
+    "answer": "ボン教",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "大乗仏教とともにチベット仏教のもととなったチベットの民俗信仰は何か。"
+  },
+  {
+    "answer": "活仏",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "ダライ＝ラマの遺言した地方で1年以内に誕生した幼児から選ばれる転生者のことを漢字で何というか。"
+  },
+  {
+    "answer": "サキャ派（紅帽派）",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "16世紀にチベット仏教を改革し、黄帽派を開いたツォンカパが腐敗を批判した宗派名は何か。"
+  },
+  {
+    "answer": "ソナム＝ギャツォ",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "ツォンカパの弟子で、アルタン＝ハンからダライ＝ラマの称号を与えられたチベット僧は誰か。"
+  },
+  {
+    "answer": "山田長政",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "朱印船貿易の一環で、タイのアユタヤに日本町を建てた人物は誰か。"
+  },
+  {
+    "answer": "中山王",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "15世紀の琉球を統一した尚巴志は、三山のうちどこの王であったか。"
+  },
+  {
+    "answer": "島津氏",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "中国に朝貢した琉球が両属体制として朝貢した薩摩藩主は何氏か。"
+  },
+  {
+    "answer": "ダヤン＝ハン",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "アルタン＝ハンの祖父で15世紀後半から16世紀前半にタタールを勢力拡大した人物は誰か。"
+  },
+  {
+    "answer": "黎利",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "ベトナムの陳朝の武将だったが、独立し黎朝を建てた人物は誰か。"
+  },
+  {
+    "answer": "西山党の乱",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "1771-1802年に黎朝衰退に乗じて怒った反乱は何か。"
+  },
+  {
+    "answer": "ラーンサーン王国",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "14世紀半ばから18世紀のラオスで、メコン川中流域にタイ語系ラオ人が建てた王国は何か。"
+  },
+  {
+    "answer": "アンコール朝",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "1432年にアユタヤ朝が滅ぼしたカンボジアの王朝は何か。"
+  },
+  {
+    "answer": "タウングー朝、コンバウン朝",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "18世紀後半、アユタヤ朝を攻撃し、衰退させた王朝と、滅亡させた王朝の２つのビルマの王朝はそれぞれ何か。"
+  },
+  {
+    "answer": "ラーマ1世",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "ラタナコーシン朝の創始者は誰か。"
+  },
+  {
+    "answer": "十二イマーム派",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "サファヴィー朝が国教として採用した宗派は何か。"
+  },
+  {
+    "answer": "タブリーズ",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "サファヴィー朝の建国当初の都はどこか。"
+  },
+  {
+    "answer": "ガズヴィーン",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "1597年にイスファハーンに遷都されるまでの、サファヴィー朝２つ目の都はどこか。"
+  },
+  {
+    "answer": "キジルバシュ",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "サファヴィー朝建国貢献したが、特権階層化したためアッバース1世により弾圧されたトルコ系騎兵集団を何と呼ぶか。"
+  },
+  {
+    "answer": "ゴラーム",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "キジルバシュを弾圧したアッバース1世が組織した奴隷兵からなる常備軍は何か。"
+  },
+  {
+    "answer": "イマーム＝モスク",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "アッバース１世が都イスファハーンに建設させたモスクは何か。"
+  },
+  {
+    "answer": "ホルムズ島",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "1622年、アッバース1世がポルトガルから奪回した、港湾都市バンダレ＝アッバースのあるペルシア湾口の島は何か。"
+  },
+  {
+    "answer": "アフシャール朝、ザンド朝",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "サファヴィー朝衰退後のイランでガージャール朝成立までの間にあった王朝名を２つ答えなさい（うち前者の創始者はナーディル＝シャー）。"
+  },
+  {
+    "answer": "オスマン1世",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "オスマン帝国の建国者は誰か。"
+  },
+  {
+    "answer": "ブルサ",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "オスマン帝国建国当初の都で、小アジア西北部の都市はどこか。"
+  },
+  {
+    "answer": "エディルネ",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "第３代スルタンのムラト1世が奪ったアドリアノープルは1366年に都とされ何と呼ばれるか。"
+  },
+  {
+    "answer": "コソヴォの戦い",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "1389年、ムラト1世がセルビア西武でスラヴ勢力を破り、ドナウ川以南のバルカン半島を制圧した戦いは何か。"
+  },
+  {
+    "answer": "コンスタンティノス11世パレオロゴス",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "1453年、メフメト2世により滅亡したビザンツ帝国最後の皇帝は誰か。"
+  },
+  {
+    "answer": "トプカプ宮殿",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "メフメト2世が政治の中枢として都イスタンブルに建設させた宮殿は何か。"
+  },
+  {
+    "answer": "クリミア＝ハン国",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "1475年以降、オスマン帝国の宗主権下にあったクリミア半島のムスリム政権は何か。"
+  },
+  {
+    "answer": "セルビア、アルバニア",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "メフメト2世が1459,1478年に征服したバルカン国家はそれぞれ何か（ワラキア公ヴラド＝ツェペシュには敗北）。"
+  },
+  {
+    "answer": "チャルディラーンの戦い",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "1514年、セリム1世が小アジア東部でイェニチェリ軍団の活躍によりサファヴィー朝を破り、シリアに進出した戦いは何か。"
+  },
+  {
+    "answer": "セリム1世",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "1517年マムルーク朝を滅ぼしメッカ・メディナを支配したオスマン帝国のスルタンは誰か。"
+  },
+  {
+    "answer": "ミマーリ＝スィナン",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "スレイマン1世時代のスレイマン＝モスクを切開したイェニチェリ出身の建築家は誰か。"
+  },
+  {
+    "answer": "ロードス島",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "1520年、スレイマン1世がヨハネ騎士団を破り奪ったエーゲ海の島はどこか。"
+  },
+  {
+    "answer": "ラヨシュ2世",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "1526年、スレイマン1世がモハーチの戦いで敗死させたハンガリー王は誰か。"
+  },
+  {
+    "answer": "セリム２世",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "フランスにカピチュレーションを認めたとされる、スレイマン1世ともう一人のスルタンは誰か。"
+  },
+  {
+    "answer": "デヴシルメ",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "キリスト教徒子弟を改宗させ、軍人・官僚などの要員を強制的に徴用するオスマン帝国の制度は何か。"
+  },
+  {
+    "answer": "チューリップ時代",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "18世紀前半、アフメト3世統治下でオスマン帝国の文化が爛熟期を迎え、西欧趣味が流行した時代を何というか。"
+  },
+  {
+    "answer": "アーヤーン",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "ムスリム社会での地方有力者で、18世紀以降にオスマン帝国で徴税権を握り、地方の実質的支配者となった人々をカタカナで何というか。"
+  },
+  {
+    "answer": "ヴィジャヤナガル王国",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "インド北部にイスラーム勢力が侵入する中、ヒンドゥー文化を維持し、港町カリカットをも有した南インドの王国は何か。"
+  },
+  {
+    "answer": "カーブル",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "ムガル帝国の建国者バーブルが拠点を置いた、現在のアフガニスタンの首都はどこか。"
+  },
+  {
+    "answer": "フマーユーン",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "治世中は後継者争いで混乱したムガル帝国２代目君主は誰か。"
+  },
+  {
+    "answer": "ペルシア語",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "ムガル帝国の公用語は何か。"
+  },
+  {
+    "answer": "ラージプート",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "アクバルがジズヤを廃止したことにより和解したイスラーム勢力は何か。"
+  },
+  {
+    "answer": "ディーネ＝イラーヒー",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "アクバルが宗教寛容策の一環で作ったイスラーム教・ヒンドゥー教の融合宗教は何か。"
+  },
+  {
+    "answer": "ジャーギール",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "マンサブダール制度の中で、一般に現金給与の代わりに与えられた分与地のことをカタカナで何というか。"
+  },
+  {
+    "answer": "ジャハーンギール",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "17世紀前半、父アクバルの宗教寛容策を踏襲し、統治を安定させたスルタンは誰か。"
+  },
+  {
+    "answer": "ムムターズ＝マハル",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "シャー＝ジャハーンが建設したタージ＝マハルに葬られている王妃は誰か。"
+  },
+  {
+    "answer": "シヴァージー",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "アウラングゼーブの宗教抑圧策に対抗したマラーター王国の創始者は誰か。"
+  },
+  {
+    "answer": "カビール",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "イスラーム教とヒンドゥー教を融合させナーナクに影響を与えたシク教の先駆者は誰か。"
+  },
+  {
+    "answer": "『アクバル＝ナーマ』",
+    "category": "難関私大対策",
+    "chapter": "10",
+    "number": "Z",
+    "question": "トルコ散文史上最高峰とされる『バーブル＝ナーマ』に並び称される、アクバルの側近が著したムガル王家の歴史とその統治の記録の名前は何か。"
+  },
+  {
+    "answer": "再生",
+    "category": "イタリア＝ルネサンス",
+    "chapter": "11",
+    "number": "68",
+    "question": "「ルネサンス」とは日本語でどのような意味か。"
+  },
+  {
+    "answer": "ヒューマニズム（人文主義）",
+    "category": "イタリア＝ルネサンス",
+    "chapter": "11",
+    "number": "68",
+    "question": "ルネサンス期に発展した、人間の尊厳や理性、能力を重視し、人間中心的な世界観を追求する思想は何か。"
+  },
+  {
+    "answer": "古代ギリシア・ローマ",
+    "category": "イタリア＝ルネサンス",
+    "chapter": "11",
+    "number": "68",
+    "question": "ルネサンスにおいて模範とされたのは、どこの古典文化か。"
+  },
+  {
+    "answer": "フィレンツェ",
+    "category": "イタリア＝ルネサンス",
+    "chapter": "11",
+    "number": "68",
+    "question": "14世紀から16世紀にかけて、ルネサンス文化の中心地として栄え、メディチ家が支配したイタリアの都市はどこか。"
+  },
+  {
+    "answer": "ダンテ",
+    "category": "イタリア＝ルネサンス",
+    "chapter": "11",
+    "number": "68",
+    "question": "中世末期のイタリアの詩人で、トスカナ語で『神曲』を著し、イタリア語文学の基礎を築いた人物は誰か。"
+  },
+  {
+    "answer": "『神曲』",
+    "category": "イタリア＝ルネサンス",
+    "chapter": "11",
+    "number": "68",
+    "question": "イタリアの詩人ダンテが著した、地獄、煉獄、天国を巡る旅を描いた長編叙事詩は何か。"
+  },
+  {
+    "answer": "ボッカチオ",
+    "category": "イタリア＝ルネサンス",
+    "chapter": "11",
+    "number": "68",
+    "question": "イタリアの詩人・作家で、『デカメロン』を著し、ルネサンス文学に大きな影響を与えた人物は誰か。"
+  },
+  {
+    "answer": "『デカメロン』",
+    "category": "イタリア＝ルネサンス",
+    "chapter": "11",
+    "number": "68",
+    "question": "ペストが流行するフィレンツェを舞台に、男女10人が語り合う100の物語からなる短編集は何か。"
+  },
+  {
+    "answer": "ボッティチェリ",
+    "category": "イタリア＝ルネサンス",
+    "chapter": "11",
+    "number": "68",
+    "question": "ルネサンス期のイタリアの画家で、『ヴィーナスの誕生』や『春』などの作品で知られる人物は誰か。"
+  },
+  {
+    "answer": "レオナルド＝ダ＝ヴィンチ",
+    "category": "イタリア＝ルネサンス",
+    "chapter": "11",
+    "number": "68",
+    "question": "ルネサンス期のイタリアの万能人で、絵画、科学技術、解剖学など多岐にわたる分野で功績を残した人物は誰か。"
+  },
+  {
+    "answer": "ミケランジェロ",
+    "category": "イタリア＝ルネサンス",
+    "chapter": "11",
+    "number": "68",
+    "question": "ルネサンス期のイタリアの彫刻家、画家、建築家で、『ダヴィデ像』『最後の審判』などで知られる芸術家は誰か。"
+  },
+  {
+    "answer": "ラファエロ",
+    "category": "イタリア＝ルネサンス",
+    "chapter": "11",
+    "number": "68",
+    "question": "ルネサンス期のイタリアの画家で、「アテネの学堂」など、優美で調和の取れた画風が特徴の人物は誰か。"
+  },
+  {
+    "answer": "マキァヴェリ",
+    "category": "イタリア＝ルネサンス",
+    "chapter": "11",
+    "number": "68",
+    "question": "ルネサンス期のイタリアの思想家で、『君主論』を著し、近代的な政治思想の基礎を築いた人物は誰か。"
+  },
+  {
+    "answer": "『君主論』",
+    "category": "イタリア＝ルネサンス",
+    "chapter": "11",
+    "number": "68",
+    "question": "マキァヴェリが著した、君主が国家を維持し、権力を獲得・保持するための現実的な方法を論じた政治書は何か。"
+  },
+  {
+    "answer": "エラスムス",
+    "category": "西欧諸国のルネサンス",
+    "chapter": "11",
+    "number": "69",
+    "question": "ネーデルラント出身の人文主義者で、『愚神礼賛』を著し、聖書研究と教会改革を訴えた人物は誰か。"
+  },
+  {
+    "answer": "『愚神礼賛』",
+    "category": "西欧諸国のルネサンス",
+    "chapter": "11",
+    "number": "69",
+    "question": "エラスムスが著した、当時の聖職者や社会の偽善を風刺した作品は何か。"
+  },
+  {
+    "answer": "ファン＝アイク兄弟",
+    "category": "西欧諸国のルネサンス",
+    "chapter": "11",
+    "number": "69",
+    "question": "15世紀のフランドル地方で活躍した画家で、油絵技法を確立し、初期フランドル派の発展に貢献した兄弟は誰か。"
+  },
+  {
+    "answer": "ブリューゲル",
+    "category": "西欧諸国のルネサンス",
+    "chapter": "11",
+    "number": "69",
+    "question": "16世紀のフランドル地方で活躍した画家で、「農民の踊り」など農民の生活や風俗を多く描いた人物は誰か。"
+  },
+  {
+    "answer": "「農民の踊り」",
+    "category": "西欧諸国のルネサンス",
+    "chapter": "11",
+    "number": "69",
+    "question": "16世紀のフランドル地方の画家ブリューゲルの代表作の一つで、農民たちの陽気な踊りを描いた作品は何か。"
+  },
+  {
+    "answer": "トマス＝モア",
+    "category": "西欧諸国のルネサンス",
+    "chapter": "11",
+    "number": "69",
+    "question": "16世紀前半に活躍したイギリスの人文主義者で、『ユートピア』を著し、理想社会を描いた人物は誰か。"
+  },
+  {
+    "answer": "『ユートピア』",
+    "category": "西欧諸国のルネサンス",
+    "chapter": "11",
+    "number": "69",
+    "question": "トマス＝モアが著した、架空の理想的な社会を描いた作品は何か。"
+  },
+  {
+    "answer": "シェイクスピア",
+    "category": "西欧諸国のルネサンス",
+    "chapter": "11",
+    "number": "69",
+    "question": "イギリスの劇作家で、『ハムレット』『ロミオとジュリエット』などの数々の傑作を生み出した人物は誰か。"
+  },
+  {
+    "answer": "セルバンテス",
+    "category": "西欧諸国のルネサンス",
+    "chapter": "11",
+    "number": "69",
+    "question": "『ドン＝キホーテ』を著したスペインの作家で、近代小説の先駆けとなった人物は誰か。"
+  },
+  {
+    "answer": "『ドン＝キホーテ』",
+    "category": "西欧諸国のルネサンス",
+    "chapter": "11",
+    "number": "69",
+    "question": "セルバンテスが著した、騎士道物語に熱中し、現実と妄想の世界をさまよう人物の冒険を描いた作品は何か。"
+  },
+  {
+    "answer": "『ガルガンチュアとパンタグリュエルの物語』",
+    "category": "西欧諸国のルネサンス",
+    "chapter": "11",
+    "number": "69",
+    "question": "16世紀のフランスのラブレーが著した、巨人の父子の冒険を通して、当時の社会や思想を風刺した物語は何か。"
+  },
+  {
+    "answer": "『随想録（エセー）』",
+    "category": "西欧諸国のルネサンス",
+    "chapter": "11",
+    "number": "69",
+    "question": "16世紀のフランスの思想家モンテーニュが著した、人間観察や自己省察に基づいた随筆集は何か。"
+  },
+  {
+    "answer": "デューラー",
+    "category": "西欧諸国のルネサンス",
+    "chapter": "11",
+    "number": "69",
+    "question": "画家、美術理論家で、「四人の使徒」などの作品で知られ、「ドイツ＝ルネサンスの巨匠」と称される人物は誰か。"
+  },
+  {
+    "answer": "火薬（火砲）・羅針盤・活版印刷術",
+    "category": "西欧諸国のルネサンス",
+    "chapter": "11",
+    "number": "69",
+    "question": "ルネサンス期の三大発明と呼ばれるものを全て答えなさい。"
+  },
+  {
+    "answer": "グーテンベルク",
+    "category": "西欧諸国のルネサンス",
+    "chapter": "11",
+    "number": "69",
+    "question": "15世紀中頃にドイツで活躍し、活版印刷技術を発明した人物は誰か。"
+  },
+  {
+    "answer": "コペルニクス",
+    "category": "西欧諸国のルネサンス",
+    "chapter": "11",
+    "number": "69",
+    "question": "16世紀前半に活躍したポーランドの天文学者で、地球が太陽の周りを公転する地動説を提唱した人物は誰か。"
+  },
+  {
+    "answer": "ガリレオ＝ガリレイ",
+    "category": "西欧諸国のルネサンス",
+    "chapter": "11",
+    "number": "69",
+    "question": "イタリアの物理学者、天文学者で、地動説を実証し、近代科学の基礎を築いた人物は誰か。"
+  },
+  {
+    "answer": "領邦国家",
+    "category": "宗教改革とルター",
+    "chapter": "11",
+    "number": "70",
+    "question": "神聖ローマ帝国で、諸侯が独立性を持ち、独自の主権を行使した国家形態を何と呼ぶか。"
+  },
+  {
+    "answer": "「ローマの牝牛」",
+    "category": "宗教改革とルター",
+    "chapter": "11",
+    "number": "70",
+    "question": "神聖ローマ帝国が、ローマ＝カトリック教会に搾取されている状態を批判的に表す言葉は何か。"
+  },
+  {
+    "answer": "マルティン＝ルター",
+    "category": "宗教改革とルター",
+    "chapter": "11",
+    "number": "70",
+    "question": "16世紀、宗教改革を始めたドイツの神学者は誰か。"
+  },
+  {
+    "answer": "ヴィッテンベルク大学",
+    "category": "宗教改革とルター",
+    "chapter": "11",
+    "number": "70",
+    "question": "マルティン＝ルターが『九十五ヶ条の論題』を提示したとされる大学はどこか。"
+  },
+  {
+    "answer": "レオ10世",
+    "category": "宗教改革とルター",
+    "chapter": "11",
+    "number": "70",
+    "question": "ルターの『九十五ヶ条の論題』の発表に対し、彼を破門したローマ教皇は誰か。"
+  },
+  {
+    "answer": "免罪符（贖宥状）",
+    "category": "宗教改革とルター",
+    "chapter": "11",
+    "number": "70",
+    "question": "中世カトリック教会が発行した、罪の償いを軽減するとされる証書を何というか。"
+  },
+  {
+    "answer": "サン＝ピエトロ大聖堂",
+    "category": "宗教改革とルター",
+    "chapter": "11",
+    "number": "70",
+    "question": "レオ10世が免罪符を発行した目的は、何を改築する資金を確保するためか。"
+  },
+  {
+    "answer": "『九十五ヶ条の論題』",
+    "category": "宗教改革とルター",
+    "chapter": "11",
+    "number": "70",
+    "question": "ルターがヴィッテンベルクで発表し、宗教改革の契機となった文書は何か。"
+  },
+  {
+    "answer": "福音信仰",
+    "category": "宗教改革とルター",
+    "chapter": "11",
+    "number": "70",
+    "question": "ルターが提唱した、聖書の福音に基づき信仰のみで救われるとする考えを何と呼ぶか。"
+  },
+  {
+    "answer": "万人司祭主義",
+    "category": "宗教改革とルター",
+    "chapter": "11",
+    "number": "70",
+    "question": "ルターが主張した、すべての信徒が直接神に祈り、聖職者なしで信仰できるという教義は何か。"
+  },
+  {
+    "answer": "『キリスト者の自由』",
+    "category": "宗教改革とルター",
+    "chapter": "11",
+    "number": "70",
+    "question": "ルターが福音信仰に基づき、信者は信仰によって自由であり、世俗の義務も果たすべきだと説いた論文は何か。"
+  },
+  {
+    "answer": "カール5世",
+    "category": "宗教改革とルター",
+    "chapter": "11",
+    "number": "70",
+    "question": "ルターによる宗教改革と、フランス王フランソワ1世やオスマン帝国との対立に直面した神聖ローマ皇帝は誰か。"
+  },
+  {
+    "answer": "ヴォルムス帝国議会",
+    "category": "宗教改革とルター",
+    "chapter": "11",
+    "number": "70",
+    "question": "神聖ローマ皇帝によって召集され、ルターが自説の撤回を拒否したことで知られる議会は何か。"
+  },
+  {
+    "answer": "ザクセン選帝侯フリードリヒ",
+    "category": "宗教改革とルター",
+    "chapter": "11",
+    "number": "70",
+    "question": "ルターが帝国を追放された後、彼を自身のヴァルトブルク城にかくまい保護した人物は誰か。"
+  },
+  {
+    "answer": "『新約聖書』のドイツ語訳",
+    "category": "宗教改革とルター",
+    "chapter": "11",
+    "number": "70",
+    "question": "ルターがヴァルトブルク城に隠遁中に行った、後のドイツ語形成にも大きな影響を与えた行動は何か。"
+  },
+  {
+    "answer": "ドイツ農民戦争",
+    "category": "宗教改革とルター",
+    "chapter": "11",
+    "number": "70",
+    "question": "ドイツ南部を中心に発生した、ルターの宗教改革思想の影響も受けた農民たちの反乱を何と呼ぶか。"
+  },
+  {
+    "answer": "ミュンツァー",
+    "category": "宗教改革とルター",
+    "chapter": "11",
+    "number": "70",
+    "question": "ドイツ農民戦争の指導者の一人で、徹底的な社会改革を目指し、神の国の地上実現を説いた急進的な改革者は誰か。"
+  },
+  {
+    "answer": "領邦教会制",
+    "category": "宗教改革とルター",
+    "chapter": "11",
+    "number": "70",
+    "question": "ドイツの領邦の諸侯が最高の司教として自領内教会の保護支配権を掌握する制度を何と呼ぶか。"
+  },
+  {
+    "answer": "1555年",
+    "category": "宗教改革とルター",
+    "chapter": "11",
+    "number": "70",
+    "question": "神聖ローマ帝国皇帝と、ルター派諸侯の間で政治的決着がついたのは西暦何年か。"
+  },
+  {
+    "answer": "アウクスブルクの和議",
+    "category": "宗教改革とルター",
+    "chapter": "11",
+    "number": "70",
+    "question": "ルター派の信仰が公認され、「諸侯の宗教がその地の宗教となる」原則が定められた和議は何か。"
+  },
+  {
+    "answer": "ツヴィングリ",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "スイスのチューリヒで宗教改革を開始し、急進的な教義を主張し、カトリック諸侯との戦いで戦死した人物は誰か。"
+  },
+  {
+    "answer": "チューリヒ",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "ツヴィングリが宗教改革を開始し、その中心地となったスイスの都市はどこか。"
+  },
+  {
+    "answer": "カルヴァン",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "スイスで宗教改革を推進し、予定説を唱え、後のプロテスタントに大きな影響を与えた人物は誰か。"
+  },
+  {
+    "answer": "ジュネーヴ",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "カルヴァンが宗教改革の中心地とし、神権政治を行ったことで知られるスイスの都市はどこか。"
+  },
+  {
+    "answer": "『キリスト教綱要』",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "カルヴァンが宗教改革を推進する上で、予定説などの彼の神学思想を体系的にまとめた主著は何か。"
+  },
+  {
+    "answer": "予定説",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "救済は神によって予め定められているとし、勤労・禁欲精神を生み出したとされるカルヴァンの学説は何か。"
+  },
+  {
+    "answer": "長老主義",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "カルヴァン派の教会組織で採用され、信徒の中から選ばれた長老が牧師とともに教会を運営する制度を何と呼ぶか。"
+  },
+  {
+    "answer": "ユグノー",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "フランスにおけるカルヴァン派プロテスタントの呼称は何か。"
+  },
+  {
+    "answer": "ゴイセン",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "ネーデルラントにおけるカルヴァン派プロテスタントの呼称は何か。"
+  },
+  {
+    "answer": "ピューリタン",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "イングランドにおけるカルヴァン派プロテスタントの呼称は何か。"
+  },
+  {
+    "answer": "プレスビテリアン",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "スコットランドにおけるカルヴァン派プロテスタントの呼称は何か。"
+  },
+  {
+    "answer": "ヘンリ８世",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "イングランド王で、イギリス国教会を創始、また六度の結婚で知られる人物は誰か。"
+  },
+  {
+    "answer": "首長法（国王至上法）",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "ヘンリ8世が制定し、国王をイギリス国教会の唯一最高の首長と定め、ローマ教皇からの独立を宣言した法は何か。"
+  },
+  {
+    "answer": "修道院",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "ヘンリ8世がジェントリに分与した土地は、主にどこから没収をした土地か。"
+  },
+  {
+    "answer": "エドワード６世",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "一般祈禱書で、イギリス国教会の礼拝儀式と教義・制度をととのえた国王は誰か。"
+  },
+  {
+    "answer": "メアリ１世",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "カトリックの復活を目指し、プロテスタントを弾圧したため「ブラッディ」と呼ばれたイングランド女王は誰か。"
+  },
+  {
+    "answer": "エリザベス１世",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "統一法を制定してイギリス国教会を確立、イングランドを強国へと導いた女王は誰か。"
+  },
+  {
+    "answer": "統一法",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "エリザベス1世がイギリス国教会の確立のために制定し、プロテスタント的典礼を義務づけた法律は何か。"
+  },
+  {
+    "answer": "宗教裁判所",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "カトリック教会が異端者を審問・処罰するために設置した、その過酷な尋問で知られる機関を何と呼ぶか。"
+  },
+  {
+    "answer": "禁書目録",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "カトリック教会が信仰に有害とみなした書物を列挙し、信者に読まないよう禁じた目録を何と呼ぶか。"
+  },
+  {
+    "answer": "イグナティウス＝ロヨラ",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "イエズス会を創設し、対抗宗教改革の中心となって、カトリック信仰の再興と海外への布教に尽力した人物は誰か。"
+  },
+  {
+    "answer": "フランシスコ＝ザビエル",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "イエズス会を創設し、インドや日本などアジア各地でカトリックの布教に尽力した宣教師は誰か。"
+  },
+  {
+    "answer": "トリエント公会議",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "対抗宗教改革の一環として開催された、カトリック教義の再確認や教会改革が決定された公会議を何と呼ぶか。"
+  },
+  {
+    "answer": "パウルス３世",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "宗教改革の動きに対抗するため、イエズス会を公認し、トリエント公会議を召集したローマ教皇は誰か。"
+  },
+  {
+    "answer": "魔女狩り",
+    "category": "波及する宗教改革とカトリック改革",
+    "chapter": "11",
+    "number": "71",
+    "question": "近世ヨーロッパで広まった、魔女とみなされた人々を拷問・処刑した現象を何と呼ぶか。"
+  },
+  {
+    "answer": "年貢",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "江戸時代の日本の百姓が、領主である幕府や藩に対して負担した主たる農産物の税を何というか。"
+  },
+  {
+    "answer": "享保の改革",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "18世紀前半に江戸幕府の8代将軍が断行した、幕府財政の再建を目的とした一連の改革は何か。"
+  },
+  {
+    "answer": "徳川吉宗",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "「享保の改革」を主導し、「米将軍」とも呼ばれた江戸幕府の第8代将軍は誰か。"
+  },
+  {
+    "answer": "株仲間",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "江戸幕府が公認した、商工業者が営業上の独占権を得るために結成した同業者組合を何というか。"
+  },
+  {
+    "answer": "大坂、江戸、京都",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "江戸時代に「三都」と呼ばれ、全国市場のネットワークの中心となった3つの都市はどこか。"
+  },
+  {
+    "answer": "天下の台所",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "全国の物資が集まる経済・流通の中心地として機能した「大坂」の別称は何か。"
+  },
+  {
+    "answer": "蔵屋敷",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "諸藩が大坂や江戸に設置し、自領の年貢米や特産物を保管・売却するために設けた施設は何か。"
+  },
+  {
+    "answer": "菱垣廻船",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "江戸時代、江戸と大坂の間で生活必需品などの物資を運んだ、定期航路の大型船を何というか。"
+  },
+  {
+    "answer": "樽廻船",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "江戸時代、主に大坂から江戸へ酒を運ぶために発達した、スピードの速い定期航路の船を何というか。"
+  },
+  {
+    "answer": "俵物",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "江戸時代、長崎貿易における主要な輸出品となった、乾燥させたナマコやアワビなどの海産物を総称して何というか。"
+  },
+  {
+    "answer": "香辛料",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "15世紀以降、ヨーロッパ人が直接取引を求めてアジアへ参入する目的となった産品は何か。"
+  },
+  {
+    "answer": "出島",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "江戸時代の長崎において、オランダとの貿易のために築かれた人工の島はどこか。"
+  },
+  {
+    "answer": "「オランダ風説書」",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "長崎のオランダ商館長が幕府に提出した、海外の情勢を知らせる報告書を何というか。"
+  },
+  {
+    "answer": "対馬藩",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "江戸時代に朝鮮との間の外交や貿易の実務を仲介した九州北部の藩はどこか。"
+  },
+  {
+    "answer": "豊臣秀吉",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "16世紀末に朝鮮への侵略（文禄・慶長の役）を行い、日朝関係を一時断絶させた人物は誰か。"
+  },
+  {
+    "answer": "通信使",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "将軍の代替わりなどの際に、朝鮮から日本へ派遣された対等な関係の外交使節を何というか。"
+  },
+  {
+    "answer": "琉球",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "15世紀に統一され、江戸時代には薩摩藩と清の両方に服属しながら独立を保った国はどこか。"
+  },
+  {
+    "answer": "島津氏",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "1609年に琉球へ出兵し、同地を支配下に置いた薩摩藩の有力な氏族は何氏か。"
+  },
+  {
+    "answer": "生糸、絹織物",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "江戸時代の日本が、清から輸入していた代表的な中国産の繊維製品を２つ答えよ。"
+  },
+  {
+    "answer": "砂糖",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "江戸時代に琉球から日本へ輸入された、代表的な甘味料の原料となる産品は何か。"
+  },
+  {
+    "answer": "人参",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "江戸時代に朝鮮から日本へ輸入された、薬用として珍重された植物の根は何か。"
+  },
+  {
+    "answer": "銅、俵物",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "江戸時代に日本から清に輸出されたものを二種答えなさい（金属・海産物の総称）。"
+  },
+  {
+    "answer": "ラクスマン",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "1792年に、根室へ来航して通商を求めたロシアの使節は誰か。"
+  },
+  {
+    "answer": "レザノフ",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "1804年に、長崎に来航して日本との通商を要求したロシアの使節は誰か。"
+  },
+  {
+    "answer": "異国船打払令",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "1825年に幕府が出した、日本沿岸に接近する外国船を砲撃して追い払う命令は何か。"
+  },
+  {
+    "answer": "天保の薪水給与令",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "アヘン戦争の結果を受けて1842年に出された、打払令を緩和する法令は何か。"
+  },
+  {
+    "answer": "ペリー",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "1853年にアメリカ艦隊を率いて浦賀に来航し、日本の開国を求めた人物は誰か。"
+  },
+  {
+    "answer": "阿部正弘",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "ペリー来航時の幕府老中で、安政の改革を進め近代化を推進した人物は誰か。"
+  },
+  {
+    "answer": "日米和親条約",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "1854年に、日本がアメリカと結んだ最初の条約を何というか。"
+  },
+  {
+    "answer": "日米修好通商条約",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "1858年に大老の井伊直弼らが締結した、本格的な通商を認めた不平等条約は何か。"
+  },
+  {
+    "answer": "ハリス",
+    "category": "日：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "1",
+    "question": "下田に着任して通商条約の締結を強く要求した、アメリカの初代総領事は誰か。"
+  },
+  {
+    "answer": "イスタンブル",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "1453年にビザンツ帝国を滅ぼしたオスマン帝国の首都で、現在はトルコ最大の都市はどこか。"
+  },
+  {
+    "answer": "ムガル帝国",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "16世紀から19世紀半ばまで北インドを支配した、イスラーム教を国教とした帝国はどこか。"
+  },
+  {
+    "answer": "満洲人",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "17世紀初めに明を滅ぼして「清」を建国した、中国東北地方を拠点とした民族は何か。"
+  },
+  {
+    "answer": "景徳鎮",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "清の時代に陶磁器の生産地として栄え、現在も磁器の代名詞として知られる江西省の都市はどこか。"
+  },
+  {
+    "answer": "トウモロコシ・サツマイモ",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "明・清の時代に中国へ伝来し、山地の開墾と人口増加を支えたアメリカ大陸原産の新作物（２つ）は何か。"
+  },
+  {
+    "answer": "山西商人",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "清の時代、遠隔地商業や金融ネットワークを形成して台頭した、山西省出身の新興商人を何というか。"
+  },
+  {
+    "answer": "新安（徽州）商人",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "清の時代、山西商人と並んで台頭した、安徽省（徽州）出身の新興商人を何というか。"
+  },
+  {
+    "answer": "銀",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "海外貿易の結果、日本やアメリカから中国へ大量に流入し、貨幣経済の浸透や税の納税化をもたらした貴金属は何か。"
+  },
+  {
+    "answer": "東インド会社",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "17世紀にイギリスやオランダがアジアでの商業活動を目的として設立した独占企業は何か。"
+  },
+  {
+    "answer": "海禁",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "清が当初行っていた、民間人の海外渡航や私的な対外貿易を禁止・制限した政策を何というか。"
+  },
+  {
+    "answer": "広州",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "清の乾隆帝が欧米諸国の船の入港を唯一認めた、貿易の制限が行われた港はどこか。"
+  },
+  {
+    "answer": "権利の章典",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "17世紀末にイギリスで制定され、結果として、私的所有権を事実上保障し生産意欲を高めた文書は何か。"
+  },
+  {
+    "answer": "大西洋三角貿易",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "18世紀のイギリスが、西アフリカや新大陸との間で行い資本を蓄積した貿易体制は何か。"
+  },
+  {
+    "answer": "黒人奴隷",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "サトウキビや綿花のプランテーションで使役するため、西アフリカから新大陸へ送られたのは誰か。"
+  },
+  {
+    "answer": "砂糖、綿花",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "大西洋三角貿易において、新大陸のアメリカからヨーロッパへ運ばれた主な産品は何か。"
+  },
+  {
+    "answer": "武器・綿製品",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "大西洋三角貿易において、ヨーロッパから西アフリカへ送られた主な産品は何か。"
+  },
+  {
+    "answer": "ジョン＝ケイ",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "1733年に「飛び杼」を発明し、綿織物の作業効率を飛躍的に向上させた人物は誰か。"
+  },
+  {
+    "answer": "ハーグリーヴズ",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "1764年頃に、一度に多くの糸を紡ぐことができる「ジェニー紡績機」を発明したのは誰か。"
+  },
+  {
+    "answer": "アークライト",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "1769年に、水力を動力源とする「水力紡績機」を発明した人物は誰か。"
+  },
+  {
+    "answer": "クロンプトン",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "ジェニー紡績機と水力紡績機の長所を取り入れた「ミュール紡績機」を発明したのは誰か。"
+  },
+  {
+    "answer": "カートライト",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "1785年に、織布工程を機械化するために「力織機」を発明した人物は誰か。"
+  },
+  {
+    "answer": "ホイットニー",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "1793年に、綿花の種子を取り除く「綿繰り機」を発明したアメリカ人は誰か。"
+  },
+  {
+    "answer": "ワット",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "1769年に蒸気機関を改良し、工場の動力源として実用化した人物は誰か。"
+  },
+  {
+    "answer": "マンチェスター・リヴァプール",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "1830年に鉄道が開通した、イギリスを代表する木綿工業都市と外港はどこか。"
+  },
+  {
+    "answer": "マルクス",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "エンゲルスと共に『共産党宣言』を著し、社会主義思想を確立した人物は誰か。"
+  },
+  {
+    "answer": "ドイツ関税同盟",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "1834年に発足し、ドイツ国内の経済統合と産業革命を推進した枠組みは何か。"
+  },
+  {
+    "answer": "大陸横断鉄道",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "1869年に完成し、アメリカの国内市場統一と経済発展を支えた交通網は何か。"
+  },
+  {
+    "answer": "第２次産業革命",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "19世紀後半、石油や電力を動力源として重化学工業が発達した技術革新を何というか。"
+  },
+  {
+    "answer": "スティーヴンソン",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "蒸気機関車を実用化し、陸上の交通革命をリードしたイギリスの技術者は誰か。"
+  },
+  {
+    "answer": "フルトン",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "1807年に蒸気船を発明し、海上における交通革命をもたらしたアメリカ人は誰か。"
+  },
+  {
+    "answer": "海底電信ケーブル",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "世界の一体化を加速させるため、19世紀に海を越えて敷設された情報伝達設備は何か。"
+  },
+  {
+    "answer": "茶",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "18世紀から19世紀初めの片貿易において、清からイギリスへ輸出されていた主力商品は何か。"
+  },
+  {
+    "answer": "アヘン",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "イギリスの対清貿易赤字を解消するため、インドから清へ密輸出された薬物は何か。"
+  },
+  {
+    "answer": "綿製品",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "イギリス・インド・清の三角貿易において、イギリスからインドへ送られた工業製品は何か。"
+  },
+  {
+    "answer": "アヘン戦争",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "清のアヘン取り締まりをきっかけに、1840年に勃発したイギリスとの戦争は何か。"
+  },
+  {
+    "answer": "林則徐",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "アヘン密貿易を厳しく取り締まるため、欽差大臣として広州へ派遣された人物は誰か。"
+  },
+  {
+    "answer": "南京条約",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "アヘン戦争に敗れた清が、1842年にイギリスと結んだ講和条約を何というか。"
+  },
+  {
+    "answer": "香港島",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "南京条約によって、清からイギリスへ割譲された地域はどこか。"
+  },
+  {
+    "answer": "領事裁判権",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "不平等条約において、外国人が在留国で犯した罪を自国の領事が裁く権利を何というか。"
+  },
+  {
+    "answer": "アロー戦争",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "南京条約の履行に不熱心な清に対し、英仏連合軍が1856年から起こした戦争は何か。"
+  },
+  {
+    "answer": "総理衙門（総理各国事務衙門）",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "アロー戦争後、清に設置された同国初の本格的な外交官庁を何というか。"
+  },
+  {
+    "answer": "太平天国の乱",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "アヘン戦争後の重税に苦しむ民衆が、1851年に起こした大規模な反乱を何というか。"
+  },
+  {
+    "answer": "洪秀全",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "キリスト教的秘密結社の拝上帝会を組織し、太平天国を建国した指導者は誰か。"
+  },
+  {
+    "answer": "洋務運動",
+    "category": "世：結びつく世界と日本の開国",
+    "chapter": "S",
+    "number": "2",
+    "question": "1860年代半ばから清が進めた、西洋技術を導入して富国強兵を図る運動を何というか。"
+  },
+  {
+    "answer": "井伊直弼",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "日米修好通商条約は勅許を得られないまま調印されたが，これを指示した大老はだれか。"
+  },
+  {
+    "answer": "安政の大獄",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "井伊直弼は批判勢力に対して徹底的に弾圧を加え，処罰したが，これを何とよんでいるか。"
+  },
+  {
+    "answer": "桜田門外の変",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "安政の大獄に反発した志士たちが，大老井伊直弼を登城途中に暗殺した事件を何というか。"
+  },
+  {
+    "answer": "公武合体",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "江戸時代末期、幕府が朝廷との融和を図り、政治的安定を目指して推進した政策を何というか。"
+  },
+  {
+    "answer": "徳川慶喜",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "14代将軍徳川家茂の将軍後見職に就いた人物は誰か。"
+  },
+  {
+    "answer": "生麦事件",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "1862年に，島津久光の行列を横切ったため，イギリス人が殺傷された。この事件を何というか。"
+  },
+  {
+    "answer": "奇兵隊",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "長州藩では，1863年から正規兵以外に，農工商その他の人々で諸隊が編成されたが，その軍隊の名称は何か。"
+  },
+  {
+    "answer": "高杉晋作",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "下関挙兵により長州藩では倒幕派が政権を掌握した。この中心となった、奇兵隊の創設者は誰か。"
+  },
+  {
+    "answer": "木戸孝允",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "長州藩の倒幕勢力として活躍した、その時期には桂小五郎と名乗っていた人物は誰か。"
+  },
+  {
+    "answer": "坂本龍馬",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "薩長同盟の成立の仲介をした土佐藩の人物は、中岡慎太郎と誰か。"
+  },
+  {
+    "answer": "大政奉還",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "土佐藩のすすめに従い，将軍徳川慶喜は，朝廷に政権返上の上表を提出した。これを何というか。"
+  },
+  {
+    "answer": "王政復古のクーデタ",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "1867年、薩長の勢力が倒幕を目指し、幕府の政権を廃止して天皇中心の新政府樹立を宣言した事件を何というか。"
+  },
+  {
+    "answer": "戊辰戦争",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "1868-69年にかけて、新政府軍と旧幕府勢力との間で繰り広げられた、明治維新をめぐる内戦を何というか。"
+  },
+  {
+    "answer": "五箇条の誓文",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "明治政府の基本方針は天皇が天地神明に誓うという形式で発表されたが，これを何というか。"
+  },
+  {
+    "answer": "版籍奉還",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "木戸孝允・大久保利通らの画策で，４藩主が連名で領地や領民を奉還する上表を提出したが，これを何と言うか。"
+  },
+  {
+    "answer": "廃藩置県",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "1871年、明治政府が全国の藩を廃止し、府・県を設置して中央集権体制を確立した改革を何というか。"
+  },
+  {
+    "answer": "華族・士族・平民",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "明治政府が身分制度改革として、旧大名や公家、旧武士、一般庶民を分類した新たな身分呼称をそれぞれ何というか。"
+  },
+  {
+    "answer": "血税一揆",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "徴兵令に対して西日本を中心に反対の一揆がおこったが，これを何というか。"
+  },
+  {
+    "answer": "地租改正",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "明治政府が1873年に実施し、地価を基準として地租を金納させた税制改革を何というか。"
+  },
+  {
+    "answer": "民撰議院設立の建白書",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "1874年に提出された、国民の代表による議会開設を要求した意見書を何というか。"
+  },
+  {
+    "answer": "板垣退助",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "議会の開設要求を提出し、自由民権運動の中心的存在となった、旧土佐藩出身の人物は誰か。"
+  },
+  {
+    "answer": "自由党",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "板垣退助を中心に結成され、フランス流の急進的民主主義を掲げて自由民権運動を推進した政党を何というか。"
+  },
+  {
+    "answer": "立憲改進党",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "大隈重信を中心に結成され、イギリス流の立憲君主制と漸進的改革を掲げた政党を何というか。"
+  },
+  {
+    "answer": "伊藤博文",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "憲法調査のためにプロイセン憲法を学びに渡欧した人物は誰か。"
+  },
+  {
+    "answer": "華族令",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "1884年，将来の上院議員選出のため，旧公卿・旧大名・維新の功臣などに，爵位を与えたが，その法令は何か。"
+  },
+  {
+    "answer": "欽定憲法",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "第日本帝国憲法は，天皇が定め国民に与える形式をとったが，このような形式の憲法を何とよぶか。"
+  },
+  {
+    "answer": "天皇大権",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "統治権の総攬者としての天皇が，議会の協賛なしに行使できる権能を何というか。"
+  },
+  {
+    "answer": "衆議院・貴族院",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "大日本帝国憲法下における帝国議会は二院制を採用したが、それぞれの議院の名称は何か。"
+  },
+  {
+    "answer": "大隈重信",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "1898年に成立した、日本憲政史上初の政党内閣の内閣総理大臣は誰か。"
+  },
+  {
+    "answer": "元老",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "明治政府の功労者で，第一線を退いた後，天皇を助け重要政策の決定や首相の推薦などにあたった人々を何と呼ぶか。"
+  },
+  {
+    "answer": "福沢諭吉",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "著書『学問のすゝめ』で独立自尊の精神を説き、明治時代の啓蒙思想に大きな影響を与えた教育者・思想家は誰か。"
+  },
+  {
+    "answer": "中村正直",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "1866年にイギリスに留学し，イギリス人スマイルズの『自助論』などを翻訳・出版した啓蒙思想家はだれか。"
+  },
+  {
+    "answer": "中江兆民",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "ルソーの『社会契約論』を抄訳し，東洋のルソーともいわれた思想家はだれか。"
+  },
+  {
+    "answer": "太陽暦",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "明治政府が採用した暦は何か。"
+  },
+  {
+    "answer": "教育勅語",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "1890年に発布され、忠君愛国や道徳の重要性を説き、日本の教育の基本理念となった天皇による詔書を何というか。"
+  },
+  {
+    "answer": "神道",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "明治政府で国教に指定された宗教は何か。"
+  },
+  {
+    "answer": "自由貿易",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "19世紀後半に国際経済の枠組みとして形成された、国家の介入を最小限に抑えた貿易のあり方を何というか。"
+  },
+  {
+    "answer": "居留地貿易",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "開港後の日本で、外国人が設定された特定地域内でのみ行うことを許された貿易形態を何というか。"
+  },
+  {
+    "answer": "生糸・茶",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "開国後の日本は、何を輸出することで利益を上げていたか、２つ答えなさい。"
+  },
+  {
+    "answer": "綿糸",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "開国後の日本において、綿織物産業が衰えかけるが、何を輸入することによって事態の打開を図ったか。"
+  },
+  {
+    "answer": "殖産興業政策",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "明治政府が近代産業の育成を目指して行った、官営工場の設立や技術導入などの経済政策を何というか。"
+  },
+  {
+    "answer": "新貨条例",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "1871年に明治政府が発布し、円・銭・厘を基本単位とする金本位制の貨幣制度を定めた法令を何というか。"
+  },
+  {
+    "answer": "国立銀行条例",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "1872年に制定され、正貨と交換できる貨幣の発行を目的に、模範的銀行を設立するために定められた法令は何か。"
+  },
+  {
+    "answer": "兌換紙幣",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "一定の金や銀と交換できることを保証された紙幣を何というか。"
+  },
+  {
+    "answer": "大隈重信",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "西南戦争の戦費や殖産興業のために不換紙幣を増発した経済政策をとった、当時の大蔵卿は誰か。"
+  },
+  {
+    "answer": "松方正義",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "インフレの沈静化を目指し、緊縮財政と日本銀行の設立などを進めた明治時代の財政家は誰か。"
+  },
+  {
+    "answer": "日本銀行",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "1882年に設立され、紙幣の発行権を独占する中央銀行として日本の金融制度の中核を担った機関は何か。"
+  },
+  {
+    "answer": "金本位制",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "貨幣の価値を一定量の金に裏付ける制度で、日本では1897年に本格的に採用された通貨制度を何というか。"
+  },
+  {
+    "answer": "渋沢栄一",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "日本資本主義の父と呼ばれ、第一国立銀行の設立や多数の企業の創立に関わった明治時代の実業家は誰か。"
+  },
+  {
+    "answer": "大阪紡績会社",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "渋沢栄一によって設立され、近代紡績業の発展に大きく貢献した日本初の蒸気力を用いた紡績会社は何か。"
+  },
+  {
+    "answer": "外貨獲得産業",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "明治時代の日本で、生糸や茶など海外に輸出して外貨を稼ぐことを目的とした産業を何というか。"
+  },
+  {
+    "answer": "財閥",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "銀行や工場など多様な産業を支配し、経済的に大きな影響力を持った巨大な企業集団を何というか。"
+  },
+  {
+    "answer": "領事裁判権",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "19世紀の不平等条約で外国人に認められた、自国の領土内であっても自国の法で裁かれない権利を何というか。"
+  },
+  {
+    "answer": "関税自主権",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "不平等条約の内容の一つで、日本が独自に輸入品への税率を決定できなかった権利を何というか。"
+  },
+  {
+    "answer": "岩倉具視",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "廃藩置県などの改革を主導し、不平等条約改正を目指して欧米を視察した使節団を率いた人物は誰か。"
+  },
+  {
+    "answer": "井上馨",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "明治時代に外務卿として条約改正交渉を行ったが、欧化政策への批判を受けて辞任した政治家は誰か。"
+  },
+  {
+    "answer": "鹿鳴館",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "明治時代の外交政策の一環として建設され、欧化政策を象徴する舞踏会などが行われた社交場は何か。"
+  },
+  {
+    "answer": "青木周蔵",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "明治時代、ドイツ公使や外務大臣を務め、条約改正交渉中に大津事件が起きたため辞任した外交官は誰か。"
+  },
+  {
+    "answer": "大津事件",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "1891年，来日中のロシア皇太子が傷つけられた事件を何というか。"
+  },
+  {
+    "answer": "樺太・千島交換条約",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "1875年、開拓長官黒田清隆の建議により，ロシアとの国境を確定する条約が締結されたが，この条約は何か。"
+  },
+  {
+    "answer": "日清修好条規",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "清国とのはじめての条約は，対等な形で締結されたが，これを何というか。"
+  },
+  {
+    "answer": "台湾出兵",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "琉球漂流民殺害事件の責任問題をめぐり，日清間の対立がおこり，日本が武力行使を行った。これを何というか。"
+  },
+  {
+    "answer": "琉球処分",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "琉球が日本に統合される過程を何というか，漢字４字で示せ。"
+  },
+  {
+    "answer": "江華島事件",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "1875年、日本の軍艦が，朝鮮の漢江河口付近で示威行動中に砲撃を受け，応戦した。この挑発事件を何というか。"
+  },
+  {
+    "answer": "日朝修好条規",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "江華島事件で，日本政府は朝鮮に圧力をかけ，条約を締結したが，この条約を何というか。"
+  },
+  {
+    "answer": "壬午軍乱",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "1882年、大院君派の軍隊が首都でおこした反乱は何か。"
+  },
+  {
+    "answer": "大院君",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "19世紀後半の朝鮮で、開国に反対して攘夷政策をとり、政権を握った高宗の父は誰か。"
+  },
+  {
+    "answer": "甲申政変",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "1884年、開化派が企てたが、失敗に終わったクーデタを何と呼ぶか。"
+  },
+  {
+    "answer": "金玉均",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "開化派の指導者は誰か。"
+  },
+  {
+    "answer": "天津条約",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "1885年、甲申政変の事後処理に関して日本と清が結んだ条約は何か。"
+  },
+  {
+    "answer": "日英通商航海条約",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "日英間で，日清戦争勃発直前に，領事裁判権の撤廃などを内容とする条約を締結したが，その条約を何というか。"
+  },
+  {
+    "answer": "ボアソナード",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "1890年に公布された民法を起草したフランス人法学者はだれか。"
+  },
+  {
+    "answer": "甲午農民戦争",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "1894年、東学の信徒を中心におこった農民反乱は何か。"
+  },
+  {
+    "answer": "遼東半島・台湾",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "下関条約で清から日本に割譲されたのは、澎湖諸島とどこか。２か所答えなさい。"
+  },
+  {
+    "answer": "三国干渉",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "下関条約で日本が領土を取得したことに反対して、ロシア・ドイツ・フランスが行った動きを何と呼ぶか。"
+  },
+  {
+    "answer": "遼東半島",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "三国干渉の結果、日本が清に返還した領土はどこか。"
+  },
+  {
+    "answer": "日英同盟",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "東アジアにおけるロシアの南下を阻止すべく、1902年イギリスが締結した軍事同盟は何か。"
+  },
+  {
+    "answer": "日本海海戦",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "日露戦争で、日本海軍がロシアのバルチック艦隊を撃破した戦いは何か。"
+  },
+  {
+    "answer": "ポーツマス条約",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "1905年９月に結ばれた日露戦争の講和条約は何か。"
+  },
+  {
+    "answer": "日比谷焼打ち事件",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "日露戦争の講和条約を屈辱的なものとして条約破棄を叫んで暴動化する事件が発生したが、これを何というか。"
+  },
+  {
+    "answer": "統監府",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "1905年、韓国の外交権を掌握し保護国にした日本が、韓国に設置した統治機関は何か。"
+  },
+  {
+    "answer": "伊藤博文",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "初代の韓国統監についた日本人は誰か。"
+  },
+  {
+    "answer": "義兵闘争",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "韓国の保護国化に対して、1905年以降再びおこった朝鮮民衆の反日武装闘争を何と呼ぶか。"
+  },
+  {
+    "answer": "朝鮮総督府",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "韓国併合ののち、日本が京城（現ソウル）においた朝鮮統治機関は何か。"
+  },
+  {
+    "answer": "桂太郎・西園寺公望",
+    "category": "日：国民国家と明治維新",
+    "chapter": "S",
+    "number": "3",
+    "question": "日露戦争後の日本で、政権を交代で担当し「桂園時代」と呼ばれる政界の安定期を築いた２人の政治家は誰か。"
+  },
+  {
+    "answer": "印紙法",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1765年に英国が制定した、刊行物に印紙を貼ることを義務づけた課税法は何か。"
+  },
+  {
+    "answer": "「代表なくして課税なし」",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "印紙法に対し、北米の植民地側が抵抗の際に掲げた有名なスローガンは何か。"
+  },
+  {
+    "answer": "茶法",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1773年に英東インド会社へ茶の独占販売権を与えた、独立戦争の契機となる法は何か。"
+  },
+  {
+    "answer": "ボストン茶会事件",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "茶法への反対運動として、植民地人が茶箱を海へ投棄した1773年の事件は何か。"
+  },
+  {
+    "answer": "ワシントン",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "アメリカ独立戦争において、植民地軍の総司令官を務め後に初代大統領となったのは誰か。"
+  },
+  {
+    "answer": "独立宣言",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1776年に採択され、基本的人権や人民主権を主張した文書は何か。"
+  },
+  {
+    "answer": "革命権（抵抗権）",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "アメリカの独立宣言において、人民が不当な政治に抵抗できるとした権利は何か。"
+  },
+  {
+    "answer": "合衆国憲法",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1787年に制定された、三権分立や連邦主義を特色とする憲法を何というか。"
+  },
+  {
+    "answer": "ルイ16世",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "フランス革命勃発時の国王で、後に処刑された人物は誰か。"
+  },
+  {
+    "answer": "国民議会",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "フランス革命時、第三身分の代表が三部会から分離して成立させた議会は何か。"
+  },
+  {
+    "answer": "人権宣言",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1789年に採択され、自由、平等、主権在民などの原理を掲げた宣言は何か。"
+  },
+  {
+    "answer": "バスティーユ牢獄",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "フランス革命の始まりとされる、1789年7月に民衆が襲撃した場所はどこか。"
+  },
+  {
+    "answer": "第一共和政",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1792年に王政が廃止され、ロベスピエールらが急進的改革を行った体制は何か。"
+  },
+  {
+    "answer": "ロベスピエール",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "フランス革命の第一共和政下で、恐怖政治を指導した人物は誰か。"
+  },
+  {
+    "answer": "徴兵制",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "革命下のフランスで実施された、国民に軍務を義務づける制度は何か。"
+  },
+  {
+    "answer": "ナポレオン法典",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1804年に制定された、法の前の平等や私有財産の不可侵を認めた民法典は何か。"
+  },
+  {
+    "answer": "第一帝政",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1804年にナポレオンが皇帝に即位したことで始まった体制を何というか。"
+  },
+  {
+    "answer": "大陸閉鎖令",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "ナポレオンがイギリスに経済的打撃を与えるため、大陸諸国へ出した通商禁止令は何か。"
+  },
+  {
+    "answer": "ロシア",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1812年にナポレオンが遠征に失敗し、没落の大きな原因となった国はどこか。"
+  },
+  {
+    "answer": "ライプツィヒの戦い",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1813年にナポレオンが連合軍に敗れた、別名「諸国民戦争」とも呼ばれる戦いは何か。"
+  },
+  {
+    "answer": "ワーテルローの戦い",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "一度復活したナポレオンが、1815年にイギリスなどの連合軍に敗れた戦いは何か。"
+  },
+  {
+    "answer": "クリオーリョ",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "ラテンアメリカの独立運動で主体となった、植民地生まれの白人を何というか。"
+  },
+  {
+    "answer": "ハイチ",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1804年にフランスから独立した、世界初の黒人共和国はどこか。"
+  },
+  {
+    "answer": "ナショナリズム",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "国民や民族という政治的共同体を重視し、独立や統一を目指す思想や運動は何か。"
+  },
+  {
+    "answer": "国民国家",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "近代において、一定の領域に主権者としての国民が集まって成立する国家を何というか。"
+  },
+  {
+    "answer": "ビスマルク",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1871年、プロイセン王国主導でドイツ統一を成し遂げた首相は誰か。"
+  },
+  {
+    "answer": "クリミア戦争",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "敗北したロシアが農奴解放令を出す契機となった、19世紀半ばの戦争は何か。"
+  },
+  {
+    "answer": "米英戦争",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1812年に始まり、米国の経済的自立を促したイギリスとの戦争は何か。"
+  },
+  {
+    "answer": "ジャクソン",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "先住民強制移住法を制定し、保留地への移住を強行した米国の第7代大統領は誰か。"
+  },
+  {
+    "answer": "「西漸運動」",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "神から与えられた使命として正当化された、米国の西部開拓運動を何というか。"
+  },
+  {
+    "answer": "南北戦争",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1861年、奴隷制や貿易方針をめぐる南北の対立から発生した米国内戦は何か。"
+  },
+  {
+    "answer": "北部",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "アメリカで奴隷制に反対したのは北部・南部のどちらか。"
+  },
+  {
+    "answer": "北部",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "アメリカで連邦主義を主張したのは北部・南部のどちらか。"
+  },
+  {
+    "answer": "北部",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "19世紀半ばのアメリカで、共和党の主な支持基盤となったのは北部・南部のどちらか。"
+  },
+  {
+    "answer": "南部",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "アメリカで奴隷制に賛成したのは北部・南部のどちらか。"
+  },
+  {
+    "answer": "南部",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "アメリカで州権主義を主張したのは北部・南部のどちらか。"
+  },
+  {
+    "answer": "南部",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "19世紀半ばのアメリカで、民主党の主な支持基盤となったのは北部・南部のどちらか。"
+  },
+  {
+    "answer": "リンカン",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "南北戦争中に「奴隷解放宣言」を出し、合衆国の再統一を果たした大統領は誰か。"
+  },
+  {
+    "answer": "奴隷解放宣言",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1863年に出され、アメリカ南部の奴隷の法的な自由を保障した宣言は何か。"
+  },
+  {
+    "answer": "ギリシア",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1829年にオスマン帝国から独立を果たした、ヨーロッパの支援を受けた国はどこか。"
+  },
+  {
+    "answer": "ムハンマド＝アリー",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "エジプトで近代化政策を行い、実質的な独立を勝ち取った人物は誰か。"
+  },
+  {
+    "answer": "タンジマート",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1839年からオスマン帝国で開始された、西欧化を目指す恩恵改革を何というか。"
+  },
+  {
+    "answer": "ミドハト憲法",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1876年に発布された、アジア最初の近代的な憲法ともされる文書は何か。"
+  },
+  {
+    "answer": "ガージャール朝",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "18世紀末から20世紀初めまで、現在のイランを支配した王朝は何か。"
+  },
+  {
+    "answer": "タバコ＝ボイコット運動",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "イギリスへの利権譲渡に反対して、1891年にイランで起きた反対運動は何か。"
+  },
+  {
+    "answer": "アフガーニー",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "パン＝イスラーム主義を唱え、イスラーム世界の民族運動に影響を与えた人物は誰か。"
+  },
+  {
+    "answer": "イラン立憲革命",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1906年にイランで発生し、憲法発布や議会開設を実現させた動きは何か。"
+  },
+  {
+    "answer": "帝国主義",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "独占資本主義段階に入った欧米列強が，19世紀後半から展開した積極的な対外膨張政策を何と呼ぶか。"
+  },
+  {
+    "answer": "カイロ・ケープタウン・カルカッタ",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "19世紀後半、イギリスの３C政策の拠点として重視した三大都市はどこか。"
+  },
+  {
+    "answer": "米西戦争",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1898年、アメリカ合衆国がスペインと戦い、フィリピンやキューバの支配権を獲得した戦争を何というか。"
+  },
+  {
+    "answer": "セオドア＝ローズヴェルト",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "棍棒外交により、ラテンアメリカ諸国に対する影響力を強めたアメリカ大統領は誰か。"
+  },
+  {
+    "answer": "石油・電力",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "第２次産業革命以降使用された、燃料・動力は何か。"
+  },
+  {
+    "answer": "ベルリン（＝コンゴ）会議",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "ベルギーのコンゴ領有をめぐる紛争を調停するため，1884〜85年に開催された国際会議は何か。"
+  },
+  {
+    "answer": "ビスマルク",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "ベルギーのコンゴ領有をめぐる紛争を調停するため，国際会議を開いた人物は誰か。"
+  },
+  {
+    "answer": "南アフリカ戦争",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1899-1902年、イギリスがブール人と戦い、イギリスの南アフリカ支配を確立した戦争を何というか。"
+  },
+  {
+    "answer": "ファショダ事件",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1898年，イギリスとフランスのアフリカ進出政策が，スーダンで衝突・対立した事件を何と呼ぶか。"
+  },
+  {
+    "answer": "英仏協商",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1904年，イギリスとフランスが北アフリカ地域での相互の優越権を承認した協定は何か。"
+  },
+  {
+    "answer": "エチオピア帝国/リベリア共和国",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "19世紀のアフリカ分割の中で、ヨーロッパ列強による植民地支配をほぼ免れた二つの国はどこか。"
+  },
+  {
+    "answer": "露仏同盟",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1894年に正式調印された，ロシアとフランスとのあいだで結ばれた同盟は何か。"
+  },
+  {
+    "answer": "ベルリン・ビザンティウム・バグダード",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "19世紀後半、ドイツの３B政策の拠点として重視した三大都市はどこか。"
+  },
+  {
+    "answer": "日英同盟",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1902年，ロシアの東アジア進出に対抗するため，イギリスが孤立主義外交を放棄して結んだ同盟は何か。"
+  },
+  {
+    "answer": "英仏協商",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1904年，ドイツの進出政策に対抗するため，イギリスとフランスが結んだ協定は何か。"
+  },
+  {
+    "answer": "英露協商",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1907年，イラン・アフガニスタン・チベット地域に関して，イギリスとロシアが結んだ協定は何か。"
+  },
+  {
+    "answer": "グレート＝ゲーム",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "19世紀、イギリスとロシアが西アジア・中央アジアの支配権を巡って繰り広げた政治/軍事的な対立を何というか。"
+  },
+  {
+    "answer": "イギリス",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "オスマン帝国はどこと通商条約を結んだことで関税自主権を失ったか。"
+  },
+  {
+    "answer": "ロシア",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "オスマン帝国はどこと通商条約を結んだことで関税自主権を失ったか。"
+  },
+  {
+    "answer": "スエズ運河",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "財政難に陥ったエジプトは、何を運営する会社の株式をイギリスに売却したか。"
+  },
+  {
+    "answer": "シパーヒーの代反乱",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1857-59年に発生した、東インド会社のインド人傭兵による反乱は何か。"
+  },
+  {
+    "answer": "ヴィクトリア女王",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1877年に建国されたインド帝国の皇帝は誰か。"
+  },
+  {
+    "answer": "強制栽培制度(政府栽培制度)",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1830年からオランダがジャワ島の農民に導入した，コーヒー・サトウキビ・藍などを栽培させた経済政策は何か。"
+  },
+  {
+    "answer": "イギリス",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "マレー半島やビルマを植民地化した列強はどこか。"
+  },
+  {
+    "answer": "フランス",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "ベトナムをはじめとするインドシナ半島を植民地化した列強はどこか。"
+  },
+  {
+    "answer": "ラーマ5世",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "近代化政策や外交交渉によって独立を維持した、タイの国王は誰か。"
+  },
+  {
+    "answer": "膠州湾",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1898年、ドイツが租借した山東半島南西岸の湾はどこか。"
+  },
+  {
+    "answer": "旅順・大連",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1898年、ロシアが租借して、要塞・軍港と商港を建設した都市はどこか。２か所答えなさい。"
+  },
+  {
+    "answer": "威海衛",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "ロシアに対抗するため、1898年にイギリスが租借して東洋艦隊の基地とした山東半島の海港はどこか。"
+  },
+  {
+    "answer": "広州湾",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1899年にフランスが租借した、広東省南岸の湾はどこか。"
+  },
+  {
+    "answer": "戊戌の変法",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "日清戦争の敗北後、若手官僚を中心に、明治維新を規範に立憲制の樹立をめざした改革を何と呼ぶか。"
+  },
+  {
+    "answer": "義和団",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "19世紀末の中国で、外国勢力やキリスト教徒を排斥し、清朝と連携して蜂起した民間武装集団は何か。"
+  },
+  {
+    "answer": "扶清滅洋",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "義和団が掲げたスローガンは何か。"
+  },
+  {
+    "answer": "北京議定書（辛丑和約）",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1901年に清が11カ国と調印した、義和団戦争の講和に関する議定書は何か。"
+  },
+  {
+    "answer": "大韓帝国",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1897年、独立国であることを示すため、朝鮮が採用した国号は何か。"
+  },
+  {
+    "answer": "科挙",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1905年、新政のなかで廃止された、官僚登用試験は何か。"
+  },
+  {
+    "answer": "孫文",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "興中会を組織し、清朝打倒の革命の中心となった、広東出身の指導者は誰か。"
+  },
+  {
+    "answer": "中国同盟会",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1905年、革命諸団体が結集して、東京で結成された組織で、『民報』などを発行したものは何か。"
+  },
+  {
+    "answer": "辛亥革命",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1911年に武昌で起こり、清朝を倒して中華民国の成立へとつながった革命を何というか。"
+  },
+  {
+    "answer": "袁世凱",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "孫文から臨時大総統の地位を引き継ぐも、帝政の宣言するなど、革命運動を混乱させた人物は誰か。"
+  },
+  {
+    "answer": "宣統帝",
+    "category": "世：国民国家と明治維新",
+    "chapter": "S",
+    "number": "4",
+    "question": "1912年2月、退位した清朝最後の皇帝は誰か。"
+  },
+  {
+    "answer": "二十一か条の要求",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "日：総力戦と社会運動"
+  },
+  {
+    "answer": "大隈重信",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "二十一か条の要求を行った当時の内閣総理大臣は誰か。"
+  },
+  {
+    "answer": "袁世凱",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "二十一か条の要求を、一部を除いて受諾した当時の中華民国の指導者は誰か。"
+  },
+  {
+    "answer": "大戦景気",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "第一次世界大戦中に日本が輸出拡大により経験した好景気を何と呼ぶか。"
+  },
+  {
+    "answer": "在華紡",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "第一次世界大戦中に急成長した、中国に進出した日本の紡績業を何と呼ぶか。"
+  },
+  {
+    "answer": "造船業",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "第一次世界大戦中の需要急増により発展した日本の産業は何か。"
+  },
+  {
+    "answer": "船成金",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "第一次世界大戦中に造船業で巨万の富を築いた人々を何と呼んだか。"
+  },
+  {
+    "answer": "重化学工業",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "鉄鋼業・化学工業・機械工業など、第一次世界大戦中に発達した工業部門を総称して何と呼ぶか。"
+  },
+  {
+    "answer": "戦後恐慌",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "1920年に始まった、第一次世界大戦後の反動で生じた日本の不景気を何と呼ぶか。"
+  },
+  {
+    "answer": "関東大震災",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "1923年9月1日に発生し、日本経済に大きな打撃を与えた大災害は何か。"
+  },
+  {
+    "answer": "金融恐慌",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "1927年に発生した、震災手形処理問題をきっかけとした日本の経済危機を何と呼ぶか。"
+  },
+  {
+    "answer": "震災手形",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "関東大震災後の復興資金として発行されたが、不良債権化して金融恐慌の原因となった手形は何か。"
+  },
+  {
+    "answer": "田中義一",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "1927年の金融恐慌時に首相として支払猶予令を出した政治家は誰か。"
+  },
+  {
+    "answer": "井上準之助",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "1929年に蔵相として金本位制復帰を実施した政治家は誰か。"
+  },
+  {
+    "answer": "金輸出解禁",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "当時の大蔵大臣が1930年に実施した、金本位制復帰のための政策のことを何と呼ぶか。"
+  },
+  {
+    "answer": "三・一独立運動",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "1919年に朝鮮で起こった、日本からの独立を求める民族運動は何か。"
+  },
+  {
+    "answer": "文化政治",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "三・一独立運動後に朝鮮総督府がとった、従来の武断政治を改めた統治政策は何か。"
+  },
+  {
+    "answer": "憲政擁護運動(第１次護憲運動)",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "第３次桂太郎内閣の退陣を要求する全国的な運動を何とよぶか。"
+  },
+  {
+    "answer": "大正政変",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "桂太郎内閣を打倒し、立憲政治の擁護を求めた第一次の民主主義運動を何とよぶか。"
+  },
+  {
+    "answer": "「民本主義」",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "吉野作造が、政治の目的は国民の幸福にあるべきだと主張した、その思想を何とよぶか。"
+  },
+  {
+    "answer": "米騒動",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "シベリア出兵に伴う米価高騰に不満を持った人々が起こし、寺内正毅内閣を退陣に追い込んだ暴動を何とよぶか。"
+  },
+  {
+    "answer": "原敬",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "藩閥出身者ではなく、本格的な政党内閣を組織し、「平民宰相」と呼ばれた人物は誰か。"
+  },
+  {
+    "answer": "大正デモクラシー",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "大正時代に、国民の政治参加を求める自由主義的な風潮が高まった社会運動を総称して何とよぶか。"
+  },
+  {
+    "answer": "加藤高明",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "第2次護憲運動を主導し、護憲三派内閣の首相として、普通選挙法（男子普通選挙）を実現させた人物は誰か。"
+  },
+  {
+    "answer": "治安維持法",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "1925年に制定された、社会主義者などの政治活動を厳しく取り締まることを目的とした法律を何というか。"
+  },
+  {
+    "answer": "平塚らいてう",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "「元始、女性は実に太陽であった」という宣言で知られる文芸雑誌『青鞜』を創刊した女性解放運動家は誰ですか。"
+  },
+  {
+    "answer": "市川房枝",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "婦人参政権獲得を目指して活動し、平塚らと共に新婦人協会を設立した女性運動家は誰か。"
+  },
+  {
+    "answer": "全国水平社",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "1922年に京都で創立され、被差別部落民の解放を求めた団体は何か。"
+  },
+  {
+    "answer": "職業婦人",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "大正・昭和初期、事務・サービス業などホワイトカラーで働いた女性は何と呼ばれたか。"
+  },
+  {
+    "answer": "文化住宅",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "大正末期から戦前、洋間とモダンな台所・風呂場を備えた都市住宅の名称は何か。"
+  },
+  {
+    "answer": "モダンガール",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "昭和初期の日本で、洋風の服装と自由なライフスタイルを好み、新しい女性像を象徴した女性を何と呼ぶか。"
+  },
+  {
+    "answer": "大学令",
+    "category": "日：総力戦と社会運動",
+    "chapter": "S",
+    "number": "5",
+    "question": "1918年に原敬内閣によって公布され、公立・私立の単科大学や総合大学の設立を認めた法令を何と呼ぶか。"
+  },
+  {
+    "answer": "サライェヴォ事件",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1914年6月28日にオーストリア皇太子が暗殺された、第１次世界大戦の発端となる事件は何か。"
+  },
+  {
+    "answer": "ボスニア・ヘルツェゴヴィナ",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "サライェヴォを中心とする、スラブ人が多く居住するもオーストリアの支配下だった地域はどこか。"
+  },
+  {
+    "answer": "塹壕戦",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "第１次世界大戦の西部戦線で展開され、特に西部戦線の長期化をもたらした戦術は何か。"
+  },
+  {
+    "answer": "タンネンベルクの戦い",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1914年にドイツ軍がロシア軍を破った、東プロイセンでの戦いは何か。"
+  },
+  {
+    "answer": "孤立主義",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "アメリカが国際政治から距離を置き、国内問題に専念したその外交政策を何と呼ぶか。"
+  },
+  {
+    "answer": "ウィルソン",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "アメリカの第一次世界大戦への参加を決定した当時のアメリカ大統領は誰か。"
+  },
+  {
+    "answer": "フセイン・マクマホン協定",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1915年から16年にかけてイギリスがアラブ人と結んだ、反オスマン蜂起を促す協定は何か。"
+  },
+  {
+    "answer": "サイクス・ピコ協定",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1916年にイギリスとフランスが結んだ、オスマン帝国領土分割の秘密協定は何か。"
+  },
+  {
+    "answer": "バルフォア宣言",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1917年にイギリスが発表した、ユダヤ人国家建設支持を表明した宣言は何か。"
+  },
+  {
+    "answer": "十四か条の平和原則",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "ウィルソンが1918年に発表した、戦後処理原則を示した平和原則は何か。"
+  },
+  {
+    "answer": "民族自決",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "各民族が自らの意思で国家を形成する権利を何と呼ぶか。"
+  },
+  {
+    "answer": "ブレスト＝リトフスク条約",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1918年3月にドイツとソヴィエト・ロシアが締結した単独講和条約は何か。"
+  },
+  {
+    "answer": "ローザ＝ルクセンブルク",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "ドイツの革命家で、スパルタクス団（共産党の前身）の指導者として活動し、殺害された女性は誰か。"
+  },
+  {
+    "answer": "ヴァイマル共和国",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "第一次世界大戦後にドイツで成立した共和制国家の通称は何か。"
+  },
+  {
+    "answer": "総力戦体制",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "国家が国民の政治・経済・社会・文化生活のすべてを動員・統制し、戦争遂行を目指す体制を何と呼ぶか"
+  },
+  {
+    "answer": "二月革命",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1917年に発生した、ニコライ２世を退位させ、ロシアの帝政を終わらせた革命は何か。"
+  },
+  {
+    "answer": "ペトログラード",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "二月革命の舞台となった、ロシアの首都の当時の名称は何か。"
+  },
+  {
+    "answer": "ソヴィエト",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "ロシアの革命をきっかけに結成された、労兵一致の自治組織のことを何と呼ぶか。"
+  },
+  {
+    "answer": "レーニン",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1917年4月にロシアに帰国し、社会主義革命を呼びかけた革命家は誰か。"
+  },
+  {
+    "answer": "十月革命",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1917年に発生した、史上初とされるの社会主義革命を何と呼ぶか。"
+  },
+  {
+    "answer": "平和に関する布告",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "レーニンが発表した、無併合・無賠償・民族自決を訴え、第１次世界大戦からの離脱を表明した宣言は何か。"
+  },
+  {
+    "answer": "土地に関する布告",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "レーニンが発表した、農地改革を宣言した布告は何か。"
+  },
+  {
+    "answer": "共産党",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1918年にボリシェヴィキが改称した、ソヴィエト＝ロシアの党名は何か。"
+  },
+  {
+    "answer": "コミンテルン",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1919年にレーニンが創設した、世界革命を目指す国際組織は何か。"
+  },
+  {
+    "answer": "シベリア出兵",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1918年から1922年にかけて日本が革命後のロシアに派遣した軍事干渉は何か。"
+  },
+  {
+    "answer": "赤軍",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1918年に創設された、ソヴィエト＝ロシアの軍隊を何と呼ぶか。"
+  },
+  {
+    "answer": "戦時共産主義",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1918年から21年にかけてソヴィエト＝ロシアが実施した、統制経済政策を何と呼ぶか。"
+  },
+  {
+    "answer": "ネップ",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1921年からソヴィエト＝ロシアが実施した、市場経済を部分的に導入した政策は何か。"
+  },
+  {
+    "answer": "ソヴィエト社会主義共和国連邦",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1922年12月にロシア=ソヴィエト連邦社会主義共和国など4共和国により成立した国家は何か。"
+  },
+  {
+    "answer": "スターリン",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "一国社会主義論を主張し、1924年以降ソ連の最高指導者となった人物は誰か。"
+  },
+  {
+    "answer": "トロツキー",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "世界革命論を主張し、レーニンの死後スターリンとの権力闘争に敗れた革命家は誰か。"
+  },
+  {
+    "answer": "第1次五ヵ年計画",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1928年に開始されたソ連の経済建設計画で、重工業の発展と農業の集団化を重視したものは何か。"
+  },
+  {
+    "answer": "（農業の）集団化",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "ソ連における第１次五ヵ年計画において、コルホーズ、ソフホーズの創設は何を目的としたものか。"
+  },
+  {
+    "answer": "フォード",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "大量生産システムを確立し、自動車の普及に貢献したアメリカの実業家は誰か。"
+  },
+  {
+    "answer": "禁酒法",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1920年から1933年まで施行され、アルコール飲料の製造・販売を禁止した法律は何か。"
+  },
+  {
+    "answer": "移民法",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1924年にアメリカで制定され、特にアジア系移民を大幅に制限した法律は何か。"
+  },
+  {
+    "answer": "パリ講和会議",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "第一次世界大戦の講和会議の名称は何か。"
+  },
+  {
+    "answer": "ヴェルサイユ条約",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "第一次世界大戦の対ドイツ講和条約の名称は何か。"
+  },
+  {
+    "answer": "国際連盟",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "ウィルソンの提唱の結果、1920年に設立された、史上初の国際平和維持機構の名称は何か。"
+  },
+  {
+    "answer": "集団安全保障",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "紛争が起こった場合に国際機関が集団で制裁を加えて平和を維持する仕組みを何と呼ぶか。"
+  },
+  {
+    "answer": "ワシントン会議",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1921～22年にアメリカの呼びかけで開催され、太平洋・東アジア問題を討議した国際会議は何か。"
+  },
+  {
+    "answer": "四カ国条約",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "ワシントン会議で締結された、アメリカ・イギリス・フランス・日本が太平洋の現状維持を約束した条約は何か。"
+  },
+  {
+    "answer": "日英同盟",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1902年に締結されたが、ワシントン会議の結果廃止された軍事同盟は何か。"
+  },
+  {
+    "answer": "九カ国条約",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "ワシントン会議で締結された、中国の主権尊重・領土保全・門戸開放・機会均等を定めた条約は何か。"
+  },
+  {
+    "answer": "ワシントン海軍軍備制限条約",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "ワシントン会議で締結された、米英日仏伊の主力艦保有比率を定めた条約は何か。"
+  },
+  {
+    "answer": "ロカルノ条約",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1925年にドイツ・フランス・ベルギーなどが調印した、ドイツの西部国境の現状維持を確認した条約は何か。"
+  },
+  {
+    "answer": "国際連盟",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "ロカルノ条約の締結の結果、その翌年にドイツの参加が実現した国際組織は何か。"
+  },
+  {
+    "answer": "不戦条約",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1928年にケロッグ（米）とブリアン（仏）が提唱し、戦争を放棄した条約は何か。"
+  },
+  {
+    "answer": "ロンドン会議",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1930年にロンドンで開催された、日米英の補助艦制限を協議した軍縮会議は何か。"
+  },
+  {
+    "answer": "孤立主義",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "アメリカが第一次世界大戦後にとった、国際政治への関与を避ける外交政策を何と呼ぶか。"
+  },
+  {
+    "answer": "ドーズ案",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1924年にアメリカの財政専門家が提案した、ドイツの賠償問題を解決するための計画は何か。"
+  },
+  {
+    "answer": "新文化運動",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1915年頃から中国で起こった、伝統的権威を否定し民主主義・科学を重視した文化革新運動は何か。"
+  },
+  {
+    "answer": "五・四運動",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1919年に中国で起こった、ヴェルサイユ条約に反対する反日・反帝国主義運動は何か。"
+  },
+  {
+    "answer": "中国国民党",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1919年に孫文により再建された中国の政党は何か。"
+  },
+  {
+    "answer": "中国共産党",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1921年7月に上海で結成された、中国のマルクス主義政党は何か。"
+  },
+  {
+    "answer": "ベンガル分割令",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1905年にイギリスがインドで実施したが、反発により11年に撤回した行政措置は何か。"
+  },
+  {
+    "answer": "国民会議派",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1885年に結成された、反英運動を展開したインドの民族主義政党は何か。"
+  },
+  {
+    "answer": "スワデーシ",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "「国産品愛用」を意味する、カルカッタ大会４綱領の１つは何か。"
+  },
+  {
+    "answer": "スワラージ",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "「自治の獲得」を意味する、カルカッタ大会４綱領の１つは何か。"
+  },
+  {
+    "answer": "英貨排斥",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "イギリス製品の不買運動につながる、カルカッタ大会４綱領の１つは何か。"
+  },
+  {
+    "answer": "民族教育",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "イギリス系教育に対抗する運動につながる、カルカッタ大会４綱領の１つは何か。"
+  },
+  {
+    "answer": "全インド＝ムスリム連盟",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "インドの民族運動の鈍化を目的に英によって1906年に結成された、インドのイスラーム教徒の政治組織は何か。"
+  },
+  {
+    "answer": "ローラット法",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1919年にイギリスがインドで制定した、集会・出版の自由を制限し、令状なしの逮捕を認めた弾圧法は何か。"
+  },
+  {
+    "answer": "ガンディー",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "「マハトマ（偉大な魂）」と呼ばれた、非暴力・不服従を説いたインド独立運動の指導者は誰か。"
+  },
+  {
+    "answer": "ネルー",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "インド国民会議派の指導者で、のちに独立後初代首相となった政治家は誰か。"
+  },
+  {
+    "answer": "委任統治領",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "第一次世界大戦後、敗戦国の植民地を戦勝国が国際連盟の監督下で統治したが、その領土を何と呼ぶか。"
+  },
+  {
+    "answer": "エジプト王国",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "ワフド党の活動の結果、1922年にイギリスから独立を達成した王国は何か。"
+  },
+  {
+    "answer": "スエズ運河",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "エジプトの独立後もイギリスが権益を保持した、地中海世界とアジア世界を結ぶ交通の要衝は何か。"
+  },
+  {
+    "answer": "セーヴル条約",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "第一次世界大戦後、連合国がオスマン帝国と結んだ講和条約は何か。"
+  },
+  {
+    "answer": "ムスタファ＝ケマル（ケマル＝アタテュルク）",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "トルコ革命を指導し、トルコ共和国初代大統領となった軍人・政治家は誰か。"
+  },
+  {
+    "answer": "スルタン制",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "1922年に廃止された、オスマン帝国皇帝の制度は何か。"
+  },
+  {
+    "answer": "トルコ共和国",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "オスマン帝国の崩壊ののち、同じ地に建国された国家は何か。"
+  },
+  {
+    "answer": "パフレヴィー朝",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "ガージャール朝がクーデタで滅んだのちイランで成立した王朝は何か。"
+  },
+  {
+    "answer": "レザー＝シャー",
+    "category": "世：総力戦と社会運動",
+    "chapter": "S",
+    "number": "6",
+    "question": "パフレヴィー朝を建国し、イランの近代化を推進した軍人・国王は誰か。"
+  },
+  {
+    "answer": "金輸出解禁",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1930年に日本が実施した金本位制復帰のための政策で、かえって国内の不況を深刻化させた措置は何か。"
+  },
+  {
+    "answer": "浜口雄幸",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1930年に金輸出解禁を実施し、その後の経済の混乱の中で右翼に狙撃された当時の日本の首相は誰か。"
+  },
+  {
+    "answer": "農業恐慌",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1930年代前半の日本で、米価や繭価の暴落により農村が極度の困窮に陥った経済現象を何と呼ぶか。"
+  },
+  {
+    "answer": "犬養毅",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1932年、海軍青年将校らによる事件で暗殺された当時の日本の首相は誰か。"
+  },
+  {
+    "answer": "高橋是清",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "大蔵大臣に就任し、金本位制を停止して積極財政に転換し、日本経済をいち早く回復させた政治家は誰か。"
+  },
+  {
+    "answer": "管理通貨制度",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "金との兌換（交換）を停止し、政府や中央銀行が通貨の発行量を管理する制度を何と呼ぶか。"
+  },
+  {
+    "answer": "積極財政",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "不況期に政府が意図的に国債を発行し、財政支出を拡大し、景気回復を図る経済政策を何と呼ぶか。"
+  },
+  {
+    "answer": "満洲事変",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1931～1933年に発生した、日中間の武力衝突のことを何と呼ぶか。"
+  },
+  {
+    "answer": "柳条湖事件",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "満洲事変の発端となった、南満洲鉄道の爆破事件を何と呼ぶか。"
+  },
+  {
+    "answer": "関東軍",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1919年に設置された日本の中国駐留軍で、後に満洲事変を引き起こした組織は何か。"
+  },
+  {
+    "answer": "若槻礼次郎",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "満洲事変発生時、事態の不拡大方針を掲げるが軍部の独走を抑えきれず、内閣総辞職に追い込まれた日本の首相は誰か。"
+  },
+  {
+    "answer": "溥儀",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "満洲国執政、のちに皇帝に即位した人物は誰か。"
+  },
+  {
+    "answer": "五・一五事件",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1932年に起きた、犬養毅首相暗殺事件を何と呼ぶか。"
+  },
+  {
+    "answer": "リットン調査団",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "満洲事変を調査するため国際連盟が派遣した調査団を何と呼ぶか。"
+  },
+  {
+    "answer": "二・二六事件",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1936年に起きた、青年将校による反乱事件を何と呼ぶか。"
+  },
+  {
+    "answer": "日独防共協定",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1936年に日本とドイツの間で締結された、国際共産主義運動への対策を目的とした協定は何か。"
+  },
+  {
+    "answer": "「東亜新秩序」",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1938年、近衛文麿内閣が日中戦争の目的として掲げた、日満華の三国による新たな国際秩序建設の構想を何と呼ぶか。"
+  },
+  {
+    "answer": "北部仏印",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "パリ陥落から３ヶ月後、日本軍が軍事基地設置などを目的に進駐した北部地域を何と呼ぶか。"
+  },
+  {
+    "answer": "日ソ中立条約",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1941年4月に日本とソ連が締結した、相互不侵犯を約束した条約は何か。"
+  },
+  {
+    "answer": "武器貸与法",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1941年にアメリカが制定した、連合国への軍事援助を可能にした法律は何か。"
+  },
+  {
+    "answer": "南部仏印",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1941年、日本が資源確保などを目的に進駐した地域を何と呼ぶか。この進駐がABCD包囲網の強化を招いた。"
+  },
+  {
+    "answer": "ハル＝ノート",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1941年11月にアメリカが提示した、対日強硬要求を記した文書は何か。"
+  },
+  {
+    "answer": "東条英機",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "対米開戦を御前会議で決定した内閣総理大臣は誰か。"
+  },
+  {
+    "answer": "ハワイ（真珠湾）",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1941年12月8日、日本軍が奇襲攻撃を行い、太平洋戦争開戦のきっかけとなった米海軍の基地がある場所はどこか。"
+  },
+  {
+    "answer": "「大東亜共栄圏」",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "日本が提唱した、東アジア・東南アジアの広域経済圏構想を何と呼ぶか。"
+  },
+  {
+    "answer": "ミッドウェー海戦",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1942年6月にアメリカ軍が日本軍を破った、太平洋戦争の転換点となる海戦は何か。"
+  },
+  {
+    "answer": "ソ連の対日参戦",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "ヤルタ会談で、秘密協定として結ばれた内容は何か。"
+  },
+  {
+    "answer": "ポツダム宣言",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1945年7月、日本に無条件降伏を求めた宣言は何か。"
+  },
+  {
+    "answer": "鈴木貫太郎",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1945年4月に首相に就任し、ポツダム宣言を受諾して第二次世界大戦の終結を実現した日本の政治家は誰か。"
+  },
+  {
+    "answer": "国家総動員法",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1938年制定、日本政府が総力戦体制の構築のため、議会承認なしに経済等を統制する権限を持った法は何か。"
+  },
+  {
+    "answer": "産業報国会",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "労資対立をなくし労働者を戦争に動員する目的で結成された日本の組織は何か。"
+  },
+  {
+    "answer": "新体制運動",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1940年、近衛文麿を中心に全体主義的政治体制を目指した運動は何か。"
+  },
+  {
+    "answer": "近衛文麿",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1940年に新体制運動を主導し、全政党を解散させた首相は誰か。"
+  },
+  {
+    "answer": "大政翼賛会",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "第二次世界大戦の最中、全ての政党が解散して合流した日本の組織を何というか。"
+  },
+  {
+    "answer": "学徒出陣",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "戦局悪化に伴い、文科系大学生や専門学校生が徴兵されたことを何というか。"
+  },
+  {
+    "answer": "皇民化政策",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "朝鮮・台湾で行われた、日本語教育や天皇崇拝の強制などの政策を何というか。"
+  },
+  {
+    "answer": "学童疎開",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "空襲を避けるため、大都市の小学生が地方へ集団で避難したことを何というか。"
+  },
+  {
+    "answer": "沖縄",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "太平洋戦争末期、住民を巻き込んだ地上戦が行われた地域はどこか。"
+  },
+  {
+    "answer": "間接統治",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "連合国軍の指令に基づき、日本政府を通じて政治を行う統治方式を何というか。"
+  },
+  {
+    "answer": "小笠原諸島",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "戦後、沖縄などと共にアメリカ軍の直接統治下に置かれた、現在は東京都に属する諸島はどこか。"
+  },
+  {
+    "answer": "SCAP(GHQ)",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "日本の占領政策を実施した、連合国軍最高司令官(総司令部)の略称を記せ。"
+  },
+  {
+    "answer": "20歳以上の男女",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1945年の選挙法改正により、選挙権が与えられたのはどのような人々か。"
+  },
+  {
+    "answer": "財閥解体",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "経済民主化のため、戦前の巨大企業グループを解散させた改革を何というか。"
+  },
+  {
+    "answer": "農地改革",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "寄生地主制を解体し、自作農を創設するために行われた改革を何というか。"
+  },
+  {
+    "answer": "極東国際軍事裁判",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "日本の戦争指導者の責任を追及するため、東京で開かれた裁判を何というか。"
+  },
+  {
+    "answer": "国民主権",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "日本国憲法の原則で、国の政治の決定権は国民にあるとする原理を何というか。"
+  },
+  {
+    "answer": "平和主義",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "日本国憲法の原則で、戦争放棄や戦力不保持を定めた原理を何というか。"
+  },
+  {
+    "answer": "基本的人権の尊重",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "日本国憲法の原則で、人が生まれながらに持つ権利の保障を定めたものを何というか。"
+  },
+  {
+    "answer": "象徴",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "日本国憲法第１条で、天皇は日本国および日本国民統合の何とされているか。"
+  },
+  {
+    "answer": "日本自由党",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "戦後、旧政友会系の政治家を中心に結成された保守政党を何というか。"
+  },
+  {
+    "answer": "日本社会党",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "生活困窮を背景に支持を集め、1947年の選挙で第一党となった左派政党は何か。"
+  },
+  {
+    "answer": "360円",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "第二次世界大戦後、単一為替レートで、１ドルは何円とされたか。"
+  },
+  {
+    "answer": "レッドパージ",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "冷戦激化に伴い、GHQの指令で行われた共産主義者の追放を何というか。"
+  },
+  {
+    "answer": "警察予備隊",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "朝鮮戦争勃発に伴い、国内の治安維持を目的に1950年に創設された組織は何か。"
+  },
+  {
+    "answer": "特需",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "朝鮮戦争に伴う米軍の物資調達等で、日本にもたらされた好景気を何というか。"
+  },
+  {
+    "answer": "吉田茂",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "サンフランシスコ平和条約に調印した日本の内閣総理大臣は誰か。"
+  },
+  {
+    "answer": "サンフランシスコ平和条約",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1951年に調印され、日本の主権回復を定めた条約を何というか。"
+  },
+  {
+    "answer": "日米安全保障条約",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "平和条約と同時に結ばれた、米軍の日本駐留を認める条約を何というか。"
+  },
+  {
+    "answer": "日米行政協定",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "安全保障条約に基づき、米軍への基地提供や費用分担等を定めた協定は何か。"
+  },
+  {
+    "answer": "MSA協定",
+    "category": "日：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "7",
+    "question": "1954年、日本が米国の援助を受ける代わりに自衛力増強を義務付けられた協定は何か。"
+  },
+  {
+    "answer": "大恐慌（世界恐慌）",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1929年10月のニューヨーク株式市場の暴落から始まり、世界各国に波及した深刻な経済危機を何と呼ぶか。"
+  },
+  {
+    "answer": "フーヴァー＝モラトリアム",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1931年にアメリカ大統領が提案した、戦債・賠償の１年間支払い停止を何と呼ぶか。"
+  },
+  {
+    "answer": "フランクリン＝ローズヴェルト",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "ニューディールを推進した、アメリカ第32代大統領は誰か。"
+  },
+  {
+    "answer": "ニューディール",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1933年にアメリカで開始された、大恐慌克服のための一連の政策を何と呼ぶか。"
+  },
+  {
+    "answer": "テネシー川流域開発公社",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "ニューディールで設立された、TVAと省略される、総合開発を行う公社の代表例は何か。"
+  },
+  {
+    "answer": "ワグナー法",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1935年に制定された、労働者の団結権と団体交渉権を保障したアメリカの法律は何か。"
+  },
+  {
+    "answer": "善隣外交",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1930年代にアメリカが推進した、ラテンアメリカ諸国などとの協調外交政策は何か。"
+  },
+  {
+    "answer": "中立法",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1930年代のアメリカで、紛争当事国への武器輸出などを禁止し、第二次世界大戦への不介入の姿勢を示した法律は何か。"
+  },
+  {
+    "answer": "ファシスト党",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "ムッソリーニが1919年に結成したイタリアの政治組織は何か。"
+  },
+  {
+    "answer": "ムッソリーニ",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1922年にイタリアで政権を獲得し、ファシズム体制を確立した指導者は誰か。"
+  },
+  {
+    "answer": "ローマ進軍",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1922年10月にムッソリーニが権力掌握のために行った政治的示威行動は何か。"
+  },
+  {
+    "answer": "ナチ党",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "ヒトラーが率いた、ドイツの極右政党の名称は何か。"
+  },
+  {
+    "answer": "ヒトラー",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1933年にドイツの首相となり、ナチ独裁体制を築いた政治家は誰か。"
+  },
+  {
+    "answer": "全権委任法",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "国会議事堂放火事件後に制定された、内閣に立法権を与えたドイツの法律は何か。"
+  },
+  {
+    "answer": "全体主義",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "個人の自由を抑圧し、国家のもとで国民生活の全てを統制しようとする政治体制や思想を何と呼ぶか。"
+  },
+  {
+    "answer": "再軍備宣言",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1935年、ドイツがヴェルサイユ条約の条項を一方的に破棄し、徴兵制復活と軍備拡張を発表した宣言を何と呼ぶか。"
+  },
+  {
+    "answer": "ロカルノ条約",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1925年に調印されたが、ドイツが一方的に破棄をした、独仏間の国境の現状維持などを定めた条約は何か。"
+  },
+  {
+    "answer": "ラインラント",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1936年にドイツ軍が進駐した、フランス国境の非武装地帯はどこか。"
+  },
+  {
+    "answer": "人民戦線政府",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1930年代にフランスやスペインなどで成立した、共産党などの左派政党が連合して樹立した内閣を何と呼ぶか。"
+  },
+  {
+    "answer": "フランコ",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1936年にスペインで軍事クーデタを起こし、内戦を引き起こした軍人は誰か。"
+  },
+  {
+    "answer": "日独伊防共協定",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1937年に成立した、共通の敵であるソ連共産主義に対抗するために結成した三カ国による協定を何と呼ぶか。"
+  },
+  {
+    "answer": "ミュンヘン会談",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1938年9月に開催された、ズデーテン問題を協議した４か国首脳会議は何か。"
+  },
+  {
+    "answer": "宥和政策",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "ミュンヘン会談に象徴される、ヒトラーの要求を受け入れる英仏の外交政策は何か。"
+  },
+  {
+    "answer": "独ソ不可侵条約",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1939年8月にドイツとソ連が締結した、相互不侵犯を約束した条約は何か。"
+  },
+  {
+    "answer": "第１次国共合作",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1924年から1927年の上海クーデタまで続いた中国国民党と中国共産党の協力関係は何か。"
+  },
+  {
+    "answer": "北伐",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1926年から中国の国民政府が、軍閥を打倒し、中国統一を目指して北京へ向けて行った軍事行動を何と呼ぶか。"
+  },
+  {
+    "answer": "蔣介石",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "国民革命軍総司令として北伐を指導し、中国国民党の指導者となった人物は誰か。"
+  },
+  {
+    "answer": "南京国民政府",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1927年4月に蔣介石により樹立され、中華民国の正統政府となった政権は何か。"
+  },
+  {
+    "answer": "張作霖",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "奉天を根拠地とする満洲の軍閥で、日本の影響下にあった人物は誰か。"
+  },
+  {
+    "answer": "張学良",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "張作霖の長男で、父の死後に満洲の実権を握った軍閥指導者は誰か。"
+  },
+  {
+    "answer": "西安事件",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1936年12月に張学良が蔣介石を監禁し、抗日を迫った事件を何と呼ぶか。"
+  },
+  {
+    "answer": "盧溝橋事件",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1937年7月7日に起きた、日中全面戦争の発端となる衝突事件は何か。"
+  },
+  {
+    "answer": "抗日民族統一戦線",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "中国国民党と中国共産党が内戦を停止し、日本との全面戦争のために共同で戦うことを合意した体制を何と呼ぶか。"
+  },
+  {
+    "answer": "重慶",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "日中戦争中に中華民国政府が首都とした、長江上流の都市はどこか。"
+  },
+  {
+    "answer": "援蔣ルート",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "日中戦争下、日本軍の封鎖に対抗し、米英などが中国に物資を輸送するために利用した補給路を何と呼ぶか。"
+  },
+  {
+    "answer": "汪兆銘",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "日中戦争中に日本と協力した、中華民国政府要人は誰か。"
+  },
+  {
+    "answer": "ポーランド",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1939年9月1日、ドイツがこの国に侵攻したことをきっかけに、第二次世界大戦が始まったとされる国はどこか。"
+  },
+  {
+    "answer": "ド＝ゴール",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "自由フランス政府を率いて抗戦を指導した、フランスの軍人・政治家は誰か。"
+  },
+  {
+    "answer": "レジスタンス",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "第二次世界大戦中にヨーロッパ各地で展開された、対独抵抗運動を何と呼ぶか。"
+  },
+  {
+    "answer": "チャーチル",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1940年にイギリス首相となり、対独戦を指導した保守党の政治家は誰か。"
+  },
+  {
+    "answer": "連合国共同宣言",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1942年1月、米英などが、枢軸国に勝利するまで単独講和をしないことなどを表明した宣言は何か。"
+  },
+  {
+    "answer": "大西洋憲章",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1941年8月、米大統領と英首相が大西洋上で会談し、戦後の国際秩序の基本原則を示した文書は何か。"
+  },
+  {
+    "answer": "スターリングラードの戦い",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1942年から43年にかけて行われた、独ソ戦の転換点となったソ連南部での攻防戦は何か。"
+  },
+  {
+    "answer": "カイロ会談",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1943年11月に開催され対日処理に関する議論がされた、連合国首脳による初の３か国会談は何か。"
+  },
+  {
+    "answer": "テヘラン会談",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1943年11-12月に開催された、第二戦線形成するための作戦を立て、連合国の戦後を構想した会談は何か。"
+  },
+  {
+    "answer": "北フランス（ノルマンディー）上陸作戦",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1944年6月6日に実行された、連合軍によるヨーロッパ第二戦線の開設作戦は何か。"
+  },
+  {
+    "answer": "ヤルタ会談",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1945年2月に開催された、戦後処理を協議した３か国首脳会談は何か。"
+  },
+  {
+    "answer": "トルーマン",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "ポツダム会談に参加したアメリカ大統領は誰か。"
+  },
+  {
+    "answer": "ホロコースト",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "ナチスがユダヤ人を絶滅収容所などで大量に殺害したことを何というか。"
+  },
+  {
+    "answer": "大西洋憲章",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1941年に米英首脳が発表し、戦後の国際平和機構の構想を示した宣言は何か。"
+  },
+  {
+    "answer": "サンフランシスコ会議",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1945年4月から開催され、国際連合憲章を採択した会議を何というか。"
+  },
+  {
+    "answer": "ニューヨーク",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "国際連合の本部が置かれているアメリカの都市はどこか。"
+  },
+  {
+    "answer": "安全保障理事会",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "５カ国の常任理事国と１０カ国の非常任理事国で構成される国連の事実上の最高機関は何か。"
+  },
+  {
+    "answer": "アメリカ・イギリス・フランス・中華民国・ソ連",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "国連発足時の安全保障理事会の常任理事国５カ国をすべて答えよ（漢字一次の略称は不可）。"
+  },
+  {
+    "answer": "拒否権",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "安全保障理事会の常任理事国のみが持つ、決議を阻止できる権限を何というか。"
+  },
+  {
+    "answer": "ブレトン＝ウッズ会議",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1944年に開催され、戦後の国際経済体制の枠組みを決めた会議は何か。"
+  },
+  {
+    "answer": "基軸通貨",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "第二次世界大戦後のドルのように、国際通貨体制の中で、取引や為替の基準として中心となる通貨を何というか。"
+  },
+  {
+    "answer": "IMF(国際通貨基金)",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "第二次世界大戦後、為替の安定を図るために設置された国際金融機関は何か。"
+  },
+  {
+    "answer": "IBRD(国際復興開発銀行)",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "戦後復興と発展途上国開発への融資を目的に設立された国際金融機関は何か。"
+  },
+  {
+    "answer": "GATT(関税と貿易に関する一般協定)",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1947年調印の、関税障壁を取り除き自由貿易を促す国際協定を何というか。"
+  },
+  {
+    "answer": "ニュルンベルク",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "第二次大戦後、ナチスの戦争指導者を裁く国際軍事裁判が開かれた都市はどこか。"
+  },
+  {
+    "answer": "「鉄のカーテン」",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "チャーチルが演説で述べた、欧州が東西に分断された状況を指す言葉は何か。"
+  },
+  {
+    "answer": "封じ込め政策",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "アメリカがとった、ソ連の共産主義勢力の拡大を阻止する外交政策を総称して何というか。"
+  },
+  {
+    "answer": "トルーマン＝ドクトリン",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1947年、ギリシアとトルコへの援助を表明した米大統領の宣言を何というか。"
+  },
+  {
+    "answer": "マーシャル＝プラン",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1947年に発表された、アメリカによるヨーロッパ経済復興援助計画は何か。"
+  },
+  {
+    "answer": "コミンフォルム",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "マーシャル＝プランに対抗して1947年に結成された共産党の情報交換機関は何か。"
+  },
+  {
+    "answer": "ユーゴスラヴィア",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "ティトーの指導下で独自路線をとり、コミンフォルムから除名された国はどこか。"
+  },
+  {
+    "answer": "チェコスロヴァキア",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1948年のクーデタで共産党独裁が成立し、冷戦激化の象徴となった国はどこか。"
+  },
+  {
+    "answer": "ベルリン封鎖",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1948年、通貨改革に反発したソ連が西側への交通を遮断した事件を何というか。"
+  },
+  {
+    "answer": "コメコン",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1949年、西側の経済援助計画に対抗してソ連側が結成した経済協力機構は何か。"
+  },
+  {
+    "answer": "北大西洋条約機構(NATO)",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1949年に結成された、アメリカを中心とする西側諸国の軍事同盟を何というか。"
+  },
+  {
+    "answer": "ワルシャワ条約機構",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1955年に結成された、ソ連を中心とする東側諸国の軍事同盟を何というか。"
+  },
+  {
+    "answer": "ドイツ連邦共和国",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1949年、米英仏の占領地区に成立した「西ドイツ」の正式国名は何か。"
+  },
+  {
+    "answer": "ドイツ民主共和国",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1949年、ソ連の占領地区に成立した「東ドイツ」の正式国名は何か。"
+  },
+  {
+    "answer": "毛沢東",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1949年に成立した中華人民共和国の主席に就任した人物は誰か。"
+  },
+  {
+    "answer": "中ソ友好同盟相互援助条約",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1950年に中国とソ連の間で結ばれた軍事同盟条約を何というか。"
+  },
+  {
+    "answer": "台湾",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "内戦に敗れた国民党の蔣介石が逃れ、中華民国政府を維持した場所はどこか。"
+  },
+  {
+    "answer": "北緯３８度",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "第二次大戦後、朝鮮半島を米ソの占領地域に分断する境界線とされた緯線は北緯/南緯何度か。"
+  },
+  {
+    "answer": "朝鮮民主主義人民共和国",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1948年、朝鮮半島の北部に成立した社会主義国家の正式国名は何か。"
+  },
+  {
+    "answer": "大韓民国",
+    "category": "世：経済危機と第二次世界大戦",
+    "chapter": "S",
+    "number": "8",
+    "question": "1948年、朝鮮半島の南部に成立した国家の正式国名は何か。"
+  },
+  {
+    "answer": "「もはや戦後ではない」",
+    "category": "日：戦後社会",
+    "chapter": "S",
+    "number": "9",
+    "question": "1955年の『経済白書』で、戦前の水準まで経済が回復したことを示したことを宣言した言葉は何か。"
+  },
+  {
+    "answer": "自由民主党",
+    "category": "日：戦後社会",
+    "chapter": "S",
+    "number": "9",
+    "question": "1955年に自由党と日本民主党が合同して結成した、保守合同による政党名は何か。"
+  },
+  {
+    "answer": "鳩山一郎",
+    "category": "日：戦後社会",
+    "chapter": "S",
+    "number": "9",
+    "question": "ソ連との国交回復を達成した日本の内閣総理大臣は誰か。"
+  },
+  {
+    "answer": "日ソ共同宣言",
+    "category": "日：戦後社会",
+    "chapter": "S",
+    "number": "9",
+    "question": "1956年に鳩山一郎内閣がソ連との国交回復のために調印した宣言は何か。"
+  },
+  {
+    "answer": "国際連合への加盟",
+    "category": "日：戦後社会",
+    "chapter": "S",
+    "number": "9",
+    "question": "1956年に日ソ共同宣言の締結をきっかけに達成した、日本の国際社会への復帰を意味する出来事は何か。"
+  },
+  {
+    "answer": "岸信介",
+    "category": "日：戦後社会",
+    "chapter": "S",
+    "number": "9",
+    "question": "日米相互協力及び安全保障条約への改定を強行採決し、大規模デモを引き起こした内閣総理大臣は誰か。"
+  },
+  {
+    "answer": "池田勇人",
+    "category": "日：戦後社会",
+    "chapter": "S",
+    "number": "9",
+    "question": "1960年代に「所得倍増計画」を掲げ、高度経済成長路線への転換を図った内閣総理大臣は誰か。"
+  },
+  {
+    "answer": "所得倍増計画",
+    "category": "日：戦後社会",
+    "chapter": "S",
+    "number": "9",
+    "question": "池田勇人内閣が、減税や公共投資で10年間で国民総生産を倍増させようとした経済計画は何か。"
+  },
+  {
+    "answer": "太平洋ベルト",
+    "category": "日：戦後社会",
+    "chapter": "S",
+    "number": "9",
+    "question": "高度経済成長期に、工業が集中し、都市と農村の格差拡大を生んだ東京から北九州に至る地帯は何か。"
+  },
+  {
+    "answer": "過疎化",
+    "category": "日：戦後社会",
+    "chapter": "S",
+    "number": "9",
+    "question": "高度経済成長期における太平洋ベルト地帯への工業集中により、地方の農村部で人口が減少した現象は何か。"
+  },
+  {
+    "answer": "田中角栄",
+    "category": "日：戦後社会",
+    "chapter": "S",
+    "number": "9",
+    "question": "日中国交正常化を実現し、公共投資の拡大が投機熱を呼び、第1次石油危機と重なり狂乱物価を招いた内閣総理大臣は誰か。"
+  },
+  {
+    "answer": "狂乱物価",
+    "category": "日：戦後社会",
+    "chapter": "S",
+    "number": "9",
+    "question": "土地・株式への投機と第1次石油危機が重なり、1974年に戦後初のマイナス成長を招いた激しい物価上昇は何か。"
+  },
+  {
+    "answer": "省エネルギー",
+    "category": "日：戦後社会",
+    "chapter": "S",
+    "number": "9",
+    "question": "石油危機に対応するため、産業用ロボットの導入や工場の自動化などを進め、資源とエネルギーの節約を目指した方針は何か。"
+  },
+  {
+    "answer": "安定成長",
+    "category": "日：戦後社会",
+    "chapter": "S",
+    "number": "9",
+    "question": "1980年代に年率3～5％の成長率を維持した、高度経済成長期終焉後の日本の経済成長の状況を何と呼ぶか。"
+  },
+  {
+    "answer": "プラザ合意",
+    "category": "日：戦後社会",
+    "chapter": "S",
+    "number": "9",
+    "question": "1985年にG5で合意された、ドル高を是正するための協調介入で、その後の円高とバブル経済を招いた合意は何か。"
+  },
+  {
+    "answer": "経済摩擦",
+    "category": "日：戦後社会",
+    "chapter": "S",
+    "number": "9",
+    "question": "日本の貿易黒字拡大により、自動車などをめぐり、内需拡大の経済構造への転換を求められる原因となった対立は何か。"
+  },
+  {
+    "answer": "日中共同声明",
+    "category": "日：戦後社会",
+    "chapter": "S",
+    "number": "9",
+    "question": "1972年、田中角栄内閣が発表し、中華人民共和国との国交正常化を実現した声明は何か。"
+  },
+  {
+    "answer": "日中平和友好条約",
+    "category": "日：戦後社会",
+    "chapter": "S",
+    "number": "9",
+    "question": "日中国交正常化の後、1978年に福田赳夫内閣が締結した条約は何か。"
+  },
+  {
+    "answer": "一国二制度",
+    "category": "日：戦後社会",
+    "chapter": "S",
+    "number": "9",
+    "question": "1997年のイギリスからの香港返還に際し、中国が香港の資本主義制度を維持することを約束した制度は何か。"
+  },
+  {
+    "answer": "朴正煕",
+    "category": "日：戦後社会",
+    "chapter": "S",
+    "number": "9",
+    "question": "日韓基本条約を締結し、工業化・近代化を推進する「開発独裁」と呼ばれる強権的な政治体制を築いた韓国大統領は誰か。"
+  },
+  {
+    "answer": "日韓基本条約",
+    "category": "日：戦後社会",
+    "chapter": "S",
+    "number": "9",
+    "question": "1965年に朴正熙政権下の韓国と日本との間で締結され、国交を樹立した条約は何か。"
+  },
+  {
+    "answer": "ドル＝ショック",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1971年にニクソン大統領が金とドルの交換停止を宣言し、ブレトン＝ウッズ体制の転機となった出来事は何か。"
+  },
+  {
+    "answer": "ニクソン",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1971年に金とドルの交換停止を宣言し、また1972年に中華人民共和国を訪問したアメリカ大統領は誰か。"
+  },
+  {
+    "answer": "変動相場制",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "ドル＝ショック後の1973年、ドルを基軸とした固定相場制が崩壊し、各国が移行した制度は何か。"
+  },
+  {
+    "answer": "オイル＝ショック",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "第4次中東戦争を背景に、アラブ諸国の石油戦略により原油価格が急騰し、世界経済に影響を与えた出来事は何か。"
+  },
+  {
+    "answer": "イスラエル",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1948年5月に国連のパレスチナ分割案を受けてユダヤ人が建国を宣言し、第1次中東戦争の原因となった国はどこか。"
+  },
+  {
+    "answer": "イラン＝イスラーム革命",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1979年にホメイニが指導し、親米路線をとったパフレヴィー2世を打倒した革命の名称は何か。"
+  },
+  {
+    "answer": "先進国首脳会議（サミット）",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "石油危機などの問題に対応するため、1975年以降毎年開催され、主要国の首脳が集まる国際会議は何か。"
+  },
+  {
+    "answer": "新興工業経済地域（NIES）",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "韓国・台湾・香港・シンガポールなど、開発途上国で急速な工業化を達成した国々や地域を指す名称は何か。"
+  },
+  {
+    "answer": "「雪どけ」",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "スターリンの死後に始まった米ソ間の緊張緩和の動きを何と呼ぶか。"
+  },
+  {
+    "answer": "スターリン批判",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1956年、ソ連のフルシチョフが秘密報告で行った、スターリンの独裁や個人崇拝を暴露し非難した出来事は何か。"
+  },
+  {
+    "answer": "フルシチョフ",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "スターリン批判を行い、資本主義国との平和共存路線を主張したソ連の指導者は誰か。"
+  },
+  {
+    "answer": "平和共存路線",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "フルシチョフが、資本主義国との対立回避をめざして主張した外交方針は何か。"
+  },
+  {
+    "answer": "ベルリンの壁",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1961年、東ドイツから西側への亡命を防ぐため、東西ベルリンの境界上に構築され、冷戦の象徴ともなった建造物は何か。"
+  },
+  {
+    "answer": "キューバ危機",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1962年、ソ連がキューバにミサイル基地を建設したことで、アメリカとの間で開戦寸前まで緊張が高まった出来事は何か。"
+  },
+  {
+    "answer": "カストロ",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1959年のキューバ革命をゲバラと共に指導し、親米政権を打倒して米大陸初の社会主義宣言を行った指導者は誰か。"
+  },
+  {
+    "answer": "ケネディ",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "キューバ危機でソ連と交渉し危機を回避し、部分的核実験禁止条約を締結したが、1963年に暗殺されたアメリカ大統領は誰か。"
+  },
+  {
+    "answer": "部分的核実験禁止条約",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1963年にキューバ危機を受けて米・ソ・英間で調印された、大気圏内などでの核実験を禁じた条約は何か。"
+  },
+  {
+    "answer": "原水爆禁止世界大会",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "第五福竜丸事件を機に1955年に広島で開催された、核兵器廃絶を求める運動の中心的役割を果たした大会は何か。"
+  },
+  {
+    "answer": "パグウォッシュ大会",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1957年にラッセル・アインシュタインらの提唱で実現し、科学者による核兵器禁止運動の中心的組織となった会議は何か。"
+  },
+  {
+    "answer": "核拡散防止条約",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1968年に核兵器保有国を米・英・仏・中・ソに限定し、非核保有国への核兵器の譲渡や製造援助を禁じた条約は何か。"
+  },
+  {
+    "answer": "INF（中距離核戦力）全廃条約",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1987年に米ソ間で締結され、初めて核兵器の削減に同意した、中距離核戦力の全廃を定めた歴史的な条約は何か。"
+  },
+  {
+    "answer": "デタント",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "「多極化」を背景に1960年代後半から進展した、米ソ間の緊張緩和と関係改善の動きを指す言葉は何か。"
+  },
+  {
+    "answer": "ブラント",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1970年前後、東ヨーロッパ諸国や東ドイツとの関係改善を目指す「東方外交」を推進した西ドイツの首相は誰か。"
+  },
+  {
+    "answer": "東方外交",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1970年前後、西ドイツのブラント首相が推進した、東ヨーロッパ諸国や東ドイツとの関係改善を目指す外交政策は何か。"
+  },
+  {
+    "answer": "アフガニスタン",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1979年にソ連が軍事介入を行い、新冷戦の本格化を招き、米のモスクワオリンピック参加拒否の原因となった国はどこか。"
+  },
+  {
+    "answer": "スリーマイル島原子力発電所",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1979年にアメリカで事故が発生し、原子力開発への懸念を高めた発電所は何か。"
+  },
+  {
+    "answer": "ゴルバチョフ",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1985年にソ連書記長に就任し、冷戦終結を導いた指導者は誰か。"
+  },
+  {
+    "answer": "ペレストロイカ",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "ゴルバチョフが、ソ連の政治・社会体制の改革として推進した政策は何か。"
+  },
+  {
+    "answer": "グラスノスチ",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "ゴルバチョフが実施した、情報公開や言論の自由を意味する政策は何か。"
+  },
+  {
+    "answer": "チョルノービリ（チェルノブイリ）原子力発電所",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1986年に事故が発生し、ゴルバチョフに改革の必要性を痛感させる背景となり、ソ連の情報公開を促した発電所は何か。"
+  },
+  {
+    "answer": "1989年",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "冷戦が終結したとされるのは西暦何年か。"
+  },
+  {
+    "answer": "マルタ会談",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "アメリカのブッシュ大統領とソ連のゴルバチョフ書記長が会談し、東西冷戦の終結を宣言した会談は何か。"
+  },
+  {
+    "answer": "ブッシュ",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "マルタ会談で冷戦終結を宣言し、イラクのクウェート侵攻に対し国連軍を組織して湾岸戦争を遂行したアメリカ大統領は誰か。"
+  },
+  {
+    "answer": "サッチャー",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1979年からイギリスの首相を務め、福祉削減、国有企業の民営化、減税などを実施し、経済を回復させたのは誰か。"
+  },
+  {
+    "answer": "第五共和政",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "以前の政体より大統領権限を強化するために成立させた、フランスの政体は何か。"
+  },
+  {
+    "answer": "ド＝ゴール",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1958年にフランス大統領に就任し、アルジェリア独立承認やNATO軍事協力拒否などの独自路線をとった指導者は誰か。"
+  },
+  {
+    "answer": "五月危機",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1968年にフランスで発生し、翌年のド＝ゴール大統領退陣のきっかけの一つとなった学生と労働者による反対運動は何か。"
+  },
+  {
+    "answer": "ECSC（ヨーロッパ石炭鉄鋼共同体）",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1952年にフランス外相シューマンの提唱により結成された、ヨーロッパ統合の第一歩となった組織の名称は何か。"
+  },
+  {
+    "answer": "EEC（ヨーロッパ経済共同体）",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1958年に西欧で結成された、域内関税の引き下げや資本・労働力の移動の自由化などを目指した組織の名称は何か。"
+  },
+  {
+    "answer": "EC（ヨーロッパ共同体）",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1967年に3組織を統合して設立され、のちのEUの前身となる組織の名称は何か。"
+  },
+  {
+    "answer": "イギリス",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "ECSC・EECに当初は参加せずEFTAを結成して対抗したが、1973年にECに加入した国はどこか。"
+  },
+  {
+    "answer": "EU（ヨーロッパ連合）",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1993年にECが発展的に解消して設立された組織の名称は何か。"
+  },
+  {
+    "answer": "マーストリヒト条約",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1992年に調印され、翌年にヨーロッパ共同体をヨーロッパ連合へと発展的に解消させる根拠となった条約は何か。"
+  },
+  {
+    "answer": "ユーロ",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "ヨーロッパ連合が1999年に導入を始めた共通通貨で、導入していない国もある通貨は何か。"
+  },
+  {
+    "answer": "「プラハの春」",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1968年にチェコスロヴァキアで発生したが、ソ連のブレジネフが軍事介入して崩壊させた民主化運動は何か。"
+  },
+  {
+    "answer": "ブレジネフ",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1960年代後半からソ連の指導者を務め、チェコスロヴァキアの「プラハの春」を軍事介入で崩壊させた人物は誰か。"
+  },
+  {
+    "answer": "「連帯」",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1980年にポーランドで反体制運動を行い、1989年の政権獲得やワレサ大統領就任に繋がった自主管理労組は何か。"
+  },
+  {
+    "answer": "1989年",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "ベルリンの壁が開放されたのは西暦何年か。"
+  },
+  {
+    "answer": "大躍進",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "工業生産の増大や人民公社による農業の集団化を図ったが、過大な目標設定などで失敗し経済混乱を招いた中国の政策は何か。"
+  },
+  {
+    "answer": "毛沢東",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "大躍進の失敗で国家主席を辞任したが、その後、劉少奇らを批判する文化大革命を指導した人物は誰か。"
+  },
+  {
+    "answer": "中ソ対立",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1960年代、ソ連の平和共存政策を中国が非難したことから本格化し、核兵器保有や国境紛争に発展した対立は何か。"
+  },
+  {
+    "answer": "（プロレタリア）文化大革命",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "毛沢東ら左派による権力闘争として、劉少奇らを修正主義者として批判し、反主流派を容赦なく逮捕・処刑した出来事は何か。"
+  },
+  {
+    "answer": "鄧小平",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "文化大革命期に失脚を繰り返したが、その後最高実力者となり、資本主義的な要素を取り入れた人物は誰か。"
+  },
+  {
+    "answer": "改革・開放路線",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "鄧小平体制下で、経済改革として資本主義的な要素を取り入れ、経済の近代化を目指して推進された政策は何か。"
+  },
+  {
+    "answer": "天安門事件",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1989年6月、北京で学生・労働者の民主化要求を中国政府が人民解放軍を出動させ実力で排除した事件は何か。"
+  },
+  {
+    "answer": "ニクソン",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "米中国交正常化前の1972年に、アメリカ大統領として中華人民共和国に訪問した人物は誰か。"
+  },
+  {
+    "answer": "アジア通貨危機",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1997年にタイの通貨バーツの急落をきっかけに、東南アジア諸国や韓国にまで広がった経済危機は何か。"
+  },
+  {
+    "answer": "ホー＝チ＝ミン",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "ベトナム民主共和国の初代大統領に就任し、フランスやアメリカとの独立戦争を指導した人物は誰か。"
+  },
+  {
+    "answer": "ベトナム民主共和国",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1945年にホー＝チ＝ミンを大統領として成立した国家の名称は何か。"
+  },
+  {
+    "answer": "インドシナ戦争",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1946年から1954年まで、ベトナム民主共和国と独立を認めないフランスとの間で戦われた戦争は何か。"
+  },
+  {
+    "answer": "ジュネーヴ国際会議",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "インドシナ戦争の休戦協定が締結され、ベトナムの南北分断やカンボジア・ラオスの独立が承認された会議は何か。"
+  },
+  {
+    "answer": "北緯１７度線",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "ジュネーヴ国際会議で、北ベトナムと南ベトナムを暫定的に分断する軍事境界線と定められたのは、緯度何度の線か。"
+  },
+  {
+    "answer": "ベトナム戦争",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1965年から1973年まで、アメリカが南ベトナムを支援し、泥沼化した国際的な戦争は何か。"
+  },
+  {
+    "answer": "南ベトナム解放民族戦線",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "北ベトナムと連携し、ベトナム統一を目指して南ベトナム国内でゲリラ活動を展開した組織は何か。"
+  },
+  {
+    "answer": "北爆",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "ベトナム戦争中に、アメリカのジョンソン大統領が北ベトナムに対して行った大規模な空爆は何か。"
+  },
+  {
+    "answer": "パリ和平協定",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1973年にニクソン大統領が調印し、アメリカ軍の南ベトナムからの完全撤退を決定した協定は何か。"
+  },
+  {
+    "answer": "スカルノ",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1949年にオランダとの独立闘争に勝利し、インドネシアの初代大統領となった人物は誰か。"
+  },
+  {
+    "answer": "スハルト",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "スカルノの後にインドネシアの実権を掌握し、開発独裁と呼ばれる強権的政治体制を築いた人物は誰か。"
+  },
+  {
+    "answer": "開発独裁",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "インドネシアのスハルトなどが推進した、工業化・近代化を優先し、強権的な政治体制を敷く手法は何か。"
+  },
+  {
+    "answer": "ASEAN（東南アジア諸国連合）",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "もとは反共軍事同盟として結成されたが、経済・社会基盤の確立を目指す組織へと発展した東南アジアの組織の名称は何か。"
+  },
+  {
+    "answer": "ガンディー",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "国民会議派に属し、統一インドの独立を主張したが、狂信的なヒンドゥー教徒の青年により暗殺された人物は誰か。"
+  },
+  {
+    "answer": "ジンナー",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "全インド＝ムスリム連盟を率い、統一インドではなくイスラーム国家であるパキスタンの分離・独立を主張した人物は誰か。"
+  },
+  {
+    "answer": "印パ戦争",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1947年から複数回発生した、インドとパキスタンがカシミール地方の帰属をめぐって戦った戦争は何か。"
+  },
+  {
+    "answer": "カシミール地方",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "インドとパキスタンが、分離独立以来、その帰属をめぐって複数回にわたり戦争を行った地域はどこか。"
+  },
+  {
+    "answer": "アラブ連盟",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1945年にエジプト、シリアなどで結成された、アラブ諸国民の主権擁護と相互協力の促進を目的とする組織は何か。"
+  },
+  {
+    "answer": "第１次中東戦争",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1948年にイスラエルが建国を宣言したことに対し、アラブ連盟が反対して起こった戦争は何か。"
+  },
+  {
+    "answer": "第２次中東戦争",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1956年にエジプトのスエズ運河国有化宣言に反発し、イスラエル・英・仏が侵攻した戦争は何か。"
+  },
+  {
+    "answer": "スエズ運河",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1956年にエジプトのナセル大統領がアスワン＝ハイダム建設費捻出のために国有化を宣言した運河は何か。"
+  },
+  {
+    "answer": "第３次中東戦争",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1967年にイスラエルがエジプト・シリアなどのアラブ諸国を奇襲し、ゴラン高原などを占領した戦争は何か。"
+  },
+  {
+    "answer": "パレスチナ解放機構（PLO）",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1964年にパレスチナ人が、土地と権利回復のため、イスラエルに対し武装闘争を行う目的で結成した組織の名称は何か。"
+  },
+  {
+    "answer": "アラファト",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "パレスチナ解放機構の指導者として、イスラエルに対する武装闘争を指導した人物は誰か。"
+  },
+  {
+    "answer": "第４次中東戦争",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "エジプト、シリアが失地回復を目指しイスラエルに侵攻し、アラブ石油輸出国機構の石油戦略を招いた戦争は何か。"
+  },
+  {
+    "answer": "パレスチナ暫定自治協定",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1993年にアメリカの仲介で、イスラエルとパレスチナ解放機構が相互承認した協定は何か。"
+  },
+  {
+    "answer": "白色革命",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "イランのパフレヴィー2世国王が推進したが、急速な工業化で農村を打撃し貧富の差を拡大させた親英米・近代化政策は何か。"
+  },
+  {
+    "answer": "パフレヴィー2世",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "親英米路線と近代化政策の「白色革命」を推進したが、革命で打倒されたイランの国王は誰か。"
+  },
+  {
+    "answer": "ホメイニ",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1979年のイラン＝イスラーム革命を指揮し、イスラーム原理主義のイラン＝イスラーム共和国を成立させた人物は誰か。"
+  },
+  {
+    "answer": "湾岸戦争",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "財政難に陥ったイラクがクウェートへ侵攻したことに対し、米軍中心の多国籍軍がイラクに侵攻した戦争は何か。"
+  },
+  {
+    "answer": "同時多発テロ事件",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "2001年9月11日にビン＝ラーディンを中心に実行され、米が「テロとの戦い」を宣言するきっかけとなった事件は何か。"
+  },
+  {
+    "answer": "ターリバーン",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "同時多発テロ事件に関与したイスラーム主義勢力で、アメリカがアフガニスタンを軍事攻撃する対象となった組織は何か。"
+  },
+  {
+    "answer": "「アラブの春」",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "2010年にチュニジアの革命をきっかけに起こった、中東地域の独裁政権が崩壊するなどした民主化運動を指す言葉は何か。"
+  },
+  {
+    "answer": "ジャスミン革命",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "2010年にチュニジアの反政府デモにより独裁政権が崩壊した出来事は何か。"
+  },
+  {
+    "answer": "平和五原則",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1954年にインドのネルーと中国の周恩来が発表し、領土主権の尊重、相互不侵略などを内容とする原則は何か。"
+  },
+  {
+    "answer": "ネルー",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "平和五原則の発表やバンドン会議の開催に貢献し、非同盟諸国首脳会議にも参加したインドの首相は誰か。"
+  },
+  {
+    "answer": "周恩来",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1954年にインドのネルーと共に平和五原則を発表し、翌年のバンドン会議にも出席した中国の政治家は誰か。"
+  },
+  {
+    "answer": "バンドン会議（アジア＝アフリカ会議）",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1955年にアジア・アフリカ29か国の代表者がインドネシアに集結し、平和十原則を採択した会議は何か。"
+  },
+  {
+    "answer": "平和十原則",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1955年のバンドン会議で、平和五原則をさらに発展させて採択された原則は何か。"
+  },
+  {
+    "answer": "(第1回)非同盟諸国首脳会議",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1961年にベオグラードで開催され、米ソどちらの陣営にも属さない非同盟中立路線を主張した国々の会議は何か。"
+  },
+  {
+    "answer": "1960年",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "「アフリカの年」と呼ばれ、コンゴ、ナイジェリアなど一気に17カ国が独立を達成した年は西暦何年か。"
+  },
+  {
+    "answer": "アパルトヘイト",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1991年に廃止されるまで、南アフリカ共和国で徹底してとられ、国際的な孤立を招いた人種隔離政策は何か。"
+  },
+  {
+    "answer": "マンデラ",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "アパルトヘイト廃止後、1994年に南アフリカ共和国で黒人として初の大統領に就任した人物は誰か。"
+  },
+  {
+    "answer": "アフリカ統一機構（OAU）",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1963年に、アフリカ統一と連帯、植民地主義の根絶などを目指して結成された組織の名称は何か。"
+  },
+  {
+    "answer": "「赤狩り」",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1950年代にマッカーシズムとして行われた、リベラル派の官吏・外交官らを共産主義者として追放した運動は何か。"
+  },
+  {
+    "answer": "公民権法",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1964年にアメリカのジョンソン大統領の下で制定された、黒人差別撤廃を目的とした法律は何か。"
+  },
+  {
+    "answer": "フェミニズム",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1960年代に公民権運動と共に活発化した、性差別に反対する女性解放運動は何か。"
+  },
+  {
+    "answer": "キング牧師",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "公民権運動の指導者として活動したが、1968年に黒人運動をめぐる対立のため暗殺された人物は誰か。"
+  },
+  {
+    "answer": "レーガン",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "1980年代に減税・歳出削減・規制緩和を柱とする政策を実施し、「双子の赤字」を抱えたアメリカ大統領は誰か。"
+  },
+  {
+    "answer": "世界金融危機（リーマン＝ショック）",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "2008年にアメリカのブッシュ大統領（子）期に発生し、世界経済に大きな影響を与えた出来事は何か。"
+  },
+  {
+    "answer": "エリツィン",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "ソ連崩壊後のロシア連邦の初代大統領に就任した人物は誰か。"
+  },
+  {
+    "answer": "プーチン",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "ロシアの指導者として、ウクライナからクリミアを分離し編入したことやウクライナ侵攻を主導した人物は誰か。"
+  },
+  {
+    "answer": "ウクライナ",
+    "category": "世：戦後社会",
+    "chapter": "S",
+    "number": "10",
+    "question": "ロシアが2014年にクリミアを分離・編入し、2022年から本格的な軍事侵攻を開始した国はどこか。"
+  }
+];
