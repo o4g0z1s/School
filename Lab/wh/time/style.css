@@ -15,27 +15,57 @@ h2 { font-size: 1.2em; text-align: left; margin: 0; white-space: nowrap; overflo
 
 /* ホーム画面 */
 #home-screen { padding: 15px; flex-grow: 1; overflow-y: auto; max-width: 1200px; margin: 0 auto; text-align: center; width: 100%; box-sizing: border-box; }
-#home-screen h1 { margin-top: 35px; font-size: 3em; }
+#home-screen h1 { margin-top: 20px; font-size: 3em; }
+#chapter-selector-container,
 #region-selector-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    padding: 20px;
+}
+#chapter-selector-container {
+    margin-top: 35px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.chapter-button,
+.region-button {
+    padding: 12px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--primary-text-color);
+    background-color: var(--surface-color);
+    cursor: pointer;
+    transition: all 0.2s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.chapter-button { font-size: 12px; }
+.chapter-button:hover,
+.region-button:hover {
+    background-color: #333;
+}
+.chapter-button.selected,
+.region-button.selected {
+    background-color: var(--color, var(--accent-color));
+    color: #fff;
+    border-color: var(--color, var(--accent-color));
 }
 @media (min-width: 625px) {
-    #region-selector-container {
-        grid-template-columns: repeat(4, 1fr);
-    }
+    #chapter-selector-container { grid-template-columns: repeat(4, 1fr); }
+    #region-selector-container { grid-template-columns: repeat(4, 1fr); }
+    .chapter-button { font-size: 14px; }
 }
-@media (min-width: 900px) {
-    #region-selector-container {
-        grid-template-columns: repeat(5, 1fr);
-    }
+@media (min-width: 880px) {
+    #chapter-selector-container { grid-template-columns: repeat(10, 1fr); }
+    #region-selector-container { grid-template-columns: repeat(5, 1fr); }
+    .chapter-button { font-size: 14px; }
 }
 .region-button { padding: 12px 22px; border: 1px solid var(--border-color); border-radius: 8px; font-size: 16px; font-weight: bold; color: var(--primary-text-color); background-color: var(--surface-color); cursor: pointer; transition: all 0.2s; }
-.region-button:hover { border-color: var(--secondary-text-color); }
 .region-button.selected { background-color: var(--color); color: #fff; border-color: var(--color); }
-#generate-timeline-btn { padding: 15px 40px; font-size: 18px; font-weight: bold; color: #fff; background-color: var(--accent-color); border: none; border-radius: 8px; cursor: pointer; margin: 30px 0 40px; }
+#generate-timeline-btn { padding: 15px 40px; font-size: 18px; font-weight: bold; color: #fff; background-color: var(--accent-color); border: none; border-radius: 8px; cursor: pointer; margin: 40px 0 25px; }
 
 /* 年表画面 */
 #timeline-screen { display: flex; flex-direction: column; height: 100%; padding: 15px; box-sizing: border-box; }
