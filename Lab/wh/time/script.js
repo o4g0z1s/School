@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggleRulersBtn = document.getElementById('toggle-rulers');
     const subModeButton = document.getElementById('sub-mode-button');
     const toggleCompactBtn = document.getElementById('toggle-compact-btn');
+    const toggleNamesBtn = document.getElementById('toggle-names');
     const modal = document.getElementById('modal');
     const modalName = document.getElementById('modal-name');
     const modalDetailsContainer = document.getElementById('modal-details-container');
@@ -76,15 +77,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function generateTimeline() {
         const selectedChapterKeys = Array.from(chapterSelectorContainer.querySelectorAll('.chapter-button.selected:not([data-chapter-key="all"])')).map(btn => btn.dataset.chapterKey);
         currentRegionKeys = Array.from(regionSelectorContainer.querySelectorAll('.region-button.selected:not([data-region-key="all"])')).map(btn => btn.dataset.regionKey);
-
-        if (selectedChapterKeys.length === 0) {
-            alert('章を1つ以上選択してください。');
-            return;
-        }
-        if (currentRegionKeys.length === 0) {
-            alert('地域を1つ以上選択してください。');
-            return;
-        }
+        if (selectedChapterKeys.length === 0) { alert('章を1つ以上選択してください。'); return; }
+        if (currentRegionKeys.length === 0) { alert('地域を1つ以上選択してください。'); return; }
         showTimeline();
     }
     
@@ -93,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         timelineScreen.classList.remove('hidden');
         const totalRegions = Object.keys(regions).length - 1;
         if (currentRegionKeys.length === totalRegions) {
-            timelineTitle.textContent = "全丗界";
+            timelineTitle.textContent = "全世界";
         } else {
             const selectedRegionNames = currentRegionKeys.map(key => regions[key].name).join('・');
             timelineTitle.textContent = `${selectedRegionNames}`;
@@ -122,29 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return maxLanes;
     }
     
-    function processSubItemGroup(groupItems, topPos, bandHeight, color, nation, mode) {
-        const maxLanes = calculateMaxLanes(groupItems);
-        if (maxLanes <= 0) return;
-        const SUB_BAND_MARGIN = 2;
-        let subBandHeight, topPadding;
-        if (maxLanes === 1) {
-            subBandHeight = bandHeight / 2;
-            topPadding = (bandHeight - subBandHeight) / 2;
-        } else {
-            subBandHeight = (bandHeight - (maxLanes - 1) * SUB_BAND_MARGIN) / maxLanes;
-            topPadding = 0;
-        }
-        const lanes = [];
-        groupItems.forEach(item => {
-            let assignedLane = lanes.findIndex(laneEnd => item.s >= laneEnd);
-            if (assignedLane === -1) { assignedLane = lanes.length; }
-            if (assignedLane >= maxLanes) return;
-            const subTop = topPos + topPadding + (assignedLane * (subBandHeight + SUB_BAND_MARGIN));
-            createSubBand(item, subTop, subBandHeight, color, nation, mode);
-            lanes[assignedLane] = item.e;
-        });
-    }
-
     function buildTimeline(isInitialBuild = false) {
         nationsWrapper.innerHTML = '';
         gridLinesContainer.innerHTML = '';
@@ -156,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ).sort((a, b) => a.s - b.s);
         }
         const PADDING_Y = 10;
-        const ROW_HEIGHT = 40;
+        const ROW_MARGIN = 10;
         if (currentFilteredNations.length === 0) {
             nationsWrapper.innerHTML = '<div style="padding: 20px; text-align: center;">データがありません</div>';
             minYear = -50;
@@ -167,35 +138,40 @@ document.addEventListener('DOMContentLoaded', () => {
         minYear = Math.min(...currentFilteredNations.map(n => n.s)) - 50;
         maxYear = Math.max(...currentFilteredNations.map(n => n.e)) + 50;
 
-        let totalLanes = 0;
+        let totalHeight = PADDING_Y;
         if (isCompactMode) {
             const lanes = [];
             currentFilteredNations.forEach(nation => {
                 let assignedLane = lanes.findIndex(laneEnd => nation.s >= laneEnd);
                 if (assignedLane === -1) { assignedLane = lanes.length; }
                 lanes[assignedLane] = nation.e;
-                const topPos = PADDING_Y + assignedLane * ROW_HEIGHT;
+                const topPos = PADDING_Y + assignedLane * (30 + ROW_MARGIN);
                 renderNation(nation, topPos);
             });
-            totalLanes = lanes.length;
+            const totalLanes = lanes.length;
+            totalHeight = (totalLanes > 0) ? (PADDING_Y * 2) + (totalLanes * (30 + ROW_MARGIN)) - ROW_MARGIN : PADDING_Y * 2;
         } else {
+            let currentY = PADDING_Y;
             currentFilteredNations.forEach((nation, index) => {
-                const topPos = PADDING_Y + index * ROW_HEIGHT;
-                renderNation(nation, topPos);
+                const bandHeight = renderNation(nation, currentY);
+                currentY += bandHeight + ROW_MARGIN;
             });
-            totalLanes = currentFilteredNations.length;
+            totalHeight = currentY - ROW_MARGIN + PADDING_Y;
         }
         
-        const contentHeight = (totalLanes > 0) ? (PADDING_Y * 2) + (totalLanes * ROW_HEIGHT) - 10 : PADDING_Y * 2;
-        nationsWrapper.style.height = `${contentHeight}px`;
-        gridLinesContainer.style.height = `${contentHeight}px`;
+        nationsWrapper.style.height = `${totalHeight}px`;
+        gridLinesContainer.style.height = `${totalHeight}px`;
         updateTimelineZoom();
     }
 
     function renderNation(nation, topPos) {
         const nationColor = nation.c || regions[nation.r[0]].color;
-        const BAND_HEIGHT = 30;
+        let finalBandHeight = 30;
+
+        const nationBand = createNationBand(nation, topPos, nationColor);
+
         if (isRulerMode && nation.rul && nation.rul.length > 0) {
+            nationBand.style.display = 'none';
             const sortedRulers = nation.rul.sort((a, b) => a.s - b.s);
             let lastYear = nation.s;
             sortedRulers.forEach(ruler => {
@@ -204,83 +180,65 @@ document.addEventListener('DOMContentLoaded', () => {
                 lastYear = ruler.e;
             });
             if (nation.e > lastYear) createRulerBand(nation, lastYear, nation.e, topPos, nationColor, false, nation);
-        } else {
-            const nationBand = createNationBand(nation, topPos, nationColor);
-            if (currentSubMode !== 'none' && nation[currentSubMode]) {
-                nationBand.classList.add('sub-mode');
-                const subItems = nation[currentSubMode].sort((a, b) => a.s - b.s);
-                let currentGroup = [], groupEndYear = -Infinity;
-                for (const item of subItems) {
-                    if (item.s >= groupEndYear) {
-                        if (currentGroup.length > 0) { processSubItemGroup(currentGroup, topPos, BAND_HEIGHT, nationColor, nation, currentSubMode); }
-                        currentGroup = [item];
-                        groupEndYear = item.e;
-                    } else {
-                        currentGroup.push(item);
-                        groupEndYear = Math.max(groupEndYear, item.e);
-                    }
-                }
-                if (currentGroup.length > 0) { processSubItemGroup(currentGroup, topPos, BAND_HEIGHT, nationColor, nation, currentSubMode); }
+        } else if (currentSubMode !== 'none' && nation[currentSubMode]) {
+            nationBand.classList.add('sub-mode');
+            const subItems = nation[currentSubMode].sort((a, b) => a.s - b.s);
+            const maxLanes = calculateMaxLanes(subItems);
+            if (maxLanes > 0) {
+                const SUB_BAND_HEIGHT = 20;
+                const SUB_BAND_MARGIN = 7;
+                const NATION_PADDING_Y = 6;
+                finalBandHeight = (NATION_PADDING_Y * 2) + (maxLanes * SUB_BAND_HEIGHT) + (Math.max(0, maxLanes - 1) * SUB_BAND_MARGIN);
+                nationBand.style.height = `${finalBandHeight}px`;
+                
+                const lanes = [];
+                subItems.forEach(item => {
+                    let assignedLane = lanes.findIndex(laneEnd => item.s >= laneEnd);
+                    if (assignedLane === -1) { assignedLane = lanes.length; }
+                    if (assignedLane >= maxLanes) return;
+                    const subTop = topPos + NATION_PADDING_Y + (assignedLane * (SUB_BAND_HEIGHT + SUB_BAND_MARGIN));
+                    createSubBand(item, subTop, SUB_BAND_HEIGHT, nationColor, nation, currentSubMode);
+                    lanes[assignedLane] = item.e;
+                });
             }
         }
-        createNameLabel(nation, topPos);
+        
+        createNameLabel(nation, topPos, finalBandHeight);
+        return finalBandHeight;
     }
     
-    function createNationBand(data, top, color) {
-        const band = document.createElement('div');
-        band.className = 'nation-band';
-        band.style.top = `${top}px`;
-        band.style.backgroundColor = color;
-        band.dataset.start = data.s;
-        band.dataset.end = data.e;
-        band.addEventListener('click', () => openModal(data, 'nation'));
-        nationsWrapper.appendChild(band);
-        return band;
-    }
-
+    function createNationBand(data, top, color) { const band = document.createElement('div'); band.className = 'nation-band'; band.style.top = `${top}px`; band.style.backgroundColor = color; band.dataset.start = data.s; band.dataset.end = data.e; band.addEventListener('click', () => openModal(data, 'nation')); nationsWrapper.appendChild(band); return band; }
     function createRulerBand(data, start, end, top, color, isFamous, nationContext) {
-        const band = document.createElement('div');
-        band.className = 'nation-band';
-        band.style.backgroundColor = color;
-        band.dataset.start = start;
-        band.dataset.end = end;
+        const band = document.createElement('div'); band.className = 'nation-band';
+        band.style.backgroundColor = color; band.dataset.start = start; band.dataset.end = end;
         band.style.top = `${top}px`;
         if (isFamous) {
-            band.classList.add('famous');
-            band.addEventListener('click', () => openModal({ data, nation: nationContext }, 'ruler'));
+            band.classList.add('famous'); band.addEventListener('click', () => openModal({ data, nation: nationContext }, 'ruler'));
         } else {
             band.addEventListener('click', () => openModal(nationContext, 'nation'));
         }
         nationsWrapper.appendChild(band);
     }
-
     function createSubBand(data, top, height, color, nationContext, type) {
-        const subBand = document.createElement('div');
-        subBand.className = 'sub-band';
+        const subBand = document.createElement('div'); subBand.className = 'sub-band';
         subBand.style.setProperty('--sub-band-color', color);
-        subBand.dataset.start = data.s;
-        subBand.dataset.end = data.e;
-        subBand.dataset.baseTop = top;
-        subBand.dataset.baseHeight = height;
+        subBand.dataset.start = data.s; subBand.dataset.end = data.e;
+        subBand.dataset.baseTop = top; subBand.dataset.baseHeight = height;
         subBand.addEventListener('click', () => openModal({ data, nation: nationContext }, type));
+        const nameEl = document.createElement('div'); nameEl.className = 'sub-band-name'; nameEl.textContent = data.n;
+        document.body.appendChild(nameEl); nameEl.dataset.textWidth = nameEl.scrollWidth; document.body.removeChild(nameEl);
+        subBand.appendChild(nameEl);
         nationsWrapper.appendChild(subBand);
     }
-
-    function createNameLabel(nation, top) {
-        const label = document.createElement('div');
-        label.className = 'nation-name-label';
+    function createNameLabel(nation, top, height) {
+        const label = document.createElement('div'); label.className = 'nation-name-label';
         label.textContent = nation.n;
         label.style.top = `${top}px`;
+        label.style.height = `${height}px`;
         label.dataset.start = nation.s;
         label.dataset.end = nation.e;
-        document.body.appendChild(label);
-        label.dataset.textWidth = label.scrollWidth;
-        document.body.removeChild(label);
-        const labelWidth = (parseFloat(label.dataset.end) - parseFloat(label.dataset.start)) * currentZoom;
-        const textWidth = parseFloat(label.dataset.textWidth) || 0;
-        if (isNameVisible && (!isCompactMode || labelWidth > textWidth)) {
-            label.classList.add('show-name');
-        }
+        document.body.appendChild(label); label.dataset.textWidth = label.scrollWidth; document.body.removeChild(label);
+        label.classList.toggle('show-name', isNameVisible && (!isCompactMode || label.offsetWidth > label.dataset.textWidth));
         nationsWrapper.appendChild(label);
     }
     
@@ -289,251 +247,145 @@ document.addEventListener('DOMContentLoaded', () => {
         const containerWidth = totalDuration * currentZoom;
         nationsWrapper.parentElement.style.width = `${containerWidth}px`;
         timeAxis.style.width = `${containerWidth}px`;
-        nationsWrapper.querySelectorAll('.nation-band, .nation-name-label').forEach(el => {
+        
+        nationsWrapper.querySelectorAll('.nation-band').forEach(el => {
             const start = (parseFloat(el.dataset.start) - minYear) * currentZoom;
             const width = (parseFloat(el.dataset.end) - parseFloat(el.dataset.start)) * currentZoom;
             el.style.transform = `translateX(${start}px)`;
-            if (el.classList.contains('nation-name-label')) {
-                el.style.width = `${width}px`;
-                if (isCompactMode) {
-                    const textWidth = parseFloat(el.dataset.textWidth) || 0;
-                    el.classList.toggle('show-name', isNameVisible && width > textWidth);
-                }
-            } else {
-                el.style.width = `${width - 1}px`;
-            }
+            el.style.width = `${width > 1 ? width - 1 : width}px`;
         });
+
+        nationsWrapper.querySelectorAll('.nation-name-label').forEach(label => {
+            const start = (parseFloat(label.dataset.start) - minYear) * currentZoom;
+            const width = (parseFloat(label.dataset.end) - parseFloat(label.dataset.start)) * currentZoom;
+            label.style.transform = `translateX(${start}px)`;
+            label.style.width = `${width}px`;
+            
+            const nation = currentFilteredNations.find(n => n.n === label.textContent);
+            let shouldShow = isNameVisible;
+            
+            if (currentSubMode !== 'none' && nation && nation[currentSubMode]) {
+                shouldShow = false;
+            }
+            if (isCompactMode && width <= (parseFloat(label.dataset.textWidth) || 0)) {
+                shouldShow = false;
+            }
+            label.classList.toggle('show-name', shouldShow);
+        });
+
         nationsWrapper.querySelectorAll('.sub-band').forEach(el => {
             const start = (parseFloat(el.dataset.start) - minYear) * currentZoom;
             const width = (parseFloat(el.dataset.end) - parseFloat(el.dataset.start)) * currentZoom;
             el.style.transform = `translateX(${start}px)`;
             const MIN_BAND_WIDTH = 10;
             const isPointByDuration = parseFloat(el.dataset.end) - parseFloat(el.dataset.start) <= 1;
+            const nameEl = el.querySelector('.sub-band-name');
+            const textWidth = parseFloat(nameEl.dataset.textWidth) || 0;
+            
             if (isPointByDuration || width < MIN_BAND_WIDTH) {
                 const baseTop = parseFloat(el.dataset.baseTop);
                 const baseHeight = parseFloat(el.dataset.baseHeight);
                 const pointSize = 10;
                 el.classList.add('point-event');
                 el.style.top = `${baseTop + (baseHeight - pointSize) / 2}px`;
-                el.style.height = '';
-                el.style.width = '';
+                el.style.height = ''; el.style.width = '';
             } else {
                 el.classList.remove('point-event');
                 el.style.top = el.dataset.baseTop + 'px';
                 el.style.height = el.dataset.baseHeight + 'px';
-                el.style.width = `${width - 1}px`;
+                el.style.width = `${width > 1 ? width - 1 : width}px`;
+            }
+
+            if (nameEl) {
+                nameEl.classList.toggle('show-name', isNameVisible && width > textWidth);
             }
         });
         drawTimeAxis();
     }
-    
-    function drawTimeAxis() {
-        timeAxis.innerHTML = '';
-        gridLinesContainer.innerHTML = '';
-        let step;
-        if (currentZoom > 10) step = 5; else if (currentZoom > 5) step = 10;
-        else if (currentZoom > 2) step = 25; else if (currentZoom > 0.8) step = 50;
-        else if (currentZoom > 0.4) step = 100; else if (currentZoom > 0.2) step = 200;
-        else if (currentZoom > 0.1) step = 500; else step = 1000;
-        const startYear = Math.floor(minYear / step) * step;
-        for (let year = startYear; year <= maxYear; year += step) {
-            if (year < minYear || year > maxYear) continue;
-            const position = (year - minYear) * currentZoom;
-            const label = document.createElement('div');
-            label.className = 'time-label';
-            label.textContent = year;
-            label.style.transform = `translateX(${position}px) translateX(-50%)`;
-            timeAxis.appendChild(label);
-            const tick = document.createElement('div');
-            tick.className = 'time-tick';
-            tick.style.transform = `translateX(${position}px)`;
-            timeAxis.appendChild(tick);
-            const gridLine = document.createElement('div');
-            gridLine.className = 'grid-line';
-            if (year % 100 === 0) {
-                gridLine.classList.add('major');
-                if (year === 0) gridLine.style.backgroundColor = 'var(--accent-color)';
-            }
-            gridLine.style.transform = `translateX(${position}px)`;
-            gridLinesContainer.appendChild(gridLine);
-        }
-    }
 
+    function drawTimeAxis() { timeAxis.innerHTML = ''; gridLinesContainer.innerHTML = ''; let step; if (currentZoom > 10) step = 5; else if (currentZoom > 5) step = 10; else if (currentZoom > 2) step = 25; else if (currentZoom > 0.8) step = 50; else if (currentZoom > 0.4) step = 100; else if (currentZoom > 0.2) step = 200; else if (currentZoom > 0.1) step = 500; else step = 1000; const startYear = Math.floor(minYear / step) * step; for (let year = startYear; year <= maxYear; year += step) { if (year < minYear || year > maxYear) continue; const position = (year - minYear) * currentZoom; const label = document.createElement('div'); label.className = 'time-label'; label.textContent = year; label.style.transform = `translateX(${position}px) translateX(-50%)`; timeAxis.appendChild(label); const tick = document.createElement('div'); tick.className = 'time-tick'; tick.style.transform = `translateX(${position}px)`; timeAxis.appendChild(tick); const gridLine = document.createElement('div'); gridLine.className = 'grid-line'; if (year % 100 === 0) { gridLine.classList.add('major'); if (year === 0) gridLine.style.backgroundColor = 'var(--accent-color)'; } gridLine.style.transform = `translateX(${position}px)`; gridLinesContainer.appendChild(gridLine); } }
     function openModal(payload, type) {
         let data, nation, color;
         modalDetailsContainer.innerHTML = '';
-        if (type === 'nation') {
-            data = nation = payload;
-        } else {
-            data = payload.data;
-            nation = payload.nation;
-        }
+        if (type === 'nation') { data = nation = payload; } else { data = payload.data; nation = payload.nation; }
         color = nation.c || regions[nation.r[0]].color;
         modal.style.setProperty('--modal-accent-color', color);
         modalName.textContent = data.n;
         if (!data.hp && !data.era) {
             let periodLabel = dataLabels.period || "期間";
             if (type === 'ruler') { periodLabel = dataLabels.reign || "統治期間"; }
-            else if (type === 'peo') { periodLabel = dataLabels.life || "生没年"; }
-            
+            else if (type === 'peo') { periodLabel = dataLabels.lifespan || "生没年"; }
             const periodValue = data.p || (data.s === data.e ? formatYear(data.s) : `${formatYear(data.s)} − ${formatYear(data.e)}`);
             createDetailItem(periodLabel, periodValue, true);
         }
         const ignoreKeys = new Set(['n', 'r', 's', 'e', 'c', 'peo', 'ev', 'sys', 'rul', 'culs', 'p', 'hp', 'fam', 'ch']);
         for (const key in data) {
             if (ignoreKeys.has(key)) continue;
-            if (key === 'img') {
-                createImageItem(dataLabels[key] || "勢力範囲", data[key]);
-            } else {
-                createDetailItem(dataLabels[key] || key, data[key]);
-            }
+            if (key === 'img') { createImageItem(dataLabels[key] || "勢力範囲", data[key]); }
+            else { createDetailItem(dataLabels[key] || key, data[key]); }
         }
         const detailValues = modalDetailsContainer.querySelectorAll('.reveal-part');
         detailValues.forEach(val => val.classList.add('hidden-value'));
         showNextDetailBtn.disabled = detailValues.length === 0;
         modal.classList.remove('hidden');
     }
-
-    function createDetailItem(label, value, isSingle = false) {
-        const item = document.createElement('div');
-        item.className = 'detail-item';
-        const strong = document.createElement('strong');
-        strong.textContent = `${label}:`;
-        const valueContainer = document.createElement('div');
-        valueContainer.className = 'detail-value';
-        const values = !isSingle && Array.isArray(value) ? value : [value];
-        values.forEach(val => {
-            const part = document.createElement('div');
-            part.className = 'reveal-part';
-            part.textContent = val;
-            valueContainer.appendChild(part);
-        });
-        item.appendChild(strong);
-        item.appendChild(valueContainer);
-        modalDetailsContainer.appendChild(item);
-        return item;
-    }
-
-    function createImageItem(label, imageUrl) {
-        const item = document.createElement('div');
-        item.className = 'detail-item';
-        const strong = document.createElement('strong');
-        strong.textContent = `${label}:`;
-        const valueContainer = document.createElement('div');
-        valueContainer.className = 'detail-value';
-        const part = document.createElement('div');
-        part.className = 'reveal-part';
-        const img = document.createElement('img');
-        img.className = 'modal-image';
-        img.src = imageUrl;
-        part.appendChild(img);
-        valueContainer.appendChild(part);
-        item.appendChild(strong);
-        item.appendChild(valueContainer);
-        modalDetailsContainer.appendChild(item);
-        return item;
-    }
+    function createDetailItem(label, value, isSingle = false) { const item = document.createElement('div'); item.className = 'detail-item'; const strong = document.createElement('strong'); strong.textContent = `${label}:`; const valueContainer = document.createElement('div'); valueContainer.className = 'detail-value'; const values = !isSingle && Array.isArray(value) ? value : [value]; values.forEach(val => { const part = document.createElement('div'); part.className = 'reveal-part'; part.textContent = val; valueContainer.appendChild(part); }); item.appendChild(strong); item.appendChild(valueContainer); modalDetailsContainer.appendChild(item); return item; }
+    function createImageItem(label, imageUrl) { const item = document.createElement('div'); item.className = 'detail-item'; const strong = document.createElement('strong'); strong.textContent = `${label}:`; const valueContainer = document.createElement('div'); valueContainer.className = 'detail-value'; const part = document.createElement('div'); part.className = 'reveal-part'; const img = document.createElement('img'); img.className = 'modal-image'; img.src = imageUrl; part.appendChild(img); valueContainer.appendChild(part); item.appendChild(strong); item.appendChild(valueContainer); modalDetailsContainer.appendChild(item); return item; }
+    function showNextDetail() { const nextHidden = modalDetailsContainer.querySelector('.reveal-part.hidden-value'); if (nextHidden) { nextHidden.classList.remove('hidden-value'); } if (!modalDetailsContainer.querySelector('.reveal-part.hidden-value')) { showNextDetailBtn.disabled = true; } }
+    function formatYear(year) { return year < 0 ? `BC ${-year}` : `${year}`; }
     
-    function showNextDetail() {
-        const nextHidden = modalDetailsContainer.querySelector('.reveal-part.hidden-value');
-        if (nextHidden) {
-            nextHidden.classList.remove('hidden-value');
-        }
-        if (!modalDetailsContainer.querySelector('.reveal-part.hidden-value')) {
-            showNextDetailBtn.disabled = true;
-        }
-    }
-
-    function formatYear(year) {
-        return year < 0 ? `BC ${-year}年` : `${year}年`;
-    }
-
     function setupEventListeners() {
         generateTimelineBtn.addEventListener('click', generateTimeline);
         document.getElementById('back-to-home').addEventListener('click', goHome);
-        const handleZoom = (newZoomFactor) => {
-            const oldZoom = currentZoom;
-            const scrollLeft = timelineViewport.scrollLeft;
-            const viewportWidth = timelineViewport.clientWidth;
-            const centerPointOnTimeline = (scrollLeft + viewportWidth / 2) / oldZoom;
-            currentZoom = newZoomFactor;
-            zoomLevelSpan.textContent = `${currentZoom.toFixed(1)}x`;
-            updateTimelineZoom();
-            const newPixelPositionOfCenter = centerPointOnTimeline * currentZoom;
-            timelineViewport.scrollLeft = newPixelPositionOfCenter - (viewportWidth / 2);
-        };
+        const handleZoom = (newZoomFactor) => { const oldZoom = currentZoom; const scrollLeft = timelineViewport.scrollLeft; const viewportWidth = timelineViewport.clientWidth; const centerPointOnTimeline = (scrollLeft + viewportWidth / 2) / oldZoom; currentZoom = newZoomFactor; zoomLevelSpan.textContent = `${currentZoom.toFixed(1)}x`; updateTimelineZoom(); const newPixelPositionOfCenter = centerPointOnTimeline * currentZoom; timelineViewport.scrollLeft = newPixelPositionOfCenter - (viewportWidth / 2); };
         document.getElementById('zoom-in').addEventListener('click', () => { handleZoom(Math.min(20.0, currentZoom * 1.25)); });
         document.getElementById('zoom-out').addEventListener('click', () => { handleZoom(Math.max(0.1, currentZoom / 1.25)); });
-        const toggleNamesBtn = document.getElementById('toggle-names');
+        
         toggleNamesBtn.addEventListener('click', (e) => {
             isNameVisible = !isNameVisible;
             e.target.classList.toggle('active', isNameVisible);
-            if (!isCompactMode) {
-                nationsWrapper.querySelectorAll('.nation-name-label').forEach(label => {
-                    label.classList.toggle('show-name', isNameVisible);
-                });
-            } else {
-                updateTimelineZoom();
-            }
+            updateTimelineZoom();
         });
+        
         toggleRulersBtn.addEventListener('click', (e) => {
             isRulerMode = !isRulerMode;
-            if (isRulerMode) {
-                currentSubMode = 'none';
-                subModeButton.textContent = subModeLabels.none;
-                subModeButton.classList.remove('active');
-            }
+            if (isRulerMode) { currentSubMode = 'none'; subModeButton.textContent = subModeLabels.none; subModeButton.classList.remove('active'); }
             e.target.classList.toggle('active', isRulerMode);
-            const scrollLeft = timelineViewport.scrollLeft;
-            const scrollTop = timelineViewport.scrollTop;
+            toggleNamesBtn.textContent = '国名';
+            const scrollLeft = timelineViewport.scrollLeft; const scrollTop = timelineViewport.scrollTop;
             buildTimeline(false);
-            requestAnimationFrame(() => {
-                timelineViewport.scrollLeft = scrollLeft;
-                timelineViewport.scrollTop = scrollTop;
-            });
+            requestAnimationFrame(() => { timelineViewport.scrollLeft = scrollLeft; timelineViewport.scrollTop = scrollTop; });
         });
+        
         subModeButton.addEventListener('click', (e) => {
             const currentIndex = subModes.indexOf(currentSubMode);
             const nextIndex = (currentIndex + 1) % subModes.length;
             currentSubMode = subModes[nextIndex];
             e.target.textContent = subModeLabels[currentSubMode];
             e.target.classList.toggle('active', currentSubMode !== 'none');
-            if (currentSubMode !== 'none') {
-                isRulerMode = false;
-                toggleRulersBtn.classList.remove('active');
-            }
-            const scrollLeft = timelineViewport.scrollLeft;
-            const scrollTop = timelineViewport.scrollTop;
+            if (currentSubMode !== 'none') { isRulerMode = false; toggleRulersBtn.classList.remove('active'); }
+            toggleNamesBtn.textContent = currentSubMode !== 'none' ? '名称' : '国名';
+            const scrollLeft = timelineViewport.scrollLeft; const scrollTop = timelineViewport.scrollTop;
             buildTimeline(false);
-            requestAnimationFrame(() => {
-                timelineViewport.scrollLeft = scrollLeft;
-                timelineViewport.scrollTop = scrollTop;
-            });
+            requestAnimationFrame(() => { timelineViewport.scrollLeft = scrollLeft; timelineViewport.scrollTop = scrollTop; });
         });
+        
         toggleCompactBtn.addEventListener('click', (e) => {
             isCompactMode = !isCompactMode;
             timelineScreen.classList.toggle('compact-active', isCompactMode);
             e.target.classList.toggle('active', isCompactMode);
             if (isCompactMode) {
-                currentSubMode = 'none';
-                subModeButton.textContent = subModeLabels.none;
-                subModeButton.classList.remove('active');
-                subModeButton.disabled = true;
+                currentSubMode = 'none'; subModeButton.textContent = subModeLabels.none; subModeButton.classList.remove('active'); subModeButton.disabled = true;
             } else {
                 subModeButton.disabled = false;
             }
-            const scrollLeft = timelineViewport.scrollLeft;
-            const scrollTop = timelineViewport.scrollTop;
+            toggleNamesBtn.textContent = '国名';
+            const scrollLeft = timelineViewport.scrollLeft; const scrollTop = timelineViewport.scrollTop;
             buildTimeline(true);
-            requestAnimationFrame(() => {
-                timelineViewport.scrollLeft = scrollLeft;
-                timelineViewport.scrollTop = scrollTop;
-            });
+            requestAnimationFrame(() => { timelineViewport.scrollLeft = scrollLeft; timelineViewport.scrollTop = scrollTop; });
         });
         document.getElementById('close-modal').addEventListener('click', () => modal.classList.add('hidden'));
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) modal.classList.add('hidden');
-        });
+        modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.add('hidden'); });
         showNextDetailBtn.addEventListener('click', showNextDetail);
         timelineViewport.addEventListener('scroll', () => {
             timeAxisContainer.scrollLeft = timelineViewport.scrollLeft;
