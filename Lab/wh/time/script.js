@@ -85,14 +85,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function showTimeline() {
         homeScreen.classList.add('hidden');
         timelineScreen.classList.remove('hidden');
+        const relevantRegionKeys = buildTimeline(true);
         const totalRegions = Object.keys(regions).length - 1;
         if (currentRegionKeys.length === totalRegions) {
-            timelineTitle.textContent = "全世界";
+            timelineTitle.textContent = "全丗界";
         } else {
-            const selectedRegionNames = currentRegionKeys.map(key => regions[key].name).join('・');
-            timelineTitle.textContent = `${selectedRegionNames}`;
+            const selectedRegionNames = relevantRegionKeys.map(key => regions[key].name).join('・');
+            timelineTitle.textContent = selectedRegionNames.length > 0 ? selectedRegionNames : "対象なし";
         }
-        buildTimeline(true);
         timelineViewport.scrollLeft = 0;
         timelineViewport.scrollTop = 0;
     }
@@ -133,8 +133,16 @@ document.addEventListener('DOMContentLoaded', () => {
             minYear = -50;
             maxYear = 50;
             updateTimelineZoom();
-            return;
+            return [];
         }
+        const relevantRegionKeys = new Set();
+        currentFilteredNations.forEach(nation => {
+            nation.r.forEach(regionKey => {
+                if(currentRegionKeys.includes(regionKey)){
+                    relevantRegionKeys.add(regionKey);
+                }
+            });
+        });
         minYear = Math.min(...currentFilteredNations.map(n => n.s)) - 50;
         maxYear = Math.max(...currentFilteredNations.map(n => n.e)) + 50;
 
@@ -162,6 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
         nationsWrapper.style.height = `${totalHeight}px`;
         gridLinesContainer.style.height = `${totalHeight}px`;
         updateTimelineZoom();
+        return Array.from(relevantRegionKeys);
     }
 
     function renderNation(nation, topPos) {
@@ -315,7 +324,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let periodLabel = dataLabels.period || "期間";
             if (type === 'ruler') { periodLabel = dataLabels.reign || "統治期間"; }
             else if (type === 'peo') { periodLabel = dataLabels.lifespan || "生没年"; }
-            const periodValue = data.p || (data.s === data.e ? formatYear(data.s) : `${formatYear(data.s)} − ${formatYear(data.e)}`);
+            const periodValue = data.p || (data.s === data.e ? formatYear(data.s) : `${formatYear(data.s)}年 − ${formatYear(data.e)}年`);
             createDetailItem(periodLabel, periodValue, true);
         }
         const ignoreKeys = new Set(['n', 'r', 's', 'e', 'c', 'peo', 'ev', 'sys', 'rul', 'culs', 'p', 'hp', 'fam', 'ch']);
