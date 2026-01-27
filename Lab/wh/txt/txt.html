@@ -26,7 +26,7 @@
         table {
             border: 2px solid #555;
         }
-        td {
+        td, th {
             border: 1px solid #555;
         }
         a { text-decoration: none; }
@@ -40,12 +40,12 @@
 <body style="background-color: #000; margin: 0;">
     <div style="display: flex;">
         <div id="div" class="div">
-        <a href="txt-ch.html">　　</a><br>
+        <a href="txt-ch.html">　　　</a><br>
         </div>
     </div>
     <script src="b.js"></script>
     <script>
-        !function(){let e="string"==typeof b?b.replace(/[〔〕]/g,""):"",n=document.getElementById("div");n&&(n.innerHTML=e)}();
+        !function(){let e="string"==typeof b?b.replace(/[〔〕]/g,""):"",t=document.getElementById("div");t&&e.length>0&&t.insertAdjacentHTML("beforeend",e)}();
     </script>
 </body>
 </html>
