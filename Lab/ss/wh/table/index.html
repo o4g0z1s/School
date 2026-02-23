@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ざっくり丗界史</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <main>
+        <div class="table-container">
+            <table id="history-table">
+                <thead>
+                    <tr id="table-header">
+                        <th class="sticky-col corner-cell">
+                            <div class="corner-controls">
+                                <button id="random-quiz-btn">▶</button>
+                                <button id="toggle-all-btn">◯</button>
+                            </div>
+                        </th>
+                        <!-- Eras will be inserted here with colspan="2" -->
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Rows will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <div id="quiz-overlay" class="hidden">
+        <div class="quiz-content">
+            <div id="quiz-card" class="quiz-card">
+                <div id="quiz-question" class="quiz-question"></div>
+                <div id="quiz-answer-container" class="quiz-answer-container hidden">
+                    <div id="quiz-answer" class="quiz-answer"></div>
+                </div>
+                <div class="quiz-instruction"></div>
+            </div>
+            <div class="quiz-actions">
+                <button id="close-quiz-btn">✕</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
