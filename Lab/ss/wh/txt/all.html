@@ -13,47 +13,155 @@
     </script>
     <title>丗界史全征服</title>
     <style>
-        .div {
-            width: 49%;
-            height: auto;
-            padding: 1%;
-            margin-top: 100px;
-            font-size: calc(100dvw / 70);
-            font-family: serif;
-            line-height: 2em;
-            overflow: hidden;
+        :root {
+            --split-pos: 30vh;
         }
-        table {
-            border: 2px solid #555;
-        }
-        td, th {
-            border: 1px solid #555;
-        }
-        .a { color: #f00; font-weight: bold; }
-        .b { color: #fff; }
-        .x { top: 30%; }
-        .y { height: 30%; }
         @media (orientation: portrait){
-        .div { margin-top: 200px; }
-        .x { top: 15%; }
-        .y { height: 15%; }   
+            :root {
+                --split-pos: 15vh;
+            }
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background-color: #fff;
+            font-family: serif;
+        }
+
+        #scroll-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow-y: scroll;
+            z-index: 10;
+        }
+
+        #scroll-height {
+            height: 6000px;
+        }
+
+        .view {
+            position: fixed;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            background-color: #fff;
+        }
+
+        .top-view {
+            top: 0;
+            height: var(--split-pos);
+            z-index: 2;
+        }
+
+        .bottom-view {
+            top: var(--split-pos);
+            height: calc(100vh - var(--split-pos));
+            z-index: 1;
+            background-color: #f9f9f9;
+        }
+
+        .content {
+            position: absolute;
+            left: 0;
+            width: 94%;
+            padding: 0 4%;
+            font-size: 1.3em;
+            line-height: 2em;
+            text-align: left;
+            will-change: transform;
+        }
+
+        .top-view .content {
+            top: 0;
+            margin-top: 100px;
+        }
+
+        .bottom-view .content {
+            top: calc(-1 * var(--split-pos));
+            margin-top: 100px;
+        }
+
+        .a { color: #f00; font-weight: bold; }
+        .b { color: #f9f9f9; }
+
+        table { border: 2px solid #555; border-collapse: collapse; }
+        td, th { border: 1px solid #555; padding: 5px; }
+        th { text-align: center; }
+
+        h1 {
+            text-align: center;
+            margin-top: 0;
+            font-size: 3em;
+            font-family: serif;
+        }
+
+        .divider {
+            position: fixed;
+            top: var(--split-pos);
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #999;
+            z-index: 5;
+            border: none;
+            margin: 0;
+        }
+
+        @media (orientation: portrait){
+            .top-view .content, .bottom-view .content { margin-top: 200px; }
+            .content { font-size: 0.9em; }
         }
     </style>
 </head>
-<body style="background-color: #fff; margin: 0;">
-    <h1 style='text-align: center; margin-top: 60px; font-size: 2.5em; font-family: serif; z-index: 5; position: relative;'>丗界史全征服</h1>
-    <div style="display: flex; margin-bottom: 2000px;">
-        <div id="b" class="div" style="margin-left: 2%;"></div>
-        <div id="a" class="div"></div>
+<body>
+
+    <div id="scroll-container">
+        <div id="scroll-height"></div>
     </div>
-    <div class="x" style="background-color: #eee; width: 49%; height: 100%; position: fixed; right: 0px;"></div>
-    <div class="y" style="background-color: #fefefe; width: 51%; position: fixed; left: 0px; top: 0px;"></div>
-    <hr class="x" style="margin: 0; border-color: #999; background-color: #999; width: 100%; position: fixed;" size="3" noshade>
+
+    <div class="view top-view">
+        <div class="content" id="content-top">
+            <h1>丗界史全征服</h1>
+            <div id="text-top"></div>
+        </div>
+    </div>
+
+    <div class="view bottom-view">
+        <div class="content" id="content-bottom">
+            <h1>丗界史全征服</h1>
+            <div id="text-bottom"></div>
+        </div>
+    </div>
+
+    <hr class="divider" noshade>
+
     <script src="b.js"></script>
     <script>
-        document.getElementById('b').innerHTML = b;
-        const a = b.replace(/class="b"/g, 'class="a"');
-        document.getElementById('a').innerHTML = a;
+        const scrollContainer = document.getElementById('scroll-container');
+        const scrollHeight = document.getElementById('scroll-height');
+        const contentTop = document.getElementById('content-top');
+        const contentBottom = document.getElementById('content-bottom');
+
+        document.getElementById('text-top').innerHTML = b.replace(/class="b"/g, 'class="a"');
+        document.getElementById('text-bottom').innerHTML = b;
+
+        const adjustHeight = () => {
+            scrollHeight.style.height = (contentTop.scrollHeight + window.innerHeight) + "px";
+        };
+        window.onload = adjustHeight;
+        window.onresize = adjustHeight;
+
+        scrollContainer.addEventListener('scroll', () => {
+            const scrollTop = scrollContainer.scrollTop;
+            contentTop.style.transform = `translateY(${-scrollTop}px)`;
+            contentBottom.style.transform = `translateY(${-scrollTop}px)`;
+        });
     </script>
 </body>
 </html>
