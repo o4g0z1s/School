@@ -13,47 +13,155 @@
     </script>
     <title>丗界史征服</title>
     <style>
-        .div {
-            width: 49%;
-            height: auto;
-            padding: 1%;
-            margin-top: 100px;
-            font-size: calc(100dvw / 70);
-            font-family: serif;
-            line-height: 2em;
-            overflow: hidden;
+        :root {
+            --split-pos: 30vh;
         }
-        table {
-            border: 2px solid #555;
-        }
-        td, th {
-            border: 1px solid #555;
-        }
-        .a { color: #f00; font-weight: bold; }
-        .b { color: #fff; }
-        .x { top: 30%; }
-        .y { height: 30%; }
         @media (orientation: portrait){
-        .div { margin-top: 200px; }
-        .x { top: 15%; }
-        .y { height: 15%; }   
+            :root {
+                --split-pos: 15vh;
+            }
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background-color: #fff;
+            font-family: serif;
+        }
+
+        #scroll-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow-y: scroll;
+            z-index: 10;
+        }
+
+        #scroll-height {
+            height: 6000px;
+        }
+
+        .view {
+            position: fixed;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            background-color: #fff;
+        }
+
+        .top-view {
+            top: 0;
+            height: var(--split-pos);
+            z-index: 2;
+        }
+
+        .bottom-view {
+            top: var(--split-pos);
+            height: calc(100vh - var(--split-pos));
+            z-index: 1;
+            background-color: #f9f9f9;
+        }
+
+        .content {
+            position: absolute;
+            left: 0;
+            width: 94%;
+            padding: 0 4%;
+            font-size: 1.3em;
+            line-height: 2em;
+            text-align: left;
+            will-change: transform;
+        }
+
+        .top-view .content {
+            top: 0;
+            margin-top: 100px;
+        }
+
+        .bottom-view .content {
+            top: calc(-1 * var(--split-pos));
+            margin-top: 100px;
+        }
+
+        .a { color: #f00; font-weight: bold; }
+        .b { color: #f9f9f9; }
+
+        table { border: 2px solid #555; border-collapse: collapse; }
+        td, th { border: 1px solid #555; padding: 5px; }
+
+        h1 {
+            text-align: center;
+            margin-top: 0;
+            font-size: 2.5em;
+            font-family: serif;
+        }
+
+        .divider {
+            position: fixed;
+            top: var(--split-pos);
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #999;
+            z-index: 5;
+            border: none;
+            margin: 0;
+        }
+
+        @media (orientation: portrait){
+            .top-view .content, .bottom-view .content { margin-top: 200px; }
+            .content { font-size: 0.9em; }
         }
     </style>
 </head>
-<body style="background-color: #fff; margin: 0;">
-    <h1 style='text-align: center; margin-top: 60px; font-size: 2.5em; font-family: serif; z-index: 5; position: relative;'>丗界史征服</h1>
-    <div style="display: flex; margin-bottom: 2000px;">
-        <div id="b" class="div" style="margin-left: 2%;"></div>
-        <div id="a" class="div"></div>
+<body>
+
+    <div id="scroll-container">
+        <div id="scroll-height"></div>
     </div>
-    <div class="x" style="background-color: #eee; width: 49%; height: 100%; position: fixed; right: 0px;"></div>
-    <div class="y" style="background-color: #fefefe; width: 51%; position: fixed; left: 0px; top: 0px;"></div>
-    <hr class="x" style="margin: 0; border-color: #999; background-color: #999; width: 100%; position: fixed;" size="3" noshade>
+
+    <div class="view top-view">
+        <div class="content" id="content-top">
+            <h1>丗界史征服</h1>
+            <div id="text-top"></div>
+        </div>
+    </div>
+
+    <div class="view bottom-view">
+        <div class="content" id="content-bottom">
+            <h1>丗界史征服</h1>
+            <div id="text-bottom"></div>
+        </div>
+    </div>
+
+    <hr class="divider" noshade>
+
     <script>
-        const b = `<br>第１５章<br>帝国主義とアジアの民族運動<br><br>【１】帝国主義と列強の展開<br><br>１．帝国主義<br><br>★帝国主義とは？<br>１９世紀末から第１次世界大戦の時代にかけて、欧米列強が軍備拡大競争を行い、世界を自らの植民地や勢力圏に分割していった動きのこと。<br><br>（１）資本主義の発達<br>〔<span class="b">第２次産業革命</span>〕（１９Ｃ後半～）<br>アメリカ、ドイツが急速に発展。<br>→石油・電力を動力源とし、重化学工業（鉄鋼、電気、化学工業など）が発達。<br><br>（２）独占資本主義<br>重化学工業部門には多額の資本が必要。<br>→一部の大資本（巨大企業）の市場独占へ。<br>ⅰ）独占の形態<br>・〔<span class="b">カルテル</span>〕<br>同一部門の企業が商品価格や生産量などを協定する形態。<br>・〔<span class="b">トラスト</span>〕<br>合併などで同一部門の企業が１つにまとまる形態。<br>・〔<span class="b">コンツェルン</span>〕<br>同一の資本が他分野の企業の株を保有する形態。<br>ⅱ）金融資本<br>産業資本と銀行資本が結合した独占資本。独占資本主義を一層促進。<br>※急速な工業化によって伝統的経済基盤を破壊された人々は、〔<span class="b">移民</span>〕としてアメリカ合衆国へ。<br><br>（３）帝国主義の成立<br>ⅰ）〔<span class="b">植民地</span>〕の獲得<br>独占資本、金融資本による国内経済の進展＆列強間の競合激化。<br>→植民地が原料供給地・商品市場・資本輸出の対象地として重要性が増大。<br>※１８７３年のヨーロッパ不況（大不況）<br>当時、アメリカからの安い穀物の流入が原因となって慢性化していた農業<br>不況も重なり、ヨーロッパの不況は長期化し、企業の集中・独占が進んでいった。<br>ⅱ）軍事力によるアジア、アフリカ進出（１８８０年代～）<br>植民地を獲得し、各国の勢力範囲が確定。<br>→先進資本主義国と後発資本主義国の対立へ（再分割の要求）。<br>→第１次世界大戦の要因の１つに。<br><br>２．イギリスの動き<br><br>（１）植民地帝国の維持<br>ⅰ）白人系植民地⋯〔<span class="b">自治領</span>〕の形成（間接支配）<br>〔<span class="b">カナダ</span>〕（１８６７年）、〔<span class="b">オーストラリア</span>〕（１９０１年）、〔<span class="b">ニュージーランド</span>〕＆ニューファンドランド（１９０７年）、〔<span class="b">南アフリカ連邦</span>〕（１９１０年）。<br>ⅱ）非白人系植民地⋯直接支配（インド帝国など）<br><br>（２）イギリス社会主義の展開<br>ⅰ）〔<span class="b">フェビアン協会</span>〕の設立（１８８４年）<br>〔<span class="b">バーナード＝ショー</span>〕、〔<span class="b">ウェッブ夫妻</span>〕らの知識人が中心の社会主義団体。<br>ⅱ）労働代表委員会の結成（１９００年）<br>社会民主連盟、フェビアン協会、独立労働党が協力して結成。<br>ⅲ）〔<span class="b">労働党</span>〕の成立（１９０６年）⋯労働代表委員会を改称。<br>労働者の待遇改善など穏健な主張を行う。初代書記長は〔<span class="b">マクドナルド</span>〕。<br><br>（３）自由党内閣の成立<br>ⅰ）政策<br>・国民保険法の成立（１９１１年）<br>失業中の労働者に一定期間の生活保護を規定。<br>・〔<span class="b">議会法</span>〕の成立（１９１１年）⋯下院の優越を規定。<br>ⅱ）アイルランド問題<br>・〔<span class="b">シン＝フェイン党</span>〕の結成（１９０５年）<br>急進的で完全独立を主張。<br>・〔<span class="b">アイルランド自治法</span>〕の成立（１９１４年）<br>議会を通過したが、第１次世界大戦勃発のため実施延期。<br>・〔<span class="b">イースター蜂起</span>〕（１９１６年）<br>シン＝フェイン党がアイルランド自治法延期に抗議してダブリンでおこした武装蜂起。<br><br>３．フランスの動き<br><br>※１９世紀末のフランスは、〔<span class="b">第三共和政</span>〕下の、軍部と共和派の対立で政局が不安定であった。<br><br>（１）〔<span class="b">ブーランジェ事件</span>〕（１８８７～８９年）<br>陸軍のブーランジェ将軍による軍部クーデタ未遂事件（失敗）。<br><br>（２）〔<span class="b">ドレフュス事件</span>〕（１８９４～９９年）<br>〔<span class="b">ユダヤ</span>〕系のドレフュス大尉がドイツのスパイとして逮捕。<br>→後に軍部内に真犯人が判明したが、軍部は威信保持のため否定。<br>→共和派によるドレフュス救済運動が展開され、ドレフュスは無罪に。<br>→後に、ヘルツルらによる〔<span class="b">シオニズム運動</span>〕（パレスチナにおけるユダヤ人国家建国運動）を始める契機に。<br>※作家〔<span class="b">ゾラ</span>〕の活躍<br>新聞に「私は弾劾する」を発表し、ドレフュスを擁護。<br><br>（３）フランス社会主義の展開<br>ⅰ）労働総同盟の設立（１８９５年）<br>労働組合の直接行動による革命主張であるサンディカリズ（ス）ムを推進。<br>ⅱ）〔<span class="b">フランス社会党</span>〕の成立（１９０５年）<br>ジャン＝ジョレスが中心となり、社会主義諸政党を統一して成立。<br>※同年に〔<span class="b">政教分離法</span>〕が発布され、共和国は安定。<br><br>４．ドイツの動き<br><br>（１）〔<span class="b">ヴィルヘルム２世</span>〕（位１８８８～１９１８年）の登場<br>・国内の資本主義の急速な発展から、積極的な海外膨張政策を主張。<br>→皇帝と対立したビスマルクは辞任（１８９０年）。<br>→再保障条約の更新を拒否し、〔<span class="b">露仏同盟</span>〕が成立（１８９４年）。<br>・〔<span class="b">社会主義者鎮圧法</span>〕廃止（１８９０年）。<br>・〔<span class="b">「世界政策」</span>〕（新航路政策）<br>ヴィルヘルム２世が展開した帝国主義政策（３Ｂ政策など）。詳しくは、後<br>述。<br><br>（２）ドイツ社会主義の展開⋯〔<span class="b">社会民主党</span>〕の成立（１８９０年）<br>社会主義者鎮圧法の廃止に伴い、ドイツ社会主義労働者党が改称。<br>→帝国議会で多くの議席を獲得し、１９１２年には議会の第１党へ。<br>→１９Ｃ末には、〔<span class="b">ベルンシュタイン</span>〕らによる〔<span class="b">修正主義</span>〕の勢力増大。<br><br>５．ロシアの動き<br><br>（１）資本主義の発達と外交の転換<br>・〔<span class="b">アレクサンドル２世</span>〕による〔<span class="b">農奴解放令</span>〕（１８６１年）<br>不十分ながらも資本主義発展の基礎となる。<br>・ドイツの再保障条約更新拒否による、〔<span class="b">露仏同盟</span>〕の成立。<br>フランス資本の援助で、重工業が著しく発達。<br>→貧富の差が拡大し、労働条件がさらに劣悪となり、労働運動の激化へ。<br>※当時のロシア皇帝は、アレクサンドル３世（位１８８１～９４年）。<br><br>（２）革命政党の成立<br>ⅰ）〔<span class="b">ロシア社会民主労働党</span>〕の結成（１８９８年）<br>マルクス主義をかかげたが、２派に分裂（１９０３年）。<br>・〔<span class="b">ボリシェヴィキ</span>〕（ロシア語で「多数派」の意味）<br>〔<span class="b">レーニン</span>〕を指導者とする急進派。党のメンバーを少数の革命家に厳しく限定し、武装革命の重視を主張。<br>・〔<span class="b">メンシェヴィキ</span>〕（ロシア語で「少数派」の意味）<br>〔<span class="b">プレハーノフ</span>〕らを指導者とする穏健派。広い大衆に基礎をおき、市民革命を経たのちに社会主義革命を実現しようとするゆるやかな革命を主張。<br>ⅱ）〔<span class="b">エスエル</span>〕（社会主義者・革命家党）の結成（１９０１年）<br>ナロードニキの流れをくみ、専制政治の打倒と農民への土地の再分配を主張。<br>ⅲ）立憲民主党の結成（１９０５年）<br>産業資本家を中心に結成され、立憲君主政を主張。<br><br>（３）１９０５年革命（第１次ロシア革命）<br>ⅰ）〔<span class="b">ニコライ２世</span>〕の即位（１８９４年）⋯専制政治を継続。<br>フランス資本を導入し、〔<span class="b">シベリア鉄道</span>〕の建設に着工（資本主義の発展）。<br>ⅱ）〔<span class="b">血の日曜日事件</span>〕（１９０５年１月）<br>日露戦争の戦況が不利になり、民衆の生活が悪化。<br>→僧ガポン率いる民衆の平和請願デモに対して、軍隊が発砲し、多数の死傷者を出した事件。<br>→労働者がストを敢行し、各地で〔<span class="b">ソヴィエト</span>〕（評議会）を結成。<br>※海軍（戦艦ポチョムキン号）の反乱も起き、日露戦争の継続が不可能に。<br>ⅲ）〔<span class="b">十月宣言</span>〕（１９０５年）<br>〔<span class="b">ドゥーマ</span>〕（ロシアの国会）開設と憲法制定を約束し、革命は鎮静化。<br>→〔<span class="b">ウィッテ</span>〕が首相となり、自由主義的政治を推進。<br>ⅳ）〔<span class="b">ストルイピン</span>〕の反動政治（１９０６～１１年）<br>ウィッテ解任後首相となり、議会の解散・革命派の弾圧などを実行。<br>※他方、農村における〔<span class="b">ミール</span>〕（農村共同体）の解体も行い、自作農の創設を図ったが、十分な成果はあがらず。<br><br>６．アメリカ合衆国の動き<br><br>（１）１９Ｃ末のアメリカ<br>・資本主義の発展→世界一の工業国へ。<br>・独占資本による自由競争の阻害などの問題も発生。<br>→ロックフェラー（石油）、カーネギー（鉄鋼）、モルガン（カーネギーを買収）など。<br>→政府はシャーマン反トラスト法（１８９０年）などで独占を規制したが、阻止できず。<br>・〔<span class="b">フロンティア</span>〕の消滅（１８９０年代）<br>→帝国主義にもとづく対外膨張政策へ。<br>・労働運動の発達<br>→〔<span class="b">アメリカ労働総同盟</span>〕（ＡＦＬ）の結成（１８８６年）。<br><br>（２）海外積極策の開始<br>ⅰ）〔<span class="b">マッキンリー</span>〕大統領（任１８９７～１９０１年、共和党）<br>・〔<span class="b">米西戦争</span>〕（１８９８年）<br>キューバの独立運動を機に開戦し圧勝。<br>→〔<span class="b">フィリピン</span>〕、〔<span class="b">グアム</span>〕、〔<span class="b">プエルトリコ</span>〕を獲得。キューバはアメリカの保護下へ（「プラット条項」）。<br>・〔<span class="b">ハワイ</span>〕併合（１８９８年）<br>・〔<span class="b">門戸開放政策</span>〕（１８９９年）<br>国務長官〔<span class="b">ジョン＝ヘイ</span>〕が中国に関する〔<span class="b">門戸開放</span>〕・〔<span class="b">機会均等</span>〕・〔<span class="b">領土保全</span>〕を主張。<br>ⅱ）〔<span class="b">セオドア＝ローズヴェルト</span>〕大統領（任１９０１～１９０９年、共和党）<br>・〔<span class="b">革新主義</span>〕<br>独占資本の発展に対し、自由競争の復活や労働者の保護を提唱。<br>・〔<span class="b">「棍棒外交」</span>〕の展開<br>中南米諸国に対する支配力強化（カリブ海政策）。<br>・〔<span class="b">パナマ運河</span>〕の建設（１９０４～１４年）<br>ⅲ）タフト（任１９０９～１３年、共和党）<br>中米や中国に投資するドル外交を展開。<br>ⅳ）〔<span class="b">ウィルソン</span>〕大統領（任、１９１３～２１年、民主党）<br>・「新しい自由」<br>反トラスト法強化、関税引き下げなど民衆のための政治を強調。<br>・「宣教師外交」<br>アメリカ民主主義の道義的優位を説く。<br>・〔<span class="b">パナマ運河</span>〕の完成（１９１４年）`;
-        document.getElementById('b').innerHTML = b;
-        const a = b.replace(/class="b"/g, 'class="a"');
-        document.getElementById('a').innerHTML = a;
+        const b = `<br>第１５章<br>帝国主義とアジアの民族運動<br><br>【１】帝国主義と列強の展開<br><br>１．帝国主義<br><br>★帝国主義とは？<br>１９世紀末から第１次世界大戦の時代にかけて、欧米列強が軍備拡大競争を行い、世界を自らの植民地や勢力圏に分割していった動きのこと。<br><br>（１）資本主義の発達<br>〔<span class="b">第２次産業革命</span>〕（１９Ｃ後半～）<br>アメリカ、ドイツが急速に発展。<br>→石油・電力を動力源とし、重化学工業（鉄鋼、電気、化学工業など）が発達。<br><br>（２）独占資本主義<br>重化学工業部門には多額の資本が必要。<br>→一部の大資本（巨大企業）の市場独占へ。<br>ⅰ）独占の形態<br>・〔<span class="b">カルテル</span>〕<br>同一部門の企業が商品価格や生産量などを協定する形態。<br>・〔<span class="b">トラスト</span>〕<br>合併などで同一部門の企業が１つにまとまる形態。<br>・〔<span class="b">コンツェルン</span>〕<br>同一の資本が他分野の企業の株を保有する形態。<br>ⅱ）金融資本<br>産業資本と銀行資本が結合した独占資本。独占資本主義を一層促進。<br>※急速な工業化によって伝統的経済基盤を破壊された人々は、〔<span class="b">移民</span>〕としてアメリカ合衆国へ。<br><br>（３）帝国主義の成立<br>ⅰ）〔<span class="b">植民地</span>〕の獲得<br>独占資本、金融資本による国内経済の進展＆列強間の競合激化。<br>→植民地が原料供給地・商品市場・資本輸出の対象地として重要性が増大。<br>※１８７３年のヨーロッパ不況（大不況）<br>当時、アメリカからの安い穀物の流入が原因となって慢性化していた農業<br>不況も重なり、ヨーロッパの不況は長期化し、企業の集中・独占が進んでいった。<br>ⅱ）軍事力によるアジア、アフリカ進出（１８８０年代～）<br>植民地を獲得し、各国の勢力範囲が確定。<br>→先進資本主義国と後発資本主義国の対立へ（再分割の要求）。<br>→第１次世界大戦の要因の１つに。<br><br>２．イギリスの動き<br><br>（１）植民地帝国の維持<br>ⅰ）白人系植民地⋯〔<span class="b">自治領</span>〕の形成（間接支配）<br>〔<span class="b">カナダ</span>〕（１８６７年）、〔<span class="b">オーストラリア</span>〕（１９０１年）、〔<span class="b">ニュージーランド</span>〕＆ニューファンドランド（１９０７年）、〔<span class="b">南アフリカ連邦</span>〕（１９１０年）。<br>ⅱ）非白人系植民地⋯直接支配（インド帝国など）<br><br>（２）イギリス社会主義の展開<br>ⅰ）〔<span class="b">フェビアン協会</span>〕の設立（１８８４年）<br>〔<span class="b">バーナード＝ショー</span>〕、〔<span class="b">ウェッブ夫妻</span>〕らの知識人が中心の社会主義団体。<br>ⅱ）労働代表委員会の結成（１９００年）<br>社会民主連盟、フェビアン協会、独立労働党が協力して結成。<br>ⅲ）〔<span class="b">労働党</span>〕の成立（１９０６年）⋯労働代表委員会を改称。<br>労働者の待遇改善など穏健な主張を行う。初代書記長は〔<span class="b">マクドナルド</span>〕。<br><br>（３）自由党内閣の成立<br>ⅰ）政策<br>・国民保険法の成立（１９１１年）<br>失業中の労働者に一定期間の生活保護を規定。<br>・〔<span class="b">議会法</span>〕の成立（１９１１年）⋯下院の優越を規定。<br>ⅱ）アイルランド問題<br>・〔<span class="b">シン＝フェイン党</span>〕の結成（１９０５年）<br>急進的で完全独立を主張。<br>・〔<span class="b">アイルランド自治法</span>〕の成立（１９１４年）<br>議会を通過したが、第１次世界大戦勃発のため実施延期。<br>・〔<span class="b">イースター蜂起</span>〕（１９１６年）<br>シン＝フェイン党がアイルランド自治法延期に抗議してダブリンでおこした武装蜂起。<br><br>３．フランスの動き<br><br>※１９世紀末のフランスは、〔<span class="b">第三共和政</span>〕下の、軍部と共和派の対立で政局が不安定であった。<br><br>（１）〔<span class="b">ブーランジェ事件</span>〕（１８８７～８９年）<br>陸軍のブーランジェ将軍による軍部クーデタ未遂事件（失敗）。<br><br>（２）〔<span class="b">ドレフュス事件</span>〕（１８９４～９９年）<br>〔<span class="b">ユダヤ</span>〕系のドレフュス大尉がドイツのスパイとして逮捕。<br>→後に軍部内に真犯人が判明したが、軍部は威信保持のため否定。<br>→共和派によるドレフュス救済運動が展開され、ドレフュスは無罪に。<br>→後に、ヘルツルらによる〔<span class="b">シオニズム運動</span>〕（パレスチナにおけるユダヤ人国家建国運動）を始める契機に。<br>※作家〔<span class="b">ゾラ</span>〕の活躍<br>新聞に「私は弾劾する」を発表し、ドレフュスを擁護。<br><br>（３）フランス社会主義の展開<br>ⅰ）労働総同盟の設立（１８９５年）<br>労働組合の直接行動による革命主張であるサンディカリズムを推進。<br>ⅱ）〔<span class="b">フランス社会党</span>〕の成立（１９０５年）<br>ジャン＝ジョレスが中心となり、社会主義諸政党を統一して成立。<br>※同年に〔<span class="b">政教分離法</span>〕が発布され、共和国は安定。<br><br>４．ドイツの動き<br><br>（１）〔<span class="b">ヴィルヘルム２世</span>〕（位１８８８～１１９１８年）の登場<br>・国内の資本主義の急速な発展から、積極的な海外膨張政策を主張。<br>→皇帝と対立したビスマルクは辞任（１８９０年）。<br>→再保障条約の更新を拒否し、〔<span class="b">露仏同盟</span>〕が成立（１８９４年）。<br>・〔<span class="b">社会主義者鎮圧法</span>〕廃止（１８９０年）。<br>・〔<span class="b">「世界政策」</span>〕（新航路政策）<br>ヴィルヘルム２世が展開した帝国主義政策（３Ｂ政策など）。詳しくは、後述。<br><br>（２）ドイツ社会主義の展開⋯〔<span class="b">社会民主党</span>〕の成立（１８９０年）<br>社会主義者鎮圧法の廃止に伴い、ドイツ社会主義労働者党が改称。<br>→帝国議会で多くの議席を獲得し、１９１２年には議会の第１党へ。<br>→１９Ｃ末には、〔<span class="b">ベルンシュタイン</span>〕らによる〔<span class="b">修正主義</span>〕の勢力増大。<br><br>５．ロシアの動き<br><br>（１）資本主義の発達と外交の転換<br>・〔<span class="b">アレクサンドル２世</span>〕による〔<span class="b">農奴解放令</span>〕（１８６１年）<br>不十分ながらも資本主義発展の基礎となる。<br>・ドイツの再保障条約更新拒否による、〔<span class="b">露仏同盟</span>〕の成立。<br>フランス資本の援助で、重工業が著しく発達。<br>→貧富の差が拡大し、労働条件がさらに劣悪となり、労働運動の激化へ。<br>※当時のロシア皇帝は、アレクサンドル３世（位１８８１～９４年）。<br><br>（２）革命政党の成立<br>ⅰ）〔<span class="b">ロシア社会民主労働党</span>〕の結成（１８９８年）<br>マルクス主義をかかげたが、２派に分裂（１９０３年）。<br>・〔<span class="b">ボリシェヴィキ</span>〕（ロシア語で「多数派」の意味）<br>〔<span class="b">レーニン</span>〕を指導者とする急進派。党のメンバーを少数の革命家に厳しく限定し、武装革命の重視を主張。<br>・〔<span class="b">メンシェヴィキ</span>〕（ロシア語で「少数派」の意味）<br>〔<span class="b">プレハーノフ</span>〕らを指導者とする穏健派。広い大衆に基礎をおき、市民革命を経たのちに社会主義革命を実現しようとするゆるやかな革命を主張。<br>ⅱ）〔<span class="b">エスエル</span>〕（社会主義者・革命家党）の結成（１９０１年）<br>ナロードニキの流れをくみ、専制政治の打倒と農民への土地の再分配を主張。<br>ⅲ）立憲民主党の結成（１９０５年）<br>産業資本家を中心に結成され、立憲君主政を主張。<br><br>（３）１９０５年革命（第１次ロシア革命）<br>ⅰ）〔<span class="b">ニコライ２世</span>〕の即位（１８９４年）⋯専制政治を継続。<br>フランス資本を導入し、〔<span class="b">シベリア鉄道</span>〕の建設に着工（資本主義の発展）。<br>ⅱ）〔<span class="b">血の日曜日事件</span>〕（１９０５年１月）<br>日露戦争の戦況が不利になり、民衆の生活が悪化。<br>→僧ガポン率いる民衆の平和請願デモに対して、軍隊が発砲し、多数の死傷者を出した事件。<br>→労働者がストを敢行し、各地で〔<span class="b">ソヴィエト</span>〕（評議会）を結成。<br>※海軍（戦艦ポチョムキン号）の反乱も起き、日露戦争の継続が不可能に。<br>ⅲ）〔<span class="b">十月宣言</span>〕（１９０５年）<br>〔<span class="b">ドゥーマ</span>〕（ロシアの国会）開設と憲法制定を約束し、革命は鎮静化。<br>→〔<span class="b">ウィッテ</span>〕が首相となり、自由主義的政治を推進。<br>ⅳ）〔<span class="b">ストルイピン</span>〕の反動政治（１９０６～１１年）<br>ウィッテ解任後首相となり、議会の解散・革命派の弾圧などを実行。<br>※他方、農村における〔<span class="b">ミール</span>〕（農村共同体）の解体も行い、自作農の創設を図ったが、十分な成果はあがらず。<br><br>６．アメリカ合衆国の動き<br><br>（１）１９Ｃ末のアメリカ<br>・資本主義の発展→世界一の工業国へ。<br>・独占資本による自由競争の阻害などの問題も発生。<br>→ロックフェラー（石油）、カーネギー（鉄鋼）、モルガン（カーネギーを買収）など。<br>→政府はシャーマン反トラスト法（１８９０年）などで独占を規制したが、阻止できず。<br>・〔<span class="b">フロンティア</span>〕の消滅（１８９０年代）<br>→帝国主義にもとづく対外膨張政策へ。<br>・労働運動の発達<br>→〔<span class="b">アメリカ労働総同盟</span>〕（ＡＦＬ）の結成（１８８６年）。<br><br>（２）海外積極策の開始<br>ⅰ）〔<span class="b">マッキンリー</span>〕大統領（任１８９７～１９０１年、共和党）<br>・〔<span class="b">米西戦争</span>〕（１８９８年）<br>キューバの独立運動を機に開戦し圧勝。<br>→〔<span class="b">フィリピン</span>〕、〔<span class="b">グアム</span>〕、〔<span class="b">プエルトリコ</span>〕を獲得。キューバはアメリカの保護下へ（「プラット条項」）。<br>・〔<span class="b">ハワイ</span>〕併合（１８９８年）<br>・〔<span class="b">門戸開放政策</span>〕（１８９９年）<br>国務長官〔<span class="b">ジョン＝ヘイ</span>〕が中国に関する〔<span class="b">門戸開放</span>〕・〔<span class="b">機会均等</span>〕・〔<span class="b">領土保全</span>〕を主張。<br>ⅱ）〔<span class="b">セオドア＝ローズヴェルト</span>〕大統領（任１９０１～１９０９年、共和党）<br>・〔<span class="b">革新主義</span>〕<br>独占資本の発展に対し、自由競争の復活や労働者の保護を提唱。<br>・〔<span class="b">「棍棒外交」</span>〕の展開<br>中南米諸国に対する支配力強化（カリブ海政策）。<br>・〔<span class="b">パナマ運河</span>〕の建設（１９０４～１４年）<br>ⅲ）タフト（任１９０９～１３年、共和党）<br>中米や中国に投資するドル外交を展開。<br>ⅳ）〔<span class="b">ウィルソン</span>〕大統領（任、１９１３～２１年、民主党）<br>・「新しい自由」<br>反トラスト法強化、関税引き下げなど民衆のための政治を強調。<br>・「宣教師外交」<br>アメリカ民主主義の道義的優位を説く。<br>・〔<span class="b">パナマ運河</span>〕の完成（１９１４年）`;
+
+        const scrollContainer = document.getElementById('scroll-container');
+        const scrollHeight = document.getElementById('scroll-height');
+        const contentTop = document.getElementById('content-top');
+        const contentBottom = document.getElementById('content-bottom');
+
+        document.getElementById('text-top').innerHTML = b.replace(/class="b"/g, 'class="a"');
+        document.getElementById('text-bottom').innerHTML = b;
+
+        const adjustHeight = () => {
+            scrollHeight.style.height = (contentTop.scrollHeight + window.innerHeight) + "px";
+        };
+        window.onload = adjustHeight;
+        window.onresize = adjustHeight;
+
+        scrollContainer.addEventListener('scroll', () => {
+            const scrollTop = scrollContainer.scrollTop;
+            contentTop.style.transform = `translateY(${-scrollTop}px)`;
+            contentBottom.style.transform = `translateY(${-scrollTop}px)`;
+        });
     </script>
 </body>
 </html>
