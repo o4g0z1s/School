@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -9,7 +8,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
       gtag('config', 'G-E675FYQ3DK');
     </script>
     <title>丗界史征服</title>
@@ -23,6 +21,10 @@
             }
         }
 
+        * {
+            box-sizing: border-box;
+        }
+
         body, html {
             margin: 0;
             padding: 0;
@@ -33,72 +35,61 @@
         }
 
         #scroll-container {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
             overflow-y: scroll;
-            z-index: 10;
-        }
-
-        #scroll-height {
-            height: 6000px;
-        }
-
-        .view {
-            position: fixed;
-            left: 0;
-            width: 100%;
-            overflow: hidden;
-            background-color: #fff;
-        }
-
-        .top-view {
-            top: 0;
-            height: var(--split-pos);
-            z-index: 2;
-        }
-
-        .bottom-view {
-            top: var(--split-pos);
-            height: calc(100vh - var(--split-pos));
+            position: relative;
             z-index: 1;
-            background-color: #f9f9f9;
+        }
+
+        .content-wrapper {
+            width: 100%;
+            padding: 100px 3% 200px 3%;
         }
 
         .content {
-            position: absolute;
-            left: 0;
             width: 94%;
-            padding: 0 4%;
-            font-size: 1.3em;
+            margin: 0 auto;
+            font-size: calc(100dvw / 70);
             line-height: 2em;
             text-align: left;
+        }
+
+        #main-content {
+            background-color: #fff;
+            color: #000;
+        }
+
+        #mirror-view {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: var(--split-pos);
+            overflow: hidden;
+            z-index: 10;
+            pointer-events: none;
+            background-color: #fff;
+        }
+
+        #mirror-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
             will-change: transform;
         }
 
-        .top-view .content {
-            top: 0;
-            margin-top: 100px;
-        }
-
-        .bottom-view .content {
-            top: calc(-1 * var(--split-pos));
-            margin-top: 100px;
-        }
-
         .a { color: #f00; font-weight: bold; }
-        .b { color: #f9f9f9; }
+        .b { color: #fff; }
 
         table { border: 2px solid #555; border-collapse: collapse; }
         td, th { border: 1px solid #555; padding: 5px; }
-        th { text-align: center; }
 
         h1 {
             text-align: center;
-            margin-top: 0;
-            font-size: 3em;
+            margin: 0 0 60px 0;
+            font-size: 2.5em;
             font-family: serif;
         }
 
@@ -109,34 +100,36 @@
             width: 100%;
             height: 3px;
             background-color: #999;
-            z-index: 5;
+            z-index: 15;
             border: none;
             margin: 0;
         }
 
         @media (orientation: portrait){
-            .top-view .content, .bottom-view .content { margin-top: 200px; }
-            .content { font-size: 0.9em; }
+            .content-wrapper { padding-top: 200px; }
+            .content { font-size: calc(100dvw / 35); }
         }
     </style>
 </head>
 <body>
 
     <div id="scroll-container">
-        <div id="scroll-height"></div>
-    </div>
-
-    <div class="view top-view">
-        <div class="content" id="content-top">
-            <h1>丗界史征服</h1>
-            <div id="text-top"></div>
+        <div id="main-content" class="content-wrapper">
+            <div class="content">
+                <h1>丗界史征服</h1>
+                <div id="text-bottom"></div>
+            </div>
         </div>
     </div>
 
-    <div class="view bottom-view">
-        <div class="content" id="content-bottom">
-            <h1>丗界史征服</h1>
-            <div id="text-bottom"></div>
+    <div id="mirror-view">
+        <div id="mirror-content">
+            <div class="content-wrapper">
+                <div class="content">
+                    <h1>丗界史征服</h1>
+                    <div id="text-top"></div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -146,24 +139,15 @@
         const b = `<br><br>第９章<br>大交易・大交流の時代<br><br>【１】アジア交易世界の興隆<br><br>１．明の建国<br><br>（１）明朝の統一（１３６８～１６４４年）<br>〔<span class="b">朱元璋</span>〕が江南を統一し、建国（１３６８年）。<br><br>（２）〔<span class="b">洪武帝</span>〕（太祖、位１３６８～９８年）の政治<br>ⅰ）特色<br>君主独裁体制を確立し、中国古来の伝統を復興。<br>ⅱ）首都⋯〔<span class="b">南京</span>〕<br>ⅲ）中央官制<br>〔<span class="b">中書省</span>〕と丞相を廃止し、六部を皇帝直属に。<br>ⅳ）制度改革・法典の整備<br>・〔<span class="b">一世一元</span>〕<br>洪武帝が始めた、皇帝一代につき元号も一つとする制度。<br>・〔<span class="b">朱子学</span>〕を官学とし、科挙制を整備。<br>・明律、明令の制定<br>唐末以来形骸化していた律令を改定し、宋・元の諸法令を加味。<br>ⅴ）財政<br>・〔<span class="b">里甲制</span>〕<br>村落行政制度。１０戸＝１甲、１１０戸＝１里とし、それぞれに里長・甲首を置く（徴税、治安維持が目的）。<br>・賦役黄冊（租税・戸籍台帳）、魚鱗図冊（土地台帳）の作成。<br>ⅵ）民衆教化<br>〔<span class="b">六諭</span>〕の発布<br>儒教の精神を６カ条にまとめ、里老人が村落をまわり民衆に教えた。<br>ⅶ）兵制<br>〔<span class="b">衛所制</span>〕の編制<br>唐の府兵制を範として成立した兵制。農民を軍戸（約２割、免税の代わりに兵役を課される）と民戸（約８割、税を課せられた一般の農家）に分けて、兵役と租税を分担。<br>ⅷ）対外政策<br>〔<span class="b">海禁政策</span>〕により民間貿易の禁止＆朝貢貿易の推進。<br><br>２．明の全盛期<br><br>（１）〔<span class="b">靖難の役</span>〕（１３９９～１４０２年）<br>第２代皇帝の〔<span class="b">建文帝</span>〕が皇帝権力強化のため、一族諸王の領地没収を強行。<br>→燕王（朱棣）が対抗し、王位を奪取。<br>→〔<span class="b">永楽帝</span>〕（位１４０２～２４年）として即位。<br><br>（２）〔<span class="b">永楽帝</span>〕の政治<br>ⅰ）内政<br>・〔<span class="b">北京</span>〕に遷都し、紫禁城を造営。<br>・有能な宦官を重用し、内閣大学士の設置（皇帝親政を補佐）。<br>・大運河、万里の長城の修築。<br>・大編纂事業の実施。<br>→『四書大全』、『五経大全』、『永楽大典』、『性理大全』<br>ⅱ）外政<br>・５回にわたるモンゴル遠征。<br>・ベトナムを服属→永楽帝の死後、〔<span class="b">黎朝</span>〕として独立（１４２８年）。<br>・イスラーム教徒の宦官〔<span class="b">鄭和</span>〕に命じ、南海遠征。<br>→東南アジア、インド洋、アフリカ東岸へ（貿易ネットワークの確立）。<br>→約３０カ国の遠征により、明への朝貢を促進。<br><br>３．明の衰退と滅亡<br><br>（１）〔<span class="b">北虜南倭</span>〕（明を苦しめた外圧を総称した言葉）<br>ⅰ）北虜⋯モンゴル勢力の侵入<br>・〔<span class="b">オイラト</span>〕<br>１５Ｃ中頃、エセン＝ハーンのもとで強大化。<br>→〔<span class="b">土木堡</span>〕（１４４９年）で明の正統帝（英宗）を捕虜に。<br>・〔<span class="b">タタール</span>〕（韃靼）<br>１６Ｃ半ば、アルタン＝ハーンのもとで全盛期となり、北京を包囲。<br>ⅱ）南倭<br>中国沿岸を荒らした日本人海賊である〔<span class="b">倭寇</span>〕による被害。<br>※倭寇には多くの中国人も加わっていた（王直など）。<br><br>（２）〔<span class="b">万暦帝</span>〕（神宗）の時代（位１５７２～１６２０年）<br>ⅰ）治世前半⋯宰相〔<span class="b">張居正</span>〕の改革<br>・タタールと和解し、軍事費削減＆全国的な検地の実施。<br>・〔<span class="b">一条鞭法</span>〕の普及⋯各種の税や徭役を一括して銀納に。<br>※背景として、メキシコ銀・日本銀が大量に中国へ流入したことがある。<br>ⅱ）治世後半<br>宦官の横行が原因となって、〔<span class="b">東林派</span>〕と〔<span class="b">非東林派</span>〕の勢力争いが激化し、国政が混乱。<br>※〔<span class="b">東林派</span>〕<br>宦官の横行に反対する官僚グループ。顧憲成がリーダー。<br>※〔<span class="b">非東林派</span>〕<br>親宦官派の官僚グループ。宦官の魏忠賢と連携。<br>ⅲ）遠征<br>〔<span class="b">豊臣秀吉</span>〕の朝鮮侵入（文禄・慶長の役／壬辰・丁酉の倭乱）<br>→属国である李氏朝鮮の援軍要求に応え、出兵して撃退。<br>※朝鮮軍は〔<span class="b">李舜臣</span>〕が率いた水軍などが抵抗。<br>→深刻な財政難に。<br><br>（３）〔<span class="b">李自成の乱</span>〕（１６３１～４５年）<br>農民の〔<span class="b">李自成</span>〕が指導した重税に苦しむ農民たちの大反乱。<br>→北京を陥落させ、皇帝の崇禎帝は自殺。<br>→明の滅亡（１６４４年）。<br><br>４．中国東北地方の動向<br><br>（１）〔<span class="b">女真</span>〕（ジュシェン、のち満洲人）の台頭<br>ツングース系で金の滅亡後、満洲地方に居住。薬用人参・毛皮交易の利益をめぐり、部族争いが激化。<br>→明に服属していたが、自立・建国へ。<br><br>（２）〔<span class="b">ヌルハチ</span>〕（太祖、位１６１６～２６年）の自立<br>・女真を統一し、〔<span class="b">アイシン</span>〕（金、後金）を建国（１６１６年）。<br>・〔<span class="b">八旗</span>〕の編制・満洲文字の制作（明への対抗）。<br><br>（３）〔<span class="b">ホンタイジ</span>〕（太宗、位１６２６～４３年）<br>・内モンゴルのチャハルを征服し、国号を〔<span class="b">清</span>〕と改称（１６３６年）。<br>・李氏朝鮮を属国へ（１６３６年）。<br><br>５．明の社会・経済<br><br>（１）農業生産力の向上<br>・長江中流域⋯穀倉地帯。<br>※〔<span class="b">「湖広熟すれば天下足る」</span>〕という言葉が生まれる。<br>・長江下流域⋯綿花、桑、茶の栽培の普及（家内制手工業）。<br><br>（２）商工業の発達<br>・特権商人の全国的活動⋯〔<span class="b">山西商人</span>〕、〔<span class="b">徽州（新安）商人</span>〕など。<br>・〔<span class="b">会館</span>〕・〔<span class="b">公所</span>〕の設立<br>同業者、同郷者の商工業者のための相互扶助・連絡機関。<br>・生糸、陶磁器（江西省の〔<span class="b">景徳鎮</span>〕が有名）の生産。<br><br>（３）社会の変化<br>・都市⋯商人、郷紳（地方社会における実力者）などの富裕層集中。<br>・農村⋯農民の困窮から控租運動へ（１５Ｃ以降）。<br><br>【２】ヨーロッパの海洋進出とアメリカ大陸の変容<br><br>１．大航海時代<br><br>（１）海外進出の背景<br>・〔<span class="b">マルコ＝ポーロ</span>〕の〔<span class="b">『世界の記述』</span>〕（東方見聞録）<br>→西欧人のアジアへの関心の高まり。<br>・〔<span class="b">香辛料</span>〕の需要の拡大<br>※ただし、オスマン帝国の進出により、東方貿易に障害。<br>・〔<span class="b">羅針盤</span>〕の実用化などで、遠洋航海が可能に。<br>・〔<span class="b">レコンキスタ</span>〕の推進（ポルトガル、スペイン）<br>→キリスト教の海外への布教熱の高まり。<br><br>（２）インド航路の開拓⋯〔<span class="b">ポルトガル</span>〕の活躍<br>ⅰ）〔<span class="b">エンリケ</span>〕（「航海王子」、１３９４～１４６０年）<br>１５世紀前半に、新航路開拓を推進してアフリカ西岸のヴェルデ岬に到達。<br>ⅱ）〔<span class="b">バルトロメウ＝ディアス</span>〕（１４５０頃～１５００年）<br>ポルトガル王〔<span class="b">ジョアン２世</span>〕の命令でアフリカ周航に出発し、アフリカ南端の〔<span class="b">喜望峰</span>〕に到達（１４８８年）。<br>ⅲ）〔<span class="b">ヴァスコ＝ダ＝ガマ</span>〕（１４６９頃～１５２４年）<br>インド航路を開拓し、インドの〔<span class="b">カリカット</span>〕へ到達（１４９８年）。<br>※香辛料の直接取引により、ポルトガルの首都〔<span class="b">リスボン</span>〕が繁栄し、世界商業の中心地となった。<br><br>２．アメリカ大陸への到達<br><br>（１）新大陸の発見と探検⋯〔<span class="b">スペイン</span>〕の活躍<br>ⅰ）〔<span class="b">コロンブス</span>〕（１４５１～１５０６年、イタリアのジェノヴァ出身）<br>・〔<span class="b">トスカネリ</span>〕の地球球体説の影響を受ける。<br>・スペイン王〔<span class="b">イサベル</span>〕の援助で、パロスを出港。<br>→西インド諸島のサンサルバドル島に到達（<span class="b">１４９２</span>年）。<br>→新大陸をインドの一部と誤認し、先住民を〔<span class="b">インディオ</span>〕と命名。<br>ⅱ）〔<span class="b">カボット</span>〕（１４５１頃～１４９８頃、ジェノヴァ出身）<br>英王の援助で、ニューファンドランド・北米を探検。<br>ⅲ）〔<span class="b">カブラル</span>〕（１４６０頃～１５２６年、ポルトガルの提督）<br>〔<span class="b">ブラジル</span>〕に漂着し、ポルトガルによる領有を宣言。<br>→新大陸唯一のポルトガル領へ。<br>ⅳ）〔<span class="b">アメリゴ＝ヴェスプッチ</span>〕（１４５４～１５１２年、フィレンツェ出身）<br>メディチ家の援助で、南米・新大陸を探検。<br>→アジアではないことを確認し、彼の名にちなみ新大陸を「アメリカ」と命名。<br>ⅴ）〔<span class="b">バルボア</span>〕（１４７５～１５１９年、スペイン人）<br>パナマ地峡を横断し、太平洋を発見。<br>ⅵ）カルティエ（１４９１～１５５７年、フランス人）⋯カナダに到達<br><br>（２）世界周航⋯〔<span class="b">マゼラン</span>〕（ポルトガル人、１４８０頃～１５２１年）<br>スペインに亡命し、スペイン王室の援助で世界周航に挑戦。<br>→南アメリカ大陸南端に水路（マゼラン海峡）を発見し、太平洋を横断。<br>→〔<span class="b">フィリピン</span>〕諸島に到達するが、戦死。残った部下がパロス港に戻り、世界周航を達成。<br>※その他に、イギリス人の海賊・軍人であるドレークも世界周航に成功。<br><br>（３）スペイン・ポルトガルの隆盛<br>ⅰ）〔<span class="b">トルデシリャス条約</span>〕（１４９４年）<br>スペインとポルトガルの勢力範囲を確定。<br>※１４９３年に教皇アレクサンデル６世が設定した教皇子午線にポルトガルが不満を持ったため。<br>→スペインはアメリカの大部分と〔<span class="b">フィリピン</span>〕、ポルトガルはアジアの大部分と〔<span class="b">ブラジル</span>〕を領有。<br>ⅱ）スペインによる征服⋯コンキスタドール（征服者）の活躍。<br>・〔<span class="b">コルテス</span>〕<br>メキシコの〔<span class="b">アステカ王国</span>〕を滅ぼす（１５２１年）。<br>・〔<span class="b">ピサロ</span>〕<br>ペルーの〔<span class="b">インカ帝国</span>〕を滅ぼし、新首都リマを建設（１５３３年）。<br>ⅲ）新大陸における植民地経営<br>・ポトシ銀山での労働（新大陸最大の銀山）。<br>・〔<span class="b">エンコミエンダ制</span>〕<br>国王が植民者に対し、インディオのキリスト教化の代わりにインディオの使用を許可。<br>→スペイン聖職者の〔<span class="b">ラス＝カサス</span>〕が批判（『インディアスの破壊についての簡潔な報告』）。<br>→１７世紀以降、黒人奴隷を使用したプランテーションであるアシエンダ制に。<br>※アシエント（奴隷供給契約）<br>スペイン政府が外国商人と結んだ、黒人奴隷の供給契約。<br><br>（４）ポルトガルのアジア進出<br>・インドの〔<span class="b">ゴア</span>〕占領（１５１０年）<br>→インド洋で活発な香辛料交易を行う。<br>・〔<span class="b">マカオ</span>〕に居住権（１５５７年）→ここを拠点に中国貿易を展開。<br>・種子島に漂着（１５４３年）→平戸に来航し、対日貿易。<br><br>（５）スペインのアジア進出<br>フィリピンを領有し、〔<span class="b">マニラ</span>〕を拠点としてアジア貿易を展開。<br>※〔<span class="b">アカプルコ貿易</span>〕<br>メキシコ銀によるアジア貿易。〔<span class="b">ガレオン船</span>〕によって中国の絹・陶磁器を銀と取引。<br><br>～参考：古代アメリカ文明～<br><br>（１）アメリカ先住民⋯〔<span class="b">インディオ</span>〕<br>アメリカ・アジア両大陸が陸続きの時代にアジアから移動。メキシコ南部と中央アメリカでは、〔<span class="b">トウモロコシ</span>〕栽培を中心とする農耕文化が発展。<br>※南アメリカのアンデス地帯では、〔<span class="b">ジャガイモ</span>〕も主食としていた。<br><br>（２）マヤ・アステカ文明とインカ文明<br>ⅰ）特色<br>金、銀、青銅器を使用し、鉄器、車、大型家畜などはなし。<br>ⅱ）メソ（中部）アメリカ文明<br>・〔<span class="b">オルメカ文明</span>〕（ＢＣ１０Ｃ頃）<br>メキシコ湾岸に繁栄した中央アメリカ初の都市文明。<br>・テオティワカン文明（ＢＣ２～ＡＤ６Ｃ）⋯「太陽のピラミッド」<br>・〔<span class="b">マヤ文明</span>〕（４～１０Ｃ初）<br>〔<span class="b">ユカタン半島</span>〕に繁栄。<br>ピラミッド型の神殿、二十進法、絵文字などの独自の文明。<br>・〔<span class="b">アステカ王国</span>〕（１２～１６Ｃ頃）<br>首都は〔<span class="b">テノチティトラン</span>〕。<br>〔<span class="b">コルテス</span>〕による征服で滅亡。<br>ⅲ）アンデス文明<br>・チャビン文化（ＢＣ１０Ｃ頃）⋯アンデス文明の初期。<br>・〔<span class="b">インカ帝国</span>〕（１２００頃～１５３３年）<br>首都は〔<span class="b">クスコ</span>〕。<br>太陽を崇拝し、〔<span class="b">キープ</span>〕（結縄）が特徴。<br>〔<span class="b">ピサロ</span>〕による征服で、滅亡。<br><br>３．商業革命と価格革命<br><br>（１）〔<span class="b">商業革命</span>〕<br>ヨーロッパの商工業の中心地が地中海から大西洋岸へ移動。<br>→イタリア諸都市の没落＆リスボン、アントワープなどの繁栄。<br>→資本主義経済の発達。<br><br>（２）〔<span class="b">価格革命</span>〕<br>新大陸の銀がヨーロッパに大量に流入したことで起こった、急激な物価の高騰。<br>→貨幣地代の額を固定していた領主層に打撃。<br><br>（３）〔<span class="b">グーツヘルシャフト</span>〕（農場領主制）の拡大<br>特にエルベ川以東で、農奴支配が強化され、東欧は西欧諸国への穀物輸出地帯へ。<br>→西欧は商工業が発展し、ヨーロッパ東西間の分業体制が形成。<br><br>（４）その他<br>・新大陸より新物資が流入し、生活が変革（タバコ、トウモロコシ、ジャガイモ、トマトなど）。<br>・地球球体説の証明などで、ローマ教会が確立した世界観が否定され、教会権威はさらに失墜。<br>・「世界の一体化」が始まり、「大西洋世界」が出現。<br><br>第１０章<br>アジアの諸帝国の繁栄<br><br>【１】オスマン帝国とサファヴィー朝<br><br>１．オスマン帝国の成立と発展（１３００頃～１９２２年）<br><br>（１）建国・発展<br>ⅰ）オスマン１世（オスマン＝ベイ、位１３００頃～１３２４？年）<br>小アジア（アナトリア西部）に建国（１２９９年）。<br>ⅱ）〔<span class="b">バヤジット１世</span>〕（位１３８９～１４０２年）<br>・ニコポリスの戦い（１３９６年）<br>バルカン諸国・仏・独連合軍を撃破し、バルカン半島を制圧。<br>・〔<span class="b">アンカラの戦い</span>〕（１４０２年）<br>ティムールに完敗し、一時衰退。<br>ⅲ）〔<span class="b">メフメト２世</span>〕（位１４４４～４６、５１～８１年）<br>ビザンツ帝国を征服し、〔<span class="b">コンスタンティノープル</span>〕を占領（<span class="b">１４５３</span>年）。<br>→〔<span class="b">イスタンブル</span>〕と改称して遷都し、トプカプ宮殿を造営。<br>ⅳ）〔<span class="b">セリム１世</span>〕（位１５１２～２０年）<br>・サファヴィー朝を撃破し、シリアに進出。<br>・エジプトの〔<span class="b">マムルーク朝</span>〕を征服（１５１７年）。<br>→両聖都の〔<span class="b">メッカ</span>〕、〔<span class="b">メディナ</span>〕の保護権を掌握。<br><br>（２）最盛期⋯〔<span class="b">スレイマン１世</span>〕（位１５２０～６６年）の時代<br>・サファヴィー朝と抗争し、イラクの一部を奪取。<br>・<u>ハンガリーを征服</u>（１５２６年、モハーチの戦い）。<br>・〔<span class="b">ウィーン包囲</span>〕〔<span class="b">１５２９</span>年、第１次）<br>フランスと同盟して神聖ローマ帝国を圧迫したが、失敗。<br>・〔<span class="b">プレヴェザの海戦</span>〕（１５３８年）<br>スペイン・ヴェネツィア連合艦隊をギリシア近海で撃破。<br><br>（３）帝国の統治<br>ⅰ）政治<br>・〔<span class="b">スルタン</span>〕⋯専制君主。イスラーム法に基づく政治を行う。<br>※カーヌーン⋯イスラーム法を補完するスルタンの法。<br>・〔<span class="b">ミッレト制</span>〕<br>異教徒の宗教別の自治組織。オスマン帝国の異教徒に対する寛容が、長期にわたる支配を可能とした。<br>ⅱ）軍事<br>・〔<span class="b">ティマール制</span>〕<br>騎士階級（シパーヒー）に土地からの徴税権を授与。<br>→１７世紀以降、帝国の領土が安定すると〔<span class="b">徴税請負制</span>〕に変化。<br>→１８世紀以降、徴税請負権を握り、アーヤーンと呼ばれる地方社会の有力者が台頭。<br>・〔<span class="b">イェニチェリ</span>〕<br>スルタン直属の奴隷身分兵士から成る常備歩兵軍団。<br>※デウシルメ<br>キリスト教の子弟を徴発してイスラーム教に改宗させ、官吏や軍人に採用した制度。イェニチェリはこの一部門。<br>ⅲ）交易⋯〔<span class="b">カピチュレーション</span>〕<br>外国人に与えた、領内での居住と通商の自由特権。セリム２世の時代に同盟国フランスに初めて与えられた（１５６９年）。後にイギリスやオランダにも与えられた。<br>※都市の商工業者は宗教の区別を超えた組合（エスナーフ）を構成。<br><br>２．サファヴィー朝の興隆（１５０１～１７３６年）<br><br>（１）建国者⋯〔<span class="b">イスマーイール</span>〕（位１５０２～２４年）<br>・タブリーズに首都を建設。<br>・チャルディラーンの戦いで鉄砲や大砲を駆使したオスマン軍に敗北し、アナトリア東部を喪失（１５１４年）。<br>・〔<span class="b">シーア派</span>〕（十二イマーム派）が国教。<br>・イラン人の民族意識高揚のため、〔<span class="b">シャー</span>〕の称号を使用。<br><br>（２）最盛期⋯〔<span class="b">アッバース１世</span>〕（位１５８７～１６２９年）<br>新首都〔<span class="b">イスファハーン</span>〕を建設。最盛期には人口は７０万を数え、「世界の半分」と言われた。<br><br>【２】ムガル帝国の興隆<br><br>１．ムガル帝国の成立（１５２６～１８５８年）<br><br>※ムガル帝国成立前のインド<br>・北インド⋯〔<span class="b">デリー＝スルタン朝</span>〕（イスラーム政権）<br>・南インド⋯ヴィジャヤナガル王国（ヒンドゥー文化の伝統保持）<br><br>（１）建国・発展<br>ⅰ）〔<span class="b">バーブル</span>〕（位１５２６～３０年）<br>ティムールの子孫。パーニーパットの戦いでロディー朝を征服し、建国。<br>ⅱ）〔<span class="b">アクバル</span>〕（第３代、位１５５６～１６０５年）<br>・ヒンドゥー教徒のラージプート族と和解し、インドを統一。<br>→首都をデリーから〔<span class="b">アグラ</span>〕に遷都。<br>・中央集権化<br>マンサブダール制（官僚・軍人の位階を定めた俸給制度）や全国的な土地測量、徴税などを実施。<br>・〔<span class="b">ジズヤ</span>〕の廃止<br>イスラーム教徒とヒンドゥー教徒の融和を推進。<br>ⅲ）〔<span class="b">シャー＝ジャハーン</span>〕（第５代、位１６２７～５８年）<br>・領土を拡大し、デリーに再び遷都。<br>・〔<span class="b">タージ＝マハル</span>〕を建設（インド＝イスラーム文化の最高傑作）。<br>ⅳ）〔<span class="b">アウラングゼーブ</span>〕（第６代、位１６５８～１７０７年）<br>・帝国最大の領土を形成（最盛期）。<br>・〔<span class="b">ジズヤ</span>〕の復活＆ヒンドゥー寺院の破壊で、ヒンドゥー教徒（ラージプート族）を圧迫し、反発を招く。<br>※加えて熱心なスンナ派であったため、シーア派や異教徒を厳しく弾圧し、帝国分裂の要因を作った。<br><br>（２）インド＝イスラーム文化<br>・イスラーム教とヒンドゥー教の融合（バクティ信仰とイスラーム神秘主義の相似性）<br>→カビールの影響を受けた〔<span class="b">ナーナク</span>〕が〔<span class="b">シク教</span>〕を創始。<br>※バクティ信仰<br>ヒンドゥー教の神に対する絶対的な帰依を行う信仰。イスラームのスーフィズム（神秘主義）と共通点を持つ。<br>・〔<span class="b">ウルドゥー語</span>〕の成立<br><u>公用語のペルシア語</u>とインドの地方語（ヒンディー語）の混成言語。現在のパキスタンの国語。<br>・絵画⋯ムガル絵画、ラージプート絵画など。<br><br>（３）衰退<br>アウラングゼーブ（帝）の死後、帝国の解体。<br>→シヴァージーがデカン高原に建てた〔<span class="b">マラーター王国</span>〕、西北インドの〔<span class="b">シク教徒</span>〕の反乱。１７Ｃ以降は、英仏勢力も進出。<br><br>【３】清代の中国と隣接諸地域<br><br>１．清朝の統治<br><br>（１）清朝の中国支配⋯順治帝（世祖、位１６４３～６１年）<br>・〔<span class="b">李自成</span>〕を討伐し北京占領（１６４４年）。<br>※明の将軍〔<span class="b">呉三桂</span>〕が守備していた〔<span class="b">山海関</span>〕を、取引によって明け渡させた。<br>・〔<span class="b">呉三桂</span>〕ら３人の漢人武将を、雲南・広東・福建の藩王に（三藩の成立）。<br><br>（２）清朝の全盛期<br>ⅰ）〔<span class="b">康煕帝</span>〕（聖祖、位１６６１～１７２２年）<br>・〔<span class="b">三藩の乱</span>〕（１６７３～８１年）を鎮圧し、呉三桂らを平定。<br>・明の遺臣である〔<span class="b">鄭成功</span>〕の反清活動を平定。<br>→〔<span class="b">台湾</span>〕を清の領土にし、中国統一達成（１６８３年）。<br>・〔<span class="b">ネルチンスク条約</span>〕締結（１６８９年）<br>ロシアの南下を阻止し、国境を画定（アルグン川とスタノヴォイ山脈）。<br>※中国が外国と対等の立場で結んだ初めての条約である。<br>・モンゴル高原のジュンガル部に親征→外モンゴル、チベットを支配。<br>ⅱ）〔<span class="b">雍正帝</span>〕（世宗、位１７２２～３５年）<br>・〔<span class="b">キャフタ条約</span>〕締結（１７２７年）<br>ロシアとモンゴル方面の国境を画定。<br>・〔<span class="b">軍機処</span>〕の設置⋯皇帝直属の諮問機関。<br>ⅲ）〔<span class="b">乾隆帝</span>〕（高宗、位１７３５～９５年）<br>・ジュンガル部を征服し、回部（東トルキスタン）とあわせて、〔<span class="b">「新疆」</span>〕と命名。<u>清朝の領土が最大となる</u>。<br>・〔<span class="b">理藩院</span>〕の整備⋯藩部の管理機関。<br>・外国との貿易を〔<span class="b">広州</span>〕１港に制限（１７５７年）<br>→特許商人組合の〔<span class="b">行商</span>〕が貿易を独占。<br><br>（３）清朝の統治政策<br>ⅰ）兵制<br>・〔<span class="b">八旗</span>〕<br>ヌルハチが創始した清の軍事制度。満洲八旗・蒙古八旗・漢軍八旗などが存在。八旗に所属する軍人は旗人と呼ばれ、旗地を支給された。<br>・〔<span class="b">緑営</span>〕<br>清が中国進出後に、漢人で編成した軍隊。<br>ⅱ）漢人支配⋯懐柔策と威圧策の併用<br>・〔<span class="b">満漢併用制</span>〕<br>中央政府の要職の定員を偶数とし、政治上の満漢平等をうたった。<br>・科挙の実施、学者の優遇<br>※『康熙字典』『古今図書集成』『四庫全書』の大編纂事業。<br>・〔<span class="b">文字の獄</span>〕、禁書令<br>反政府的書物の焼却・発行禁止。また、その執筆者の徹底弾圧。<br>・〔<span class="b">辮髪</span>〕の強制⋯満洲人の風俗を強制。<br>ⅲ）領土区分<br>・直轄領⋯満洲、中国本土、台湾。<br>・藩部（理藩院の下で自治を認め、間接支配）<br>モンゴル、青海、チベット、新疆。<br>※清朝は藩部の習慣、宗教に干渉せず、チベット仏教の指導者である〔<span class="b">ダライ＝ラマ</span>〕、新疆のベグなどが現地の支配者として存続。<br>・属国（清の宗主権の下に置かれた）<br>朝鮮、大越国（ベトナム）、タイ、ビルマ。<br><br>（４）清朝の社会<br>ⅰ）貿易<br>・生糸、陶磁器、茶の輸出→銀の流入増大。<br>・東南アジアへ移住した農民である南洋華僑の増大。<br>・貿易を〔<span class="b">広州</span>〕１港に限定し、〔<span class="b">行商</span>〕が貿易独占。<br>ⅱ）税制<br>〔<span class="b">地丁銀制</span>〕の実施（１８Ｃ初）<br>丁税（人頭税）を土地税の中にくり込み、一括して銀納。<br>ⅲ）〔<span class="b">典礼問題</span>〕<br>中国伝来の孔子崇拝・祖先崇拝の儀式（典礼）を認めることの是非論。<br>→〔<span class="b">イエズス会</span>〕以外がキリスト教に典礼を盛り込んで布教することを拒否したため、〔<span class="b">康煕帝</span>〕の時代にイエズス会以外のキリスト教布教禁止。<br>※ローマ教皇はイエズス会の布教方法を否定している。<br>→その後、〔<span class="b">雍正帝</span>〕の時代にすべてのキリスト教布教が禁止へ（１７２４年）。<br>ⅳ）その他<br>１８世紀には政治の安定のもと人口の急増＆山地の開墾の進展。<br>→トウモロコシやサツマイモなどの自給作物が人口増を支えた。<br><br>２．明・清時代の東アジア<br><br>（１）〔<span class="b">琉球</span>〕<br>ⅰ）統一<br>１５Ｃ、〔<span class="b">中山王</span>〕の尚巴志による。明に朝貢し、交易の要に。<br>ⅱ）日中への両属<br>１７世紀初めに島津氏に敗れ、日本と中国の両勢力に服属した。<br>※その後、１８７２年に日本が琉球藩を設置し、１８７９年に沖縄県を設置した。<br><br>（２）〔<span class="b">マラッカ王国</span>〕（１４世紀末～１５１１年）<br>マレー半島南西部に成立し、〔<span class="b">鄭和</span>〕の遠征を機に急成長。<br>→ジャワのマジャパヒト王国にかわる東南アジア最大の貿易拠点。<br><br>（３）〔<span class="b">朝鮮</span>〕の成立（１３９２～１９１０年）<br>ⅰ）首都⋯〔<span class="b">漢城</span>〕<br>ⅱ）建国者⋯〔<span class="b">李成桂</span>〕<br>ⅲ）社会・文化<br>・明の制度の導入（科挙の整備、朱子学の導入）。<br>・〔<span class="b">訓民正音</span>〕（ハングル）の制定⋯世宗の時代（１５Ｃ前半）。<br>・〔<span class="b">両班</span>〕（文武の世襲官僚）の政権独占により、政治が混乱。<br>※朝鮮は「小中華」の意識（朝鮮こそが明の中国文化継承者）から、儒教の儀礼が中国以上に厳格に守られた。<br><br>（４）日本<br>室町幕府（足利義満）の勘合貿易（１５Ｃ前半）。<br>→織田信長・豊臣秀吉が南蛮貿易の利益を得る＆鉄砲を利用（１６Ｃ）。<br>→江戸幕府による「鎖国」（１６３０年代）で、キリスト教禁止＆日本人の海外渡航・ポルトガル人の来航禁止。<br>※ただし、「鎖国」後も長崎で中国・オランダと交易、対馬を通じて朝鮮、琉球を通じて中国とも関係。<br><br>３．明・清時代の東南アジア＜参考＞<br><br>（１）ベトナム<br>ⅰ）（黎朝）（１４２８～１７８９年）<br>・１５世紀初頭に明の（永楽帝）の支配をうけるが、彼の死後独立。<br>・チャンパーを征服し、南北ベトナムを統一。<br>ⅱ）（西山朝）（１７７８～１８０２年）<br>西山の乱によって成立したが、阮福暎によって滅亡（阮朝）。<br><br>（２）スマトラ島⋯（アチェ王国）（１６Ｃ初め～２０Ｃ初め）（マラッカ王国）がポルトガルに占領されてから、交易で活躍。<br><br>（３）ジャワ島⋯（マタラム王国）（１６Ｃ末～１７５５年）イスラーム文化が発展するが、オランダ東インド会社によって滅亡。<br><br>（４）タイ<br>ⅰ）（スコータイ朝）（１２５７～１３５０年）<br>・モンゴル帝国の侵攻で大理が滅亡し、その残党が南下して建国。<br>・（鄭和）の遠征を受けて明に朝貢。<br>ⅱ）（アユタヤ朝）（１３５０～１７６７年）<br>小乗仏教が流入。ミャンマーのアラウンパヤー（コンバウン）朝の侵攻で滅亡。<br>ⅲ）（ラタナコーシン朝）（チャクリ朝、バンコク朝）（１７８２～現在）現在も続くタイの王朝。１９Ｃに英仏の圧迫を受けるが、独立を維持。<br><br>（５）ミャンマー（ビルマ）<br>ⅰ）（タウングー（トゥングー）朝）（１５３１～１７５２年）ビルマ人による２度目の統一王朝の形成。<br>ⅱ）（アラウンパヤー朝）（コンバウン朝）（１７５２～１８８５年）<br>・タイのアユタヤ朝を征服し、一時タイも支配。<br>・イギリスの攻撃を受け、滅亡→英領インドに併合。`;
 
         const scrollContainer = document.getElementById('scroll-container');
-        const scrollHeight = document.getElementById('scroll-height');
-        const contentTop = document.getElementById('content-top');
-        const contentBottom = document.getElementById('content-bottom');
-
+        const mirrorContent = document.getElementById('mirror-content');
+        
         document.getElementById('text-top').innerHTML = b.replace(/class="b"/g, 'class="a"');
         document.getElementById('text-bottom').innerHTML = b;
 
-        const adjustHeight = () => {
-            scrollHeight.style.height = (contentTop.scrollHeight + window.innerHeight) + "px";
-        };
-        window.onload = adjustHeight;
-        window.onresize = adjustHeight;
-
         scrollContainer.addEventListener('scroll', () => {
             const scrollTop = scrollContainer.scrollTop;
-            contentTop.style.transform = `translateY(${-scrollTop}px)`;
-            contentBottom.style.transform = `translateY(${-scrollTop}px)`;
-        });
+            mirrorContent.style.transform = `translateY(${-scrollTop}px)`;
+        }, { passive: true });
     </script>
 </body>
 </html>
