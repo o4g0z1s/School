@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -8,9 +9,10 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+    
       gtag('config', 'G-E675FYQ3DK');
     </script>
-    <title>丗界史全征服</title>
+    <title>周辺史征服</title>
     <style>
         :root {
             --split-pos: 30vh;
@@ -19,10 +21,6 @@
             :root {
                 --split-pos: 15vh;
             }
-        }
-
-        * {
-            box-sizing: border-box;
         }
 
         body, html {
@@ -35,62 +33,72 @@
         }
 
         #scroll-container {
-            width: 100%;
-            height: 100%;
-            overflow-y: scroll;
-            position: relative;
-            z-index: 1;
-        }
-
-        .content-wrapper {
-            width: 100%;
-            padding: 100px 3% 200px 3%;
-            margin-bottom: 100vh;
-        }
-
-        .content {
-            width: 94%;
-            margin: 0 auto;
-            font-size: calc(100dvw / 70);
-            line-height: 2em;
-            text-align: left;
-        }
-
-        #main-content {
-            background-color: #fff;
-            color: #000;
-        }
-
-        #mirror-view {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: var(--split-pos);
-            overflow: hidden;
-            z-index: 10;
-            pointer-events: none;
-            background-color: #fff;
-        }
-
-        #mirror-content {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
+            height: 100%;
+            overflow-y: scroll;
+            z-index: 10;
+        }
+
+        #scroll-height {
+            height: 6000px;
+        }
+
+        .view {
+            position: fixed;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            background-color: #fff;
+        }
+
+        .top-view {
+            top: 0;
+            height: var(--split-pos);
+            z-index: 2;
+        }
+
+        .bottom-view {
+            top: var(--split-pos);
+            height: calc(100vh - var(--split-pos));
+            z-index: 1;
+            background-color: #f9f9f9;
+        }
+
+        .content {
+            position: absolute;
+            left: 0;
+            width: 94%;
+            padding: 0 4%;
+            font-size: 1.3em;
+            line-height: 2em;
+            text-align: left;
             will-change: transform;
         }
 
+        .top-view .content {
+            top: 0;
+            margin-top: 100px;
+        }
+
+        .bottom-view .content {
+            top: calc(-1 * var(--split-pos));
+            margin-top: 100px;
+        }
+
         .a { color: #f00; font-weight: bold; }
-        .b { color: #fff; }
+        .b { color: #f9f9f9; }
 
         table { border: 2px solid #555; border-collapse: collapse; }
         td, th { border: 1px solid #555; padding: 5px; }
+        th { text-align: center; }
 
         h1 {
             text-align: center;
-            margin: 0 0 60px 0;
-            font-size: 2.5em;
+            margin-top: 0;
+            font-size: 3em;
             font-family: serif;
         }
 
@@ -101,53 +109,60 @@
             width: 100%;
             height: 3px;
             background-color: #999;
-            z-index: 15;
+            z-index: 5;
             border: none;
             margin: 0;
         }
 
         @media (orientation: portrait){
-            .content-wrapper { padding-top: 200px; }
-            .content { font-size: calc(100dvw / 35); }
+            .top-view .content, .bottom-view .content { margin-top: 200px; }
+            .content { font-size: 0.9em; }
         }
     </style>
 </head>
 <body>
 
     <div id="scroll-container">
-        <div id="main-content" class="content-wrapper">
-            <div class="content">
-                <h1>丗界史全征服</h1>
-                <div id="text-bottom"></div>
-            </div>
+        <div id="scroll-height"></div>
+    </div>
+
+    <div class="view top-view">
+        <div class="content" id="content-top">
+            <h1>周辺史征服</h1>
+            <div id="text-top"></div>
         </div>
     </div>
 
-    <div id="mirror-view">
-        <div id="mirror-content">
-            <div class="content-wrapper">
-                <div class="content">
-                    <h1>丗界史全征服</h1>
-                    <div id="text-top"></div>
-                </div>
-            </div>
+    <div class="view bottom-view">
+        <div class="content" id="content-bottom">
+            <h1>周辺史征服</h1>
+            <div id="text-bottom"></div>
         </div>
     </div>
 
     <hr class="divider" noshade>
 
-    <script src="b-all.js"></script>
+    <script src="b-sh.js"></script>
     <script>
         const scrollContainer = document.getElementById('scroll-container');
-        const mirrorContent = document.getElementById('mirror-content');
-        
+        const scrollHeight = document.getElementById('scroll-height');
+        const contentTop = document.getElementById('content-top');
+        const contentBottom = document.getElementById('content-bottom');
+
         document.getElementById('text-top').innerHTML = b.replace(/class="b"/g, 'class="a"');
         document.getElementById('text-bottom').innerHTML = b;
 
+        const adjustHeight = () => {
+            scrollHeight.style.height = (contentTop.scrollHeight + window.innerHeight) + "px";
+        };
+        window.onload = adjustHeight;
+        window.onresize = adjustHeight;
+
         scrollContainer.addEventListener('scroll', () => {
             const scrollTop = scrollContainer.scrollTop;
-            mirrorContent.style.transform = `translateY(${-scrollTop}px)`;
-        }, { passive: true });
+            contentTop.style.transform = `translateY(${-scrollTop}px)`;
+            contentBottom.style.transform = `translateY(${-scrollTop}px)`;
+        });
     </script>
 </body>
 </html>
