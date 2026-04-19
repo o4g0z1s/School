@@ -150,7 +150,7 @@ const cities = [
         lng: 108.9500
     },
     {
-        historicalNames: ["洛陽"],
+        historicalNames: ["洛邑","洛陽"],
         lat: 34.6200,
         lng: 112.4500
     },
@@ -203,11 +203,6 @@ const cities = [
         historicalNames: ["建業", "建康", "南京"],
         lat: 32.0603,
         lng: 118.7969
-    },
-    {
-        historicalNames: ["雲崗"],
-        lat: 40.1119,
-        lng: 113.1311
     },
     {
         historicalNames: ["平城", "大同"],
