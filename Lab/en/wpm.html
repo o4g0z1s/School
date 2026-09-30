@@ -13,26 +13,26 @@
             type="number" 
             id="w" 
             value="" 
-            class="w-full bg-black border border-white text-center text-5xl font-bold py-4 text-white focus:outline-none focus:border-white rounded"
+            class="w-full bg-black border border-white text-center text-4xl font-bold py-3 text-white focus:outline-none focus:border-white rounded"
             style="border-radius: 20px;"
             oninput="c()"
             autofocus
         >
 
         <div class="border border-none divide-y divide-white-800">
-            <div class="flex justify-between p-4 text-2xl font-bold"><span>130</span><span id="r130">0:00</span></div>
-            <div class="flex justify-between p-4 text-2xl font-bold"><span>140</span><span id="r140">0:00</span></div>
-            <div class="flex justify-between p-4 text-2xl font-bold"><span>150</span><span id="r150">0:00</span></div>
-            <div class="flex justify-between p-4 text-2xl font-bold"><span>160</span><span id="r160">0:00</span></div>
-            <div class="flex justify-between p-4 text-2xl font-bold"><span>170</span><span id="r170">0:00</span></div>
-            <div class="flex justify-between p-4 text-2xl font-bold"><span>180</span><span id="r180">0:00</span></div>
-            <div class="flex justify-between p-4 text-2xl font-bold"><span>190</span><span id="r190">0:00</span></div>
-            <div class="flex justify-between p-4 text-2xl font-bold"><span>200</span><span id="r200">0:00</span></div>
+            <div class="flex justify-between p-3 text-2xl"><span>120</span><span id="r120">0:00</span></div>
+            <div class="flex justify-between p-3 text-2xl"><span>140</span><span id="r140">0:00</span></div>
+            <div class="flex justify-between p-3 text-2xl"><span>160</span><span id="r160">0:00</span></div>
+            <div class="flex justify-between p-3 text-2xl"><span>180</span><span id="r180">0:00</span></div>
+            <div class="flex justify-between p-3 text-2xl"><span>200</span><span id="r200">0:00</span></div>
+            <div class="flex justify-between p-3 text-2xl"><span>250</span><span id="r250">0:00</span></div>
+            <div class="flex justify-between p-3 text-2xl"><span>300</span><span id="r300">0:00</span></div>
+            <div class="flex justify-between p-3 text-2xl"><span>500</span><span id="r500">0:00</span></div>
         </div>
     </div>
 
     <script>
-        const v = [130, 140, 150, 160, 170, 180, 190, 200];
+        const v = [120, 140, 160, 180, 200, 250, 300, 500];
         function c() {
             const n = parseFloat(document.getElementById('w').value) || 0;
             v.forEach(x => {
